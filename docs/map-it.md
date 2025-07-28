@@ -108,7 +108,7 @@ const map = L.map('map', {
   minZoom: 2.2,               
   maxZoom: 18,
   maxBounds: worldBounds,    // restrict the view
-  maxBoundsViscosity: 0.3    // “sticky” at the edges
+  maxBoundsViscosity: 0.3    // "sticky" at the edges
 }).setView([20, 0], 2);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -304,13 +304,13 @@ function renderGEMButtonGroup() {
   if (currentMode === 'GEM_powerplants') btn.classList.add('active');
   btn.onclick = () => selectMode('GEM_powerplants', btn);
   
-  // GEM website link + CC BY 4.0
+  // GEM website link + CC BY 4.0
   const info = document.createElement('div');
   info.classList.add('query-version');
   info.style.marginTop = '0.2rem';
   info.innerHTML =
    '<a href="https://globalenergymonitor.org/" target="_blank">globalenergymonitor.org</a>' +
-   ' | CC BY 4.0';
+   ' | CC BY 4.0';
 
   const group = document.createElement('div');
   group.classList.add('query-group');
@@ -432,7 +432,7 @@ async function fetchQuery(mode, adminLevel) {
   return r.text();
 }
 
-// 2d) unified click handler for country (level 2) & region (level 4)
+// 2d) unified click handler for country (level 2) & region (level 4)
 async function handleAreaClick(iso, level, layer) {
   const name = level === 2 
     ? layer.feature.properties.NAME      // Countries use NAME
@@ -485,7 +485,7 @@ setTimeout(() => {
       <ol>
         <li>Check if your ad-blocker is off and JOSM is open</li>
         <li>Make sure Remote Control is enabled in JOSM</li>
-        <li>If it’s enabled but still not working, toggle it off and on again</li>
+        <li>If it's enabled but still not working, toggle it off and on again</li>
         <li>Note that hint layers do not work on regional layers. In this case, please load the data onto a national layer.</li>
         <li><a href="https://mapyourgrid.org/starter-kit/">Look into the Starter-Kit</a>
       </ol>
@@ -518,7 +518,7 @@ async function fetchOsmoseAndDownload(sovName) {
   if (!base.endsWith('*')) base += '*';
 
   const apiUrl = 
-    `https://osmose.openstreetmap.fr/api/0.3/issues.json?` +
+    `https://osmose.openstreetmap.fr/api/0.3/issues.geojson?` +
     `country=${encodeURIComponent(base)}` +
     `&item=${item}&class=${cls}&limit=5000` +
     `&useDevItem=all`;
@@ -527,30 +527,98 @@ async function fetchOsmoseAndDownload(sovName) {
   if (!resp.ok) throw new Error(`Osmose API ${resp.statusText}`);
   const data = await resp.json();
 
-  const features = (data.issues||[]).map(i => ({
-    type: 'Feature',
-    properties: { id: i.id, item: i.item, clazz: i.class },
-    geometry: { type: 'Point', coordinates: [i.lon, i.lat] }
-  }));
+  // Handle GeoJSON format - data is already a GeoJSON FeatureCollection
+  if (data && data.type === "FeatureCollection" && data.features && data.features.length > 0) {
+    // Extract only uuid, item, elems, and geometry from each feature, plus unpack filterable properties
+    const filteredFeatures = data.features.map(feature => {
+      const properties = {
+        uuid: feature.properties.uuid,
+        item: feature.properties.item,
+        elems: feature.properties.elems
+      };
+      
+      // Extract filterable properties from elems
+      if (feature.properties.elems && Array.isArray(feature.properties.elems)) {
+        const voltages = [];
+        const powerTypes = [];
+        const elemIds = [];
+        const elemTypes = [];
+        
+        feature.properties.elems.forEach(elem => {
+          // Collect elem IDs and types
+          if (elem.id) elemIds.push(elem.id);
+          if (elem.type) elemTypes.push(elem.type);
+          
+          // Extract tag values for filtering
+          if (elem.tags) {
+            if (elem.tags.voltage) voltages.push(elem.tags.voltage);
+            if (elem.tags.power) powerTypes.push(elem.tags.power);
+          }
+        });
+        
+        // Add filterable properties (only if they have values)
+        if (voltages.length > 0) properties.voltages = [...new Set(voltages)]; // Remove duplicates
+        if (powerTypes.length > 0) properties.power_types = [...new Set(powerTypes)];
+        if (elemIds.length > 0) properties.elem_ids = elemIds;
+        if (elemTypes.length > 0) properties.elem_types = [...new Set(elemTypes)];
+      }
+      
+      return {
+        type: "Feature",
+        properties: properties,
+        geometry: feature.geometry
+      };
+    });
+    
+    // Apply filters
+    const finalFeatures = filteredFeatures.filter(feature => {
+      const props = feature.properties;
+      
+      // Filter 1: Remove voltages below "90000" (but keep nodes with no voltages)
+      if (props.voltages && props.voltages.length > 0) {
+        const hasHighVoltage = props.voltages.some(voltage => {
+          const voltageNum = parseInt(voltage);
+          return voltageNum >= 90000;
+        });
+        if (!hasHighVoltage) return false;
+      }
+      
+      // Filter 2: Remove power_types = "minor_line"
+      if (props.power_types && props.power_types.includes("minor_line")) {
+        return false;
+      }
+      
+      // Filter 3: Keep nodes with no voltages stated (already handled in filter 1)
+      return true;
+    });
+    
+    // If no features after filtering, notify and stop
+    if (finalFeatures.length === 0) {
+      alert(`No issues found after filtering for "${sel.options[sel.selectedIndex].text}" in ${sovName.replace('*','')}. Found ${data.features.length} total issues, Try another osmose issue type!`);
+      return;
+    }
 
-  // If no features, notify and stop
-  if (features.length === 0) {
+    const geojson = {
+      type: "FeatureCollection",
+      features: finalFeatures
+    };
+
+    // Download the filtered GeoJSON
+    const blob = new Blob([JSON.stringify(geojson, null,2)],
+                          {type:'application/json'});
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href     = url;
+    a.download = `${sovName.replace('*','')}_osmose_${item}_${cls}.geojson`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    URL.revokeObjectURL(url);
+
+  } else {
     alert(`No issues found for "${sel.options[sel.selectedIndex].text}" in ${sovName.replace('*','')}. Try another osmose issue type!`);
     return;
   }
-
-  const geojson = { type: 'FeatureCollection', features };
-
-  const blob = new Blob([JSON.stringify(geojson, null,2)],
-                        {type:'application/json'});
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href     = url;
-  a.download = `${sovName.replace('*','')}_osmose_${item}_${cls}.geojson`;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  URL.revokeObjectURL(url);
 }
 
 async function fetchGEMAndDownload(sovName) {
@@ -888,4 +956,3 @@ We welcome everyone to join our [📍-MapYourGrid discord channel](https://disco
 ## <div class="tools-header">Join the Community  :calendar: </div>
 We welcome everyone to join our community calls and tutorials, to learn more about the mapping process and the initiative.
 <iframe src="https://calendar.google.com/calendar/embed?src=mapyourgrid%40openenergytransition.org&ctz=Europe%2FBerlin" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
