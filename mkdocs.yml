@@ -88,5 +88,33 @@ markdown_extensions:
 plugins:
   - glightbox
   - search
-
-  
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: es
+          name: Español  
+          build: true
+          site_name: "MapYourGrid"
+          nav_translations:
+            "THE INITIATIVE": "LA INICIATIVA"
+            "IMPACT": "IMPACTO"  
+            "STARTER-KIT": "KIT DE INICIO"
+            "MAP IT📍": "MAP IT📍"
+            "TOOLS AND STRATEGIES": "HERRAMIENTAS Y ESTRATEGIAS"
+            "OUR PROGRESS": "NUESTRO PROGRESO"
+            "QUESTIONS?": "¿PREGUNTAS?"
+            "BLOG": "BLOG"
+        - locale: fr
+          name: Français
+          build: true
+          site_name: "MapYourGrid"
+      # Critical: This maps your folder names to locales
+      default_language: en
+      material_alternate: true
