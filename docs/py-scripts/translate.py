@@ -6,7 +6,7 @@ from pathlib import Path
 
 def translate_markdown_file(source_file, target_lang):
     # Replace with your actual DeepL API key
-    translator = deepl.Translator("DEEPL-api-key")
+    translator = deepl.Translator("32a7d15b-4a2b-4495-a1dc-3c864cfac951:fx")
     
     with open(source_file, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -59,7 +59,11 @@ def translate_markdown_file(source_file, target_lang):
     
     main_content = re.sub(r'<iframe[^>]*>.*?</iframe>', replace_iframe, main_content, flags=re.DOTALL)
     
-    # Step 4: Extract and protect image tags
+    # Step 4: Extract and protect image tags - but fix paths first
+    # Fix image paths BEFORE protecting them
+    main_content = re.sub(r'src="(?!http)(?!\.\./images/)([^"]*images/)', r'src="../\1', main_content)
+    main_content = re.sub(r'src="\.\./\.\./images/', 'src="../images/', main_content)  # Fix double ../
+    
     img_blocks = []
     def replace_img(match):
         img_blocks.append(match.group(0))
@@ -67,41 +71,24 @@ def translate_markdown_file(source_file, target_lang):
     
     main_content = re.sub(r'<img[^>]*/?>', replace_img, main_content)
     
-    # Step 5: Extract and protect markdown links FIRST
+    # Step 5: Extract and protect URLs and links
+    url_blocks = []
+    def replace_url(match):
+        url_blocks.append(match.group(0))
+        return f"__URL_BLOCK_{len(url_blocks)-1}__"
+    
+    # Protect all URLs (http/https)
+    main_content = re.sub(r'https?://[^\s\)"\]]+', replace_url, main_content)
+    
+    # Step 6: Extract and protect markdown links
     md_link_blocks = []
     def replace_md_link(match):
         md_link_blocks.append(match.group(0))
         return f"__MD_LINK_BLOCK_{len(md_link_blocks)-1}__"
     
-    main_content = re.sub(r'\[([^\]]+)\]\(([^)]+)\)', replace_md_link, main_content)
+    main_content = re.sub(r'\[([^\]]*)\]\(([^)]*)\)', replace_md_link, main_content)
     
-    # Step 6: Extract and protect HTML links - but handle card links specially
-    link_blocks = []
-    def replace_link(match):
-        full_tag = match.group(0)
-        
-        # Check if this is a card link that contains h3/p elements we want to translate
-        if 'class="get-involved-card"' in full_tag:
-            # For card links, we'll translate the inner content but protect the link structure
-            # Extract the link attributes and content separately
-            link_match = re.match(r'(<a[^>]*>)(.*)(</a>)', full_tag, re.DOTALL)
-            if link_match:
-                link_start = link_match.group(1)
-                link_content = link_match.group(2)
-                link_end = link_match.group(3)
-                
-                # Store the link wrapper but let content be processed
-                link_blocks.append((link_start, link_end))
-                return f"__CARD_LINK_START_{len(link_blocks)-1}__{link_content}__CARD_LINK_END_{len(link_blocks)-1}__"
-        
-        # For regular links, protect completely
-        link_blocks.append(full_tag)
-        return f"__LINK_BLOCK_{len(link_blocks)-1}__"
-    
-    # More careful regex for links - only match complete <a>...</a> structures
-    main_content = re.sub(r'<a\b[^>]*>(?:[^<]|<(?!/a>))*</a>', replace_link, main_content, flags=re.DOTALL)
-    
-    # Step 7: Protect HTML attributes (class, id, style) MORE AGGRESSIVELY
+    # Step 7: Extract and protect ALL HTML attributes more aggressively
     protected_attrs = []
     
     def protect_attribute(match):
@@ -109,114 +96,159 @@ def translate_markdown_file(source_file, target_lang):
         protected_attrs.append(full_attr)
         return f"__PROTECTED_ATTR_{len(protected_attrs)-1}__"
     
-    # Protect all kinds of attributes
-    main_content = re.sub(r'\bclass="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\bid="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\bstyle="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\btarget="_blank"', protect_attribute, main_content)
-    main_content = re.sub(r'\brel="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\bhref="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\bsrc="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\balt="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\bwidth="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\bheight="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\btitle="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\bframeborder="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\ballow="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\breferrerpolicy="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\ballowfullscreen', protect_attribute, main_content)
-    main_content = re.sub(r'\bdata-form="[^"]*"', protect_attribute, main_content)
-    main_content = re.sub(r'\basync', protect_attribute, main_content)
+    # Protect all kinds of attributes more comprehensively
+    attr_patterns = [
+        r'\bclass="[^"]*"',
+        r'\bid="[^"]*"', 
+        r'\bstyle="[^"]*"',
+        r'\btarget="[^"]*"',
+        r'\brel="[^"]*"',
+        r'\bhref="[^"]*"',
+        r'\bsrc="[^"]*"',
+        r'\balt="[^"]*"',
+        r'\bwidth="[^"]*"',
+        r'\bheight="[^"]*"',
+        r'\btitle="[^"]*"',
+        r'\bframeborder="[^"]*"',
+        r'\ballow="[^"]*"',
+        r'\breferrerpolicy="[^"]*"',
+        r'\ballowfullscreen',
+        r'\bdata-form="[^"]*"',
+        r'\basync'
+    ]
     
-    # Step 8: Translate text content inside HTML tags
-    def translate_html_text(match):
+    for pattern in attr_patterns:
+        main_content = re.sub(pattern, protect_attribute, main_content)
+    
+    # Step 8: Extract and protect complete HTML tags that should not be translated
+    html_tag_blocks = []
+    def replace_html_tag(match):
+        html_tag_blocks.append(match.group(0))
+        return f"__HTML_TAG_BLOCK_{len(html_tag_blocks)-1}__"
+    
+    # Protect specific tags that shouldn't be translated
+    protected_tag_patterns = [
+        r'<div[^>]*class="[^"]*card-icon[^"]*"[^>]*>.*?</div>',
+        r'<div[^>]*style="[^"]*"[^>]*>(?!</div>)',  # Opening div with style
+        r'</div>',  # Closing div tags
+        r'<figcaption[^>]*>.*?</figcaption>',
+        r'<small[^>]*>.*?</small>'
+    ]
+    
+    for pattern in protected_tag_patterns:
+        main_content = re.sub(pattern, replace_html_tag, main_content, flags=re.DOTALL)
+    
+    # Step 9: Extract and protect HTML links - handle ALL links more carefully
+    link_blocks = []
+    def replace_link(match):
+        full_tag = match.group(0)
+        link_blocks.append(full_tag)
+        return f"__LINK_BLOCK_{len(link_blocks)-1}__"
+    
+    # More comprehensive link protection
+    main_content = re.sub(r'<a\b[^>]*>.*?</a>', replace_link, main_content, flags=re.DOTALL)
+    
+    # Step 10: Now translate the remaining content more carefully
+    # Split content into chunks and translate meaningful text only
+    def should_translate_text(text):
+        """Check if text should be translated"""
+        text = text.strip()
+        
+        # Don't translate if:
+        if (len(text) < 3 or                                    # Too short
+            text.startswith('__') and '_BLOCK_' in text or      # Protected block
+            text.startswith('__') and '_ATTR_' in text or       # Protected attribute  
+            re.match(r'^[#\-\*\+\s]*$', text) or              # Markdown formatting only
+            re.match(r'^<[^>]*>$', text) or                    # Pure HTML tag
+            text.startswith('<!--') or                          # HTML comment
+            re.match(r'^[\d\.\s%km]+$', text)):                # Numbers/percentages only
+            return False
+            
+        return True
+    
+    def translate_text_content(text):
+        """Translate text while preserving structure"""
+        if not should_translate_text(text):
+            return text
+            
+        try:
+            # Clean up text before translation
+            cleaned_text = text.strip()
+            translated = translator.translate_text(cleaned_text, target_lang=target_lang.upper()).text
+            return translated
+        except Exception as e:
+            print(f"Translation error for text '{text[:50]}...': {e}")
+            return text
+    
+    # Step 11: Translate HTML content more systematically
+    def translate_html_content(match):
         full_match = match.group(0)
         tag_start = match.group(1)  # Opening tag
-        text_content = match.group(2)  # Text inside
+        inner_content = match.group(2)  # Content inside
         tag_end = match.group(3)  # Closing tag
         
-        # Skip if contains protected blocks or is too short
-        if ('__' in text_content and '_BLOCK_' in text_content) or \
-           ('__' in text_content and '_ATTR_' in text_content) or \
-           len(text_content.strip()) < 3:
+        # Skip if contains protected blocks
+        if '__' in inner_content and ('_BLOCK_' in inner_content or '_ATTR_' in inner_content):
             return full_match
-            
-        # Only translate if there's actual text content
-        text_only = re.sub(r'<[^>]*>', '', text_content).strip()
-        if text_only and len(text_only) > 2:
-            try:
-                translated_text = translator.translate_text(text_content.strip(), target_lang=target_lang.upper()).text
-                return f"{tag_start}{translated_text}{tag_end}"
-            except Exception as e:
-                print(f"Translation error for HTML text '{text_content[:50]}...': {e}")
-                return full_match
-        return full_match
-    
-    # Translate text inside common HTML tags
-    html_tags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'blockquote', 'div', 'span']
-    for tag in html_tags:
-        pattern = f'(<{tag}[^>]*>)(.*?)(</{tag}>)'
-        main_content = re.sub(pattern, translate_html_text, main_content, flags=re.DOTALL)
-    
-    # Step 9: Translate remaining markdown/text content line by line
-    try:
-        lines = main_content.split('\n')
-        translated_lines = []
         
-        for line in lines:
-            stripped_line = line.strip()
-            
-            # Skip lines that are:
-            # - Empty
-            # - Pure HTML tags
-            # - Contains protected blocks
-            # - Markdown headers (starting with #)
-            # - HTML comments
-            if (not stripped_line or
-                (stripped_line.startswith('<') and stripped_line.endswith('>')) or
-                '__' in line and ('_BLOCK_' in line or '_ATTR_' in line) or
-                stripped_line.startswith('#') or
-                stripped_line.startswith('<!--')):
-                translated_lines.append(line)
-                continue
-            
-            # Check if line has substantial text content to translate
-            # Remove HTML tags temporarily to check text content
-            text_only = re.sub(r'<[^>]*>', '', line).strip()
-            
-            if len(text_only) > 2:  # Only translate if there's actual content
-                try:
-                    translated_line = translator.translate_text(line, target_lang=target_lang.upper()).text
-                    translated_lines.append(translated_line)
-                except Exception as e:
-                    print(f"Translation error for line '{line[:50]}...': {e}")
-                    translated_lines.append(line)
-            else:
-                translated_lines.append(line)
+        # Check if inner content has nested HTML
+        if '<' in inner_content and '>' in inner_content:
+            # Has nested HTML, don't translate the whole thing
+            return full_match
         
-        main_content = '\n'.join(translated_lines)
-        
-    except Exception as e:
-        print(f"Translation error in main content processing: {e}")
+        # Translate the inner text content
+        translated_inner = translate_text_content(inner_content)
+        return f"{tag_start}{translated_inner}{tag_end}"
     
-    # Step 10: Restore all protected content in REVERSE order
+    # Apply translation to various HTML tags
+    html_text_tags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'blockquote', 'li']
+    for tag in html_text_tags:
+        pattern = f'(<{tag}[^>]*>)([^<]*?)(</{tag}>)'
+        main_content = re.sub(pattern, translate_html_content, main_content, flags=re.DOTALL)
+    
+    # Step 12: Translate remaining markdown and plain text
+    lines = main_content.split('\n')
+    translated_lines = []
+    
+    for line in lines:
+        # Skip lines that are protected or don't need translation
+        if ('__' in line and ('_BLOCK_' in line or '_ATTR_' in line)) or line.strip().startswith('#'):
+            translated_lines.append(line)
+            continue
+        
+        # Check if line has translatable content
+        # Remove HTML tags to check actual text content
+        text_content = re.sub(r'<[^>]*>', '', line).strip()
+        
+        if should_translate_text(text_content):
+            translated_line = translate_text_content(line)
+            translated_lines.append(translated_line)
+        else:
+            translated_lines.append(line)
+    
+    main_content = '\n'.join(translated_lines)
+    
+    # Step 13: Restore all protected content in reverse order
+    
+    # Restore HTML tag blocks
+    for i, tag_block in enumerate(html_tag_blocks):
+        main_content = main_content.replace(f"__HTML_TAG_BLOCK_{i}__", tag_block)
     
     # Restore protected attributes
     for i, attr in enumerate(protected_attrs):
         main_content = main_content.replace(f"__PROTECTED_ATTR_{i}__", attr)
     
-    # Restore card links (special handling)
-    for i, link_data in enumerate(link_blocks):
-        if isinstance(link_data, tuple):  # Card link
-            link_start, link_end = link_data
-            main_content = main_content.replace(f"__CARD_LINK_START_{i}__", link_start)
-            main_content = main_content.replace(f"__CARD_LINK_END_{i}__", link_end)
-        else:  # Regular link
-            main_content = main_content.replace(f"__LINK_BLOCK_{i}__", link_data)
+    # Restore links
+    for i, link_block in enumerate(link_blocks):
+        main_content = main_content.replace(f"__LINK_BLOCK_{i}__", link_block)
     
     # Restore markdown links
     for i, md_link_block in enumerate(md_link_blocks):
         main_content = main_content.replace(f"__MD_LINK_BLOCK_{i}__", md_link_block)
+    
+    # Restore URLs
+    for i, url_block in enumerate(url_blocks):
+        main_content = main_content.replace(f"__URL_BLOCK_{i}__", url_block)
     
     # Restore images
     for i, img_block in enumerate(img_blocks):
@@ -230,18 +262,21 @@ def translate_markdown_file(source_file, target_lang):
     for i, script_block in enumerate(script_blocks):
         main_content = main_content.replace(f"__SCRIPT_BLOCK_{i}__", script_block)
     
-    # Step 11: Fix relative paths for translated versions
-    main_content = re.sub(r'src="images/', 'src="../images/', main_content)
-    main_content = re.sub(r'src="\.\./images/', 'src="../images/', main_content)  # Avoid double ../
-    main_content = re.sub(r'href="/icons/', 'href="../icons/', main_content)
+    # Step 14: Final path fixes for translated files
+    # Fix icon paths
     main_content = re.sub(r'src="/icons/', 'src="../icons/', main_content)
+    main_content = re.sub(r'src="\.\./\.\./icons/', 'src="../icons/', main_content)  # Fix double ../
     
-    # Step 12: Final cleanup - remove any remaining translation artifacts
-    # Clean up any stray periods that might have been added
+    # Fix data paths
+    main_content = re.sub(r'"/data/', '"../data/', main_content)
+    main_content = re.sub(r'"\.\./\.\./data/', '"../data/', main_content)  # Fix double ../
+    
+    # Step 15: Final cleanup
     main_content = re.sub(r'</a>\.', '</a>', main_content)
     main_content = re.sub(r'</div>\.', '</div>', main_content)
+    main_content = re.sub(r'</h[1-6]>\.', lambda m: m.group(0)[:-1], main_content)
     
-    # Step 13: Combine YAML frontmatter with translated content
+    # Step 16: Combine YAML frontmatter with translated content
     final_content = yaml_content + main_content
     
     return final_content
