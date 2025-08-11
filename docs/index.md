@@ -234,8 +234,8 @@ document.addEventListener('DOMContentLoaded', () => {
   async function fetchLineLengthData() {
     const linesWrapperEl = document.getElementById('stat-lines-wrapper');
     try {
-      const towerdataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json';
-      const resp = await fetch(towerdataUrl);
+      const linedataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json';
+      const resp = await fetch(linedataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const data = await resp.json();
       const { lengthKm, percentageOfMediumHigh } = data;
