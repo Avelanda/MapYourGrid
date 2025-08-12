@@ -1,5 +1,5 @@
 <div class="page-headers">
-<h1>Our Progress</h1>
+<h1>Progress</h1>
 </div>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 450px; max-width: 100%">
