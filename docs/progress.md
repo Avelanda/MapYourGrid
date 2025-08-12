@@ -333,7 +333,8 @@ Our work supports better access to electricity across the globe. In the countrie
   towerUpdatedEl.textContent = 'Last updated: —';
 
   try {
-    const resp = await fetch('/data/tower-count.json');
+    const towerdataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json';
+    const resp = await fetch(towerdataUrl);
     if (!resp.ok) throw new Error(resp.statusText);
     const { towerCount: count, updated } = await resp.json();
 
@@ -358,8 +359,8 @@ async function loadLineLength() {
   updatedEl.textContent  = 'Last updated: —';
 
   try {
-    const resp = await fetch('/data/line-length.json');
-    if (!resp.ok) throw new Error(resp.statusText);
+    const lineDataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json';
+    const resp = await fetch(lineDataUrl);
     const data = await resp.json();
     const { lengthKm, mediumHighVoltageKm, percentageOfMediumHigh, updated } = data;
 
@@ -400,7 +401,8 @@ async function loadCommunityStats() {
   communityLineLengthUpdatedEl.textContent = 'Last updated: —';
 
   try {
-    const resp = await fetch('/data/community-stats.json');
+    const communityDataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/community-stats.json';
+    const resp = await fetch(communityDataUrl);
     if (!resp.ok) throw new Error(resp.statusText);
     const data = await resp.json();
 
@@ -447,7 +449,8 @@ async function loadPlantCapacity() {
     capacityUpdatedEl.textContent = 'Last updated: —';
 
     try {
-      const resp = await fetch('/data/power-stats.json');
+      const powerDataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/power-stats.json';
+      const resp = await fetch(powerDataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const { total_capacity_mw, updated } = await resp.json();
 
@@ -471,7 +474,8 @@ async function loadSubstationCount() {
     substationUpdatedEl.textContent = 'Last updated: —';
 
     try {
-      const resp = await fetch('/data/power-stats.json');
+      const powerDataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/power-stats.json';
+      const resp = await fetch(powerDataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const { substation_count, updated } = await resp.json();
 

@@ -1,7 +1,8 @@
 {
-  "lengthKm": 54448,
-  "totalGlobalKm": 6956883,
-  "mediumHighVoltageKm": 5852951,
-  "percentageOfMediumHigh": 0.93,
-  "updated": "2025-07-27T03:39:50Z"
+  "lengthKm": 57214,
+  "totalGlobalKm": 6973203,
+  "mediumHighVoltageKm": 5861939,
+  "percentageOfMediumHigh": 0.98,
+  "towerCount": 180397,
+  "updated": "2025-08-08T15:33:21.277053+00:00"
 }

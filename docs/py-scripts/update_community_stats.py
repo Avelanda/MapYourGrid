@@ -78,7 +78,7 @@ class CommunityStatsAnalyzer:
 
         user_query_part = ", ".join(f'"{user}"' for user in community_users)
         query = f"""
-        [out:json][timeout:900];
+        [out:json][timeout:1800];
         node["power"="tower"](user:{user_query_part})->.community_towers;
         way["power"="line"](bn.community_towers)->.connected_ways;
         (
