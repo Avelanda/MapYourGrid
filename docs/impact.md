@@ -77,7 +77,7 @@ Making this data freely available not only unlocks social value for planning but
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
   <img src="../images/impact/nigeria-osm.jpg" class="img-border" style="width: 100%;"> </a>
-  <figcaption class="image-caption"> More than 240 million people in Nigeria depend on electrical grid data from OpenStreetMap. The <a href="https://pypsa-earth.readthedocs.io/en/latest/index.html" target="_blank">Nigerian SE4ALL website</a>, which is hosted by the Federal Ministry of Power, uses OpenStreetMap as its main source on the transmission grid.</figcaption> 
+  <figcaption class="image-caption"> More than 240 million people in Nigeria depend on electrical grid data from OpenStreetMap. The <a href="https://nigeriase4all.gov.ng/" target="_blank">Nigerian SE4ALL website</a>, which is hosted by the Federal Ministry of Power, uses OpenStreetMap as its main source on the transmission grid.</figcaption> 
 </div> 
 
 > **IEA Key Policy Recommendation in 2024:**
