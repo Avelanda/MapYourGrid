@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
   async function fetchLineLengthData() {
     const linesWrapperEl = document.getElementById('stat-lines-wrapper');
     try {
-      const linedataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json';
+      const linedataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json');
       const resp = await fetch(linedataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const data = await resp.json();
@@ -250,7 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     } catch(err) {
       console.error('Failed to fetch line length data', err);
-      linesWrapperEl.innerHTML = `<span class="stat-number">Error</span>`;
+      linesWrapperEl.innerHTML = `<span class="stat-number">Maintenance</span>`;
     }
   }
 
@@ -258,14 +258,14 @@ document.addEventListener('DOMContentLoaded', () => {
   async function fetchTowerData() {
     const towersEl = document.getElementById('stat-towers');
     try {
-      const towerdataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json';
+      const towerdataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json');
       const resp = await fetch(towerdataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const { towerCount } = await resp.json();
       towersEl.textContent = towerCount.toLocaleString('en-US');
     } catch(err) {
       console.error('Failed to fetch tower count data', err);
-      towersEl.textContent = 'Error';
+      towersEl.textContent = 'Maintenance';
     }
   }
 

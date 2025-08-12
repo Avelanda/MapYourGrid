@@ -333,7 +333,7 @@ Our work supports better access to electricity across the globe. In the countrie
   towerUpdatedEl.textContent = 'Last updated: —';
 
   try {
-    const towerdataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json';
+    const towerdataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json');
     const resp = await fetch(towerdataUrl);
     if (!resp.ok) throw new Error(resp.statusText);
     const { towerCount: count, updated } = await resp.json();
@@ -344,7 +344,7 @@ Our work supports better access to electricity across the globe. In the countrie
   }
   catch(err) {
     console.error('Error loading tower count', err);
-    towerCountEl.textContent = 'Error';
+    towerCountEl.textContent = 'Maintenance';
     towerUpdatedEl.textContent = '';
   }
 }
@@ -359,7 +359,7 @@ async function loadLineLength() {
   updatedEl.textContent  = 'Last updated: —';
 
   try {
-    const lineDataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json';
+    const lineDataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json');
     const resp = await fetch(lineDataUrl);
     const data = await resp.json();
     const { lengthKm, mediumHighVoltageKm, percentageOfMediumHigh, updated } = data;
@@ -377,7 +377,7 @@ async function loadLineLength() {
     updatedEl.textContent  = `Last updated: ${new Date(updated).toLocaleString()}`;
   } catch(err) {
     console.error('Error loading line length', err);
-    lengthEl.textContent = 'Error';
+    lengthEl.textContent = 'Maintenance';
     updatedEl.textContent = '';
   }
 }
@@ -401,7 +401,7 @@ async function loadCommunityStats() {
   communityLineLengthUpdatedEl.textContent = 'Last updated: —';
 
   try {
-    const communityDataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/community-stats.json';
+    const communityDataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/community-stats.json');
     const resp = await fetch(communityDataUrl);
     if (!resp.ok) throw new Error(resp.statusText);
     const data = await resp.json();
@@ -432,8 +432,8 @@ async function loadCommunityStats() {
   } catch (err) {
     console.error('Error loading community stats', err);
     // Change to 'Error' for clarity when something goes wrong fetching data
-    towerCountEl.textContent = 'Error';
-    lengthEl.textContent = 'Error';
+    towerCountEl.textContent = 'Maintenance';
+    lengthEl.textContent = 'Maintenance';
     communityTowerUpdatedEl.textContent = ''; // Clear timestamp on error
     communityLineLengthUpdatedEl.textContent = ''; // Clear timestamp on error
   }
@@ -449,7 +449,7 @@ async function loadPlantCapacity() {
     capacityUpdatedEl.textContent = 'Last updated: —';
 
     try {
-      const powerDataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/power-stats.json';
+      const powerDataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/power-stats.json');
       const resp = await fetch(powerDataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const { total_capacity_mw, updated } = await resp.json();
@@ -459,7 +459,7 @@ async function loadPlantCapacity() {
       capacityUpdatedEl.textContent = `Last updated: ${new Date(updated).toLocaleString()}`;
     } catch (err) {
       console.error('Error loading plant capacity', err);
-      capacityCountEl.textContent = 'In Progress Feature';
+      capacityCountEl.textContent = 'Maintenance';
       capacityUpdatedEl.textContent = '';
     }
   }
@@ -474,7 +474,7 @@ async function loadSubstationCount() {
     substationUpdatedEl.textContent = 'Last updated: —';
 
     try {
-      const powerDataUrl = 'https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/power-stats.json';
+      const powerDataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/power-stats.json');
       const resp = await fetch(powerDataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const { substation_count, updated } = await resp.json();
@@ -484,7 +484,7 @@ async function loadSubstationCount() {
       substationUpdatedEl.textContent = `Last updated: ${new Date(updated).toLocaleString()}`;
     } catch (err) {
       console.error('Error loading substation capacity', err);
-      substationCountEl.textContent = 'In Progress Feature';
+      substationCountEl.textContent = 'Maintenance';
       substationUpdatedEl.textContent = '';
     }
   }
