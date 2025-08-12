@@ -576,71 +576,70 @@ You can find more stats for #MapYourGrid at [OhsomeNowstats](https://stats.now.o
     <p id="last-updated"></p>
 
 <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const leaderboardContainer = document.getElementById('leaderboard-container');
-            const lastUpdatedElement = document.getElementById('last-updated');
-            
-            // The URL to fetch the JSON data from the release
-            const dataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/community-stats.json');
-            
-            async function fetchAndDisplayLeaderboard() {
-                try {
-                    const response = await fetch(dataUrl);
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
-                    const data = await response.json();
+  document.addEventListener('DOMContentLoaded', function() {
+      const leaderboardContainer = document.getElementById('leaderboard-container');
+      const lastUpdatedElement = document.getElementById('last-updated');
+      
+      // The URL to fetch the JSON data from the release
+      const dataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/community-stats.json');
+      
+      async function fetchAndDisplayLeaderboard() {
+          try {
+              const response = await fetch(dataUrl);
+              if (!response.ok) {
+                  throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              const data = await response.json();
 
-                    // --- Process Data ---
-                    const users = data.users;
-                    const sortedUsers = Object.entries(users)
-                        .sort(([, towersA], [, towersB]) => towersB - towersA);
-                    
-                    const top10 = sortedUsers.slice(0, 10);
+              // --- Process Data ---
+              const users = data.users;
+              const sortedUsers = Object.entries(users)
+                  .sort(([, towersA], [, towersB]) => towersB - towersA);
+              
+              const top10 = sortedUsers.slice(0, 10);
 
-                    // --- Build Table HTML ---
-                    let tableHtml = `
-                        <table class="leaderboard-table">
-                            <thead>
-                                <tr>
-                                    <th>Rank</th>
-                                    <th>Mapper</th>
-                                    <th>Towers Mapped</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                    `;
+              // --- Build Table HTML ---
+              let tableHtml = `
+                  <table class="leaderboard-table">
+                      <thead>
+                          <tr>
+                              <th>Rank</th>
+                              <th>Mapper</th>
+                              <th>Towers Mapped</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+              `;
 
-                    top10.forEach(([username, towers], index) => {
-                        const rank = index + 1;
-                        // The medal logic has been removed.
-                        tableHtml += `
-                            <tr>
-                                <td>${rank}</td>
-                                <td>${username}</td>
-                                <td>${towers.toLocaleString()}</td>
-                            </tr>
-                        `;
-                    });
+              top10.forEach(([username, towers], index) => {
+                  const rank = index + 1;
+                  tableHtml += `
+                      <tr>
+                          <td>${rank}</td>
+                          <td>${username}</td>
+                          <td>${towers.toLocaleString()}</td>
+                      </tr>
+                  `;
+              });
 
-                    tableHtml += `</tbody></table>`;
-                    
-                    // --- Display Results ---
-                    leaderboardContainer.innerHTML = tableHtml;
-                    
-                    // --- Display Last Updated Time ---
-                    const updatedDate = new Date(data.updated);
-                    lastUpdatedElement.textContent = `Last updated: ${updatedDate.toLocaleString()}`;
+              tableHtml += `</tbody></table>`;
+              
+              // --- Display Results ---
+              leaderboardContainer.innerHTML = tableHtml;
+              
+              // --- Display Last Updated Time ---
+              const updatedDate = new Date(data.updated);
+              lastUpdatedElement.textContent = `Last updated: ${updatedDate.toLocaleString()}`;
 
-                } catch (error) {
-                    leaderboardContainer.innerHTML = `<p style="color: red;">Could not load leaderboard data. Please try again later.</p>`;
-                    console.error("Error fetching leaderboard:", error);
-                }
-            }
+          } catch (error) {
+              leaderboardContainer.innerHTML = `<p style="color: red;">Could not load leaderboard data. Please try again later.</p>`;
+              console.error("Error fetching leaderboard:", error);
+          }
+      }
 
-            fetchAndDisplayLeaderboard();
-        });
-    </script>
+      fetchAndDisplayLeaderboard();
+  });
+</script>
 
 ## **<div class="tools-header">Line Length Growth per Country </div>**
 
