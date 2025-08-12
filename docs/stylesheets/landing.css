@@ -283,6 +283,11 @@ body.landing-page header.md-header {
   font-weight: 700;
 }
 
+.our-mapping-section h2.countries-title {
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
+}
+
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
