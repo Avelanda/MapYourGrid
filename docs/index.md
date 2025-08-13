@@ -90,8 +90,11 @@ image: images/website/mapyourgrid-preview.jpg
   <div>
 
   
-  <br>
-  <p style="color:#2a6d3c;line-height: 1.5;margin-bottom: 1.1rem;font-size: 1.5rem;font-weight: 550;"> Some Countries Where We’ve Mapped and Closed Critical Gaps in the Grid:</p>
+  </br>
+  </br>
+<p style="color:#54a36a;line-height: 1.5;margin-top: 3rem; font-size: 1.5rem;font-weight: 550;">
+  Countries Where We’ve Closed Critical Grid Gaps
+</p>
 <div class="country-grid our-mapping-section">
   <div class="country-card"><a href="/countrypages/Bangladesh/"><img class="country-flag off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bangladesh.svg" alt="Bangladesh Flag"></a></div>
   <div class="country-card"><a href="/countrypages/Benin/"><img class="country-flag off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Benin.svg" alt="Benin Flag"></a></div>
@@ -192,7 +195,7 @@ image: images/website/mapyourgrid-preview.jpg
 </div>
 </div>
 
-<div class="get-involved-section" style="display: flex; flex-direction: column; align-items: center;">
+<div class="our-mapping-section" style="display: flex; flex-direction: column; align-items: center;">
   <h2>Subscribe to Our Newsletter</h2>
   <div>
     <script async src="https://eocampaign1.com/form/c308f2c6-6898-11f0-9bf6-53fb9ff1b12b.js" data-form="c308f2c6-6898-11f0-9bf6-53fb9ff1b12b"></script>
