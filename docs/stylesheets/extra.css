@@ -946,3 +946,61 @@ aside.md-banner a>div {
 .social-icons a:hover img {
   opacity: 1;
 }
+
+ /* Leaderboard on progrss page */
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.leaderboard-table thead tr {
+  background-color: #28a745; /* This remains green as requested */
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.leaderboard-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.leaderboard-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.leaderboard-table tbody tr:last-of-type {
+    border-bottom: 2px solid #28a745;
+}
+
+.leaderboard-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.leaderboard-table td:first-child {
+    font-weight: 700;
+    width: 50px;
+    text-align: center;
+}
+
+/* Last Updated Text */
+#last-updated {
+    text-align: right;
+    font-size: 0.85em;
+    color: #6c757d;
+    margin-top: 1rem;
+}
+
+/* Loading State */
+.loader {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+    color: #6c757d;
+}
