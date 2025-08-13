@@ -12,18 +12,21 @@
 
 This Starter-Kit empowers you how to map your first line of the electrical transmission grid. If you ever get stuck with the Starter-Kit or would like to provide feedback, please contact us via our [community chat](https://discord.gg/fBw7ARTUeR) or [via email](mailto:MapYourGrid@openenergytransition.org). A MapYourGrid community member will help you finish your first line and set up your environment.
 
-We recommend JOSM generally, particularly for professional, large-scale grid mapping and to inspect the electrical grid. However, if you only want to make minor edits or leave notes without installing anything, the iD editor in combination with [Open Infrastructure Map](https://openinframap.org/) and MapComplete is a better choice. These tools also offer enhanced usability for field mapping tasks and data validation.
+We recommend JOSM generally, particularly for professional, large-scale grid mapping and to inspect the electrical grid. However, if you only want to make minor edits or leave notes without installing anything, the iD editor in combination with [Open Infrastructure Map](https://openinframap.org/) and MapComplete is a better choice. These tools also offer enhanced usability for field mapping tasks and data validation. You can follow our tutorials on this website, but we also have a video tutorial for JOSM!
 
 Get started by clicking on one of the OpenStreetMap editors:
 
 <div class="starter-kit-buttons">
-  <a href="#josm-starter-kit" class="btn btn-primary">JOSM Starter‑Kit – Large‑Scale Mapping</a> 
-  <a href="#id-starter-kit" class="btn btn-secondary">iD Starter‑Kit – Small‑Scale & Field Mapping</a>
-  <a href="#mapcomplete-starter-kit" class="btn btn-secondary">MapComplete Starter‑Kit – Missing Tags Mapping</a>
+  <a href="#josm-starter-kit" class="btn btn-primary">JOSM Starter‑Kit - Large‑Scale Mapping</a> 
+  <a href="#id-starter-kit" class="btn btn-secondary">iD Starter‑Kit - Small‑Scale & Field Mapping</a>
+  <a href="#mapcomplete-starter-kit" class="btn btn-secondary">MapComplete Starter‑Kit - Missing Tags Mapping</a>
 </div>
 
 
+
 ## <div class="stradegy-header">JOSM Starter-Kit</div></h3>
+### **<div class="tools-header">Check out our starter-kit video tutorial for JOSM</div>**
+<iframe width="720" height="315" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/SCOmFnW7uG8?si=hSxN_3SFm-cFFWuh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     
 ### **<div class="tools-header">1. Install and Configure JOSM  <img src="../images/josm_logo.jpg" style="height: 1.2em; vertical-align: middle; margin-left: 10px;"></div>** 
 
@@ -48,10 +51,10 @@ Get started by clicking on one of the OpenStreetMap editors:
     * You can switch between multiple satellite imagery sources (for instance, Esri, Mapbox) to use the clearest one for your area.
 1. Load your Satellite Imagery via `Imagery` and select `Bing aerial imagery` and `Esri World Imagery`. In the `Layers` window on the right hand side you can now `Show/hide` the different imagery by clicking on the eye. This is also where you will load additional data layers. Changing the order of the data and imagery allows you to combine and overlap the different data sources. Some countries, such as Japan, South Africa and Germany, have their own high-resolution imagery in JOSM. If you are mapping local imagery will automatically be visible under `Imagery`.
 
-!!! note
-    **⚠️ In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
+!!! Warning
+    **In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
     
-    **⚠️ By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Code of Mappers cannot be enforced for volunteer community mappers either.** 
+    **By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Code of Mappers cannot be enforced for volunteer community mappers either.** 
 
 
 ### **<div class="tools-header">2. Setup your Presets </div>**
@@ -102,6 +105,8 @@ Our community is constantly investigating transmission lines that are suitable f
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="../images/starter-kit/kenya-look-into-data.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">A substation of a hydroelectric power plant in Nigeria and the connection to the transmission grid.</figcaption>
+  <img src="../images/starter-kit/double-mapping-warning.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">The transmission lines do not end abruptly at the pink administrative borders. Therefore, the substation at the end of the interconnector may appear unmapped. The map in the download window displays all OpenStreetMap data, enabling you to swiftly verify whether substations or lines have been mapped. To map across borders, it is always recommended that you load both areas into your editor! Click to enlarge.</figcaption>
 </div>
 
 
@@ -110,6 +115,10 @@ Our community is constantly investigating transmission lines that are suitable f
 1. The data should now automatically appear in JOSM. In the `Layer` window on the right handside you should see the `Data Layer`, which is automatically named with the country/region you pressed on. The ✅ on the left of the Data Layer should be visible, indicating that this is the active layer. All your edits in the main windows will now be part of this `Data Layer`. 
 1. Familiarize yourself with the grid data, click on the lines and substation to inspect the tags and memberships in the window in the right side. 
 
+!!! Warning "Risk of Double Mapping"
+     Please bear in mind that you have only downloaded transmission grid data for the country, state or province that you selected. This includes power plants, generators, substations, power towers and transmission lines. Other OpenStreetMap objects, such as streets, will not be visible. **Therefore, never use our tools to map objects other than those loaded via Overpass, as otherwise other mappers will have to clean up the duplicate data.**
+
+    Some cross-border transmission lines will still be visible beyond the pink administrative boundaries. However, to edit these, you will need to load both countries. Never map beyond the pink administrative boundaries, as this will most likely result in infrastructure being mapped twice.
 
 
 ### **<div class="tools-header">6. Map your First Line</div>**

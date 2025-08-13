@@ -21,19 +21,19 @@ image: images/website/mapyourgrid-preview.jpg
         Map It📍
       </a>
       <a href="https://drive.google.com/file/d/1qzWIZ1Rq5s_DFfVhbZCS2a0-XZrez29A/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary">
-      One Pager 📄
+      At a Glance 📄
       </a>
     </div>
   </div>
   <div class="hero-content-right">
-    <img src="images/logos/MapYourGrid-logo.png" class="hero-logo off-glb">
+    <img src="images/logos/MapYourGrid-logo.webp" class="hero-logo off-glb">
   </div>
 </div>
 
 <div class="initiative-section">
   <div class="initiative-content">
     <h2>Help Map the World's Electricity Grids to Power a Fossil-Free Future</h2>
-    <iframe width="1280" height="720" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/6rcMVXc2lwc?si=JWOgvzKbadt2Nx9n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="1280" height="720" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/6rcMVXc2lwc?si=tw3xH5gVMvssvz4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p> Fossil fuels are responsible for over <a href="https://www.iea.org/topics/climate-change">75% of global greenhouse gas emissions</a>. You can play a vital role in supporting the energy transition by helping to map electrical grids in your local area. These grids need modernization and expansion to meet the demands of electrification and decarbonization, but a lack of reliable data is a <a href="https://iea.blob.core.windows.net/assets/70f2de45-6d84-4e07-bfd0-93833e205c81/ElectricityGridsandSecureEnergyTransitions.pdf" target="_blank" rel="noopener">major barrier</a>. Grid data provides governments, utilities, developers, and researchers with the information needed to plan effectively. That's where you come in.</p>
     <p>In recent years, OpenStreetMap has emerged as the de facto standard for global electrical grid data. However, many developing countries are still lagging behind. This gap limits rural energy access and slows down climate action:</p>
     <blockquote class="blockquote">
@@ -48,7 +48,7 @@ image: images/website/mapyourgrid-preview.jpg
       <a href="https://www.nature.com/articles/s41597-025-04550-7" target="_blank" rel="noopener">open digital twin of the European grid</a>, but also to expand global transmission grid coverage in OSM from 70% to 98% by 2028. <strong>MapYourGrid enables this through training, multiple validation strategies, optimized open-source tools and community building.</strong></p>
 
   <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank">
-  <img src="images/openinframap_crop.png" alt="Grid Illustration" class="initiative-content" style="width: 120%; border: 4px solid #2a6d3c;">
+  <img src="images/openinframap_crop.jpg" alt="Grid Illustration" class="initiative-content" style="width: 120%; border: 4px solid #2a6d3c;">
   </a>
   <p>OpenStreetMap's already extensive data on the electrical grid can be browsed on <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank" rel="noopener">Open Infrastructure Map</a>, showing the global scale of data collected since 2008, mostly by volunteers.</p> 
   <p>A global community of citizen contributors creates and maintains data on the core infrastructures of our modern society. Let's empower the mappers!</p>
@@ -88,13 +88,13 @@ image: images/website/mapyourgrid-preview.jpg
     </div>
   </div>
   <div>
-
   
   </br>
   </br>
 <p style="color:#54a36a;line-height: 1.5;margin-top: 3rem; font-size: 1.5rem;font-weight: 550;">
   Countries Where We’ve Closed Critical Grid Gaps
 </p>
+
 <div class="country-grid our-mapping-section">
   <div class="country-card"><a href="/countrypages/Bangladesh/"><img class="country-flag off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bangladesh.svg" alt="Bangladesh Flag"></a></div>
   <div class="country-card"><a href="/countrypages/Benin/"><img class="country-flag off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Benin.svg" alt="Benin Flag"></a></div>
@@ -240,7 +240,8 @@ document.addEventListener('DOMContentLoaded', () => {
   async function fetchLineLengthData() {
     const linesWrapperEl = document.getElementById('stat-lines-wrapper');
     try {
-      const resp = await fetch('/data/line-length.json');
+      const linedataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json');
+      const resp = await fetch(linedataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const data = await resp.json();
       const { lengthKm, percentageOfMediumHigh } = data;
@@ -255,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     } catch(err) {
       console.error('Failed to fetch line length data', err);
-      linesWrapperEl.innerHTML = `<span class="stat-number">Error</span>`;
+      linesWrapperEl.innerHTML = `<span class="stat-number">Maintenance</span>`;
     }
   }
 
@@ -263,13 +264,14 @@ document.addEventListener('DOMContentLoaded', () => {
   async function fetchTowerData() {
     const towersEl = document.getElementById('stat-towers');
     try {
-      const resp = await fetch('/data/tower-count.json');
+      const towerdataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json');
+      const resp = await fetch(towerdataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const { towerCount } = await resp.json();
       towersEl.textContent = towerCount.toLocaleString('en-US');
     } catch(err) {
       console.error('Failed to fetch tower count data', err);
-      towersEl.textContent = 'Error';
+      towersEl.textContent = 'Maintenance';
     }
   }
 

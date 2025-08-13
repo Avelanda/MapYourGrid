@@ -7,7 +7,7 @@ Across the globe, OpenStreetMap has proven its value in generating high-quality,
 <div class="starter-kit-buttons">
   <a href="#strategic-use-cases-energy-disaster-response-and-development" class="btn btn-primary">
   Strategic Use Cases: Energy, Disaster Response and Development</a>
-  <a href="#why-osm-matters-for-the-electrical-grid" class="btn btn-secondary">Why OSM Matters for the Electrical Grid?</a>
+  <a href="#why-openstreetmap-matters-for-the-electrical-grid" class="btn btn-secondary">Why OpenStreetMap Matters for the Electrical Grid?</a>
   <a href="#why-open-grid-data-matters" class="btn btn-secondary">
   Why Open Grid Data Matters?</a>
   <a href="#who-is-using-openstreetmap-grid-data" class="btn btn-secondary">  Who is using OpenStreetMap Grid Data? </a>
@@ -16,7 +16,7 @@ Across the globe, OpenStreetMap has proven its value in generating high-quality,
 </a>
 </div>
 
-## **<div class="tools-header">Strategic Use Cases : Energy, Disaster Response and Development</div>**
+## **<div class="tools-header">Strategic Use Cases: Energy, Disaster Response and Development</div>**
 
 OpenStreetMap’s unique value in creating high quality data for sustainable development has been proven by multiple initiatives all around the world: 
 
@@ -32,7 +32,7 @@ OpenStreetMap’s unique value in creating high quality data for sustainable dev
 
 </div> 
 
-1. The [Global Electrification Platform](https://electrifynow.energydata.info/) and [Distributed Renewable Energy Atlas](https://dre.energydata.info/), developed and used by the World Bank, support rural electrification planning across 58 countries. Built on OpenStreetMap data (transmission lines, roads, buildings, and settlements), they help identify off-grid populations and guide both grid and off-grid strategies. gep-onsset, the Open Source Software behind Global Electrification Platform, [relies heavily on electrical grid data of OpenStreetMap](https://gep-onsset.readthedocs.io/en/latest/GIS%20data%20collection.html#infrastructure).
+1. The [Global Electrification Platform](https://electrifynow.energydata.info/) and [Distributed Renewable Energy Atlas](https://dre.energydata.info/), developed and used by the World Bank, support rural electrification planning across 58 countries. The [REZoning](https://rezoning.energydata.info/) project helps to identify and explore areas with high potential for solar, onshore and offshore wind development projects for 249 countries. Using OpenStreetMap data on transmission lines, substations, roads, buildings and settlements, they help to identify off-grid populations and inform the planning of renewables and both grid and off-grid strategies. GEP-OnSSET, the Open Source Software behind Global Electrification Platform, [relies heavily on electrical grid data of OpenStreetMap](https://gep-onsset.readthedocs.io/en/latest/GIS%20data%20collection.html#infrastructure).
 
 1. The World Bank's [EnergyData.info](https://energydata.info/dataset/?q=OpenStreetMap) website hosts over 1,072 energy-related datasets, 533 of which directly depend on OpenStreetMap data. The World Bank uses this data to finance and support energy infrastructure projects in low- and middle-income countries, including expanding energy access, modernizing power systems, and promoting clean energy solutions. It also underpins major publications and creates reports for Decision Makers such as [Mini Grids for Half a Billion People](https://www.esmap.org/sites/default/files/esmap-files/Mini%20Grids%20for%20Half%20a%20Billion%20People%20-%20OKR%20Download%20Version_compressed_MKA.pdf).
 
@@ -40,7 +40,7 @@ OpenStreetMap’s unique value in creating high quality data for sustainable dev
 
 
 
-## **<div class="tools-header">Why OSM Matters for the Electrical Grid?</div>**
+## **<div class="tools-header">Why OpenStreetMap Matters for the Electrical Grid?</div>**
 
 
 OpenStreetMap’s electrical grid data is widely used by grid operators, academic institutions, government agencies, local authorities, and private organizations. It plays a crucial role in energy modeling and planning, shaping policy development and guiding investment decisions. 
@@ -49,7 +49,7 @@ These models help assess technological options, evaluate policy impacts, and map
 
 --- 
 
-### OSM for Smarter Energy Modelling 
+### OpenStreetMap for Smarter Energy Modelling 
 
 One of the most prominent use cases of OSM grid data is in energy modeling tools. These tools help simulate how energy systems behave under different scenarios, from policy shifts to climate targets.
 
@@ -77,7 +77,7 @@ Making this data freely available not only unlocks social value for planning but
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
   <img src="../images/impact/nigeria-osm.jpg" class="img-border" style="width: 100%;"> </a>
-  <figcaption class="image-caption"> More than 240 million people in Nigeria depend on electrical grid data from OpenStreetMap. The <a href="https://pypsa-earth.readthedocs.io/en/latest/index.html" target="_blank">Nigerian SE4ALL website</a>, which is hosted by the Federal Ministry of Power, uses OpenStreetMap as its main source on the transmission grid.</figcaption> 
+  <figcaption class="image-caption"> More than 240 million people in Nigeria depend on electrical grid data from OpenStreetMap. The <a href="https://nigeriase4all.gov.ng/" target="_blank">Nigerian SE4ALL website</a>, which is hosted by the Federal Ministry of Power, uses OpenStreetMap as its main source on the transmission grid.</figcaption> 
 </div> 
 
 > **IEA Key Policy Recommendation in 2024:**
@@ -537,12 +537,12 @@ For donors, researchers, and institutions that want to support open infrastructu
 - Highlight real-world examples where open data improved planning or disaster response.
 - Work closely with regional stakeholders and community mappers.
 - Fund training, peer review, and documentation improvements.
+- Understating the need for careful stewardship and legal awareness.
 
 **Avoid:**
 
 - Supporting mapping in high-conflict areas.
 - Treating openness as an all-or-nothing issue.
-- Understating the need for careful stewardship and legal awareness.
 
 ---
 
