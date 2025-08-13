@@ -88,8 +88,13 @@ image: images/website/mapyourgrid-preview.jpg
     </div>
   </div>
   <div>
+  
+  </br>
+  </br>
+<p style="color:#54a36a;line-height: 1.5;margin-top: 3rem; font-size: 1.5rem;font-weight: 550;">
+  Countries Where We’ve Closed Critical Grid Gaps
+</p>
 
-<h2 class="countries-title">Some Countries We Mapped</h2>
 <div class="country-grid our-mapping-section">
   <div class="country-card"><a href="/countrypages/Bangladesh/"><img class="country-flag off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bangladesh.svg" alt="Bangladesh Flag"></a></div>
   <div class="country-card"><a href="/countrypages/Benin/"><img class="country-flag off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Benin.svg" alt="Benin Flag"></a></div>

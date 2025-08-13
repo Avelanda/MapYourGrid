@@ -64,6 +64,7 @@ extra:
 
 extra_javascript:
   - js/umami.js
+  - js/gallery.js
 
 
 
@@ -88,7 +89,9 @@ markdown_extensions:
 
 
 plugins:
-  - glightbox
+  - glightbox:
+        skip_classes:
+            - thumb-gallery
   - search
 
   

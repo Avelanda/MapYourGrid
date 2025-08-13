@@ -424,9 +424,9 @@ We motivate mappers to engage directly with regional OpenStreetMap communities. 
 #### Clear Boundaries on What We Map
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/impact/kenya-substation-level-of-detail.jpg" class="img-border" style="width: 100%;"> 
+  <img src="../images/impact/kazakhstan-substation-level-of-detail.jpg" class="img-border" style="width: 100%;"> 
   <figcaption class="image-caption">
-     Typical resolution of Satellite images (ESRI) and Mapping Resolution of a Kenya Substation in OpenStreetMap. Lines end with portals at substations. No internal routing and components are mapped. 
+     Typical resolution of Satellite images (Bing) and Mapping Resolution of a substation  Kazakhstan in OpenStreetMap. Only equipment allowing to determine power voltages and number of circuits is mapped.
   </figcaption>
 </figure>
 </div> 
@@ -441,16 +441,50 @@ We motivate mappers to engage directly with regional OpenStreetMap communities. 
 
 - Power line routes.
 - Power tower locations. 
-- Power substation boundaries.
+- Power substation boundaries, and equipment that allows to determine power line voltages.
 - Voltage classifications. 
 
 **We do *NOT* map:** 
 
-- Substation interiors or fencing.
+- Indoor substation interiors or  outdoor substation equipment not required to determine power line voltages, fencing.
 - Control systems or communications infrastructure.
 - Security or surveillance features.
 
-This ensures that OSM grid data is useful without compromising operational or physical security. Detailed mapping of busbars, detailed routing and circuits within substations should only be carried out in collaboration with local mappers and utility operators.
+Switchgear equipment and transformers are only mapped to determine power line voltages and number of circuits, when no other information allows us to do so. More detailed and technical mapping within substations should only be carried out in collaboration with local mappers and utility operators. This ensures that OSM grid data is useful without compromising operational or physical security. Detailed mapping of busbars, detailed routing and circuits within substations should only be carried out in collaboration with local mappers and utility operators.
+
+Substations and other power-related infrastructures are industrial sites, typically closed to the public and posing serious risks such as electrical hazards, heat, exposure to chemicals, or death. Information gathering on-site should always be done safely and in full compliance with local regulations and warning signs. MapYourGrid does not encourage or expect contributors to enter restricted or hazardous areas, or to trespass fences or gates under any circumstances.
+
+**Illustration:**
+
+To illustrate why mapping substation equipment can be essential to determining power line voltages, here is a snippet of one of our tutorials : 
+
+<div class="gallery" aria-label="Image gallery">
+
+<div class="viewer">
+  <button class="nav prev" type="button" aria-label="Previous">◀</button>
+  <!-- <a class="viewer-link" href="../images/impact/Substation_mapping/substation_mapping_1.jpg"> -->
+  <a class="glightbox" id="gallery-img-glb" href="../images/impact/Substation_mapping/substation_mapping_1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
+    <img class="main-image off-glb" id="gallery-img" src="../images/impact/Substation_mapping/substation_mapping_1.jpg" alt="Selected image" />
+  </a>
+ <!-- </a> -->
+ <button class="nav next" type="button" aria-label="Next">▶</button>
+</div>
+
+<div class="thumbs-gallery" role="list">
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_1.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_1.jpg" alt="Substation to map" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_2.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_2.jpg" alt="Substation perimeter" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_3.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_3.jpg" alt="Power portals" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_4.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_4.jpg" alt="Power portals when double-circuit" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_5.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_5.jpg" alt="Power transformers" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_6.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_6.jpg" alt="Power tranformers indication" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_7.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_7.jpg" alt="Power switchgear" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_8.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_8.jpg" alt="Building" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_9.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_9.jpg" alt="220 kV switchgear" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_10.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_10.jpg" alt="Power voltages" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_11.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_11.jpg" alt="Substation is mapped" />
+</div>
+</div>
+
 
 #### Data Validation and Version Control
 
