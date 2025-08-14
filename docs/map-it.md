@@ -452,7 +452,7 @@ async function handleAreaClick(iso, level, layer) {
 
   umami.track('map-click');
   layer.setStyle({ color: '#ff7800' });
-  layer.getPopup().setContent(`Loading ${name}…`).update();
+  layer.getPopup().setContent(`Loading ${name}… You need to disable your ad blocker for this to work`).update();
 
   try {
     if (currentMode === 'Osmose_issues') {
