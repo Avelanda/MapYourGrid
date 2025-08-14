@@ -741,13 +741,13 @@ fetch('../data/countries.geojson')
       const iso  = layer.feature.properties.ISO_A2;
       const name = layer.feature.properties.NAME;
 
-      layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM`);
+      layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM. You need to disable your ad blocker for this to work`);
       layer.on('click', () => {
         // large countries should be clicked at region level when zoomed in
         if (largeCountries.includes(iso) && map.getZoom() >= zoomThreshold) {
           layer
             .getPopup()
-            .setContent(`<b>${name}</b><br>Please click on a specific region`)
+            .setContent(`<b>${name}</b><br>Please click on a specific region. You need to disable your ad blocker for this to work`)
             .update();
           return;
         }
