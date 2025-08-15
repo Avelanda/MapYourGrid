@@ -38,6 +38,7 @@ OpenStreetMap’s unique value in creating high quality data for sustainable dev
 
 1. The [Humanitarian OpenStreetMap Team](https://www.hotosm.org/) provides high-quality, open geospatial data to guide decision-makers during early disaster response. With over 419,000 volunteer mappers, HOT collaborates with satellite imaging providers like Maxar and humanitarian agencies like the Red Cross to ensure emergency decisions are backed by reliable, verifiable data. Especially as the extreme weather events become more frequent, access to accurate electrical grid data [is increasingly critical for the Humanitarian OpenStreetMap Team](https://github.com/USAFORUNHCRhive/turkana-grid-mapping).
 
+1. The [Energy Access Explorer](https://www.energyaccessexplorer.org/) is the first open-source, online, interactive geospatial platform enabling energy planners, clean energy entrepreneurs, donors and development institutions to identify areas of high priority for energy access interventions. With over 100 partner organisations and eight participating countries, including India, Nigeria and Ethiopia, it relies heavily on OpenStreetMap data, including transmission and distribution data.
 
 
 ## **<div class="tools-header">Why OpenStreetMap Matters for the Electrical Grid?</div>**
