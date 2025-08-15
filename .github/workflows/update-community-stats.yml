@@ -3,7 +3,7 @@ name: 📈 Update Community Stats
 on:
   workflow_dispatch: {} # Allows manual triggering
   schedule:
-    - cron: '0 4 * * 5' # Runs every Friday (number 5) at 4 UTC
+    - cron: '0 4 * * 1' # Runs every Monday (number 1) at 4 UTC
 
 permissions:
   contents: write
@@ -27,11 +27,14 @@ jobs:
         env:
           OSMCHA_TOKEN: ${{ secrets.OSMCHA_TOKEN }}
         run: python docs/py-scripts/update_community_stats.py --mode weekly
-
-      - name: 💾 Commit & push if changed
-        uses: EndBug/add-and-commit@v9
+       
+      - name: ⬆️ Upload JSON to Release
+        uses: softprops/action-gh-release@v2
         with:
-          author_name: github-actions[bot]
-          author_email: github-actions[bot]@users.noreply.github.com
-          message: "chore: weekly community stats update 🤖"
-          add: 'docs/data/community-stats.json'
+          tag_name: latest-stats
+          name: "Latest release of data"
+          body: "Automated weekly update of json data files."
+          files: docs/data/community-stats.json
+          prerelease: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

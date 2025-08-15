@@ -12,18 +12,21 @@
 
 This Starter-Kit empowers you how to map your first line of the electrical transmission grid. If you ever get stuck with the Starter-Kit or would like to provide feedback, please contact us via our [community chat](https://discord.gg/fBw7ARTUeR) or [via email](mailto:MapYourGrid@openenergytransition.org). A MapYourGrid community member will help you finish your first line and set up your environment.
 
-We recommend JOSM generally, particularly for professional, large-scale grid mapping and to inspect the electrical grid. However, if you only want to make minor edits or leave notes without installing anything, the iD editor in combination with [Open Infrastructure Map](https://openinframap.org/) and MapComplete is a better choice. These tools also offer enhanced usability for field mapping tasks and data validation.
+We recommend JOSM (Java OpenStreetMap) editor generally, particularly for professional, large-scale grid mapping and to inspect the electrical grid. However, if you only want to make minor edits or leave notes without installing anything, the iD editor in combination with [Open Infrastructure Map](https://openinframap.org/) and MapComplete is a better choice. These tools also offer enhanced usability for field mapping tasks and data validation. You can follow our tutorials on this website, but we also have a video tutorial for JOSM!
 
 Get started by clicking on one of the OpenStreetMap editors:
 
 <div class="starter-kit-buttons">
-  <a href="#josm-starter-kit" class="btn btn-primary">JOSM Starter‑Kit – Large‑Scale Mapping</a> 
-  <a href="#id-starter-kit" class="btn btn-secondary">iD Starter‑Kit – Small‑Scale & Field Mapping</a>
-  <a href="#mapcomplete-starter-kit" class="btn btn-secondary">MapComplete Starter‑Kit – Missing Tags Mapping</a>
+  <a href="#josm-starter-kit" class="btn btn-primary">JOSM Starter‑Kit - Large‑Scale Mapping</a> 
+  <a href="#id-starter-kit" class="btn btn-secondary">iD Starter‑Kit - Small‑Scale & Field Mapping</a>
+  <a href="#mapcomplete-starter-kit" class="btn btn-secondary">MapComplete Starter‑Kit - Missing Tags Mapping</a>
 </div>
 
 
+
 ## <div class="stradegy-header">JOSM Starter-Kit</div></h3>
+### **<div class="tools-header">Check out our starter-kit video tutorial for JOSM</div>**
+<iframe width="720" height="315" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/SCOmFnW7uG8?si=hSxN_3SFm-cFFWuh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     
 ### **<div class="tools-header">1. Install and Configure JOSM  <img src="../images/josm_logo.jpg" style="height: 1.2em; vertical-align: middle; margin-left: 10px;"></div>** 
 
@@ -36,17 +39,23 @@ Get started by clicking on one of the OpenStreetMap editors:
   <img src="../images/starter-kit/imagery.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">For countries such as Japan, high-resolution imagery is available across the whole country in JOSM. Click to enlarge.</figcaption>
 </div>
-!!! note
-    **The JOSM Preferences window is accessed through the `Edit → Preferences` menu on Windows and Linux, and `JOSM → Settings` on Mac.**
+
+
 
 1. Install JOSM using the [**recommended instructions**](installation-instructions.md) for your machine.
-1. Link your OSM account to JOSM. To do this, go to `Edit → Preferences → OSM Server` and select "Authorise". Login (or sign-up) with your OSM account. Your OSM account should now be linked. Be aware that your token key is now stored in your local preferences.xml file. Do not share this file with anyone. <br>
-1. Enable `Remote control` in `Edit → Preferences → Remote Control`, and enable it. This allows for grid data to be loaded automatically..:
+1. Link your OSM account to JOSM. To do this, go to `Edit → Preferences → OSM Server` and select "Authorise". Login (or sign-up) with your OSM account. Your OSM account should now be linked. On macOS `Preferences` can be found under `JOSM → Settings`
+1. Enable `Remote control` in `Edit → Preferences → Remote Control`. This allows for grid data to be loaded automatically.
 1. Enable `Expert Mode` `View → Expert Mode` to enable search function that you will need. 
 1. Understanding JOSM layers. JOSM works with stacked layers, similar to Photoshop or GIS tools:
     * You’ll typically have an OSM data layer, imagery layers, and optionally GeoJSON or task layers.
     * You can switch between multiple satellite imagery sources (for instance, Esri, Mapbox) to use the clearest one for your area.
 1. Load your Satellite Imagery via `Imagery` and select `Bing aerial imagery` and `Esri World Imagery`. In the `Layers` window on the right hand side you can now `Show/hide` the different imagery by clicking on the eye. This is also where you will load additional data layers. Changing the order of the data and imagery allows you to combine and overlap the different data sources. Some countries, such as Japan, South Africa and Germany, have their own high-resolution imagery in JOSM. If you are mapping local imagery will automatically be visible under `Imagery`.
+
+!!! Warning
+    **In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
+    
+    **By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Code of Mappers cannot be enforced for volunteer community mappers either.** 
+
 
 ### **<div class="tools-header">2. Setup your Presets </div>**
 
@@ -55,7 +64,7 @@ Get started by clicking on one of the OpenStreetMap editors:
   <figcaption class="image-caption">Default MapYourGrid Presets in JOSM toolbar. Click to enlarge.</figcaption>
 </div>
 
-1. For ease of mapping, customise your top toolbar with presets if you have not used the default preferences. Right click the toolbar and choose `Configure toolbar` (or also `Preferences → Toolbar`). Then on the right, select `Presets → Man Made → Man Made/Power` and add `Power Towers`, `Power Portal`, `Power Substation`, `Power Plants`, `Power Line` and `Power Generators`, by pressing the button in the middle to add these to your toolbar. This are the main objects you will need for transmission grid mapping. You can also remove the presets you won't use.
+1. For ease of mapping, customise your top toolbar with presets if you have not used the default preferences. Right click the toolbar and choose `Configure toolbar` (or also `Preferences → Toolbar`). Then on the right, select `Presets → Man Made → Man Made/Power` and add `Power Towers`, `Power Portal`, `Power Substation`, `Power Plants`, `Power Line` and `Power Generators`, by pressing the button in the middle to add these to your toolbar. These are the main objects you will need for transmission grid mapping. You can also remove the presets you won't use.
 2. Another important Preset your will need is `Add Node`. You will find it under `Tools` → `Add Node`. 
 3. When you open a new layer later in the tutorial, the toolbar will stop being grey.
 
@@ -83,7 +92,7 @@ Get started by clicking on one of the OpenStreetMap editors:
 Our community is constantly investigating transmission lines that are suitable for beginner friendly mapping experiences. Simply select a 'Good First Lines' from the following spreadsheet, and tick it if you have started mapping it. For now, just keep in mind in which country (or region) your picked 'Good first line' is in, as the next step is to load that countries' grid!
 
 ??? success "Good First Lines (Click Me)"
-    <a href="https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js" target="_blank">Open this Spreadsheet in another Windoww</a>
+    <a href="https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js" target="_blank">Open this Spreadsheet in another Window</a>
 
     <iframe
      src="https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js/edit?usp=sharing&rm=minimal"
@@ -96,6 +105,8 @@ Our community is constantly investigating transmission lines that are suitable f
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="../images/starter-kit/kenya-look-into-data.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">A substation of a hydroelectric power plant in Nigeria and the connection to the transmission grid.</figcaption>
+  <img src="../images/starter-kit/double-mapping-warning.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">The transmission lines do not end abruptly at the pink administrative borders. Therefore, the substation at the end of the interconnector may appear unmapped. The map in the download window displays all OpenStreetMap data, enabling you to swiftly verify whether substations or lines have been mapped. To map across borders, it is always recommended that you load both areas into your editor! Click to enlarge.</figcaption>
 </div>
 
 
@@ -104,6 +115,10 @@ Our community is constantly investigating transmission lines that are suitable f
 1. The data should now automatically appear in JOSM. In the `Layer` window on the right handside you should see the `Data Layer`, which is automatically named with the country/region you pressed on. The ✅ on the left of the Data Layer should be visible, indicating that this is the active layer. All your edits in the main windows will now be part of this `Data Layer`. 
 1. Familiarize yourself with the grid data, click on the lines and substation to inspect the tags and memberships in the window in the right side. 
 
+!!! Warning "Risk of Double Mapping"
+     Please bear in mind that you have only downloaded transmission grid data for the country, state or province that you selected. This includes power plants, generators, substations, power towers and transmission lines. Other OpenStreetMap objects, such as streets, will not be visible. **Therefore, never use our tools to map objects other than those loaded via Overpass, as otherwise other mappers will have to clean up the duplicate data.**
+
+    Some cross-border transmission lines will still be visible beyond the pink administrative boundaries. However, to edit these, you will need to load both countries. Never map beyond the pink administrative boundaries, as this will most likely result in infrastructure being mapped twice.
 
 
 ### **<div class="tools-header">6. Map your First Line</div>**
@@ -131,13 +146,13 @@ Our community is constantly investigating transmission lines that are suitable f
 ### **<div class="tools-header">7. Upload your Edits to OpenStreetMap :outbox_tray: </div>**
 
 1. Whilst having the `Data Layer` activated, press the green arrow pointing upwards <img src="../images/starter-kit/upload.png" class="icon-svg off-glb" style="width: 30px; height: auto;">, which should open a new window. 
-1. Another new window `Validation Results` will apear in the right panel showing all the issues identified. Right-clicking on an issue will allow you to zoom in on it. Avoid ignoring this validation results. The only acceptable warning when uploading data is `Possible missing line support node within power line`. 
+1. Another new window `Validation Results` will appear in the right panel showing all the issues identified. Right-clicking on an issue will allow you to zoom in on it. Avoid ignoring this validation results. The only acceptable warning when uploading data is `Possible missing line support node within power line`. 
 1. In the upload window, please tick the `I would like someone to review my edits` tick box if your mapping has been strongly affected by uncertainties like low-quality satellite data, or if you are a beginner. Provide a brief comment such as `#mapyourgrid Unfinished transmission line`. Provide the imagery source layer you used by typing `Esri` or `Bing` for example. Once done and sure about your edits, `Upload Changes`.
 1. You just mapped your First Good Line. Feel free to close more First Good Lines, but make sure you leave some for the others. You can use the [Tools and Strategies](tools.md) we have provided to find your own unmapped line. To support our initiative, please use the #MapYourGrid hashtag in the comments when you upload a changeset.
 
 
 
-## **<div class="tools-header"> Avoid these common Mistakes :name_badge:</div>**
+## **<div class="tools-header"> Avoid these Common Mistakes :name_badge:</div>**
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="../images/starter-kit/power-towers-without-lines.jpg" class="img-border" style="width: 100%;"> </a>
@@ -166,16 +181,16 @@ Check out our [Tools and Strategies](tools.md) to learn how to find your own new
 
 You are also welcome to join our community calls to find out more about the mapping process and our initiative. Simply participate in one of the public events listed in this calendar.
 
-<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FBerlin&showPrint=0&title=Community%20live%20sessions&src=Y182ODE3NjE1MGIzMjY4MGRkZmUzMGM1ZTE1MDU0YTc5MTVhMzY2NmY1OGY5NjkxOGVjOTZhNDJjZWQwODQ2ZGVmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23AD1457" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=mapyourgrid%40gmail.com&ctz=Europe%2FBerlin" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 
 ## <div class="stradegy-header">iD Starter-Kit</div></h3>
 
-Although editors such as iD and MapComplete offer a simpler way to contribute to smaller grid mapping, they quickly reach their limits with large lines and complex geometries. However, these platforms have clear advantages for mapping in the field using mobile devices compared to JOSM. For people who prefer iD over JOSM, the following tutorials can also be used to map on a PC.
+Although editors such as iD and MapComplete offer a simpler way to contribute to smaller grid mapping, they quickly become limited when handling large lines or complex geometries. However, these platforms have clear advantages for mapping in the field using mobile devices compared to JOSM. For people who prefer iD over JOSM, the following tutorials can also be used to map on a PC.
 
 Also, if you just want to add a note or report an issue, or if you want to suggest the addition of power towers or substations in your area, this platform offers a great way to make a quick contribution. Taking images in the field with MapComplete is also key to validating satellite-based mapping where detailed, high-resolution images are missing. Taking images can also be important for deriving relevant metadata, such as wind [turbine power capacities](https://mapcomplete.org/openwindpowermap.html?z=13&lat=39.548330293512805&lon=9.219887340880064). We are currently working on extending this functionality to power towers to enable more accurate estimation of transmission line voltages.
 
-### <div class="stradegy-header">Reporting Issues in the Grid using iD</div></h3>
+### <div class="stradegy-header">Reporting Issues in the Grid Using iD</div></h3>
 
 The fastest and easiest way to contribute to your electrical grid is by adding notes where you see missing or incorrect information in OpenStreetMap. You can do this fully anonymously with no login required.
 
@@ -188,7 +203,7 @@ The fastest and easiest way to contribute to your electrical grid is by adding n
 
 1. Go to the [Open Infrastructure Map](https://openinframap.org/#2/26/12).
 2. Click **Find my location** in the top-right corner or search for your city.
-3. Click on a substation, power tower, power line, or power plant where you want to report an issue.
+3. Click on the substation, power tower, power line, or power plant where you'd like to report an issue.
 4. In the description window, click the **OpenStreetMap** logo.
 5. The [OpenStreetMap.org](https://www.openstreetmap.org/) interface will now open at that location.
 6. Click the **Add a note to the map** button on the right-hand panel.
@@ -196,11 +211,11 @@ The fastest and easiest way to contribute to your electrical grid is by adding n
 
 Reporting such smaller issues will significantly improve the long-term quality of your local grid's data.
 
-### <div class="stradegy-header">Add Power Towers or Substations using iD</div></h3>
+### <div class="stradegy-header">Add Power Towers or Substations Using iD</div></h3>
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="../images/starter-kit/easy-edit.jpg" class="img-border" style="width: 100%;">
-  <figcaption class="image-caption">To place a power tower, you first have to set a node and then add a tag (left). To save your edits on a mobile device using the iD Editor (right), you have to close the inspector panel on the left so that the Save button is visible. Click to enlarge.</figcaption>
+  <figcaption class="image-caption">To place a power tower, you first have to set a node and then add a tag (left). To save your edits on a mobile device using the iD Editor (right), you’ll need to close the inspector panel to reveal the `Save` button. Click to enlarge.</figcaption>
 </div>
 
 Have you spotted some power towers, power plants, or substations near your place that are still missing and want to quickly map them yourself? This can be done on your mobile device or PC using the iD editor. In this way, you can also correct voltages, circuits, or other errors you see in Open Infrastructure Map.
@@ -272,18 +287,23 @@ The [MapComplete](https://mapcomplete.org/) platform provides an easy way to ide
 You don’t need to be a grid expert to start mapping, but a little knowledge helps!
 The following documents and materials will give you a basic understanding of how to map an electrical grid.
 
-The [Learning Curve](https://www.youtube.com/@TheLearningCurveBenila/videos), is a YouTube channel that will help you understand the fundamental knowledge of the electrical grid. Here some video we recommend for grid mappers. 
+The [Learning Curve](https://www.youtube.com/@TheLearningCurveBenila/videos) is a YouTube channel that will help you understand the fundamental knowledge of the electrical grid. Here some video we recommend for grid mappers. 
 
 1. [Electrical Line Supports - Transmission Towers & Poles](https://www.youtube.com/watch?v=AB1qYsiDm0M)
 1. [Components of Overhead Transmission Lines](https://www.youtube.com/watch?v=A6fwq3yHRXQ)
 1. [Comparison between HVAC and HVDC transmission system](https://www.youtube.com/watch?v=l9nHs8e0WUg)
 
-The following image is take from the report Key technology components of electricity grids Source: IEA - [Electricity Grids and Secure Energy Transitions](https://iea.blob.core.windows.net/assets/ea2ff609-8180-4312-8de9-494bcf21696d/ElectricityGridsandSecureEnergyTransitions.pdf).
+We recommend the following documents for a deeper dive into the construction of the electrical grid and how it is designed, including the relationship between distance and voltage based on IEC 60071-2. Please keep in mind that different standards may apply depending on the country.
+
+1. [Overhead Line Methodology](https://go.ratedpower.com/hubfs/CS-Knowledge%20Base/Methodologies/Overhead%20Line%20Methodology.pdf)
+1. [Overhead Electrical Lines Exceeding AC 1 kV](https://webstore.ansi.org/preview-pages/bsi/preview_30365961.pdf)
+
+The following image illustrates the fundamental design of the electrical grid:  [Electricity Grids and Secure Energy Transitions](https://iea.blob.core.windows.net/assets/ea2ff609-8180-4312-8de9-494bcf21696d/ElectricityGridsandSecureEnergyTransitions.pdf) 
 
 <div style="float: left; margin: 5px 0 20px 20px; width: 100%;">
   <a href="../images/grid-design.png" target="_blank">
   <img src="../images/grid-design.png" class="img-border" style="width: 100%;"> </a>
-  <figcaption class="image-caption">Key technology components of electricity grids Source: IEA - Electricity Grids and Secure Energy Transitions.</figcaption>
+  <figcaption class="image-caption">Key technology components of electricity grids Source: IEA - CC BY 4.0 - <a href="https://iea.blob.core.windows.net/assets/ea2ff609-8180-4312-8de9-494bcf21696d/ElectricityGridsandSecureEnergyTransitions.pdf"> Electricity Grids and Secure Energy Transitions </a>.</figcaption>
 </div>
 
 

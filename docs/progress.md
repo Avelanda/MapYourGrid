@@ -1,5 +1,5 @@
 <div class="page-headers">
-<h1>Our Progress</h1>
+<h1>Progress</h1>
 </div>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 450px; max-width: 100%">
@@ -9,11 +9,11 @@
 </div>
 
 
-MapYourGrid measures its progress at user, hashtag and country level. We would be honoured to make your progress part of the initiative. If you use our tools and training courses please use the #MapYourGrid hashtag in your changesets or add your user id to our [KPI script](https://github.com/open-energy-transition/MapYourGrid/blob/main/.github/workflows/update-tower-count.yml). If you would like to contribute to our development or keep up to date with our progress, take a look at our public [organization project management](https://github.com/orgs/open-energy-transition/projects/25/views/7) and [roadmap](https://github.com/orgs/open-energy-transition/projects/25/views/13). You may have noticed that our KPIs currently prioritise coverage over data quality. This is because our initiative is working to increase coverage in low- and middle-income countries, resulting in more issues appearing in this grid. However, quality KPIs are currently under development and will be based on the [quality assurance layers that we are implementing simultaneously](tools.md/#quality-assurance-and-validation).
+MapYourGrid measures its progress at user, hashtag and country level. We would be honoured to make your progress part of the initiative. If you use our tools and training courses please use the #MapYourGrid hashtag in your changesets or add your user ID to our [KPI script](https://github.com/open-energy-transition/MapYourGrid/blob/main/.github/workflows/update-tower-count.yml). If you would like to contribute to our development or keep up to date with our progress, take a look at our public [organization project management](https://github.com/orgs/open-energy-transition/projects/25/views/7) and [roadmap](https://github.com/orgs/open-energy-transition/projects/25/views/13). You may have noticed that our KPIs currently prioritise coverage over data quality. This is because our initiative is working to increase coverage in low- and middle-income countries, resulting in more issues appearing in this grid. However, quality KPIs are currently under development and will be based on the [quality assurance layers that we are implementing simultaneously](tools.md/#quality-assurance-and-validation).
 
 
 <div class="progress-buttons">
-     <a href="#country-list" class="btn btn-primary">
+     <a href="#countries" class="btn btn-primary">
       Country list 🌐
      </a>
       <a href="#community-mapping-progress" class="btn btn-primary">
@@ -28,28 +28,142 @@ MapYourGrid measures its progress at user, hashtag and country level. We would b
 </div>
 
 <!-- Countries Section -->
-## **<div class="tools-header">Country list </div>**
+## **<div class="tools-header">Countries </div>**
 
-We contribute to mapping the grid all around the world. Discover our main contributions in different countries:
+Our work supports better access to electricity across the globe. In the countries below, we’ve helped map and fill critical gaps in the electrical grid.
 
-![Flag Bangladesh](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bangladesh.svg){width=20px} [Bangladesh](countrypages/Bangladesh.md) - 
-![Flag Benin](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Benin.svg){width=20px} [Benin](countrypages/Benin.md) -
-![Flag Bolivia](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bolivia.svg){width=20px} [Bolivia](countrypages/Bolivia.md) - 
-![Flag Bosnia and Herzegovina](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bosnia%20and%20Herzegovina.svg){width=20px} [Bosnia and Herzegovina](countrypages/Bosnia and Herzegovina.md) - 
-![Flag Cambodia](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg){width=20px} [Cambodia](countrypages/Cambodia.md) - 
-![Flag Colombia](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Colombia.svg){width=20px} [Colombia](countrypages/Colombia.md) -
-![Flag Georgia](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg){width=20px} [Georgia](countrypages/Georgia.md) - 
-![Flag Kazakhstan](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kazakhstan.svg){width=20px} [Kazakhstan](countrypages/Kazakhstan.md) - 
-![Flag Kenya](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kenya.svg){width=20px} [Kenya](countrypages/Kenya.md) - 
-![Flag Mongolia](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mongolia.svg){width=20px} [Mongolia](countrypages/Mongolia.md) - 
-![Flag Nepal](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nepal.svg){width=20px} [Nepal](countrypages/Nepal.md) -
-![Flag Nigeria](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nigeria.svg){width=20px} [Nigeria](countrypages/Nigeria.md) - 
-![Flag Pakistan](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Pakistan.svg){width=20px} [Pakistan](countrypages/Pakistan.md) - 
-![Flag Sri Lanka](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sri%20Lanka.svg){width=20px} [Sri Lanka](countrypages/Sri Lanka.md) - 
-![Flag Turkmenistan](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Turkmenistan.svg){width=20px} [Turkmenistan](countrypages/Turkmenistan.md) -
-![Flag Uganda](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uganda.svg){width=20px} [Uganda](countrypages/Uganda.md) - 
-![Flag Uzbekistan](http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uzbekistan.svg){width=20px} [Uzbekistan](countrypages/Uzbekistan.md) - 
+<div class="grid-wrapper">
 
+  <div class="country-card">
+    <a href="/countrypages/Bangladesh/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bangladesh.svg" alt="Bangladesh Flag">
+    </a> </br>  
+    <a href="/countrypages/Bangladesh/"> Bangladesh </a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Benin/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Benin.svg" alt="Benin Flag">
+    </a> </br>
+    <a href="/countrypages/Benin/">Benin</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Bolivia/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bolivia.svg" alt="Bolivia Flag">
+    </a> </br>
+    <a href="/countrypages/Bolivia/">Bolivia</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Bosnia%20and%20Herzegovina/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bosnia%20and%20Herzegovina.svg" alt="Bosnia and Herzegovina Flag">
+    </a> </br>
+    <a href="/countrypages/Bosnia%20and%20Herzegovina/">Bosnia and Herzegovina</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Cambodia/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg" alt="Cambodia Flag">
+    </a> </br>
+    <a href="/countrypages/Cambodia/">Cambodia</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Colombia/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Colombia.svg" alt="Colombia Flag">
+    </a> </br>
+    <a href="/countrypages/Colombia/">Colombia</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Georgia/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag">
+    </a> </br>
+    <a href="/countrypages/Georgia/">Georgia</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Kazakhstan/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kazakhstan.svg" alt="Kazakhstan Flag">
+    </a> </br>
+    <a href="/countrypages/Kazakhstan/">Kazakhstan</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Kenya/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kenya.svg" alt="Kenya Flag">
+    </a> </br>
+    <a href="/countrypages/Kenya/">Kenya</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Mongolia/">
+      <img class="off-glbg" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mongolia.svg" alt="Mongolia Flag">
+    </a> </br>
+    <a href="/countrypages/Mongolia/">Mongolia</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Nepal/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nepal.svg" alt="Nepal Flag">
+    </a> </br>
+    <a href="/countrypages/Nepal/">Nepal</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Nigeria/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nigeria.svg" alt="Nigeria Flag">
+    </a> </br>
+    <a href="/countrypages/Nigeria/">Nigeria</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Pakistan/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Pakistan.svg" alt="Pakistan Flag">
+    </a> </br>
+    <a href="/countrypages/Pakistan/">Pakistan</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Sri%20Lanka/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sri%20Lanka.svg" alt="Sri Lanka Flag">
+    </a> </br>
+    <a href="/countrypages/Sri%20Lanka/">Sri Lanka</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Turkmenistan/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Turkmenistan.svg" alt="Turkmenistan Flag">
+    </a> </br>
+    <a href="/countrypages/Turkmenistan/">Turkmenistan</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Uganda/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uganda.svg" alt="Uganda Flag">
+    </a> </br>
+    <a href="/countrypages/Uganda/">Uganda</a>
+  </div>
+
+  <div class="country-card">
+    <a href="/countrypages/Uzbekistan/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uzbekistan.svg" alt="Uzbekistan Flag">
+    </a> </br>
+    <a href="/countrypages/Uzbekistan/">Uzbekistan</a>
+  </div>
+
+</div>
+
+
+
+
+</br>
+
+<div style="text-align:center">
+<img src="https://raw.githubusercontent.com/ben10dynartio/apps/refs/heads/main/mapyourgrid/images/country_grid_4x4.jpg" class="img-border" style="width: 60%;">
+<figcaption class="image-caption">Our progress in different countries. Click to enlarge.</figcaption>
+</div> 
 
 <!-- Progress Bars Section -->
 ## **<div class="tools-header">Community Mapping Progress </div>**
@@ -219,7 +333,8 @@ We contribute to mapping the grid all around the world. Discover our main contri
   towerUpdatedEl.textContent = 'Last updated: —';
 
   try {
-    const resp = await fetch('/data/tower-count.json');
+    const towerdataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json');
+    const resp = await fetch(towerdataUrl);
     if (!resp.ok) throw new Error(resp.statusText);
     const { towerCount: count, updated } = await resp.json();
 
@@ -229,7 +344,7 @@ We contribute to mapping the grid all around the world. Discover our main contri
   }
   catch(err) {
     console.error('Error loading tower count', err);
-    towerCountEl.textContent = 'Error';
+    towerCountEl.textContent = 'Maintenance';
     towerUpdatedEl.textContent = '';
   }
 }
@@ -244,8 +359,8 @@ async function loadLineLength() {
   updatedEl.textContent  = 'Last updated: —';
 
   try {
-    const resp = await fetch('/data/line-length.json');
-    if (!resp.ok) throw new Error(resp.statusText);
+    const lineDataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/line-length.json');
+    const resp = await fetch(lineDataUrl);
     const data = await resp.json();
     const { lengthKm, mediumHighVoltageKm, percentageOfMediumHigh, updated } = data;
 
@@ -262,7 +377,7 @@ async function loadLineLength() {
     updatedEl.textContent  = `Last updated: ${new Date(updated).toLocaleString()}`;
   } catch(err) {
     console.error('Error loading line length', err);
-    lengthEl.textContent = 'Error';
+    lengthEl.textContent = 'Maintenance';
     updatedEl.textContent = '';
   }
 }
@@ -286,7 +401,8 @@ async function loadCommunityStats() {
   communityLineLengthUpdatedEl.textContent = 'Last updated: —';
 
   try {
-    const resp = await fetch('/data/community-stats.json');
+    const communityDataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/community-stats.json');
+    const resp = await fetch(communityDataUrl);
     if (!resp.ok) throw new Error(resp.statusText);
     const data = await resp.json();
 
@@ -316,8 +432,8 @@ async function loadCommunityStats() {
   } catch (err) {
     console.error('Error loading community stats', err);
     // Change to 'Error' for clarity when something goes wrong fetching data
-    towerCountEl.textContent = 'Error';
-    lengthEl.textContent = 'Error';
+    towerCountEl.textContent = 'Maintenance';
+    lengthEl.textContent = 'Maintenance';
     communityTowerUpdatedEl.textContent = ''; // Clear timestamp on error
     communityLineLengthUpdatedEl.textContent = ''; // Clear timestamp on error
   }
@@ -333,7 +449,8 @@ async function loadPlantCapacity() {
     capacityUpdatedEl.textContent = 'Last updated: —';
 
     try {
-      const resp = await fetch('/data/power-stats.json');
+      const powerDataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/power-stats.json');
+      const resp = await fetch(powerDataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const { total_capacity_mw, updated } = await resp.json();
 
@@ -342,7 +459,7 @@ async function loadPlantCapacity() {
       capacityUpdatedEl.textContent = `Last updated: ${new Date(updated).toLocaleString()}`;
     } catch (err) {
       console.error('Error loading plant capacity', err);
-      capacityCountEl.textContent = 'In Progress Feature';
+      capacityCountEl.textContent = 'Maintenance';
       capacityUpdatedEl.textContent = '';
     }
   }
@@ -357,7 +474,8 @@ async function loadSubstationCount() {
     substationUpdatedEl.textContent = 'Last updated: —';
 
     try {
-      const resp = await fetch('/data/power-stats.json');
+      const powerDataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/power-stats.json');
+      const resp = await fetch(powerDataUrl);
       if (!resp.ok) throw new Error(resp.statusText);
       const { substation_count, updated } = await resp.json();
 
@@ -366,7 +484,7 @@ async function loadSubstationCount() {
       substationUpdatedEl.textContent = `Last updated: ${new Date(updated).toLocaleString()}`;
     } catch (err) {
       console.error('Error loading substation capacity', err);
-      substationCountEl.textContent = 'In Progress Feature';
+      substationCountEl.textContent = 'Maintenance';
       substationUpdatedEl.textContent = '';
     }
   }
@@ -448,6 +566,80 @@ async function loadSubstationCount() {
 </script>
 
 You can find more stats for #MapYourGrid at [OhsomeNowstats](https://stats.now.ohsome.org/dashboard#hashtag=MapYourGrid&start=2025-03-12T22:00:00Z&end=2025-05-14T21:59:59Z&interval=P1M&countries=&topics=).
+
+??? success "Top #mapyourgrid Community Mappers Leaderboard"
+    **This is a leaderboard of the top 10 community mappers of power towers who used our hashtag in their changesets.** <br>
+    :exclamation: **Grid quality, substations and power plants are as important as tower coverage!**
+    <div id="leaderboard-container">
+            <div class="loader">Loading leaderboard...</div>
+    </div>
+    <p id="last-updated"></p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const leaderboardContainer = document.getElementById('leaderboard-container');
+      const lastUpdatedElement = document.getElementById('last-updated');
+      
+      // The URL to fetch the JSON data from the release
+      const dataUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://github.com/open-energy-transition/MapYourGrid/releases/download/latest-stats/community-stats.json');
+      
+      async function fetchAndDisplayLeaderboard() {
+          try {
+              const response = await fetch(dataUrl);
+              if (!response.ok) {
+                  throw new Error(`HTTP error! status: ${response.status}`);
+              }
+              const data = await response.json();
+
+              // --- Process Data ---
+              const users = data.users;
+              const sortedUsers = Object.entries(users)
+                  .sort(([, towersA], [, towersB]) => towersB - towersA);
+              
+              const top10 = sortedUsers.slice(0, 10);
+
+              // --- Build Table HTML ---
+              let tableHtml = `
+                  <table class="leaderboard-table">
+                      <thead>
+                          <tr>
+                              <th>Rank</th>
+                              <th>Mapper</th>
+                              <th>Towers Mapped</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+              `;
+
+              top10.forEach(([username, towers], index) => {
+                  const rank = index + 1;
+                  tableHtml += `
+                      <tr>
+                          <td>${rank}</td>
+                          <td>${username}</td>
+                          <td>${towers.toLocaleString()}</td>
+                      </tr>
+                  `;
+              });
+
+              tableHtml += `</tbody></table>`;
+              
+              // --- Display Results ---
+              leaderboardContainer.innerHTML = tableHtml;
+              
+              // --- Display Last Updated Time ---
+              const updatedDate = new Date(data.updated);
+              lastUpdatedElement.textContent = `Last updated: ${updatedDate.toLocaleString()}`;
+
+          } catch (error) {
+              leaderboardContainer.innerHTML = `<p style="color: red;">Could not load leaderboard data. Please try again later.</p>`;
+              console.error("Error fetching leaderboard:", error);
+          }
+      }
+
+      fetchAndDisplayLeaderboard();
+  });
+</script>
 
 ## **<div class="tools-header">Line Length Growth per Country </div>**
 

@@ -14,7 +14,7 @@ hide:
     If this is your first time grid mapping, please go through the [Starter-Kit](starter-kit.md). You can use the **#MapYourGrid** hashtag in your changeset to show your support for our initiative when you make an edit! To start mapping, please open [JOSM](https://josm.openstreetmap.de/), ensure that remote control is activated in `Preferences` and load your data: 
 
     1. The **Default Transmission (90 kV+)** pulls all power infrastructure relevant for the **transmission grid**. For more details about which data is pulled via Overpass please read our [OpenStreetMap Grid Definitions](https://github.com/open-energy-transition/osm-grid-definition). Distribution grids are barely visible in satellite data and should therefore only be mapped in individual cases.
-    2. The Osmose, Global Energy Monitor, and Wikidata buttons provide **hint layer** data, which you can read about in our [Tools and Strategies](tools.md) page. Please note that this hint layers only work at a national level. 
+    2. The Osmose, Global Energy Monitor, and Wikidata buttons provide **hint layer** data, which you can read about in our [Tools and Strategies](tools.md) page. Please note that hint layers only work at a national level. 
 
 <!-- Beginning of Map section-->
 <style>
@@ -195,11 +195,11 @@ async function initQueryUI() {
     line-height: 1.5;
   `;
   introBox.innerHTML = `
-    <strong>📍LOAD POWER INFRASTRUCTURE</strong><br/>
+    <strong>📍LOAD YOUR GRID INFRASTRUCTURE</strong><br/>
     <ol style="margin: 0.5em 0 0 1em; padding-left: 1em;">
       <li>Click on the country you want to load in JOSM. Zoom in to select states or provinces.</li>
-      <li>Click on Tools and Hints to download data layers to support grid mapping.</li>
-      <li>Don't forget to checkout the Map Legend, Good First Lines and Curated Electrical Grid Maps below.</li>
+      <li>Click on Tools and Hints to download the data layers that will support you in grid mapping.</li>
+      <li>Don't forget to checkout the Map Legend, Good First Lines, Hot Keys and Curated Electrical Grid Maps below.</li>
       
     </ol>
     `;
@@ -452,7 +452,7 @@ async function handleAreaClick(iso, level, layer) {
 
   umami.track('map-click');
   layer.setStyle({ color: '#ff7800' });
-  layer.getPopup().setContent(`Loading ${name}…`).update();
+  layer.getPopup().setContent(`Loading ${name}… You need to disable your ad blocker for this to work`).update();
 
   try {
     if (currentMode === 'Osmose_issues') {
@@ -741,13 +741,13 @@ fetch('../data/countries.geojson')
       const iso  = layer.feature.properties.ISO_A2;
       const name = layer.feature.properties.NAME;
 
-      layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM`);
+      layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM. You need to disable your ad blocker for this to work`);
       layer.on('click', () => {
         // large countries should be clicked at region level when zoomed in
         if (largeCountries.includes(iso) && map.getZoom() >= zoomThreshold) {
           layer
             .getPopup()
-            .setContent(`<b>${name}</b><br>Please click on a specific region`)
+            .setContent(`<b>${name}</b><br>Please click on a specific region. You need to disable your ad blocker for this to work`)
             .update();
           return;
         }
@@ -779,7 +779,7 @@ fetch('../data/regionsv2.geojson')
 
 
 <!-- ENd-->
-??? info "Map Legend for the recommended [MapCSS](starter-kit.md#3-add-visual-clarity-with-custom-map-styles) (Click Me)"
+??? success "Map Legend for the recommended [MapCSS](starter-kit.md#3-add-visual-clarity-with-custom-map-styles) (Click Me)"
     <img 
       src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.png" 
       class="img-border image-caption" 
@@ -875,11 +875,17 @@ The following list provides the main good practices for mapping different power 
 * [Power generation/Guidelines/Hydropower](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Hydropower)
 * [Power generation/Guidelines/Solar plants](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Solar_plants)
 * [Power networks/Guidelines/Interconnector](https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines/Interconnector)
+* [Clarifying power=pole vs power=tower](https://community.openstreetmap.org/t/clarifying-power-pole-vs-power-tower/127382)
 
-!!! note "Local Projects and Code of Mappers"
-    **⚠️ Before you start mapping, please find out about the mapping restrictions in the respective country. In some countries, the mapping of transmission lines is not permitted. Get in touch with local users by finding out about [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects).  If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
+!!! Warning "Local Projects and Code of Mappers"
+    **Before you start mapping, please find out about the mapping restrictions in the respective country. In some countries, the mapping of transmission lines is not permitted. Get in touch with local users by finding out about [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects).  If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
 
-    **⚠️ By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OpenStreetMap platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please do NOT copy any data from hint layer directly into your OpenStreetMap data layer. Every data point in your OpenStreetMap data layer must be manually set and [verified](https://wiki.openstreetmap.org/wiki/Verifiability). The metadata must also be verified against compatible licensed sources or by people on the ground. If you cannot verify the data using satellite images or any other compatible source, please do not add this information from hint layers. This may seem like a high burden at first, but it ensures the high quality of OpenStreetMap.** 
+    **By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OpenStreetMap platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please do NOT copy any data from hint layer directly into your OpenStreetMap data layer. Every data point in your OpenStreetMap data layer must be manually set and [verified](https://wiki.openstreetmap.org/wiki/Verifiability). The metadata must also be verified against compatible licensed sources or by people on the ground. If you cannot verify the data using satellite images or any other compatible source, please do not add this information from hint layers. This may seem like a high burden at first, but it ensures the high quality of OpenStreetMap.** 
+
+!!! Warning "Risk of Double Mapping"
+     Please bear in mind that you have only downloaded transmission grid data for the country, state or province that you selected. This includes power plants, generators, substations, power towers and transmission lines. Other OpenStreetMap objects, such as streets, will not be visible. **Therefore, never use our tools to map objects other than those loaded via Overpass, as otherwise other mappers will have to clean up the duplicate data.**
+
+    Some cross-border transmission lines will still be visible beyond the pink administrative boundaries. However, to edit these, you will need to load both countries. Never map beyond the pink administrative boundaries, as this will most likely result in infrastructure being mapped twice.
 
 
 ## Join the Chat <img src="/icons/discord.svg" alt="Discord" class="social-icon" style="width:1.2em; vertical-align:middle; margin-left:0.5ch;"> {.tools-header style="font-weight:700"}
@@ -887,5 +893,5 @@ We welcome everyone to join our [📍-MapYourGrid discord channel](https://disco
 
 ## <div class="tools-header">Join the Community  :calendar: </div>
 We welcome everyone to join our community calls and tutorials, to learn more about the mapping process and the initiative.
-<iframe src="https://calendar.google.com/calendar/embed?src=mapyourgrid%40openenergytransition.org&ctz=Europe%2FBerlin" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=mapyourgrid%40gmail.com&ctz=Europe%2FBerlin" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
