@@ -252,7 +252,7 @@ Our work supports better access to electricity across the globe. In the countrie
 
 </div>
 
-
+<!-- Progress bars script------------------------------------------------- -->
 <script>
 
     // —— CONFIGURE THESE GOALS ——
@@ -564,7 +564,7 @@ async function loadSubstationCount() {
     }
   });
 </script>
-
+<!-- Progress bars script------------------------------------------------- -->
 You can find more stats for #MapYourGrid at [OhsomeNowstats](https://stats.now.ohsome.org/dashboard#hashtag=MapYourGrid&start=2025-03-12T22:00:00Z&end=2025-05-14T21:59:59Z&interval=P1M&countries=&topics=).
 
 ??? success "Top #mapyourgrid Community Mappers Leaderboard"
@@ -575,6 +575,7 @@ You can find more stats for #MapYourGrid at [OhsomeNowstats](https://stats.now.o
     </div>
     <p id="last-updated"></p>
 
+Want to calculate your own progress? Check out this [web interface](https://open-energy-transition.github.io/KPI-OSM/) where you can calculate the number of towers/poles you placed in a country, substations edited, and total MW capacity you added to a country.
 <script>
   document.addEventListener('DOMContentLoaded', function() {
       const leaderboardContainer = document.getElementById('leaderboard-container');
