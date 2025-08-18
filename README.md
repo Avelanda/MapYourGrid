@@ -13,14 +13,14 @@ Despite the urgent need to expand the global electricity grid, the industry has 
 
 [Taking Stock to Taking Action: How to implement the COP28 energy goals](https://iea.blob.core.windows.net/assets/f2f6dbe0-ee3d-4ffc-ac8b-b811a868b9b1/FromTakingStocktoTakingAction.pdf)
 
-That's why [Open Energy Transition](https://openenergytransition.org/) has launched this open initiative, working with the OpenStreetMap community, organisations and individuals around the world to not only create an [open digital twin of the European grid](https://www.nature.com/articles/s41597-025-04550-7), but also **to expand the global coverage of the transmission grid in OpenStreetMap from around 70% to 98% over the next three years.**
+That's why we have launched this open initiative, working with the OpenStreetMap community, organisations and individuals around the world to not only create an [open digital twin of the European grid](https://www.nature.com/articles/s41597-025-04550-7), but also **to expand the global coverage of the transmission grid in OpenStreetMap from around 70% to 98% over the next three years.**
 
 ## How you can get involved?
 Your support can make a significant impact on closing the data gap in the electricity grid. The MapYourGrid initiative will empower you! Are you good at online research? Do you like programming? Do you want to recognise power towers and other electrical infrastructure on satellite images? Do you want to use this data for a climate mitigation or the electrification of rural communities? We can help you find the right contribution for your skills and experience:
 
 When you make an edit, please use the **#MapYourGrid** in the changeset to help the initiative!
 
-⚠️ **If you're eager to get started with transmission grid mapping in OpenStreetMap, check out the [Grid Mapping Starter Kit](https://github.com/open-energy-transition/grid-mapping-starter-kit) and [our community discord channel](https://discord.gg/a5znpdFWfD).** ⚠️
+⚠️ **If you're eager to get started with transmission grid mapping in OpenStreetMap, check out the [Grid Mapping Starter Kit](https://mapyourgrid.org/starter-kit/) and [our community discord channel](https://discord.gg/a5znpdFWfD).** ⚠️
 
 
 ## Contribute to this website
