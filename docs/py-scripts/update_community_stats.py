@@ -73,7 +73,7 @@ class CommunityStatsAnalyzer:
     
 def main(mode, start_date_str):
     # We need the OSMCha token from environment variables in GitHub Actions
-    osmcha_token = '6b11eecddcc18368c5f3298be12478a450be09b8'
+    osmcha_token = os.getenv('OSMCHA_TOKEN')
     if not osmcha_token:
         raise ValueError("OSMCHA_TOKEN environment variable not set!")
 
