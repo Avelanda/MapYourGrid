@@ -142,11 +142,15 @@ def fetch_substation_count():
 
     try:
         print("Sending request to Overpass API for substations...")
+        headers = {
+            'User-Agent': 'MapYourGrid Line Length Script (via GitHub Action; +https://github.com/open-energy-transition/MapYourGrid)'
+        }
 
         response = requests.post(
             overpass_url, 
             data={"data": query},
-            timeout=1300  # 10 minutes timeout
+            headers = headers,
+            timeout=1320  # 10 minutes timeout
         )
         
         print(f"Substations response status code: {response.status_code}")
