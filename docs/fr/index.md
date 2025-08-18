@@ -1,6 +1,6 @@
 ---
-description: Capacitamos a individuos, comunidades y naciones de todo el mundo para
-  cartografiar la red eléctrica.
+description: We empower individuals, communities and nations around the world to map
+  the electrical grid.
 hide:
 - navigation
 - toc
@@ -12,53 +12,53 @@ title: MapYourGrid
 <div class="hero-section">
  <div class="hero-content-left">
  <h1 class="hero-title">MapYourGrid</h1>
- <p class="mission-statement"> Capacitamos a individuos, comunidades y naciones de todo el mundo para cartografiar la red eléctrica.
+ <p class="mission-statement"> Nous donnons aux individus, aux communautés et aux nations du monde entier les moyens de cartographier le réseau électrique.
  </p>
  <div class="hero-buttons">
  <a href="/starter-kit/" target="_blank" rel="noopener" class="btn btn-primary">
- Aprende a mapear la red⚡
+ Apprend à cartographier ⚡
  </a>
  <a href="/map-it/" target="_blank" rel="noopener" class="btn btn-secondary">
  Map It📍
  </a>
  <a href="https://drive.google.com/file/d/1qzWIZ1Rq5s_DFfVhbZCS2a0-XZrez29A/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary">
- En una página 📄
+ En une page 📄
  </a>
  </div>
  </div>
  <div class="hero-content-right">
- <img src="../images/logos/MapYourGrid-logo.webp" class="hero-logo off-glb">
+ <img src="/images/logos/MapYourGrid-logo.webp" class="hero-logo off-glb">
  </div>
 </div>
 
 <div class="initiative-section">
  <div class="initiative-content">
- <h2>Ayuda a cartografiar las redes eléctricas del mundo para impulsar un futuro sin combustibles fósiles</h2>
+ <h2>Aidez-nous à cartographier les réseaux électriques mondiaux pour un avenir sans énergie fossile</h2>
  <iframe width="1280" height="720" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/6rcMVXc2lwc?si=tw3xH5gVMvssvz4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
- <p> Los combustibles fósiles son responsables de más de <a href="https://www.iea.org/topics/climate-change">75% de las emisiones mundiales de gases de efecto invernadero</a> Usted puede desempeñar un papel fundamental en la transición energética ayudando a cartografiar las redes eléctricas de su localidad. Estas redes necesitan modernizarse y ampliarse para satisfacer las demandas de electrificación y descarbonización, pero la falta de datos fiables es una <a href="https://iea.blob.core.windows.net/assets/70f2de45-6d84-4e07-bfd0-93833e205c81/ElectricityGridsandSecureEnergyTransitions.pdf" target="_blank" rel="noopener">principal obstáculo</a> Los datos de red proporcionan a gobiernos, empresas de servicios públicos, promotores e investigadores la información necesaria para planificar con eficacia. Ahí es donde entra usted.</p>
- <p>En los últimos años, OpenStreetMap se ha convertido en la norma de facto para los datos sobre redes eléctricas mundiales. Sin embargo, muchos países en desarrollo siguen rezagados. Esta brecha limita el acceso a la energía rural y frena la acción por el clima:</p>
+ <p> Les combustibles fossiles sont responsables de plus de <a href="https://www.iea.org/topics/climate-change">75 % des émissions mondiales de gaz à effet de serre</a> Vous pouvez jouer un rôle essentiel dans la transition énergétique en aidant à cartographier les réseaux électriques dans votre région. Ces réseaux ont besoin d'être modernisés et étendus pour répondre aux exigences de l'électrification et de la décarbonisation, mais le manque de données fiables est un <a href="https://iea.blob.core.windows.net/assets/70f2de45-6d84-4e07-bfd0-93833e205c81/ElectricityGridsandSecureEnergyTransitions.pdf" target="_blank" rel="noopener">obstacle majeur</a> à la transition énergétique. Les données du réseau fournissent aux gouvernements, aux services publics, aux promoteurs et aux chercheurs les informations nécessaires à une planification efficace. C'est là que vous intervenez.</p>
+ <p>Ces dernières années, OpenStreetMap s'est imposé comme la norme de facto pour les données relatives au réseau électrique mondial. Cependant, de nombreux pays en développement sont encore à la traîne. Ce retard limite l'accès à l'énergie dans les zones rurales et ralentit l'action en faveur du climat :</p>
  <blockquote class="blockquote">
- Mejorar la fiabilidad y disponibilidad de los datos para evaluar y gestionar mejor los riesgos de los proyectos de energía limpia en las economías de mercado emergentes y en desarrollo.
+ Améliorer la fiabilité et la disponibilité des données afin de mieux évaluer et gérer les risques liés aux projets d'énergie propre dans les marchés émergents et les économies en développement.
  </blockquote>
  <p class="reference">
- Recomendación clave - Agencia Internacional de la Energía: <a href="https://www.iea.org/events/from-taking-stock-to-taking-action-how-to-implement-the-cop28-energy-goals" target="_blank" rel="noopener">Cómo alcanzar los objetivos energéticos de la COP28</a>
+ Recommandation clé - Agence internationale de l'énergie : <a href="https://www.iea.org/events/from-taking-stock-to-taking-action-how-to-implement-the-cop28-energy-goals" target="_blank" rel="noopener">Comment mettre en œuvre les objectifs énergétiques de la COP28</a>
  </p>
- <h2>Hacia una red cartográfica mundial</h2>
+ <h2>Vers un réseau cartographié à l'échelle mondiale</h2>
  <p>
- Estamos trabajando con la comunidad OpenStreetMap, organizaciones y particulares de todo el mundo no sólo para crear un 
- <a href="https://www.nature.com/articles/s41597-025-04550-7" target="_blank" rel="noopener">gemelo digital abierto de la red europea </a>y ampliar la cobertura global de la red de transporte en OSM del 70% al 98% para 2028. <strong>MapYourGrid lo hace posible gracias a la formación, las múltiples estrategias de validación, las herramientas optimizadas de código abierto y la creación de comunidades.</strong></p>
+ Nous travaillons avec la communauté OpenStreetMap, des organisations et des individus du monde entier pour non seulement créer une base de données sur l'Internet, mais aussi pour améliorer la qualité de l'information. 
+ <a href="https://www.nature.com/articles/s41597-025-04550-7" target="_blank" rel="noopener">jumeau numérique ouvert du réseau européen </a>mais aussi d'étendre la couverture globale du réseau de transport dans OSM de 70 % à 98 % d'ici à 2028. <strong>MapYourGrid permet d'atteindre cet objectif grâce à la formation, à de multiples stratégies de validation, à des outils open-source optimisés et à la création d'une communauté.</strong></p>
 
  <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank">
- <img src="../images/openinframap_crop.jpg" alt="Grid Illustration" class="initiative-content" style="width: 120%; border: 4px solid #2a6d3c;">
+ <img src="/images/openinframap_crop.jpg" alt="Grid Illustration" class="initiative-content" style="width: 120%; border: 4px solid #2a6d3c;">
  </a>
- <p>Los ya extensos datos de OpenStreetMap sobre la red eléctrica pueden consultarse en <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank" rel="noopener">Mapa de infraestructuras abiertas </a>que muestra la escala global de los datos recogidos desde 2008, en su mayoría por voluntarios.</p> 
- <p>Una comunidad mundial de contribuyentes ciudadanos crea y mantiene datos sobre las infraestructuras básicas de nuestra sociedad moderna. ¡Demos poder a los cartógrafos!</p>
+ <p>Les données déjà très complètes d'OpenStreetMap sur le réseau électrique peuvent être consultées à l'adresse suivante <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank" rel="noopener">Open Infrastructure Map</a> qui montre l'ampleur mondiale des données collectées depuis 2008, principalement par des bénévoles.</p> 
+ <p>Une communauté mondiale de contributeurs citoyens crée et maintient des données sur les infrastructures de base de notre société moderne. Donnons le pouvoir aux cartographes !</p>
  
  </div>
 </div>
 
 <div class="our-mapping-section">
- <h2>Nuestra cartografía</h2>
+ <h2>Notre cartographie</h2>
  <div class="stats-grid">
  <div class="stat-card">
  <div class="stat-icon">
@@ -67,7 +67,7 @@ title: MapYourGrid
  <div class="stat-number-wrapper">
  <span id="stat-towers" class="stat-number">...</span>
  </div>
- <div class="stat-label">Torres de energía desde marzo de 2025</div>
+ <div class="stat-label">Pylônes depuis mars 2025</div>
  </div>
  <div class="stat-card">
  <div class="stat-icon ">
@@ -76,7 +76,7 @@ title: MapYourGrid
  <div class="stat-number-wrapper">
  <span id="stat-contributors" class="stat-number">...</span>
  </div>
- <div class="stat-label">Contribuyentes desde marzo de 2025</div>
+ <div class="stat-label">Contributeurs depuis mars 2025</div>
  </div>
  <div class="stat-card">
  <div class="stat-icon">
@@ -85,7 +85,7 @@ title: MapYourGrid
  <div id="stat-lines-wrapper" class="stat-number-wrapper">
  <span id="stat-lines" class="stat-number">...</span>
  </div>
- <div class="stat-label">Líneas eléctricas en km desde marzo de 2025</div>
+ <div class="stat-label">Lignes électriques en km depuis mars 2025</div>
  </div>
  </div>
  <div>
@@ -93,7 +93,7 @@ title: MapYourGrid
  </br>
  </br>
 <p style="color:#54a36a;line-height: 1.5;margin-top: 3rem; font-size: 1.5rem;font-weight: 550;">
- Países en los que hemos cerrado brechas críticas en la red
+ Pays où nous avons comblé des lacunes critiques dans le réseau électrique
 </p>
 
 <div class="country-grid our-mapping-section">
@@ -118,85 +118,85 @@ title: MapYourGrid
 </div>
  <div>
  <img src="/images/progress/mapyourgrid-globalprogress.jpg" alt="Grid Illustration" class="initiative-content" style="width: 80%; border: 4px solid #2a6d3c;">
- <figcaption class="fig-label">Vista general de todas las líneas editadas por los cartógrafos de MapYourGrid. Haz clic para ampliar.
+ <figcaption class="fig-label">Une vue d'ensemble de toutes les lignes éditées par les cartographes de MapYourGrid. Cliquez sur l'image pour l'agrandir.
 </figcaption>
  </div>
  </div>
 </div>
 
 <div class="get-involved-section">
- <h2>Participa</h2>
+ <h2>S'impliquer</h2>
  <div class="get-involved-grid">
  <a href="https://discord.gg/a5znpdFWfD" class="get-involved-card">
  <div class="card-icon">
- <img src="../icons/discord.svg" alt="Discord" class="icon-svg off-glb">
+ <img src="/icons/discord.svg" alt="Discord" class="icon-svg off-glb">
  </div>
- <h3>Únete a nuestra comunidad</h3>
- <p>Conéctese con otros colaboradores en Discord y participe en los debates de nuestra comunidad.</p>
+ <h3>Rejoindre notre communauté</h3>
+ <p>Connectez-vous avec d'autres contributeurs sur Discord et participez aux discussions de notre communauté.</p>
  </a>
  <a href="/starter-kit/" class="get-involved-card">
  <div class="card-icon">
  ⚡
  </div>
- <h3>Cómo empezar Mapeo de cuadrículas</h3>
- <p>Empieza a contribuir a OpenStreetMap y ayuda a cartografiar la red eléctrica de tu zona.</p>
+ <h3>Démarrer la cartographie des réseaux</h3>
+ <p>Commencez à contribuer à OpenStreetMap et aidez à cartographier le réseau électrique de votre région.</p>
  </a>
  <a href="/map-it/" class="get-involved-card">
  <div class="card-icon">
  📍
  </div>
- <h3>Contribuya a su país</h3>
- <p>Aplique estrategias y herramientas cartográficas avanzadas a su red de transporte local.</p>
+ <h3>Contribuer à votre pays</h3>
+ <p>Appliquer des stratégies et des outils cartographiques avancés à votre réseau de transmission local.</p>
  </a>
 </div>
 
 </div>
 
 <div class="who-we-are-section">
-<h2>Quiénes somos</h2>
+<h2>Qui sommes-nous ?</h2>
 <p class="lead-statement">
- MapYourGrid es una iniciativa gratuita y de código abierto que cuenta con el apoyo de las siguientes organizaciones. Queremos capacitar a una comunidad mundial de ciudadanos y organizaciones para crear y mantener datos sobre las infraestructuras básicas de nuestra sociedad moderna. ¿Quieres unirte o apoyarnos? Póngase en contacto con <a href="mailto:MapYourGrid@openenergytransition.org" target="_blank" rel="noopener">por correo electrónico</a> 
+ MapYourGrid est une initiative libre et gratuite soutenue par les organisations suivantes. Nous voulons permettre à une communauté mondiale de citoyens et d'organisations de créer et de maintenir des données sur les infrastructures de base de notre société moderne. Vous souhaitez nous rejoindre ou nous soutenir ? Contact <a href="mailto:MapYourGrid@openenergytransition.org" target="_blank" rel="noopener">nous par email</a> 
 </p>
 <div class="partners-grid">
 <div class="partner-item">
 <a href="https://openenergytransition.org/" target="_blank" rel="noopener">
-<img src="../images/logos/oet-logo.png" alt="Open Energy Transition Logo" class="partner-logo">
+<img src="/images/logos/oet-logo.png" alt="Open Energy Transition Logo" class="partner-logo">
 </a>
 </div>
 <div class="partner-item">
 <a href="https://datactivist.coop/en/" target="_blank" rel="noopener">
-<img src="../images/logos/datactivist-logo.png" alt="Datactivist Logo" class="partner-logo"> 
+<img src="/images/logos/datactivist-logo.png" alt="Datactivist Logo" class="partner-logo"> 
 </a>
 </div>
 <div class="partner-item">
 <a href="https://dynartio.com/" target="_blank" rel="noopener">
-<img src="../images/logos/dynartio-logo.svg" alt="Dynartio Logo" class="partner-logo"> 
+<img src="/images/logos/dynartio-logo.svg" alt="Dynartio Logo" class="partner-logo"> 
 </a>
 </div>
 <div class="partner-item">
 <a href="https://junglebus.io/" target="_blank" rel="noopener">
-<img src="../images/logos/junglebus-logo.jpg" alt="Jungle Bus Logo" class="partner-logo-smaller"> 
+<img src="/images/logos/junglebus-logo.jpg" alt="Jungle Bus Logo" class="partner-logo-smaller"> 
 </a>
 </div>
 <div class="partner-item">
 <a href="https://www.infrageomatics.com/" target="_blank" rel="noopener">
-<img src="../images/logos/infrageomatics-logo.jpg" alt="Infrageomatics Logo" class="partner-logo"> 
+<img src="/images/logos/infrageomatics-logo.jpg" alt="Infrageomatics Logo" class="partner-logo"> 
 </a>
 </div>
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
- <h3 class="section-title">Patrocinado por
+ <h3 class="section-title">Sponsorisé par</h3>
  <div>
  <a href="https://www.breakthroughenergy.org/" target="_blank" rel="noopener">
- <img src="../images/logos/be-logo.png" alt="Sponsor Logo" style="max-height: 40px; width: auto;" class="off-glb">
+ <img src="/images/logos/be-logo.png" alt="Sponsor Logo" style="max-height: 40px; width: auto;" class="off-glb">
  </a>
  </div>
 </div>
 </div>
 
 <div class="our-mapping-section" style="display: flex; flex-direction: column; align-items: center;">
- <h2>Suscríbase a nuestro boletín</h2>
+ <h2>S'abonner à notre lettre d'information</h2>
  <div>
  <script async src="https://eocampaign1.com/form/c308f2c6-6898-11f0-9bf6-53fb9ff1b12b.js" data-form="c308f2c6-6898-11f0-9bf6-53fb9ff1b12b"></script>
  </div>

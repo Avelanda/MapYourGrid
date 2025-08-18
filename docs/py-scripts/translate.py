@@ -6,7 +6,7 @@ from pathlib import Path
 
 def translate_markdown_file(source_file, target_lang):
     # Replace with your actual DeepL API key
-    translator = deepl.Translator("d7523e6c-8fa2-4774-99b3-31ff5cfed594:fx")
+    translator = deepl.Translator("DEEPL API KEY")
     
     with open(source_file, 'r', encoding='utf-8') as f:
         content = f.read()

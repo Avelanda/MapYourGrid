@@ -463,29 +463,28 @@ To illustrate why mapping substation equipment can be essential to determining p
 
 <div class="viewer">
   <button class="nav prev" type="button" aria-label="Previous">◀</button>
-  <!-- <a class="viewer-link" href="/images/impact/Substation_mapping/substation_mapping_1.jpg"> -->
-  <a class="glightbox" id="gallery-img-glb" href="/images/impact/Substation_mapping/substation_mapping_1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
-    <img class="main-image off-glb" id="gallery-img" src="/images/impact/Substation_mapping/substation_mapping_1.jpg" alt="Selected image" />
+  <!-- <a class="viewer-link" href="../images/impact/Substation_mapping/substation_mapping_1.jpg"> -->
+  <a class="glightbox" id="gallery-img-glb" href="../images/impact/Substation_mapping/substation_mapping_1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
+    <img class="main-image off-glb" id="gallery-img" src="../images/impact/Substation_mapping/substation_mapping_1.jpg" alt="Selected image" />
   </a>
  <!-- </a> -->
  <button class="nav next" type="button" aria-label="Next">▶</button>
 </div>
 
 <div class="thumbs-gallery" role="list">
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_1.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_1.jpg" alt="Substation to map" />
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_2.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_2.jpg" alt="Substation perimeter" />
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_3.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_3.jpg" alt="Power portals" />
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_4.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_4.jpg" alt="Power portals when double-circuit" />
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_5.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_5.jpg" alt="Power transformers" />
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_6.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_6.jpg" alt="Power tranformers indication" />
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_7.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_7.jpg" alt="Power switchgear" />
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_8.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_8.jpg" alt="Building" />
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_9.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_9.jpg" alt="220 kV switchgear" />
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_10.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_10.jpg" alt="Power voltages" />
-  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_11.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_11.jpg" alt="Substation is mapped" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_1.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_1.jpg" alt="Substation to map" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_2.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_2.jpg" alt="Substation perimeter" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_3.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_3.jpg" alt="Power portals" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_4.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_4.jpg" alt="Power portals when double-circuit" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_5.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_5.jpg" alt="Power transformers" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_6.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_6.jpg" alt="Power tranformers indication" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_7.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_7.jpg" alt="Power switchgear" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_8.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_8.jpg" alt="Building" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_9.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_9.jpg" alt="220 kV switchgear" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_10.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_10.jpg" alt="Power voltages" />
+  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_11.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_11.jpg" alt="Substation is mapped" />
 </div>
 </div>
-
 
 #### Data Validation and Version Control
 

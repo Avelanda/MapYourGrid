@@ -32,7 +32,7 @@ El valor único de OpenStreetMap en la creación de datos de alta calidad para e
 
 </div> 
 
-1. En [Plataforma mundial de electrificación](https://electrifynow.energydata.info/) y [Atlas de energías renovables distribuidas](https://dre.energydata.info/)desarrollado y utilizado por el Banco Mundial, apoya la planificación de la electrificación rural en 58 países. El sitio [Rezonificación](https://rezoning.energydata.info/) ayuda a identificar y explorar zonas con gran potencial para proyectos de desarrollo de energía solar, terrestre y eólica marina en 249 países. Utilizando datos de OpenStreetMap sobre líneas de transmisión, subestaciones, carreteras, edificios y asentamientos, ayudan a identificar las poblaciones sin conexión a la red y a informar sobre la planificación de las energías renovables y las estrategias tanto de conexión a la red como fuera de ella. GEP-OnSSET, el software de código abierto detrás de la Plataforma de Electrificación Global, [se basa en gran medida en los datos de la red eléctrica de OpenStreetMap](https://gep-onsset.readthedocs.io/en/latest/GIS%20data%20collection.html#infrastructure).
+1. En [Plataforma mundial de electrificación](https://electrifynow.energydata.info/) y [Atlas de energías renovables distribuidas](https://dre.energydata.info/) desarrollado y utilizado por el Banco Mundial, apoya la planificación de la electrificación rural en 58 países. El sitio [Rezonificación](https://rezoning.energydata.info/) ayuda a identificar y explorar zonas con gran potencial para proyectos de desarrollo de energía solar, terrestre y eólica marina en 249 países. Utilizando datos de OpenStreetMap sobre líneas de transmisión, subestaciones, carreteras, edificios y asentamientos, ayudan a identificar las poblaciones sin conexión a la red y a informar sobre la planificación de las energías renovables y las estrategias tanto de conexión a la red como fuera de ella. GEP-OnSSET, el software de código abierto detrás de la Plataforma de Electrificación Global, [se basa en gran medida en los datos de la red eléctrica de OpenStreetMap](https://gep-onsset.readthedocs.io/en/latest/GIS%20data%20collection.html#infrastructure).
 
 1. El Banco Mundial [EnergyData.info](https://energydata.info/dataset/?q=OpenStreetMap) alberga más de 1.072 conjuntos de datos relacionados con la energía, 533 de los cuales dependen directamente de datos de OpenStreetMap. El Banco Mundial utiliza estos datos para financiar y apoyar proyectos de infraestructuras energéticas en países de renta baja y media, como la ampliación del acceso a la energía, la modernización de los sistemas eléctricos y la promoción de soluciones energéticas limpias. También sirve de base a importantes publicaciones y crea informes para los responsables de la toma de decisiones, tales como [Minirredes para 500 millones de personas](https://www.esmap.org/sites/default/files/esmap-files/Mini%20Grids%20for%20Half%20a%20Billion%20People%20-%20OKR%20Download%20Version_compressed_MKA.pdf).
 
@@ -356,7 +356,7 @@ Durante los últimos 17 años, se han creado datos de redes de transporte a esca
 
 ---
 
-### Why Infrastructure Mapping Raises Concerns
+### Por qué el mapeo de infraestructuras suscita inquietudes
 
 Las infraestructuras de transporte de electricidad se consideran fundamentales para la estabilidad nacional y regional. Impulsa las economías, sustenta los sistemas sanitarios y conecta a las comunidades. 
 
