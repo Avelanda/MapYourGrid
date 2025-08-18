@@ -3,7 +3,6 @@ import json
 import asyncio
 import aiohttp
 import time
-import math
 import os
 import argparse
 import sys
@@ -19,6 +18,7 @@ TEAM_MEMBERS = {
 }
 HASHTAG = "mapyourgrid"
 STATS_FILE = "docs/data/community-stats.json"
+LENGTH_ESTIMATE_FACTOR = 0.317
 
 class CommunityStatsAnalyzer:
     def __init__(self, osmcha_token):
@@ -70,68 +70,10 @@ class CommunityStatsAnalyzer:
         print(f"Total new towers from community: {community_tower_count}")
         return community_users, community_tower_count
 
-    def get_community_line_length(self, community_users):
-        """Builds and runs an Overpass query to get line length for community users."""
-        if not community_users:
-            print("No community users found, skipping line length calculation.")
-            return None
-
-        user_query_part = ", ".join(f'"{user}"' for user in community_users)
-        query = f"""
-        [out:json][timeout:1800];
-        node["power"="tower"](user:{user_query_part})->.community_towers;
-        way["power"="line"](bn.community_towers)->.connected_ways;
-        (
-          node.community_towers;
-          way.connected_ways;
-        );
-        out body;
-        >;
-        out skel qt;
-        """
-        
-        print("Running Overpass query for line length... (this may take a while)")
-        try:
-            response = requests.post(self.overpass_base, data={"data": query}, timeout=300)
-            response.raise_for_status()
-            data = response.json()
-        except requests.RequestException as e:
-            print(f"Error querying Overpass API: {e}")
-            return None
-
-        print("Calculating distance from Overpass data...")
-        return self._calculate_haversine_distance(data)
-
-    def _calculate_haversine_distance(self, data):
-        """Calculates total line length in km from Overpass JSON data."""
-        nodes = { el['id']: (el['lat'], el['lon']) for el in data['elements'] if el['type'] == 'node' and el.get('tags', {}).get('power') == 'tower' }
-        total_length_km = 0
-
-        for el in data['elements']:
-            if el['type'] == 'way' and 'nodes' in el:
-                way_nodes = el['nodes']
-                for i in range(len(way_nodes) - 1):
-                    node1_id, node2_id = way_nodes[i], way_nodes[i+1]
-                    if node1_id in nodes and node2_id in nodes:
-                        coord1, coord2 = nodes[node1_id], nodes[node2_id]
-                        
-                        lat1, lon1 = coord1
-                        lat2, lon2 = coord2
-                        R = 6371 # Earth radius in km
-                        dLat = math.radians(lat2 - lat1)
-                        dLon = math.radians(lon2 - lon1)
-                        a = (math.sin(dLat / 2) * math.sin(dLat / 2) +
-                             math.cos(math.radians(lat1)) * math.cos(math.radians(lat2)) *
-                             math.sin(dLon / 2) * math.sin(dLon / 2))
-                        c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
-                        total_length_km += R * c
-        
-        print(f"Calculated total line length: {round(total_length_km)} km")
-        return round(total_length_km)
-
+    
 def main(mode, start_date_str):
     # We need the OSMCha token from environment variables in GitHub Actions
-    osmcha_token = os.getenv('OSMCHA_TOKEN')
+    osmcha_token = '6b11eecddcc18368c5f3298be12478a450be09b8'
     if not osmcha_token:
         raise ValueError("OSMCHA_TOKEN environment variable not set!")
 
@@ -168,9 +110,9 @@ def main(mode, start_date_str):
         community_users, new_tower_count = analyzer.calculate_community_stats(changesets)
         new_line_length = analyzer.get_community_line_length(community_users.keys())
     
-        if new_line_length is None:
-            print("Line length calculation failed. Using fallback: new tower count * 0.317")
-            new_line_length = round(new_tower_count * 0.317)
+        new_line_length = round(new_tower_count * LENGTH_ESTIMATE_FACTOR)
+        print(f"Estimated line length: {new_tower_count} towers * {LENGTH_ESTIMATE_FACTOR} = {new_line_length} km")
+
 
     except Exception as e:
         print(f"[ERROR] Aborting update: {e}")
