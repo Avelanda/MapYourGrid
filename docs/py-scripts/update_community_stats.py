@@ -92,7 +92,7 @@ class CommunityStatsAnalyzer:
         
         print("Running Overpass query for line length... (this may take a while)")
         try:
-            response = requests.post(self.overpass_base, data={"data": query})
+            response = requests.post(self.overpass_base, data={"data": query}, timeout=300)
             response.raise_for_status()
             data = response.json()
         except requests.RequestException as e:
@@ -169,7 +169,9 @@ def main(mode, start_date_str):
         new_line_length = analyzer.get_community_line_length(community_users.keys())
     
         if new_line_length is None:
-            raise RuntimeError("Line-length calculation failed")
+            print("Line length calculation failed. Using fallback: new tower count * 0.317")
+            new_line_length = round(new_tower_count * 0.317)
+
     except Exception as e:
         print(f"[ERROR] Aborting update: {e}")
         sys.exit(1)

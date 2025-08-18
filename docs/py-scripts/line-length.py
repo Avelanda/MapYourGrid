@@ -53,7 +53,11 @@ def get_line_stats():
     """Fetches and calculates line length stats from Overpass API."""
     print("Fetching data from Overpass API...")
     try:
-        response = requests.post(OVERPASS_URL, data={'data': OVERPASS_QUERY})
+        headers = {
+            'User-Agent': 'MapYourGrid Line Length Script (via GitHub Action; +https://github.com/open-energy-transition/MapYourGrid)'
+        }
+        response = requests.post(OVERPASS_URL, data={'data': OVERPASS_QUERY}, headers=headers,
+            timeout=1100)
         response.raise_for_status()
         data = response.json()
     except requests.exceptions.RequestException as e:
