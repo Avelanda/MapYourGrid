@@ -6,7 +6,7 @@ from pathlib import Path
 
 def translate_markdown_file(source_file, target_lang):
     # Replace with your actual DeepL API key
-    translator = deepl.Translator("32a7d15b-4a2b-4495-a1dc-3c864cfac951:fx")
+    translator = deepl.Translator("d7523e6c-8fa2-4774-99b3-31ff5cfed594:fx")
     
     with open(source_file, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -43,23 +43,6 @@ def translate_markdown_file(source_file, target_lang):
             # If YAML parsing fails, keep original
             pass
     
-    # Step 2: Fix ALL image paths FIRST - before any protection
-    # Handle various image path patterns and fix them to use relative paths from subdirectory
-    main_content = re.sub(r'src="(?!http)(?!\.\./)(images/[^"]*)"', r'src="../\1"', main_content)
-    main_content = re.sub(r'src="(?!http)(?!\.\./)(icons/[^"]*)"', r'src="../\1"', main_content)
-    main_content = re.sub(r'\!\[([^\]]*)\]\((?!http)(?!\.\./)(images/[^)]*)\)', r'![\1](../\2)', main_content)
-    main_content = re.sub(r'\!\[([^\]]*)\]\((?!http)(?!\.\./)(icons/[^)]*)\)', r'![\1](../icons/\2)', main_content)
-    # Fix double ../ if they already exist
-    main_content = re.sub(r'src="\.\./\.\./images/', 'src="../images/', main_content)
-    main_content = re.sub(r'src="\.\./\.\./icons/', 'src="../icons/', main_content)
-    main_content = re.sub(r'\!\[([^\]]*)\]\(\.\./\.\./images/', r'![\1](../images/', main_content)
-    main_content = re.sub(r'\!\[([^\]]*)\]\(\.\./\.\./icons/', r'![\1](../icons/', main_content)
-    
-    # Fix data paths and other relative paths
-    main_content = re.sub(r'"/data/', '"../data/', main_content)
-    main_content = re.sub(r'"\.\./\.\./data/', '"../data/', main_content)
-    main_content = re.sub(r'src="/icons/', 'src="../icons/', main_content)
-    
     # Step 3: Extract and protect JavaScript/script blocks (these should NEVER be translated)
     script_blocks = []
     def replace_script(match):
@@ -83,6 +66,35 @@ def translate_markdown_file(source_file, target_lang):
         return f"__IMG_BLOCK_{len(img_blocks)-1}__"
     
     main_content = re.sub(r'<img[^>]*/?>', replace_img, main_content)
+    
+    # Step 5.5: NEW - Extract and protect HTML attributes including CSS classes
+    protected_attrs = []
+    def protect_html_attributes(match):
+        full_tag = match.group(0)
+        
+        # Protect all HTML attributes from translation
+        # This regex finds opening HTML tags with attributes
+        attr_pattern = r'(\w+)="([^"]*)"'
+        attrs = re.findall(attr_pattern, full_tag)
+        
+        # Don't translate common HTML attributes
+        protected_attributes = {
+            'class', 'id', 'src', 'href', 'alt', 'title', 'data-form', 'data-', 
+            'target', 'rel', 'style', 'width', 'height', 'frameborder', 'allow',
+            'referrerpolicy', 'allowfullscreen'
+        }
+        
+        for attr_name, attr_value in attrs:
+            if any(attr_name.startswith(prot) for prot in protected_attributes):
+                # This attribute should be protected
+                protected_attrs.append(f'{attr_name}="{attr_value}"')
+                placeholder = f"__ATTR_BLOCK_{len(protected_attrs)-1}__"
+                full_tag = full_tag.replace(f'{attr_name}="{attr_value}"', placeholder)
+        
+        return full_tag
+    
+    # Protect attributes in HTML tags
+    main_content = re.sub(r'<[^>]+>', protect_html_attributes, main_content)
     
     # Step 6: Extract and protect URLs (these should NEVER be translated)
     url_blocks = []
@@ -153,6 +165,52 @@ def translate_markdown_file(source_file, target_lang):
     for pattern in protected_tag_patterns:
         main_content = re.sub(pattern, replace_html_tag, main_content, flags=re.DOTALL)
     
+    # Step 9.5: NEW - Handle MkDocs Material admonitions (???) with proper indentation
+    def fix_admonition_indentation(text):
+        """Fix admonition indentation to ensure 4-space indentation under ??? blocks"""
+        lines = text.split('\n')
+        result_lines = []
+        i = 0
+        
+        while i < len(lines):
+            line = lines[i]
+            
+            # Check if this is an admonition line (starts with ??? and has quotes)
+            if re.match(r'^\s*\?\?\?\s*"', line.strip()):
+                result_lines.append(line)
+                i += 1
+                
+                # Process following lines that should be indented under the admonition
+                while i < len(lines):
+                    if i >= len(lines):
+                        break
+                        
+                    next_line = lines[i]
+                    
+                    # Stop if we hit another admonition, heading, or empty line followed by non-indented content
+                    if (re.match(r'^\s*\?\?\?\s*"', next_line.strip()) or 
+                        re.match(r'^#{1,6}\s', next_line.strip()) or
+                        (next_line.strip() == '' and 
+                         i + 1 < len(lines) and 
+                         lines[i + 1].strip() != '' and 
+                         not lines[i + 1].startswith('    '))):
+                        break
+                    
+                    # If the line has content and is not already properly indented for admonitions
+                    if next_line.strip() != '':
+                        # Check if it needs indentation (content that should be under the admonition)
+                        if not next_line.startswith('    ') and next_line.strip():
+                            # Add 4 spaces for admonition content
+                            content = next_line.lstrip()
+                            next_line = '    ' + content
+                    
+                    result_lines.append(next_line)
+                    i += 1
+            else:
+                result_lines.append(line)
+                i += 1
+                
+        return '\n'.join(result_lines)
     
     def translate_text_content(text):
         """Translate text while preserving structure"""
@@ -215,7 +273,14 @@ def translate_markdown_file(source_file, target_lang):
 
     main_content = '\n'.join(translated_lines)
     
+    # Step 12.5: NEW - Apply admonition indentation fix
+    main_content = fix_admonition_indentation(main_content)
+    
     # Step 13: Restore all protected content in reverse order
+    
+    # NEW - Restore protected attributes
+    for i, attr_block in enumerate(protected_attrs):
+        main_content = main_content.replace(f"__ATTR_BLOCK_{i}__", attr_block)
     
     # Restore HTML tag blocks
     for i, tag_block in enumerate(html_tag_blocks):

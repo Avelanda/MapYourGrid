@@ -45,7 +45,7 @@ Please consider the following strategies and the associated processes as recomme
 Osmose is a quality assurance tool that detects issues in OpenStreetMap data on a daily basis. It is the main tool we use to find and fix power infrastructure, and many strategies explained below utilise it. You can either use our integrated Osmose tool on MAP IT📍, but you can also use the official Osmose [website](https://osmose.openstreetmap.fr/en/map/).
 
 <div style="float: right; margin: 3px 0 10px 20px; width: 350px;">
-  <img src="../images/tools/osmose-tool.jpg" class="img-border" style="width: 100%;">
+  <img src="/images/tools/osmose-tool.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption"> Use the Osmose tool we have on the MAP IT📍page. Click to enlarge.</figcaption>
 </div>
 
@@ -59,7 +59,7 @@ If you want to get Osmose issues for a specific region/province, we recommend us
 The Todo plugin is used for almost all pioneer mapping strategies, systematically stepping through a dataset of `hints`.
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/todo.jpg" class="img-border" style="width: 100%;">
+  <img src="/images/todo.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption"> A simple but very efficient way of mapping the network is the continuation of “Unfinished Transmission Lines loaded into the Todo plugin”. Click to enlarge.</figcaption>
 </div>
 
@@ -73,7 +73,7 @@ The Todo plugin is used for almost all pioneer mapping strategies, systematicall
 
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/mapfaster.jpg" class="img-border" style="width: 100%;">
+  <img src="/images/mapfaster.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption"> Selecting all the untagged nodes along your line allows you to tag them all at once, saving you lots of time. Remember to tag the portal, as well as the start and end of the line. Click to enlarge </figcaption>
 </div>
 
@@ -99,7 +99,7 @@ There are many reasons why you might want to share your location with someone el
 ### <div class="tools-header">Continue Open Lines</div>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/osmose-unfinished-transmission-lines.jpg" class="img-border" style="width: 100%;">
+  <img src="/images/osmose-unfinished-transmission-lines.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption"> The Osmose "Unfinished power transmission line" issues reveal all transmission lines that are not connected to a substation. Click to enlarge.</figcaption>
 </div>
 
@@ -116,7 +116,7 @@ _Continue Open Lines_ is the most efficient and most beginner friendly strategy.
 ### <div class="tools-header">Spot the Gaps in the Grid</div>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-      <img src="../images/finding-gaps.jpg" class="img-border" alt="Equator ">
+      <img src="/images/finding-gaps.jpg" class="img-border" alt="Equator ">
       <figcaption class="image-caption">Outdated satellite data results in larger gaps in the grid across many regions of Ecuador. These gaps can be spotted by lines that end abruptly rather than in a round circle, indicating a substation. Click to enlarge.</figcaption>
 </div>
 
@@ -134,7 +134,7 @@ As most transmission lines end at substations, the map painting technique allows
 As most large power plants are directly connected to the transmission grid, Connect Power Plants provides an easy strategy using the comprehensive power plants dataset from Global Energy Monitor. A simple user interface for retrieving this data at a national level is integrated into [Map It📍](https://MapYourGrid.org/map-it/), enabling users to preview and download GeoJSON data:
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/connect-power-plants.jpg" class="img-border" alt="GEM Angola Data Example in JOSM">
+    <img src="/images/connect-power-plants.jpg" class="img-border" alt="GEM Angola Data Example in JOSM">
   <figcaption class="image-caption">A power plant in Colombia is located close to a large substation. Click to enlarge.</figcaption>
 </div>
 
@@ -149,7 +149,7 @@ As most large power plants are directly connected to the transmission grid, Conn
 ### <div class="tools-header">Connect Substations </div></h3>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/substation_malawi.jpg" class="img-border" alt="Substation in Malawi with unmapped interconnector in the left corner">
+  <img src="/images/substation_malawi.jpg" class="img-border" alt="Substation in Malawi with unmapped interconnector in the left corner">
   <figcaption class="image-caption">A substation in Malawi with an unmapped interconnector with the first tower in image center. Click to enlarge.</figcaption>
 </div>
 
@@ -164,7 +164,7 @@ A simple yet efficient strategy for mapping the transmission grid is to check ev
 ### <div class="tools-header">Connect Industrial Areas </div></h3>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/industrial-area.jpg" class="img-border" alt="A car assembly plant in Nigeria which is connected directly to the grid.">
+  <img src="/images/industrial-area.jpg" class="img-border" alt="A car assembly plant in Nigeria which is connected directly to the grid.">
   <figcaption class="image-caption">This industrial area in Nigeria is connected to the transmission grid via its own substation.</figcaption>
 </div>
 
@@ -183,7 +183,7 @@ For more highly industrialised countries, loading all industries from OSM can so
 ### <div class="tools-header">Connect WikiData</div></h3>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/wikipedia-wikidata.jpg" class="img-border" alt="Wikidata Comparison GeoJSON Output">
+    <img src="/images/wikipedia-wikidata.jpg" class="img-border" alt="Wikidata Comparison GeoJSON Output">
     <figcaption class="image-caption">Wikipedia articles about power infrastructure, such as the Gitanga hydroelectric power station in Kenya, also provide location data that can be systematically accessed via WikiData.</figcaption>   
 </div>
 
@@ -207,7 +207,7 @@ WikiData provides access to Wikipedia articles about power infrastructure around
       }
     }
   </style>
-    <img src="../images/WikiData-id.jpg" class="img-border" alt="Wikidata Comparison GeoJSON Output">
+    <img src="/images/WikiData-id.jpg" class="img-border" alt="Wikidata Comparison GeoJSON Output">
     <figcaption class="image-caption">WikiData QID enables Open Infrastructure Map to link to databases like Global Energy Monitor.</figcaption>   
 </div>
 
@@ -236,7 +236,7 @@ WikiData provides access to Wikipedia articles about power infrastructure around
 In order to map more effectively, it is recommended to use maps and datasets that can help you find missing power lines, substations and power plants. Most National transmission system operators provide publicly available maps, which can help you to estimate the coverage of the grid, and locate what is missing in OSM. Furthermore, having the names of substations can also help locate them. MapYourGrid provides a list of [Curated Grid Maps](https://github.com/open-energy-transition/Awesome-Electric-Grid-Mapping), which contains datasets, maps, and documents for electrical grid all around the world.
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/bangladeshawesome.jpg" class="img-border" alt="GEM Angola Data Example in JOSM">
+    <img src="/images/bangladeshawesome.jpg" class="img-border" alt="GEM Angola Data Example in JOSM">
     <figcaption class="image-caption">Offical transmission grid map of Power Grid Bangladesh PLC.</figcaption>
 </div>
 
@@ -254,7 +254,7 @@ The OpenData plugin will allow you to load all kinds of GIS formats directly int
 OpenStreetMap allows mappers to quickly mark an object that seems to be wrong and needs fixing using the [Key:fixme](https://wiki.openstreetmap.org/wiki/Key:fixme) tag. For example, you can write `fixme=wrong voltage` if you think the voltage on a line is incorrect, but you don't know the correct value. A small F will then be visible on the edge of the symbol to indicate the fixme tag. Stepping through all the `fixme` tags in a country is also a great way to search for errors in the grid that you can try to fix. We recommend using the `Todo` plugin for this.
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/fixme.jpg" class="img-border float-right" alt="Fixme tags loaded in the Todo list.">
+    <img src="/images/fixme.jpg" class="img-border float-right" alt="Fixme tags loaded in the Todo list.">
   <figcaption class="image-caption">Fixme tags loaded in the Todo list.</figcaption>
 </div>
 
@@ -265,7 +265,7 @@ OpenStreetMap allows mappers to quickly mark an object that seems to be wrong an
 
 ### <div class="tools-header">Open Infrastructure Map - Nighttime, Osmose and JOSM </div></h3>
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/openinfraosmose.jpg" class="img-border" alt="Open Infrastructure Map - Osmose">
+    <img src="/images/openinfraosmose.jpg" class="img-border" alt="Open Infrastructure Map - Osmose">
     <figcaption class="image-caption">Open Infrastructure Map also includes the osmose issues in the grid as another layer.</figcaption>
 </div>
 
@@ -279,7 +279,7 @@ OpenStreetMap allows mappers to quickly mark an object that seems to be wrong an
 Searching for recent news articles, reports, academic studies or datasets related to newly operational substations and transmission lines is an effective way to find information about large-scale infrastructure projects that have just started construction or operation. As these facilities are of national interest, they are usually reported on in local news portals or on the websites of transmission grid operators. This is why there is so much news, articles and reports about new, large-scale substations, transmission lines and power plants starting operation.
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/mapstrats.jpg" class="img-border" alt="A wind farm in Bangladesh displayed in OpenStreetMap">
+    <img src="/images/mapstrats.jpg" class="img-border" alt="A wind farm in Bangladesh displayed in OpenStreetMap">
     <figcaption class="image-caption">A wind farm in Bangladesh displayed in OpenStreetMap that has been discovered by offical documents.</figcaption>
 </div>
 
@@ -294,7 +294,7 @@ Please be aware of the licence and quality of the documents you are finding. If 
 This tool estimates the voltage of a substation busbar from aerial imagery by measuring the clearance between conductors. The clearance is dictated by the voltage and so allows an estimate of the voltage to be made. Although not a perfect method, when combined with knowledge of a country's standard power grid voltages and power infrastructure layout this can greatly assist mappers in assigning voltages to power infrastructure from aerial imagery.
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/plugin.png" class="img-border" alt="JOSM PowerNetworkTools Plugin">
+    <img src="/images/plugin.png" class="img-border" alt="JOSM PowerNetworkTools Plugin">
     <figcaption class="image-caption">The OpenStreetMap Editor plugin that allows to roughly estimate the voltage levels based on phase to phase clearance measurements.</figcaption>   
 </div>
 
@@ -313,7 +313,7 @@ We recommend the following documents for a deeper dive into the construction of 
 Interconnectors between countries are essential to the functioning of the transmission grid. Therefore, these lines should be regularly validated and carefully extended. If you are mapping an interconnector between two countries and want to see what’s mapped on the “other” side of the border, you can either do a quick Download from OSM in a new layer or use the following Overpass query:
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/alternative_query.png" class="img-border" alt="Overpass Query Example">
+    <img src="/images/alternative_query.png" class="img-border" alt="Overpass Query Example">
     <figcaption class="image-caption">Overpass Query Example</figcaption>
 </div>
 
@@ -327,7 +327,7 @@ Interconnectors between countries are essential to the functioning of the transm
 <a href="https://github.com/PyPSA/powerplantmatching" target="_blank">Powerplantmatching (PPM)</a> is a python repository designed to harmonize and combine power plant datasets from sources like OpenStreetMap (OSM) and Global Energy Monitor. It is widely used to prepare validated generation data for energy system models such as PyPSA-EUR. A new feature now fetches power plant data  from OSM and flags all <strong>power plants and generators that are rejected</strong> due to incomplete or inconsistent metadata. These include elements missing a <code>name</code>, <code>output:electrical</code>, <code>plant:method</code>, incorrect unit formats, among others.
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/ppm-hint-layer.jpg" class="img-border" alt="PPM Rejected Power Plants GeoJSON">
+    <img src="/images/ppm-hint-layer.jpg" class="img-border" alt="PPM Rejected Power Plants GeoJSON">
     <figcaption class="image-caption">
         Power plants rejected by powerplantmatching due to missing metadata, displayed in red as a JOSM hint layer. In black, the power infraestructure grid from OSM.
     </figcaption>   
@@ -412,7 +412,7 @@ MapYourGrid layers additional tools, methodologies, and community-driven feedbac
 
     These issues are visualized directly in [Open Infrastructure Map](https://openinframap.org/#2/26/12), giving mappers clear targets for improving the dataset. 
     <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/kenya-tanzania.jpg" class="img-border" alt="PPM Rejected Power Plants GeoJSON">
+    <img src="/images/kenya-tanzania.jpg" class="img-border" alt="PPM Rejected Power Plants GeoJSON">
     <figcaption class="image-caption"> Special care is taken to validate and investigate interconnectors between different countries like the <a href=https://openinframap.org/#6.7/-1.627/37.017> Kenya-Tanzania interconnector</a>. 
     </figcaption>   
 </div>

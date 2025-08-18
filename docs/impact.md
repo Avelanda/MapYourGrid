@@ -23,11 +23,11 @@ OpenStreetMap’s unique value in creating high quality data for sustainable dev
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
 
   <a href="https://pypsa-earth.readthedocs.io/en/latest/index.html" target="_blank">
-  <img src="../images/impact/pypsa-earth-india.jpg" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/impact/pypsa-earth-india.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">The <a href="https://pypsa-earth.readthedocs.io/en/latest/">PyPSA-Earth</a> open-source energy system model uses OpenStreetMap data to study the future of energy around the world. Click to enlarge.</figcaption>
 
   <a href="https://map.vida.place/public/workspace/a6a89f8a-f472-45b0-8674-fcf6d7b4c7e3" target="_blank">
-  <img src="../images/impact/DRE-pakistan.jpg" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/impact/DRE-pakistan.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">The Energy planning of 58 countries like <a href="https://map.vida.place/public/workspace/114d1c69-eb81-4e49-8434-0f038854f4a0">Pakistan </a> directly depend on OpenStreetMap. Click to enlarge.</figcaption>
 
 </div> 
@@ -56,7 +56,7 @@ One of the most prominent use cases of OSM grid data is in energy modeling tools
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 500px; max-width: 100%">
   <a href="https://pypsa-earth.readthedocs.io/en/latest/index.html" target="_blank">
-  <img src="../images/impact/data-processing-PyPSA-EUR.png" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/impact/data-processing-PyPSA-EUR.png" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">PyPSA combines transmission lines and substations (left) to form larger energy links and buses between different regions (right). Image Source: <a href="https://pypsa-earth.readthedocs.io/en/latest/index.html" target="_blank">Modelling the high-voltage grid using open data for
 Europe and beyond</a></figcaption> 
 </div> 
@@ -77,7 +77,7 @@ Making this data freely available not only unlocks social value for planning but
 **Recent policy recommendations:**
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/impact/nigeria-osm.jpg" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/impact/nigeria-osm.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption"> More than 240 million people in Nigeria depend on electrical grid data from OpenStreetMap. The <a href="https://nigeriase4all.gov.ng/" target="_blank">Nigerian SE4ALL website</a>, which is hosted by the Federal Ministry of Power, uses OpenStreetMap as its main source on the transmission grid.</figcaption> 
 </div> 
 
@@ -100,7 +100,7 @@ practices are especially important for regional collaboration, as they allow nei
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
   <a href="https://iea.blob.core.windows.net/assets/a688d0f5-a100-447f-91a1-50b7b0d8eaa1/BuildingtheFutureTransmissionGrid.pdf" target="_blank">
-  <img src="../images/impact/expected-grid-growth.jpg" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/impact/expected-grid-growth.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">Expanding and replacing transmission lines is vital to achieving global climate goals. By 2050, advanced economies aim to nearly double their grid capacity, while emerging economies plan to triple theirs. <a href="https://iea.blob.core.windows.net/assets/a688d0f5-a100-447f-91a1-50b7b0d8eaa1/BuildingtheFutureTransmissionGrid.pdf">IEA</a>, CC BY 4.0. Click to enlarge.</figcaption>
 </div> 
 
@@ -131,7 +131,7 @@ Access to open and accurate data on electricity infrastructure is essential for 
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
   <a href="https://ember-energy.org/latest-insights/africa-electricity-data-transparency/" target="_blank">
-  <img src="../images/impact/ember-africa.jpg" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/impact/ember-africa.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption"> <a href="https://ember-energy.org/latest-insights/africa-electricity-data-transparency/" target="_blank"> Ember's Africa Electricity Data Transparency 2022 </a>- Click to enlarge.</figcaption>
 </div> 
 
@@ -165,8 +165,8 @@ Open grid data is also instrumental in identifying **off-grid communities** allo
 ### Saving Millions While Expanding Access
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <a href="../images/impact/HILFD-savingspdf.png" target="_blank">
-  <img src="../images/impact/HILFD-savingspdf.png" class="img-border" style="width: 100%;"> </a>
+  <a href="/images/impact/HILFD-savingspdf.png" target="_blank">
+  <img src="/images/impact/HILFD-savingspdf.png" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">Creating Foundation Electric Energy Infrastructure Data from Open-Sources document. Click to enlarge.</figcaption>
 </div> 
 
@@ -186,8 +186,8 @@ In most developed countries, publishing high-resolution, open datasets on the tr
 * Enedis, the French distribution system operator, committed to Open Data since 2015, is [joining forces with OpenStreetMap France](https://www.enedis.fr/presse/open-data-enedis-participe-un-projet-collaboratif-mondial-dechange-de-donnees) to make its grid data available and encourage crowdsourcing.
 
 <div style="float: right; margin: -25px 0 5px 50px; width: 350px;">
-  <a href="../images/homeland-osm.png" target="_blank">
-    <img src="../images/homeland-osm.png" class="img-border float-right" style="width: 400px;">
+  <a href="/images/homeland-osm.png" target="_blank">
+    <img src="/images/homeland-osm.png" class="img-border float-right" style="width: 400px;">
   </a>
   <figcaption class="image-caption">
     Comparison of U.S. Homeland Infrastructure Foundation-Level Data (gray lines) with OpenStreetMap transmission data (green lines) shows matching spatial resolution. Click to enlarge.
@@ -393,7 +393,7 @@ OpenStreetMap does not introduce new visibility, but rather transforms existing 
 ### The Greater Risk: Lack of Data
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/impact/ember-data-asia.jpg" class="img-border" style="width: 100%;"> 
+  <img src="/images/impact/ember-data-asia.jpg" class="img-border" style="width: 100%;"> 
   <figcaption class="image-caption">
      <a href="https://ember-energy.org/latest-insights/asian-electricity-data-transparency/" target="_blank">Based on the Asia Data Transparency Report by Ember</a>, a large part of South East Asia lacks public energy data.
   </figcaption>
@@ -425,7 +425,7 @@ We motivate mappers to engage directly with regional OpenStreetMap communities. 
 #### Clear Boundaries on What We Map
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/impact/kazakhstan-substation-level-of-detail.jpg" class="img-border" style="width: 100%;"> 
+  <img src="/images/impact/kazakhstan-substation-level-of-detail.jpg" class="img-border" style="width: 100%;"> 
   <figcaption class="image-caption">
      Typical resolution of Satellite images (Bing) and Mapping Resolution of a substation  Kazakhstan in OpenStreetMap. Only equipment allowing to determine power voltages and number of circuits is mapped.
   </figcaption>
@@ -463,26 +463,26 @@ To illustrate why mapping substation equipment can be essential to determining p
 
 <div class="viewer">
   <button class="nav prev" type="button" aria-label="Previous">◀</button>
-  <!-- <a class="viewer-link" href="../images/impact/Substation_mapping/substation_mapping_1.jpg"> -->
-  <a class="glightbox" id="gallery-img-glb" href="../images/impact/Substation_mapping/substation_mapping_1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
-    <img class="main-image off-glb" id="gallery-img" src="../images/impact/Substation_mapping/substation_mapping_1.jpg" alt="Selected image" />
+  <!-- <a class="viewer-link" href="/images/impact/Substation_mapping/substation_mapping_1.jpg"> -->
+  <a class="glightbox" id="gallery-img-glb" href="/images/impact/Substation_mapping/substation_mapping_1.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom">
+    <img class="main-image off-glb" id="gallery-img" src="/images/impact/Substation_mapping/substation_mapping_1.jpg" alt="Selected image" />
   </a>
  <!-- </a> -->
  <button class="nav next" type="button" aria-label="Next">▶</button>
 </div>
 
 <div class="thumbs-gallery" role="list">
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_1.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_1.jpg" alt="Substation to map" />
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_2.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_2.jpg" alt="Substation perimeter" />
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_3.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_3.jpg" alt="Power portals" />
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_4.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_4.jpg" alt="Power portals when double-circuit" />
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_5.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_5.jpg" alt="Power transformers" />
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_6.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_6.jpg" alt="Power tranformers indication" />
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_7.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_7.jpg" alt="Power switchgear" />
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_8.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_8.jpg" alt="Building" />
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_9.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_9.jpg" alt="220 kV switchgear" />
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_10.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_10.jpg" alt="Power voltages" />
-  <img role="listitem" class="thumb-gallery active" src="../images/impact/Substation_mapping/substation_mapping_11.jpg" data-full="../images/impact/Substation_mapping/substation_mapping_11.jpg" alt="Substation is mapped" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_1.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_1.jpg" alt="Substation to map" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_2.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_2.jpg" alt="Substation perimeter" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_3.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_3.jpg" alt="Power portals" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_4.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_4.jpg" alt="Power portals when double-circuit" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_5.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_5.jpg" alt="Power transformers" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_6.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_6.jpg" alt="Power tranformers indication" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_7.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_7.jpg" alt="Power switchgear" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_8.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_8.jpg" alt="Building" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_9.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_9.jpg" alt="220 kV switchgear" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_10.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_10.jpg" alt="Power voltages" />
+  <img role="listitem" class="thumb-gallery active" src="/images/impact/Substation_mapping/substation_mapping_11.jpg" data-full="/images/impact/Substation_mapping/substation_mapping_11.jpg" alt="Substation is mapped" />
 </div>
 </div>
 
@@ -520,7 +520,7 @@ OpenStreetMap data is often used to validate or supplement these official datase
 ---
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/impact/Risk-of-Tropical-Cyclones-and-Floods.jpg" class="img-border" style="width: 100%;"> 
+  <img src="/images/impact/Risk-of-Tropical-Cyclones-and-Floods.jpg" class="img-border" style="width: 100%;"> 
   <figcaption class="image-caption">
       The <a href="https://link.springer.com/article/10.1007/s13753-024-00573-7">"Risk of Tropical Cyclones and Floods to Power Grids in Southeast and East Asia" </a> study uses OpenStreetMap infrastructure data to estimate expected annual damages to power‑grid assets from tropical cyclone winds and coastal floods.
   </figcaption>
