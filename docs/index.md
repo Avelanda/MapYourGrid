@@ -118,7 +118,7 @@ image: images/website/mapyourgrid-preview.jpg
   <div>
   <img src="../images/progress/ourlines-vs-world.jpg" alt="Grid Illustration" class="initiative-content" style="width: 80%; border: 4px solid #2a6d3c;">
 <figcaption class="fig-label">
-  All the lines <span style="color: #ecc123;"><b>edited by MapYourGrid</b></span> mappers. CEnlarge the image by clicking on it.
+  All the lines <span style="color: #ecc123;"><b>creaded amd edited by MapYourGrid</b></span> mappers. Enlarge the image by clicking on it.
 </figcaption>
   </div>
   </div>
