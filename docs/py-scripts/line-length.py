@@ -7,7 +7,6 @@ import re
 import time
 from datetime import datetime, timezone
 from bs4 import BeautifulSoup
-import urllib.parse
 
 # --- Configuration ---
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
