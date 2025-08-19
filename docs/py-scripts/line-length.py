@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 
 # --- Configuration ---
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+OVERPASS_URL = "https://overpass.private.coffee/api/interpreter"
 OPENINFRAMAP_URL = "https://openinframap.org/stats"
 OUTPUT_DIR = "docs/data"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "line-length.json")
