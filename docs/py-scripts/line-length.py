@@ -4,6 +4,7 @@ import math
 import os
 import html
 import re
+import time
 from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 
@@ -36,6 +37,19 @@ out skel qt;
 
 # --- Helper Functions ---
 
+def retry_request(func, max_retries=4, delay=10):
+    """Simple retry wrapper with exponential backoff."""
+    for attempt in range(max_retries):
+        try:
+            return func()
+        except (requests.exceptions.RequestException, json.JSONDecodeError) as e:
+            if attempt == max_retries - 1:
+                raise
+            wait_time = delay * (2 ** attempt)
+            print(f"Attempt {attempt + 1} failed: {e}. Retrying in {wait_time}s...")
+            time.sleep(wait_time)
+
+
 def haversine_distance(coord1, coord2):
     """Calculates the distance between two lat/lon coordinates in kilometers."""
     lat1, lon1 = coord1
@@ -52,22 +66,22 @@ def haversine_distance(coord1, coord2):
 def get_line_stats():
     """Fetches and calculates line length stats from Overpass API."""
     print("Fetching data from Overpass API...")
-    try:
+    
+    def _fetch_overpass():
         headers = {
             'User-Agent': 'MapYourGrid Line Length Script (via GitHub Action; +https://github.com/open-energy-transition/MapYourGrid)'
         }
         response = requests.post(OVERPASS_URL, data={'data': OVERPASS_QUERY}, headers=headers,
             timeout=1100)
         response.raise_for_status()
-        data = response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching from Overpass API: {e}")
+        return response.json()
+    
+    try:
+        data = retry_request(_fetch_overpass)
+    except Exception as e:
+        print(f"Error fetching from Overpass API after retries: {e}")
         return None
-    except json.JSONDecodeError:
-        print("Error: Invalid JSON response from Overpass API")
-        print(response.text)
-        return None
-
+    
     nodes = {el['id']: (el['lat'], el['lon'])
              for el in data.get('elements', [])
              if el.get('type') == 'node' and el.get('tags', {}).get('power') in ['tower', 'pole']}
@@ -163,6 +177,7 @@ if __name__ == "__main__":
     if not line_stats:
         exit(1) # Exit if Overpass data failed
 
+    time.sleep(5)
     global_stats = get_global_stats()
 
     # Combine results into the final JSON structure
