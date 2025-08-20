@@ -17,13 +17,15 @@ OUTPUT_FILE = os.path.join(OUTPUT_DIR, "line-length.json")
 # Overpass QL query to fetch the relevant power line data
 OVERPASS_QUERY = """
 [out:json][timeout:900];
-node["power"~"tower|pole"](user_touched:"Andreas Hernandez","Tobias Augspurger","davidtt92","Mwiche","relaxxe") -> .supports;
-node["power"~"tower|pole"](user:"Russ","map-dynartio","overflorian","nlehuby","ben10dynartio","InfosReseaux")(newer:"2025-03-01T00:00:00Z")->.their_supports;
+node["power"="pole"](user_touched:"Andreas Hernandez","Tobias Augspurger","davidtt92","Mwiche","relaxxe") -> .poles;
+node["power"="tower"](user_touched:"Andreas Hernandez","Tobias Augspurger","davidtt92","Mwiche","relaxxe") -> .towers;
+node["power"="tower"](user:"Russ","map-dynartio","overflorian","nlehuby","ben10dynartio","InfosReseaux")(newer:"2025-03-01T00:00:00Z")->.their_poles;
+node["power"="pole"](user:"Russ","map-dynartio","overflorian","nlehuby","ben10dynartio","InfosReseaux")(newer:"2025-03-01T00:00:00Z")->.their_towers;
 
-way["power"="line"](bn.supports)-> .connected_ways;
-way["power"="line"](bn.their_supports)-> .theirconnected_ways;
+way["power"="line"](bn.poles, bn.towers)-> .connected_ways;
+way["power"="line"](bn.their_poles, bn.their_towers)-> .theirconnected_ways;
 
-(.supports; .connected_ways; .theirconnected_ways; .their_supports;);
+(.poles; .towers; .connected_ways; .theirconnected_ways; .their_poles; .their_towers;);
 out body;
 >;
 out skel qt;
@@ -77,12 +79,15 @@ def get_line_stats():
         response = requests.post(OVERPASS_URL, data={'data': OVERPASS_QUERY}, headers=headers,
             timeout=1100)
         response.raise_for_status()
-        return response.json()
+        data = response.json()
+        # Overpass sometimes answer errors with HTTP 200 code that won't trigger exception
+        if not data:
+            print(f"Invalid response from Overpass: {response}")
+        return data
     
     data = retry_request(_fetch_overpass)
     if not data:
         return None
-    
     
     nodes = {el['id']: (el['lat'], el['lon'])
              for el in data.get('elements', [])
