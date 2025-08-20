@@ -22,8 +22,11 @@ node["power"="tower"](user_touched:"Andreas Hernandez","Tobias Augspurger","davi
 node["power"="pole"](user:"Russ","map-dynartio","overflorian","nlehuby","ben10dynartio","InfosReseaux")(newer:"2025-03-01T00:00:00Z")->.their_poles;
 node["power"="tower"](user:"Russ","map-dynartio","overflorian","nlehuby","ben10dynartio","InfosReseaux")(newer:"2025-03-01T00:00:00Z")->.their_towers;
 
-way["power"="line"](bn.poles, bn.towers)-> .connected_ways;
-way["power"="line"](bn.their_poles, bn.their_towers)-> .theirconnected_ways;
+(node.towers; node.poles;) -> .supports;
+(node.their_towers; node.their_poles;) -> .their_supports;
+
+way["power"="line"](bn.supports)-> .connected_ways;
+way["power"="line"](bn.their_supports)-> .theirconnected_ways;
 
 (.poles; .towers; .connected_ways; .theirconnected_ways; .their_poles; .their_towers;);
 out body;
