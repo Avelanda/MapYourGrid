@@ -123,15 +123,26 @@ Our community is constantly investigating transmission lines that are suitable f
   <figcaption class="image-caption">Before uploading, JOSM will test your edits for known issues and various rule sets. Try to resolve as many validation results as possible. Click to enlarge.</figcaption>
 </div>
 
- Mapping is an iterative process, so you will make mistakes. However, this should not stop you from mapping; simply map what you can see in the imagery. Those who are new to the field should avoid altering existing data at all costs. However, you cannot break anything by adding new data, as this is constantly validated by our quality assurance tools. Now Start Mapping:
+ Mapping is an iterative process, so you will make mistakes and that is completely normal. Don't let it stop you : simply map what you can see in the imagery. If you are new to OSM mapping, avoid editing or deleting existing data at all costs. But don't worry, you cannot break anything by adding new data. Everythin is constantly validated by our quality assurance tools. 
+ 
+ Now let's Start Mapping:
 
 1. Zoom in on the satellite imagery of the country you will map until you can see the houses and roads.
-1. Copy the Coordinates of your `Good First Line` and in JOSM press the `Add Node` <img src="../images/starter-kit/add-node.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> presets button. Enter the coordinates here and press Ok. You should now see power towers that are not mapped at the end of a unfinished transmission line. Since you added a node which might not be on top of the actual tower, please remember to delete that node by pressing on `Undo Sequence` <img src="../images/starter-kit/deletenode.jpg" class="icon-svg off-glb" style="width: 30px; height: auto;">, or control+Z, or selecting the node and pressing Delete on your keyboard.
-1. Now, press `Draw Line` <img src="../images/starter-kit/draw-nodes.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> (left toolbar), and click on the last tower symbol at the end of the unfinished power line. You should now be able to extend the line. 
-1. Search for the next power towers you can find and click on its footprint. 
-1. If you ever feel unsure about how the line runs just place towers without the lines. By adding power towers you can do nothing wrong. Adding power towers is the easiest way to get started. To do this you can click on an existing tower and `control+C` and then press on where an unmapped power tower is and `control+V`. 
-1. Continue the power line to the best of your ability. Once done, press CTRL+F while the line is still selected. Then enter/type `child selected type:node AND untagged` as search string, which will select all nodes you have created. Now Press `Search`, which will select all nodes without a tag on that line. 
-1. Now press the `Power Tower` <img src="../images/starter-kit/power-towers.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> preset on the toolbar, followed by `Apply Preset`. Now all the nodes you have placed, should be tagged as `Power Tower`.
+1. Copy the Coordinates of your `Good First Line`. In JOSM press the `Add Node` <img src="../images/starter-kit/add-node.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> presets button. Paste the coordinates here and press Ok. You should now see power towers that are not mapped at the end of a unfinished transmission line. 
+1. ⚠️ Important : The node you just added may not match the exact location of a tower. Delete it right away using `Undo Sequence` <img src="../images/starter-kit/deletenode.jpg" class="icon-svg off-glb" style="width: 30px; height: auto;">, Control+Z, or by selecting it and pressing Delete.
+1. Press `Draw Line` <img src="../images/starter-kit/draw-nodes.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> (left toolbar), and click on the last tower symbol at the end of the unfinished power line. You should now be able to extend the line. 
+1. Look for the next power tower you can find and click on its footprint. 
+1. If you ever feel unsure about how the line runs, just place towers without the lines. By adding power towers you can do nothing wrong. Adding power towers is the easiest way to get started. To do this you can click on an existing tower and `control+C` and then press on where an unmapped power tower is and `control+V`. 
+1. Continue the power line to the best of your ability. 
+1. Once finished, select your line and press CTRL+Shift+N. This will select all of the nodes on the line. 
+1. Then press CTRL+F to open the Search bar. 
+1. In the Search string bar above, type`type:node untagged`. 
+1. ⚠️ In the Results tab on the left, check `Find in selection`. ⚠️
+1. Press `Search`. All untagged nodes in your line will now be selected.
+1. Apply the `Power Tower` <img src="../images/starter-kit/power-towers.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> preset from the toolbar, followed by `Apply Preset`. Now all the nodes you have placed are correctly tagged as `Power Tower`.
+
+!!! note "Pay attention to what you select and upload"
+    **⚠️ When applying presets, make sure you only select the untagged nodes of your line. If you accidentally select all untagged nodes in the country and tag them with `Power Tower`, you will upload incorrect data to OSM and will need to revert your changeset.**
 
 
 ### **<div class="tools-header">7. Upload your Edits to OpenStreetMap :outbox_tray: </div>**
@@ -155,6 +166,7 @@ Mapping is an iterative process and mistakes happen. This should not stop you fr
 1. Our tools focus on transmission grids, that’s why you might* not see lines below 90 kV. To see already mapped lines below 90 kV or lines tagged with `power=minor_line`, download the whole area you’re working on with the green arrow pointing down. Even better, you can download a country on Map It 📍 with the `Transmission+Distribution` layer activated.
 2. When mapping, make sure to not go across the border of the country you’re working on (visible dashed neon pink lines). Otherwise, you may find yourself mapping something that already exists, but hasn’t been downloaded in JOSM. One of the strategies we have can help with this.
 3. Don’t map beyond your expertise. If unsure, leave it for experienced mappers or locals, make a fixme tag, or ask the community! If you ever feel unsure about where to place the lines, just focus on adding power towers. You can't go wrong this way. Adding power towers is the easiest way to get started.
+4. Double-check your selection before applying presets. This avoids uploading wrong data to OSM and saves you the trouble of going back to clean-up later.
 
 For a safe mapping, we recommend you reading about [good practices](https://wiki.openstreetmap.org/wiki/Good_practice).
 
