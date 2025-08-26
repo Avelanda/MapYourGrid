@@ -298,7 +298,7 @@ This tool estimates the voltage of a substation busbar from aerial imagery by me
     <figcaption class="image-caption">The OpenStreetMap Editor plugin that allows to roughly estimate the voltage levels based on phase to phase clearance measurements.</figcaption>   
 </div>
 
-1. Download the `PowerNetworkTools` plugin for JOSM. Go to Edit > Preferences. Search for `PowerNetworkTools`, select it and press OK. 
+1. Download the `PowerNetworkTools` plugin for JOSM. Go to `Edit` -> `Preferences`. Search for `PowerNetworkTools`, select it and press OK. 
 1. Activate the Voltage Estimator in the `Windows` menu.
 1. Press `V` to measure the distance between the two phases at the busbar.
 1. Read more about how to use the plugin in the README of the [official repository](https://github.com/openinframap/josm-power-network-tools).
@@ -320,6 +320,24 @@ Interconnectors between countries are essential to the functioning of the transm
 1. Copy this <a href="https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/refs/heads/main/Other_queries/Border_overpass">query</a> and paste it into “Download from Overpass API” in JOSM.
 2. Draw a small bounding box in the slippy map, then run the query to download.
 3. <p><strong>Explanation:</strong> The query finds nodes in your bounding box, detects their admin area (level 4 by default), and fetches all power infrastructure within it. You can adjust the “admin level” in the query (e.g. level 2 for national, level 6 for province) by editing the <code>admin_level</code> parameter in the download tab. A smaller bounding box is better (faster execution).</p>
+
+
+### <div class="tools-header">Street-Level Imagery</div></h3>
+
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+    <img src="../images/mapillary_tower.jpg" class="img-border" alt="Overpass Query Example">
+    <figcaption class="image-caption">Power Towers at the coast of Benin are clearly visible street level imagery</figcaption>
+    <img src="../images/sub-sha-africa.jpg" class="img-border" style="width: 100%;"> </a>
+  <figcaption class="image-caption">Mapillary provides valuable street-level imagery, which is particularly useful in low- to medium-income regions such as Western Africa. Click to enlarge.</figcaption>
+</div>
+
+Platforms such as [Mapillary](https://www.mapillary.com/) provide an open-data alternative to Google Street View for validating power tower routing and cable numbers. This imagery is also extremely helpful for following power towers and line routing in urban areas, as spotting power towers with satellite imagery in such an environment can be very challenging. However, this imagery can also be used to estimate voltages by analysing the insulators of the powe towers. For many regions, such as Sub-Saharan Africa, Mapillary imagery is the only source of high-quality imagery, as satellite imagery in these regions is quite poor. Mapillary imagery is directly integrated in JOSM and iD. Here how to active it in JOSM:
+
+1. Download the `Mapillary` plugin for JOSM. Go to `Edit` -> `Preferences`. Search for `Mapillary`, select it and press OK. 
+2. Under `Windows` you should now find a `Mapillary` imagery layer. Click it.
+3. You need to zoom in a lot to make the roads visible where imagery is available. Activating this layer allows you to click on every node to visualise the image. To browsing fast where imagery is available can be done with the [web interface of Mapillary](https://www.mapillary.com/app)
+
+
 
 
 ### <div class="tools-header">Improve OSM tags with PPM</div></h3>
