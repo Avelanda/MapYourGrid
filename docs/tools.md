@@ -108,7 +108,7 @@ _Continue Open Lines_ is the most efficient and most beginner friendly strategy.
 1. Select `Unfinished power transmission line (Class 2) (recommended for beginners ⭐)` from the drop-down menu, then click on the country or state you wish to map. 
 2. Now drag and drop the GeoJSON file you have just downloaded into you JOSM window.
 3. Press `CTRL+A` to select all the location you have selected and press `Add` in the window of the Todo list plugin.
-4. Click on `Default Transmission (90 kV+)` in the `Transmission Overpass Query` selected and download the tranmission grid data into another layer in JOSM. Activate this layer.
+4. Click on `Default Transmission (50 kV+)` in the `Transmission Overpass Query` selected and download the tranmission grid data into another layer in JOSM. Activate this layer.
 4. You can now step through all issues by pressing `Mark`.
 
 
@@ -141,7 +141,7 @@ As most large power plants are directly connected to the transmission grid, Conn
 1. Select `Global Energy Monitor - Power Plants` as the hint layer and press the country you like to map.
 3. Drag and drop the GeoJSON file you have just downloaded into your JOSM window.
 4. Press `CTRL+A` to select all locations and click Add in the Todo List plugin window.
-5. Click on `Default Transmission (90 kV+)` in the `Transmission Overpass Query` selected and download the transmission grid data into another layer in JOSM. Activate this layer.
+5. Click on `Default Transmission (50 kV+)` in the `Transmission Overpass Query` selected and download the transmission grid data into another layer in JOSM. Activate this layer.
 6. You can now step through all the issues by pressing 'Mark'.
 7. If you find a power plant that is missing in OpenStreetMap, please map it too.
 
