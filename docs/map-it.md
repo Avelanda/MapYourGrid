@@ -200,6 +200,7 @@ async function initQueryUI() {
       <li>Click on the country you want to load in JOSM. Zoom in to select states or provinces.</li>
       <li>Click on Tools and Hints to download the data layers that will support you in grid mapping.</li>
       <li>Don't forget to checkout the Map Legend, Good First Lines, Hot Keys and Curated Electrical Grid Maps below.</li>
+      <li>Remember this is a specific OpenStreetMap extract and some other existing objects may remain hidden while you contribute. Always check OpenStreetMap data <a href="/starter-kit/#5-load-power-infrastructure-into-josm">to avoid any conflicts or double mapping</a> on save.</li>
       
     </ol>
     `;
@@ -781,7 +782,7 @@ fetch('../data/regionsv2.geojson')
 <!-- ENd-->
 ??? success "Map Legend for the recommended [MapCSS](starter-kit.md#3-add-visual-clarity-with-custom-map-styles) (Click Me)"
     <img 
-      src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.png" 
+      src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" 
       class="img-border image-caption" 
       alt="Power Grid Legend"
       style="display: block; margin-left: auto; margin-right: auto;"
