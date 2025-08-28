@@ -151,7 +151,7 @@ As most large power plants are directly connected to the transmission grid, Conn
   <figcaption class="image-caption">A substation in Malawi with an unmapped interconnector with the first tower in image center. Click to enlarge.</figcaption>
 </div>
 
-A simple yet efficient strategy for mapping the transmission grid is to check every substation for new lines branching out from it. As most national transmission grids are entirely connected, this strategy enables you to trace and therefore map the entire grid network. One single unmapped power tower can sometimes trace to a missing interconnector to another country as shown in the image of a substation in Malawi. Can you see the power tower that's missing from the bottom Left corner?
+A simple yet efficient strategy for mapping the transmission grid is to check every substation for new lines branching out from it. As most national transmission grids are entirely connected, this strategy enables you to trace and therefore map the entire grid network. One single unmapped power tower can sometimes trace to a missing interconnector to another country as shown in the image of a substation in Malawi. Can you see the power tower that's missing from the bottom left corner of the substation?
 
 1. Download the transmission grid data of your country using the [Map It📍](https://MapYourGrid.org/map-it/) page.
 2. Press `CTRL+F` and filter by `type:way power=substation`.
@@ -239,11 +239,12 @@ In order to map more effectively, it is recommended to use maps and datasets tha
 </div>
 
 
-#### OpenData Plugin
+#### OpenData and PBF Plugin
 The OpenData plugin will allow you to load all kinds of GIS formats directly into JOSM.
 
 1. Download the `OpenData` plugin for JOSM. Go to Edit > Preferences. Search for `OpenData`, select it and press OK.
 1. You should now be able to import much more data formats like (csv, xls, ods, kml, kmz, shp, mif) as another hint layer into JOSM.
+1. In order to import [PBF](https://wiki.openstreetmap.org/wiki/PBF_Format) files into JOSM, please install the PBF plugin.
 
 !!! note "OpenStreetMap and Verifiability"
       ⚠️ Please use these datasets as hint layers. Do not copy and paste data from these maps directly into OpenStreetMap. Each data point of the transmission network must be set manually and <a href="https://wiki.openstreetmap.org/wiki/Verifiability">verified</a> with official satellite data provided by the OpenStreetMap community.
