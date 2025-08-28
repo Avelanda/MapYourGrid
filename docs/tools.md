@@ -1,9 +1,7 @@
 <div class="page-headers">
 <h1>Tools and Strategies</h1>
 </div>
-Using the right tools and strategies is fundamental to mapping the electrical grid efficiently and accurately. The following strategies and tools will help you to extend existing transmission grid networks on OpenStreetMap. 
-
-Learn more on our recommended tools and strategies by clicking on the buttons : 
+Using the right tools and strategies is fundamental to mapping the electrical grid efficiently and accurately. The following strategies and tools will help you to extend existing transmission grid networks on OpenStreetMap. Learn more on our recommended tools and strategies by clicking on the buttons: 
 
 <div class="starter-kit-buttons">
   <a href="#introduction" class="btn btn-primary">Introduction</a> 
