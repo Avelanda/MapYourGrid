@@ -51,7 +51,7 @@ def retry_request(func, max_retries=4, delay=10):
             if attempt == max_retries - 1:
                 raise
             wait_time = delay * (2 ** attempt)
-            print(f"Attempt {attempt + 1} failed: {e} ({e.response.text}). Retrying in {wait_time}s...")
+            print(f"Attempt {attempt + 1} failed: {e} ({e.response.text if e.response is not None else 'No answer'}). Retrying in {wait_time}s...")
             time.sleep(wait_time)
         except Exception as e:
             print(f"Undefined error fetching from Overpass: {e}")
