@@ -13,7 +13,7 @@ hide:
     Welcome to our interactive launchpad and hub for contributing to power grid mapping via OpenStreetMap! Click on a country or state below to start mapping power infrastructure directly in JOSM. :rocket:
     If this is your first time grid mapping, please go through the [Starter-Kit](starter-kit.md). You can use the **#MapYourGrid** hashtag in your changeset to show your support for our initiative when you make an edit! To start mapping, please open [JOSM](https://josm.openstreetmap.de/), ensure that remote control is activated in `Preferences` and load your data: 
 
-    1. The **Default Transmission (90 kV+)** pulls all power infrastructure relevant for the **transmission grid**. For more details about which data is pulled via Overpass please read our [OpenStreetMap Grid Definitions](https://github.com/open-energy-transition/osm-grid-definition). Distribution grids are barely visible in satellite data and should therefore only be mapped in individual cases.
+    1. The **Default Transmission (50 kV+)** pulls all power infrastructure relevant for the **transmission grid**. For more details about which data is pulled via Overpass please read our [OpenStreetMap Grid Definitions](https://github.com/open-energy-transition/osm-grid-definition). Distribution grids are barely visible in satellite data and should therefore only be mapped in individual cases.
     2. The Osmose, Global Energy Monitor, and Wikidata buttons provide **hint layer** data, which you can read about in our [Tools and Strategies](tools.md) page. Please note that hint layers only work at a national level. 
 
 <!-- Beginning of Map section-->
@@ -200,6 +200,7 @@ async function initQueryUI() {
       <li>Click on the country you want to load in JOSM. Zoom in to select states or provinces.</li>
       <li>Click on Tools and Hints to download the data layers that will support you in grid mapping.</li>
       <li>Don't forget to checkout the Map Legend, Good First Lines, Hot Keys and Curated Electrical Grid Maps below.</li>
+      <li>Remember this is a specific OpenStreetMap extract and some other existing objects may remain hidden while you contribute. Always check OpenStreetMap data <a href="/starter-kit/#5-load-power-infrastructure-into-josm">to avoid any conflicts or double mapping</a> on save.</li>
       
     </ol>
     `;
@@ -370,7 +371,7 @@ async function renderModeButtonGroup(mode) {
   const btn = document.createElement('button');
   // I overrided the button name for Default, but the file in github is still Default
   if (mode === 'Default') {
-  btn.textContent = 'Default Transmission (90 kV+)';
+  btn.textContent = 'Default Transmission (50 kV+)';
   } else {
   btn.textContent = mode.replace(/_/g, ' ');
   }
@@ -781,7 +782,7 @@ fetch('../data/regionsv2.geojson')
 <!-- ENd-->
 ??? success "Map Legend for the recommended [MapCSS](starter-kit.md#3-add-visual-clarity-with-custom-map-styles) (Click Me)"
     <img 
-      src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.png" 
+      src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" 
       class="img-border image-caption" 
       alt="Power Grid Legend"
       style="display: block; margin-left: auto; margin-right: auto;"
