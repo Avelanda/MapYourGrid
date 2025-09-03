@@ -69,7 +69,8 @@ Sometimes, there are several possible options for line routing and it is unclear
 1. Copy the Power Tower with `CTRL+C` and place it where you see more power towers. 
 
 **Where to go next?** 
-* Do you want to map further open ending transmission lines in your country using iD? Check out our [Find open-ended Transmission Lines with Osmose](#find-open-ended-transmission-lines-with-osmose) in iD workflow.
+
+* Do you want to map further open ending transmission lines in your country using iD? Check out our [find open-ended Transmission Lines with Osmose](#find-open-ended-transmission-lines-with-osmose) in iD workflow.
 * Would you like to learn how to map power plants or substations with iD? Or are you interested in finding out how to use iD for in-field mapping? Check out our further [iD and Open Infrastructure Map Starter Kit](#id-and-open-infrastructure-map-starter-kit)
 
 !!! Warning
