@@ -250,14 +250,14 @@ On the road and spotted some some power towers, power plants, or substations nea
 
 #### <div class="stradegy-header">Substations and Power Plants</div></h3>
 
-Once you have finished your transmission line, you will most likely find a substation at the end, and sometimes a power plant will even be located next to it. Therefore, mapping the transmission grid is an effective way of identifying new power plants. Photovoltaic power plants, in particular, are increasing significantly around the world and can be easily identified in satellite imagery.
-
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="../images/starter-kit/id-substation.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">We recommend using a mouse for mapping multiple substations in iD. If you are on the road, you can also use a touch screen for this. Click to enlarge.</figcaption>
     <img src="../images/starter-kit/solar-mapping-id.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">Power plants like solar park can be mapped similar to substations. Click to enlarge.</figcaption>
 </div>
+
+Once you have finished your transmission line, you will most likely find a substation at the end, and sometimes a power plant will even be located next to it. Therefore, mapping the transmission grid is an effective way of identifying new power plants. Photovoltaic power plants, in particular, are increasing significantly around the world and can be easily identified in satellite imagery.
 
 1. Go to the [Open Infrastructure Map](https://openinframap.org/#2/26/12).
 1. Click **Find my location** in the top-right corner or search for your city.
