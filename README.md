@@ -67,3 +67,4 @@ The MapYourGrid Website combines resources from multiple repositories:
 6. [gem-per-country](https://github.com/open-energy-transition/gem_per_country)
 7. [KPI Tracker tools](https://github.com/open-energy-transition/KPI-OSM)
 8. [osm-power-grid-map-analysis](https://github.com/ben10dynartio/osm-power-grid-map-analysis)
+9. [ValidateMyGrid](https://github.com/open-energy-transition/validate-my-grid)
