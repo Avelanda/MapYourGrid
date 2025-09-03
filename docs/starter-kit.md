@@ -19,8 +19,8 @@ We recommend JOSM (Java OpenStreetMap) editor generally, particularly for profes
 <div class="starter-kit-buttons">
   <a href="#id-starter-kit" class="btn btn-third">iD Starter‑Kit - Beginner Friendly Small‑Scale & Field Mapping</a>
   <a href="#josm-starter-kit" class="btn btn-primary">JOSM Starter‑Kit - Large‑Scale & Technical Mapping</a> 
-  <a href="#id-and-open-infrastructure-map" class="btn btn-third">iD & Open Infrastructure Map Starter-Kit - Advanced iD Mapping & Field Mapping</a> 
-  <a href="#mapcomplete-starter-kit" class="btn btn-secondary">MapComplete Starter‑Kit - Missing Tags Field Mapping</a>
+  <a href="#id-and-open-infrastructure-map-starter-kit" class="btn btn-third">iD & Open Infrastructure Map Starter-Kit - Advanced iD Mapping & Field Mapping</a> 
+  <a href="#mapcomplete-starter-kit" class="btn btn-fourth">MapComplete Starter‑Kit - Missing Tags Field Mapping</a>
 </div>
 
 ## <div class="stradegy-header">iD Starter-Kit</div></h3>
@@ -67,6 +67,8 @@ Sometimes, there are several possible options for line routing and it is unclear
 1. Create a `Point` where you can see the power tower with the button in the top middle panel.
 1. Make it a `High-Voltage Tower` aka power tower with the feature panel on the left side. 
 1. Copy the Power Tower with `CTRL+C` and place it where you see more power towers. 
+
+Do you want to map further open ending transmission lines in your country using iD? Check out our [Find open-ended Transmission Lines with Osmose](#find-open-ended-transmission-lines-with-osmose) in iD workflow.
 
 !!! Warning
     **In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
@@ -225,7 +227,7 @@ For a safe mapping, we recommend you reading about [good practices](https://wiki
     
     **⚠️ By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future.** 
 
-## <div class="stradegy-header">iD and Open Infrastructure Map</div></h3>
+## <div class="stradegy-header">iD and Open Infrastructure Map Starter-Kit</div></h3>
 
 On the road and spotted some some power towers, power plants, or substations near your place that are still missing and want to quickly map them yourself? This can be done on your mobile device or PC using the iD editor and Open Infrastructure Map. In this way, you can also correct voltages, circuits, or other errors you see in Open Infrastructure Map.
 
@@ -255,6 +257,8 @@ On the road and spotted some some power towers, power plants, or substations nea
   <figcaption class="image-caption">Power plants like solar park can be mapped similar to substations. Click to enlarge.</figcaption>
 </div>
 
+Once you have finished your transmission line, you will most likely find a substation at the end, and sometimes a power plant will even be located next to it. Therefore, mapping the transmission grid is an effective way of identifying new power plants. Photovoltaic power plants, in particular, are increasing significantly around the world and can be easily identified in satellite imagery.
+
 1. Go to the [Open Infrastructure Map](https://openinframap.org/#2/26/12).
 1. Click **Find my location** in the top-right corner or search for your city.
 1. Zoom in until you see the small `Edit` button in the lower right corner and press it.
@@ -263,6 +267,23 @@ On the road and spotted some some power towers, power plants, or substations nea
 1. Now upload this information by pressing `Save`.
 1. Add a `Changeset Comment` with a brief description of your mapping activity. If you find our efforts, documentation and tools helpful, please include the hashtag #mapyourgrid in the changeset comment to let us know.
 1. **Bonus:** While grid mapping, you will also find many power plants located next to substations and transmission lines. These are mapped in a similar way to substations, using the `Area` symbol.
+
+#### <div class="stradegy-header">Find open-ended transmission lines with Osmose</div></h3>
+
+Have you finished your Good First Line and you want to find your own open-ended line in a country of your choice? With the help of osmose and our interactive [MAP IT📍](https://mapyourgrid.org/map-it/)page you can find even more open ended lines.
+
+<div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
+  <img src="../images/starter-kit/Kenya-unfinished-transmission-lines-iD.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">iD support to load  .gpx, .kml, .geojson, .json files into the editor. Therefore, issues from to osmose, such as unfinished transmission lines in Kenya, can also be loaded into the editor from our interactive MAP IT📍 page. Click to enlarge.</figcaption>
+</div>
+
+
+1. Go to the [MAP IT📍](https://mapyourgrid.org/map-it/)page.
+1. Press on the Osmose hint layer button.
+1. Choose one of the Osmose issues, and press on a country. This will fetch up to 5000 Osmose issues for that country and issue type.
+1. Drag and drop the file you have downloaded into the map area of your iD or JOSM editor.
+1. You can now see all the issues at a high zoom level. Unfortunately, iD does not allow these data to be processed systematically. To address these osmose issues and enable large-scale mapping across a country, we therefore recommend our JOSM workflow.
+
 
 
 #### <div class="stradegy-header">Report Issues in the Grid</div></h3>
@@ -286,12 +307,12 @@ Reporting such smaller issues will significantly improve the long-term quality o
 
 ## <div class="tools-header">MapComplete Starter-Kit</div></h3>
 
+The [MapComplete](https://mapcomplete.org/) platform provides an easy way to identify missing tags [like the power output of a wind turbine](https://mapcomplete.org/openwindpowermap.html?z=13&lat=39.55702450000146&lon=9.226502599999435#node/5271617498) that has already been mapped in OpenStreetMap. Like iD, the platform can be used from a PC but also from a mobile device. A special feature is the ability to upload images. Taking images in the field with MapComplete is key to validating satellite-based mapping where detailed, high-resolution images are missing. In the case of a wind turbine, for example, this enables another mapper to estimate the output on the basis of this data. We are currently in development to extend this feature to Power Towers to derive the voltages, number of circuits, or cables from these images.  We are currently working on extending this functionality to power towers to enable more accurate estimation of transmission line voltages.
+
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="../images/starter-kit/mapcomplete.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">MapComplete allows you to add missing information to objects like wind turbines (left). The platform allows you to upload images so that others can derive information like power output of the wind turbine. Click to enlarge.</figcaption>
 </div>
-
-The [MapComplete](https://mapcomplete.org/) platform provides an easy way to identify missing tags [like the power output of a wind turbine](https://mapcomplete.org/openwindpowermap.html?z=13&lat=39.55702450000146&lon=9.226502599999435#node/5271617498) that has already been mapped in OpenStreetMap. Like iD, the platform can be used from a PC but also from a mobile device. A special feature is the ability to upload images. Taking images in the field with MapComplete is key to validating satellite-based mapping where detailed, high-resolution images are missing. In the case of a wind turbine, for example, this enables another mapper to estimate the output on the basis of this data. We are currently in development to extend this feature to Power Towers to derive the voltages, number of circuits, or cables from these images.  We are currently working on extending this functionality to power towers to enable more accurate estimation of transmission line voltages.
 
 1. Open [MapComplete](https://mapcomplete.org/) and select the thematic map like `Wind power generators` that you would like to improve.
 2. Jump to your location using the crosshair symbol in the lower right corner.

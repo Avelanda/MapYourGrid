@@ -757,6 +757,10 @@ aside.md-banner a>div {
   background-color: #1c467f;
 }
 
+.btn-fourth:hover {
+  background-color: #1c467f;
+}
+
 .btn-nav {
   background-color: #2f2626; /* main navbar color */
 }

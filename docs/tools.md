@@ -50,6 +50,7 @@ Osmose is a quality assurance tool that detects issues in OpenStreetMap data on 
 1. Go to the [MAP IT📍](https://mapyourgrid.org/map-it/)page.
 1. Press on the Osmose hint layer button.
 1. Choose one of the Osmose issues, and press on a country. This will fetch up to 5000 Osmose issues for that country and issue type.
+1. Drag and drop the file into the map area of your iD or JOSM editor. 
 
 If you want to get Osmose issues for a specific region/province, we recommend using the Osmose website as you can get power-related issues by choosing the power topic for your area of interest and then `Export → JOSM`. In the future we will be integrating regions into MAP IT📍.
 
