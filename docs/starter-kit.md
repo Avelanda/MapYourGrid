@@ -17,7 +17,7 @@ We recommend JOSM (Java OpenStreetMap) editor generally, particularly for profes
 **Get started by clicking on one of the OpenStreetMap editors:**
 
 <div class="starter-kit-buttons">
-  <a href="#id-starter-kit" class="btn btn-third">iD Starter‑Kit - Beginner Friendly Small‑Scale & Field Mapping</a>
+  <a href="#id-starter-kit" class="btn btn-third">iD Starter‑Kit - Beginner Friendly Small‑Scale Mapping</a>
   <a href="#josm-starter-kit" class="btn btn-primary">JOSM Starter‑Kit - Large‑Scale & Technical Mapping</a> 
   <a href="#id-and-open-infrastructure-map-starter-kit" class="btn btn-third">iD & Open Infrastructure Map Starter-Kit - Advanced iD Mapping & Field Mapping</a> 
   <a href="#mapcomplete-starter-kit" class="btn btn-fourth">MapComplete Starter‑Kit - Missing Tags Field Mapping</a>
@@ -68,7 +68,9 @@ Sometimes, there are several possible options for line routing and it is unclear
 1. Make it a `High-Voltage Tower` aka power tower with the feature panel on the left side. 
 1. Copy the Power Tower with `CTRL+C` and place it where you see more power towers. 
 
-Do you want to map further open ending transmission lines in your country using iD? Check out our [Find open-ended Transmission Lines with Osmose](#find-open-ended-transmission-lines-with-osmose) in iD workflow.
+**Where to go next?** 
+* Do you want to map further open ending transmission lines in your country using iD? Check out our [Find open-ended Transmission Lines with Osmose](#find-open-ended-transmission-lines-with-osmose) in iD workflow.
+* Would you like to learn how to map power plants or substations with iD? Or are you interested in finding out how to use iD for in-field mapping? Check out our further [iD and Open Infrastructure Map Starter Kit](#id-and-open-infrastructure-map-starter-kit)
 
 !!! Warning
     **In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
