@@ -310,17 +310,24 @@ Reporting such smaller issues will significantly improve the long-term quality o
 
 ## <div class="tools-header">MapComplete Starter-Kit</div></h3>
 
-The [MapComplete](https://mapcomplete.org/) platform provides an easy way to identify missing tags [like the power output of a wind turbine](https://mapcomplete.org/openwindpowermap.html?z=13&lat=39.55702450000146&lon=9.226502599999435#node/5271617498) that has already been mapped in OpenStreetMap. Like iD, the platform can be used from a PC but also from a mobile device. A special feature is the ability to upload images. Taking images in the field with MapComplete is key to validating satellite-based mapping where detailed, high-resolution images are missing. In the case of a wind turbine, for example, this enables another mapper to estimate the output on the basis of this data. We are currently in development to extend this feature to Power Towers to derive the voltages, number of circuits, or cables from these images.  We are currently working on extending this functionality to power towers to enable more accurate estimation of transmission line voltages.
-
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="../images/starter-kit/mapcomplete.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">MapComplete allows you to add missing information to objects like wind turbines (left). The platform allows you to upload images so that others can derive information like power output of the wind turbine. Click to enlarge.</figcaption>
+  <img src="../images/starter-kit/mapcomplete-questions-form.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">This is an example of the form you can use to edit key information about the power lines as well as upload pictures. it appears when you click on the blue lines on the map that represent power lines. Click to enlarge.</figcaption>
 </div>
 
-1. Open [MapComplete](https://mapcomplete.org/) and select the thematic map like `Wind power generators` that you would like to improve.
+The [MapComplete](https://mapcomplete.org/) platform provides an easy way to identify missing tags of already mapped infrastructure where addtional information is missing. Like iD, the platform can be used from a PC but also from a mobile device. One of the key features of MapComplete is the ability to upload pictures taken on mobile phones. This enables inexperienced field mappers to take pictures of power towers, which experts can then use to derive information such as voltage and the number of circuits.
+
+1. **Map of missing voltages of power lines**: Voltages are essential for estimating the total power that can be transmitted by a power line. MapComplete supports the mapping of this missing tag by editing the data in the [Power Lines MapComplete Layer](https://mapcomplete.org/theme.html?z=14.8&lat=-15.420620800001004&lon=28.31155200000046&userlayout=https%3A%2F%2Fstudio.mapcomplete.org%2F11076630%2Flayers%2Fmap_your_grid_power_lines%2Fmap_your_grid_power_lines.json). Once you click on the blue lines to make changes, in the right pane you notice that there is an option to upload an **image of a power tower**. You can still contribute by providing an image of the power tower. This will be uploaded to MapYourGrid, where other technical mappers can use the insulators to derive the voltages.
+
+2. **Wind Turbine Power Output**: Similar to power lines, the power of wind turbine can be estimate using a single picture. Maybe you are aware of other resources and methods to derive the power output of wind turbines. The [Wind Power Generators layer](https://mapcomplete.org/openwindpowermap.html?z=13&lat=39.55702450000146&lon=9.226502599999435#node/5271617498) enables you to map this missing tags. 
+
+
+1. Open the [Power Lines MapComplete Layer](https://mapcomplete.org/theme.html?z=14.8&lat=-15.420620800001004&lon=28.31155200000046&userlayout=https%3A%2F%2Fstudio.mapcomplete.org%2F11076630%2Flayers%2Fmap_your_grid_power_lines%2Fmap_your_grid_power_lines.json) or [Wind Turbine Power Output](https://mapcomplete.org/openwindpowermap.html?z=13&lat=39.55702450000146&lon=9.226502599999435#node/5271617498)
 2. Jump to your location using the crosshair symbol in the lower right corner.
-3. Search for wind turbines in your region that are missing information.
-4. Press on the wind turbine symbol. You can now add the capacity or take a picture with your mobile device to let others derive the output power.
+3. Search for wind turbines or power line in your region with missing information.
+4. Press on the wind turbine symbol or power line. You can now add the capacity or take a picture with your mobile device to let others derive the output power. **Please be aware that we will need an image of a power tower to estimate the voltage.**
 5. Afterwards, press `Save`.
 
 
