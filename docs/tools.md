@@ -44,15 +44,15 @@ Osmose is a quality assurance tool that detects issues in OpenStreetMap data on 
 
 <div style="float: right; margin: 3px 0 10px 20px; width: 350px;">
   <img src="../images/tools/osmose-tool.jpg" class="img-border" style="width: 100%;">
-  <figcaption class="image-caption"> Use the Osmose tool we have on the MAP IT📍page. Click to enlarge.</figcaption>
+  <figcaption class="image-caption"> Use the Osmose tool we have integrated on our MAP IT📍 interactive map. Click to enlarge.</figcaption>
 </div>
 
 1. Go to the [MAP IT📍](https://mapyourgrid.org/map-it/)page.
 1. Press on the Osmose hint layer button.
 1. Choose one of the Osmose issues, and press on a country. This will fetch up to 5000 Osmose issues for that country and issue type.
-1. Drag and drop the file into the map area of your iD or JOSM editor. 
+1. Drag and drop the file into the map area of your iD or JOSM editor.
 
-If you want to get Osmose issues for a specific region/province, we recommend using the Osmose website as you can get power-related issues by choosing the power topic for your area of interest and then `Export → JOSM`. In the future we will be integrating regions into MAP IT📍.
+If you want to get Osmose issues for a specific region/province, we recommend using the Osmose website as you can get power-related issues by choosing the power topic for your area of interest and then `Export → JOSM`. In the future we will be integrating regions into [MAP IT📍](https://mapyourgrid.org/map-it/). Osmose issues can also be extracted, browsed and visualised via the official [Osmose user interface](https://osmose.openstreetmap.fr/en/map/#loc=8/33.356/-7.309&level=1%2C2%2C3&tags=power&useDevItem=all&item=7040&class=2). 
 
 ### **<div class="tools-header">Todo Plugin :white_check_mark:</div>**
 The Todo plugin is used for almost all pioneer mapping strategies, systematically stepping through a dataset of `hints`.
@@ -381,6 +381,12 @@ MapYourGrid layers additional tools, methodologies, and community-driven feedbac
 
     The MapYourGrid initiative recognizes that high-quality data begins with knowledgeable contributors. We invest in building mapper capacity through structured training, professional-grade documentation, and standards aligned with both OpenStreetMap norms and the energy sector’s expectations. We support decentralized data stewardship by empowering local mappers to guide regional efforts, ensuring that data remains both accurate and contextually relevant over time.
 
+    <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+    <img src="../images/kenya-tanzania.jpg" class="img-border" alt="PPM Rejected Power Plants GeoJSON">
+    <figcaption class="image-caption"> Special care is taken to validate and investigate interconnectors between different countries like the <a href=https://openinframap.org/#6.7/-1.627/37.017> Kenya-Tanzania interconnector</a>. 
+    </figcaption>   
+    </div>
+
 1. **User Feedback and Crowdsourced Issue Reporting**
 
     We encourage anyone using [Open Infrastructure Map](https://openinframap.org/#2/26/12) to report issues using the **#MapYourGrid** hashtag. Notes can be added without an account, lowering the barrier to participation. These community-sourced observations help identify outdated, misclassified, or missing infrastructure. This makes user feedback a cornerstone of validation.
@@ -388,9 +394,9 @@ MapYourGrid layers additional tools, methodologies, and community-driven feedbac
 
 2. **Pre-Upload Error Detection with JOSM Validator**
 
-    Before data is uploaded to OpenStreetMap, it is automatically scanned using the [JOSM Validator](https://josm.openstreetmap.de/wiki/Help/Dialog/Validator). This tool checks for common mapping errors such as: Illogical tag combinations, unusual geometries (e.g., excessively long spans between power towers) or incomplete or deprecated data.
+    Before data is uploaded to OpenStreetMap, it is automatically scanned using the [JOSM Validator](https://josm.openstreetmap.de/wiki/Help/Dialog/Validator). This tool checks for common mapping errors such as: Illogical tag combinations, unusual geometries (e.g., excessively long spans between power towers) or incomplete or deprecated data. MapYourGrid created custom made Power Validation rules for JOSM named "Power QA". Read more about this development in the  [ValidateMyGrid repository](https://github.com/open-energy-transition/validate-my-grid) and in the offical documentation for [Power Networks Quality Assurance](https://wiki.openstreetmap.org/wiki/Power_networks/Quality_Assurance).
 
-    Warnings are prominently flagged, and mappers are discouraged from uploading until the issues are resolved, promoting a high standard of data hygiene.
+    Warnings are prominently flagged, and mappers are discouraged from uploading until the issues are resolved, promoting a high standard of quality assurance.
 
 
 3. **Visual Quality Checks with Custom Map Styles**
@@ -407,6 +413,11 @@ MapYourGrid layers additional tools, methodologies, and community-driven feedbac
 
     These reviews can involve experienced mappers or electrical grid specialists, providing both technical accuracy and mentorship.
 
+    <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+    <img src="../images/osmose-gui.jpg" class="img-border" alt="Osmose GUI">
+    <figcaption class="image-caption"><a href=https://osmose.openstreetmap.fr/en/map/#loc=8/33.356/-7.309&level=1%2C2%2C3&tags=power&useDevItem=all&item=7040&class=2>The Osmose GUI</a> enables users to extract and investigate Osmose issues within a specific region.  
+    </figcaption>   
+    </div>
 
 5. **Daily Automated Quality Assurance via Osmose**
 
@@ -416,7 +427,10 @@ MapYourGrid layers additional tools, methodologies, and community-driven feedbac
     * Isolated or unconnected transmission lines
     * Redundant or deprecated tagging
 
-    Osmose QA has items and classes, these can be thought of as categories with items listed inside each category. Being a global tool, Osmose does quality checks on many layers of the OSM data beyond the power infrastructures. It is important to know what items and issues are of value for transmission grid mapping. This list of relevant issues is what is made available on the [Map It📍](https://MapYourGrid.org/map-it/) page:
+    Osmose QA has items and classes, these can be thought of as categories with items listed inside each category. Being a global tool, Osmose does quality checks on many layers of the OSM data beyond the power infrastructures. It is important to know what items and issues are of value for transmission grid mapping. 
+    
+    This list of relevant issues is what is made available on the [Map It📍](https://MapYourGrid.org/map-it/) page:
+
 
     | Item | Class | Description                              | Summary                                                                                                                   |
     | ---- | ----- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
@@ -429,12 +443,6 @@ MapYourGrid layers additional tools, methodologies, and community-driven feedbac
     |      | 7     | Unmatched Voltage of line on Substation  | Ensure the voltage of lines matches the substation's rated voltage.                                                       |
 
     These issues are visualized directly in [Open Infrastructure Map](https://openinframap.org/#2/26/12), giving mappers clear targets for improving the dataset. 
-    <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-    <img src="../images/kenya-tanzania.jpg" class="img-border" alt="PPM Rejected Power Plants GeoJSON">
-    <figcaption class="image-caption"> Special care is taken to validate and investigate interconnectors between different countries like the <a href=https://openinframap.org/#6.7/-1.627/37.017> Kenya-Tanzania interconnector</a>. 
-    </figcaption>   
-</div>
-
 
 
 6. **Statistical Monitoring with Health Scores (Under Construction)**
