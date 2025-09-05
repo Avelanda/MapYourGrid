@@ -287,16 +287,14 @@ Have you finished your Good First Line and you want to find your own open-ended 
 1. Drag and drop the file you have downloaded into the map area of your iD or JOSM editor.
 1. You can now see all the issues at a high zoom level. Unfortunately, iD does not allow these data to be processed systematically. To address these osmose issues and enable large-scale mapping across a country, we therefore recommend our JOSM workflow.
 
-
-
 #### <div class="stradegy-header">Report Issues in the Grid</div></h3>
-
-The fastest and easiest way to contribute to your electrical grid is by adding notes where you see missing or incorrect information in OpenStreetMap. You can do this fully anonymously with no login required.
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="../images/starter-kit/easy-notes.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">Open Infrastructure Map (left) and the iD Editor (right) provide a mobile-ready, easy-to-use way to report issues. Click to enlarge.</figcaption>
 </div>
+
+The fastest and easiest way to contribute to your electrical grid is by adding notes where you see missing or incorrect information in OpenStreetMap. You can do this fully anonymously with no login required.
 
 1. Go to the [Open Infrastructure Map](https://openinframap.org/#2/26/12).
 2. Click **Find my location** in the top-right corner or search for your city.
