@@ -35,7 +35,7 @@ For those who prefer iD to JOSM or are new to OpenStreetMap and electrical grid 
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
   <img src="../images/starter-kit/id-start-your-line.jpg" class="img-border" style="width: 100%;">
-  <figcaption class="image-caption">Copy the Good First Line coordiantes into your editor. Click to enlarge.</figcaption>
+  <figcaption class="image-caption">Copy the Good First Line coordinates into your editor. Click to enlarge.</figcaption>
   <img src="../images/starter-kit/id-map-line.jpg"  class="img-border" style="width: 100%;"> 
   <figcaption class="image-caption">Map your first power line, making all nodes power towers and the line itself a power line. Click to enlarge.</figcaption>
   <img src="../images/starter-kit/upload-data.jpg" class="img-border" style="width: 100%;">
@@ -48,10 +48,10 @@ For those who prefer iD to JOSM or are new to OpenStreetMap and electrical grid 
 
 
 1. [Create an OpenStreetMap account](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did) and log in. Switch to the `Edit` mode by pressing the button on the top panel.
-1. Select a `Good First Line` from the following list and copy the coordiantes: [**Good First Lines**](https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js)
-1. Copy the coordiantes of the `Good First Line` into the `Search` field and press `Enter`. You should now see a transmission lines mapped with the open end at a power tower.  
+1. Select a `Good First Line` from the following list and copy the coordinates: [**Good First Lines**](https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js)
+1. Copy the coordinates of the `Good First Line` into the `Search` field and press `Enter`. You should now see a transmission lines mapped with the open end at a power tower.  
 1. iD will show you all OpenStreetMap data and with `Bing` or `ESRI` satellite imagery underneath. Depending on your region, you might want to switch to different satellite imagery by pressing the `Background Setting` button in the right panel.
-1. Now click on the `Line` button in the top panel and afterwards on the last power tower symbol next to the coordiantes.
+1. Now click on the `Line` button in the top panel and afterwards on the last power tower symbol next to the coordinates.
 1. Now, search for the next Power Towers. Looking at how the previous power towers looked will give you an idea of what the next one will look like. Most lines are straight and an equal distance apart. If you cannot see the previous power towers, you may need to switch to satellite view. Don't worry if you miss a power tower. Such issues are automatically detected, so another mapper may spot it.
 1. Place a new `node` at the base of all the power towers along the `way`, continuing as far as you can find new towers.
 1. Next, you need to tag the line correctly. To do this, first click on the way you have just drawn. In the left panel you can now edit the `Feature`. Press on the `Line` symbol and search for `Power Line`.
