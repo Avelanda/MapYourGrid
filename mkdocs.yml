@@ -9,10 +9,12 @@ nav:
   - IMPACT: impact.md
   - STARTER-KIT: starter-kit.md
   - MAP IT📍: map-it.md
-  - TOOLS AND STRATEGIES: tools.md
-  - OUR PROGRESS : progress.md
+  - TOOLS & STRATEGIES: tools.md
+  - PROGRESS : progress.md
   - QUESTIONS? : questions.md
-  - BLOG : aboutus_blog.md
+  - BLOG & TEAM : about-us-blog.md
+  #    2025:
+  #      - "Liberate the Grid": blog/firstrename.md
 
 copyright:    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">
       Creative Commons Attribution 4.0 International License   </a> -  <a href="https://MapYourGrid.org/privacy-policy/"> Read our Privacy Policy</a> 
@@ -55,6 +57,8 @@ extra:
     link: https://github.com/open-energy-transition/MapYourGrid
   - icon: fontawesome/brands/discord
     link: https://discord.gg/a5znpdFWfD
+  - icon: fontawesome/brands/youtube
+    link: https://www.youtube.com/@MapYourGrid
   image: images/MapYourGrid.ico
   social_preview: images/website/mapyourgrid-preview.jpg
 

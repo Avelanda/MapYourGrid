@@ -652,6 +652,11 @@ aside.md-banner a>div {
   overflow: hidden !important;
 }
 
+/* removes the releases icon top right*/
+.md-source__fact--version {
+  display: none !important;
+}
+
 @media (max-width: 768px) {
   .md-source {
     background-color: initial !important;
@@ -748,6 +753,14 @@ aside.md-banner a>div {
   background-color: #1c467f;
 }
 
+.btn-third:hover {
+  background-color: #1c467f;
+}
+
+.btn-fourth:hover {
+  background-color: #1c467f;
+}
+
 .btn-nav {
   background-color: #2f2626; /* main navbar color */
 }
@@ -761,6 +774,27 @@ aside.md-banner a>div {
     white-space: normal !important; /* Allow text wrapping */
     line-height: 1.3; /* Adjust line spacing */
     text-align: center; /* Keep text centered */
+  }
+}
+
+/* ----------------------------tools section smaller buttons-------------------------------*/
+@media (min-width: 769px) {
+  .tools-buttons-small {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: left;
+    
+  }
+  .tools-buttons-small .btn {
+    flex: 0 0 auto;
+    max-width: 500px;
+    padding: 0.4rem 0.8rem; /* Thinner padding */
+    font-size: 0.8rem; /* Slightly smaller font */
+    min-width: 180px; /* Minimum width to prevent too narrow */
+    width: auto !important;
+    min-width: auto !important; 
+    max-width: none !important;
   }
 }
 
@@ -1057,6 +1091,60 @@ aside.md-banner a>div {
 }
 
 
+ /* Leaderboard on progrss page */
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
+.leaderboard-table th, .leaderboard-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
 
+.leaderboard-table thead tr {
+  background-color: #28a745; /* This remains green as requested */
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.leaderboard-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.leaderboard-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.leaderboard-table tbody tr:last-of-type {
+    border-bottom: 2px solid #28a745;
+}
+
+.leaderboard-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.leaderboard-table td:first-child {
+    font-weight: 700;
+    width: 50px;
+    text-align: center;
+}
+
+/* Last Updated Text */
+#last-updated {
+    text-align: right;
+    font-size: 0.85em;
+    color: #6c757d;
+    margin-top: 1rem;
+}
+
+/* Loading State */
+.loader {
+    text-align: center;
+    padding: 2rem;
+    font-style: italic;
+    color: #6c757d;
+}
