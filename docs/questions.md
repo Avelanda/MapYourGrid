@@ -42,18 +42,18 @@ No, publishing grid data through MapYourGrid does not meaningfully increase secu
 
 MapYourGrid builds on a decade of public infrastructure mapping, including global comparisons showing alignment with government datasets. Our mission is to democratize access for resilience, transparency, and innovation, not to expose anything adversaries don’t already know. Our [Code of Mappers](code-of-mappers.md) outlines the shared values, responsibilities, and safe practices for individuals and organizations participating in grid mapping activities in OpenStreetMap. It is designed to safeguard communities, promote transparency, and protect sensitive areas while enabling open data for global development and energy resilience.
 
-Read more Responsible Grid Mapping Understanding Risks and Mitigation on our [Impact Page](impact.md/#responsible-grid-mapping-understanding-risks-and-mitigation).
+Read more on responsible grid mapping and understanding risks and mitigation on our [Impact Page](impact.md/#responsible-grid-mapping-understanding-risks-and-mitigation).
 
 
 ### <div class="tools-header">How is Data Quality and Validation Assured?</div>
 
 MapYourGrid builds on OpenStreetMap’s principle of [verifiability](https://wiki.openstreetmap.org/wiki/Verifiability), meaning all data must be observable and confirmable by others. Quality is ensured through:
 
-* Automated checks using tools like [JOSM Validator](https://josm.openstreetmap.de/wiki/Help/Dialog/Validator) and [Osmose](https://wiki.openstreetmap.org/wiki/Osmose)
-* Visual and tagging guidelines for consistent mapping
-* Optional human reviews via the `#MapYourGrid` tag
-* Analysis tools like [ohsome stats](https://stats.now.ohsome.org/) to detect gaps or anomalies
-* Expert validation and random sample checks
+* Automated checks using tools like [JOSM Validator](https://josm.openstreetmap.de/wiki/Help/Dialog/Validator) and [Osmose](https://wiki.openstreetmap.org/wiki/Osmose).
+* Visual and tagging guidelines for consistent mapping.
+* Optional human reviews via the `#MapYourGrid` tag in OSM.
+* Analysis tools like [ohsome stats](https://stats.now.ohsome.org/) to detect gaps or anomalies.
+* Expert validation and random sample checks.
 
 Together, these methods help maintain a reliable, crowdsourced electrical grid dataset. [Read more about our Quality Assurance and Validation](tools.md/#quality-assurance-and-validation). 
 
@@ -64,7 +64,7 @@ We are developers, data scientists, power grid experts, cartographers and OpenSt
 
 ### <div class="tools-header"> What is the Business Model of the Project? </div>
 
-MapYourGrid is a non-profit initiative funded by several smaller organisations that use this data for their own open-source products.
+MapYourGrid is a non-profit initiative funded by several smaller organisations that use this data for other open-source tools, making further contributions in OSM easier and helping maintain data quality over time. 
 
 ### <div class="tools-header"> What is the Governance of MapYourGrid? </div>
 
@@ -78,13 +78,66 @@ The fastest way to broaden our impact right now is to map transmission power gri
 
 Transparent, accurate data on energy infrastructure is essential for climate resilience, energy planning and equity. In low and middle-income countries, most of this data is locked or missing. We aim to change that. Read more about the impact we are creating on our [Impact](impact.md) page. 
 
+### <div class="tools-header"> Who are you doing this for ? Who is using this Data ?  </div>
+
+Everyone can use the data and tools we are creating.
+
+In particular, transmission grid open data can be used by governments, utilities, energy modelers, researchers, companies and non-profits, individuals, and so on. If you're interested in concrete examples of how OSM grid data is being used, check out the dedicated section on our [Impact](https://mapyourgrid.org/impact/#who-is-using-openstreetmap-grid-data) page.
+
+
+### <div class="tools-header"> How is this Project helping with Decarbonation ? </div>
+
+Decarbonisation relies on renewables like wind, solar, hydro, etc. These technologies can be land-intensive and require large areas for generation sites. Those sites are often far from where electricity is actually consumed : cities, industries, and households. To integrate renewables at scale, energy planners need to know where new lines can connect generation to demand, where the grid must be reinforced, and where investment will deliver the biggest impact.
+
+Thus, by mapping today’s infrastructure in a consistent, global format, we aim to enable better planning of renewable deployment, electrification strategies, and long-term investment decisions that are essential for decarbonisation.
+
 ### <div class="tools-header"> What Countries are covered by the Project?  </div>
 
 Our project is global. Currently, we mainly focus on low and middle-income countries where public data may be scarce and energy planning needs are high. 
 
+### <div class="tools-header"> Why would we need to map the Power Grid? Don't Governments and/or Utilities already have Maps that show exactly where their Infrastructure is ?</div>
+
+Not always. In many low- and middle-income countries, up-to-date and accessible grid maps simply do not exist. Even in some high-income regions, the information can be fragmented, outdated, or hard to access.
+
+For utilities and governments, compiling comprehensive maps is often a major challenge. Data is scattered across multiple private and public actors, and many organisations still rely on expensive proprietary datasets just to get a basic picture of their own infrastructure.
+
+This is why open, standardised transmission grid data is so important. By making the grid accessible through OpenStreetMap, it creates a global, consistent reference that anyone can use, from policymakers and researchers to local planners and citizens.
+
 ### <div class="tools-header"> How do you map all those Power Grids? </div>
 
-We use a variety of sources, primarily satellite imagery, as well as other open data, academic articles and crowdsourced information from OpenStreetMap, to enhance our knowledge. We also use different tools (JOSM, Osmose, OpenInfraMap) to upload this data into OpenStreetMap.
+We use a variety of sources, primarily satellite imagery, as well as other open data, academic articles and crowdsourced information from OpenStreetMap, to enhance our knowledge. 
+We are also building a 100% Open Source Toolchain to map the global electrical grid using:
+
+1. [OpenStreetMap](https://www.openstreetmap.org/) as a database.
+2. [JOSM](https://josm.openstreetmap.de/) as a OpenStreetMap editor.
+3. [Open Infrastructure Map](https://openinframap.org/#2/26/12) for visualisation of utilities infrastructure data from OSM.
+4. [Osmose](https://wiki.openstreetmap.org/wiki/Osmose) for validation and quality assurance.
+5. [mkdocs material](https://squidfunk.github.io/mkdocs-material) for the website.
+6. [Leaflet](https://github.com/Leaflet/Leaflet) for the interactive map.
+
+Find out more on all tools and repositories that we have integrated on [GitHub - open-energy-transition/MapYourGrid: We empower individuals, communities and nations around the world to map the electrical grid.](https://github.com/open-energy-transition/MapYourGrid)
+
+We are actively working on developing and integrating other existing Open Source tools to enhance the toolchain.
+
+### <div class="tools-header">There are already many Grid Datasets out there : why not just use those? </div>
+
+It’s true that many grid datasets exist, but they are rarely harmonised and most are locked behind proprietary licences, which means they cannot be reused freely without explicit permission.
+
+OpenStreetMap provides high-quality, globally consistent grid data that follows common data standards. This consistency is essential when modelling large-scale energy systems across regions.
+
+On top of that, OpenStreetMap data is published under the Open Database Licence (ODbL), which allows sharing, adapting, and building upon the data, as long as attribution is given, derivative data is shared alike, and everything remains open.
+
+### <div class="tools-header">Isn’t it easier if Governments and/or Utilities just integrated their Grid Data into OSM, instead of re-mapping everything by hand? </div>
+
+OpenStreetMap is not a simple data repository where files can be uploaded. Large-scale imports are generally discouraged by the community because of concerns about data quality, licensing restrictions, and long-term maintenance.
+
+Every element in OSM must be verifiable, accurately located, and integrated consistently with existing map features. That requires human verification, which is why the role of mappers is so important.
+
+That said, utilities and governments are welcome to collaborate: if their datasets are compatible with OSM’s licence and standards, they can be used as reference material by volunteers, helping speed up the mapping process while ensuring the data remains open, accurate, and community-maintained.
+
+### <div class="tools-header">Why would Individual Volunteers do this ? </div>
+
+OpenStreetMap volunteers have been mapping the world’s power grid for almost 20 years. Thanks to millions of contributors, around 70% of the global grid is already in OSM. MapYourGrid is here to support the community with even better tools and clearer documentation to help complete the remaining 30%, which is the most challenging part.
 
 ---
 
@@ -121,9 +174,21 @@ Open data quality varies. Cross-check it when possible. If you're local, field v
 
 Bulk imports are strongly discouraged and must follow strict OSM guidelines. Contact your local OSM communities before attempting imports.  
 
+### <div class="tools-header">  What is the Licence of the Data you are creating and using ?</div>
+
+We're co-creating and using OpenStreetMap data. OSM data is under the licence Open DataBase Licence (OBDL) that you can find more information and official sources on here : [Open Database License — OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Open_Database_License)
+
+The MapYourGrid website, documentation and tools are licensed under [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/).
+
 ### <div class="tools-header"> Can I reuse OpenStreetMap data?</div>
 
-Yes, as long as you credit OSM properly. Note that if you improve OSM data, you need to publish the improvements with the appropriate licence so that they can profit the OSM community. For more information, refer to the OSM Foundation attribution guidelines here : https://osmfoundation.org/wiki/Licence/Attribution_Guidelines
+Yes, as long as you credit OSM properly. Note that if you improve OSM data, you need to publish the improvements with the appropriate licence so that they can profit the OSM community. For more information, refer to the OSM Foundation attribution guidelines on the [OSM Foundation website](https://osmfoundation.org/wiki/Licence/Attribution_Guidelines).
+
+### <div class="tools-header"> What are you doing with the Data you've created ? What Product is the Data fueling ?</div>
+
+Everything mapped goes directly into OpenStreetMap. From there, the data is used in open tools like [Open Infrastructure Map](https://openinframap.org/#2/26/12) and open-source modelling frameworks such as [PyPSA](https://pypsa.org/#home) for large-scale energy system planning.
+
+The purpose of creating this data is not to fuel a single product, but to support local and regional planning, provide a solid foundation for scientific research, and feed into open-source tools that make contributing easier while helping to maintain data quality over time.
 
 ### <div class="tools-header"> What are iD, JOSM and Osmose you talk about? </div>
 
@@ -173,7 +238,9 @@ You can start by investigating existing online sources, especially open data pub
 
 The most important elements are the lines, towers, substations perimeters and power plants.
 
-As an extra, key attributes for power lines include voltage, number of cables, wires per bundle and operator. You can find an extensive documentation about which attributes to use about power features on the OpenStreetMap wiki: https://wiki.openstreetmap.org/wiki/Power_networks#Electric_power
+As an extra, key attributes for power lines include voltage, number of cables, circuits, wires per bundle and operator. 
+
+You can find an extensive documentation about which attributes to use about power features on the [OpenStreetMap wiki's Category:Power Infrastructure Guidelines](https://wiki.openstreetmap.org/wiki/Category:Power_Infrastructure_Guidelines).
 
 ### <div class="tools-header"> How much Time will it take to Contribute?</div>
 
