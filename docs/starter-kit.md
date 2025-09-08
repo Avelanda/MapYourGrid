@@ -48,7 +48,7 @@ For those who prefer iD to JOSM or are new to OpenStreetMap and electrical grid 
 
 
 1. [Create an OpenStreetMap account](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did) and log in. Switch to the `Edit` mode by pressing the button on the top panel.
-1. Select a `Good First Line` from the following list and copy the coordinates: [**Good First Lines**](https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js)
+1. Select a `Good First Line` from the following list and copy the coordinates: [**Good First Lines**](https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js){target="_blank"}
 1. Copy the coordinates of the `Good First Line` into the `Search` field and press `Enter`. You should now see a transmission lines mapped with the open end at a power tower.  
 1. iD will show you all OpenStreetMap data and with `Bing` or `ESRI` satellite imagery underneath. Depending on your region, you might want to switch to different satellite imagery by pressing the `Background Setting` button in the right panel.
 1. Now click on the `Line` button in the top panel and afterwards on the last power tower symbol next to the coordinates.
