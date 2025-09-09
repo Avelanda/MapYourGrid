@@ -519,39 +519,22 @@ async function fetchOsmoseAndDownload(sovName) {
   if (!base.endsWith('*')) base += '*';
 
   const apiUrl = 
-    `https://osmose.openstreetmap.fr/api/0.3/issues.json?` +
+    `https://osmose.openstreetmap.fr/api/0.3/issues.geojson?` +
     `country=${encodeURIComponent(base)}` +
     `&item=${item}&class=${cls}&limit=5000` +
     `&useDevItem=all`;
 
   const resp = await fetch(apiUrl);
   if (!resp.ok) throw new Error(`Osmose API ${resp.statusText}`);
-  const data = await resp.json();
+  const geojson = await resp.json();
 
-  const features = (data.issues||[]).map(i => ({
-    type: 'Feature',
-    properties: { id: i.id, item: i.item, clazz: i.class },
-    geometry: { type: 'Point', coordinates: [i.lon, i.lat] }
-  }));
-
-  // If no features, notify and stop
-  if (features.length === 0) {
+  if (!geojson.features || geojson.features.length === 0) {
     alert(`No issues found for "${sel.options[sel.selectedIndex].text}" in ${sovName.replace('*','')}. Try another osmose issue type!`);
     return;
   }
 
-  const geojson = { type: 'FeatureCollection', features };
-
-  const blob = new Blob([JSON.stringify(geojson, null,2)],
-                        {type:'application/json'});
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href     = url;
-  a.download = `${sovName.replace('*','')}_osmose_${item}_${cls}.geojson`;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  URL.revokeObjectURL(url);
+  const layerName = `${sovName.replace('*','')}-osmose-${item}-${cls}`;
+  geoToJosm(apiUrl, layerName);
 }
 
 async function fetchGEMAndDownload(sovName) {
@@ -662,6 +645,20 @@ function sendUrlToJosm(dataUrl, layerName) {
   const iframe = document.createElement('iframe');
   iframe.style.display = 'none';
   iframe.src = josmUrl;
+  document.body.appendChild(iframe);
+  setTimeout(() => document.body.removeChild(iframe), 1000);
+}
+
+// For osmose (added format=geojson in url)
+function geoToJosm(dataUrl, layerName) {
+  console.log("Setting JOSM layer name to:", layerName);
+  // We must encode the dataUrl itself to pass it as a parameter to the JOSM url.
+  const geoUrl = `http://localhost:8111/import?new_layer=true&layer_name=${encodeURIComponent(layerName)}&url=${encodeURIComponent(dataUrl)}&format=geojson`;
+
+  console.log(`Sending data URL to JOSM: ${dataUrl}`);
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.src = geoUrl;
   document.body.appendChild(iframe);
   setTimeout(() => document.body.removeChild(iframe), 1000);
 }
