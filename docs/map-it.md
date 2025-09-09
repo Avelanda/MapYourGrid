@@ -52,7 +52,11 @@ hide:
                 <option value="7040:95">missing power=line in the area (Class 95)</option>
               </optgroup>
     </select>
-    <div class="query-version">Warning: GeoJSON file. "Open" in JOSM, but do not "upload" this layer</div>
+</div>
+
+<!-- GEM button-->
+<div id="gem-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: GeoJSON file. "Open" in JOSM, but do not "upload" this layer</div>
 </div>
 
 <!-- Wikidata button-->
@@ -84,6 +88,8 @@ hide:
 
 <!-- Start of script! -->
 <script>
+
+let selectedEditor = 'josm';
 
 // ———————————————
 // Osmose name overrides (some names are different, check the API)
@@ -181,7 +187,68 @@ async function initQueryUI() {
   // 2. Create two sibling containers, then insert them above the map
   const mapEl = document.getElementById('map');
 
-    // Add instructional text below the map
+  // JOSM or ID buttons
+  const editorUiWrapper = document.createElement('div');
+  editorUiWrapper.id = 'editor-ui-wrapper';
+  editorUiWrapper.innerHTML = `
+    <strong> Choose Your Editor</strong>
+    <div id="editor-choice">
+      <button id="josm-btn" class="query-btn active">JOSM</button>
+      <button id="id-btn" class="query-btn">iD Editor</button>
+    </div>
+    <div id="url-container" style="display:none;">
+      <p>Copy this URL for iD Editor's "Custom Map Data":</p>
+      <div class="url-input-wrapper">
+        <input type="text" id="url-display" readonly>
+        <button id="copy-btn">Copy</button>
+      </div>
+    </div>
+  `;
+  mapEl.parentNode.insertBefore(editorUiWrapper, mapEl);
+  const josmBtn = document.getElementById('josm-btn');
+  const idBtn = document.getElementById('id-btn');
+  const urlContainer = document.getElementById('url-container');
+  const editorChoiceDiv = document.getElementById('editor-choice');
+
+  josmBtn.addEventListener('click', () => {
+    selectedEditor = 'josm';
+    josmBtn.classList.add('active');
+    idBtn.classList.remove('active');
+    urlContainer.style.display = 'none';
+
+    const existingWarning = document.getElementById('id-editor-warning');
+    if (existingWarning) {
+      existingWarning.remove();
+    }
+
+    const overpassButtons = document.getElementById('overpass-buttons');
+    if (overpassButtons) {
+        overpassButtons.style.opacity = '1';
+        overpassButtons.style.pointerEvents = 'auto';
+    }
+  });
+
+  idBtn.addEventListener('click', () => {
+    selectedEditor = 'id';
+    idBtn.classList.add('active');
+    josmBtn.classList.remove('active');
+
+    const warningMsg = document.createElement('div');
+    warningMsg.id = 'id-editor-warning';
+    warningMsg.className = 'query-version';
+    warningMsg.textContent = 'Only the "Tools and Hints" work with iD editor';
+    warningMsg.style.marginTop = '0.5em';
+    editorChoiceDiv.appendChild(warningMsg);
+    
+    // 3) Disable query buttons if id editor is on
+    const overpassButtons = document.getElementById('overpass-buttons');
+    if (overpassButtons) {
+        overpassButtons.style.opacity = '0.5';
+        overpassButtons.style.pointerEvents = 'none';
+    }
+  });
+
+  // Add instructional text below the map
   const introBox = document.createElement('div');
   introBox.id = 'map-intro';
   introBox.style = `
@@ -261,11 +328,13 @@ async function initQueryUI() {
   const osmose   = document.getElementById('osmose-panel');
   const wikidata = document.getElementById('wikidata-panel');
   const ppm      = document.getElementById('ppm-panel');
+  const gem      = document.getElementById('gem-panel');
 
   // append them into our wrapper
   panelWrapper.appendChild(osmose);
   panelWrapper.appendChild(wikidata);
   panelWrapper.appendChild(ppm);
+  panelWrapper.appendChild(gem);
 
   // finally, drop that wrapper just before the map div
   mapEl.parentNode.insertBefore(panelWrapper, mapEl);
@@ -404,9 +473,8 @@ async function renderModeButtonGroup(mode) {
 // helper to swap modes and show/hide the Osmose and wikidata UI panels
 function selectMode(mode, btn) {
   currentMode = mode;
-  document.querySelectorAll('.query-btn')
+  document.querySelectorAll('#overpass-buttons .query-btn, #tool-buttons .query-btn')
           .forEach(b => b.classList.toggle('active', b === btn));
-
   // Osmose
   document.getElementById('osmose-panel').style.display =
     mode === 'Osmose_issues' ? 'block' : 'none';
@@ -418,6 +486,9 @@ function selectMode(mode, btn) {
   // PPM    
   document.getElementById('ppm-panel').style.display =
   mode === 'PPM' ? 'block' : 'none';
+
+  document.getElementById('gem-panel').style.display =
+  mode === 'GEM_powerplants' ? 'block' : 'none';
 }
 
 
@@ -431,6 +502,26 @@ async function fetchQuery(mode, adminLevel) {
   const r = await fetch(rawUrl);
   if (!r.ok) throw new Error(`Query file not found: ${mode}/admin${adminLevel}`);
   return r.text();
+}
+
+//for id
+function displayUrlForId(url) {
+    const container = document.getElementById('url-container');
+    const input = document.getElementById('url-display');
+    const copyBtn = document.getElementById('copy-btn');
+
+    input.value = url;
+    container.style.display = 'block';
+    container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    
+    copyBtn.textContent = 'Copy';
+    copyBtn.onclick = () => {
+        navigator.clipboard.writeText(url).then(() => {
+            copyBtn.textContent = 'Copied!';
+        }).catch(err => {
+            alert('Failed to copy. Please select the text and press Ctrl+C.');
+        });
+    };
 }
 
 // 2d) unified click handler for country (level 2) & region (level 4)
@@ -471,7 +562,7 @@ async function handleAreaClick(iso, level, layer) {
     else {
        let tpl = await fetchQuery(currentMode, level);
        tpl = tpl.replace(/\$\{iso\}/g, iso);
-       sendToJosm(tpl, name);
+       sendToJosm(tpl, name); 
     }
   } catch (err) {
     layer.getPopup().setContent(`Error: ${err.message}`).update();
@@ -480,18 +571,29 @@ async function handleAreaClick(iso, level, layer) {
 setTimeout(() => {
   layer.setStyle({ color: '#3388ff' });
 
-  const html = `
-    <div class="popup-success">
-      <p>🎉 <strong>Great!</strong> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if it is downloading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on regions or states. For <strong>Osmose and GEM tools and hints</strong> selections, you will need to download the geojson file. Afterwards drag and drop the file into JOSM. For wikidata and powerplantmatching, the layer will be directly loaded in JOSM. <br>⚠️ <strong>If nothing happens:</strong></p>
-      <ol>
-        <li>Check if your ad-blocker is off and JOSM is open</li>
-        <li>Make sure Remote Control is enabled in JOSM</li>
-        <li>If it’s enabled but still not working, toggle it off and on again</li>
-        <li>Note that hint layers do not work on regional layers. In this case, please load the data onto a national layer.</li>
-        <li><a href="https://mapyourgrid.org/starter-kit/">Look into the Starter-Kit</a>
-      </ol>
-    </div>
+  let html;
+
+  if (selectedEditor === 'id') {
+    // Message for iD Editor users
+    html = `
+      <div class="popup-success">
+        <p>🎉 <strong>Great!</strong> Now copy the url above. Then go to iD editor, and press on "Map Data". Then press on the three dots for "custom map data", and paste the url.</p>
+      </div>
+    `;
+  } else {
+    html = `
+      <div class="popup-success">
+        <p>🎉 <strong>Great!</strong> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if it is downloading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on regions or states. For <strong>Osmose and GEM tools and hints</strong> selections, you will need to download the geojson file. Afterwards drag and drop the file into JOSM. For wikidata and powerplantmatching, the layer will be directly loaded in JOSM. <br>⚠️ <strong>If nothing happens:</strong></p>
+        <ol>
+          <li>Check if your ad-blocker is off and JOSM is open</li>
+          <li>Make sure Remote Control is enabled in JOSM</li>
+          <li>If it’s enabled but still not working, toggle it off and on again</li>
+          <li>Note that hint layers do not work on regional layers. In this case, please load the data onto a national layer.</li>
+          <li><a href="https://mapyourgrid.org/starter-kit/">Look into the Starter-Kit</a>
+        </ol>
+      </div>
   `;
+  }
 
   layer.getPopup()
        .setContent(html)
@@ -519,39 +621,27 @@ async function fetchOsmoseAndDownload(sovName) {
   if (!base.endsWith('*')) base += '*';
 
   const apiUrl = 
-    `https://osmose.openstreetmap.fr/api/0.3/issues.json?` +
+    `https://osmose.openstreetmap.fr/api/0.3/issues.geojson?` +
     `country=${encodeURIComponent(base)}` +
     `&item=${item}&class=${cls}&limit=5000` +
     `&useDevItem=all`;
 
+  if (selectedEditor === 'id') {
+      displayUrlForId(apiUrl);
+      return;
+  }
+
   const resp = await fetch(apiUrl);
   if (!resp.ok) throw new Error(`Osmose API ${resp.statusText}`);
-  const data = await resp.json();
+  const geojson = await resp.json();
 
-  const features = (data.issues||[]).map(i => ({
-    type: 'Feature',
-    properties: { id: i.id, item: i.item, clazz: i.class },
-    geometry: { type: 'Point', coordinates: [i.lon, i.lat] }
-  }));
-
-  // If no features, notify and stop
-  if (features.length === 0) {
+  if (!geojson.features || geojson.features.length === 0) {
     alert(`No issues found for "${sel.options[sel.selectedIndex].text}" in ${sovName.replace('*','')}. Try another osmose issue type!`);
     return;
   }
 
-  const geojson = { type: 'FeatureCollection', features };
-
-  const blob = new Blob([JSON.stringify(geojson, null,2)],
-                        {type:'application/json'});
-  const url  = URL.createObjectURL(blob);
-  const a    = document.createElement('a');
-  a.href     = url;
-  a.download = `${sovName.replace('*','')}_osmose_${item}_${cls}.geojson`;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  URL.revokeObjectURL(url);
+  const layerName = `${sovName.replace('*','')}-osmose-${item}-${cls}`;
+  geoToJosm(apiUrl, layerName);
 }
 
 async function fetchGEMAndDownload(sovName) {
@@ -623,6 +713,11 @@ async function fetchWikidataAndDownload(sovName) {
     return alert(`No Wikidata ${type.replace(/_/g,' ')} file for ${sovName}.`);
   }
 
+  if (selectedEditor === 'id') {
+      displayUrlForId(url);
+      return;
+  }
+
   const layerName = `${sovName}-wikidata`;
   sendUrlToJosm(url, layerName);
 }
@@ -647,6 +742,11 @@ async function fetchPPMAndDownload(sovName) {
     return alert(`No PPM file found for ${sovName}.`);
   }
 
+  if (selectedEditor === 'id') {
+      displayUrlForId(url);
+      return;
+  }
+
   const layerName = `${sovName}-ppm`;
   sendUrlToJosm(url, layerName);
 }
@@ -662,6 +762,20 @@ function sendUrlToJosm(dataUrl, layerName) {
   const iframe = document.createElement('iframe');
   iframe.style.display = 'none';
   iframe.src = josmUrl;
+  document.body.appendChild(iframe);
+  setTimeout(() => document.body.removeChild(iframe), 1000);
+}
+
+// For osmose (added format=geojson in url)
+function geoToJosm(dataUrl, layerName) {
+  console.log("Setting JOSM layer name to:", layerName);
+  // We must encode the dataUrl itself to pass it as a parameter to the JOSM url.
+  const geoUrl = `http://localhost:8111/import?new_layer=true&layer_name=${encodeURIComponent(layerName)}&url=${encodeURIComponent(dataUrl)}&format=geojson`;
+
+  console.log(`Sending data URL to JOSM: ${dataUrl}`);
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.src = geoUrl;
   document.body.appendChild(iframe);
   setTimeout(() => document.body.removeChild(iframe), 1000);
 }

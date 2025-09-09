@@ -10,6 +10,9 @@ Using the right tools and strategies is fundamental to mapping the electrical gr
   <a href="#quality-assurance-and-validation" class="btn btn-secondary">Quality Assurance and Validation</a>
 </div>
 
+### **<div class="tools-header">Check out our tools and strategies video tutorial for JOSM</div>**
+<iframe width="720" height="315" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/gyO93zd30nQ?si=UHClE5T7ohl_rW84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## <div class="stradegy-header">Introduction</div></h3>
 
 
