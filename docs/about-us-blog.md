@@ -272,7 +272,7 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
 
 <div class="grid cards" markdown>
 
-- <a href="../blog/20250908-BehindTheScenes.md" style="text-decoration: none; color: inherit;">
+- <a href="../blog/20250908-BehindTheScenes" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/MYG-all-edits-and-global.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
   **Behind the Scenes of MapYourGrid (08 Sept. 2025)**  
   In August 2025, we made MapYourGrid publicly available. For seven months before that, our team of developers, data scientists, energy experts worked side by side, testing tools and mapping grids ourselves.  
