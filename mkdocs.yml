@@ -21,7 +21,7 @@ copyright:    <a href="https://creativecommons.org/licenses/by/4.0/" target="_bl
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: overrides
   favicon: images/logos/MapYourGrid-logo.png
   logo: images/logos/MapYourGrid-logo.png
   palette:
@@ -63,8 +63,8 @@ extra:
   social_preview: images/website/mapyourgrid-preview.jpg
 
 extra_javascript:
-  - js/umami.js
-  - js/gallery.js
+  - assets/javascripts/umami.js
+  - assets/javascripts/gallery.js
 
 
 
@@ -89,10 +89,10 @@ markdown_extensions:
 
 
 plugins:
+  - search
   - glightbox:
         skip_classes:
             - thumb-gallery
-  - search
   - i18n:
       docs_structure: folder
       fallback_to_default: true
@@ -131,7 +131,6 @@ plugins:
             "QUESTIONS?": "¿QUESTIONS?"
             "BLOG & TEAM": "BLOG ET EQUIPE"
           site_name: "MapYourGrid"
-      # Critical: This maps your folder names to locales
       default_language: en
       material_alternate: true
   
