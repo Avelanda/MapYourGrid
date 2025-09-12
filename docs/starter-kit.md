@@ -10,18 +10,73 @@
 </figcaption>
 </div>
 
-This Starter-Kit empowers you how to map your first line of the electrical transmission grid. If you ever get stuck with the Starter-Kit or would like to provide feedback, please contact us via our [community chat](https://discord.gg/fBw7ARTUeR) or [via email](mailto:MapYourGrid@openenergytransition.org). A MapYourGrid community member will help you finish your first line and set up your environment.
+These starter kits empower you to learn how to map your first line of the electrical transmission grid. If you ever get stuck with the Starter-Kit or would like to provide feedback, please contact us via our [community chat](https://discord.gg/fBw7ARTUeR) or [via email](mailto:MapYourGrid@openenergytransition.org). A MapYourGrid community member will help you finish your first line and set up your environment.
 
-We recommend JOSM (Java OpenStreetMap) editor generally, particularly for professional, large-scale grid mapping and to inspect the electrical grid. However, if you only want to make minor edits or leave notes without installing anything, the iD editor in combination with [Open Infrastructure Map](https://openinframap.org/) and MapComplete is a better choice. These tools also offer enhanced usability for field mapping tasks and data validation. You can follow our tutorials on this website, but we also have a video tutorial for JOSM!
+We recommend JOSM (Java OpenStreetMap) editor generally, particularly for professional, large-scale grid mapping and to inspect the electrical grid. However, if you only want to make minor edits or leave notes without installing anything, the [iD editor](https://www.openstreetmap.org/edit) provides a userfriendly mapping experience. iD and JOSM can both we combined with [Open Infrastructure Map](https://openinframap.org/).  MapComplete provides an optimised workflow for mobile devices for mapping missing tags, such as voltages or capacities. These tools also offer enhanced usability for field mapping tasks and data validation. You can follow our tutorials on this website, or watch our video tutorial for JOSM!
 
-Get started by clicking on one of the OpenStreetMap editors:
+**Get started by clicking on one of the OpenStreetMap editors:**
 
 <div class="starter-kit-buttons">
-  <a href="#josm-starter-kit" class="btn btn-primary">JOSM Starter‑Kit - Large‑Scale Mapping</a> 
-  <a href="#id-starter-kit" class="btn btn-secondary">iD Starter‑Kit - Small‑Scale & Field Mapping</a>
-  <a href="#mapcomplete-starter-kit" class="btn btn-secondary">MapComplete Starter‑Kit - Missing Tags Mapping</a>
+  <a href="#id-starter-kit" class="btn btn-third">iD Starter‑Kit - Beginner Friendly Small‑Scale Mapping</a>
+  <a href="#josm-starter-kit" class="btn btn-primary">JOSM Starter‑Kit - Large‑Scale & Technical Mapping</a> 
+  <a href="#id-and-open-infrastructure-map-starter-kit" class="btn btn-third">iD & Open Infrastructure Map Starter-Kit - Advanced iD Mapping & Field Mapping</a> 
+  <a href="#mapcomplete-starter-kit" class="btn btn-fourth">MapComplete Starter‑Kit - Missing Tags Field Mapping</a>
 </div>
 
+## <div class="stradegy-header">iD Starter-Kit</div></h3>
+Have you spotted some power towers, power plants, issue or substations near your place that are still missing and want to quickly map them yourself? This can be done on your mobile device or PC using the iD editor. In this way, you can also correct voltages, circuits, or other errors you see in Open Infrastructure Map.
+
+The native iD OpenStreetMap editor offers a simple, user-friendly interface that is perfect for beginners or those who want a quick overview of electrical grid mapping. Its simple user interface and web browser integration also make it possible to use this editor on mobile devices, enabling field mapping and validation tasks to be carried out on the ground.
+
+****
+### <div class="stradegy-header">Map your Good First Line with iD</div></h3>
+
+For those who prefer iD to JOSM or are new to OpenStreetMap and electrical grid mapping, the following starter kit provides a quick introduction to mapping your first `Good First Line`. While it is possible to map transmission lines on a mobile device, this is best done on a PC with a mouse. 
+
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+  <img src="../images/starter-kit/id-start-your-line.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">Copy the Good First Line coordinates into your editor. Click to enlarge.</figcaption>
+  <img src="../images/starter-kit/id-map-line.jpg"  class="img-border" style="width: 100%;"> 
+  <figcaption class="image-caption">Map your first power line, making all nodes power towers and the line itself a power line. Click to enlarge.</figcaption>
+  <img src="../images/starter-kit/upload-data.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">Provide a small comment on your mapping success, including a #mapyourgrid hashtag and upload your data. Click to enlarge</figcaption>
+  <img src="../images/starter-kit/power-tower-examples.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">Depending on the angle of the sun, power towers casts a distinctive shadow. Take a look at the power towers that have already been mapped and bear in mind that most lines run straight with a similar distance between power towers. Click to enlarge.</figcaption>
+  <img src="../images/starter-kit/map-single-tower-id.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">Not sure about the exact routing of a transmission line? Simply place the power towers and leave out the transmission lines. </figcaption>
+</div>
+
+
+1. [Create an OpenStreetMap account](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target="_blank"} and log in. Switch to the `Edit` mode by pressing the button on the top panel.
+1. Select a `Good First Line` from the following list and copy the coordinates: [**Good First Lines**](https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js){target="_blank"}
+1. Copy the coordinates of the `Good First Line` into the `Search` field and press `Enter`. You should now see a transmission lines mapped with the open end at a power tower.  
+1. iD will show you all OpenStreetMap data and with `Bing` or `ESRI` satellite imagery underneath. Depending on your region, you might want to switch to different satellite imagery by pressing the `Background Setting` button in the right panel.
+1. Now click on the `Line` button in the top panel and afterwards on the last power tower symbol next to the coordinates.
+1. Now, search for the next Power Towers. Looking at how the previous power towers looked will give you an idea of what the next one will look like. Most lines are straight and an equal distance apart. If you cannot see the previous power towers, you may need to switch to satellite view. Don't worry if you miss a power tower. Such issues are automatically detected, so another mapper may spot it.
+1. Place a new `node` at the base of all the power towers along the `way`, continuing as far as you can find new towers.
+1. Next, you need to tag the line correctly. To do this, first press `Esc` and then click on the way you have just drawn. In the left panel you can now edit the `Feature`. Press on the `Line` symbol and search for `Power Line`.
+1. With your new Power Line still selected press `CTRL + ↓` will select all the `nodes` along your `Power Line`.
+1. Now in the left panel go back to the search field and search for `Power Tower` or `High-Voltage Tower`. 
+1. Press on it, and all you nodes will become `Power Towers`. If you zoom in, you should now see the `Power Tower` now along the line.
+1. Resolve all warnings, issues and errors in your data by clicking on the ⚠️ symbol in the bottom right corner.
+1. Now press the `Save` button in the right upper corner. Provide a very short decription what you have done in the Changeset comment, including a `#MapYourGrid` hashtag
+1. Finally press Press Upload. Congratulations! You have just mapped your very first transmission line.
+
+Sometimes, there are several possible options for line routing and it is unclear where the transmission lines actually go. In these cases, it is perfectly acceptable to simply place power towers. You can't go wrong by placing power towers. Another more experience mapper will see your towers and finish the line. 
+
+1. Create a `Point` where you can see the power tower with the button in the top middle panel.
+1. Make it a `High-Voltage Tower` aka power tower with the feature panel on the left side. 
+1. Copy the Power Tower with `CTRL+C` and place it where you see more power towers. 
+
+**Where to go next?** 
+
+* Do you want to map further open ending transmission lines in your country using iD? Check out our [find open-ended Transmission Lines with Osmose](#find-open-ended-transmission-lines-with-osmose) in iD workflow.
+* Would you like to learn how to map power plants or substations with iD? Or are you interested in finding out how to use iD for in-field mapping? Check out our further [iD and Open Infrastructure Map Starter Kit](#id-and-open-infrastructure-map-starter-kit)
+
+!!! Warning
+    **In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
+    
+    **By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Code of Mappers cannot be enforced for volunteer community mappers either.** 
 
 
 ## <div class="stradegy-header">JOSM Starter-Kit</div></h3>
@@ -42,7 +97,7 @@ Get started by clicking on one of the OpenStreetMap editors:
 
 
 
-1. Install JOSM using the [**recommended instructions**](installation-instructions.md) for your machine.
+1. Install JOSM using the [**recommended instructions**](installation-instructions.md){target="_blank"} for your machine.
 1. Link your OSM account to JOSM. To do this, go to `Edit → Preferences → OSM Server` and select "Authorise". Login (or sign-up) with your OSM account. Your OSM account should now be linked. On macOS `Preferences` can be found under `JOSM → Settings`
 1. Enable `Remote control` in `Edit → Preferences → Remote Control`. This allows for grid data to be loaded automatically.
 1. Enable `Expert Mode` `View → Expert Mode` to enable search function that you will need. 
@@ -72,33 +127,24 @@ Get started by clicking on one of the OpenStreetMap editors:
 ### **<div class="tools-header">3. Add Visual Clarity with Custom Map Styles :art:</div>**
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
-  <a href="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.png" target="_blank">
-  <img src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.png" class="img-border" style="width: 100%;"> </a>
+  <a href="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" target="_blank">
+  <img src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">OhmyGrid legend for transmission grid mapping. Click to enlarge.</figcaption>
 </div>
  
 1. In JOSM, go to `Edit → Preferences → Map Paint Styles` and press the "+" in the top right.
-2. Paste this [URL](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/ohmygrid-default.mapcss), or download the raw [file](https://github.com/open-energy-transition/color-my-grid/blob/main/ohmygrid-default.mapcss) on your device, and add it.
+2. Paste this [URL](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/ohmygrid-default.mapcss){target="_blank"}, or download the raw [file](https://github.com/open-energy-transition/color-my-grid/blob/main/ohmygrid-default.mapcss){target="_blank"} on your device, and add it.
 3. Make sure the style is active in the Map Paint Styles menu. You can check this with `Windows → Map Paint styles`.
 
 **Optional steps for an even better visual experience :**
 
-* Not all grids are made the same. Use this MapCSS file for [low-density grids](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/ohmygrid-default.mapcss), or this one for [high-density grids](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/ohmygrid-default.mapcss). 
-* You can check [ColorMyGrid](https://github.com/open-energy-transition/color_my_map), our MapCSS Generator tool, to easily adapt the MapCSS file to your needs. The raw data to edit the [map legend](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.png) is in the ColorMyGrid repo. 
+* Not all grids are made the same. Use this MapCSS file for [low-density grids](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/ohmygrid-default.mapcss), or this one for [high-density grids](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/ohmygrid-default-high-density.mapcss){target="_blank"}. 
+* You can check [ColorMyGrid](https://github.com/open-energy-transition/color-my-grid){target="_blank"}, our MapCSS Generator tool, to easily adapt the MapCSS file to your needs. The raw data to edit the [map legend](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg){target="_blank"} is in the ColorMyGrid repo. 
 
 
 ### **<div class="tools-header">4. Let's map! Choose a Good First Line </div>**
 
-Our community is constantly investigating transmission lines that are suitable for beginner friendly mapping experiences. Simply select a 'Good First Lines' from the following spreadsheet, and tick it if you have started mapping it. For now, just keep in mind in which country (or region) your picked 'Good first line' is in, as the next step is to load that countries' grid!
-
-??? success "Good First Lines (Click Me)"
-    <a href="https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js" target="_blank">Open this Spreadsheet in another Window</a>
-
-    <iframe
-     src="https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js/edit?usp=sharing&rm=minimal"
-     class="iframestyle"
-     style="width:100%; height: 500px; border:1px solid #ddd; ">
-    </iframe>
+Our community is constantly investigating transmission lines that are suitable for beginner friendly mapping experiences. Simply select a 'Good First Lines' from the following spreadsheet, and tick it if you have started mapping it. For now, just keep in mind in which country (or region) your picked 'Good first line' is in, as the next step is to load that countries' grid! Select a `Good First Line` from the following spreadsheet. [**Good First Lines**](https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js){target="_blank"}
 
 ### **<div class="tools-header">5. Load Power Infrastructure into JOSM :inbox_tray:</div>**
 
@@ -110,16 +156,17 @@ Our community is constantly investigating transmission lines that are suitable f
 </div>
 
 
-1. Make sure remote control is enabled and ad-blocker disabled, and then go to the start mapping [page](https://MapYourGrid.org/map-it/){target="_blank"}, but come back to this page to read the instructions below! 
-1. Here you can click on the country you want to map, and it will directly open JOSM and load the data of that country. The "Default Transmission (90kV+)" data should already be selected when you open the page. Now press the country, region/state/province of the `Good First Line` you would like to map. To load data for regions/states/provinces, simply zoom in further until the border becomes visible (only works for certain countries for now!). 
+1. Make sure remote control is enabled and ad-blocker disabled, and then go to the start mapping [page](https://MapYourGrid.org/map-it/){target="_blank"}{target="_blank"}, but come back to this page to read the instructions below! 
+1. Here you can click on the country you want to map, and it will directly open JOSM and load the data of that country. The "Default Transmission (50 kV+)" data should already be selected when you open the page. Now press the country, region/state/province of the `Good First Line` you would like to map. To load data for regions/states/provinces, simply zoom in further until the border becomes visible (only works for certain countries for now!). 
 1. The data should now automatically appear in JOSM. In the `Layer` window on the right handside you should see the `Data Layer`, which is automatically named with the country/region you pressed on. The ✅ on the left of the Data Layer should be visible, indicating that this is the active layer. All your edits in the main windows will now be part of this `Data Layer`. 
 1. Familiarize yourself with the grid data, click on the lines and substation to inspect the tags and memberships in the window in the right side. 
 
-!!! Warning "Risk of Double Mapping"
+!!! Warning "Risk of Double Mapping and Conflicts"
      Please bear in mind that you have only downloaded transmission grid data for the country, state or province that you selected. This includes power plants, generators, substations, power towers and transmission lines. Other OpenStreetMap objects, such as streets, will not be visible. **Therefore, never use our tools to map objects other than those loaded via Overpass, as otherwise other mappers will have to clean up the duplicate data.**
 
     Some cross-border transmission lines will still be visible beyond the pink administrative boundaries. However, to edit these, you will need to load both countries. Never map beyond the pink administrative boundaries, as this will most likely result in infrastructure being mapped twice.
 
+    Also keep in mind that some visible objects may be connected to other hidden features even not related to power domain. Deletion is a sensitive operation and JOSM will kindly warn you about risks, particularly about deleting some feature referenced by hidden objects. The safest way to prevent those risks is to select and download OpenStreetMap data, with the help of download button ⬇️ on top left corner, surrounding the feature to be deleted. You will then see the whole picture and won't break anything hidden.
 
 ### **<div class="tools-header">6. Map your First Line</div>**
 
@@ -132,15 +179,26 @@ Our community is constantly investigating transmission lines that are suitable f
   <figcaption class="image-caption">Before uploading, JOSM will test your edits for known issues and various rule sets. Try to resolve as many validation results as possible. Click to enlarge.</figcaption>
 </div>
 
- Mapping is an iterative process, so you will make mistakes. However, this should not stop you from mapping; simply map what you can see in the imagery. Those who are new to the field should avoid altering existing data at all costs. However, you cannot break anything by adding new data, as this is constantly validated by our quality assurance tools. Now Start Mapping:
+ Mapping is an iterative process, so you will make mistakes and that is completely normal. Don't let it stop you : simply map what you can see in the imagery. If you are new to OSM mapping, avoid editing or deleting existing data at all costs. But don't worry, you cannot break anything by adding new data. Everythin is constantly validated by our quality assurance tools. 
+ 
+ Now let's Start Mapping:
 
 1. Zoom in on the satellite imagery of the country you will map until you can see the houses and roads.
-1. Copy the Coordinates of your `Good First Line` and in JOSM press the `Add Node` <img src="/images/starter-kit/add-node.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> presets button. Enter the coordinates here and press Ok. You should now see power towers that are not mapped at the end of a unfinished transmission line. Since you added a node which might not be on top of the actual tower, please remember to delete that node by pressing on `Undo Sequence` <img src="/images/starter-kit/deletenode.jpg" class="icon-svg off-glb" style="width: 30px; height: auto;">, or control+Z, or selecting the node and pressing Delete on your keyboard.
-1. Now, press `Draw Line` <img src="/images/starter-kit/draw-nodes.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> (left toolbar), and click on the last tower symbol at the end of the unfinished power line. You should now be able to extend the line. 
-1. Search for the next power towers you can find and click on its footprint. 
-1. If you ever feel unsure about how the line runs just place towers without the lines. By adding power towers you can do nothing wrong. Adding power towers is the easiest way to get started. To do this you can click on an existing tower and `control+C` and then press on where an unmapped power tower is and `control+V`. 
-1. Continue the power line to the best of your ability. Once done, press CTRL+F while the line is still selected. Then enter/type `child selected type:node AND untagged` as search string, which will select all nodes you have created. Now Press `Search`, which will select all nodes without a tag on that line. 
-1. Now press the `Power Tower` <img src="/images/starter-kit/power-towers.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> preset on the toolbar, followed by `Apply Preset`. Now all the nodes you have placed, should be tagged as `Power Tower`.
+1. Copy the Coordinates of your `Good First Line`. In JOSM press the `Add Node` <img src="../images/starter-kit/add-node.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> presets button. Paste the coordinates here and press Ok. You should now see power towers that are not mapped at the end of a unfinished transmission line. 
+1. ⚠️ Important : The node you just added may not match the exact location of a tower. Delete it right away using `Undo Sequence` <img src="../images/starter-kit/deletenode.jpg" class="icon-svg off-glb" style="width: 30px; height: auto;">, Control+Z, or by selecting it and pressing Delete.
+1. Press `Draw Line` <img src="../images/starter-kit/draw-nodes.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> (left toolbar), and click on the last tower symbol at the end of the unfinished power line. You should now be able to extend the line. 
+1. Look for the next power tower you can find and click on its footprint. 
+1. If you ever feel unsure about how the line runs, just place towers without the lines. By adding power towers you can do nothing wrong. Adding power towers is the easiest way to get started. To do this you can click on an existing tower and `control+C` and then press on where an unmapped power tower is and `control+V`. 
+1. Continue the power line to the best of your ability. 
+1. Once finished, select your line and press CTRL+Shift+N. This will select all of the nodes on the line. 
+1. Then press CTRL+F to open the Search bar. 
+1. In the Search string bar above, type`type:node untagged`. 
+1. ⚠️ In the Results tab on the left, check `Find in selection`. ⚠️
+1. Press `Search`. All untagged nodes in your line will now be selected.
+1. Apply the `Power Tower` <img src="../images/starter-kit/power-towers.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> preset from the toolbar, followed by `Apply Preset`. Now all the nodes you have placed are correctly tagged as `Power Tower`.
+
+!!! note "Pay attention to what you select and upload"
+    **⚠️ When applying presets, make sure you only select the untagged nodes of your line. If you accidentally select all untagged nodes in the country and tag them with `Power Tower`, you will upload incorrect data to OSM and will need to revert your changeset.**
 
 
 ### **<div class="tools-header">7. Upload your Edits to OpenStreetMap :outbox_tray: </div>**
@@ -150,9 +208,7 @@ Our community is constantly investigating transmission lines that are suitable f
 1. In the upload window, please tick the `I would like someone to review my edits` tick box if your mapping has been strongly affected by uncertainties like low-quality satellite data, or if you are a beginner. Provide a brief comment such as `#mapyourgrid Unfinished transmission line`. Provide the imagery source layer you used by typing `Esri` or `Bing` for example. Once done and sure about your edits, `Upload Changes`.
 1. You just mapped your First Good Line. Feel free to close more First Good Lines, but make sure you leave some for the others. You can use the [Tools and Strategies](tools.md) we have provided to find your own unmapped line. To support our initiative, please use the #MapYourGrid hashtag in the comments when you upload a changeset.
 
-
-
-## **<div class="tools-header"> Avoid these Common Mistakes :name_badge:</div>**
+### **<div class="tools-header"> 8. Avoid these Common Mistakes :name_badge:</div>**
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="/images/starter-kit/power-towers-without-lines.jpg" class="img-border" style="width: 100%;"> </a>
@@ -161,47 +217,86 @@ Our community is constantly investigating transmission lines that are suitable f
 
 Mapping is an iterative process and mistakes happen. This should not stop you from mapping; simply map what you can verify based on your skillset. If a tower, lines or attributes are missing, our quality assurance tool Osmose will automatically detect this. [Read more about our Quality Assurance and Validation](tools.md/#quality-assurance-and-validation) layers in OpenStreetMap, and how we build on top of them.
 
-1. Our tools focus on transmission grids, that’s why you might* not see lines below 90 kV. To see already mapped lines below 90 kV or lines tagged with `power=minor_line`, download the whole area you’re working on with the green arrow pointing down. Even better, you can download a country on Map It 📍 with the `Transmission+Distribution` layer activated.
+1. Our tools focus on transmission grids, that’s why you might not see lines below 50 kV. To see already mapped lines below 50 kV or lines tagged with `power=minor_line`, download the whole area you’re working on with the green arrow pointing down ⬇️. Even better, you can download a country on Map It 📍 with the `Transmission+Distribution` layer activated.
 2. When mapping, make sure to not go across the border of the country you’re working on (visible dashed neon pink lines). Otherwise, you may find yourself mapping something that already exists, but hasn’t been downloaded in JOSM. One of the strategies we have can help with this.
 3. Don’t map beyond your expertise. If unsure, leave it for experienced mappers or locals, make a fixme tag, or ask the community! If you ever feel unsure about where to place the lines, just focus on adding power towers. You can't go wrong this way. Adding power towers is the easiest way to get started.
+4. Double-check your selection before applying presets, particularly when selecting a great amount of opbjects. This avoids uploading wrong data to OSM and saves you the trouble of going back to clean-up later.
+5. As you are contributing on a thematic selection of OpenStreetMap data, visible features may be connected to hidden ones. When deleting some features, always check it isn't connected to anything by downloading OpenStreetMap data surrouding the area, with the help of the download button ⬇️ on top left corner.
 
-For a safe mapping, we recommend you reading about [good practices](https://wiki.openstreetmap.org/wiki/Good_practice).
+For a safe mapping, we recommend you reading about [good practices](https://wiki.openstreetmap.org/wiki/Good_practice){target="_blank"}.
 
 !!! note
     **⚠️ In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
     
     **⚠️ By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future.** 
 
+## <div class="stradegy-header">iD and Open Infrastructure Map Starter-Kit</div></h3>
 
-## <div class="tools-header">Still "On the Line" and Motivated to Continue?</div>
-
-Well done on making it this far! We are offering free, hands-on transmission grid mapping workshops to people who have tried the Starter-Kit. You are very welcome to join our [community chat](https://discord.gg/a5znpdFWfD) called _📍-mapyourgrid_ on the PyPSA-Earth discord channel. Here you can ask questions, and interact with the community. For mapping specific questions and to participate in our free personalized training, please join our [📍-mapyourgrid-support-and-training](https://discord.gg/fBw7ARTUeR) channel. 
-
-Check out our [Tools and Strategies](tools.md) to learn how to find your own new lines and become a grid mapping expert! The OpenStreetMap Wiki pages [The Power Network](https://wiki.openstreetmap.org/wiki/Power_networks) and [Key:Power](https://wiki.openstreetmap.org/wiki/Key:power) provide an overview of how to map different power infrastructure.
-
-You are also welcome to join our community calls to find out more about the mapping process and our initiative. Simply participate in one of the public events listed in this calendar.
-
-<iframe src="https://calendar.google.com/calendar/embed?src=mapyourgrid%40gmail.com&ctz=Europe%2FBerlin" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-
-## <div class="stradegy-header">iD Starter-Kit</div></h3>
-
-Although editors such as iD and MapComplete offer a simpler way to contribute to smaller grid mapping, they quickly become limited when handling large lines or complex geometries. However, these platforms have clear advantages for mapping in the field using mobile devices compared to JOSM. For people who prefer iD over JOSM, the following tutorials can also be used to map on a PC.
-
-Also, if you just want to add a note or report an issue, or if you want to suggest the addition of power towers or substations in your area, this platform offers a great way to make a quick contribution. Taking images in the field with MapComplete is also key to validating satellite-based mapping where detailed, high-resolution images are missing. Taking images can also be important for deriving relevant metadata, such as wind [turbine power capacities](https://mapcomplete.org/openwindpowermap.html?z=13&lat=39.548330293512805&lon=9.219887340880064). We are currently working on extending this functionality to power towers to enable more accurate estimation of transmission line voltages.
-
-### <div class="stradegy-header">Reporting Issues in the Grid Using iD</div></h3>
-
-The fastest and easiest way to contribute to your electrical grid is by adding notes where you see missing or incorrect information in OpenStreetMap. You can do this fully anonymously with no login required.
+On the road and spotted some some power towers, power plants, or substations near your place that are still missing and want to quickly map them yourself? This can be done on your mobile device or PC using the iD editor and Open Infrastructure Map. In this way, you can also correct voltages, circuits, or other errors you see in Open Infrastructure Map.
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
-  <img src="/images/starter-kit/easy-notes.jpg" class="img-border" style="width: 100%;">
+  <img src="/images/starter-kit/easy-edit.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">To place a power tower, you first have to set a node and then add a tag (left). To save your edits on a mobile device using the iD Editor (right), you’ll need to close the inspector panel to reveal the `Save` button. Click to enlarge.</figcaption>
+</div>
+
+#### <div class="stradegy-header">Power Towers In-Field Mapping</div></h3>
+
+1. Go to the [Open Infrastructure Map](https://openinframap.org/#2/26/12){target="_blank"}.
+1. Click **Find my location** in the top-right corner or search for your city.
+1. Zoom in until you see the small `Edit` button in the lower right corner and press it.
+1. [Create an OpenStreetMap account](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target="_blank"}. Switch to the `Edit` mode by pressing the button on the top panel.
+1. You will now see all OpenStreetMap data with `Bing` or `ESRI` satellite imagery underneath. Depending on your region, you might want to switch to different satellite imagery by pressing the `Background Setting` button in the right panel.
+1. By pressing the `Point` symbol in the upper panel, you can now place a node. Now tag this node as a Power Tower using the `Edit Feature` that will appear on the left side. Although filling out the other fields is optional, you are welcome to provide additional information if you know more about the type of power tower.
+1. Use the shortcut `CTRL+C` to copy the tower, then place more power towers where you can see them.
+1. Upload your data by pressing `Save`. On mobile devices, you first have to hide the left window by toggling the `Inspect` button at the top.
+1. Add a `Changeset Comment` with a brief description of your mapping activity. If you find our efforts, documentation and tools helpful, please include the hashtag `#mapyourgrid` in the changeset comment to let us know.
+
+#### <div class="stradegy-header">Substations and Power Plants</div></h3>
+
+<div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
+  <img src="../images/starter-kit/id-substation.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">We recommend using a mouse for mapping multiple substations in iD. If you are on the road, you can also use a touch screen for this. Click to enlarge.</figcaption>
+    <img src="../images/starter-kit/solar-mapping-id.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">Power plants like solar park can be mapped similar to substations. Click to enlarge.</figcaption>
+</div>
+
+Once you have finished your transmission line, you will most likely find a substation at the end, and sometimes a power plant will even be located next to it. Therefore, mapping the transmission grid is an effective way of identifying new power plants. Photovoltaic power plants, in particular, are increasing significantly around the world and can be easily identified in satellite imagery.
+
+1. Go to the [Open Infrastructure Map](https://openinframap.org/#2/26/12){target="_blank"}.
+1. Click **Find my location** in the top-right corner or search for your city.
+1. Zoom in until you see the small `Edit` button in the lower right corner and press it.
+1. [Create an OpenStreetMap account](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target="_blank"} and log in.
+1. By pressing the `Area` symbol in the upper panel, you can now mark the substation. Tag this area as a `Substation` using the `Edit Feature` that will appear on the left side. Add voltages, operators, or other fields if you have this information.
+1. Now upload this information by pressing `Save`.
+1. Add a `Changeset Comment` with a brief description of your mapping activity. If you find our efforts, documentation and tools helpful, please include the hashtag #mapyourgrid in the changeset comment to let us know.
+1. **Bonus:** While grid mapping, you will also find many power plants located next to substations and transmission lines. These are mapped in a similar way to substations, using the `Area` symbol.
+
+#### <div class="stradegy-header">Find open-ended transmission lines with Osmose</div></h3>
+
+Have you finished your Good First Line and you want to find your own open-ended line in a country of your choice? With the help of osmose and our interactive [MAP IT📍](https://mapyourgrid.org/map-it/){target="_blank"}page you can find even more open ended lines.
+
+<div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
+  <img src="../images/starter-kit/Kenya-unfinished-transmission-lines-iD.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">iD support to load  .gpx, .kml, .geojson, .json files into the editor. Therefore, issues from to osmose, such as unfinished transmission lines in Kenya, can also be loaded into the editor from our interactive MAP IT📍 page. Click to enlarge.</figcaption>
+</div>
+
+
+1. Go to the [MAP IT📍](https://mapyourgrid.org/map-it/)page.
+1. Press on the Osmose hint layer button.
+1. Choose one of the Osmose issues, and press on a country. This will fetch up to 5000 Osmose issues for that country and issue type.
+1. Drag and drop the file you have downloaded into the map area of your iD or JOSM editor.
+1. You can now see all the issues at a high zoom level. Unfortunately, iD does not allow these data to be processed systematically. To address these osmose issues and enable large-scale mapping across a country, we therefore recommend our JOSM workflow.
+
+#### <div class="stradegy-header">Report Issues in the Grid</div></h3>
+
+<div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
+  <img src="../images/starter-kit/easy-notes.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">Open Infrastructure Map (left) and the iD Editor (right) provide a mobile-ready, easy-to-use way to report issues. Click to enlarge.</figcaption>
 </div>
 
-**Steps to Report an Issue**
+The fastest and easiest way to contribute to your electrical grid is by adding notes where you see missing or incorrect information in OpenStreetMap. You can do this fully anonymously with no login required.
 
-1. Go to the [Open Infrastructure Map](https://openinframap.org/#2/26/12).
+1. Go to the [Open Infrastructure Map](https://openinframap.org/#2/26/12){target="_blank"}.
 2. Click **Find my location** in the top-right corner or search for your city.
 3. Click on the substation, power tower, power line, or power plant where you'd like to report an issue.
 4. In the description window, click the **OpenStreetMap** logo.
@@ -211,83 +306,44 @@ The fastest and easiest way to contribute to your electrical grid is by adding n
 
 Reporting such smaller issues will significantly improve the long-term quality of your local grid's data.
 
-### <div class="stradegy-header">Add Power Towers or Substations Using iD</div></h3>
-
-<div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
-  <img src="/images/starter-kit/easy-edit.jpg" class="img-border" style="width: 100%;">
-  <figcaption class="image-caption">To place a power tower, you first have to set a node and then add a tag (left). To save your edits on a mobile device using the iD Editor (right), you’ll need to close the inspector panel to reveal the `Save` button. Click to enlarge.</figcaption>
-</div>
-
-Have you spotted some power towers, power plants, or substations near your place that are still missing and want to quickly map them yourself? This can be done on your mobile device or PC using the iD editor. In this way, you can also correct voltages, circuits, or other errors you see in Open Infrastructure Map.
-
-**Add Power Towers**
-
-1. Go to the [Open Infrastructure Map](https://openinframap.org/#2/26/12).
-1. Click **Find my location** in the top-right corner or search for your city.
-1. Zoom in until you see the small `Edit` button in the lower right corner and press it.
-1. [Create an OpenStreetMap account](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did) and log in to the `Edit` mode by pressing the button on the top panel.
-1. You will now see all OpenStreetMap and `Bing` Satellite imagery underneath. Depending on your region, you might want to switch to different satellite imagery by pressing the Background button in the right panel.
-1. By pressing the `Point` symbol in the upper panel, you can now place a node. Now tag this node as a Power Tower using the `Edit Feature` that will appear on the left side. Although filling out the other fields is optional, you are welcome to provide additional information if you know more about the type of power tower.
-1. Upload your data by pressing `Save`. On mobile devices, you first have to hide the left window by toggling the `Inspect` button at the top.
-1. Add a `Changeset Comment` with a brief description of your mapping activity. If you find our efforts, documentation and tools helpful, please include the hashtag #mapyourgrid in the changeset comment to let us know.
-
-**Add Substations**
-
-<div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
-  <img src="/images/starter-kit/id-substation.jpg" class="img-border" style="width: 100%;">
-  <figcaption class="image-caption">For mapping substations in iD we recommend using a PC. Click to enlarge.</figcaption>
-</div>
-
-1. Go to the [Open Infrastructure Map](https://openinframap.org/#2/26/12).
-1. Click **Find my location** in the top-right corner or search for your city.
-1. Zoom in until you see the small `Edit` button in the lower right corner and press it.
-1. [Create an OpenStreetMap account](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did) and log in.
-1. By pressing the `Area` symbol in the upper panel, you can now mark the substation. Tag this area as a `Substation` using the `Edit Feature` that will appear on the left side. Add voltages, operators, or other fields if you have this information.
-1. Now upload this information by pressing `Save`.
-1. Add a `Changeset Comment` with a brief description of your mapping activity. If you find our efforts, documentation and tools helpful, please include the hashtag #mapyourgrid in the changeset comment to let us know.
-
-### <div class="stradegy-header">Map Transmission Lines using iD</div></h3>
-
-iD also offers you the option of extending Transmission Lines, also known as Power Lines, or creating new Transmission Lines. Even if this is theoretically possible on a mobile device, we recommend doing this with a mouse and keyboard on a PC.
-
-<div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
-  <img src="/images/starter-kit/extend-line-id.jpg" class="img-border" style="width: 100%;">
-  <figcaption class="image-caption">For mapping substations in iD we recommend using a PC. Click to enlarge.</figcaption>
-  <img src="/images/starter-kit/multiple-towers-id.jpg" class="img-border" style="width: 100%;">
-  <figcaption class="image-caption">Depending on the region you are mapping, regularly switching between satellite images can help you identify power towers much more easily. Click to enlarge.</figcaption>
-</div>
-
-1. First, you have to set a Power Tower if you don't already have a line you want to extend.
-2. Then press the Line symbol in the upper panel. Click on the power tower and draw the line to the next power tower.
-3. Click on the node you have just created and make it a power tower with the `Inspect` window on the left side.
-4. Afterwards, press on the line. In the `Inspect` window on the left side, you are now able to set the feature of this line as `Power Line`.
-5. If you know further important information about the line like the voltage, operator, or the circuits, you are welcome to add this or leave these fields empty.
-6. To further continue the line, select the power tower and press `CTRL C` to copy the tower. Now place it on the next tower you find.
-7. Afterwards, continue the line as far as you can by connecting all the power towers you have just set.
-8. Now upload this information by pressing `Save`.
-9. Add a `Changeset Comment` with a brief description of your mapping activity. If you find our efforts, documentation, and tools helpful, please include the hashtag #mapyourgrid in the changeset comment to let us know.
-
 ## <div class="tools-header">MapComplete Starter-Kit</div></h3>
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="/images/starter-kit/mapcomplete.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">MapComplete allows you to add missing information to objects like wind turbines (left). The platform allows you to upload images so that others can derive information like power output of the wind turbine. Click to enlarge.</figcaption>
+  <img src="../images/starter-kit/mapcomplete-questions-form.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">This is an example of the form you can use to edit key information about the power lines as well as upload pictures. it appears when you click on the blue lines on the map that represent power lines. Click to enlarge.</figcaption>
 </div>
 
-The [MapComplete](https://mapcomplete.org/) platform provides an easy way to identify missing tags [like the power output of a wind turbine](https://mapcomplete.org/openwindpowermap.html?z=13&lat=39.55702450000146&lon=9.226502599999435#node/5271617498) that has already been mapped in OpenStreetMap. Like iD, the platform can be used from a PC but also from a mobile device. A special feature is the ability to upload images. In the case of a wind turbine, for example, this enables another mapper to estimate the output on the basis of this data. We are currently in development to extend this feature to Power Towers to derive the voltages, number of circuits, or cables from these images.
+The [MapComplete](https://mapcomplete.org/){target="_blank"} platform provides an easy way to identify missing tags of already mapped infrastructure where addtional information is missing. Like iD, the platform can be used from a PC but also from a mobile device. You can download the official [MapComplete App](https://play.google.com/store/apps/details?id=org.mapcomplete&pli=1){target="_blank"} from the Google Play Store, or use the web app on other mobile devices. One of the key features of MapComplete is the ability to upload pictures taken on mobile phones. This enables inexperienced field mappers to take pictures of power towers, which experts can then use to derive information such as voltage and the number of circuits.
 
-1. Open [MapComplete](https://mapcomplete.org/) and select the thematic map like `Wind power generators` that you would like to improve.
+1. **Map of missing voltages of power lines**: Voltages are essential for estimating the total power that can be transmitted by a power line. MapComplete supports the mapping of this missing tag by editing the data in the [Power Lines MapComplete Layer](https://mapcomplete.org/theme.html?z=14.8&lat=-15.420620800001004&lon=28.31155200000046&userlayout=https%3A%2F%2Fstudio.mapcomplete.org%2F11076630%2Flayers%2Fmap_your_grid_power_lines%2Fmap_your_grid_power_lines.json){target="_blank"}. Once you click on the blue lines to make changes, in the right pane you notice that there is an option to upload an **image of a power tower**. You can still contribute by providing an image of the power tower. This will be uploaded to MapYourGrid, where other technical mappers can use the insulators to derive the voltages.
+
+2. **Wind Turbine Power Output**: Similar to power lines, the power of wind turbine can be estimate using a single picture. Maybe you are aware of other resources and methods to derive the power output of wind turbines. The [Wind Power Generators layer](https://mapcomplete.org/openwindpowermap.html?z=13&lat=39.55702450000146&lon=9.226502599999435#node/5271617498){target="_blank"} enables you to map this missing tags. 
+
+
+1. Open the [Power Lines MapComplete Layer](https://mapcomplete.org/theme.html?z=14.8&lat=-15.420620800001004&lon=28.31155200000046&userlayout=https%3A%2F%2Fstudio.mapcomplete.org%2F11076630%2Flayers%2Fmap_your_grid_power_lines%2Fmap_your_grid_power_lines.json){target="_blank"} or [Wind Turbine Power Output](https://mapcomplete.org/openwindpowermap.html?z=13&lat=39.55702450000146&lon=9.226502599999435#node/5271617498){target="_blank"}
 2. Jump to your location using the crosshair symbol in the lower right corner.
-3. Search for wind turbines in your region that are missing information.
-4. Press on the wind turbine symbol. You can now add the capacity or take a picture with your mobile device to let others derive the output power.
+3. Search for wind turbines or power line in your region with missing information.
+4. Press on the wind turbine symbol or power line. You can now add the capacity or take a picture with your mobile device to let others derive the output power. **Please be aware that we will need an image of a power tower to estimate the voltage.**
 5. Afterwards, press `Save`.
 
+
+## <div class="tools-header">Still "On the Line" and Motivated to Continue?</div>
+
+Well done on making it this far! We are offering free, hands-on transmission grid mapping workshops to people who have tried the Starter-Kit. You are very welcome to join our [community chat](https://discord.gg/a5znpdFWfD){target="_blank"} called _📍-mapyourgrid_ on the PyPSA-Earth discord channel. Here you can ask questions, and interact with the community. For mapping specific questions and to participate in our free personalized training, please join our [📍-mapyourgrid-support-and-training](https://discord.gg/fBw7ARTUeR){target="_blank"} channel. 
+
+Check out our [Tools and Strategies](tools.md) to learn how to find your own new lines and become a grid mapping expert! The OpenStreetMap Wiki pages [The Power Network](https://wiki.openstreetmap.org/wiki/Power_networks){target="_blank"} and [Key:Power](https://wiki.openstreetmap.org/wiki/Key:power){target="_blank"} provide an overview of how to map different power infrastructure.
+
+You are also welcome to join our community calls to find out more about the mapping process and our initiative. Simply participate in one of the public events listed in this calendar.
+
+<iframe src="https://calendar.google.com/calendar/embed?src=mapyourgrid%40gmail.com&ctz=Europe%2FBerlin" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 ## **<div class="tools-header">What else? Learn the Grid Basics </div>**
 You don’t need to be a grid expert to start mapping, but a little knowledge helps!
 The following documents and materials will give you a basic understanding of how to map an electrical grid.
 
-The [Learning Curve](https://www.youtube.com/@TheLearningCurveBenila/videos) is a YouTube channel that will help you understand the fundamental knowledge of the electrical grid. Here some video we recommend for grid mappers. 
+The [Learning Curve](https://www.youtube.com/@TheLearningCurveBenila/videos){target="_blank"} is a YouTube channel that will help you understand the fundamental knowledge of the electrical grid. Here some video we recommend for grid mappers. 
 
 1. [Electrical Line Supports - Transmission Towers & Poles](https://www.youtube.com/watch?v=AB1qYsiDm0M)
 1. [Components of Overhead Transmission Lines](https://www.youtube.com/watch?v=A6fwq3yHRXQ)

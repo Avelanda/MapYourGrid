@@ -3,8 +3,8 @@
 </div>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 450px; max-width: 100%">
-<img src="/images/progress/mapyourgrid-globalprogress.jpg" style="width: 100%; border: 4px solid #2a6d3c;"></a> 
-<figcaption class="image-caption">Global overview of all lines mapped by MapYourGrid in 2025. Click to enlarge.
+<img src="../images/progress/ourlines-vs-world.jpg" style="width: 100%; border: 4px solid #2a6d3c;"></a> 
+<figcaption class="image-caption"> All the lines <span style="color: #ecc123;"><b>created and edited by MapYourGrid</b></span> mappers. Enlarge the image by clicking on it. Click to enlarge.
 </figcaption>
 </div>
 
@@ -252,7 +252,7 @@ Our work supports better access to electricity across the globe. In the countrie
 
 </div>
 
-
+<!-- Progress bars script------------------------------------------------- -->
 <script>
 
     // —— CONFIGURE THESE GOALS ——
@@ -564,7 +564,7 @@ async function loadSubstationCount() {
     }
   });
 </script>
-
+<!-- Progress bars script------------------------------------------------- -->
 You can find more stats for #MapYourGrid at [OhsomeNowstats](https://stats.now.ohsome.org/dashboard#hashtag=MapYourGrid&start=2025-03-12T22:00:00Z&end=2025-05-14T21:59:59Z&interval=P1M&countries=&topics=).
 
 ??? success "Top #mapyourgrid Community Mappers Leaderboard"
@@ -575,6 +575,7 @@ You can find more stats for #MapYourGrid at [OhsomeNowstats](https://stats.now.o
     </div>
     <p id="last-updated"></p>
 
+Want to calculate your own progress? Check out this [web interface](https://open-energy-transition.github.io/KPI-OSM/) where you can calculate the number of towers/poles you placed in a country, substations edited, and total MW capacity you added to a country.
 <script>
   document.addEventListener('DOMContentLoaded', function() {
       const leaderboardContainer = document.getElementById('leaderboard-container');

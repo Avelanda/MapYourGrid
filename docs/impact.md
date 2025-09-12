@@ -66,6 +66,18 @@ Europe and beyond</a></figcaption>
 
 --- 
 
+### Using OpenStreetMap as Ground Truth for AI training
+
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+  <img src="../images/global-renewable-watch.jpg" class="img-border" style="width: 100%;"> </a>
+  <figcaption class="image-caption"> <a href="https://www.globalrenewableswatch.org/atlas" target="_blank"> Global Renewables Watch </a> was created my Microsoft, planet and the Nature Conservancy in 2025 and is trained mainly based on OpenStreetMap - Click to enlarge.</figcaption>
+</div> 
+
+The high quality of OpenStreetMap data, coupled with regular human validation, makes it highly attractive for AI training. Recent statistics have shown that both OpenStreetMap and Mapbox, which largely depends on OpenStreetMap data, are in the top [10 data sources for LLM training](https://www.statista.com/statistics/1620335/top-web-domains-cited-by-llms/). Examples of cutting-edge projects in the energy sector include the [Solar Asset Mapper](https://blog.transitionzero.org/hubfs/Data%20Products/TZ-SAM/tz-sam-scientific-methodology-Q12024.pdf) and [Global Renewable Watch](https://www.globalrenewableswatch.org/), which uses polygons from OpenStreetMap to create a mask that defines the ground truth data for training detection models. Also for the [detection of global wind turbines with Sentinel-1](https://essd.copernicus.org/articles/14/4251/2022/), OpenStreetMap's polygon were the main source for training data. OpenStreetMap also provided the ground truth for the [global detection of substations using Sentinel 2](https://github.com/Lindsay-Lab/substation-seg).
+
+Beyond energy infrastructure, OpenStreetMap has proven invaluable for AI applications in urban planning, disaster response, and environmental monitoring. Its detailed road networks, building footprints, and land use classifications enable models to learn spatial relationships and make accurate predictions in real-world scenarios. 
+
+
 ###  Trusted by Leading International Organizations
 
 Major international organizations rely on OpenStreetMap data for large-scale planning and decision-making.

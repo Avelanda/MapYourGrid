@@ -4,6 +4,7 @@ import math
 import os
 import html
 import re
+import time
 from datetime import datetime, timezone
 from bs4 import BeautifulSoup
 
@@ -16,25 +17,46 @@ OUTPUT_FILE = os.path.join(OUTPUT_DIR, "line-length.json")
 # Overpass QL query to fetch the relevant power line data
 OVERPASS_QUERY = """
 [out:json][timeout:900];
-node["power"="tower"](user_touched:"Andreas Hernandez","Tobias Augspurger","davidtt92","Mwiche","relaxxe") -> .towers;
 node["power"="pole"](user_touched:"Andreas Hernandez","Tobias Augspurger","davidtt92","Mwiche","relaxxe") -> .poles;
-node["power"="tower"](user:"Russ","map-dynartio","overflorian","nlehuby","ben10dynartio","InfosReseaux")(newer:"2025-03-01T00:00:00Z")->.their_towers;
+node["power"="tower"](user_touched:"Andreas Hernandez","Tobias Augspurger","davidtt92","Mwiche","relaxxe") -> .towers;
 node["power"="pole"](user:"Russ","map-dynartio","overflorian","nlehuby","ben10dynartio","InfosReseaux")(newer:"2025-03-01T00:00:00Z")->.their_poles;
+node["power"="tower"](user:"Russ","map-dynartio","overflorian","nlehuby","ben10dynartio","InfosReseaux")(newer:"2025-03-01T00:00:00Z")->.their_towers;
 
-(node.towers; node.poles;) -> .my_nodes;
-(node.their_towers; node.their_poles;) -> .their_nodes;
+(node.towers; node.poles;) -> .supports;
+(node.their_towers; node.their_poles;) -> .their_supports;
 
+way["power"="line"](bn.supports)-> .connected_ways;
+way["power"="line"](bn.their_supports)-> .theirconnected_ways;
 
-way["power"="line"](bn.my_nodes)-> .connected_ways;
-way["power"="line"](bn.their_nodes)-> .theirconnected_ways;
-
-(.my_nodes; .connected_ways; .theirconnected_ways; .their_nodes;);
+(.poles; .towers; .connected_ways; .theirconnected_ways; .their_poles; .their_towers;);
 out body;
 >;
 out skel qt;
 """
 
 # --- Helper Functions ---
+
+def retry_request(func, max_retries=4, delay=10):
+    """Simple retry wrapper with exponential backoff."""
+    for attempt in range(max_retries):
+        try:
+            return func()
+        except ConnectionError as e:
+            print(f"Unable to connect to Overpass: {e}")
+            return None
+        except requests.exceptions.Timeout as e:
+            print(f"Timeout when querying Overpass: {e}")
+            return None
+        except (requests.exceptions.RequestException, json.JSONDecodeError) as e:
+            if attempt == max_retries - 1:
+                raise
+            wait_time = delay * (2 ** attempt)
+            print(f"Attempt {attempt + 1} failed: {e} ({e.response.text if e.response is not None else 'No answer'}). Retrying in {wait_time}s...")
+            time.sleep(wait_time)
+        except Exception as e:
+            print(f"Undefined error fetching from Overpass: {e}")
+            return None
+
 
 def haversine_distance(coord1, coord2):
     """Calculates the distance between two lat/lon coordinates in kilometers."""
@@ -52,18 +74,24 @@ def haversine_distance(coord1, coord2):
 def get_line_stats():
     """Fetches and calculates line length stats from Overpass API."""
     print("Fetching data from Overpass API...")
-    try:
-        response = requests.post(OVERPASS_URL, data={'data': OVERPASS_QUERY})
+    
+    def _fetch_overpass():
+        headers = {
+            'User-Agent': 'MapYourGrid Line Length Script (via GitHub Action; +https://github.com/open-energy-transition/MapYourGrid)'
+        }
+        response = requests.post(OVERPASS_URL, data={'data': OVERPASS_QUERY}, headers=headers,
+            timeout=1100)
         response.raise_for_status()
         data = response.json()
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching from Overpass API: {e}")
+        # Overpass sometimes answer errors with HTTP 200 code that won't trigger exception
+        if not data:
+            print(f"Invalid response from Overpass: {response}")
+        return data
+    
+    data = retry_request(_fetch_overpass)
+    if not data:
         return None
-    except json.JSONDecodeError:
-        print("Error: Invalid JSON response from Overpass API")
-        print(response.text)
-        return None
-
+    
     nodes = {el['id']: (el['lat'], el['lon'])
              for el in data.get('elements', [])
              if el.get('type') == 'node' and el.get('tags', {}).get('power') in ['tower', 'pole']}
@@ -159,6 +187,7 @@ if __name__ == "__main__":
     if not line_stats:
         exit(1) # Exit if Overpass data failed
 
+    time.sleep(5)
     global_stats = get_global_stats()
 
     # Combine results into the final JSON structure
