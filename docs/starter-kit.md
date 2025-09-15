@@ -74,7 +74,7 @@ Sometimes, there are several possible options for line routing and it is unclear
 * Would you like to learn how to map power plants or substations with iD? Or are you interested in finding out how to use iD for in-field mapping? Check out our further [iD and Open Infrastructure Map Starter Kit](#id-and-open-infrastructure-map-starter-kit)
 
 !!! Warning
-    **In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
+    **In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local communities](https://community.osm.be/) and [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
     
     **By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Code of Mappers cannot be enforced for volunteer community mappers either.** 
 
@@ -331,7 +331,7 @@ The [MapComplete](https://mapcomplete.org/){target="_blank"} platform provides a
 
 ## <div class="tools-header">Still "On the Line" and Motivated to Continue?</div>
 
-Well done on making it this far! We are offering free, hands-on transmission grid mapping workshops to people who have tried the Starter-Kit. You are very welcome to join our [community chat](https://discord.gg/a5znpdFWfD){target="_blank"} called _📍-mapyourgrid_ on the PyPSA-Earth discord channel. Here you can ask questions, and interact with the community. For mapping specific questions and to participate in our free personalized training, please join our [📍-mapyourgrid-support-and-training](https://discord.gg/fBw7ARTUeR){target="_blank"} channel. 
+Well done on making it this far! We are offering free, hands-on transmission grid mapping workshops to people who have tried the Starter-Kit. You are very welcome to join our [community chat](https://discord.gg/a5znpdFWfD) called _📍-mapyourgrid_ on the PyPSA-Earth discord channel. Here you can ask questions, and interact with the community. For mapping specific questions and to participate in our free personalized training, please join our [📍-mapyourgrid-support-and-training](https://discord.gg/fBw7ARTUeR){target="_blank"} channel. 
 
 Check out our [Tools and Strategies](tools.md) to learn how to find your own new lines and become a grid mapping expert! The OpenStreetMap Wiki pages [The Power Network](https://wiki.openstreetmap.org/wiki/Power_networks){target="_blank"} and [Key:Power](https://wiki.openstreetmap.org/wiki/Key:power){target="_blank"} provide an overview of how to map different power infrastructure.
 
