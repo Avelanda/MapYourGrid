@@ -114,10 +114,10 @@ plugins:
             "IMPACT": "IMPACTO"  
             "STARTER-KIT": "KIT DE INICIO"
             "MAP IT📍": "MAP IT📍"
-            "TOOLS AND STRATEGIES": "HERRAMIENTAS Y ESTRATEGIAS"
-            "OUR PROGRESS": "PROGRESO"
+            "TOOLS & STRATEGIES": "HERRAMIENTAS Y ESTRATEGIAS"
+            "PROGRESS": "PROGRESO"
             "QUESTIONS?": "¿PREGUNTAS?"
-            "BLOG & TEAM": "BLOG Y EQUIPO"
+            "BLOG & TEAM": "EQUIPO"
         - locale: fr
           name: Français
           build: true
@@ -126,10 +126,10 @@ plugins:
             "IMPACT": "IMPACT"  
             "STARTER-KIT": "KIT DE DEMARRAGE"
             "MAP IT📍": "MAP IT📍"
-            "TOOLS AND STRATEGIES": "OUTILS ET STRATEGIES"
-            "OUR PROGRESS": "PROGRES"
+            "TOOLS & STRATEGIES": "OUTILS ET STRATEGIES"
+            "PROGRESS": "PROGRES"
             "QUESTIONS?": "¿QUESTIONS?"
-            "BLOG & TEAM": "BLOG ET EQUIPE"
+            "BLOG & TEAM": "EQUIPE"
           site_name: "MapYourGrid"
       default_language: en
       material_alternate: true
