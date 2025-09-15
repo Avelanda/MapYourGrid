@@ -1,6 +1,6 @@
 ---
-description: We empower individuals, communities and nations around the world to map
-  the electrical grid.
+description: Nous donnons aux individus, aux communautés et aux nations du monde entier
+  les moyens de cartographier le réseau électrique.
 hide:
 - navigation
 - toc
@@ -16,18 +16,18 @@ title: MapYourGrid
  </p>
  <div class="hero-buttons">
  <a href="/starter-kit/" target="_blank" rel="noopener" class="btn btn-primary">
- Apprend à cartographier ⚡
+ Apprend à cartographier⚡
  </a>
  <a href="/map-it/" target="_blank" rel="noopener" class="btn btn-secondary">
  Map It📍
  </a>
  <a href="https://drive.google.com/file/d/1qzWIZ1Rq5s_DFfVhbZCS2a0-XZrez29A/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary">
- En une page 📄
+ Résumé 📄
  </a>
  </div>
  </div>
  <div class="hero-content-right">
- <img src="/images/logos/MapYourGrid-logo.webp" class="hero-logo off-glb">
+ <img src="../images/logos/MapYourGrid-logo.webp" class="hero-logo off-glb">
  </div>
 </div>
 
@@ -35,7 +35,7 @@ title: MapYourGrid
  <div class="initiative-content">
  <h2>Aidez-nous à cartographier les réseaux électriques mondiaux pour un avenir sans énergie fossile</h2>
  <iframe width="1280" height="720" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/6rcMVXc2lwc?si=tw3xH5gVMvssvz4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
- <p> Les combustibles fossiles sont responsables de plus de <a href="https://www.iea.org/topics/climate-change">75 % des émissions mondiales de gaz à effet de serre</a> Vous pouvez jouer un rôle essentiel dans la transition énergétique en aidant à cartographier les réseaux électriques dans votre région. Ces réseaux ont besoin d'être modernisés et étendus pour répondre aux exigences de l'électrification et de la décarbonisation, mais le manque de données fiables est un <a href="https://iea.blob.core.windows.net/assets/70f2de45-6d84-4e07-bfd0-93833e205c81/ElectricityGridsandSecureEnergyTransitions.pdf" target="_blank" rel="noopener">obstacle majeur</a> à la transition énergétique. Les données du réseau fournissent aux gouvernements, aux services publics, aux promoteurs et aux chercheurs les informations nécessaires à une planification efficace. C'est là que vous intervenez.</p>
+ <p> Les combustibles fossiles sont responsables de plus de <a href="https://www.iea.org/topics/climate-change">75 % des émissions mondiales de gaz à effet de serre</a> Vous pouvez jouer un rôle essentiel dans la transition énergétique en aidant à cartographier les réseaux électriques dans votre région. Ces réseaux ont besoin d'être modernisés et étendus pour répondre aux exigences de l'électrification et de la décarbonisation, mais le manque de données fiables est un obstacle à la transition énergétique. <a href="https://iea.blob.core.windows.net/assets/70f2de45-6d84-4e07-bfd0-93833e205c81/ElectricityGridsandSecureEnergyTransitions.pdf" target="_blank" rel="noopener">obstacle majeur</a> Les données du réseau fournissent aux gouvernements, aux services publics, aux promoteurs et aux chercheurs les informations nécessaires à une planification efficace. C'est là que vous intervenez.</p>
  <p>Ces dernières années, OpenStreetMap s'est imposé comme la norme de facto pour les données relatives au réseau électrique mondial. Cependant, de nombreux pays en développement sont encore à la traîne. Ce retard limite l'accès à l'énergie dans les zones rurales et ralentit l'action en faveur du climat :</p>
  <blockquote class="blockquote">
  Améliorer la fiabilité et la disponibilité des données afin de mieux évaluer et gérer les risques liés aux projets d'énergie propre dans les marchés émergents et les économies en développement.
@@ -43,15 +43,15 @@ title: MapYourGrid
  <p class="reference">
  Recommandation clé - Agence internationale de l'énergie : <a href="https://www.iea.org/events/from-taking-stock-to-taking-action-how-to-implement-the-cop28-energy-goals" target="_blank" rel="noopener">Comment mettre en œuvre les objectifs énergétiques de la COP28</a>
  </p>
- <h2>Vers un réseau cartographié à l'échelle mondiale</h2>
+ <h2>Vers une grille cartographiée à l'échelle mondiale</h2>
  <p>
  Nous travaillons avec la communauté OpenStreetMap, des organisations et des individus du monde entier pour non seulement créer une base de données sur l'Internet, mais aussi pour améliorer la qualité de l'information. 
- <a href="https://www.nature.com/articles/s41597-025-04550-7" target="_blank" rel="noopener">jumeau numérique ouvert du réseau européen </a>mais aussi d'étendre la couverture globale du réseau de transport dans OSM de 70 % à 98 % d'ici à 2028. <strong>MapYourGrid permet d'atteindre cet objectif grâce à la formation, à de multiples stratégies de validation, à des outils open-source optimisés et à la création d'une communauté.</strong></p>
+ <a href="https://www.nature.com/articles/s41597-025-04550-7" target="_blank" rel="noopener">jumeau numérique ouvert du réseau européen</a>mais aussi d'étendre la couverture globale du réseau de transport dans OSM de 70 % à 98 % d'ici à 2028. <strong>MapYourGrid permet d'atteindre cet objectif grâce à la formation, à de multiples stratégies de validation, à des outils open-source optimisés et à la création d'une communauté.</strong></p>
 
  <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank">
- <img src="/images/openinframap_crop.jpg" alt="Grid Illustration" class="initiative-content" style="width: 120%; border: 4px solid #2a6d3c;">
+ <img src="../images/openinframap_crop.jpg" alt="Grid Illustration" class="initiative-content" style="width: 120%; border: 4px solid #2a6d3c;">
  </a>
- <p>Les données déjà très complètes d'OpenStreetMap sur le réseau électrique peuvent être consultées à l'adresse suivante <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank" rel="noopener">Open Infrastructure Map</a> qui montre l'ampleur mondiale des données collectées depuis 2008, principalement par des bénévoles.</p> 
+ <p>Les données déjà très complètes d'OpenStreetMap sur le réseau électrique peuvent être consultées à l'adresse suivante <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank" rel="noopener">Carte des infrastructures ouvertes</a>qui montre l'ampleur mondiale des données collectées depuis 2008, principalement par des bénévoles.</p> 
  <p>Une communauté mondiale de contributeurs citoyens crée et maintient des données sur les infrastructures de base de notre société moderne. Donnons le pouvoir aux cartographes !</p>
  
  </div>
@@ -117,8 +117,9 @@ title: MapYourGrid
 
 </div>
  <div>
- <img src="/images/progress/mapyourgrid-globalprogress.jpg" alt="Grid Illustration" class="initiative-content" style="width: 80%; border: 4px solid #2a6d3c;">
- <figcaption class="fig-label">Une vue d'ensemble de toutes les lignes éditées par les cartographes de MapYourGrid. Cliquez sur l'image pour l'agrandir.
+ <img src="../images/progress/ourlines-vs-world.jpg" alt="Grid Illustration" class="initiative-content" style="width: 80%; border: 4px solid #2a6d3c;">
+<figcaption class="fig-label">
+ Toutes les lignes <span style="color: #ecc123;"><b>créées et éditées par MapYourGrid</b></span>. Agrandissez l'image en cliquant dessus.
 </figcaption>
  </div>
  </div>
@@ -138,7 +139,7 @@ title: MapYourGrid
  <div class="card-icon">
  ⚡
  </div>
- <h3>Démarrer la cartographie des réseaux</h3>
+ <h3>Démarrer la cartographie par quadrillage</h3>
  <p>Commencez à contribuer à OpenStreetMap et aidez à cartographier le réseau électrique de votre région.</p>
  </a>
  <a href="/map-it/" class="get-involved-card">
@@ -160,27 +161,27 @@ title: MapYourGrid
 <div class="partners-grid">
 <div class="partner-item">
 <a href="https://openenergytransition.org/" target="_blank" rel="noopener">
-<img src="/images/logos/oet-logo.png" alt="Open Energy Transition Logo" class="partner-logo">
+<img src="../images/logos/oet-logo.png" alt="Open Energy Transition Logo" class="partner-logo">
 </a>
 </div>
 <div class="partner-item">
 <a href="https://datactivist.coop/en/" target="_blank" rel="noopener">
-<img src="/images/logos/datactivist-logo.png" alt="Datactivist Logo" class="partner-logo"> 
+<img src="../images/logos/datactivist-logo.png" alt="Datactivist Logo" class="partner-logo"> 
 </a>
 </div>
 <div class="partner-item">
 <a href="https://dynartio.com/" target="_blank" rel="noopener">
-<img src="/images/logos/dynartio-logo.svg" alt="Dynartio Logo" class="partner-logo"> 
+<img src="../images/logos/dynartio-logo.svg" alt="Dynartio Logo" class="partner-logo"> 
 </a>
 </div>
 <div class="partner-item">
 <a href="https://junglebus.io/" target="_blank" rel="noopener">
-<img src="/images/logos/junglebus-logo.jpg" alt="Jungle Bus Logo" class="partner-logo-smaller"> 
+<img src="../images/logos/junglebus-logo.jpg" alt="Jungle Bus Logo" class="partner-logo-smaller"> 
 </a>
 </div>
 <div class="partner-item">
 <a href="https://www.infrageomatics.com/" target="_blank" rel="noopener">
-<img src="/images/logos/infrageomatics-logo.jpg" alt="Infrageomatics Logo" class="partner-logo"> 
+<img src="../images/logos/infrageomatics-logo.jpg" alt="Infrageomatics Logo" class="partner-logo"> 
 </a>
 </div>
 </div>
@@ -189,14 +190,14 @@ title: MapYourGrid
  <h3 class="section-title">Sponsorisé par</h3>
  <div>
  <a href="https://www.breakthroughenergy.org/" target="_blank" rel="noopener">
- <img src="/images/logos/be-logo.png" alt="Sponsor Logo" style="max-height: 40px; width: auto;" class="off-glb">
+ <img src="../images/logos/be-logo.png" alt="Sponsor Logo" style="max-height: 40px; width: auto;" class="off-glb">
  </a>
  </div>
 </div>
 </div>
 
 <div class="our-mapping-section" style="display: flex; flex-direction: column; align-items: center;">
- <h2>S'abonner à notre lettre d'information</h2>
+ <h2>S'abonner à notre bulletin</h2>
  <div>
  <script async src="https://eocampaign1.com/form/c308f2c6-6898-11f0-9bf6-53fb9ff1b12b.js" data-form="c308f2c6-6898-11f0-9bf6-53fb9ff1b12b"></script>
  </div>

@@ -498,7 +498,7 @@ La recherche et l'expérience opérationnelle d'agences telles que le ministère
 
 ### Aperçu comparatif
 
-| Les données de la base de données, l'accès, la source, le niveau de sécurité, la couverture de la grille, les données de la base de données.
+| Les données de la base de données | l'accès | la source| le niveau de sécurité | la couverture du réseau | 
 |-----------------------------|-------------------|-------------------------------------|------------------|-------------------------|
 | OpenStreetMap (OSM) | Public | Communauté et imagerie publique | Modéré | Transmission et distribution
 | HIFLD (US DHS) | Public/Restricted | Gouvernement + OSM-derived | Controlled | Transmission only |

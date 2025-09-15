@@ -5,7 +5,7 @@ hide:
 - navigation
 - toc
 - footer
-image: images/website/mapyourgrid-preview.jpg
+image: ../images/website/mapyourgrid-preview.jpg
 title: MapYourGrid
 ---
 
@@ -22,7 +22,7 @@ title: MapYourGrid
  Map It📍
  </a>
  <a href="https://drive.google.com/file/d/1qzWIZ1Rq5s_DFfVhbZCS2a0-XZrez29A/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary">
- En una página 📄
+ Resumen 📄
  </a>
  </div>
  </div>
@@ -46,12 +46,12 @@ title: MapYourGrid
  <h2>Hacia una red cartográfica mundial</h2>
  <p>
  Estamos trabajando con la comunidad OpenStreetMap, organizaciones y particulares de todo el mundo no sólo para crear un 
- <a href="https://www.nature.com/articles/s41597-025-04550-7" target="_blank" rel="noopener">gemelo digital abierto de la red europea </a>y ampliar la cobertura global de la red de transporte en OSM del 70% al 98% para 2028. <strong>MapYourGrid lo hace posible gracias a la formación, las múltiples estrategias de validación, las herramientas optimizadas de código abierto y la creación de comunidades.</strong></p>
+ <a href="https://www.nature.com/articles/s41597-025-04550-7" target="_blank" rel="noopener">gemelo digital abierto de la red europea</a>y ampliar la cobertura global de la red de transporte en OSM del 70% al 98% para 2028. <strong>MapYourGrid lo hace posible gracias a la formación, las múltiples estrategias de validación, las herramientas optimizadas de código abierto y la creación de comunidades.</strong></p>
 
  <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank">
  <img src="../images/openinframap_crop.jpg" alt="Grid Illustration" class="initiative-content" style="width: 120%; border: 4px solid #2a6d3c;">
  </a>
- <p>Los ya extensos datos de OpenStreetMap sobre la red eléctrica pueden consultarse en <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank" rel="noopener">Mapa de infraestructuras abiertas </a>que muestra la escala global de los datos recogidos desde 2008, en su mayoría por voluntarios.</p> 
+ <p>Los ya extensos datos de OpenStreetMap sobre la red eléctrica pueden consultarse en <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank" rel="noopener">Mapa de infraestructuras abiertas</a>que muestra la escala global de los datos recogidos desde 2008, en su mayoría por voluntarios.</p> 
  <p>Una comunidad mundial de contribuyentes ciudadanos crea y mantiene datos sobre las infraestructuras básicas de nuestra sociedad moderna. ¡Demos poder a los cartógrafos!</p>
  
  </div>
@@ -117,8 +117,9 @@ title: MapYourGrid
 
 </div>
  <div>
- <img src="/images/progress/mapyourgrid-globalprogress.jpg" alt="Grid Illustration" class="initiative-content" style="width: 80%; border: 4px solid #2a6d3c;">
- <figcaption class="fig-label">Vista general de todas las líneas editadas por los cartógrafos de MapYourGrid. Haz clic para ampliar.
+ <img src="../images/progress/ourlines-vs-world.jpg" alt="Grid Illustration" class="initiative-content" style="width: 80%; border: 4px solid #2a6d3c;">
+<figcaption class="fig-label">
+ Todas las líneas <span style="color: #ecc123;"><b>creado y editado por MapYourGrid</b></span> mapeadores. Amplíe la imagen haciendo clic sobre ella.
 </figcaption>
  </div>
  </div>
@@ -129,7 +130,7 @@ title: MapYourGrid
  <div class="get-involved-grid">
  <a href="https://discord.gg/a5znpdFWfD" class="get-involved-card">
  <div class="card-icon">
- <img src="../icons/discord.svg" alt="Discord" class="icon-svg off-glb">
+ <img src="/icons/discord.svg" alt="Discord" class="icon-svg off-glb">
  </div>
  <h3>Únete a nuestra comunidad</h3>
  <p>Conéctese con otros colaboradores en Discord y participe en los debates de nuestra comunidad.</p>
@@ -155,7 +156,7 @@ title: MapYourGrid
 <div class="who-we-are-section">
 <h2>Quiénes somos</h2>
 <p class="lead-statement">
- MapYourGrid es una iniciativa gratuita y de código abierto que cuenta con el apoyo de las siguientes organizaciones. Queremos capacitar a una comunidad mundial de ciudadanos y organizaciones para crear y mantener datos sobre las infraestructuras básicas de nuestra sociedad moderna. ¿Quieres unirte o apoyarnos? Póngase en contacto con <a href="mailto:MapYourGrid@openenergytransition.org" target="_blank" rel="noopener">por correo electrónico</a> 
+ MapYourGrid es una iniciativa gratuita y de código abierto que cuenta con el apoyo de las siguientes organizaciones. Queremos capacitar a una comunidad global de ciudadanos y organizaciones para crear y mantener datos sobre las infraestructuras básicas de nuestra sociedad moderna. ¿Quieres unirte o apoyarnos? Póngase en contacto con <a href="mailto:MapYourGrid@openenergytransition.org" target="_blank" rel="noopener">por correo electrónico</a> 
 </p>
 <div class="partners-grid">
 <div class="partner-item">
