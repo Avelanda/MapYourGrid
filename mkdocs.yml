@@ -21,7 +21,7 @@ copyright:    <a href="https://creativecommons.org/licenses/by/4.0/" target="_bl
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: overrides
   favicon: images/logos/MapYourGrid-logo.png
   logo: images/logos/MapYourGrid-logo.png
   palette:
@@ -63,8 +63,8 @@ extra:
   social_preview: images/website/mapyourgrid-preview.jpg
 
 extra_javascript:
-  - js/umami.js
-  - js/gallery.js
+  - assets/javascripts/umami.js
+  - assets/javascripts/gallery.js
 
 
 
@@ -89,9 +89,49 @@ markdown_extensions:
 
 
 plugins:
+  - search
   - glightbox:
         skip_classes:
             - thumb-gallery
-  - search
-
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      skip_classes:
+        - no-translate
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: es
+          name: Español  
+          build: true
+          site_name: "MapYourGrid"
+          nav_translations:
+            "THE INITIATIVE": "LA INICIATIVA"
+            "IMPACT": "IMPACTO"  
+            "STARTER-KIT": "KIT DE INICIO"
+            "MAP IT📍": "MAP IT📍"
+            "TOOLS & STRATEGIES": "HERRAMIENTAS Y ESTRATEGIAS"
+            "PROGRESS": "PROGRESO"
+            "QUESTIONS?": "¿PREGUNTAS?"
+            "BLOG & TEAM": "EQUIPO"
+        - locale: fr
+          name: Français
+          build: true
+          nav_translations:
+            "THE INITIATIVE": "L'INITIATIVE"
+            "IMPACT": "IMPACT"  
+            "STARTER-KIT": "KIT DE DEMARRAGE"
+            "MAP IT📍": "MAP IT📍"
+            "TOOLS & STRATEGIES": "OUTILS ET STRATEGIES"
+            "PROGRESS": "PROGRES"
+            "QUESTIONS?": "¿QUESTIONS?"
+            "BLOG & TEAM": "EQUIPE"
+          site_name: "MapYourGrid"
+      default_language: en
+      material_alternate: true
+  
   

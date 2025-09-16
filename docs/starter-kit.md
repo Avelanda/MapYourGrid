@@ -4,7 +4,7 @@
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 450px; max-width: 100%">
 <a href="https://openinframap.org/#6.54/39.026/-7.548" target="_blank">
-<img src="../images/openinframap-portugal.jpg" class="img-border icon-svg off-glb" style="width: 100%;"></a> 
+<img src="/images/openinframap-portugal.jpg" class="img-border icon-svg off-glb" style="width: 100%;"></a> 
 <figcaption class="image-caption">
 <a href="https://openinframap.org/#6.54/39.026/-7.548" target="_blank">Open Infrastructure Map</a> showing the detailed transmission and distribution grid in Portugal. Click to enlarge.
 </figcaption>
@@ -27,6 +27,9 @@ We recommend JOSM (Java OpenStreetMap) editor generally, particularly for profes
 Have you spotted some power towers, power plants, issue or substations near your place that are still missing and want to quickly map them yourself? This can be done on your mobile device or PC using the iD editor. In this way, you can also correct voltages, circuits, or other errors you see in Open Infrastructure Map.
 
 The native iD OpenStreetMap editor offers a simple, user-friendly interface that is perfect for beginners or those who want a quick overview of electrical grid mapping. Its simple user interface and web browser integration also make it possible to use this editor on mobile devices, enabling field mapping and validation tasks to be carried out on the ground.
+
+### **<div class="tools-header">Check out our starter-kit video tutorial for iD</div>**
+<iframe width="720" height="315" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/gAPss8ZeVLs?si=aC-T0GK4Mv3Kcr9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ****
 ### <div class="stradegy-header">Map your Good First Line with iD</div></h3>
@@ -83,15 +86,15 @@ Sometimes, there are several possible options for line routing and it is unclear
 ### **<div class="tools-header">Check out our starter-kit video tutorial for JOSM</div>**
 <iframe width="720" height="315" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/SCOmFnW7uG8?si=hSxN_3SFm-cFFWuh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     
-### **<div class="tools-header">1. Install and Configure JOSM  <img src="../images/josm_logo.jpg" style="height: 1.2em; vertical-align: middle; margin-left: 10px;"></div>** 
+### **<div class="tools-header">1. Install and Configure JOSM  <img src="/images/josm_logo.jpg" style="height: 1.2em; vertical-align: middle; margin-left: 10px;"></div>** 
 
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/starter-kit/kenya-tanzania.jpg" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/starter-kit/kenya-tanzania.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">This is what your JOSM should look like after setting up the full Starter-Kit. Click to enlarge.</figcaption>
-  <img src="../images/preferences.jpg" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/preferences.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">Different preferences that need to be configured, including the Power Presets. Click to enlarge.</figcaption>
-  <img src="../images/starter-kit/imagery.jpg" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/starter-kit/imagery.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">For countries such as Japan, high-resolution imagery is available across the whole country in JOSM. Click to enlarge.</figcaption>
 </div>
 
@@ -115,7 +118,7 @@ Sometimes, there are several possible options for line routing and it is unclear
 ### **<div class="tools-header">2. Setup your Presets </div>**
 
 <div style="float: right; margin: 10px 0 20px 20px; width: 350px;">
-  <img src="../images/josm-toolbar.png" class="img-border" style="width: 100%;"> 
+  <img src="/images/josm-toolbar.png" class="img-border" style="width: 100%;"> 
   <figcaption class="image-caption">Default MapYourGrid Presets in JOSM toolbar. Click to enlarge.</figcaption>
 </div>
 
@@ -149,9 +152,9 @@ Our community is constantly investigating transmission lines that are suitable f
 ### **<div class="tools-header">5. Load Power Infrastructure into JOSM :inbox_tray:</div>**
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
-  <img src="../images/starter-kit/kenya-look-into-data.jpg" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/starter-kit/kenya-look-into-data.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">A substation of a hydroelectric power plant in Nigeria and the connection to the transmission grid.</figcaption>
-  <img src="../images/starter-kit/double-mapping-warning.jpg" class="img-border" style="width: 100%;">
+  <img src="/images/starter-kit/double-mapping-warning.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">The transmission lines do not end abruptly at the pink administrative borders. Therefore, the substation at the end of the interconnector may appear unmapped. The map in the download window displays all OpenStreetMap data, enabling you to swiftly verify whether substations or lines have been mapped. To map across borders, it is always recommended that you load both areas into your editor! Click to enlarge.</figcaption>
 </div>
 
@@ -171,11 +174,11 @@ Our community is constantly investigating transmission lines that are suitable f
 ### **<div class="tools-header">6. Map your First Line</div>**
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
-  <img src="../images/starter-kit/josm_env.jpg" class="img-border" style="width: 100%;">
+  <img src="/images/starter-kit/josm_env.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">Key JOSM elements for continuing a transmission line. Click to enlarge.</figcaption>
-  <img src="../images/mapfast.png"  class="img-border" style="width: 100%;"> 
+  <img src="/images/mapfast.png"  class="img-border" style="width: 100%;"> 
   <figcaption class="image-caption">Selecting all the finished notes in a line enables you to quickly turn them into Power Towers.</figcaption>
-  <img src="../images/starter-kit/validation.jpg" class="img-border" style="width: 100%;">
+  <img src="/images/starter-kit/validation.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">Before uploading, JOSM will test your edits for known issues and various rule sets. Try to resolve as many validation results as possible. Click to enlarge.</figcaption>
 </div>
 
@@ -203,7 +206,7 @@ Our community is constantly investigating transmission lines that are suitable f
 
 ### **<div class="tools-header">7. Upload your Edits to OpenStreetMap :outbox_tray: </div>**
 
-1. Whilst having the `Data Layer` activated, press the green arrow pointing upwards <img src="../images/starter-kit/upload.png" class="icon-svg off-glb" style="width: 30px; height: auto;">, which should open a new window. 
+1. Whilst having the `Data Layer` activated, press the green arrow pointing upwards <img src="/images/starter-kit/upload.png" class="icon-svg off-glb" style="width: 30px; height: auto;">, which should open a new window. 
 1. Another new window `Validation Results` will appear in the right panel showing all the issues identified. Right-clicking on an issue will allow you to zoom in on it. Avoid ignoring this validation results. The only acceptable warning when uploading data is `Possible missing line support node within power line`. 
 1. In the upload window, please tick the `I would like someone to review my edits` tick box if your mapping has been strongly affected by uncertainties like low-quality satellite data, or if you are a beginner. Provide a brief comment such as `#mapyourgrid Unfinished transmission line`. Provide the imagery source layer you used by typing `Esri` or `Bing` for example. Once done and sure about your edits, `Upload Changes`.
 1. You just mapped your First Good Line. Feel free to close more First Good Lines, but make sure you leave some for the others. You can use the [Tools and Strategies](tools.md) we have provided to find your own unmapped line. To support our initiative, please use the #MapYourGrid hashtag in the comments when you upload a changeset.
@@ -211,7 +214,7 @@ Our community is constantly investigating transmission lines that are suitable f
 ### **<div class="tools-header"> 8. Avoid these Common Mistakes :name_badge:</div>**
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
-  <img src="../images/starter-kit/power-towers-without-lines.jpg" class="img-border" style="width: 100%;"> </a>
+  <img src="/images/starter-kit/power-towers-without-lines.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">In particular, in the dense urban areas that are widespread in Nigeria, it can be very difficult to determine the route of the lines in satellite images. Therefore, mappers simply place unconnected power towers that appear as blue squares at higher zoom levels.</figcaption>
 </div>
 
@@ -235,7 +238,7 @@ For a safe mapping, we recommend you reading about [good practices](https://wiki
 On the road and spotted some some power towers, power plants, or substations near your place that are still missing and want to quickly map them yourself? This can be done on your mobile device or PC using the iD editor and Open Infrastructure Map. In this way, you can also correct voltages, circuits, or other errors you see in Open Infrastructure Map.
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
-  <img src="../images/starter-kit/easy-edit.jpg" class="img-border" style="width: 100%;">
+  <img src="/images/starter-kit/easy-edit.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">To place a power tower, you first have to set a node and then add a tag (left). To save your edits on a mobile device using the iD Editor (right), you’ll need to close the inspector panel to reveal the `Save` button. Click to enlarge.</figcaption>
 </div>
 
@@ -309,7 +312,7 @@ Reporting such smaller issues will significantly improve the long-term quality o
 ## <div class="tools-header">MapComplete Starter-Kit</div></h3>
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
-  <img src="../images/starter-kit/mapcomplete.jpg" class="img-border" style="width: 100%;">
+  <img src="/images/starter-kit/mapcomplete.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">MapComplete allows you to add missing information to objects like wind turbines (left). The platform allows you to upload images so that others can derive information like power output of the wind turbine. Click to enlarge.</figcaption>
   <img src="../images/starter-kit/mapcomplete-questions-form.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">This is an example of the form you can use to edit key information about the power lines as well as upload pictures. it appears when you click on the blue lines on the map that represent power lines. Click to enlarge.</figcaption>
@@ -357,8 +360,8 @@ We recommend the following documents for a deeper dive into the construction of 
 The following image illustrates the fundamental design of the electrical grid:  [Electricity Grids and Secure Energy Transitions](https://iea.blob.core.windows.net/assets/ea2ff609-8180-4312-8de9-494bcf21696d/ElectricityGridsandSecureEnergyTransitions.pdf) 
 
 <div style="float: left; margin: 5px 0 20px 20px; width: 100%;">
-  <a href="../images/grid-design.png" target="_blank">
-  <img src="../images/grid-design.png" class="img-border" style="width: 100%;"> </a>
+  <a href="/images/grid-design.png" target="_blank">
+  <img src="/images/grid-design.png" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">Key technology components of electricity grids Source: IEA - CC BY 4.0 - <a href="https://iea.blob.core.windows.net/assets/ea2ff609-8180-4312-8de9-494bcf21696d/ElectricityGridsandSecureEnergyTransitions.pdf"> Electricity Grids and Secure Energy Transitions </a>.</figcaption>
 </div>
 
