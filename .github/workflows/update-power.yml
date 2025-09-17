@@ -16,13 +16,16 @@ jobs:
       - name: 🛎️ Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🐍 Set up Python
+      - name: Install Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-
-      - name: 📦 Install Python dependencies
-        run: pip install requests
+          python-version-file: "pyproject.toml"
+  
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.8.17"
+          enable-cache: true
 
       - name: 🔍 Debug - Check files exist
         run: |
@@ -35,7 +38,7 @@ jobs:
         timeout-minutes: 25  # Set timeout for just this step
         run: |
           echo "Starting Python script execution at $(date)"
-          python docs/py-scripts/power-ways.py
+          uv run python docs/py-scripts/power-ways.py
           echo "Python script completed at $(date)"
 
       - name: ⬆️ Upload JSON to Release

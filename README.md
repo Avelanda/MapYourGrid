@@ -25,10 +25,7 @@ When you make an edit, please use the **#MapYourGrid** in the changeset to help 
 
 ## Contribute to this website
 
-1. Install mkdocs material on your machine:
-```bash
-pip install mkdocs-material mkdocs-glightbox
-```
+1. [Install uv](https://docs.astral.sh/uv/getting-started/installation/) on your machine
 
 2. Clone this repository our your fork of this repository:
 ```bash
@@ -43,7 +40,7 @@ git checkout -b "your-branch-name"
 5. Run the website on your machine:
 ```bash
 cd MapYourGrid
-mkdocs serve
+uv run mkdocs serve
 ```
 
 6. Open http://127.0.0.1:8000/ in your browser to see your changes. If you change a file, the website is automatically recreated.

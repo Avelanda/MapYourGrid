@@ -10,16 +10,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: 🐍 Set up Python
+      
+      - name: Install Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
-
-      - name: 📦 Install Python dependencies
-        run: pip install requests beautifulsoup4
+          python-version-file: "pyproject.toml"
+  
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.8.17"
+          enable-cache: true
 
       - name: 🚀 Run line length calculation script
-        run: python docs/py-scripts/line-length.py
+        run: uv run python docs/py-scripts/line-length.py
 
       - name: ⬆️ Upload JSON to Release
         uses: softprops/action-gh-release@v2
