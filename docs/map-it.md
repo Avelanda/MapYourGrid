@@ -39,10 +39,9 @@ hide:
 <div id="osmose-panel" style="display:none; margin-bottom:1em;">
   <label for="osmoseIssue">Issue type:</label>
   <select id="osmoseIssue">
-    <option value="" disabled selected>Select an Osmose Issue…</option>
     <optgroup label="Power lines (item 7040)">
                 <option value="7040:1">Lone power tower or pole (Class 1)</option>
-                <option value="7040:2">Unfinished power transmission line (Class 2) (recommended for beginners ⭐)</option>
+                <option value="7040:2"selected>Default: Unfinished power transmission line (Class 2) (recommended for beginners ⭐)</option>
                 <option value="7040:3">Connection between different voltages (Class 3)</option>
                 <option value="7040:4">None power node on power way (Class 4)</option>
                 <option value="7040:5">Missing power tower or pole (Class 5)</option>
@@ -97,10 +96,38 @@ let selectedEditor = 'josm';
 const osmoseNameOverrides = {
   "Bosnia and Herzegovina": "bosnia_herzegovina",
   "eSwatini": "swaziland",
-  "United States": "usa"
+  "United States": "usa",
+  "UnitedStates": "usa" //for regions osmose
+  
   // add more special cases here if needed
 };
+const countryNameMap = {};
 
+const regionOverrides = {
+  "Centre-ValdeLoire": "centre",
+  // add any other special-cases you find
+  // "GeoJSONName": "osmose_expected_name"
+  "MatoGrossodoSul": "mato_grosso_do_sul",
+  "MinasGerais": "minas_gerais"
+};
+
+// helper to create osmose-compatible keys (reuses osmoseNameOverrides)
+function slugifyForOsmose(name){
+  if (!name) return '';
+  let s = String(name);
+  // 1) split lowercase->Uppercase boundaries: "MatoGrossodoSul" -> "Mato_Grosso_do_Sul"
+  s = s.replace(/([a-z0-9])([A-Z])/g, '$1_$2');
+  // 2) split Uppercase -> UppercaseLowercase boundaries:
+  //    "HTMLParser" -> "HTML_Parser", also handles "CastillaYLeon" -> "Castilla_Y_Leon"
+  s = s.replace(/([A-Z])([A-Z][a-z])/g, '$1_$2');
+  // 3) Normalize & remove accents
+  s = s.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  // 4) Replace any non-alphanumeric with underscore
+  s = s.replace(/[^0-9A-Za-z]+/g, '_');
+  // 5) Collapse multiple underscores, trim edges, lowercase
+  s = s.replace(/_+/g, '_').replace(/^_|_$/g, '').toLowerCase();
+  return s;
+}
 
 // Map
 // Define world bounds (southWest & northEast corners)
@@ -548,7 +575,22 @@ async function handleAreaClick(iso, level, layer) {
 
   try {
     if (currentMode === 'Osmose_issues') {
-      await fetchOsmoseAndDownload(sovName);
+      if (level === 4) {
+        const regionName = layer.feature.properties.NAME_1 || layer.feature.properties.NAME || '';
+        // try: 1) explicit COUNTRY field in regions geojson, 2) parent country via region ISO code using countryNameMap, 3) SOVEREIGNT fallback, 4) original sovName
+        let countryNameCandidate = layer.feature.properties.COUNTRY || null;
+        if (!countryNameCandidate) {
+          // iso might look like "US-CA" or "BR-MS"
+          if (typeof iso === 'string' && /[-_]/.test(iso)) {
+            const parentIso = iso.split(/[-_]/)[0].toUpperCase();
+            countryNameCandidate = countryNameMap[parentIso] || null;
+          }
+        }
+        if (!countryNameCandidate) countryNameCandidate = layer.feature.properties.SOVEREIGNT || sovName;
+        await fetchOsmoseAndDownload(countryNameCandidate, regionName, layer);
+      } else {
+        await fetchOsmoseAndDownload(sovName, null, layer);
+      }
     }
     else if (currentMode === 'GEM_powerplants') {
       await fetchGEMAndDownload(sovName);
@@ -583,12 +625,12 @@ setTimeout(() => {
   } else {
     html = `
       <div class="popup-success">
-        <p>🎉 <strong>Great!</strong> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if it is downloading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on regions or states. For <strong>Osmose and GEM tools and hints</strong> selections, you will need to download the geojson file. Afterwards drag and drop the file into JOSM. For wikidata and powerplantmatching, the layer will be directly loaded in JOSM. <br>⚠️ <strong>If nothing happens:</strong></p>
+        <p>🎉 <strong>Great!</strong> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if it is downloading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on regions or states (also works for osmose). For <strong> GEM </strong> selections, you will need to download the geojson file. Afterwards drag and drop the file into JOSM. For osmose, wikidata and powerplantmatching, the layer will be directly loaded in JOSM. <br>⚠️ <strong>If nothing happens:</strong></p>
         <ol>
           <li>Check if your ad-blocker is off and JOSM is open</li>
           <li>Make sure Remote Control is enabled in JOSM</li>
           <li>If it’s enabled but still not working, toggle it off and on again</li>
-          <li>Note that hint layers do not work on regional layers. In this case, please load the data onto a national layer.</li>
+          <li>Note that hint layers do not work on regional layers (except for Osmose). In this case, please load the data onto a national layer.</li>
           <li><a href="https://mapyourgrid.org/starter-kit/">Look into the Starter-Kit</a>
         </ol>
       </div>
@@ -605,20 +647,40 @@ setTimeout(() => {
 initQueryUI().catch(console.error);
 
 // Osmose API fetcher
-async function fetchOsmoseAndDownload(sovName) {
+async function fetchOsmoseAndDownload(countryNameOrSovName, regionName = null, layer = null) {
   const sel = document.getElementById('osmoseIssue');
   if (!sel.value) {
     alert('Please select an issue type first.');
     return;
   }
   const [item, cls] = sel.value.split(':');
-  /// normalize to lowercase, add underscore for +1 words  and add wildcard
-  // apply override if present, else slugify normally
-  const key = osmoseNameOverrides[sovName] || sovName;
-  let base = key
-             .toLowerCase()
-             .replace(/\s+/g, '_');
-  if (!base.endsWith('*')) base += '*';
+
+  const overrideCountry = osmoseNameOverrides[countryNameOrSovName];
+  const countryToken = overrideCountry ? overrideCountry : slugifyForOsmose(countryNameOrSovName);
+
+
+  let base;
+  if (regionName) {
+    // region token: prefer explicit region override, else slugify
+    const regionToken = regionOverrides[regionName] || slugifyForOsmose(regionName);
+    // Use countryToken (so overrides apply) instead of re-slugifying the raw name
+    base = `${countryToken}_${regionToken}`;
+    if (!base.endsWith('*')) base += '*';
+  } else {
+    // country only: use countryToken (already overridden or slugified)
+    base = countryToken;
+    if (!base.endsWith('*')) base += '*';
+  }
+
+  //debug
+  const debugMsg = `Osmose query: <code>${base}</code> (item=${item}, class=${cls})`;
+  console.log(debugMsg);
+  if (layer && layer.getPopup) {
+    layer.getPopup().setContent(`<b>Querying Osmose…</b><br>${debugMsg}`).update();
+  } else {
+    // fallback: tiny console/info alert for debugging
+    console.info(debugMsg);
+  }
 
   const apiUrl = 
     `https://osmose.openstreetmap.fr/api/0.3/issues.geojson?` +
@@ -636,11 +698,11 @@ async function fetchOsmoseAndDownload(sovName) {
   const geojson = await resp.json();
 
   if (!geojson.features || geojson.features.length === 0) {
-    alert(`No issues found for "${sel.options[sel.selectedIndex].text}" in ${sovName.replace('*','')}. Try another osmose issue type!`);
+    alert(`No issues found for "${sel.options[sel.selectedIndex].text}" in ${regionName ? (regionName + ', ' + countryNameOrSovName) : countryNameOrSovName}. Try another osmose issue type!`);
     return;
   }
 
-  const layerName = `${sovName.replace('*','')}-osmose-${item}-${cls}`;
+  const layerName = `${(regionName ? `${countryNameOrSovName}_${regionName}` : countryNameOrSovName).replace(/\s+/g,'_')}-osmose-${item}-${cls}`;
   geoToJosm(apiUrl, layerName);
 }
 
@@ -855,6 +917,8 @@ fetch('../data/countries.geojson')
     countriesLayer.eachLayer(layer => {
       const iso  = layer.feature.properties.ISO_A2;
       const name = layer.feature.properties.NAME;
+
+      if (iso) countryNameMap[iso.toUpperCase()] = name;
 
       layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM. You need to disable your ad blocker for this to work`);
       layer.on('click', () => {
