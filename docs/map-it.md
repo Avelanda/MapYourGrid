@@ -41,7 +41,7 @@ hide:
   <select id="osmoseIssue">
     <optgroup label="Power lines (item 7040)">
                 <option value="7040:1">Lone power tower or pole (Class 1)</option>
-                <option value="7040:2"selected>Default: Unfinished power transmission line (Class 2) (recommended for beginners ⭐)</option>
+                <option value="7040:2" selected>Default: Unfinished power transmission line (Class 2) (recommended for beginners ⭐)</option>
                 <option value="7040:3">Connection between different voltages (Class 3)</option>
                 <option value="7040:4">None power node on power way (Class 4)</option>
                 <option value="7040:5">Missing power tower or pole (Class 5)</option>
@@ -96,6 +96,8 @@ let selectedEditor = 'josm';
 const osmoseNameOverrides = {
   "Bosnia and Herzegovina": "bosnia_herzegovina",
   "eSwatini": "swaziland",
+  "Republic of the Congo":"congo_brazzaville",
+  "Democratic Republic of the Congo":"congo_kinshasa",
   "United States": "usa",
   "UnitedStates": "usa" //for regions osmose
   
@@ -108,7 +110,9 @@ const regionOverrides = {
   // add any other special-cases you find
   // "GeoJSONName": "osmose_expected_name"
   "MatoGrossodoSul": "mato_grosso_do_sul",
-  "MinasGerais": "minas_gerais"
+  "MinasGerais": "minas_gerais",
+  "Cataluña": "catalunya",
+  "NeiMongol": "inner_mongolia"
 };
 
 // helper to create osmose-compatible keys (reuses osmoseNameOverrides)
@@ -159,7 +163,7 @@ const countriesLayer = L.geoJSON(null, {
 }).addTo(map);
 
 const regionsLayer = L.geoJSON(null, {
-    style: { color: '#3388ff', weight: 1 }
+    style: { color: '#2c1aff', weight: 1 }
 });
 
 
