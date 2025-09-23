@@ -129,6 +129,12 @@ Energy infrastructure is central to solving today’s biggest challenges. Reliab
 
 ### Growing Academic Recognition
 
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+  <a href="https://maps.nrel.gov/speed-to-power/data-viewer/data-library" target="_blank">
+  <img src="/images/accelerating-speed-to-power.jpg" class="img-border" style="width: 100%;"> </a>
+  <figcaption class="image-caption">The world’s largest economy is now officially using OpenStreetMap substation data to create capacity maps and plan new data centers. This means the success of AI in the U.S. depends on a dataset that has been curated and verified by an open community of millions of people for over 17 years. <a href="https://maps.nrel.gov/speed-to-power/data-viewer/data-library">Source: NREL</a>, Click to enlarge.</figcaption>
+</div> 
+
 To understand the influence of OpenStreetMap's electrical grid data in research, we analysed Google Scholar for publications combining `OpenStreetMap` with terms like `power grid`, `electrical grid`, `renewable` or `energy model`.
 
 * 10,700 publications since 2005 included combinations of these keywords.
