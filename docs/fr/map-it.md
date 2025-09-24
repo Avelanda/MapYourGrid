@@ -14,7 +14,7 @@ hide:
     Si c'est la première fois que vous cartographiez un réseau, veuillez consulter le [kit de démarrage](starter-kit.md). Vous pouvez utiliser le hashtag **#MapYourGrid** dans votre ensemble de modifications pour montrer votre soutien à notre initiative lorsque vous effectuez une modification ! Pour commencer la cartographie, veuillez ouvrir [JOSM](https://josm.openstreetmap.de/), vous assurer que le contrôle à distance est activé dans « Préférences » et charger vos données :
 
     1. La **transmission par défaut (50 kV+)** extrait toutes les infrastructures électriques pertinentes pour le **réseau de transport**. Pour plus de détails sur les données extraites via Overpass, veuillez consulter nos [définitions du réseau OpenStreetMap](https://github.com/open-energy-transition/osm-grid-definition). Les réseaux de distribution sont à peine visibles dans les données satellitaires et ne doivent donc être cartographiés que dans des cas particuliers.
-    2. Les boutons Osmose, Global Energy Monitor et Wikidata fournissent des données de **couche d'aide**, que vous pouvez consulter sur notre page [Outils et stratégies](tools.md). Veuillez noter que les couches d'aide ne fonctionnent qu'au niveau national. 
+    2. Les boutons Osmose, Global Energy Monitor et Wikidata fournissent des données de **couche d'aide**, que vous pouvez consulter sur notre page [Stratégies](strategies.md). Veuillez noter que les couches d'aide ne fonctionnent qu'au niveau national. 
 
 
 

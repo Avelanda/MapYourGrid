@@ -272,6 +272,13 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
 
 <div class="grid cards" markdown>
 
+- <a href="../blog/20250918-HIFLD" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/usa-final-hifld.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **OpenStreetMap grid data, the hidden superhero of the US’ national security? (18 Sept. 2025)**  
+  California wildfires, the Colonial Pipeline cyberattack, hurricane and flooding responses such as Hurricane Maria, all have something in common: EAGLE-I.  
+  [:arrow_right: Read more](blog/20250918-HIFLD.md)
+</a>
+
 - <a href="../blog/20250908-BehindTheScenes" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/MYG-all-edits-and-global.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
   **Behind the Scenes of MapYourGrid (08 Sept. 2025)**  
@@ -279,13 +286,6 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
   [:arrow_right: Read more](blog/20250908-BehindTheScenes.md)
 </a>
 
-- <a href="../blog/20250918-HIFLD" style="text-decoration: none; color: inherit;">
-  <img src="/images/blog-illustrations/usa-final-hifld.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
-  **OpenStreetMap grid data, the hidden superhero of the US’ national security? (18 Sept. 2025)**  
-  California wildfires, the Colonial Pipeline cyberattack, hurricane and flooding responses such as Hurricane Maria, all have something in common: EAGLE-I.
-  [:arrow_right: Read more](blog/20250918-HIFLD.md)
-</a>
-    
 -   More blog articles  coming soon ! 
 
 </div>

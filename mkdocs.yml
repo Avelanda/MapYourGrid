@@ -5,13 +5,14 @@ repo_name: 'MapYourGrid'
 repo_url: 'https://github.com/open-energy-transition/MapYourGrid'
 
 nav:
-  - THE INITIATIVE : index.md
+  - INITIATIVE : index.md
   - IMPACT: impact.md
   - STARTER-KIT: starter-kit.md
   - MAP IT📍: map-it.md
-  - TOOLS & STRATEGIES: tools.md
+  - STRATEGIES: strategies.md
   - PROGRESS : progress.md
-  - QUESTIONS? : questions.md
+  - GLOBAL GRID DATA : global-grid-data.md
+  - FAQ : faq.md
   - BLOG & TEAM : about-us-blog.md
   #    2025:
   #      - "Liberate the Grid": blog/firstrename.md
@@ -50,6 +51,7 @@ extra_css:
     - stylesheets/extra.css
     - stylesheets/landing.css
     - stylesheets/blog.css
+    - stylesheets/awesome_list.css
     - https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css
 
 
@@ -68,7 +70,7 @@ extra:
 extra_javascript:
   - assets/javascripts/umami.js
   - assets/javascripts/gallery.js
-
+  - assets/javascripts/awesome-filter-tags.js
 
 
 markdown_extensions:
@@ -89,6 +91,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
 
 
 plugins:
@@ -113,26 +117,26 @@ plugins:
           build: true
           site_name: "MapYourGrid"
           nav_translations:
-            "THE INITIATIVE": "LA INICIATIVA"
+            "INITIATIVE": "INICIATIVA"
             "IMPACT": "IMPACTO"  
             "STARTER-KIT": "KIT DE INICIO"
             "MAP IT📍": "MAP IT📍"
-            "TOOLS & STRATEGIES": "HERRAMIENTAS Y ESTRATEGIAS"
+            "STRATEGIES": "ESTRATEGIAS"
             "PROGRESS": "PROGRESO"
-            "QUESTIONS?": "¿PREGUNTAS?"
+            "FAQ": "¿PREGUNTAS?"
             "BLOG & TEAM": "EQUIPO"
         - locale: fr
           name: Français
           build: true
           nav_translations:
-            "THE INITIATIVE": "L'INITIATIVE"
+            "INITIATIVE": "INITIATIVE"
             "IMPACT": "IMPACT"  
-            "STARTER-KIT": "KIT DE DEMARRAGE"
+            "STARTER-KIT": "KIT DE DÉMARRAGE"
             "MAP IT📍": "MAP IT📍"
-            "TOOLS & STRATEGIES": "OUTILS ET STRATEGIES"
-            "PROGRESS": "PROGRES"
-            "QUESTIONS?": "¿QUESTIONS?"
-            "BLOG & TEAM": "EQUIPE"
+            "STRATEGIES": "STRATÉGIES"
+            "PROGRESS": "PROGRÈS"
+            "FAQ": "QUESTIONS?"
+            "BLOG & TEAM": "ÉQUIPE"
           site_name: "MapYourGrid"
       default_language: en
       material_alternate: true

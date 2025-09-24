@@ -1,7 +1,7 @@
 <div class="blog-headers">
 <h1>Behind The Scenes of MapYourGrid</h1>
 </div>
-:octicons-calendar-24: September 8, 2025 <br>
+:octicons-calendar-24: September 8, 2025 by Marina Petkova <br>
 
 *In August 2025, we made MapYourGrid publicly available. For seven months before that, our team of developers, data scientists, energy experts worked side by side, testing tools and mapping grids ourselves. The purpose of this internal phase was to set the ambition, adjust our workflows, identify weaknesses in the tools, and understand the mapping challenges ourselves before inviting wider participation.<br><br>
 The public release marked the start of a different stage: building the map with contributions from local mapping communities and individuals with the skills or knowledge to improve grid data. This post documents the context, methods, and early outcomes of that process.*
