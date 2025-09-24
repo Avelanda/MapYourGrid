@@ -1,5 +1,5 @@
 <div class="page-headers">
-<h1>Questions & Answers</h1>
+<h1>Frequently Asked Questions</h1>
 </div>
 
 Here is a compilation of the most frequently asked questions we receive. 
