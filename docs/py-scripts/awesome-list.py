@@ -381,7 +381,6 @@ def to_collapsible_admonition(match: re.Match) -> str:
 
     return f"{fence} {kind}{title_part}\n{indented_body}"
 
-#PAREN_CONTENT_RE = re.compile(r'^\(([^)]+)\)\s*(.*)')
 
 def inject_country_flags(text: str) -> str:
     PAREN_CONTENT_RE = re.compile(r"\* \(([^()]*)\)")
