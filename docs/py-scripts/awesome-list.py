@@ -69,7 +69,7 @@ HEADER_BLOCK_RE = re.compile(
     r'(<div class="page-headers">\s*<h1[^>]*>.*?</h1>\s*</div>)',
     re.DOTALL
 )
-PAREN_CONTENT_RE = re.compile(r"\(([^()]*)\)")
+
 
 TABLE_TEXT_RE = re.compile(r"<table>.*?<b>(.*?)</b>.*?</table>", re.DOTALL | re.IGNORECASE)
 
@@ -382,8 +382,9 @@ def to_collapsible_admonition(match: re.Match) -> str:
     return f"{fence} {kind}{title_part}\n{indented_body}"
 
 
-
 def inject_country_flags(text: str) -> str:
+    PAREN_CONTENT_RE = re.compile(r"\* \(([^()]*)\)")
+
     def repl_paren(m: re.Match) -> str:
         inner = m.group(1)
 
@@ -393,9 +394,10 @@ def inject_country_flags(text: str) -> str:
             return f"{flag} {found}" if flag else found
 
         replaced = COUNTRY_RE.sub(repl_alias, inner)
-        return f"({replaced})"
+        return f"* ({replaced})"
 
     return PAREN_CONTENT_RE.sub(repl_paren, text)
+
 
 # ----------------------------
 
