@@ -1,6 +1,6 @@
 {
-  "towerCount": 33151,
-  "lengthKm": 10509,
+  "towerCount": 45811,
+  "lengthKm": 14522,
   "users": {
     "jbcharron": 394,
     "hazem7": 5,
@@ -9,7 +9,7 @@
     "danilerede": 3,
     "ediyes": 1576,
     "jamesglynn": 0,
-    "Koreller": 6497,
+    "Koreller": 11263,
     "bbdr": 5744,
     "Merkades Vito": 402,
     "MathGon": 15,
@@ -26,7 +26,10 @@
     "conipo": 31,
     "Lieckio": 9,
     "catgirlseraid": 443,
-    "AntoCazalla17": 6
+    "AntoCazalla17": 6,
+    "izolight": 1014,
+    "ubahnverleih": 1075,
+    "DressyPear4": 5805
   },
-  "updated": "2025-09-15T08:50:03Z"
+  "updated": "2025-09-29T13:59:39Z"
 }
