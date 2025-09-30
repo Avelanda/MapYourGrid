@@ -241,7 +241,7 @@ Descargo de responsabilidad: Estas organizaciones no están afiliadas a MapYourG
     
     ![mapa](../images/impact/enedis-osm.png){: .img-border }
 
-**Observatorio Mundial de las Energías Renovables[Enedis]**(/images/impact/ms-logo.png){width=70px} 
+**Global Renewables Watch** ![Enedis](images/impact/ms-logo.png){width=70px} 
 ??? "El Observatorio Mundial de las Energías Renovables cartografía y mide las instalaciones de energías renovables y sus capacidades estimadas a nivel subnacional, nacional y mundial. El aprendizaje automático que hay detrás del proceso de detección se entrena principalmente utilizando datos de OpenStreetMap. (Haz clic)"
  
     [**Enlace al sitio web](https://www.globalrenewableswatch.org/)
@@ -254,6 +254,13 @@ Descargo de responsabilidad: Estas organizaciones no están afiliadas a MapYourG
     [**Enlace al sitio web](https://energia.conacyt.mx/planeas/electricidad/sistema-electrico-nacional)
     
     ![mapa](../images/impact/mexicogov-map.png){: .img-border }
+
+**Canada Energy Regulator (CER)**  ![CER logo](images/impact/CER.jpg){width=50px} 
+??? "International Power Lines and the Canada-U.S. Grid (Click Me)"
+    
+    [**Link to website**](https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2025/market-snapshot-electricity-trade-who-regulates-what-in-canada.html)
+    
+    ![map](images/impact/CER-lines.jpg){: .img-border }
  
 **¡Comisión Europea - Centro Común de Investigación** ![EUC logo](/images/impact/euc-logo.jpg){width=40px} 
 ??? "Plataforma de Conocimiento de África (Click Me)"
@@ -272,7 +279,7 @@ Descargo de responsabilidad: Estas organizaciones no están afiliadas a MapYourG
     
     ![mapa](../images/impact/irenaatlas.png){: .img-border }
  
-**Atlas eólico mundial[GWA logo]**(../images/impact/globalwindatlaslogo.jpg){width=15px} 
+**Global Wind Atlas**  ![GWA logo](images/impact/globalwindatlaslogo.jpg){width=15px} 
 ??? "Atlas Eólico Global (Click Me)"
  
     [**Enlace al sitio web](https://globalwindatlas.info/en/)

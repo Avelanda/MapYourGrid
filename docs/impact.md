@@ -283,6 +283,13 @@ Disclaimer: These organisations are not affiliated with MapYourGrid nor endorse 
     [**Link to website**](https://energia.conacyt.mx/planeas/electricidad/sistema-electrico-nacional)
     
     ![map](images/impact/mexicogov-map.png){: .img-border }
+
+**Canada Energy Regulator (CER)**  ![CER logo](images/impact/CER.jpg){width=50px} 
+??? "International Power Lines and the Canada-U.S. Grid (Click Me)"
+    
+    [**Link to website**](https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2025/market-snapshot-electricity-trade-who-regulates-what-in-canada.html)
+    
+    ![map](images/impact/CER-lines.jpg){: .img-border }
  
 **European Commission - Joint Research Centre**  ![EUC logo](images/impact/euc-logo.jpg){width=40px} 
 ??? "Africa Knowledge Platform (Click Me)"
