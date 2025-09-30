@@ -10,11 +10,11 @@ hide:
 </div>
 
 ??? success "INTRODUCTION (Click Me)"
-    Welcome to our interactive launchpad and hub for contributing to power grid mapping via OpenStreetMap! Click on a country or state below to start mapping power infrastructure directly in iD or JOSM. :rocket:
-    If this is your first time grid mapping, please go through the [JOSM Starter-Kit](https://mapyourgrid.org/starter-kit/#josm-starter-kit) or [iD Starter-Kit](https://mapyourgrid.org/starter-kit/#id-starter-kit). You can use the **#MapYourGrid** hashtag in your changeset to show your support for our initiative when you make an edit! To start mapping, please open [JOSM](https://josm.openstreetmap.de/), ensure that remote control is activated in `Preferences` and load your data: 
+    Welcome to our interactive launchpad and hub for contributing to power grid mapping via OpenStreetMap! Click on a country or state below to start mapping power infrastructure directly in JOSM. :rocket:
+    If this is your first time grid mapping, please go through the [Starter-Kit](starter-kit.md). You can use the **#MapYourGrid** hashtag in your changeset to show your support for our initiative when you make an edit! To start mapping, please open [JOSM](https://josm.openstreetmap.de/), ensure that remote control is activated in `Preferences` and load your data: 
 
     1. The **Default Transmission (50 kV+)** pulls all power infrastructure relevant for the **transmission grid**. For more details about which data is pulled via Overpass please read our [OpenStreetMap Grid Definitions](https://github.com/open-energy-transition/osm-grid-definition). Distribution grids are barely visible in satellite data and should therefore only be mapped in individual cases.
-    2. The Osmose, Global Energy Monitor, and Wikidata buttons provide **hint layer** data, which you can read about in our page [Strategies](strategies.md). Please note that hint layers only work at a national level. 
+    2. The Osmose, Global Energy Monitor, and Wikidata buttons provide **hint layer** data, which you can read about in our [Tools and Strategies](tools.md) page. Please note that hint layers only work at a national level. 
 
 <!-- Beginning of Map section-->
 <style>
@@ -41,7 +41,7 @@ hide:
   <select id="osmoseIssue">
     <optgroup label="Power lines (item 7040)">
                 <option value="7040:1">Lone power tower or pole (Class 1)</option>
-                <option value="7040:2" selected>Default: Unfinished power transmission line (Class 2) (recommended for beginners ⭐)</option>
+                <option value="7040:2"selected>Default: Unfinished power transmission line (Class 2) (recommended for beginners ⭐)</option>
                 <option value="7040:3">Connection between different voltages (Class 3)</option>
                 <option value="7040:4">None power node on power way (Class 4)</option>
                 <option value="7040:5">Missing power tower or pole (Class 5)</option>
@@ -153,7 +153,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Define large countries that should use regional boundaries when zoomed in
+// Useless at the moment since the regions layer becomes active anyway at a certain zoom
 const largeCountries = ['BR', 'US', 'CA', 'IN', 'MX', 'AU', 'CN'];
 const zoomThreshold = 5; // Zoom level at which to show regions instead of countries
 
@@ -340,7 +340,7 @@ async function initQueryUI() {
     group = renderPPMButtonGroup();
     }
     else {
-      group = await renderModeButtonGroup(mode);
+      group = renderModeButtonGroup(mode);
     }
 
     // Tools go in the second row, everything else in the first
@@ -466,8 +466,8 @@ function renderPPMButtonGroup() {
   return group;
 }
 
-
-async function renderModeButtonGroup(mode) {
+const versionCache = new Map();
+function renderModeButtonGroup(mode) {
   const btn = document.createElement('button');
   // I overrided the button name for Default, but the file in github is still Default
   if (mode === 'Default') {
@@ -487,11 +487,21 @@ async function renderModeButtonGroup(mode) {
   const repoFolderUrl =
    `https://github.com/open-energy-transition/osm-grid-definition/tree/main/queries/` +
    encodeURIComponent(mode);
-  verLink.href = repoFolderUrl;  try {
-    const v = await fetchVersion(mode);
-    verLink.textContent = `v${v}`;
-  } catch {
-    verLink.textContent = 'v?';
+  verLink.href = repoFolderUrl;  
+  verLink.textContent = 'v…';
+
+  // update the badge in the background (cached to avoid duplicate fetches)
+  if (versionCache.has(mode)) {
+    verLink.textContent = `v${versionCache.get(mode)}`;
+  } else {
+    fetchVersion(mode)
+      .then(v => {
+        versionCache.set(mode, v);
+        verLink.textContent = `v${v}`;
+      })
+      .catch(() => {
+        verLink.textContent = 'v?';
+      });
   }
 
   const group = document.createElement('div');
@@ -940,23 +950,39 @@ fetch('../data/countries.geojson')
   })
   .catch(error => console.error('Countries GeoJSON error:', error));
 
-// Load region GeoJSON and add interactivity
-fetch('../data/regionsv2.geojson')
-  .then(response => response.json())
-  .then(regions => {
+// Load region GeoJSON and add interactivity (changed to load only when zoomed in as it's hevay). So regions won't load unless zoom level is right
+let regionsLoaded = false;
+
+async function loadRegionsOnce() {
+  if (regionsLoaded) return;
+  try {
+    const resp = await fetch('../data/regionsv2.geojson');
+    const regions = await resp.json();
     regionsLayer.addData(regions);
-
     regionsLayer.eachLayer(layer => {
-      const iso3166_2 = layer.feature.properties.ISO_1;
-      const name      = layer.feature.properties.NAME;
+          const iso3166_2 = layer.feature.properties.ISO_1;
+          const name      = layer.feature.properties.NAME;
 
-      layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM`);
-      layer.on('click', () => {
-        handleAreaClick(iso3166_2, 4, layer);
+          layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM`);
+          layer.on('click', () => 
+            handleAreaClick(iso3166_2, 4, layer));
       });
-    });
-  })
-  .catch(error => console.error('Regions GeoJSON error:', error));
+      regionsLoaded = true;
+      if (map.getZoom() >= zoomThreshold && !map.hasLayer(regionsLayer)) {
+        map.addLayer(regionsLayer);
+      }
+  }   catch(error) {console.error('Regions GeoJSON error:', error);}
+}
+map.on('zoomend', function() {
+  const currentZoom = map.getZoom();
+  if (currentZoom >= zoomThreshold) {
+    if (!regionsLoaded) loadRegionsOnce();
+    if (!map.hasLayer(regionsLayer)) map.addLayer(regionsLayer);
+  } else {
+    if (map.hasLayer(regionsLayer)) map.removeLayer(regionsLayer);
+  }
+});
+
 </script>
 
 
