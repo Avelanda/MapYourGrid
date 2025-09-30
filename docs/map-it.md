@@ -10,11 +10,11 @@ hide:
 </div>
 
 ??? success "INTRODUCTION (Click Me)"
-    Welcome to our interactive launchpad and hub for contributing to power grid mapping via OpenStreetMap! Click on a country or state below to start mapping power infrastructure directly in JOSM. :rocket:
-    If this is your first time grid mapping, please go through the [Starter-Kit](starter-kit.md). You can use the **#MapYourGrid** hashtag in your changeset to show your support for our initiative when you make an edit! To start mapping, please open [JOSM](https://josm.openstreetmap.de/), ensure that remote control is activated in `Preferences` and load your data: 
+    Welcome to our interactive launchpad and hub for contributing to power grid mapping via OpenStreetMap! Click on a country or state below to start mapping power infrastructure directly in iD or JOSM. :rocket:
+    If this is your first time grid mapping, please go through the [JOSM Starter-Kit](https://mapyourgrid.org/starter-kit/#josm-starter-kit) or [iD Starter-Kit](https://mapyourgrid.org/starter-kit/#id-starter-kit). You can use the **#MapYourGrid** hashtag in your changeset to show your support for our initiative when you make an edit! To start mapping, please open [JOSM](https://josm.openstreetmap.de/), ensure that remote control is activated in `Preferences` and load your data: 
 
     1. The **Default Transmission (50 kV+)** pulls all power infrastructure relevant for the **transmission grid**. For more details about which data is pulled via Overpass please read our [OpenStreetMap Grid Definitions](https://github.com/open-energy-transition/osm-grid-definition). Distribution grids are barely visible in satellite data and should therefore only be mapped in individual cases.
-    2. The Osmose, Global Energy Monitor, and Wikidata buttons provide **hint layer** data, which you can read about in our [Tools and Strategies](tools.md) page. Please note that hint layers only work at a national level. 
+    2. The Osmose, Global Energy Monitor, and Wikidata buttons provide **hint layer** data, which you can read about in our page [Strategies](strategies.md). Please note that hint layers only work at a national level. 
 
 <!-- Beginning of Map section-->
 <style>
