@@ -40,15 +40,17 @@ OpenStreetMap’s unique value in creating high quality data for sustainable dev
 
 1. The [Energy Access Explorer](https://www.energyaccessexplorer.org/) is the first open-source, online, interactive geospatial platform enabling energy planners, clean energy entrepreneurs, donors and development institutions to identify areas of high priority for energy access interventions. With over 100 partner organisations and eight participating countries, including India, Nigeria and Ethiopia, it relies heavily on OpenStreetMap data, including transmission and distribution data.
 
-
 ## **<div class="tools-header">Why OpenStreetMap Matters for the Electrical Grid?</div>**
 
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+  <img src="/images/gilytics.jpg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption">Seamless workflow from feasibility studies to stakeholder engagement including OpenStreetMap Electrical Grid Data. Source:
+ <a href="https://gilytics.com/l" target="_blank"> Pathfinder created by Gilytics</a></figcaption> 
+</div> 
 
 OpenStreetMap’s electrical grid data is widely used by grid operators, academic institutions, government agencies, local authorities, and private organizations. It plays a crucial role in energy modeling and planning, shaping policy development and guiding investment decisions. 
 
 These models help assess technological options, evaluate policy impacts, and map out pathways to full electrification, especially in developing countries. They're also critical for driving decarbonization and sustainable development. However, their accuracy depends heavily on the **quality and completeness of the data** they rely on.
-
---- 
 
 ### OpenStreetMap for Smarter Energy Modelling 
 
