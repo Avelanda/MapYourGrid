@@ -60,7 +60,7 @@ Together, these methods help maintain a reliable, crowdsourced electrical grid d
 
 ### <div class="tools-header"> What are the Roles of the Team Members? </div>
 
-We are developers, data scientists, power grid experts, cartographers and OpenStreetMap contributors. Our roles range from software development and data modeling to community coordination and field knowledge. The core MapYourGrid team sees itself as a fertiliser for the community. We build bridges between individuals and organisations, create mapping tools, document strategies and good practices, and develop training materials. In order to test our own material and gather experience, we map all around the world in order to understand the needs of the diverse community.
+We are developers, data scientists, power grid experts, cartographers and OpenStreetMap contributors. Our roles range from software development and data modelling to community coordination and field knowledge. The core MapYourGrid team sees itself as a fertiliser for the community. We build bridges between individuals and organisations, create mapping tools, document strategies and good practices, and develop training materials. In order to test our own material and gather experience, we map all around the world in order to understand the needs of the diverse community.
 
 ### <div class="tools-header"> What is the Business Model of the Project? </div>
 
@@ -119,7 +119,7 @@ Find out more on all tools and repositories that we have integrated on [GitHub -
 
 We are actively working on developing and integrating other existing Open Source tools to enhance the toolchain.
 
-### <div class="tools-header">There are already many Grid Datasets out there : why not just use those? </div>
+### <div class="tools-header">There are already many Grid Datasets out there; why not just use those? </div>
 
 It’s true that many grid datasets exist, but they are rarely harmonised and most are locked behind proprietary licences, which means they cannot be reused freely without explicit permission.
 
@@ -151,19 +151,19 @@ Start by contributing to OpenStreetMap (OSM). Additionally, you can get involved
 
 For general mapping, you need basic mapping skills and understanding of OSM, the ability to read and map over satellite images. Local knowledge and/or language skills with regards to the country/area you would like to map are much appreciated. 
 
-If you are a developper, you can also help us improve mapping and quality assessment tools.  
+If you are a developer, you can also help us improve mapping and quality assessment tools.  
 
 An understanding of the energy context and power grid composition is a strong asset, that can be acquired. 
 
 We also host regular training sessions in order to help contributors develop their skills and feel more confident.
 
-### <div class="tools-header"> I have Information about my Country's Power Grid, but I'm not sure if it's Open Data. Can I us it for grid mapping ? </div>
+### <div class="tools-header"> I have Information about my Country's Power Grid, but I'm not sure if it's Open Data. Can I use it for grid mapping ? </div>
 
 Check the credibility of the source and the licensing terms before using it as a source in OpenStreetMap. Some sources may be inaccurate, outdated, or incompatible with OSM’s licensing. Whenever possible, it's best to ask the data provider for explicit permission to use or reference their data, especially if the licensing is unclear. When in doubt, discuss with the local OSM community before using or referencing external data. 
 
 ### <div class="tools-header"> I have found open data regarding my country. How can I share it?</div>
 
-Check out the relevant  [Country page on the OSM Wiki](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). We've reported all data sources there we're awere of there. Help us enrich and verify existing information.
+Check out the relevant [Country page on the OSM Wiki](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). We've reported all data sources there we're aware of there. Help us enrich and verify existing information.
 
 
 ### <div class="tools-header"> Is open data always reliable? </div>
@@ -174,7 +174,7 @@ Open data quality varies. Cross-check it when possible. If you're local, field v
 
 Bulk imports are strongly discouraged and must follow strict OSM guidelines. Contact your local OSM communities before attempting imports.  
 
-### <div class="tools-header">  What is the Licence of the Data you are creating and using ?</div>
+### <div class="tools-header"> What is the Licence of the Data you are creating and using ?</div>
 
 We're co-creating and using OpenStreetMap data. OSM data is under the licence Open DataBase Licence (OBDL) that you can find more information and official sources on here : [Open Database License — OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Open_Database_License)
 
