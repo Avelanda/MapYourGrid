@@ -17,7 +17,7 @@ hide:
 
 A curated list of resources in the field of electrical grid mapping to improve global open data coverage, harmonization and quality for a sustainable energy transition.
 
-???+ question "Why we've copiled these resources"
+???+ question "Why we've compiled these resources"
     The datasets, maps and all resources compiled here are used to estimate the grid coverage in OpenStreetMap and to find missing lines. Do not copy/paste data from these maps directly into your OpenStreetMap layer. Each data point of the transmission network must be set manually and [verified](https://wiki.openstreetmap.org/wiki/Verifiability) with official satellite data provided by the OpenStreetMap community.
 
 ???+ tip "Join the #MapYourGrid initiative"
