@@ -1,0 +1,88 @@
+name: Archive Completed Good First Lines
+
+on:
+  schedule:
+    - cron: '0 2 * * 0'  # Run every Sunday at 2 AM UTC
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  archive-lines:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Archive completed lines
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          # Fetch completed lines
+          COMPLETED_LINES=$(curl -s -X GET \
+            "${SUPABASE_URL}/rest/v1/lines?status=eq.completed&select=*" \
+            -H "apikey: ${SUPABASE_SERVICE_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_SERVICE_KEY}")
+          
+          echo "Completed lines found:"
+          echo "$COMPLETED_LINES"
+          
+          # Check if there are any completed lines
+          LINE_COUNT=$(echo "$COMPLETED_LINES" | jq '. | length')
+          
+          if [ "$LINE_COUNT" -eq 0 ]; then
+            echo "No completed lines to archive"
+            exit 0
+          fi
+          
+          echo "Archiving $LINE_COUNT completed line(s)..."
+          
+          # Process each completed line
+          echo "$COMPLETED_LINES" | jq -c '.[]' | while read -r line; do
+            ID=$(echo "$line" | jq -r '.id')
+            COORDINATES=$(echo "$line" | jq -r '.coordinates')
+            COUNTRY=$(echo "$line" | jq -r '.country')
+            REGION_DETAILS=$(echo "$line" | jq -r '.region_details // empty')
+            
+            echo "Archiving line: $COUNTRY ($COORDINATES)"
+            
+            # Insert into archive_lines
+            ARCHIVE_DATA=$(jq -n \
+              --arg oid "$ID" \
+              --arg coord "$COORDINATES" \
+              --arg country "$COUNTRY" \
+              --arg region "$REGION_DETAILS" \
+              '{
+                original_id: $oid,
+                coordinates: $coord,
+                country: $country,
+                region_details: (if $region == "" then null else $region end)
+              }')
+            
+            ARCHIVE_RESPONSE=$(curl -s -X POST \
+              "${SUPABASE_URL}/rest/v1/archive_lines" \
+              -H "apikey: ${SUPABASE_SERVICE_KEY}" \
+              -H "Authorization: Bearer ${SUPABASE_SERVICE_KEY}" \
+              -H "Content-Type: application/json" \
+              -H "Prefer: return=minimal" \
+              -d "$ARCHIVE_DATA")
+            
+            # Delete from lines table
+            DELETE_RESPONSE=$(curl -s -X DELETE \
+              "${SUPABASE_URL}/rest/v1/lines?id=eq.${ID}" \
+              -H "apikey: ${SUPABASE_SERVICE_KEY}" \
+              -H "Authorization: Bearer ${SUPABASE_SERVICE_KEY}")
+            
+            echo "Archived and deleted line: $ID"
+          done
+          
+          echo "Archive process completed!"
+
+      - name: Create summary
+        if: always()
+        run: |
+          echo "### Archive Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Archive job completed at $(date)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Check the logs above for details on archived lines." >> $GITHUB_STEP_SUMMARY
