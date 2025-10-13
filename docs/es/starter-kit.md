@@ -50,7 +50,7 @@ Para aquellos que prefieren iD a JOSM o son nuevos en OpenStreetMap y en la cart
 </div>
 
 1. [Crear una cuenta OpenStreetMap](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target="_blank"} e identifíquese. Cambia al modo `Editar` pulsando el botón del panel superior.
-1. Seleccione una `Buena Primera Línea` de la siguiente lista y copie las coordenadas: [**Buenas primeras líneas**](https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js){target="_blank"}
+1. Seleccione una `Buena Primera Línea` de la siguiente lista y copie las coordenadas: [**Buena Primera Líneas**](good-first-lines.md){target="_blank"}
 1. Copie las coordenadas de la `Primera Línea Buena` en el campo `Buscar` y pulse `Intro`. Ahora debería ver un mapa de líneas de transmisión con el extremo abierto en una torre de alta tensión. 
 1. iD le mostrará todos los datos de OpenStreetMap y con imágenes de satélite `Bing` o `ESRI` debajo. Dependiendo de su región, puede que desee cambiar a diferentes imágenes de satélite pulsando el botón "Configuración de fondo" en el panel derecho.
 1. Ahora haz clic en el botón `Línea` del panel superior y después en el último símbolo de torre de energía junto a las coordenadas.
@@ -139,8 +139,7 @@ A veces, hay varias opciones posibles para el trazado de las líneas y no está 
 
 ### **<div class="tools-header">4. A mapear Elija una buena primera línea </div>**
 
-Nuestra comunidad está constantemente investigando líneas de transmisión que sean adecuadas para experiencias cartográficas fáciles para principiantes. Sólo tienes que seleccionar una "Buena primera línea" de la siguiente hoja de cálculo y marcarla si ya has empezado a cartografiarla. Por ahora, recuerde en qué país (o región) se encuentra la "Buena primera línea" que ha elegido, ya que el siguiente paso es cargar la red de ese país. Seleccione una `Buena primera línea` de la siguiente hoja de cálculo. [**Buenas primeras líneas**](https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js){target="_blank"}
-
+Nuestra comunidad está constantemente investigando líneas de transmisión que sean adecuadas para experiencias cartográficas fáciles para principiantes. Sólo tienes que seleccionar una "Buena primera línea" de la siguiente hoja de cálculo y marcarla si ya has empezado a cartografiarla. Por ahora, recuerde en qué país (o región) se encuentra la "Buena primera línea" que ha elegido, ya que el siguiente paso es cargar la red de ese país. Seleccione una `Buena primera línea` de la siguiente hoja de cálculo. [**Buenas primeras líneas**](good-first-lines.md){target="_blank"}
 ### **<div class="tools-header">5. Cargue la infraestructura de energía en JOSM :inbox_tray:</div>**
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">

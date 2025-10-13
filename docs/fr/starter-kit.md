@@ -50,7 +50,7 @@ Pour ceux qui préfèrent iD à JOSM ou qui découvrent OpenStreetMap et la cart
 </div>
 
 1. [Créer un compte OpenStreetMap](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target="_blank"} et connectez-vous. Passez en mode "édition" en appuyant sur le bouton situé sur le panneau supérieur.
-1. Sélectionnez une "bonne première ligne" dans la liste suivante et copiez les coordonnées : [**Bonnes premières lignes**](https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js){target="_blank"}
+1. Sélectionnez une "bonne première ligne" dans la liste suivante et copiez les coordonnées : [**Bonnes premières lignes**](good-first-lines.md){target="_blank"}
 1. Copiez les coordonnées de la "Bonne Première Ligne" dans le champ "Recherche" et appuyez sur "Entrée". Vous devriez maintenant voir une ligne de transmission cartographiée avec l'extrémité ouverte sur un pylône électrique. 
 1. iD vous montrera toutes les données OpenStreetMap avec l'imagerie satellite `Bing` ou `ESRI` en dessous. En fonction de votre région, vous pouvez changer d'imagerie satellite en appuyant sur le bouton "Réglage de l'arrière-plan" dans le panneau de droite.
 1. Cliquez maintenant sur le bouton "Ligne" dans le panneau supérieur et ensuite sur le dernier symbole de tour électrique à côté des coordonnées.
@@ -139,7 +139,7 @@ Parfois, il existe plusieurs options possibles pour le tracé des lignes et l'em
 
 ### **<div class="tools-header">4. Cartographions ! Choisir une bonne première ligne </div>**
 
-Notre communauté est constamment à la recherche de lignes de transmission qui conviennent à des expériences de cartographie conviviales pour les débutants. Sélectionnez simplement une "Bonne première ligne" dans la feuille de calcul suivante, et cochez-la si vous avez commencé à la cartographier. Pour l'instant, gardez à l'esprit dans quel pays (ou région) se trouve votre "Bonne première ligne", car l'étape suivante consiste à charger la grille de ce pays ! Sélectionnez une "Bonne première ligne" dans la feuille de calcul suivante. [**Bonnes premières lignes**](https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js){target="_blank"}
+Notre communauté est constamment à la recherche de lignes de transmission qui conviennent à des expériences de cartographie conviviales pour les débutants. Sélectionnez simplement une "Bonne première ligne" dans la feuille de calcul suivante, et cochez-la si vous avez commencé à la cartographier. Pour l'instant, gardez à l'esprit dans quel pays (ou région) se trouve votre "Bonne première ligne", car l'étape suivante consiste à charger la grille de ce pays ! Sélectionnez une "Bonne première ligne" dans la feuille de calcul suivante. [**Bonnes premières lignes**](good-first-lines.md){target="_blank"}
 
 ### **<div class="tools-header">5. Charger l'infrastructure électrique dans le JOSM :inbox_tray:</div>**
 
