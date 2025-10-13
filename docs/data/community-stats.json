@@ -1,6 +1,6 @@
 {
-  "towerCount": 45811,
-  "lengthKm": 14522,
+  "towerCount": 47789,
+  "lengthKm": 15149,
   "users": {
     "jbcharron": 394,
     "hazem7": 5,
@@ -27,9 +27,13 @@
     "Lieckio": 9,
     "catgirlseraid": 443,
     "AntoCazalla17": 6,
-    "izolight": 1014,
-    "ubahnverleih": 1075,
-    "DressyPear4": 5805
+    "izolight": 2379,
+    "ubahnverleih": 1395,
+    "DressyPear4": 5921,
+    "bivo_grid": 0,
+    "subestacionesylineas": 9,
+    "LukasSchw": 8,
+    "lmum": 160
   },
-  "updated": "2025-09-29T13:59:39Z"
+  "updated": "2025-10-13T15:00:24Z"
 }
