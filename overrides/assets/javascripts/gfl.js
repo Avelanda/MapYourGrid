@@ -126,7 +126,7 @@ async function loadLines() {
             ${line.details ? `<p class="details"><strong>Details: </strong>${line.details}</p>` : ''}
             
             <div class="editor-buttons">
-              <a href="${josmUrl}" class="editor-btn josm-btn" title="Open in JOSM">
+              <a href="${josmUrl}" target="_blank" class="editor-btn josm-btn" title="Open in JOSM">
                 <img src="/images/josm_logo.jpg" alt="JOSM" class="editor-logo off-glb">
                 JOSM
               </a>
