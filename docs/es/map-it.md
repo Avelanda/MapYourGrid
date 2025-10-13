@@ -893,7 +893,7 @@ fetch('/data/regionsv2.geojson')
   .catch(error => console.error('Regions GeoJSON error:', error));
 </script>
 
-
+[Good First Lines :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary }
 
 <!-- ENd-->
 ??? success "Map Legend for the recommended [MapCSS](starter-kit.md#3-add-visual-clarity-with-custom-map-styles) (Click Me)"

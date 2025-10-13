@@ -53,6 +53,7 @@ extra_css:
     - stylesheets/blog.css
     - stylesheets/awesome_list.css
     - https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css
+    - stylesheets/gfl.css
 
 
 extra:
