@@ -110,7 +110,7 @@ A veces, hay varias opciones posibles para el trazado de las líneas y no está 
  
     **Siguiendo nuestro [Código de los cartógrafos](./code-of-mappers.md)Con el apoyo de la comunidad de OpenStreetMap, protegemos colectivamente la integridad de la plataforma OSM, fomentamos la confianza con las comunidades y liberamos el poder de los datos abiertos para un futuro energético más resiliente y justo. Por favor, ten en cuenta que la comunidad y la fundación OpenStreetMap no limitan técnicamente el mapeo en ningún lugar del globo. Por lo tanto, nuestro Código de Mapeadores tampoco puede aplicarse a los mapeadores voluntarios de la comunidad.** 
 
-### **<div class="tools-header">2. Configure sus preajustes </div>**
+### **<div class="tools-header">2. Configure sus preajustes y reglas de validación </div>**
 
 <div style="float: right; margin: 10px 0 20px 20px; width: 350px;">
  <img src="/images/josm-toolbar.png" class="img-border" style="width: 100%;"> 
@@ -120,6 +120,7 @@ A veces, hay varias opciones posibles para el trazado de las líneas y no está 
 1. Para facilitar la asignación, personalice su barra de herramientas superior con preajustes si no ha utilizado las preferencias predeterminadas. Haga clic con el botón derecho en la barra de herramientas y seleccione `Configurar barra de herramientas` (o también `Preferencias → Barra de herramientas`). Después, a la derecha, seleccione `Presets → Man Made → Man Made/Power` y añada `Power Towers`, `Power Portal`, `Power Substation`, `Power Plants`, `Power Line` y `Power Generators`, pulsando el botón del centro para añadirlos a su barra de herramientas. Estos son los principales objetos que necesitará para la cartografía de la red de transporte. También puede eliminar los preajustes que no vaya a utilizar.
 2. Otro preajuste importante que necesitará es "Añadir nodo". Lo encontrarás en Herramientas → Añadir nodo. 
 3. Cuando abra una nueva capa más adelante en el tutorial, la barra de herramientas dejará de ser gris.
+4. Añada las reglas de validación del proyecto MapYourGrid: `Preferencias → Validador de datos`, en la pestaña `Reglas del Validator de etiquetas`, busque `Power QA`, haga clic en el elemento de la lista y, a continuación, haga clic en la flecha situada en el centro de la ventana para añadirlo a las reglas activas.
 
 ### **<div class="tools-header">3. Añade claridad visual con estilos de mapa personalizados :art:</div>**
 
