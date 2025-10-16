@@ -290,7 +290,7 @@ Have you finished your Good First Line and you want to find your own open-ended 
 </div>
 
 
-1. Go to the [MAP IT📍](https://mapyourgrid.org/map-it/)page.
+1. Go to the [MAP IT📍](https://mapyourgrid.org/map-it/){target="_blank"}page.
 1. Press on `iD Editor`, and then press on the Osmose hint layer button.
 1. Choose one of the Osmose issue types, and then press on a country. This will fetch up to 5000 Osmose issues for that country and issue type.
 1. A URL will appear which you can copy. 
