@@ -6,13 +6,13 @@
 <a href="https://openinframap.org/#6.54/39.026/-7.548" target="_blank">
 <img src="/images/openinframap-portugal.jpg" class="img-border icon-svg off-glb" style="width: 100%;"></a> 
 <figcaption class="image-caption">
-<a href="https://openinframap.org/#6.54/39.026/-7.548" target="_blank">Mapa de infraestructuras abiertas</a> que muestra en detalle la red de transporte y distribución de Portugal. Haga clic para ampliar.
+<a href="https://openinframap.org/#6.54/39.026/-7.548" target="_blank">Open Infrastructure Map</a> que muestra en detalle la red de transporte y distribución de Portugal. Haga clic para ampliar.
 </figcaption>
 </div>
 
 Estos kits de iniciación te permiten aprender a cartografiar tu primera línea de la red de transporte eléctrico. Si alguna vez te quedas atascado con el Starter-Kit o quieres hacernos llegar tus comentarios, ponte en contacto con nosotros a través de nuestro [chat comunitario](https://discord.gg/fBw7ARTUeR) o [por correo electrónico](mailto:MapYourGrid@openenergytransition.org). Un miembro de la comunidad MapYourGrid le ayudará a terminar su primera línea y a configurar su entorno.
 
-Recomendamos el editor JOSM (Java OpenStreetMap) en general, sobre todo para la cartografía profesional a gran escala y para inspeccionar la red eléctrica. Sin embargo, si sólo quieres hacer pequeñas ediciones o dejar notas sin instalar nada, el editor [Editor iD](https://www.openstreetmap.org/edit) iD y JOSM pueden combinarse con el sistema de mapeo de la [Mapa de infraestructuras abiertas](https://openinframap.org/). MapComplete ofrece un flujo de trabajo optimizado para dispositivos móviles que permite cartografiar las etiquetas que faltan, como tensiones o capacidades. Estas herramientas también ofrecen una mayor facilidad de uso para las tareas de cartografía sobre el terreno y la validación de datos. Puede seguir nuestros tutoriales en este sitio web o ver nuestro tutorial en vídeo para JOSM.
+Recomendamos el editor JOSM (Java OpenStreetMap) en general, sobre todo para la cartografía profesional a gran escala y para inspeccionar la red eléctrica. Sin embargo, si sólo quieres hacer pequeñas ediciones o dejar notas sin instalar nada, el editor [Editor iD](https://www.openstreetmap.org/edit) iD y JOSM pueden combinarse con el sistema de mapeo de la [Open Infrastructure Map](https://openinframap.org/). MapComplete ofrece un flujo de trabajo optimizado para dispositivos móviles que permite cartografiar las etiquetas que faltan, como tensiones o capacidades. Estas herramientas también ofrecen una mayor facilidad de uso para las tareas de cartografía sobre el terreno y la validación de datos. Puede seguir nuestros tutoriales en este sitio web o ver nuestro tutorial en vídeo para JOSM.
 
 **Para empezar, haz clic en uno de los editores de OpenStreetMap.**
 
@@ -49,20 +49,21 @@ Para aquellos que prefieren iD a JOSM o son nuevos en OpenStreetMap y en la cart
  <figcaption class="image-caption">¿No está seguro del trazado exacto de una línea de transmisión? Basta con colocar las torres de alta tensión y omitir las líneas de transmisión. </figcaption>
 </div>
 
-1. [Crear una cuenta OpenStreetMap](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target="_blank"} e identifíquese. Cambia al modo `Editar` pulsando el botón del panel superior.
-1. Seleccione una `Buena Primera Línea` de la siguiente lista y copie las coordenadas: [**Buena Primera Líneas**](good-first-lines.md){target="_blank"}
-1. Copie las coordenadas de la `Primera Línea Buena` en el campo `Buscar` y pulse `Intro`. Ahora debería ver un mapa de líneas de transmisión con el extremo abierto en una torre de alta tensión. 
-1. iD le mostrará todos los datos de OpenStreetMap y con imágenes de satélite `Bing` o `ESRI` debajo. Dependiendo de su región, puede que desee cambiar a diferentes imágenes de satélite pulsando el botón "Configuración de fondo" en el panel derecho.
-1. Ahora haz clic en el botón `Línea` del panel superior y después en el último símbolo de torre de energía junto a las coordenadas.
-1. Ahora, busca las siguientes torres de energía. Observar el aspecto de las torres de energía anteriores te dará una idea de cómo será la siguiente. La mayoría de las líneas son rectas y están a la misma distancia. Si no puedes ver las torres de energía anteriores, es posible que tengas que cambiar a la vista de satélite. No te preocupes si te saltas una torre de alta tensión. Este tipo de problemas se detectan automáticamente, por lo que es posible que otro cartógrafo se dé cuenta.
-1. Coloca un nuevo `nodo` en la base de todas las torres de energía a lo largo del `camino`, continuando hasta donde puedas encontrar nuevas torres.
-1. A continuación, debe etiquetar la línea correctamente. Para ello, pulse primero `Esc` y después haga clic en el camino que acaba de dibujar. En el panel de la izquierda puede editar ahora la "Característica". Pulse sobre el símbolo `Línea` y busque `Línea de alta tensión`.
-1. Con su nueva línea de energía aún seleccionada, pulse "CTRL + ↓" para seleccionar todos los "nodos" a lo largo de su "línea de energía".
-1. Ahora, en el panel izquierdo, vuelva al campo de búsqueda y busque "Torre de energía" o "Torre de alta tensión". 
-1. Púlsalo y todos tus nodos se convertirán en "Torres de energía". Si haces zoom, podrás ver la "Torre de energía" a lo largo de la línea.
-1. Resuelva todas las advertencias, problemas y errores de sus datos haciendo clic en el símbolo ⚠️ de la esquina inferior derecha.
-1. Pulsa el botón "Guardar" en la esquina superior derecha. Proporciona una breve descripción de lo que has hecho en el comentario del Changeset, incluyendo el hashtag `#MapYourGrid`.
-1. Por último, pulse Cargar. ¡Enhorabuena! Acaba de cartografiar su primera línea de transmisión.
+1. [Crea una cuenta en OpenStreetMap](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target=«_blank»} e inicia sesión.
+1. Seleccione una `Buena primera línea` de la siguiente lista y haga clic en `iD Editor`: [**Buenas primeras líneas**](good-first-lines.md){target=`_blank»}
+1. Se abrirá una pestaña en el modo de edición del editor iD y se le trasladará a la ubicación de la `Buena primera línea` que haya seleccionado. Ahora debería ver una línea de transmisión mapeada con el extremo abierto en una torre eléctrica.  
+1. iD le mostrará todos los datos de OpenStreetMap y, debajo, las imágenes satelitales de `Bing` o `ESRI`. Dependiendo de su región, es posible que desee cambiar a diferentes imágenes satelitales pulsando el botón `Configuración de fondo` en el panel derecho, en caso de que las imágenes no muestren las torres eléctricas.
+1. Para extender la línea eléctrica, simplemente pulse sobre la última torre eléctrica y haga clic en `A` en su teclado para extender la línea actual. Si no desea extender la línea y, en su lugar, desea crear una nueva línea, también puede hacer clic en el botón `Línea` en el panel superior y, a continuación, en el último símbolo de torre eléctrica junto a las coordenadas.
+1. Ahora, busque las siguientes torres eléctricas. Observar cómo eran las torres eléctricas anteriores le dará una idea de cómo será la siguiente. La mayoría de las líneas son rectas y están separadas por la misma distancia. Si no puede ver las torres eléctricas anteriores, es posible que tenga que cambiar a la vista de satélite. No se preocupe si se le pasa alguna torre eléctrica. Estos problemas se detectan automáticamente, por lo que otro cartógrafo podrá localizarla.
+1. Coloque un nuevo `nodo` en la base de todas las torres eléctricas a lo largo de la `via`, continuando hasta que encuentre nuevas torres.
+1. A continuación, debes etiquetar la línea y los nodos correctamente. Para ello, primero pulsa `Esc` y luego haz clic en la vía que acabas de dibujar. En el panel izquierdo ahora puedes editar el `Elemento`. Pulsa el símbolo `Línea` y busca `Línea eléctrica` o `Cable de alta tensión`, si la línea aún no ha sido etiquetada como `Cable de alta tensión`.
+1. Con tu nueva línea eléctrica aún seleccionada, pulsa `CTRL + ↓` para seleccionar todos los `nodos` a lo largo de tu `línea eléctrica`.
+1. Ahora, en el panel izquierdo, vuelve al campo de búsqueda y busca `Torre eléctrica` o `Torre de alta tensión`.
+1. Pulsa sobre ella y todos tus nodos se convertirán en `Torres eléctricas`. Si amplías la imagen, ahora deberías ver la `Torre eléctrica` a lo largo de la línea.
+1. Una vez que haya terminado su sesión de mapeo, resuelva todas las advertencias, problemas y errores en sus datos haciendo clic en el símbolo ⚠️ en la esquina inferior derecha.
+1. Ahora pulse el botón `Guardar` en la esquina superior derecha. Proporcione una breve descripción de lo que ha hecho en el comentario del conjunto de cambios, incluyendo la etiqueta `#MapYourGrid`.
+1. Por último, pulse `Subir`. ¡Enhorabuena! Acaba de mapear su primera línea de transmisión.
+
 
 A veces, hay varias opciones posibles para el trazado de las líneas y no está claro por dónde van realmente las líneas de transmisión. En estos casos, es perfectamente aceptable colocar simplemente torres de alta tensión. No puedes equivocarte colocando torres de alta tensión. Otro mapeador con más experiencia verá tus torres y terminará la línea. 
 
@@ -263,6 +264,12 @@ Una vez terminada la línea de transmisión, lo más probable es que al final se
 1. Añade un `Changeset Comment` con una breve descripción de tu actividad de mapeo. Si nuestros esfuerzos, documentación y herramientas le resultan útiles, incluya el hashtag #mapyourgrid en el comentario del conjunto de cambios para hacérnoslo saber.
 1. **Bonus:** Al mapear la red, también encontrarás muchas centrales eléctricas situadas junto a subestaciones y líneas de transmisión. Éstas se mapean de forma similar a las subestaciones, utilizando el símbolo `Área`.
 
+Si quieres intentar encontrar las centrales eléctricas que faltan en un país y cartografiarlas, puedes utilizar la herramienta Global Energy Monitor o Wikidata en la página [MAP IT📍](https://mapyourgrid.org/map-it/){target=«_blank»}. 
+
+1. Seleccione el botón Global Energy Monitor o Wikidata y pulse sobre un país. Se descargará un archivo con todas las centrales eléctricas de esos conjuntos de datos.
+1. A continuación, puede añadirlo a iD arrastrando y soltando el archivo, o añadiéndolo en `Datos del mapa`.
+1. A continuación, puede revisar las diferentes centrales eléctricas y comprobar si están cartografiadas en OpenStreetMap.
+
 #### <div class="stradegy-header">Encuentre líneas de transmisión abiertas con Osmose</div></h3>
 
 ¿Has terminado tu Buena Primera Línea y quieres encontrar tu propia línea abierta en un país de tu elección? Con la ayuda de osmose y nuestro sistema interactivo [MAPA IT📍](https://mapyourgrid.org/map-it/){target="_blank"} puedes encontrar aún más líneas abiertas.
@@ -272,22 +279,25 @@ Una vez terminada la línea de transmisión, lo más probable es que al final se
  <figcaption class="image-caption">Soporte iD para cargar archivos .gpx, .kml, .geojson, .json en el editor. Por lo tanto, los temas de to osmose, como las líneas de transmisión inacabadas en Kenia, también pueden cargarse en el editor desde nuestra página interactiva MAP IT📍. Haga clic para ampliar.</figcaption>
 </div>
 
-1. Ir a la página [MAPA IT📍](https://mapyourgrid.org/map-it/)página.
-1. Pulse el botón de la capa indirecta de Osmose.
-1. Elija una de las emisiones de Osmose y pulse sobre un país. Aparecerán hasta 5000 emisiones de Osmose para ese país y tipo de emisión.
-1. Arrastra y suelta el archivo que has descargado en el área de mapas de tu iD o editor JOSM.
-1. Ahora puede ver todos los problemas a un nivel de zoom alto. Lamentablemente, iD no permite procesar estos datos de forma sistemática. Para resolver estos problemas de osmosis y permitir la cartografía a gran escala en todo un país, recomendamos por tanto nuestro flujo de trabajo JOSM.
+1. Ve a la página [MAP IT📍](https://mapyourgrid.org/map-it/).
+1. Pulsa en «iD Editor» y, a continuación, pulsa en el botón de la capa de sugerencias de Osmose.
+1. Elige uno de los tipos de incidencia de Osmose y, a continuación, pulsa en un país. Esto recuperará hasta 5000 incidencias de Osmose para ese país y tipo de incidencia.
+1. Aparecerá una URL que puedes copiar. 
+1. Ve al [iD Editor](https://www.openstreetmap.org/edit) y pulsa en «Map Data» o «U» en tu teclado.
+1. Pulsa en los tres puntos junto a `Datos del mapa`, pega la URL copiada y pulsa «OK».
+1. Ahora debería ver todos los problemas (puntos rosas) con un alto nivel de zoom, y puede ampliar manualmente cada uno de ellos para ver si puede solucionar el problema. Desgraciadamente, iD no permite que estos datos se procesen de forma sistemática. Para abordar estos problemas de Osmose y permitir la cartografía a gran escala en todo un país, recomendamos nuestro flujo de trabajo JOSM.
+
 
 #### <div class="stradegy-header">Informar de problemas en la red</div></h3>
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
  <img src="/images/starter-kit/easy-notes.jpg" class="img-border" style="width: 100%;">
- <figcaption class="image-caption">El Mapa de Infraestructuras Abiertas (izquierda) y el Editor iD (derecha) ofrecen una forma fácil de usar y preparada para dispositivos móviles de notificar problemas. Haga clic para ampliar.</figcaption>
+ <figcaption class="image-caption">Open Infrastructure Map (izquierda) y el Editor iD (derecha) ofrecen una forma fácil de usar y preparada para dispositivos móviles de notificar problemas. Haga clic para ampliar.</figcaption>
 </div>
 
 La forma más rápida y sencilla de contribuir a la red eléctrica es añadir notas donde veas que falta información o que ésta es incorrecta en OpenStreetMap. Puedes hacerlo de forma totalmente anónima sin necesidad de iniciar sesión.
 
-1. Ir a la página [Mapa de infraestructuras abiertas](https://openinframap.org/#2/26/12){target="_blank"}.
+1. Ir a la página [Open Infrastructure Map](https://openinframap.org/#2/26/12){target="_blank"}.
 2. Haz clic en **Encontrar mi ubicación** en la esquina superior derecha o busca tu ciudad.
 3. Haga clic en la subestación, torre de alta tensión, línea eléctrica o central eléctrica en la que desee notificar un problema.
 4. En la ventana de descripción, haga clic en el logotipo **OpenStreetMap**.

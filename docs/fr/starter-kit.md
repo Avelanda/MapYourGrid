@@ -49,20 +49,22 @@ Pour ceux qui préfèrent iD à JOSM ou qui découvrent OpenStreetMap et la cart
  <figcaption class="image-caption">Vous n'êtes pas sûr du tracé exact d'une ligne de transmission ? Il suffit de placer les pylônes électriques et de laisser de côté les lignes de transmission. </figcaption>
 </div>
 
-1. [Créer un compte OpenStreetMap](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target="_blank"} et connectez-vous. Passez en mode "édition" en appuyant sur le bouton situé sur le panneau supérieur.
-1. Sélectionnez une "bonne première ligne" dans la liste suivante et copiez les coordonnées : [**Bonnes premières lignes**](good-first-lines.md){target="_blank"}
-1. Copiez les coordonnées de la "Bonne Première Ligne" dans le champ "Recherche" et appuyez sur "Entrée". Vous devriez maintenant voir une ligne de transmission cartographiée avec l'extrémité ouverte sur un pylône électrique. 
-1. iD vous montrera toutes les données OpenStreetMap avec l'imagerie satellite `Bing` ou `ESRI` en dessous. En fonction de votre région, vous pouvez changer d'imagerie satellite en appuyant sur le bouton "Réglage de l'arrière-plan" dans le panneau de droite.
-1. Cliquez maintenant sur le bouton "Ligne" dans le panneau supérieur et ensuite sur le dernier symbole de tour électrique à côté des coordonnées.
-1. Recherchez maintenant les prochaines tours de contrôle. En observant l'aspect des tours précédentes, vous aurez une idée de l'aspect de la prochaine. La plupart des lignes sont droites et à égale distance les unes des autres. Si vous ne voyez pas les pylônes précédents, vous devrez peut-être passer à la vue satellite. Ne vous inquiétez pas si vous manquez un pylône électrique. Ces problèmes sont automatiquement détectés, de sorte qu'un autre cartographe pourra les repérer.
-1. Placez un nouveau `nœud` à la base de toutes les tours d'énergie le long du `chemin`, en continuant jusqu'à ce que vous trouviez de nouvelles tours.
-1. Ensuite, vous devez marquer la ligne correctement. Pour ce faire, appuyez d'abord sur `Esc` et cliquez ensuite sur le chemin que vous venez de dessiner. Dans le panneau de gauche, vous pouvez maintenant éditer la "Caractéristique". Appuyez sur le symbole `Line` et cherchez `Power Line`.
-1. Avec votre nouvelle ligne électrique toujours sélectionnée, appuyez sur `CTRL + ↓` pour sélectionner tous les `nœuds` le long de votre `ligne électrique`.
-1. Dans le panneau de gauche, retournez dans le champ de recherche et cherchez "Tour électrique" ou "Tour à haute tension". 
-1. Appuyez dessus, et tous vos nœuds deviendront des "Power Towers". Si vous zoomez, vous devriez maintenant voir la "Power Tower" le long de la ligne.
-1. Résolvez tous les avertissements, problèmes et erreurs dans vos données en cliquant sur le symbole ⚠️ dans le coin inférieur droit.
-1. Appuyez maintenant sur le bouton `Save` dans le coin supérieur droit. Fournissez une très courte description de ce que vous avez fait dans le commentaire de Changeset, en incluant le hashtag `#MapYourGrid`.
-1. Enfin, appuyez sur Press Upload. Félicitations ! Vous venez de cartographier votre toute première ligne de transmission.
+1. [Créez un compte OpenStreetMap](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target=` _blank »} et connectez-vous.
+1. Sélectionnez une ` bonne première ligne ` dans la liste suivante, puis cliquez sur ` id Editor ` : [**Bonnes premières lignes**](good-first-lines.md){target=« _blank »}
+1. Cela ouvrira un onglet dans le mode édition de l'éditeur iD et vous amènera à l'emplacement de la ` bonne première ligne ` que vous avez sélectionnée. Vous devriez maintenant voir une ligne de transmission cartographiée avec l'extrémité ouverte au niveau d'un pylône électrique.  
+1. iD vous montrera toutes les données OpenStreetMap avec les images satellite `Bing` ou `ESRI` en arrière-plan. Selon votre région, vous pouvez passer à une autre image satellite en appuyant sur le bouton `Background Setting` (Paramètres d'arrière-plan) dans le panneau de droite, au cas où l'image ne montrerait pas les pylônes électriques.
+1. Pour prolonger la ligne électrique, il vous suffit d'appuyer sur le dernier pylône électrique et de cliquer sur la touche ` A ` de votre clavier pour prolonger la ligne actuelle. Si vous ne souhaitez pas prolonger la ligne et préférez en créer une nouvelle, vous pouvez également cliquer sur le bouton ` Ligne ` dans le panneau supérieur, puis sur le symbole du dernier pylône électrique à côté des coordonnées.
+1. Recherchez maintenant les pylônes électriques suivants. En observant l'aspect des pylônes électriques précédents, vous aurez une idée de ce à quoi ressemblera le suivant. La plupart des lignes sont droites et équidistantes. Si vous ne voyez pas les tours électriques précédentes, vous devrez peut-être passer en vue satellite. Ne vous inquiétez pas si vous manquez une tour électrique. Ces problèmes sont détectés automatiquement, donc un autre cartographe pourra la repérer.
+1. Placez un nouveau ` nœud ` à la base de toutes les tours électriques le long du `chemin`, en continuant aussi loin que vous pouvez trouver de nouvelles tours.
+1. Ensuite, vous devez baliser correctement la ligne et les nœuds. Pour ce faire, appuyez d'abord sur ` Esc `, puis cliquez sur le chemin que vous venez de tracer. Dans le panneau de gauche, vous pouvez maintenant modifier l'`objet `. Appuyez sur le symbole ` Line ` et recherchez ` ligne électrique (majeure) `, si la ligne n'a pas déjà été balisée comme ` ligne électrique `.
+1. Votre nouvelle ligne électrique étant toujours sélectionnée, appuyez sur ` CTRL + ↓ ` pour sélectionner tous les ` noeuds ` le long de votre ` ligne électrique `.
+1. Dans le panneau de gauche, retournez dans le champ de recherche et recherchez ` Pylône électrique ` ou ` Pylône haute tension `.
+1. Appuyez dessus et tous vos nœuds deviendront des ` pylônes électriques `. Si vous zoomez, vous devriez maintenant voir le ` pylône électrique ` le long de la ligne.
+1. Une fois votre session de cartographie terminée, résolvez tous les avertissements, problèmes et erreurs dans vos données en cliquant sur le symbole ⚠️ dans le coin inférieur droit.
+1. Appuyez maintenant sur le bouton ` Save ` (Enregistrer) dans le coin supérieur droit. Fournissez une brève description de ce que vous avez fait dans le commentaire du Changeset, en incluant le hashtag ` #MapYourGrid `.
+1. Enfin, appuyez sur ` Press Upload ` (Appuyer sur Télécharger). Félicitations ! Vous venez de cartographier votre toute première ligne de transport d'électricité.
+
+
 
 Parfois, il existe plusieurs options possibles pour le tracé des lignes et l'emplacement réel des lignes de transmission n'est pas clair. Dans ce cas, il est tout à fait acceptable de placer simplement des pylônes électriques. Vous ne pouvez pas vous tromper en plaçant des pylônes électriques. Un autre cartographe plus expérimenté verra vos pylônes et terminera la ligne. 
 
@@ -264,6 +266,12 @@ Une fois votre ligne de transport terminée, vous trouverez très probablement u
 1. Ajoutez un `Changeset Comment` avec une brève description de votre activité de cartographie. Si vous trouvez nos efforts, notre documentation et nos outils utiles, veuillez inclure le hashtag #mapyourgrid dans le commentaire du jeu de modifications pour nous le faire savoir.
 1. **Bonus:** Lors de la cartographie du réseau, vous trouverez également de nombreuses centrales électriques situées à côté des sous-stations et des lignes de transmission. Elles sont cartographiées de la même manière que les sous-stations, en utilisant le symbole `Area`.
 
+Si vous souhaitez rechercher les centrales électriques manquantes dans un pays et les cartographier, vous pouvez utiliser l'outil Global Energy Monitor ou Wikidata disponible sur la page [MAP IT📍](https://mapyourgrid.org/map-it/){target=« _blank »}. 
+
+1. Sélectionnez le bouton Global Energy Monitor ou Wikidata, puis cliquez sur un pays. Cela téléchargera un fichier contenant toutes les centrales électriques issues de ces ensembles de données.
+1. Vous pouvez ensuite l'ajouter dans iD en glissant-déposant le fichier ou en l'ajoutant dans `Données cartographiques`.
+1. Vous pouvez ensuite passer en revue les différentes centrales électriques et vérifier si elles sont cartographiées dans OpenStreetMap.
+
 #### <div class="stradegy-header">Trouver des lignes de transmission ouvertes avec Osmose</div></h3>
 
 Vous avez terminé votre Good First Line et vous souhaitez trouver votre propre ligne ouverte dans le pays de votre choix ? Avec l'aide d'osmose et de notre outil interactif [MAP IT📍](https://mapyourgrid.org/map-it/){Vous y trouverez encore plus de lignes ouvertes.
@@ -273,11 +281,14 @@ Vous avez terminé votre Good First Line et vous souhaitez trouver votre propre 
  <figcaption class="image-caption">iD permet de charger des fichiers .gpx, .kml, .geojson, .json dans l'éditeur. Par conséquent, les questions relatives à l'osmose, telles que les lignes de transmission inachevées au Kenya, peuvent également être chargées dans l'éditeur à partir de notre page MAP IT📍 interactive. Cliquez sur l'image pour l'agrandir.</figcaption>
 </div>
 
-1. Accédez à l'espace [MAP IT📍](https://mapyourgrid.org/map-it/)page.
-1. Appuyer sur le bouton de la couche de teinte Osmose.
-1. Choisissez l'une des émissions d'Osmose et appuyez sur un pays. Vous obtiendrez ainsi jusqu'à 5 000 numéros d'Osmose pour ce pays et ce type de numéro.
-1. Glissez-déposez le fichier que vous avez téléchargé dans la zone de carte de votre éditeur iD ou JOSM.
-1. Vous pouvez maintenant voir tous les problèmes à un niveau de zoom élevé. Malheureusement, l'iD ne permet pas de traiter ces données de manière systématique. Pour résoudre ces problèmes d'osmose et permettre une cartographie à grande échelle à travers un pays, nous recommandons donc notre flux de travail JOSM.
+1. Accédez à la page [MAP IT📍](https://mapyourgrid.org/map-it/).
+1. Appuyez sur « iD Editor », puis sur le bouton `Osmose hint layer`.
+1. Choisissez l'un des types de problèmes Osmose, puis appuyez sur un pays. Cela permettra de récupérer jusqu'à 5 000 problèmes Osmose pour ce pays et ce type de problème.
+1. Une URL apparaîtra, que vous pourrez copier. 
+1. Allez dans [iD Editor](https://www.openstreetmap.org/edit), puis appuyez sur « Map Data » ou « U » sur votre clavier.
+1. Appuyez sur les trois points à côté de `Données cartographiques`, collez l'URL copiée et appuyez sur OK.
+1. Vous devriez maintenant voir tous les problèmes (points roses) à un niveau de zoom élevé, et vous pouvez zoomer manuellement sur chacun d'eux pour voir si vous pouvez les résoudre. Malheureusement, iD ne permet pas de traiter ces données de manière systématique. Pour résoudre ces problèmes d'osmose et permettre une cartographie à grande échelle dans tout un pays, nous recommandons donc notre workflow JOSM.
+
 
 #### <div class="stradegy-header">Signaler les problèmes dans le réseau</div></h3>
 
