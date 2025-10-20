@@ -63,7 +63,7 @@ For those who prefer iD to JOSM or are new to OpenStreetMap and electrical grid 
 1. Press on it, and all you nodes will become `Power Towers`. If you zoom in, you should now see the `Power Tower` now along the line.
 1. Once you finished your mapping session, resolve all warnings, issues and errors in your data by clicking on the ⚠️ symbol in the bottom right corner.
 1. Now press the `Save` button in the right upper corner. Provide a very short decription what you have done in the Changeset comment, including a `#MapYourGrid` hashtag.
-1. Finally press Press Upload. Congratulations! You have just mapped your very first transmission line.
+1. Finally press Press `Upload`. Congratulations! You have just mapped your very first transmission line.
 
 Sometimes, there are several possible options for line routing and it is unclear where the transmission lines actually go. In these cases, it is perfectly acceptable to simply place power towers. You can't go wrong by placing power towers. Another more experience mapper will see your towers and finish the line. 
 
