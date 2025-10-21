@@ -51,7 +51,7 @@ For those who prefer iD to JOSM or are new to OpenStreetMap and electrical grid 
 
 
 1. [Create an OpenStreetMap account](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target="_blank"} and log in.
-1. Select a `Good First Line` from the following list, then click on `id Editor`: [**Good First Lines**](good-first-lines.md){target="_blank"}
+1. Select a `Good First Line` from the following list, then click on `id Editor`: [Good First Lines :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary }
 1. This will open a tab within the edit mode of the iD editor, and move you to the location of the `Good First Line` you selected. You should now see a transmission line mapped with the open end at a power tower.  
 1. iD will show you all OpenStreetMap data and with `Bing` or `ESRI` satellite imagery underneath. Depending on your region, you might want to switch to different satellite imagery by pressing the `Background Setting` button in the right panel, in case the imagery doesn't show the Power Towers.
 1. To extend the power line, you can simply press on the last Power Tower and click `A` on your keyboard to extend the current line. If you don't want to extend the line and instead create a new line, you can also click on the `Line` button in the top panel and afterwards on the last power tower symbol next to the coordinates. 
