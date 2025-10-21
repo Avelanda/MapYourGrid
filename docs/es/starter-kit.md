@@ -28,11 +28,11 @@ Recomendamos el editor JOSM (Java OpenStreetMap) en general, sobre todo para la 
 
 El editor nativo iD OpenStreetMap ofrece una interfaz sencilla y fácil de usar, perfecta para principiantes o para quienes deseen una visión general rápida de la cartografía de redes eléctricas. Su sencilla interfaz de usuario y la integración con el navegador web también hacen posible utilizar este editor en dispositivos móviles, lo que permite realizar tareas de cartografía y validación sobre el terreno.
 
-### **<div class="tools-header">Echa un vistazo al tutorial en vídeo de nuestro kit de inicio para iD</div>**
-<iframe width="720" height="315" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/gAPss8ZeVLs?si=aC-T0GK4Mv3Kcr9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+### **<div class="tools-header">Nuestro video tutorial del kit de inicio para iD</div>**
+<iframe width="720" height="315" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/K1Oo1_E_NC8?si=Lfj3SHGCEl3reqBp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ****
-### <div class="stradegy-header">Mapea su buena primera línea con iD</div></h3>
+### <div class="stradegy-header">Mapea tu buena primera línea con iD</div></h3>
 
 Para aquellos que prefieren iD a JOSM o son nuevos en OpenStreetMap y en la cartografía de redes eléctricas, el siguiente kit de iniciación proporciona una rápida introducción a la cartografía de su primera `Buena Primera Línea`. Aunque es posible cartografiar líneas de transmisión en un dispositivo móvil, es mejor hacerlo en un PC con ratón. 
 
