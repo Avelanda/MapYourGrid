@@ -147,7 +147,9 @@ Sometimes, there are several possible options for line routing and it is unclear
 
 ### **<div class="tools-header">4. Let's map! Choose a Good First Line </div>**
 
-Our community is constantly investigating transmission lines that are suitable for beginner friendly mapping experiences. Simply select a 'Good First Lines' from the following page, and tick it if you have started/attemped mapping it. For now, just keep in mind in which country (or region) your picked 'Good first line' is in, as the next step is to load that countries' grid! Select a `Good First Line` from the following page: [**Good First Lines**](good-first-lines.md){target="_blank"}
+Our community is constantly investigating transmission lines that are suitable for beginner friendly mapping experiences. Simply select a 'Good First Lines' from the following page, and tick it if you have started/attemped mapping it. For now, just keep in mind in which country (or region) your picked 'Good first line' is in, as the next step is to load that countries' grid! Select a `Good First Line` from the following page: 
+
+[Good First Lines :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary }
 
 ### **<div class="tools-header">5. Load Power Infrastructure into JOSM :inbox_tray:</div>**
 
