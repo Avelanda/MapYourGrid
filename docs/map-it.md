@@ -1100,7 +1100,7 @@ The following list provides the main good practices for mapping different power 
 ## Join the Chat <img src="/icons/discord.svg" alt="Discord" class="social-icon" style="width:1.2em; vertical-align:middle; margin-left:0.5ch;"> {.tools-header style="font-weight:700"}
 We welcome everyone to join our [📍-MapYourGrid discord channel](https://discord.gg/a5znpdFWfD). Here you can ask questions, and interact with the community. For mapping specific questions and to participate in our free personalized training, please join our [📍-MapYourGrid-support-and-training](https://discord.gg/fBw7ARTUeR) channel. We share this server with [PyPSA-Earth](https://pypsa-earth.readthedocs.io/en/latest/), a global, open-source energy system model thats uses mainly OpenStreetMap's transmission grid data.
 
-## <div class="tools-header">Join the Community  :calendar: </div>
+## <div class="tools-header">Join the Community</div>
 We welcome everyone to join our community calls and tutorials, to learn more about the mapping process and the initiative.
 <iframe src="https://calendar.google.com/calendar/embed?src=mapyourgrid%40gmail.com&ctz=Europe%2FBerlin" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
