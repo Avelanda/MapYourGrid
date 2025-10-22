@@ -1029,50 +1029,6 @@ map.on('zoomend', function() {
     --8<-- "docs/awesome.md"
     </div>
 
-<script>
-  let lastScrollY = window.scrollY;
-  // Select your iframe by its class or ID. Make sure 'iframestyle' is unique enough
-  // If you have multiple iframes with 'iframestyle', you might need a more specific selector
-  // e.g., document.querySelector('.iframestyle[src*="google.com/spreadsheets"]')
-  const iframe = document.querySelector('.iframestyle'); 
-
-  if (iframe) { // Check if the iframe element exists
-    // Add a listener to the window for scroll events
-    window.addEventListener('scroll', () => {
-      // Check if the scroll difference is significant, suggesting an iframe-triggered jump
-      const scrollDiff = Math.abs(window.scrollY - lastScrollY);
-
-      // You might need to adjust this threshold (e.g., 100, 150, 250, etc.)
-      // A large scroll difference is likely an automatic scroll, not a user scroll
-      if (scrollDiff > 100 && document.activeElement === iframe) {
-        // If the iframe is currently focused and a large scroll occurred,
-        // revert the scroll position to where it was before the jump
-        window.scrollTo(0, lastScrollY);
-      } else {
-        // Otherwise, update the last scroll position
-        lastScrollY = window.scrollY;
-      }
-    });
-
-    // Ensure lastScrollY is correctly set when the iframe loads
-    iframe.addEventListener('load', () => {
-      lastScrollY = window.scrollY; // Reset lastScrollY after iframe loads
-    });
-
-    // Also update lastScrollY on mouseleave from iframe (user scrolled away from iframe)
-    iframe.addEventListener('mouseleave', () => {
-      lastScrollY = window.scrollY;
-    });
-
-    // And on mousedown (when user clicks inside the iframe)
-    iframe.addEventListener('mousedown', () => {
-        lastScrollY = window.scrollY;
-    });
-
-  } else {
-    console.warn("Google Sheets iframe not found for scroll-prevention script.");
-  }
-</script>
 
 ## <div class="tools-header">Mapping Guidelines</div>
 The following list provides the main good practices for mapping different power infrastructure in OpenStreetMap:
@@ -1098,7 +1054,7 @@ The following list provides the main good practices for mapping different power 
 
 
 ## Join the Chat <img src="/icons/discord.svg" alt="Discord" class="social-icon" style="width:1.2em; vertical-align:middle; margin-left:0.5ch;"> {.tools-header style="font-weight:700"}
-We welcome everyone to join our [📍-MapYourGrid discord channel](https://discord.gg/a5znpdFWfD). Here you can ask questions, and interact with the community. For mapping specific questions and to participate in our free personalized training, please join our [📍-MapYourGrid-support-and-training](https://discord.gg/fBw7ARTUeR) channel. We share this server with [PyPSA-Earth](https://pypsa-earth.readthedocs.io/en/latest/), a global, open-source energy system model thats uses mainly OpenStreetMap's transmission grid data.
+We welcome everyone to join our [📍-MapYourGrid discord channel](https://discord.gg/a5znpdFWfD). Here you can ask questions, and interact with the community. For mapping specific questions and to participate in our free personalized training, please join our [📍-MapYourGrid-support-and-training](https://discord.gg/fBw7ARTUeR) channel. We share this server with [PyPSA-Earth](https://pypsa-earth.readthedocs.io/en/latest/), a global, open-source energy system model thats uses mainly OpenStreetMap's transmission grid data. Find us also on [Bluesky](https://bsky.app/profile/mapyourgrid.bsky.social).
 
 ## <div class="tools-header">Join the Community</div>
 We welcome everyone to join our community calls and tutorials, to learn more about the mapping process and the initiative.
