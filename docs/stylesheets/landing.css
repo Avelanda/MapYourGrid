@@ -441,6 +441,13 @@ body.landing-page header.md-header {
   object-fit: contain; /* Ensure the logo scales nicely without distortion */
 }
 
+.partner-logo-bigger {
+  max-height: 120px; /* Control maximum logo height */
+  max-width: 110%;  /* Ensure logo fits within its container */
+  height: auto;     /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure the logo scales nicely without distortion */
+}
+
 /* ==== RESPONSIVE HERO SECTION FIX ==== */
 /* Add intermediate breakpoint for tablets/small laptops */
 @media (max-width: 1200px) and (min-width: 100px) {

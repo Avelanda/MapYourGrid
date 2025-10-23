@@ -158,6 +158,7 @@ title: MapYourGrid
 <p class="lead-statement">
  MapYourGrid es una iniciativa gratuita y de código abierto que cuenta con el apoyo de las siguientes organizaciones. Queremos capacitar a una comunidad global de ciudadanos y organizaciones para crear y mantener datos sobre las infraestructuras básicas de nuestra sociedad moderna. ¿Quieres unirte o apoyarnos? Póngase en contacto con <a href="mailto:MapYourGrid@openenergytransition.org" target="_blank" rel="noopener">por correo electrónico</a> 
 </p>
+<h3 class="section-title">Fundado por</h3>
 <div class="partners-grid">
 <div class="partner-item">
 <a href="https://openenergytransition.org/" target="_blank" rel="noopener">
@@ -184,6 +185,20 @@ title: MapYourGrid
 <img src="../images/logos/infrageomatics-logo.jpg" alt="Infrageomatics Logo" class="partner-logo"> 
 </a>
 </div>
+</div>
+
+<h3 class="section-title">Colaboradores</h3>
+<div class="partners-grid">
+  <div class="partner-item">
+  <a href="https://www.youthmappers.org/" target="_blank" rel="noopener">
+  <img src="../images/logos/youthmappers-logo.svg" alt="Youthmappers Logo" class="partner-logo-bigger"> 
+  </a>
+  </div>
+  <div class="partner-item">
+  <a href="https://wiki.openstreetmap.org/wiki/MyOSM" target="_blank" rel="noopener">
+  <img src="../images/logos/myosm-logo.png" alt="MyOSM Logo" class="partner-logo-smaller"> 
+  </a>
+  </div>
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
