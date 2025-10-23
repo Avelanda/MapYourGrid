@@ -996,16 +996,6 @@ map.on('zoomend', function() {
       style="display: block; margin-left: auto; margin-right: auto;"
       width="600">
 
-??? success "Good First Lines (Click Me)"
-    <a href="https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js" target="_blank">Open this Spreadsheet in another Windoww</a>
-
-    <iframe
-     src="https://docs.google.com/spreadsheets/d/13YZftK9xZ09t2oSvhwjE0Zb7P25nl9OaUAxIBVNH0js/edit?usp=sharing&rm=minimal"
-     class="iframestyle"
-     style="width:100%; height: 500px; border:1px solid #ddd; ">
-    </iframe>
-<!-- I couldn't make the page not go "up" when using this iframe, so for now there is this chatgpt js script that prevents this. It was very annoying, but if you have a better solution that would be great-->
-
 ??? success "JOSM Hotkeys (Click Me)"
     These JOSM hotkeys have proven helpful for grid mapping:
 
