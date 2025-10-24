@@ -6,13 +6,13 @@
 <a href="https://openinframap.org/#6.54/39.026/-7.548" target="_blank">
 <img src="/images/openinframap-portugal.jpg" class="img-border icon-svg off-glb" style="width: 100%;"></a> 
 <figcaption class="image-caption">
-<a href="https://openinframap.org/#6.54/39.026/-7.548" target="_blank">Carte des infrastructures ouvertes</a> montrant le réseau détaillé de transmission et de distribution au Portugal. Cliquez sur l'image pour l'agrandir.
+<a href="https://openinframap.org/#6.54/39.026/-7.548" target="_blank">Open Infrastructure Map</a> montrant le réseau détaillé de transmission et de distribution au Portugal. Cliquez sur l'image pour l'agrandir.
 </figcaption>
 </div>
 
 Ces kits de démarrage vous permettent d'apprendre à cartographier votre première ligne du réseau de transmission électrique. Si vous êtes bloqué avec le Starter-Kit ou si vous souhaitez nous faire part de vos commentaires, n'hésitez pas à nous contacter par l'intermédiaire de notre site web. [chat communautaire](https://discord.gg/fBw7ARTUeR) ou [par courriel](mailto:MapYourGrid@openenergytransition.org). Un membre de la communauté MapYourGrid vous aidera à terminer votre première ligne et à configurer votre environnement.
 
-Nous recommandons l'éditeur JOSM (Java OpenStreetMap) en général, en particulier pour la cartographie professionnelle à grande échelle et pour l'inspection du réseau électrique. Cependant, si vous souhaitez seulement faire des modifications mineures ou laisser des notes sans rien installer, l'éditeur [éditeur iD](https://www.openstreetmap.org/edit) fournit une expérience cartographique conviviale. iD et JOSM peuvent tous deux être combinés avec [Carte des infrastructures ouvertes](https://openinframap.org/). MapComplete fournit un flux de travail optimisé pour les appareils mobiles afin de cartographier les étiquettes manquantes, telles que les tensions ou les capacités. Ces outils offrent également une plus grande facilité d'utilisation pour les tâches de cartographie sur le terrain et la validation des données. Vous pouvez suivre nos tutoriels sur ce site web, ou regarder notre tutoriel vidéo pour JOSM !
+Nous recommandons l'éditeur JOSM (Java OpenStreetMap) en général, en particulier pour la cartographie professionnelle à grande échelle et pour l'inspection du réseau électrique. Cependant, si vous souhaitez seulement faire des modifications mineures ou laisser des notes sans rien installer, l'éditeur [éditeur iD](https://www.openstreetmap.org/edit) fournit une expérience cartographique conviviale. iD et JOSM peuvent tous deux être combinés avec [Open Infrastructure Map](https://openinframap.org/). MapComplete fournit un flux de travail optimisé pour les appareils mobiles afin de cartographier les étiquettes manquantes, telles que les tensions ou les capacités. Ces outils offrent également une plus grande facilité d'utilisation pour les tâches de cartographie sur le terrain et la validation des données. Vous pouvez suivre nos tutoriels sur ce site web, ou regarder notre tutoriel vidéo pour JOSM !
 
 **Cliquez sur l'un des éditeurs OpenStreetMap:**
 
@@ -50,7 +50,7 @@ Pour ceux qui préfèrent iD à JOSM ou qui découvrent OpenStreetMap et la cart
 </div>
 
 1. [Créez un compte OpenStreetMap](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target=` _blank »} et connectez-vous.
-1. Sélectionnez une ` bonne première ligne ` dans la liste suivante, puis cliquez sur ` id Editor ` : [**Bonnes premières lignes**](good-first-lines.md){target=« _blank »}
+1. Sélectionnez une ` bonne première ligne ` dans la liste suivante, puis cliquez sur ` id Editor ` :<br> [**Bonnes premières lignes**](good-first-lines.md){.md-button .md-button--primary target="_blank" }
 1. Cela ouvrira un onglet dans le mode édition de l'éditeur iD et vous amènera à l'emplacement de la ` bonne première ligne ` que vous avez sélectionnée. Vous devriez maintenant voir une ligne de transmission cartographiée avec l'extrémité ouverte au niveau d'un pylône électrique.  
 1. iD vous montrera toutes les données OpenStreetMap avec les images satellite `Bing` ou `ESRI` en arrière-plan. Selon votre région, vous pouvez passer à une autre image satellite en appuyant sur le bouton `Background Setting` (Paramètres d'arrière-plan) dans le panneau de droite, au cas où l'image ne montrerait pas les pylônes électriques.
 1. Pour prolonger la ligne électrique, il vous suffit d'appuyer sur le dernier pylône électrique et de cliquer sur la touche ` A ` de votre clavier pour prolonger la ligne actuelle. Si vous ne souhaitez pas prolonger la ligne et préférez en créer une nouvelle, vous pouvez également cliquer sur le bouton ` Ligne ` dans le panneau supérieur, puis sur le symbole du dernier pylône électrique à côté des coordonnées.
@@ -141,7 +141,7 @@ Parfois, il existe plusieurs options possibles pour le tracé des lignes et l'em
 
 ### **<div class="tools-header">4. Cartographions ! Choisir une bonne première ligne </div>**
 
-Notre communauté est constamment à la recherche de lignes de transmission qui conviennent à des expériences de cartographie conviviales pour les débutants. Sélectionnez simplement une "Bonne première ligne" dans la feuille de calcul suivante, et cochez-la si vous avez commencé à la cartographier. Pour l'instant, gardez à l'esprit dans quel pays (ou région) se trouve votre "Bonne première ligne", car l'étape suivante consiste à charger la grille de ce pays ! Sélectionnez une "Bonne première ligne" dans la feuille de calcul suivante. [**Bonnes premières lignes**](good-first-lines.md){target="_blank"}
+Notre communauté est constamment à la recherche de lignes de transmission qui conviennent à des expériences de cartographie conviviales pour les débutants. Sélectionnez simplement une "Bonne première ligne" dans la feuille de calcul suivante, et cochez-la si vous avez commencé à la cartographier. Pour l'instant, gardez à l'esprit dans quel pays (ou région) se trouve votre "Bonne première ligne", car l'étape suivante consiste à charger la grille de ce pays ! Sélectionnez une "Bonne première ligne" dans la feuille de calcul suivante. [**Bonnes premières lignes**](good-first-lines.md){.md-button .md-button--primary target="_blank" target="_blank"}
 
 ### **<div class="tools-header">5. Charger l'infrastructure électrique dans le JOSM :inbox_tray:</div>**
 
@@ -236,7 +236,7 @@ Vous êtes sur la route et vous avez repéré des pylônes électriques, des cen
 
 #### <div class="stradegy-header">Cartographie des tours électriques sur le terrain</div></h3>
 
-1. Accédez à l'espace [Carte des infrastructures ouvertes](https://openinframap.org/#2/26/12){target="_blank"}.
+1. Accédez à l'espace [Open Infrastructure Map](https://openinframap.org/#2/26/12){target="_blank"}.
 1. Cliquez sur **Trouver ma position** dans le coin supérieur droit ou recherchez votre ville.
 1. Zoomez jusqu'à ce que vous voyiez le petit bouton "Éditer" dans le coin inférieur droit et appuyez dessus.
 1. [Créer un compte OpenStreetMap](https://www.openstreetmap.org/user/new?cookie_test=true&referer=%2Fedit%3Feditor%3Did){target="_blank"}. Passez en mode "édition" en appuyant sur le bouton situé sur le panneau supérieur.
@@ -294,12 +294,12 @@ Vous avez terminé votre Good First Line et vous souhaitez trouver votre propre 
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
  <img src="/images/starter-kit/easy-notes.jpg" class="img-border" style="width: 100%;">
- <figcaption class="image-caption">La carte des infrastructures ouvertes (à gauche) et l'éditeur iD (à droite) offrent un moyen facile et mobile de signaler les problèmes. Cliquez sur l'image pour l'agrandir.</figcaption>
+ <figcaption class="image-caption">Openinframap (à gauche) et l'éditeur iD (à droite) offrent un moyen facile et mobile de signaler les problèmes. Cliquez sur l'image pour l'agrandir.</figcaption>
 </div>
 
 La façon la plus rapide et la plus simple de contribuer à votre réseau électrique est d'ajouter des notes là où vous voyez des informations manquantes ou incorrectes dans OpenStreetMap. Vous pouvez le faire de manière totalement anonyme, sans avoir besoin de vous connecter.
 
-1. Accédez à l'espace [Carte des infrastructures ouvertes](https://openinframap.org/#2/26/12){target="_blank"}.
+1. Accédez à l'espace [Open Infrastructure Map](https://openinframap.org/#2/26/12){target="_blank"}.
 2. Cliquez sur **Trouver ma position** dans le coin supérieur droit ou recherchez votre ville.
 3. Cliquez sur la sous-station, le pylône électrique, la ligne électrique ou la centrale électrique où vous souhaitez signaler un problème.
 4. Dans la fenêtre de description, cliquez sur le logo **OpenStreetMap**.
