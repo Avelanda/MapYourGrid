@@ -195,6 +195,11 @@ image: images/website/mapyourgrid-preview.jpg
   </a>
   </div>
   <div class="partner-item">
+  <a href="https://globalenergymonitor.org/" target="_blank" rel="noopener">
+  <img src="images/logos/gem-logo-horizontal.svg" alt="Global Energy Monitor Logo" class="partner-logo-smaller"> 
+  </a>
+  </div>
+  <div class="partner-item">
   <a href="https://wiki.openstreetmap.org/wiki/MyOSM" target="_blank" rel="noopener">
   <img src="images/logos/myosm-logo.png" alt="MyOSM Logo" class="partner-logo-smaller"> 
   </a>
