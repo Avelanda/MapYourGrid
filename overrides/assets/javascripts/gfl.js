@@ -81,7 +81,15 @@ function getCountryFlag(country) {
 function createJOSMUrl(lat, lon) {
   // Use a small buffer around the point for zoom
   const buffer = 0.001;
-  return `http://localhost:8111/zoom?left=${lon - buffer}&right=${lon + buffer}&top=${lat + buffer}&bottom=${lat - buffer}`;
+  const josmUrl = `http://localhost:8111/zoom?left=${lon - buffer}&right=${lon + buffer}&top=${lat + buffer}&bottom=${lat - buffer}`;
+
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.src = josmUrl;
+  document.body.appendChild(iframe);
+  setTimeout(() => document.body.removeChild(iframe), 1000);
+
+  alert('✓ Great! Now go to JOSM');
 }
 
 function createiDUrl(lat, lon) {
@@ -109,7 +117,6 @@ async function loadLines() {
     
     data.forEach(line => {
       const [lat, lon] = line.coordinates.split(',').map(c => c.trim());
-      const josmUrl = createJOSMUrl(parseFloat(lat), parseFloat(lon));
       const idUrl = createiDUrl(lat, lon);
       
       html += `
@@ -126,10 +133,10 @@ async function loadLines() {
             ${line.details ? `<p class="details"><strong>Details: </strong>${line.details}</p>` : ''}
             
             <div class="editor-buttons">
-              <a href="${josmUrl}" target="_blank" class="editor-btn josm-btn" title="Open in JOSM">
+              <button onclick="createJOSMUrl(${lat}, ${lon})" target="_blank" class="editor-btn josm-btn" title="Open in JOSM">
                 <img src="/images/josm_logo.jpg" alt="JOSM" class="editor-logo off-glb">
                 JOSM
-              </a>
+              </button>
               <a href="${idUrl}" target="_blank" class="editor-btn id-btn" title="Open in iD Editor">
                 <img src="/images/starter-kit/osm-logo.svg" alt="iD" class="editor-logo off-glb">
                 iD Editor
