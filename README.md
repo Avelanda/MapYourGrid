@@ -5,7 +5,7 @@
 
 ## Why?
 <img src= https://raw.githubusercontent.com/open-energy-transition/MapYourGrid/refs/heads/main/docs/images/logos/MapYourGrid-logo.png align="right" width="350">
-Energy from fossil fuels are by far the largest contributor to climate change, accounting for over 75 % of global greenhouse gas emissions. Mitigating away from fossil energy sources requires the rapid extension and modernization of the electrical grid, which is currently one of the main bottlenecks to decarbonising our energy. <br></br>
+Energy from fossil fuels are by far the largest contributor to climate change, accounting for over 75 % of global greenhouse gas emissions. Migrating away from fossil energy sources requires the rapid extension and modernization of the electrical grid, which is currently one of the main bottlenecks to decarbonising our energy. <br></br>
 
 Despite the urgent need to expand the global electricity grid, the industry has been unable to establish an open data standard for the exchange of transmission grid routing data and specifications across borders. In recent years, OpenStreetMap has established itself as the unofficial de facto standard in academia and industry for cross-border transmission and distribution grid data. For developing countries in particular, the quality and coverage of grid data is inadequate. Closing this gap is not only essential for providing stable energy supply to rural communities, it is also key to mitigating climate change, a key recommendation of the International Energy Agency's latest report:
 
@@ -30,7 +30,7 @@ When you make an edit, please use the **#MapYourGrid** in the changeset to help 
 pip install mkdocs-material mkdocs-glightbox
 ```
 
-2. Clone this repository our your fork of this repository:
+2. Clone this repository from your fork of this repository:
 ```bash
 git clone git@github.com:open-energy-transition/MapYourGrid.git
 ```

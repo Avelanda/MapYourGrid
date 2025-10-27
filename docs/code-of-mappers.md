@@ -30,7 +30,7 @@ This Code of Mappers outlines the shared values, responsibilities, and safe prac
 
 ### 3. **Map What Matters and Only What Matters**
 
-* Map only features relevant to grid planning and modeling (e.g., line routes, towers, voltage levels, substation footprints).
+* Map only features relevant to grid planning and modelling (e.g., line routes, towers, voltage levels, substation footprints).
 * Do **not** map sensitive internal components such as control rooms, surveillance systems, or security details.
 * Detailed mapping of busbars, detailed routing and circuits within substations should only be carried out in collaboration with local mappers and utility operators.
 

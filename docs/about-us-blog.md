@@ -19,12 +19,12 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
 <div class="team-grid">
 
  <div class="team-member">
-  <img src="../images/team-members/tobiasaugspurger.jpg" alt="Jane Doe">
+  <img src="/images/team-members/tobiasaugspurger.jpg" alt="Jane Doe">
   
   <div><strong>Dr. Tobias Augspurger</strong></div>
   <div class="company-logo">
     <a href="https://www.openenergytransition.org/" target="_blank" rel="noopener">
-      <img src="../images/logos/oet-logo.png" alt="OET Logo">
+      <img src="/images/logos/oet-logo.png" alt="OET Logo">
     </a>
   </div>
 
@@ -43,12 +43,12 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
  </div>
 
  <div class="team-member">
-  <img src="../images/team-members/daviddiaz.jpg" alt="David Díaz">
+  <img src="/images/team-members/daviddiaz.jpg" alt="David Díaz">
   
   <div><strong>David Díaz</strong></div>
   <div class="company-logo">
     <a href="https://www.openenergytransition.org/" target="_blank" rel="noopener">
-      <img src="../images/logos/oet-logo.png" alt="OET Logo">
+      <img src="/images/logos/oet-logo.png" alt="OET Logo">
     </a>
   </div>
 
@@ -67,12 +67,12 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
  </div>
  
   <div class="team-member">
-  <img src="../images/team-members/mwichesimpemba.jpg" alt="Mwiche Simpemba">
+  <img src="/images/team-members/mwichesimpemba.jpg" alt="Mwiche Simpemba">
   
   <div><strong>Mwiche Simpemba</strong></div>
   <div class="company-logo">
     <a href="https://www.openenergytransition.org/" target="_blank" rel="noopener">
-      <img src="../images/logos/oet-logo.png" alt="OET Logo">
+      <img src="/images/logos/oet-logo.png" alt="OET Logo">
     </a>
   </div>
 
@@ -91,12 +91,12 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
  </div>
  
   <div class="team-member">
-  <img src="../images/team-members/andreashernandez.jpg" alt="Andreas Hernandez Denyer">
+  <img src="/images/team-members/andreashernandez.jpg" alt="Andreas Hernandez Denyer">
   
   <div><strong>Andreas Hernandez Denyer</strong></div>
   <div class="company-logo">
     <a href="https://www.openenergytransition.org/" target="_blank" rel="noopener">
-      <img src="../images/logos/oet-logo.png" alt="OET Logo">
+      <img src="/images/logos/oet-logo.png" alt="OET Logo">
     </a>
   </div>
 
@@ -115,12 +115,12 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
  </div>
  
   <div class="team-member">
-  <img src="../images/team-members/francoislacombe.jpeg" alt="François Lacombe">
+  <img src="/images/team-members/francoislacombe.jpeg" alt="François Lacombe">
   
   <div><strong>François Lacombe</strong></div>
   <div class="company-logo">
     <a href="https://datactivist.coop/en/" target="_blank" rel="noopener">
-      <img src="../images/logos/datactivist-logo.png" alt="Datactivist Logo">
+      <img src="/images/logos/datactivist-logo.png" alt="Datactivist Logo">
     </a>
   </div>
 
@@ -139,12 +139,12 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
  </div>
  
   <div class="team-member">
-  <img src="../images/team-members/benoitribon.jpg" alt="Benoit Ribon">
+  <img src="/images/team-members/benoitribon.jpg" alt="Benoit Ribon">
   
   <div><strong>Dr. Benoit Ribon</strong></div>
   <div class="company-logo">
     <a href="https:dynartio.com/" target="_blank" rel="noopener">
-      <img src="../images/logos/dynartio-logo.svg" alt="Dynartio Logo">
+      <img src="/images/logos/dynartio-logo.svg" alt="Dynartio Logo">
     </a>
   </div>
 
@@ -163,12 +163,12 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
  </div>
  
   <div class="team-member">
-  <img src="../images/team-members/marinapetkova.png" alt="Marina Petkova">
+  <img src="/images/team-members/marinapetkova.png" alt="Marina Petkova">
   
   <div><strong>Marina Petkova</strong></div>
   <div class="company-logo">
     <a href="https:dynartio.com/" target="_blank" rel="noopener">
-      <img src="../images/logos/dynartio-logo.svg" alt="Dynartio Logo">
+      <img src="/images/logos/dynartio-logo.svg" alt="Dynartio Logo">
     </a>
   </div>
 
@@ -187,12 +187,12 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
  </div>
  
   <div class="team-member">
-  <img src="../images/team-members/noemielehuby.jpeg" alt="Noémie Lehuby">
+  <img src="/images/team-members/noemielehuby.jpeg" alt="Noémie Lehuby">
   
   <div><strong>Noémie Lehuby</strong></div>
   <div class="company-logo">
     <a href="https://junglebus.io/" target="_blank" rel="noopener">
-      <img src="../images/logos/junglebus-logo.jpg" alt="Jungle Bus Logo">
+      <img src="/images/logos/junglebus-logo.jpg" alt="Jungle Bus Logo">
     </a>
   </div>
 
@@ -212,12 +212,12 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
  </div>
  
   <div class="team-member">
-  <img src="../images/team-members/florianlainez.jpeg" alt="Florian Lainez">
+  <img src="/images/team-members/florianlainez.jpeg" alt="Florian Lainez">
   
   <div><strong>Florian Lainez</strong></div>
   <div class="company-logo">
     <a href="https://junglebus.io/" target="_blank" rel="noopener">
-      <img src="../images/logos/junglebus-logo.jpg" alt="Jungle Bus Logo">
+      <img src="/images/logos/junglebus-logo.jpg" alt="Jungle Bus Logo">
     </a>
   </div>
 
@@ -236,12 +236,12 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
  </div>
  
   <div class="team-member">
-  <img src="../images/team-members/russgarrett.jpeg" alt="Russ Garrett">
+  <img src="/images/team-members/russgarrett.jpeg" alt="Russ Garrett">
   
   <div><strong>Russ Garrett</strong></div>
   <div class="company-logo">
     <a href="https://www.infrageomatics.com/" target="_blank" rel="noopener">
-      <img src="../images/logos/infrageomatics-logo.jpg" alt="Infrageomatics Logo">
+      <img src="/images/logos/infrageomatics-logo.jpg" alt="Infrageomatics Logo">
     </a>
   </div>
 
@@ -269,7 +269,27 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
   
 ## **<div class="stradegy-header">News and stories</div>**
 
-Our blog articles are coming soon ! 
+
+<div class="grid cards" markdown>
+
+- <a href="../blog/20250918-HIFLD" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/usa-final-hifld.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **OpenStreetMap grid data, the hidden superhero of the US’ national security? (18 Sept. 2025)**  
+  California wildfires, the Colonial Pipeline cyberattack, hurricane and flooding responses such as Hurricane Maria, all have something in common: EAGLE-I.  
+  [:arrow_right: Read more](blog/20250918-HIFLD.md)
+</a>
+
+- <a href="../blog/20250908-BehindTheScenes" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/MYG-all-edits-and-global.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **Behind the Scenes of MapYourGrid (08 Sept. 2025)**  
+  In August 2025, we made MapYourGrid publicly available. For seven months before that, our team of developers, data scientists, energy experts worked side by side, testing tools and mapping grids ourselves.  
+  [:arrow_right: Read more](blog/20250908-BehindTheScenes.md)
+</a>
+
+-   More blog articles  coming soon ! 
+
+</div>
+
 
 <div class="our-mapping-section" style="display: flex; flex-direction: column; align-items: center;">
   <h2>Stay tuned by subscribing to our Newsletter</h2>

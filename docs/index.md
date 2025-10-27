@@ -158,6 +158,7 @@ image: images/website/mapyourgrid-preview.jpg
 <p class="lead-statement">
  MapYourGrid is a free, open-source initiative supported by the following organizations. We want to empower a global community of citizens and organizations to create and maintain data on the core infrastructures of our modern society. Would you like to join or support us? Contact <a href="mailto:MapYourGrid@openenergytransition.org" target="_blank" rel="noopener">us via email</a>. 
 </p>
+<h3 class="section-title">Founded By</h3>
 <div class="partners-grid">
 <div class="partner-item">
 <a href="https://openenergytransition.org/" target="_blank" rel="noopener">
@@ -184,6 +185,25 @@ image: images/website/mapyourgrid-preview.jpg
 <img src="images/logos/infrageomatics-logo.jpg" alt="Infrageomatics Logo" class="partner-logo"> 
 </a>
 </div>
+</div>
+
+<h3 class="section-title">Partners</h3>
+<div class="partners-grid">
+  <div class="partner-item">
+  <a href="https://www.youthmappers.org/" target="_blank" rel="noopener">
+  <img src="images/logos/youthmappers-logo.svg" alt="Youthmappers Logo" class="partner-logo-bigger"> 
+  </a>
+  </div>
+  <div class="partner-item">
+  <a href="https://globalenergymonitor.org/" target="_blank" rel="noopener">
+  <img src="images/logos/gem-logo-horizontal.svg" alt="Global Energy Monitor Logo" class="partner-logo-smaller"> 
+  </a>
+  </div>
+  <div class="partner-item">
+  <a href="https://wiki.openstreetmap.org/wiki/MyOSM" target="_blank" rel="noopener">
+  <img src="images/logos/myosm-logo.png" alt="MyOSM Logo" class="partner-logo-smaller"> 
+  </a>
+  </div>
 </div>
 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
