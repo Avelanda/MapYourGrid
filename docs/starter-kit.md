@@ -115,7 +115,7 @@ Sometimes, there are several possible options for line routing and it is unclear
     **By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Code of Mappers cannot be enforced for volunteer community mappers either.** 
 
 
-### **<div class="tools-header">2. Setup your Presets </div>**
+### **<div class="tools-header">2. Setup your Presets and quality assurance rules </div>**
 
 <div style="float: right; margin: 10px 0 20px 20px; width: 350px;">
   <img src="/images/josm-toolbar.png" class="img-border" style="width: 100%;"> 
@@ -125,7 +125,7 @@ Sometimes, there are several possible options for line routing and it is unclear
 1. For ease of mapping, customise your top toolbar with presets if you have not used the default preferences. Right click the toolbar and choose `Configure toolbar` (or also `Preferences → Toolbar`). Then on the right, select `Presets → Man Made → Man Made/Power` and add `Power Towers`, `Power Portal`, `Power Substation`, `Power Plants`, `Power Line` and `Power Generators`, by pressing the button in the middle to add these to your toolbar. These are the main objects you will need for transmission grid mapping. You can also remove the presets you won't use.
 2. Another important Preset your will need is `Add Node`. You will find it under `Tools` → `Add Node`. 
 3. When you open a new layer later in the tutorial, the toolbar will stop being grey.
-
+4. [Optional - for more experienced mappers we recommend integrating our validation rules] Add MapYourGrid additional quality assurance rules: `Preferences → Data validator`, on the `Tag checker rules` tab, search for `Power QA`, click on the item in the list, and then on the arrow in the middle of the window to add it to your active rules. These validation rules will help you identify and correct any errors that may have been made. JOSM will run these checks before publishing your data and will display any points requiring verification. Please review them and try to fix them to ensure that the data we produce is usable. You can find [more information and explanations about these rules on the wiki](https://wiki.openstreetmap.org/wiki/Power_networks/Quality_Assurance).
     
 ### **<div class="tools-header">3. Add Visual Clarity with Custom Map Styles :art:</div>**
 

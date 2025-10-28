@@ -18,7 +18,7 @@ Nous recommandons l'éditeur JOSM (Java OpenStreetMap) en général, en particul
 
 <div class="starter-kit-buttons">
  <a href="#id-starter-kit" class="btn btn-third">Kit de démarrage iD - Cartographie à petite échelle conviviale pour débutants</a>
- <a href="#josm-starter-kit" class="btn btn-primary">JOSM Starter-Kit - Cartographie technique et à grande échelle</a> 
+ <a href="#kit-de-demarrage-josm" class="btn btn-primary">JOSM Starter-Kit - Cartographie technique et à grande échelle</a> 
  <a href="#id-and-open-infrastructure-map-starter-kit" class="btn btn-third">iD & Open Infrastructure Map Starter-Kit - Cartographie avancée de l'iD et cartographie de terrain</a> 
  <a href="#mapcomplete-starter-kit" class="btn btn-fourth">MapComplete Starter-Kit - Cartographie des champs de balises manquantes</a>
 </div>
@@ -111,7 +111,7 @@ Parfois, il existe plusieurs options possibles pour le tracé des lignes et l'em
  
     **En suivant notre [Code des cartographes](./code-of-mappers.md)En tant que membres de la communauté OpenStreetMap, nous protégeons collectivement l'intégrité de la plateforme OSM, nous renforçons la confiance avec les communautés et nous libérons le pouvoir des données ouvertes pour un avenir énergétique plus résilient et plus juste. Veuillez noter que la communauté et la fondation OpenStreetMap ne limitent pas techniquement la cartographie en quelque endroit du globe que ce soit. Par conséquent, notre Code des cartographes ne peut pas non plus être appliqué aux cartographes bénévoles de la communauté**. 
 
-### **<div class="tools-header">2. Configurez vos préréglages </div>**
+### **<div class="tools-header">2. Configurez vos préréglages et règles de validation</div>**
 
 <div style="float: right; margin: 10px 0 20px 20px; width: 350px;">
  <img src="/images/josm-toolbar.png" class="img-border" style="width: 100%;"> 
@@ -121,6 +121,7 @@ Parfois, il existe plusieurs options possibles pour le tracé des lignes et l'em
 1. Pour faciliter le mappage, personnalisez votre barre d'outils supérieure avec des préréglages si vous n'avez pas utilisé les préférences par défaut. Cliquez avec le bouton droit de la souris sur la barre d'outils et choisissez "Configurer la barre d'outils" (ou également "Préférences → Barre d'outils"). Ensuite, sur la droite, sélectionnez `Presets → Man Made → Man Made/Power` et ajoutez `Tours électriques`, `Portail électrique`, `Sous-station électrique`, `Plantes électriques`, `Ligne électrique` et `Générateurs électriques`, en appuyant sur le bouton au milieu pour les ajouter à votre barre d'outils. Ce sont les principaux objets dont vous aurez besoin pour la cartographie du réseau de transmission. Vous pouvez également supprimer les préréglages que vous n'utiliserez pas.
 2. Un autre Preset important dont vous aurez besoin est `Add Node`. Vous le trouverez sous `Tools` → `Add Node`. 
 3. Lorsque vous ouvrirez un nouveau calque plus tard dans le tutoriel, la barre d'outils cessera d'être grise.
+4. [Facultatif - pour les cartographes plus expérimentés, nous recommandons d'intégrer nos règles de validation] Ajoutez les règles de validation du projet MapYourGrid : `Preferences → Validateur de données`, dans l'onglet `Règles du vérificateur d'attributs`, recherchez `Power QA`, cliquez sur l'élément dans la liste, puis sur la flèche au milieu de la fenêtre pour l'ajouter dans les règles actives. JOSM exécutera ces tests de validation avant la publication de vos données et vous affichera des erreurs et des points nécessitant une vérification. Passez-les en revue et essayez de les corriger afin d'assurer que les données que nous produisons sont utilisables. Vous pouvez trouver [plus d'informations et d'explications sur ces règles sur le wiki](https://wiki.openstreetmap.org/wiki/Power_networks/Quality_Assurance).
 
 ### **<div class="tools-header">3. Clarté visuelle grâce à des styles de cartes personnalisés :art:</div>**
 
