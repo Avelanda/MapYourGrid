@@ -189,7 +189,7 @@ Notre communauté est constamment à la recherche de lignes de transmission qui 
 1. Poursuivez la ligne électrique du mieux que vous pouvez. 
 1. Une fois terminé, sélectionnez votre ligne et appuyez sur CTRL+Shift+N. Cette opération permet de sélectionner tous les nœuds de la ligne. 
 1. Appuyez ensuite sur CTRL+F pour ouvrir la barre de recherche. 
-1. Dans la barre de recherche ci-dessus, tapez "type:node untagged". 
+1. Dans la barre de recherche ci-dessus, tapez `child selected type:node AND untagged`. 
 1. ⚠️ Dans l'onglet Résultats à gauche, cochez la case "Rechercher dans la sélection". ⚠️
 1. Appuyez sur `Recherche`. Tous les nœuds non marqués de votre ligne seront alors sélectionnés.
 1. Appliquer la "Tour de puissance". <img src="/images/starter-kit/power-towers.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> dans la barre d'outils, suivi de `Apply Preset`. Maintenant, tous les nœuds que vous avez placés sont correctement étiquetés comme `Power Tower`.

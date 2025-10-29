@@ -197,7 +197,7 @@ Our community is constantly investigating transmission lines that are suitable f
 1. Continue the power line to the best of your ability. 
 1. Once finished, select your line and press CTRL+Shift+N. This will select all of the nodes on the line. 
 1. Then press CTRL+F to open the Search bar. 
-1. In the Search string bar above, type`type:node untagged`. 
+1. In the Search string bar above, type`child selected type:node AND untagged`. 
 1. ⚠️ In the Results tab on the left, check `Find in selection`. ⚠️
 1. Press `Search`. All untagged nodes in your line will now be selected.
 1. Apply the `Power Tower` <img src="../images/starter-kit/power-towers.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> preset from the toolbar, followed by `Apply Preset`. Now all the nodes you have placed are correctly tagged as `Power Tower`.
