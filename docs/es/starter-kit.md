@@ -187,7 +187,7 @@ Nuestra comunidad está constantemente investigando líneas de transmisión que 
 1. Continúe la línea eléctrica lo mejor que pueda. 
 1. Una vez terminado, seleccione su línea y pulse CTRL+Mayús+N. Esto seleccionará todos los nodos de la línea. 
 1. A continuación, pulsa CTRL+F para abrir la barra de búsqueda. 
-1. En la barra de búsqueda, escriba `type:node untagged`. 
+1. En la barra de búsqueda, escriba `child selected type:node AND untagged`. 
 1. ⚠️ En la pestaña Resultados de la izquierda, marque `Buscar en la selección`. ⚠️
 1. Pulse `Buscar`. Se seleccionarán todos los nodos no etiquetados de la línea.
 1. Aplique la "Torre de energía". <img src="/images/starter-kit/power-towers.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> de la barra de herramientas, seguido de "Aplicar preajuste". Ahora todos los nodos que ha colocado están correctamente etiquetados como "Torre de energía".
