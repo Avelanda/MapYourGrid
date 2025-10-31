@@ -17,7 +17,7 @@ hide:
 
 A curated list of resources in the field of electrical grid mapping to improve global open data coverage, harmonization and quality for a sustainable energy transition.
 
-???+ question "Why we've compiled these resources"
+???+ question "Why we've copiled these resources"
     The datasets, maps and all resources compiled here are used to estimate the grid coverage in OpenStreetMap and to find missing lines. Do not copy/paste data from these maps directly into your OpenStreetMap layer. Each data point of the transmission network must be set manually and [verified](https://wiki.openstreetmap.org/wiki/Verifiability) with official satellite data provided by the OpenStreetMap community.
 
 ???+ tip "Join the #MapYourGrid initiative"
@@ -610,12 +610,11 @@ A curated list of resources in the field of electrical grid mapping to improve g
     * [Guessing power line voltage from the number of disc insulator](https://electronics.stackexchange.com/questions/71614/guessing-power-line-voltage-from-the-number-of-disc-insulator)
 
 
-<script>document.addEventListener('DOMContentLoaded', function () {  show_buttons_for_filter_tag();});</script>
-
-
 ## **<div class="tools-header">Global Grid Length Database</div>**
 You can find our Global Grid Length database which tracks the line length (km) of every countries’ transmission grid, using official data [here](https://docs.google.com/spreadsheets/d/1qmVIQ2_ynVVfbTWcMXJQWb4Sq0Dq-1fu8zgZ9J_0cZI/edit?gid=0#gid=0).
 
 The data includes total length in km, per voltage, dates and sources (TSO's, TYNDP plans, Ministries) for all power lines above 50kv. Some countries have some caveats, as data per voltage can be hard to find or unavailable.
 
 You can also contribute to this list as it's an open sheet for anyone to use and improve on! So if you have data/information on your country and it is missing or outdated from the database, feel free to add it as a comment/edit.
+
+<script>document.addEventListener('DOMContentLoaded', function () {  show_buttons_for_filter_tag();});</script>
