@@ -65,3 +65,4 @@ The MapYourGrid Website combines resources from multiple repositories:
 7. [KPI Tracker tools](https://github.com/open-energy-transition/KPI-OSM)
 8. [osm-power-grid-map-analysis](https://github.com/ben10dynartio/osm-power-grid-map-analysis)
 9. [ValidateMyGrid](https://github.com/open-energy-transition/validate-my-grid)
+10. [OSM Grid Health Score](https://github.com/ben10dynartio/apps_mapyourgrid)
