@@ -234,8 +234,6 @@ OpenStreetMap provides detailed guidelines on mapping various types of power inf
 * [Power generation/Guidelines/Wind farms](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Wind_farms)
 * [Power generation/Guidelines/Thermal plants](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Thermal_plants)
 * [Power networks/Guidelines/Interconnector](https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines/Interconnector)
-* [Clarifying power=pole vs power=tower](https://community.openstreetmap.org/t/clarifying-power-pole-vs-power-tower/127382)
-
 
 ### **<div class="tools-header"> 9. Avoid these Common Mistakes :name_badge:</div>**
 
