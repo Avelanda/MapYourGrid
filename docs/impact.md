@@ -218,7 +218,11 @@ In most developed countries, publishing high-resolution, open datasets on the tr
 
 * The US [Homeland Infrastructure Foundation-Level Data](https://resilience.climate.gov/datasets/d4090758322c4d32a4cd002ffaa0aa12_0/) shows **strong alignment** with OpenStreetMap data, demonstrating how open contributions can match official datasets in coverage and accuracy.
 
-**Tip:** To find more open datasets about the electrical grid released by national authorities or electrical grid operators, check out our [curated list](https://github.com/open-energy-transition/Awesome-Electric-Grid-Mapping) with more than 150 maps.
+* The US Department of Energy mentions the following in its [Transmission Interconnection Roadmap](https://www.osti.gov/servlets/purl/2569119): as Goal #1: Increase data access, transparency and security for interconnection.
+
+* The [Lawrence Berkeley National Laboratory](https://emp.lbl.gov/news/grid-connection-barriers-new-build-power-plants-united-states): "_The grid interconnection process would benefit from greater transparency afforded by better data. It is difficult even to assess what works and doesn’t work in the process, let alone successfully navigate the process, without better data. Data are a critical need during this time of active reform_"  
+
+**Tip:** To find more open datasets about the electrical grid released by national authorities or electrical grid operators, check out our [curated list](https://github.com/open-energy-transition/Awesome-Electric-Grid-Mapping) with more than 300 maps.
 
 
 ## **<div class="tools-header">Who is using OpenStreetMap Grid Data?</div>**
