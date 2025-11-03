@@ -213,7 +213,31 @@ Our community is constantly investigating transmission lines that are suitable f
 1. In the upload window, please tick the `I would like someone to review my edits` tick box if your mapping has been strongly affected by uncertainties like low-quality satellite data, or if you are a beginner. Provide a brief comment such as `#mapyourgrid Unfinished transmission line`. Provide the imagery source layer you used by typing `Esri` or `Bing` for example. Once done and sure about your edits, `Upload Changes`.
 1. You just mapped your First Good Line. Feel free to close more First Good Lines, but make sure you leave some for the others. You can use the [Strategies](strategies.md) we have provided to find your own unmapped line. To support our initiative, please use the #MapYourGrid hashtag in the comments when you upload a changeset.
 
-### **<div class="tools-header"> 8. Avoid these Common Mistakes :name_badge:</div>**
+
+### **<div class="tools-header"> 8. Mapping Guidelines</div>**
+
+OpenStreetMap provides detailed guidelines on mapping various types of power infrastructure, as well as on how to handle different edge cases. While you don't need to read all of these guidelines before you start mapping, you should be aware of their existence, as they will help you with complex mapping tasks involving power infrastructure and provide lots of examples.
+
+<div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
+  <img src="https://wiki.openstreetmap.org/w/images/e/e3/Waterway_hydropower.png" class="img-border" style="width: 100%;"> </a>
+  <figcaption class="image-caption">The OpenStreetMap guidelines on hydropower provide detailed examples of how to map different types of installation.</figcaption>
+</div>
+
+* [Power networks](https://wiki.openstreetmap.org/wiki/Power_networks)
+* [Power networks/Guidelines](https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines)
+* [Power networks/Guidelines/Power lines](https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines/Power_lines)
+* [Power networks/Guidelines/Substations](https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines/Substations)
+* [Power generation/Guidelines](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines)
+* [Power generation/Guidelines/Hydropower](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Hydropower)
+* [Power generation/Guidelines/Solar plants](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Solar_plants)
+* [Power generation/Guidelines/Geothermal plants](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Geothermal_plants)
+* [Power generation/Guidelines/Wind farms](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Wind_farms)
+* [Power generation/Guidelines/Thermal plants](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Thermal_plants)
+* [Power networks/Guidelines/Interconnector](https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines/Interconnector)
+* [Clarifying power=pole vs power=tower](https://community.openstreetmap.org/t/clarifying-power-pole-vs-power-tower/127382)
+
+
+### **<div class="tools-header"> 9. Avoid these Common Mistakes :name_badge:</div>**
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="/images/starter-kit/power-towers-without-lines.jpg" class="img-border" style="width: 100%;"> </a>
