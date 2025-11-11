@@ -11,7 +11,8 @@ nav:
   - MAP IT📍: map-it.md
   - STRATEGIES: strategies.md
   - PROGRESS : progress.md
-  - GLOBAL GRID DATA : global-grid-data.md
+  - MAPS : global-grid-data.md
+  - QUALITY : quality.md
   - FAQ : faq.md
   - BLOG & TEAM : about-us-blog.md
   #    2025:
@@ -65,9 +66,6 @@ extra:
     link: https://discord.gg/a5znpdFWfD
   - icon: fontawesome/brands/youtube
     link: https://www.youtube.com/@MapYourGrid
-  - icon: fontawesome/brands/bluesky
-    link: https://bsky.app/profile/mapyourgrid.bsky.social
-  
   image: images/MapYourGrid.ico
   social_preview: images/website/mapyourgrid-preview.jpg
 

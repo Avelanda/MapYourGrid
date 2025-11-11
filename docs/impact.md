@@ -30,6 +30,9 @@ OpenStreetMap’s unique value in creating high quality data for sustainable dev
   <img src="/images/impact/DRE-pakistan.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">The Energy planning of 58 countries like <a href="https://map.vida.place/public/workspace/114d1c69-eb81-4e49-8434-0f038854f4a0">Pakistan </a> directly depend on OpenStreetMap. Click to enlarge.</figcaption>
 
+  <a href="https://esmap-world-bank-group.github.io/EPM/home.html" target="_blank">
+  <img src="/images/EPM.jpg" class="img-border" style="width: 100%;"> </a>
+  <figcaption class="image-caption">The World Bank Electricity Planning Model used in more than 40 countries directly depend on OpenStreetMap. Click to enlarge.</figcaption>
 </div> 
 
 1. The [Global Electrification Platform](https://electrifynow.energydata.info/) and [Distributed Renewable Energy Atlas](https://dre.energydata.info/), developed and used by the World Bank, support rural electrification planning across 58 countries. The [REZoning](https://rezoning.energydata.info/) project helps to identify and explore areas with high potential for solar, onshore and offshore wind development projects for 249 countries. Using OpenStreetMap data on transmission lines, substations, roads, buildings and settlements, they help to identify off-grid populations and inform the planning of renewables and both grid and off-grid strategies. GEP-OnSSET, the Open Source Software behind Global Electrification Platform, [relies heavily on electrical grid data of OpenStreetMap](https://gep-onsset.readthedocs.io/en/latest/GIS%20data%20collection.html#infrastructure).
@@ -39,6 +42,8 @@ OpenStreetMap’s unique value in creating high quality data for sustainable dev
 1. The [Humanitarian OpenStreetMap Team](https://www.hotosm.org/) provides high-quality, open geospatial data to guide decision-makers during early disaster response. With over 419,000 volunteer mappers, HOT collaborates with satellite imaging providers like Maxar and humanitarian agencies like the Red Cross to ensure emergency decisions are backed by reliable, verifiable data. Especially as the extreme weather events become more frequent, access to accurate electrical grid data [is increasingly critical for the Humanitarian OpenStreetMap Team](https://github.com/USAFORUNHCRhive/turkana-grid-mapping).
 
 1. The [Energy Access Explorer](https://www.energyaccessexplorer.org/) is the first open-source, online, interactive geospatial platform enabling energy planners, clean energy entrepreneurs, donors and development institutions to identify areas of high priority for energy access interventions. With over 100 partner organisations and eight participating countries, including India, Nigeria and Ethiopia, it relies heavily on OpenStreetMap data, including transmission and distribution data.
+
+1. The [Energy Planning Group Library](https://esmap-world-bank-group.github.io/EPM) offers a range of tools and models created by the World Bank's Energy Sector Management Assistance Programme (ESMAP) to support the planning of electricity systems at more than 40 national and regional levels. Studies performed using this framework primarily utilise OpenStreetMap's transmission grid data. This framework has supported policymakers, planners and analysts working on renewable energy integration, power system flexibility analysis, long-term capacity expansion and multi-zone dispatch modelling.
 
 ## **<div class="tools-header">Why OpenStreetMap Matters for the Electrical Grid?</div>**
 
