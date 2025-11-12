@@ -33,8 +33,16 @@ html, body {
   height: 100vh;
   border: none;
   display: block;
-  margin: 0;
+  margin-top: -2rem;
+  margin-left: -1.3rem;
+  margin-bottom: -1.3rem;
   padding: 0;
+}
+
+@media (max-width: 1080px){
+ .iframestyle {
+   width: 104vw;
+ }
 }
 </style>
 
