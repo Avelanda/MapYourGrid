@@ -985,7 +985,7 @@ map.on('zoomend', function() {
 
 </script>
 
-[Good First Lines :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary }
+[Discover Good First Lines to Get Started :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary }
 
 <!-- ENd-->
 ??? success "Map Legend for the recommended [MapCSS](starter-kit.md#3-add-visual-clarity-with-custom-map-styles) (Click Me)"
@@ -1013,12 +1013,6 @@ map.on('zoomend', function() {
     | CTRL+H         | History (opens history dialog for selected objects)       |
     | Shift+V        | Validate (runs data validation on the current layer)      |
     | Tabulator      | Show/hide Sidebar and Edit toolbar                        |
-
-??? success "Curated Electrical Grid Maps (Click Me)"
-    <div class="no-toc">
-    --8<-- "docs/awesome.md"
-    </div>
-
 
 ## <div class="tools-header">Mapping Guidelines</div>
 The following list provides the main good practices for mapping different power infrastructure in OpenStreetMap:
