@@ -81,7 +81,7 @@ function getCountryFlag(country) {
 function createJOSMUrl(lat, lon) {
   // Use a small buffer around the point for zoom
   const buffer = 0.001;
-  const josmUrl = `http://localhost:8111/zoom?left=${lon - buffer}&right=${lon + buffer}&top=${lat + buffer}&bottom=${lat - buffer}`;
+  const josmUrl = `http://localhost:8111/zoom?left=${lon - buffer}&right=${lon + buffer}&top=${lat + buffer}&bottom=${lat - buffer}&changeset_tags=hashtags=mapyourgrid`;
 
   const iframe = document.createElement('iframe');
   iframe.style.display = 'none';
@@ -89,11 +89,11 @@ function createJOSMUrl(lat, lon) {
   document.body.appendChild(iframe);
   setTimeout(() => document.body.removeChild(iframe), 1000);
 
-  alert('✓ Great! Now go to JOSM');
+  alert('✓ Great! Now go to JOSM.');
 }
 
 function createiDUrl(lat, lon) {
-  return `https://www.openstreetmap.org/edit#map=18/${lat}/${lon}`;
+  return `https://www.openstreetmap.org/edit#map=18/${lat}/${lon}&hashtags=mapyourgrid`;
 }
 
 async function loadLines() {
