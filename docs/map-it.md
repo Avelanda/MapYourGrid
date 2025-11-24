@@ -58,6 +58,11 @@ hide:
   <div class="query-version">Warning: GeoJSON file. "Open" in JOSM, but do not "upload" this layer</div>
 </div>
 
+<!-- TZ Mapyoursolar button -->
+<div id="solar-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: GeoJSON file. "Open" in JOSM, but do not "upload" this layer</div>
+</div>
+
 <!-- Wikidata button-->
 <div id="wikidata-panel" style="display:none; margin-bottom:1em;">
   <label for="wikidataType">Data type:</label>
@@ -113,6 +118,10 @@ const regionOverrides = {
   "MinasGerais": "minas_gerais",
   "Cataluña": "catalunya",
   "NeiMongol": "inner_mongolia"
+};
+
+const MapYourSolarCountryNameMap = {
+  "Ivory Coast": "Côte d'Ivoire"
 };
 
 // helper to create osmose-compatible keys (reuses osmoseNameOverrides)
@@ -211,7 +220,7 @@ async function initQueryUI() {
   });
 
   // inject our special modes:
-  modes.splice(2, 0, 'Osmose_issues', 'GEM_powerplants', 'Wikidata', 'PPM');
+  modes.splice(2, 0, 'Osmose_issues', 'GEM_powerplants', 'MapYourSolar', 'Wikidata', 'PPM');
 
   currentMode = modes.includes('Default') ? 'Default' : modes[0];
 
@@ -333,6 +342,8 @@ async function initQueryUI() {
       group = renderOsmoseButtonGroup();
     } else if (mode === 'GEM_powerplants') {
       group = renderGEMButtonGroup();
+    } else if (mode === 'MapYourSolar') {
+      group = renderSolarButtonGroup();
     } else if (mode === 'Wikidata') {
       group = renderWikidataButtonGroup();
     } 
@@ -344,7 +355,7 @@ async function initQueryUI() {
     }
 
     // Tools go in the second row, everything else in the first
-    if (['Osmose_issues', 'GEM_powerplants', 'Wikidata', 'PPM'].includes(mode)) {
+    if (['Osmose_issues', 'GEM_powerplants', 'MapYourSolar', 'Wikidata', 'PPM'].includes(mode)) {
       toolContainer.appendChild(group);
     } else {
       overpassContainer.appendChild(group);
@@ -360,12 +371,14 @@ async function initQueryUI() {
   const wikidata = document.getElementById('wikidata-panel');
   const ppm      = document.getElementById('ppm-panel');
   const gem      = document.getElementById('gem-panel');
+  const solar     = document.getElementById('solar-panel');
 
   // append them into our wrapper
   panelWrapper.appendChild(osmose);
   panelWrapper.appendChild(wikidata);
   panelWrapper.appendChild(ppm);
   panelWrapper.appendChild(gem);
+  panelWrapper.appendChild(solar);
 
   // finally, drop that wrapper just before the map div
   mapEl.parentNode.insertBefore(panelWrapper, mapEl);
@@ -412,6 +425,28 @@ function renderGEMButtonGroup() {
   info.innerHTML =
    '<a href="https://globalenergymonitor.org/" target="_blank">globalenergymonitor.org</a>' +
    ' | CC BY 4.0';
+
+  const group = document.createElement('div');
+  group.classList.add('query-group');
+  group.appendChild(btn);
+  group.appendChild(info);
+  return group;
+}
+
+function renderSolarButtonGroup() {
+  const btn = document.createElement('button');
+  btn.textContent = 'Transition Zero - Solar Asset Mapper';
+  btn.classList.add('query-btn');
+  if (currentMode === 'MapYourSolar') btn.classList.add('active');
+  btn.onclick = () => selectMode('MapYourSolar', btn);
+  
+  // TZ website link + CC BY NC 4.0
+  const info = document.createElement('div');
+  info.classList.add('query-version');
+  info.style.marginTop = '0.2rem';
+  info.innerHTML =
+   '<a href="https://www.transitionzero.org/products/solar-asset-mapper/download" target="_blank">transitionzero.org</a>' +
+   ' | Q3-2025 | CC BY NC 4.0';
 
   const group = document.createElement('div');
   group.classList.add('query-group');
@@ -528,8 +563,13 @@ function selectMode(mode, btn) {
   document.getElementById('ppm-panel').style.display =
   mode === 'PPM' ? 'block' : 'none';
 
+  //GEM
   document.getElementById('gem-panel').style.display =
   mode === 'GEM_powerplants' ? 'block' : 'none';
+
+  // TZ solar
+  document.getElementById('solar-panel').style.display =
+  mode === 'MapYourSolar' ? 'block' : 'none';
 }
 
 
@@ -608,6 +648,9 @@ async function handleAreaClick(iso, level, layer) {
     }
     else if (currentMode === 'GEM_powerplants') {
       await fetchGEMAndDownload(sovName);
+    }
+    else if (currentMode === 'MapYourSolar') {
+      await fetchSolarAndDownload(sovName);
     }
     else if (currentMode === 'Wikidata') {
       await fetchWikidataAndDownload(usedSovName);
@@ -758,6 +801,55 @@ async function fetchGEMAndDownload(sovName) {
   const a       = document.createElement('a');
   a.href        = url;
   a.download    = `${sovName.replace(/\s+/g, '_')}_gem_powerplants.geojson`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+async function fetchSolarAndDownload(sovName) {
+  const csvCountryName = MapYourSolarCountryNameMap[sovName] || sovName;
+  const countryKey = csvCountryName.trim().toLowerCase();
+
+  // 1) fetch the XLSX from your own /data/ folder
+  const resp   = await fetch('/data/2025_Q3_raw_polygons.csv');
+  if (!resp.ok) throw new Error(`CSV fetch failed: ${resp.statusText}`);
+  const csvText = await resp.text();
+
+  const lines = csvText.trim().split('\n');
+  const headers = lines[0].split(',');
+  const rows = lines.slice(1).map(line => {
+    const values = line.split(',');
+    return {
+      country: values[6],
+      latitude: parseFloat(values[4]),
+      longitude: parseFloat(values[5])
+    };
+  });
+  
+  // 3) filter + map into GeoJSON Features
+  const features  = rows
+    .filter(r => (r['country'] || '').trim().toLowerCase() === countryKey)
+    .map(r => ({
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [Number(r.longitude), Number(r.latitude)]
+      },
+      properties: Object.fromEntries(
+        Object.entries(r).filter(([k]) => !['latitude','longitude'].includes(k))
+      )
+    }));
+
+  if (features.length === 0) {
+    return alert(`No solar powerplants found for ${sovName}.`);
+  }
+
+  // 4) download as GeoJSON
+  const geojson = { type: 'FeatureCollection', features };
+  const blob    = new Blob([JSON.stringify(geojson, null, 2)], { type: 'application/json' });
+  const url     = URL.createObjectURL(blob);
+  const a       = document.createElement('a');
+  a.href        = url;
+  a.download    = `${sovName.replace(/\s+/g, '_')}_solar_TZ_powerplants.geojson`;
   a.click();
   URL.revokeObjectURL(url);
 }

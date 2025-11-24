@@ -41,10 +41,9 @@ hide:
 <div id="osmose-panel" style="display:none; margin-bottom:1em;">
   <label for="osmoseIssue">Issue type:</label>
   <select id="osmoseIssue">
-    <option value="" disabled selected>Select an Osmose Issue…</option>
     <optgroup label="Power lines (item 7040)">
                 <option value="7040:1">Lone power tower or pole (Class 1)</option>
-                <option value="7040:2">Unfinished power transmission line (Class 2) (recommended for beginners ⭐)</option>
+                <option value="7040:2"selected>Default: Unfinished power transmission line (Class 2) (recommended for beginners ⭐)</option>
                 <option value="7040:3">Connection between different voltages (Class 3)</option>
                 <option value="7040:4">None power node on power way (Class 4)</option>
                 <option value="7040:5">Missing power tower or pole (Class 5)</option>
@@ -58,6 +57,11 @@ hide:
 
 <!-- GEM button-->
 <div id="gem-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: GeoJSON file. "Open" in JOSM, but do not "upload" this layer</div>
+</div>
+
+<!-- TZ Mapyoursolar button -->
+<div id="solar-panel" style="display:none; margin-bottom:1em;">
   <div class="query-version">Warning: GeoJSON file. "Open" in JOSM, but do not "upload" this layer</div>
 </div>
 
@@ -99,10 +103,46 @@ let selectedEditor = 'josm';
 const osmoseNameOverrides = {
   "Bosnia and Herzegovina": "bosnia_herzegovina",
   "eSwatini": "swaziland",
-  "United States": "usa"
+  "Republic of the Congo":"congo_brazzaville",
+  "Democratic Republic of the Congo":"congo_kinshasa",
+  "United States": "usa",
+  "UnitedStates": "usa" //for regions osmose
+  
   // add more special cases here if needed
 };
+const countryNameMap = {};
 
+const regionOverrides = {
+  "Centre-ValdeLoire": "centre",
+  // add any other special-cases you find
+  // "GeoJSONName": "osmose_expected_name"
+  "MatoGrossodoSul": "mato_grosso_do_sul",
+  "MinasGerais": "minas_gerais",
+  "Cataluña": "catalunya",
+  "NeiMongol": "inner_mongolia"
+};
+
+const MapYourSolarCountryNameMap = {
+  "Ivory Coast": "Côte d'Ivoire"
+};
+
+// helper to create osmose-compatible keys (reuses osmoseNameOverrides)
+function slugifyForOsmose(name){
+  if (!name) return '';
+  let s = String(name);
+  // 1) split lowercase->Uppercase boundaries: "MatoGrossodoSul" -> "Mato_Grosso_do_Sul"
+  s = s.replace(/([a-z0-9])([A-Z])/g, '$1_$2');
+  // 2) split Uppercase -> UppercaseLowercase boundaries:
+  //    "HTMLParser" -> "HTML_Parser", also handles "CastillaYLeon" -> "Castilla_Y_Leon"
+  s = s.replace(/([A-Z])([A-Z][a-z])/g, '$1_$2');
+  // 3) Normalize & remove accents
+  s = s.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  // 4) Replace any non-alphanumeric with underscore
+  s = s.replace(/[^0-9A-Za-z]+/g, '_');
+  // 5) Collapse multiple underscores, trim edges, lowercase
+  s = s.replace(/_+/g, '_').replace(/^_|_$/g, '').toLowerCase();
+  return s;
+}
 
 // Map
 // Define world bounds (southWest & northEast corners)
@@ -124,7 +164,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Define large countries that should use regional boundaries when zoomed in
+// Useless at the moment since the regions layer becomes active anyway at a certain zoom
 const largeCountries = ['BR', 'US', 'CA', 'IN', 'MX', 'AU', 'CN'];
 const zoomThreshold = 5; // Zoom level at which to show regions instead of countries
 
@@ -134,7 +174,7 @@ const countriesLayer = L.geoJSON(null, {
 }).addTo(map);
 
 const regionsLayer = L.geoJSON(null, {
-    style: { color: '#3388ff', weight: 1 }
+    style: { color: '#2c1aff', weight: 1 }
 });
 
 
@@ -182,7 +222,7 @@ async function initQueryUI() {
   });
 
   // inject our special modes:
-  modes.splice(2, 0, 'Osmose_issues', 'GEM_powerplants', 'Wikidata', 'PPM');
+  modes.splice(2, 0, 'Osmose_issues', 'GEM_powerplants', 'MapYourSolar', 'Wikidata', 'PPM');
 
   currentMode = modes.includes('Default') ? 'Default' : modes[0];
 
@@ -264,12 +304,12 @@ async function initQueryUI() {
     line-height: 1.5;
   `;
   introBox.innerHTML = `
-    <strong>📍DESCARGA LA RED ELECTRICA</strong><br/>
+    <strong>📍LOAD YOUR GRID INFRASTRUCTURE</strong><br/>
     <ol style="margin: 0.5em 0 0 1em; padding-left: 1em;">
-      <li>Pulsar sobre el pais que le interesa para descargarlo en JOSM. Haz Zoom para seleccionar regiones/provincias.</li>
-      <li>Pulsar Tools and Hints para descargar los datos que ayudaran a mapear (pero solo como capa de sugerenicas, no la descargas!).</li>
-      <li>Echale un vistazo a the Map Legend, Good First Lines, Hot Keys and Curated Electrical Grid Maps below.</li>
-      <li>Recuerda que se trata de un extracto específico de OpenStreetMap y que algunos otros objetos existentes pueden permanecer ocultos mientras contribuyes. Comprueba siempre los datos de OpenStreetMap. <a href="/starter-kit/#5-load-power-infrastructure-into-josm">to avoid any conflicts or double mapping</a> on save.</li>
+      <li>Click on the country you want to load in JOSM. Zoom in to select states or provinces.</li>
+      <li>Click on Tools and Hints to download the data layers that will support you in grid mapping.</li>
+      <li>Don't forget to checkout the Map Legend, Good First Lines, Hot Keys and Curated Electrical Grid Maps below.</li>
+      <li>Remember this is a specific OpenStreetMap extract and some other existing objects may remain hidden while you contribute. Always check OpenStreetMap data <a href="/starter-kit/#5-load-power-infrastructure-into-josm">to avoid any conflicts or double mapping</a> on save.</li>
       
     </ol>
     `;
@@ -304,6 +344,8 @@ async function initQueryUI() {
       group = renderOsmoseButtonGroup();
     } else if (mode === 'GEM_powerplants') {
       group = renderGEMButtonGroup();
+    } else if (mode === 'MapYourSolar') {
+      group = renderSolarButtonGroup();
     } else if (mode === 'Wikidata') {
       group = renderWikidataButtonGroup();
     } 
@@ -311,11 +353,11 @@ async function initQueryUI() {
     group = renderPPMButtonGroup();
     }
     else {
-      group = await renderModeButtonGroup(mode);
+      group = renderModeButtonGroup(mode);
     }
 
     // Tools go in the second row, everything else in the first
-    if (['Osmose_issues', 'GEM_powerplants', 'Wikidata', 'PPM'].includes(mode)) {
+    if (['Osmose_issues', 'GEM_powerplants', 'MapYourSolar', 'Wikidata', 'PPM'].includes(mode)) {
       toolContainer.appendChild(group);
     } else {
       overpassContainer.appendChild(group);
@@ -331,12 +373,14 @@ async function initQueryUI() {
   const wikidata = document.getElementById('wikidata-panel');
   const ppm      = document.getElementById('ppm-panel');
   const gem      = document.getElementById('gem-panel');
+  const solar     = document.getElementById('solar-panel');
 
   // append them into our wrapper
   panelWrapper.appendChild(osmose);
   panelWrapper.appendChild(wikidata);
   panelWrapper.appendChild(ppm);
   panelWrapper.appendChild(gem);
+  panelWrapper.appendChild(solar);
 
   // finally, drop that wrapper just before the map div
   mapEl.parentNode.insertBefore(panelWrapper, mapEl);
@@ -391,6 +435,28 @@ function renderGEMButtonGroup() {
   return group;
 }
 
+function renderSolarButtonGroup() {
+  const btn = document.createElement('button');
+  btn.textContent = 'Transition Zero - Solar Asset Mapper';
+  btn.classList.add('query-btn');
+  if (currentMode === 'MapYourSolar') btn.classList.add('active');
+  btn.onclick = () => selectMode('MapYourSolar', btn);
+  
+  // TZ website link + CC BY NC 4.0
+  const info = document.createElement('div');
+  info.classList.add('query-version');
+  info.style.marginTop = '0.2rem';
+  info.innerHTML =
+   '<a href="https://www.transitionzero.org/products/solar-asset-mapper/download" target="_blank">transitionzero.org</a>' +
+   ' | Q3-2025 | CC BY NC 4.0';
+
+  const group = document.createElement('div');
+  group.classList.add('query-group');
+  group.appendChild(btn);
+  group.appendChild(info);
+  return group;
+}
+
 function renderWikidataButtonGroup() {
   const btn = document.createElement('button');
   btn.textContent = 'Wikidata';
@@ -437,8 +503,8 @@ function renderPPMButtonGroup() {
   return group;
 }
 
-
-async function renderModeButtonGroup(mode) {
+const versionCache = new Map();
+function renderModeButtonGroup(mode) {
   const btn = document.createElement('button');
   // I overrided the button name for Default, but the file in github is still Default
   if (mode === 'Default') {
@@ -458,11 +524,21 @@ async function renderModeButtonGroup(mode) {
   const repoFolderUrl =
    `https://github.com/open-energy-transition/osm-grid-definition/tree/main/queries/` +
    encodeURIComponent(mode);
-  verLink.href = repoFolderUrl;  try {
-    const v = await fetchVersion(mode);
-    verLink.textContent = `v${v}`;
-  } catch {
-    verLink.textContent = 'v?';
+  verLink.href = repoFolderUrl;  
+  verLink.textContent = 'v…';
+
+  // update the badge in the background (cached to avoid duplicate fetches)
+  if (versionCache.has(mode)) {
+    verLink.textContent = `v${versionCache.get(mode)}`;
+  } else {
+    fetchVersion(mode)
+      .then(v => {
+        versionCache.set(mode, v);
+        verLink.textContent = `v${v}`;
+      })
+      .catch(() => {
+        verLink.textContent = 'v?';
+      });
   }
 
   const group = document.createElement('div');
@@ -489,8 +565,13 @@ function selectMode(mode, btn) {
   document.getElementById('ppm-panel').style.display =
   mode === 'PPM' ? 'block' : 'none';
 
+  //GEM
   document.getElementById('gem-panel').style.display =
   mode === 'GEM_powerplants' ? 'block' : 'none';
+
+  // TZ solar
+  document.getElementById('solar-panel').style.display =
+  mode === 'MapYourSolar' ? 'block' : 'none';
 }
 
 
@@ -550,10 +631,28 @@ async function handleAreaClick(iso, level, layer) {
 
   try {
     if (currentMode === 'Osmose_issues') {
-      await fetchOsmoseAndDownload(sovName);
+      if (level === 4) {
+        const regionName = layer.feature.properties.NAME_1 || layer.feature.properties.NAME || '';
+        // try: 1) explicit COUNTRY field in regions geojson, 2) parent country via region ISO code using countryNameMap, 3) SOVEREIGNT fallback, 4) original sovName
+        let countryNameCandidate = layer.feature.properties.COUNTRY || null;
+        if (!countryNameCandidate) {
+          // iso might look like "US-CA" or "BR-MS"
+          if (typeof iso === 'string' && /[-_]/.test(iso)) {
+            const parentIso = iso.split(/[-_]/)[0].toUpperCase();
+            countryNameCandidate = countryNameMap[parentIso] || null;
+          }
+        }
+        if (!countryNameCandidate) countryNameCandidate = layer.feature.properties.SOVEREIGNT || sovName;
+        await fetchOsmoseAndDownload(countryNameCandidate, regionName, layer);
+      } else {
+        await fetchOsmoseAndDownload(sovName, null, layer);
+      }
     }
     else if (currentMode === 'GEM_powerplants') {
       await fetchGEMAndDownload(sovName);
+    }
+    else if (currentMode === 'MapYourSolar') {
+      await fetchSolarAndDownload(sovName);
     }
     else if (currentMode === 'Wikidata') {
       await fetchWikidataAndDownload(usedSovName);
@@ -585,12 +684,12 @@ setTimeout(() => {
   } else {
     html = `
       <div class="popup-success">
-        <p>🎉 <strong>Great!</strong> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if it is downloading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on regions or states. For <strong>Osmose and GEM tools and hints</strong> selections, you will need to download the geojson file. Afterwards drag and drop the file into JOSM. For wikidata and powerplantmatching, the layer will be directly loaded in JOSM. <br>⚠️ <strong>If nothing happens:</strong></p>
+        <p>🎉 <strong>Great!</strong> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if it is downloading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on regions or states (also works for osmose). For <strong> GEM </strong> selections, you will need to download the geojson file. Afterwards drag and drop the file into JOSM. For osmose, wikidata and powerplantmatching, the layer will be directly loaded in JOSM. <br>⚠️ <strong>If nothing happens:</strong></p>
         <ol>
           <li>Check if your ad-blocker is off and JOSM is open</li>
           <li>Make sure Remote Control is enabled in JOSM</li>
           <li>If it’s enabled but still not working, toggle it off and on again</li>
-          <li>Note that hint layers do not work on regional layers. In this case, please load the data onto a national layer.</li>
+          <li>Note that hint layers do not work on regional layers (except for Osmose). In this case, please load the data onto a national layer.</li>
           <li><a href="https://mapyourgrid.org/starter-kit/">Look into the Starter-Kit</a>
         </ol>
       </div>
@@ -607,20 +706,40 @@ setTimeout(() => {
 initQueryUI().catch(console.error);
 
 // Osmose API fetcher
-async function fetchOsmoseAndDownload(sovName) {
+async function fetchOsmoseAndDownload(countryNameOrSovName, regionName = null, layer = null) {
   const sel = document.getElementById('osmoseIssue');
   if (!sel.value) {
     alert('Please select an issue type first.');
     return;
   }
   const [item, cls] = sel.value.split(':');
-  /// normalize to lowercase, add underscore for +1 words  and add wildcard
-  // apply override if present, else slugify normally
-  const key = osmoseNameOverrides[sovName] || sovName;
-  let base = key
-             .toLowerCase()
-             .replace(/\s+/g, '_');
-  if (!base.endsWith('*')) base += '*';
+
+  const overrideCountry = osmoseNameOverrides[countryNameOrSovName];
+  const countryToken = overrideCountry ? overrideCountry : slugifyForOsmose(countryNameOrSovName);
+
+
+  let base;
+  if (regionName) {
+    // region token: prefer explicit region override, else slugify
+    const regionToken = regionOverrides[regionName] || slugifyForOsmose(regionName);
+    // Use countryToken (so overrides apply) instead of re-slugifying the raw name
+    base = `${countryToken}_${regionToken}`;
+    if (!base.endsWith('*')) base += '*';
+  } else {
+    // country only: use countryToken (already overridden or slugified)
+    base = countryToken;
+    if (!base.endsWith('*')) base += '*';
+  }
+
+  //debug
+  const debugMsg = `Osmose query: <code>${base}</code> (item=${item}, class=${cls})`;
+  console.log(debugMsg);
+  if (layer && layer.getPopup) {
+    layer.getPopup().setContent(`<b>Querying Osmose…</b><br>${debugMsg}`).update();
+  } else {
+    // fallback: tiny console/info alert for debugging
+    console.info(debugMsg);
+  }
 
   const apiUrl = 
     `https://osmose.openstreetmap.fr/api/0.3/issues.geojson?` +
@@ -638,11 +757,11 @@ async function fetchOsmoseAndDownload(sovName) {
   const geojson = await resp.json();
 
   if (!geojson.features || geojson.features.length === 0) {
-    alert(`No issues found for "${sel.options[sel.selectedIndex].text}" in ${sovName.replace('*','')}. Try another osmose issue type!`);
+    alert(`No issues found for "${sel.options[sel.selectedIndex].text}" in ${regionName ? (regionName + ', ' + countryNameOrSovName) : countryNameOrSovName}. Try another osmose issue type!`);
     return;
   }
 
-  const layerName = `${sovName.replace('*','')}-osmose-${item}-${cls}`;
+  const layerName = `${(regionName ? `${countryNameOrSovName}_${regionName}` : countryNameOrSovName).replace(/\s+/g,'_')}-osmose-${item}-${cls}`;
   geoToJosm(apiUrl, layerName);
 }
 
@@ -684,6 +803,55 @@ async function fetchGEMAndDownload(sovName) {
   const a       = document.createElement('a');
   a.href        = url;
   a.download    = `${sovName.replace(/\s+/g, '_')}_gem_powerplants.geojson`;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+async function fetchSolarAndDownload(sovName) {
+  const csvCountryName = MapYourSolarCountryNameMap[sovName] || sovName;
+  const countryKey = csvCountryName.trim().toLowerCase();
+
+  // 1) fetch the XLSX from your own /data/ folder
+  const resp   = await fetch('/data/2025_Q3_raw_polygons.csv');
+  if (!resp.ok) throw new Error(`CSV fetch failed: ${resp.statusText}`);
+  const csvText = await resp.text();
+
+  const lines = csvText.trim().split('\n');
+  const headers = lines[0].split(',');
+  const rows = lines.slice(1).map(line => {
+    const values = line.split(',');
+    return {
+      country: values[6],
+      latitude: parseFloat(values[4]),
+      longitude: parseFloat(values[5])
+    };
+  });
+  
+  // 3) filter + map into GeoJSON Features
+  const features  = rows
+    .filter(r => (r['country'] || '').trim().toLowerCase() === countryKey)
+    .map(r => ({
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [Number(r.longitude), Number(r.latitude)]
+      },
+      properties: Object.fromEntries(
+        Object.entries(r).filter(([k]) => !['latitude','longitude'].includes(k))
+      )
+    }));
+
+  if (features.length === 0) {
+    return alert(`No solar powerplants found for ${sovName}.`);
+  }
+
+  // 4) download as GeoJSON
+  const geojson = { type: 'FeatureCollection', features };
+  const blob    = new Blob([JSON.stringify(geojson, null, 2)], { type: 'application/json' });
+  const url     = URL.createObjectURL(blob);
+  const a       = document.createElement('a');
+  a.href        = url;
+  a.download    = `${sovName.replace(/\s+/g, '_')}_solar_TZ_powerplants.geojson`;
   a.click();
   URL.revokeObjectURL(url);
 }
@@ -858,6 +1026,8 @@ fetch('/data/countries.geojson')
       const iso  = layer.feature.properties.ISO_A2;
       const name = layer.feature.properties.NAME;
 
+      if (iso) countryNameMap[iso.toUpperCase()] = name;
+
       layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM. You need to disable your ad blocker for this to work`);
       layer.on('click', () => {
         // large countries should be clicked at region level when zoomed in
@@ -874,23 +1044,39 @@ fetch('/data/countries.geojson')
   })
   .catch(error => console.error('Countries GeoJSON error:', error));
 
-// Load region GeoJSON and add interactivity
-fetch('/data/regionsv2.geojson')
-  .then(response => response.json())
-  .then(regions => {
+// Load region GeoJSON and add interactivity (changed to load only when zoomed in as it's hevay). So regions won't load unless zoom level is right
+let regionsLoaded = false;
+
+async function loadRegionsOnce() {
+  if (regionsLoaded) return;
+  try {
+    const resp = await fetch('/data/regionsv2.geojson');
+    const regions = await resp.json();
     regionsLayer.addData(regions);
-
     regionsLayer.eachLayer(layer => {
-      const iso3166_2 = layer.feature.properties.ISO_1;
-      const name      = layer.feature.properties.NAME;
+          const iso3166_2 = layer.feature.properties.ISO_1;
+          const name      = layer.feature.properties.NAME;
 
-      layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM`);
-      layer.on('click', () => {
-        handleAreaClick(iso3166_2, 4, layer);
+          layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM`);
+          layer.on('click', () => 
+            handleAreaClick(iso3166_2, 4, layer));
       });
-    });
-  })
-  .catch(error => console.error('Regions GeoJSON error:', error));
+      regionsLoaded = true;
+      if (map.getZoom() >= zoomThreshold && !map.hasLayer(regionsLayer)) {
+        map.addLayer(regionsLayer);
+      }
+  }   catch(error) {console.error('Regions GeoJSON error:', error);}
+}
+map.on('zoomend', function() {
+  const currentZoom = map.getZoom();
+  if (currentZoom >= zoomThreshold) {
+    if (!regionsLoaded) loadRegionsOnce();
+    if (!map.hasLayer(regionsLayer)) map.addLayer(regionsLayer);
+  } else {
+    if (map.hasLayer(regionsLayer)) map.removeLayer(regionsLayer);
+  }
+});
+
 </script>
 
 [Good First Lines :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary }
