@@ -387,6 +387,13 @@ Disclaimer: These organisations are not affiliated with MapYourGrid nor endorse 
         
     ![map](images/impact/roseau.jpg){: .img-border } 
 
+**Woza-Labs** ![Woza-Labs](images/impact/wozalabs_logo.jpeg){width=30px}
+??? "Predicterra now includes global coverage of energy infrastructure — from distribution grids and substations to power plants and transmission corridors. (Click Me)" 
+    
+    [**Link to website**](https://blog.wozalabs.com/predicterra-goes-global-at-enlit/)
+        
+    ![map](images/impact/woza-labs.jpg){: .img-border } 
+
 
 ## **<div class="tools-header">Responsible Grid Mapping: Understanding Risks and Mitigation</div>**
 
