@@ -60,7 +60,6 @@ hide:
 
 <!-- TZ Mapyoursolar button -->
 <div id="solar-panel" style="display:none; margin-bottom:1em;">
-  <div class="query-version">Warning: GeoJSON file. "Open" in JOSM, but do not "upload" this layer</div>
 </div>
 
 <!-- Wikidata button-->
@@ -71,6 +70,9 @@ hide:
     <option value="substations">Substations</option>
     <option value="powerplants">Power Plants</option>
   </select>
+</div>
+
+<div id="wind-panel" style="display:none; margin-bottom:1em;">
 </div>
 
 <!-- PPM button -->
@@ -118,10 +120,6 @@ const regionOverrides = {
   "MinasGerais": "minas_gerais",
   "Cataluña": "catalunya",
   "NeiMongol": "inner_mongolia"
-};
-
-const MapYourSolarCountryNameMap = {
-  "Ivory Coast": "Côte d'Ivoire"
 };
 
 // helper to create osmose-compatible keys (reuses osmoseNameOverrides)
@@ -220,7 +218,7 @@ async function initQueryUI() {
   });
 
   // inject our special modes:
-  modes.splice(2, 0, 'Osmose_issues', 'GEM_powerplants', 'MapYourSolar', 'Wikidata', 'PPM');
+  modes.splice(2, 0, 'Osmose_issues', 'GEM_powerplants', 'MapYourSolar', 'Wikidata', 'GRW_wind' ,'PPM');
 
   currentMode = modes.includes('Default') ? 'Default' : modes[0];
 
@@ -346,8 +344,9 @@ async function initQueryUI() {
       group = renderSolarButtonGroup();
     } else if (mode === 'Wikidata') {
       group = renderWikidataButtonGroup();
-    } 
-    else if (mode === 'PPM') {
+    } else if (mode === 'GRW_wind') {
+      group = renderWindButtonGroup();
+    } else if (mode === 'PPM') {
     group = renderPPMButtonGroup();
     }
     else {
@@ -355,7 +354,7 @@ async function initQueryUI() {
     }
 
     // Tools go in the second row, everything else in the first
-    if (['Osmose_issues', 'GEM_powerplants', 'MapYourSolar', 'Wikidata', 'PPM'].includes(mode)) {
+    if (['Osmose_issues', 'GEM_powerplants', 'MapYourSolar', 'Wikidata', 'GRW_wind', 'PPM'].includes(mode)) {
       toolContainer.appendChild(group);
     } else {
       overpassContainer.appendChild(group);
@@ -372,6 +371,7 @@ async function initQueryUI() {
   const ppm      = document.getElementById('ppm-panel');
   const gem      = document.getElementById('gem-panel');
   const solar     = document.getElementById('solar-panel');
+  const wind     = document.getElementById('wind-panel');
 
   // append them into our wrapper
   panelWrapper.appendChild(osmose);
@@ -379,6 +379,7 @@ async function initQueryUI() {
   panelWrapper.appendChild(ppm);
   panelWrapper.appendChild(gem);
   panelWrapper.appendChild(solar);
+  panelWrapper.appendChild(wind);
 
   // finally, drop that wrapper just before the map div
   mapEl.parentNode.insertBefore(panelWrapper, mapEl);
@@ -481,6 +482,28 @@ function renderWikidataButtonGroup() {
   return group;
 }
 
+function renderWindButtonGroup() {
+  const btn = document.createElement('button');
+  btn.textContent = 'Global Renewables Watch - Wind Turbines';
+  btn.classList.add('query-btn');
+  if (currentMode === 'GRW_wind') btn.classList.add('active');
+  btn.onclick = () => selectMode('GRW_wind', btn);
+  
+  // TZ website link + CC BY NC 4.0
+  const info = document.createElement('div');
+  info.classList.add('query-version');
+  info.style.marginTop = '0.2rem';
+  info.innerHTML =
+   '<a href="https://github.com/microsoft/global-renewables-watch/tree/main" target="_blank">Global Renewables Watch</a>' +
+   ' | Q2-2024 ';
+
+  const group = document.createElement('div');
+  group.classList.add('query-group');
+  group.appendChild(btn);
+  group.appendChild(info);
+  return group;
+}
+
 function renderPPMButtonGroup() {
   const btn = document.createElement('button');
   btn.textContent = 'powerplantmatching';
@@ -570,6 +593,10 @@ function selectMode(mode, btn) {
   // TZ solar
   document.getElementById('solar-panel').style.display =
   mode === 'MapYourSolar' ? 'block' : 'none';
+
+  // GRW wind
+  document.getElementById('wind-panel').style.display =
+  mode === 'GRW_wind' ? 'block' : 'none';
 }
 
 
@@ -614,9 +641,10 @@ async function handleAreaClick(iso, level, layer) {
 
   // Normalize ONLY for Wikidata
   let usedSovName = sovName;
-  if (currentMode === 'Wikidata') {
+  if (currentMode === 'Wikidata' || currentMode === 'MapYourSolar') {
     const normalizedSovNameMap = {
-      "China": "People's_Republic_of_China"
+      "China": "People's_Republic_of_China",
+      "Ivory Coast": "Cote_d'Ivoire"
       // Add more mappings as needed
     };
     usedSovName = normalizedSovNameMap[sovName] || sovName;
@@ -650,10 +678,13 @@ async function handleAreaClick(iso, level, layer) {
       await fetchGEMAndDownload(sovName);
     }
     else if (currentMode === 'MapYourSolar') {
-      await fetchSolarAndDownload(sovName);
+      await fetchSolarAndDownload(usedSovName);
     }
     else if (currentMode === 'Wikidata') {
       await fetchWikidataAndDownload(usedSovName);
+    }
+    else if (currentMode === 'GRW_wind') {
+      await fetchWindAndDownload(sovName);
     }
     else if (currentMode === 'PPM') {
     await fetchPPMAndDownload(sovName);
@@ -806,52 +837,24 @@ async function fetchGEMAndDownload(sovName) {
 }
 
 async function fetchSolarAndDownload(sovName) {
-  const csvCountryName = MapYourSolarCountryNameMap[sovName] || sovName;
-  const countryKey = csvCountryName.trim().toLowerCase();
+  const folder = 'TZ-Q32025';
+  const fileName = sovName.replace(/\s+/g,'_') + '.geojson';
+  const url = `https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/main/TZ-Solar/`
+            + `${folder}/${fileName}`;
 
-  // 1) fetch the XLSX from your own /data/ folder
-  const resp   = await fetch('/data/2025_Q3_raw_polygons.csv');
-  if (!resp.ok) throw new Error(`CSV fetch failed: ${resp.statusText}`);
-  const csvText = await resp.text();
-
-  const lines = csvText.trim().split('\n');
-  const headers = lines[0].split(',');
-  const rows = lines.slice(1).map(line => {
-    const values = line.split(',');
-    return {
-      country: values[6],
-      latitude: parseFloat(values[4]),
-      longitude: parseFloat(values[5])
-    };
-  });
-  
-  // 3) filter + map into GeoJSON Features
-  const features  = rows
-    .filter(r => (r['country'] || '').trim().toLowerCase() === countryKey)
-    .map(r => ({
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [Number(r.longitude), Number(r.latitude)]
-      },
-      properties: Object.fromEntries(
-        Object.entries(r).filter(([k]) => !['latitude','longitude'].includes(k))
-      )
-    }));
-
-  if (features.length === 0) {
-    return alert(`No solar powerplants found for ${sovName}.`);
+// First, check if the file actually exists to provide a clean error message
+  const resp = await fetch(url, { method: 'HEAD' });
+  if (!resp.ok) {
+    return alert(`No Solar file for ${sovName}.`);
   }
 
-  // 4) download as GeoJSON
-  const geojson = { type: 'FeatureCollection', features };
-  const blob    = new Blob([JSON.stringify(geojson, null, 2)], { type: 'application/json' });
-  const url     = URL.createObjectURL(blob);
-  const a       = document.createElement('a');
-  a.href        = url;
-  a.download    = `${sovName.replace(/\s+/g, '_')}_solar_TZ_powerplants.geojson`;
-  a.click();
-  URL.revokeObjectURL(url);
+  if (selectedEditor === 'id') {
+      displayUrlForId(url);
+      return;
+  }
+
+  const layerName = `${sovName}-solarTZ`;
+  sendUrlToJosm(url, layerName);
 }
 
 async function fetchWikidataAndDownload(sovName) {
@@ -889,6 +892,28 @@ async function fetchWikidataAndDownload(sovName) {
   const layerName = `${sovName}-wikidata`;
   sendUrlToJosm(url, layerName);
 }
+
+async function fetchWindAndDownload(sovName) {
+  const folder = '2024-q2v1';
+  const fileName = sovName.replace(/\s+/g,'_') + '.geojson';
+  const url = `https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/main/wind-renewables-watch/`
+            + `${folder}/${fileName}`;
+
+// First, check if the file actually exists to provide a clean error message
+  const resp = await fetch(url, { method: 'HEAD' });
+  if (!resp.ok) {
+    return alert(`No Wind file for ${sovName}.`);
+  }
+
+  if (selectedEditor === 'id') {
+      displayUrlForId(url);
+      return;
+  }
+
+  const layerName = `${sovName}-windGRW`;
+  sendUrlToJosm(url, layerName);
+}
+
 
 async function fetchPPMAndDownload(sovName) {
   const type = document.getElementById('ppmType').value;
