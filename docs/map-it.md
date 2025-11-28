@@ -288,16 +288,7 @@ async function initQueryUI() {
   // Add instructional text below the map
   const introBox = document.createElement('div');
   introBox.id = 'map-intro';
-  introBox.style = `
-    background: #f9f9f9;
-    padding: 1em;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 1em 0;
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    line-height: 1.5;
-  `;
+  introBox.className = 'introbox';
   introBox.innerHTML = `
     <strong>📍LOAD YOUR GRID INFRASTRUCTURE</strong><br/>
     <ol style="margin: 0.5em 0 0 1em; padding-left: 1em;">
