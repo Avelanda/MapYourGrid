@@ -55,7 +55,6 @@ hide:
 
 <!-- GEM button-->
 <div id="gem-panel" style="display:none; margin-bottom:1em;">
-  <div class="query-version">Warning: GeoJSON file. "Open" in JOSM, but do not "upload" this layer</div>
 </div>
 
 <!-- TZ Mapyoursolar button -->
@@ -795,45 +794,24 @@ async function fetchOsmoseAndDownload(countryNameOrSovName, regionName = null, l
 }
 
 async function fetchGEMAndDownload(sovName) {
-  const countryKey = sovName.trim().toLowerCase();
+  const folder = 'GEM-Global-Integrated-Power-February-2025-update-II';
+  const fileName = sovName.replace(/\s+/g,'_') + '.geojson';
+  const url = `https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/main/GEM/`
+            + `${folder}/${fileName}`;
 
-  // 1) fetch the XLSX from your own /data/ folder
-  const resp   = await fetch('/data/GEM-Global-Integrated-Power-February-2025-update-II.xlsx');
-  if (!resp.ok) throw new Error(`XLSX fetch failed: ${resp.statusText}`);
-  const arrayBuffer = await resp.arrayBuffer();
-
-  // 2) parse it with SheetJS
-  const wb        = XLSX.read(arrayBuffer, { type: 'array' });
-  const sheetName = wb.SheetNames[1];          // second tab → index 1
-  const rows      = XLSX.utils.sheet_to_json(wb.Sheets[sheetName], { defval: '' });
-
-  // 3) filter + map into GeoJSON Features
-  const features  = rows
-    .filter(r => (r['Country/area'] || '').trim().toLowerCase() === countryKey)
-    .map(r => ({
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [Number(r.Longitude), Number(r.Latitude)]
-      },
-      properties: Object.fromEntries(
-        Object.entries(r).filter(([k]) => !['Latitude','Longitude'].includes(k))
-      )
-    }));
-
-  if (features.length === 0) {
-    return alert(`No GEM powerplants found for ${sovName}.`);
+// First, check if the file actually exists to provide a clean error message
+  const resp = await fetch(url, { method: 'HEAD' });
+  if (!resp.ok) {
+    return alert(`No GEM Plants file for ${sovName}.`);
   }
 
-  // 4) download as GeoJSON
-  const geojson = { type: 'FeatureCollection', features };
-  const blob    = new Blob([JSON.stringify(geojson, null, 2)], { type: 'application/json' });
-  const url     = URL.createObjectURL(blob);
-  const a       = document.createElement('a');
-  a.href        = url;
-  a.download    = `${sovName.replace(/\s+/g, '_')}_gem_powerplants.geojson`;
-  a.click();
-  URL.revokeObjectURL(url);
+  if (selectedEditor === 'id') {
+      displayUrlForId(url);
+      return;
+  }
+
+  const layerName = `${sovName}-GEM`;
+  sendUrlToJosm(url, layerName);
 }
 
 async function fetchSolarAndDownload(sovName) {

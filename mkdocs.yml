@@ -123,24 +123,24 @@ plugins:
           nav_translations:
             "INITIATIVE": "INICIATIVA"
             "IMPACT": "IMPACTO"  
-            "STARTER-KIT": "KIT DE INICIO"
+            "STARTER-KIT": "TUTORIALES"
             "MAP IT📍": "MAP IT📍"
             "STRATEGIES": "ESTRATEGIAS"
             "PROGRESS": "PROGRESO"
-            "FAQ": "¿PREGUNTAS?"
-            "BLOG & TEAM": "EQUIPO"
+            "FAQ": "¿FAQ?"
+            "BLOG&TEAM": "EQUIPO"
         - locale: fr
           name: Français
           build: true
           nav_translations:
             "INITIATIVE": "INITIATIVE"
             "IMPACT": "IMPACT"  
-            "STARTER-KIT": "KIT DE DÉMARRAGE"
+            "STARTER-KIT": "TUTOS"
             "MAP IT📍": "MAP IT📍"
             "STRATEGIES": "STRATÉGIES"
             "PROGRESS": "PROGRÈS"
-            "FAQ": "QUESTIONS?"
-            "BLOG & TEAM": "ÉQUIPE"
+            "FAQ": "FAQ?"
+            "BLOG&TEAM": "ÉQUIPE"
           site_name: "MapYourGrid"
       default_language: en
       material_alternate: true

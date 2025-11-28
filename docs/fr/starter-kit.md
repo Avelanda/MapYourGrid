@@ -29,7 +29,7 @@ Vous avez repéré des pylônes électriques, des centrales électriques, des é
 L'éditeur natif iD OpenStreetMap offre une interface simple et conviviale, parfaite pour les débutants ou ceux qui souhaitent avoir un aperçu rapide de la cartographie des réseaux électriques. Son interface utilisateur simple et l'intégration d'un navigateur web permettent également d'utiliser cet éditeur sur des appareils mobiles, ce qui permet d'effectuer des tâches de cartographie et de validation sur le terrain.
 
 ### **<div class="tools-header">Découvrez notre tutoriel vidéo sur le kit de démarrage pour l'iD</div>**
-<iframe width="720" height="315" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/gAPss8ZeVLs?si=aC-T0GK4Mv3Kcr9e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="720" height="315" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/HgJfuxg1xYk?si=utMHQHCMw8Ayjf8O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ****
 ### <div class="stradegy-header">Cartographiez votre bonne première ligne avec l'iD</div></h3>
