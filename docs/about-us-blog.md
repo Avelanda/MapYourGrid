@@ -272,6 +272,13 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
 
 <div class="grid cards" markdown>
 
+- <a href="../blog/20251128-LineLength" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/7.312.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **Global Transmission Length Index, world's first open and free grid length database (28 Nov. 2025)**  
+  In November 2025, we finalised the  'Global Transmission Length Index'. This database includes the high-voltage circuit line lengths of almost every country in the world, per voltage, and with sources.
+  [:arrow_right: Read more](blog/20251128-LineLength.md)
+</a>
+
 - <a href="../blog/20250918-HIFLD" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/usa-final-hifld.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
   **OpenStreetMap grid data, the hidden superhero of the US’ national security? (18 Sept. 2025)**  
