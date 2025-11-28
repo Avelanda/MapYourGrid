@@ -18,7 +18,7 @@ So, in total this gives us a high-voltage grid estimate of at least 7.3 million 
 **Scope:**<br>
 The scope of the database is high-voltage lines, with an emphasis on transmission. However, we do include high-voltage distribution lines in some countries (eg. 132kv). Definitions and standards of “transmission”, “distribution”, “high-voltage” differ between countries, which can complicate analyses and comparisons.
 
-Indeed, for some  countries, particularly developing countries, certain high-voltage (which we define in our spreadsheet as 50kv+) will be operated and reported by the transmission system operator (TSO), such as 66kv or 115kv lines. In other countries, this will fall under high-voltage or extra high-voltage distribution. Furthermore, it is possible for distribution system operators (DSO) to operate 220kv lines, and in contrast some lines (although in terms of kilometres this will be small) at quite low voltage will be operated by the TSO. Moreover, in the International Energy Agency’s “Electricity Grids and Secure Energy Transitions” report, on page 51 you can find that transmission includes 36kv+, not 50kv+ as we do.
+Indeed, for some  countries, particularly developing countries, certain high-voltage (which we define in our spreadsheet as 50kv+) will be operated and reported by the transmission system operator (TSO), such as 66kv or 115kv lines. In other countries, this will fall under high-voltage or extra high-voltage distribution. Furthermore, it is possible for distribution system operators (DSO) to operate 220kv lines, and in contrast some lines (although in terms of kilometres this will be small) at quite low voltage will be operated by the TSO. Moreover, in the International Energy Agency’s “Electricity Grids and Secure Energy Transitions” report, on page 51 you can find that transmission includes 36kv+, not 50kv+ as we do. However, in the IEA's "Building the Future Transmission Grid" report, the scope of transmission is 66kv+ for example.
 
 In a few high-income countries, numbers for 50kV-132kV lines were hard to find. In those cases, the 50kV+ number in our database is an under-estimate (eg. US, Canada, Brazil). 
 In contrast, other countries, such as China, published a high-voltage line length for all 35kV+ lines. In that case, our database may include numbers for lines below 50kV. 
@@ -64,3 +64,8 @@ What can help to see if the issue is just tagging, or the actual coverage of lin
 The [database](https://docs.google.com/spreadsheets/d/1qmVIQ2_ynVVfbTWcMXJQWb4Sq0Dq-1fu8zgZ9J_0cZI/edit?usp=sharing) is fully open and under a CC BY 4.0 License. Which means you can add comments for any country, with a link or a number and its source if you have better and more updated numbers. Other comments can be made, if a mistake was made. 
 
 Find it [here](https://mapyourgrid.org/global-grid-data/#__tabbed_1_5).
+
+**Sources mentioned** <br>
+1. IEA 2023: [Electricity Grids and Secure Energy Transitions](https://iea.blob.core.windows.net/assets/ea2ff609-8180-4312-8de9-494bcf21696d/ElectricityGridsandSecureEnergyTransitions.pdf) <br>
+2. IEA 2025: [World Energy Outlook 2025](https://iea.blob.core.windows.net/assets/0a7a40a4-5dcb-4d6e-a7ad-76a1c90ec8eb/WorldEnergyOutlook2025.pdf) <br>
+3. IEA 2025: [Building the Future Transmission Grid](https://iea.blob.core.windows.net/assets/744ff0bb-905a-4f9f-83e3-2d04ce99e09c/BuildingtheFutureTransmissionGrid.pdf)
