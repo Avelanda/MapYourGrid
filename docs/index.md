@@ -45,7 +45,7 @@ image: images/website/mapyourgrid-preview.jpg
     <h2>Towards a Globally Mapped Grid</h2>
     <p>
       We are working with the OpenStreetMap community, organisations and individuals around the world to not only create an 
-      <a href="https://www.nature.com/articles/s41597-025-04550-7" target="_blank" rel="noopener">open digital twin of the European grid</a>, but also to expand global transmission grid coverage in OSM from 70% to 98% by 2028. <strong>MapYourGrid enables this through training, multiple validation strategies, optimized open-source tools and community building.</strong></p>
+      <a href="https://www.nature.com/articles/s41597-025-04550-7" target="_blank" rel="noopener">open digital twin of the European grid</a>, but also to expand global transmission grid coverage in OSM from 75% to 98% by 2028. <strong>MapYourGrid enables this through training, multiple validation strategies, optimized open-source tools and community building.</strong></p>
 
   <a href="https://openinframap.org/#3.34/8.66/41.06/B,E,L,N,P" target="_blank">
   <img src="images/openinframap_crop.jpg" alt="Grid Illustration" class="initiative-content" style="width: 120%; border: 4px solid #2a6d3c;">
