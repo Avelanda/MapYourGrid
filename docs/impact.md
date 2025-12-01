@@ -394,6 +394,13 @@ Disclaimer: These organisations are not affiliated with MapYourGrid nor endorse 
         
     ![map](images/impact/woza-labs.jpg){: .img-border } 
 
+**Federal Ministry of Power Nigeria** ![Federal Ministry of Power Nigeria](images/impact/nigeria-minsitry.jpg){width=30px}
+??? "Power sector data explorer for Nigera SE4ALL. (Click Me)" 
+    
+    [**Link to website**](https://apps.nigeriase4all.gov.ng/power-sector)
+        
+    ![map](images/impact/nigeria-se4all.jpg){: .img-border } 
+
 
 ## **<div class="tools-header">Responsible Grid Mapping: Understanding Risks and Mitigation</div>**
 
