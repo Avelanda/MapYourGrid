@@ -18,7 +18,7 @@ That's why we have launched this open initiative, working with the OpenStreetMap
 ## How you can get involved?
 Your support can make a significant impact on closing the data gap in the electricity grid. The MapYourGrid initiative will empower you! Are you good at online research? Do you like programming? Do you want to recognise power towers and other electrical infrastructure on satellite images? Do you want to use this data for a climate mitigation or the electrification of rural communities? We can help you find the right contribution for your skills and experience:
 
-Check out how you can [contribute here]([https://github.com/open-energy-transition/MapYourGrid/blob/main/CONTRIBUTING.md](https://github.com/open-energy-transition/MapYourGrid/tree/main?tab=contributing-ov-file))!
+Check out how you can [contribute here](https://github.com/open-energy-transition/MapYourGrid/tree/main?tab=contributing-ov-file)!
 
 When you make an edit, please use the **#MapYourGrid** in the changeset to help the initiative!
 
