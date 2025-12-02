@@ -918,7 +918,7 @@ async function fetchPPMAndDownload(sovName) {
 function sendUrlToJosm(dataUrl, layerName) {
   console.log("Setting JOSM layer name to:", layerName);
   // We must encode the dataUrl itself to pass it as a parameter to the JOSM url.
-  const josmUrl = `http://localhost:8111/import?new_layer=true&layer_name=${encodeURIComponent(layerName)}&url=${encodeURIComponent(dataUrl)}`;
+  const josmUrl = `http://localhost:8111/import?new_layer=true&layer_name=${encodeURIComponent(layerName)}&changeset_tags=hashtags=mapyourgrid&url=${encodeURIComponent(dataUrl)}`;
 
   console.log(`Sending data URL to JOSM: ${dataUrl}`);
   const iframe = document.createElement('iframe');
@@ -932,7 +932,7 @@ function sendUrlToJosm(dataUrl, layerName) {
 function geoToJosm(dataUrl, layerName) {
   console.log("Setting JOSM layer name to:", layerName);
   // We must encode the dataUrl itself to pass it as a parameter to the JOSM url.
-  const geoUrl = `http://localhost:8111/import?new_layer=true&layer_name=${encodeURIComponent(layerName)}&url=${encodeURIComponent(dataUrl)}&format=geojson`;
+  const geoUrl = `http://localhost:8111/import?new_layer=true&layer_name=${encodeURIComponent(layerName)}&changeset_tags=hashtags=mapyourgrid&url=${encodeURIComponent(dataUrl)}&format=geojson`;
 
   console.log(`Sending data URL to JOSM: ${dataUrl}`);
   const iframe = document.createElement('iframe');
