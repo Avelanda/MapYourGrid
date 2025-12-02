@@ -88,40 +88,52 @@ hide:
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
-<!-- SheetJS for in‑browser XLSX parsing -->
+<!-- SheetJS for in‑browser XLSX parsing. Not used anymore -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
 <!-- Start of script! -->
 <script>
+// ———————————————
+// Beginning
+// ———————————————
 
 let selectedEditor = 'josm';
 
 // ———————————————
-// Osmose name overrides (some names are different, check the API)
+// Name overrides (some names are different, check the API or geojosn)
 // ———————————————
-const osmoseNameOverrides = {
-  "Bosnia and Herzegovina": "bosnia_herzegovina",
-  "eSwatini": "swaziland",
-  "Republic of the Congo":"congo_brazzaville",
-  "Democratic Republic of the Congo":"congo_kinshasa",
-  "United States": "usa",
-  "UnitedStates": "usa" //for regions osmose
-  
-  // add more special cases here if needed
+const OVERRIDES = {
+  osmoseCountries: {
+    "Bosnia and Herzegovina": "bosnia_herzegovina",
+    "eSwatini": "swaziland",
+    "Republic of the Congo": "congo_brazzaville",
+    "Democratic Republic of the Congo": "congo_kinshasa",
+    "United States": "usa",
+    "UnitedStates": "usa"
+  },
+  osmoseRegions: {
+    "Centre-ValdeLoire": "centre",
+    "MatoGrossodoSul": "mato_grosso_do_sul",
+    "MinasGerais": "minas_gerais",
+    "Cataluña": "catalunya",
+    "NeiMongol": "inner_mongolia"
+  },
+  wikidata: {
+    "China": "People's_Republic_of_China"
+  },
+  MapYourSolar: {
+   "Ivory Coast": "Cote_d'Ivoire"
+  }
 };
+
+function getOverride(name, kind) {
+  if (!name || !kind) return null;
+  return (OVERRIDES[kind] && OVERRIDES[kind][name]) || null;
+}
 const countryNameMap = {};
 
-const regionOverrides = {
-  "Centre-ValdeLoire": "centre",
-  // add any other special-cases you find
-  // "GeoJSONName": "osmose_expected_name"
-  "MatoGrossodoSul": "mato_grosso_do_sul",
-  "MinasGerais": "minas_gerais",
-  "Cataluña": "catalunya",
-  "NeiMongol": "inner_mongolia"
-};
 
-// helper to create osmose-compatible keys (reuses osmoseNameOverrides)
+// helper to create osmose-compatible keys 
 function slugifyForOsmose(name){
   if (!name) return '';
   let s = String(name);
@@ -139,7 +151,9 @@ function slugifyForOsmose(name){
   return s;
 }
 
+// ———————————————
 // Map
+// ———————————————
 // Define world bounds (southWest & northEast corners)
 const southWest = L.latLng(-90, -200);
 const northEast = L.latLng( 90,  200);
@@ -176,7 +190,9 @@ const regionsLayer = L.geoJSON(null, {
 // Make the popup message bigger and nicer for new mappers (like Ad-blocker...)
 map.options.maxPopupWidth = 300;
 
-// 2) Dynamic query‑mode discovery via GitHub Contents API
+// ———————————————
+// Overpass repo. Each Folder in the queries folder for 1 mode (button)
+// ———————————————
 const GITHUB_API_QUERIES =
   'https://api.github.com/repos/open-energy-transition/osm-grid-definition/contents/queries';
 
@@ -184,6 +200,9 @@ const GITHUB_API_QUERIES =
 const RAW_BASE =
   'https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/main/queries';
 
+// ———————————————
+// Modes and selection
+// ———————————————
 let currentMode = null;
 
 // 2a) discover all folders under /queries
@@ -375,6 +394,10 @@ async function initQueryUI() {
   mapEl.parentNode.insertBefore(panelWrapper, mapEl);
 }
 
+
+// ———————————————
+// Buttons
+// ———————————————
 function renderOsmoseButtonGroup() {
   const btn = document.createElement('button');
   btn.textContent = 'Osmose Issues';
@@ -589,19 +612,6 @@ function selectMode(mode, btn) {
   mode === 'GRW_wind' ? 'block' : 'none';
 }
 
-
-
-
-// 2c) fetch the correct OverpassQL file on demand
-async function fetchQuery(mode, adminLevel) {
-  const rawUrl =
-    `https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/` +
-    `main/queries/${mode}/admin${adminLevel}.overpassql`;
-  const r = await fetch(rawUrl);
-  if (!r.ok) throw new Error(`Query file not found: ${mode}/admin${adminLevel}`);
-  return r.text();
-}
-
 //for id
 function displayUrlForId(url) {
     const container = document.getElementById('url-container');
@@ -622,24 +632,15 @@ function displayUrlForId(url) {
     };
 }
 
+// ———————————————
+// Clicking
+// ———————————————
 // 2d) unified click handler for country (level 2) & region (level 4)
 async function handleAreaClick(iso, level, layer) {
   const name = level === 2 
     ? layer.feature.properties.NAME      // Countries use NAME
     : layer.feature.properties.NAME_1;   // Regions use NAME_1
   const sovName= layer.feature.properties.SOVEREIGNT; // for linking to Osmose
-
-  // Normalize ONLY for Wikidata
-  let usedSovName = sovName;
-  if (currentMode === 'Wikidata' || currentMode === 'MapYourSolar') {
-    const normalizedSovNameMap = {
-      "China": "People's_Republic_of_China",
-      "Ivory Coast": "Cote_d'Ivoire"
-      // Add more mappings as needed
-    };
-    usedSovName = normalizedSovNameMap[sovName] || sovName;
-  }
-
 
   umami.track('map-click');
   layer.setStyle({ color: '#ff7800' });
@@ -668,9 +669,11 @@ async function handleAreaClick(iso, level, layer) {
       await fetchGEMAndDownload(sovName);
     }
     else if (currentMode === 'MapYourSolar') {
+      const usedSovName = getOverride(sovName, 'MapYourSolar') || sovName;
       await fetchSolarAndDownload(usedSovName);
     }
     else if (currentMode === 'Wikidata') {
+      const usedSovName = getOverride(sovName, 'wikidata') || sovName;
       await fetchWikidataAndDownload(usedSovName);
     }
     else if (currentMode === 'GRW_wind') {
@@ -724,30 +727,35 @@ setTimeout(() => {
 // initialize the UI immediately
 initQueryUI().catch(console.error);
 
+// ———————————————
+// Fecthing functions for each
+// ———————————————
+
+// fetch the correct OverpassQL file on demand
+async function fetchQuery(mode, adminLevel) {
+  const rawUrl =
+    `https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/` +
+    `main/queries/${mode}/admin${adminLevel}.overpassql`;
+  const r = await fetch(rawUrl);
+  if (!r.ok) throw new Error(`Query file not found: ${mode}/admin${adminLevel}`);
+  return r.text();
+}
+
 // Osmose API fetcher
-async function fetchOsmoseAndDownload(countryNameOrSovName, regionName = null, layer = null) {
+async function fetchOsmoseAndDownload(countryNameOrSovName, regionName =  null, layer = null) {
   const sel = document.getElementById('osmoseIssue');
-  if (!sel.value) {
-    alert('Please select an issue type first.');
-    return;
-  }
+  if (!sel || !sel.value) { alert('Please select an issue type first.'); return; }
   const [item, cls] = sel.value.split(':');
 
-  const overrideCountry = osmoseNameOverrides[countryNameOrSovName];
-  const countryToken = overrideCountry ? overrideCountry : slugifyForOsmose(countryNameOrSovName);
+  // prefer explicit override, else slugify
+  const countryToken = getOverride(countryNameOrSovName, 'osmoseCountries') || slugifyForOsmose(countryNameOrSovName);
 
-
-  let base;
+  let base = countryToken;
   if (regionName) {
-    // region token: prefer explicit region override, else slugify
-    const regionToken = regionOverrides[regionName] || slugifyForOsmose(regionName);
-    // Use countryToken (so overrides apply) instead of re-slugifying the raw name
+    const regionToken = getOverride(regionName, 'osmoseRegions') || slugifyForOsmose(regionName);
     base = `${countryToken}_${regionToken}`;
-    if (!base.endsWith('*')) base += '*';
-  } else {
-    // country only: use countryToken (already overridden or slugified)
-    base = countryToken;
-    if (!base.endsWith('*')) base += '*';
+  }
+  if (!base.endsWith('*')) { base += '*';
   }
 
   //debug
@@ -784,6 +792,7 @@ async function fetchOsmoseAndDownload(countryNameOrSovName, regionName = null, l
   geoToJosm(apiUrl, layerName);
 }
 
+// GEM fetcher
 async function fetchGEMAndDownload(sovName) {
   const folder = 'GEM-Global-Integrated-Power-February-2025-update-II';
   const fileName = sovName.replace(/\s+/g,'_') + '.geojson';
@@ -805,6 +814,7 @@ async function fetchGEMAndDownload(sovName) {
   sendUrlToJosm(url, layerName);
 }
 
+// TZ-solar fetcher
 async function fetchSolarAndDownload(sovName) {
   const folder = 'TZ-Q32025';
   const fileName = sovName.replace(/\s+/g,'_') + '.geojson';
@@ -826,6 +836,7 @@ async function fetchSolarAndDownload(sovName) {
   sendUrlToJosm(url, layerName);
 }
 
+// Wikidata fetcher
 async function fetchWikidataAndDownload(sovName) {
   // grab the value of the wikidataType so "substations" or "powerplants" from the button selected (go up the script)
   const type = document.getElementById('wikidataType').value;
@@ -883,7 +894,7 @@ async function fetchWindAndDownload(sovName) {
   sendUrlToJosm(url, layerName);
 }
 
-
+// PPM fetcher
 async function fetchPPMAndDownload(sovName) {
   const type = document.getElementById('ppmType').value;
 
@@ -913,6 +924,9 @@ async function fetchPPMAndDownload(sovName) {
   sendUrlToJosm(url, layerName);
 }
 
+// ———————————————
+// Send to JOSM
+// ———————————————
 
 // For direct opening of files in JOSM of hint layers
 function sendUrlToJosm(dataUrl, layerName) {
@@ -1008,6 +1022,9 @@ map.on('zoomend', function() {
     }
 });
 
+// ———————————————
+// Base geo layers (countries and regions)
+// ———————————————
 // Load country GeoJSON and add interactivity
 fetch('../data/countries.geojson')
   .then(response => response.json())
@@ -1069,6 +1086,9 @@ map.on('zoomend', function() {
   }
 });
 
+// ———————————————
+// End
+// ———————————————
 </script>
 
 [Discover Good First Lines to Get Started :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary }
