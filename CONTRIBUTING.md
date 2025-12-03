@@ -15,6 +15,7 @@ We encourage and value any type of contribution. See the [Readme.md](https://git
 > - Add ["Good first Lines"](https://mapyourgrid.org/good-first-lines/#want-to-add-a-good-first-line) for beginners or anyone to map
 > - Find grid maps for countries, and add/create an issue for the [Awesome list](https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping)
 > - Find ways to make the Map It page faster (lighter geojsons, topojson perhaps etc..)
+> - Add more regions of a country into the regions.geojson file with the correct format
 > - I'm sure you can find other creative ways!
 
 
