@@ -14,7 +14,7 @@ hide:
     If this is your first time grid mapping, please go through the [JOSM Starter-Kit](https://mapyourgrid.org/starter-kit/#josm-starter-kit) or [iD Starter-Kit](https://mapyourgrid.org/starter-kit/#id-starter-kit). You can use the **#MapYourGrid** hashtag in your changeset to show your support for our initiative when you make an edit! To start mapping, please open [JOSM](https://josm.openstreetmap.de/), ensure that remote control is activated in `Preferences` and load your data: 
 
     1. The **Default Transmission (50 kV+)** pulls all power infrastructure relevant for the **transmission grid**. For more details about which data is pulled via Overpass please read our [OpenStreetMap Grid Definitions](https://github.com/open-energy-transition/osm-grid-definition). Distribution grids are barely visible in satellite data and should therefore only be mapped in individual cases.
-    2. The Osmose, Global Energy Monitor, and Wikidata buttons provide **hint layer** data, which you can read about in our page [Strategies](strategies.md). Please note that hint layers only work at a national level. 
+    2. The Osmose, Global Energy Monitor, and Wikidata buttons provide **hint layer** data, which you can read about in our page [Strategies](strategies.md). Please note that hint layers only work at a national level, except for Osmose in certain cases. 
 
 <!-- Beginning of Map section-->
 <style>
@@ -51,14 +51,17 @@ hide:
                 <option value="7040:95">missing power=line in the area (Class 95)</option>
               </optgroup>
     </select>
+  <div class="query-version">Warning: Some countries only work on national level with Osmose</div>
 </div>
 
 <!-- GEM button-->
 <div id="gem-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: GEM only works on national level</div>
 </div>
 
 <!-- TZ Mapyoursolar button -->
 <div id="solar-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: TZ-Solar only works on national level</div>
 </div>
 
 <!-- Wikidata button-->
@@ -69,9 +72,11 @@ hide:
     <option value="substations">Substations</option>
     <option value="powerplants">Power Plants</option>
   </select>
+  <div class="query-version">Warning: Wikidata only works on national level</div>
 </div>
 
 <div id="wind-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: GRW Wind only works on national level</div>
 </div>
 
 <!-- PPM button -->
@@ -80,6 +85,7 @@ hide:
   <select id="ppmType">
     <option value="Rejected power plants" selected>Rejected power plants</option>
   </select>
+  <div class="query-version">Warning: Powerplantmatching only works on national level</div>
 </div>
 
 
@@ -688,7 +694,7 @@ async function handleAreaClick(iso, level, layer) {
        sendToJosm(tpl, name); 
     }
   } catch (err) {
-    layer.getPopup().setContent(`Error: ${err.message}`).update();
+    layer.getPopup().setContent(`Error: Some Hint layers only work on a national level!`).update();
   }
 
 setTimeout(() => {
