@@ -51,14 +51,17 @@ hide:
                 <option value="7040:95">missing power=line in the area (Class 95)</option>
               </optgroup>
     </select>
+  <div class="query-version">Warning: Some countries only work on national level with Osmose</div>
 </div>
 
 <!-- GEM button-->
 <div id="gem-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: GEM only works on national level</div>
 </div>
 
 <!-- TZ Mapyoursolar button -->
 <div id="solar-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: TZ-Solar only works on national level</div>
 </div>
 
 <!-- Wikidata button-->
@@ -69,9 +72,11 @@ hide:
     <option value="substations">Substations</option>
     <option value="powerplants">Power Plants</option>
   </select>
+  <div class="query-version">Warning: Wikidata only works on national level</div>
 </div>
 
 <div id="wind-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: GRW Wind only works on national level</div>
 </div>
 
 <!-- PPM button -->
@@ -80,6 +85,7 @@ hide:
   <select id="ppmType">
     <option value="Rejected power plants" selected>Rejected power plants</option>
   </select>
+  <div class="query-version">Warning: Powerplantmatching only works on national level</div>
 </div>
 
 
