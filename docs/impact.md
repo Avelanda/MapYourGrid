@@ -401,6 +401,13 @@ Disclaimer: These organisations are not affiliated with MapYourGrid nor endorse 
         
     ![map](images/impact/nigeria-se4all.jpg){: .img-border } 
 
+**Rosetta Analytics** ![Rosetta Analytics](images/impact/rosetta-logo.svg){width=50px}
+??? "Network Map. (Click Me)" 
+    
+    [**Link to website**](https://networkmap.energy/)
+        
+    ![map](images/impact/Rosetta-networkmap.jpg){: .img-border } 
+
 
 ## **<div class="tools-header">Responsible Grid Mapping: Understanding Risks and Mitigation</div>**
 
