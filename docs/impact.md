@@ -408,6 +408,13 @@ Disclaimer: These organisations are not affiliated with MapYourGrid nor endorse 
         
     ![map](images/impact/Rosetta-networkmap.jpg){: .img-border } 
 
+**Atlas** ![Atlas](images/impact/Atlas-logo-dark.svg){width=40px}
+??? "Power Grid Layer eg. Africa Electricity Grid. (Click Me)" 
+    
+    [**Link to website**](https://atlas.co/maps/africa-electricity-grid)
+        
+    ![map](images/impact/atlas-osm.jpg){: .img-border } 
+
 
 ## **<div class="tools-header">Responsible Grid Mapping: Understanding Risks and Mitigation</div>**
 
