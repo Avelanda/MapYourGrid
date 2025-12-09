@@ -272,6 +272,13 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
 
 <div class="grid cards" markdown>
 
+- <a href="../blog/20251209-humans-for-the-grid" style="text-decoration: none; color: inherit;">
+  <img src="/images/asia-grid.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **Humans for the Grid - Why data on the electrical grid still demands actual human labor (9 Dec. 2025)**
+  Despite advances in AI and automation, high-quality grid mapping still relies on skilled human mappers whose expertise ensures accuracy, verification, and community-driven improvement.  
+  [:arrow_right: Read more](blog/20251209-humans-for-the-grid.md)
+</a>
+
 - <a href="../blog/20251128-LineLength" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/7.312.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
   **Global Transmission Length Index, world's first open and free grid length database (28 Nov. 2025)**  
@@ -292,8 +299,6 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
   In August 2025, we made MapYourGrid publicly available. For seven months before that, our team of developers, data scientists, energy experts worked side by side, testing tools and mapping grids ourselves.  
   [:arrow_right: Read more](blog/20250908-BehindTheScenes.md)
 </a>
-
--   More blog articles  coming soon ! 
 
 </div>
 
