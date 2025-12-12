@@ -49,11 +49,20 @@ GITHUB_BUTTON = """
 <div class="awesome-github-btn">
   <a href="https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping" target="_blank" rel="noopener">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-         alt="GitHub" width="20" height="20">
-    <span>Contribute to this list here.</span>
+        width="20" height="20">
+    <span>Contribute</span>
+  </a>
+</div>
+
+<div class="awesome-github-btn">
+  <a href="http://mapyourgrid.infos-reseaux.com:9001/api/v1/buckets/mapyourgrid/objects/download?prefix=data-worldwide%2Fawesomelist.csv" target="_blank" rel="noopener">
+   <img src="https://raw.githubusercontent.com/open-energy-transition/MapYourGrid/refs/heads/main/docs/icons/download_icon.png"
+         width="20" height="20">
+    <span> Download in csv</span>
   </a>
 </div>
 """
+
 
 TAB_BLOCK_RE = re.compile(
     r"<!--\s*TABS:start\s*-->\s*(?P<body>.*?)\s*<!--\s*TABS:end\s*-->",

@@ -10,8 +10,16 @@ hide:
 <div class="awesome-github-btn">
   <a href="https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping" target="_blank" rel="noopener">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-         alt="GitHub" width="20" height="20">
-    <span>Contribute to this list here.</span>
+        width="20" height="20">
+    <span>Contribute</span>
+  </a>
+</div>
+
+<div class="awesome-github-btn">
+  <a href="http://mapyourgrid.infos-reseaux.com:9001/api/v1/buckets/mapyourgrid/objects/download?prefix=data-worldwide%2Fawesomelist.csv" target="_blank" rel="noopener">
+   <img src="docs/icons/download_icon.png"
+         width="20" height="20">
+    <span> Download in csv</span>
   </a>
 </div>
 
@@ -608,6 +616,7 @@ A curated list of resources in the field of electrical grid mapping to improve g
     #### <div class="resources-header">Voltage Estimation</div>
     * [Identifying the voltage level by number of insulator disks](https://www.reddit.com/r/Damnthatsinteresting/comments/ukc24p/identifying_the_voltage_level_by_number_of/)
     * [Guessing power line voltage from the number of disc insulator](https://electronics.stackexchange.com/questions/71614/guessing-power-line-voltage-from-the-number-of-disc-insulator)
+
 
 
 <script>document.addEventListener('DOMContentLoaded', function () {  show_buttons_for_filter_tag();});</script>
