@@ -71,6 +71,21 @@ The Todo plugin is used for almost all pioneer mapping strategies, systematicall
 1. Switch back to the OSM data layer.
 1. You can now systematically step through all the hints by pressing Mark.
 
+
+### **<div class="tools-header">Multiple Hint Layers </div>**
+
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+  <img src="/images/neon-hints.jpeg" class="img-border" style="width: 100%;">
+  <figcaption class="image-caption"> The neon green squares shows windturbines from the Global Renewable Watch data loaded via the Map It📍. Click to enlarge.</figcaption>
+</div>
+
+Seeing all the other 'hint' layers in relation to the OSM data in JOSM can be very helpful, as it allows you to quickly spot what data is missing. In JOSM, inactive layers are shown in grey by default, which provides very low contrast with satellite imagery. To improve the visibility and usability of the other layers, you have to change the colour of the inactive layers in your JOSM preferences. 
+
+1. Open the Colors Preferences. `Edit → Preferences → Colors`. 
+1. Search for `inactive` and double click on it.
+1. Select a colour that is not included in our mapCSS, but which is also uncommon in nature, as you want a high contrast with the satellite images. We recommend neon green. Press `OK` save the setting. 
+1. To enlarge nodes and ways in other layers, simply activate this layer and select it. If you activate another layer now, the data will remain marked. 
+
 ### <div class="tools-header">Map Fast </div>
 
 
