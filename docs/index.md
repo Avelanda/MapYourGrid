@@ -20,9 +20,9 @@ image: images/website/mapyourgrid-preview.jpg
       <a href="/map-it/" target="_blank" rel="noopener" class="btn btn-secondary">
         Map It📍
       </a>
-      <a href="https://drive.google.com/file/d/1qzWIZ1Rq5s_DFfVhbZCS2a0-XZrez29A/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary">
-      At a Glance 📄
-      </a>
+      <a href="/services/MapYourGrid_Services.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+       Our Services 💼
+     </a>
     </div>
   </div>
   <div class="hero-content-right">
@@ -215,6 +215,46 @@ image: images/website/mapyourgrid-preview.jpg
   </div>
 </div>
 </div>
+
+
+<div class="who-we-are-section">
+<h2>Our Services</h2>
+<p class="lead-statement">
+ We support organisations at every stage of their power-infrastructure data journey, from building internal skills to producing reliable, model-ready datasets and integrating OpenStreetMap into operational GIS workflows. Our services are designed to improve data quality, strengthen autonomy, and ensure power-grid data can be trusted, maintained, and reused over time.
+</p>
+
+<div class="who-we-are-section-services-grid">
+    <div class="who-we-are-section-services-card">
+      <div class="card-icon"> 🎓 </div>
+      <h3>Training on Power Infrastructure Mapping</h3>
+      <p>We enable your team to independently map, validate, and maintain high-quality power-infrastructure data in OpenStreetMap.</p>
+    </div>
+
+   <div class="who-we-are-section-services-card">
+      <div class="card-icon">🗺️</div>
+      <h3>Power Mapping Services</h3>
+      <p>Our skilled mappers improve the completeness, accuracy, and modelling readiness of power-grid data in OpenStreetMap to support reliable energy planning and decision-making.</p>
+    </div>
+
+  <div class="who-we-are-section-services-card">
+      <div class="card-icon">🔗</div>
+      <h3>Grid Data Integration </h3>
+      <p>We help you integrate, validate, and maintain power-infrastructure GIS data by using OpenStreetMap as a reliable primary or secondary data source.</p>
+    </div>
+  </div>
+
+  <div class="hero-buttons" style="display: flex; justify-content: center; gap: 1rem;">
+      <a href="/services/MapYourGrid_Services.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+       Learn more about our Services 💼
+      </a>
+      <a href="mailto:MapYourGrid@gmail.com" target="_blank" rel="noopener" class="btn btn-primary">
+       Tell us what you need 📧
+      </a>
+  </div>
+
+  
+</div>
+
 
 <div class="our-mapping-section" style="display: flex; flex-direction: column; align-items: center;">
   <h2>Subscribe to Our Newsletter</h2>
