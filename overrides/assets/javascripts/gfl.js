@@ -89,7 +89,7 @@ function createJOSMUrl(lat, lon) {
   document.body.appendChild(iframe);
   setTimeout(() => document.body.removeChild(iframe), 1000);
 
-  alert('✓ Great! Now go to JOSM.');
+  alert('✓ Great! Now go to the Map It! page and load the country or state you are mapping in.');
 }
 
 function createiDUrl(lat, lon) {
@@ -152,7 +152,7 @@ async function loadLines() {
               </label>
               
               <button class="complete-btn" onclick="markCompleted('${line.id}')">
-                ✓ Completed line mapping
+                ✓ I've continued the line.
               </button>
             </div>
           </div>

@@ -9,26 +9,27 @@ image: images/website/mapyourgrid-preview.jpg
 title: MapYourGrid
 ---
 
+
 <div class="hero-section">
- <div class="hero-content-left">
- <h1 class="hero-title">MapYourGrid</h1>
- <p class="mission-statement"> Nous donnons aux individus, aux communautés et aux nations du monde entier les moyens de cartographier le réseau électrique.
- </p>
- <div class="hero-buttons">
- <a href="/starter-kit/" target="_blank" rel="noopener" class="btn btn-primary">
- Apprend à cartographier⚡
- </a>
- <a href="/map-it/" target="_blank" rel="noopener" class="btn btn-secondary">
- Map It📍
- </a>
- <a href="https://drive.google.com/file/d/1qzWIZ1Rq5s_DFfVhbZCS2a0-XZrez29A/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary">
- Résumé 📄
- </a>
- </div>
- </div>
- <div class="hero-content-right">
- <img src="../images/logos/MapYourGrid-logo.webp" class="hero-logo off-glb">
- </div>
+  <div class="hero-content-left">
+    <h1 class="hero-title">MapYourGrid</h1>
+    <p class="mission-statement"> Nous donnons aux individus, aux communautés et aux nations du monde entier les moyens de cartographier le réseau électrique.
+    </p>
+    <div class="hero-buttons">
+     <a href="/starter-kit/" target="_blank" rel="noopener" class="btn btn-primary">
+      Apprend à cartographier⚡
+     </a>
+     <a href="/map-it/" target="_blank" rel="noopener" class="btn btn-secondary">
+        Map It📍
+     </a>
+     <a href="../services/MapYourGrid_Services.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+       Nos Services 💼
+     </a>
+    </div>
+  </div>
+  <div class="hero-content-right">
+    <img src="../images/logos/MapYourGrid-logo.webp" class="hero-logo off-glb">
+  </div>
 </div>
 
 <div class="initiative-section">
@@ -210,6 +211,45 @@ title: MapYourGrid
  </div>
 </div>
 </div>
+
+<div class="who-we-are-section">
+<h2>Nos Services</h2>
+<p class="lead-statement">
+Nous accompagnons les organisations à chaque étape de la gestion des données d’infrastructures électriques, du développement des compétences internes à la production de données fiables pour la modélisation, jusqu’à l’intégration d’OpenStreetMap dans les workflows SIG. Nos services renforcent la qualité des données, l’autonomie des équipes et la pérennité des données de réseau électrique.
+</p>
+
+<div class="who-we-are-section-services-grid">
+    <div class="who-we-are-section-services-card">
+      <div class="card-icon"> 🎓 </div>
+      <h3>Formation à la cartographie des infrastructures électriques</h3>
+      <p>Nous donnons à vos équipes les moyens de cartographier, valider et maintenir de manière autonome des données d’infrastructures électriques de haute qualité dans OpenStreetMap.</p>
+    </div>
+
+   <div class="who-we-are-section-services-card">
+      <div class="card-icon">🗺️</div>
+      <h3>Services de cartographie des réseaux électriques</h3>
+      <p>Nos cartographes experts renforcent la complétude, la précision et la qualité des données de réseaux électriques dans OpenStreetMap, afin de soutenir une planification énergétique fiable et des travaux de modélisation robustes.</p>
+    </div>
+
+  <div class="who-we-are-section-services-card">
+      <div class="card-icon">🔗</div>
+      <h3>Intégration des données de réseau </h3>
+      <p>Nous vous accompagnons dans l’intégration, la validation et la maintenance de vos données SIG d’infrastructures électriques, en utilisant OpenStreetMap comme une source primaire ou secondaire.</p>
+    </div>
+  </div>
+
+  <div class="hero-buttons" style="display: flex; justify-content: center; gap: 1rem;">
+      <a href="/services/MapYourGrid_Services.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+       En savoir plus sur nos services 💼
+      </a>
+      <a href="mailto:MapYourGrid@gmail.com" target="_blank" rel="noopener" class="btn btn-primary">
+       Parlez-nous de vos besoins 📧
+      </a>
+  </div>
+
+  
+</div>
+
 
 <div class="our-mapping-section" style="display: flex; flex-direction: column; align-items: center;">
  <h2>S'abonner à notre bulletin</h2>

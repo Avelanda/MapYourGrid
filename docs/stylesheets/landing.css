@@ -448,6 +448,49 @@ body.landing-page header.md-header {
   object-fit: contain; /* Ensure the logo scales nicely without distortion */
 }
 
+.who-we-are-section-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.who-we-are-section-services-card {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 16px;
+}
+
+.who-we-are-section-services-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(42, 109, 60, 0.15);
+}
+
+.who-we-are-section-services-card h3 {
+  text-align: center;
+  color: #2a6d3c;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.who-we-are-section-services-card p {
+  text-align: center;
+  color: #4a5568;
+  line-height: 1.6;
+  font-weight: 400;
+  flex-grow: 1;
+}
+
 /* ==== RESPONSIVE HERO SECTION FIX ==== */
 /* Add intermediate breakpoint for tablets/small laptops */
 @media (max-width: 1200px) and (min-width: 100px) {

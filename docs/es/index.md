@@ -9,27 +9,29 @@ image: ../images/website/mapyourgrid-preview.jpg
 title: MapYourGrid
 ---
 
+
 <div class="hero-section">
- <div class="hero-content-left">
- <h1 class="hero-title">MapYourGrid</h1>
- <p class="mission-statement"> Capacitamos a individuos, comunidades y naciones de todo el mundo para cartografiar la red eléctrica.
- </p>
- <div class="hero-buttons">
- <a href="/starter-kit/" target="_blank" rel="noopener" class="btn btn-primary">
- Aprende a mapear la red⚡
- </a>
- <a href="/map-it/" target="_blank" rel="noopener" class="btn btn-secondary">
- Map It📍
- </a>
- <a href="https://drive.google.com/file/d/1qzWIZ1Rq5s_DFfVhbZCS2a0-XZrez29A/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary">
- Resumen 📄
- </a>
- </div>
- </div>
- <div class="hero-content-right">
- <img src="../images/logos/MapYourGrid-logo.webp" class="hero-logo off-glb">
- </div>
+  <div class="hero-content-left">
+    <h1 class="hero-title">MapYourGrid</h1>
+    <p class="mission-statement"> Capacitamos a individuos, comunidades y naciones de todo el mundo para cartografiar la red eléctrica.
+    </p>
+    <div class="hero-buttons">
+     <a href="/starter-kit/" target="_blank" rel="noopener" class="btn btn-primary">
+       Aprende a mapear la red⚡
+     </a>
+     <a href="/map-it/" target="_blank" rel="noopener" class="btn btn-secondary">
+        Map It📍
+     </a>
+     <a href="../services/MapYourGrid_Services.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+       Nuestros servicios 💼
+     </a>
+    </div>
+  </div>
+  <div class="hero-content-right">
+    <img src="../images/logos/MapYourGrid-logo.webp" class="hero-logo off-glb">
+  </div>
 </div>
+
 
 <div class="initiative-section">
  <div class="initiative-content">
@@ -210,6 +212,45 @@ title: MapYourGrid
  </div>
 </div>
 </div>
+
+<div class="who-we-are-section">
+<h2>Nuestros Servicios</h2>
+<p class="lead-statement">
+Acompañamos a las organizaciones en todas las etapas de su trabajo con datos de infraestructuras eléctricas, desde el desarrollo de capacidades internas hasta la producción de conjuntos de datos fiables y listos para la modelización, y la integración de OpenStreetMap en flujos de trabajo SIG operativos. Nuestros servicios mejoran la calidad de los datos, refuerzan la autonomía de los equipos y garantizan que los datos de redes eléctricas sean fiables, mantenibles y reutilizables a largo plazo.
+</p>
+
+<div class="who-we-are-section-services-grid">
+    <div class="who-we-are-section-services-card">
+      <div class="card-icon"> 🎓 </div>
+      <h3>Formación en cartografía de infraestructuras eléctricas</h3>
+      <p>Dotamos a sus equipos de la capacidad para cartografiar, validar y mantener de forma autónoma datos de infraestructuras eléctricas de alta calidad en OpenStreetMap.</p>
+    </div>
+
+   <div class="who-we-are-section-services-card">
+      <div class="card-icon">🗺️</div>
+      <h3>Servicios de cartografía de redes eléctricas</h3>
+      <p>Nuestros cartógrafos especializados mejoran la cobertura, la precisión y la calidad de los datos de redes eléctricas en OpenStreetMap para una planificación energética fiable y una modelización sólida.</p>
+    </div>
+
+  <div class="who-we-are-section-services-card">
+      <div class="card-icon">🔗</div>
+      <h3>Integración de datos de red </h3>
+      <p>Le acompañamos en la integración, validación y mantenimiento de sus datos SIG de infraestructuras eléctricas, utilizando OpenStreetMap como fuente fiable, principal o complementaria.</p>
+    </div>
+  </div>
+
+  <div class="hero-buttons" style="display: flex; justify-content: center; gap: 1rem;">
+      <a href="/services/MapYourGrid_Services.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+       Saber más sobre nuestros servicios 💼
+      </a>
+      <a href="mailto:MapYourGrid@gmail.com" target="_blank" rel="noopener" class="btn btn-primary">
+       Cuéntenos sus necesidades 📧
+      </a>
+  </div>
+
+  
+</div>
+
 
 <div class="our-mapping-section" style="display: flex; flex-direction: column; align-items: center;">
  <h2>Suscríbase a nuestro boletín</h2>
