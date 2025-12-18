@@ -5,22 +5,35 @@ hide:
 ---
 
 <div class="page-headers">
-  <h1>Grid Data</h1>
+  <h1>Global Grid Data</h1>
 </div>
-
 You are looking for a way on how to download the power infrastructure data from OpenStreetMap? Here a different ways to get this data: 
 
 1. If you are not interested in contributing to this dataset and are simply looking to export GIS-ready data, we kindly ask you to pay a fair price for a proper data export from [OpenInfraMap](https://openinframap.org/#2/26/12). This is particularly recommended if you are unfamiliar with OpenStreetMap or if you require an export of a large country.  
 2. You want to use this data for energy system modelling like PyPSA-Earth, you know how to use Python and understand how to deal with large OpenStreetMap extracts. Please use [earth-osm](https://github.com/pypsa-meets-earth/earth-osm).
 3. You are a contributor to OpenStreetMap, are able to filter data, and want to process this data on your machine for a small country, province, or a state? Please check out our [JOSM Starter-Kit](https://mapyourgrid.org/starter-kit/#josm-starter-kit) and you will learn how to download the data.
 
-
-
 <div class="page-headers">
   <h2>Global Public Available Grid Data</h2>
 </div>
 
-MapYourGrid also curated a list of resources in the field of electrical grid mapping to improve global open data coverage, harmonization and quality for a sustainable energy transition.
+<div class="awesome-github-btn">
+  <a href="https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping" target="_blank" rel="noopener">
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+        width="20" height="20">
+    <span>Contribute</span>
+  </a>
+</div>
+
+<div class="awesome-github-btn">
+  <a href="http://mapyourgrid.infos-reseaux.com:9001/api/v1/buckets/mapyourgrid/objects/download?prefix=data-worldwide%2Fawesomelist.csv" target="_blank" rel="noopener">
+   <img src="https://raw.githubusercontent.com/open-energy-transition/MapYourGrid/refs/heads/main/docs/icons/download_icon.png"
+         width="20" height="20">
+    <span> Download in csv</span>
+  </a>
+</div>
+
+A curated list of resources in the field of electrical grid mapping to improve global open data coverage, harmonization and quality for a sustainable energy transition.
 
 ???+ question "Why we've copiled these resources"
     The datasets, maps and all resources compiled here are used to estimate the grid coverage in OpenStreetMap and to find missing lines. Do not copy/paste data from these maps directly into your OpenStreetMap layer. Each data point of the transmission network must be set manually and [verified](https://wiki.openstreetmap.org/wiki/Verifiability) with official satellite data provided by the OpenStreetMap community.
@@ -36,23 +49,6 @@ MapYourGrid also curated a list of resources in the field of electrical grid map
 * (Country or Region) [Title](link) (year of publication or last update : YYYY) (license type) (tags in separate parentheses : capacitydata | dataset | map | report) ⚠️⚠️⚠️ -->
 
 ![](https://raw.githubusercontent.com/open-energy-transition/Awesome-Electrical-Grid-Mapping/refs/heads/main/scripts/countries_map_with_logo.png)
-
-
-<div class="awesome-github-btn">
-  <a href="https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping" target="_blank" rel="noopener">
-    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-        width="20" height="20">
-    <span>Contribute</span>
-  </a>
-</div>
-
-<div class="awesome-github-btn">
-  <a href="http://mapyourgrid.infos-reseaux.com:9001/api/v1/buckets/mapyourgrid/objects/download?prefix=data-worldwide%2Fawesomelist.csv" target="_blank" rel="noopener">
-   <img src="docs/icons/download_icon.png"
-         width="20" height="20">
-    <span> Download in csv</span>
-  </a>
-</div>
 
 <div class="awesome-tabs-scope"></div>
 

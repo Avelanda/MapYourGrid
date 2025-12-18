@@ -46,6 +46,16 @@ ALIAS_LICENSE = {
     }
 
 GITHUB_BUTTON = """
+You are looking for a way on how to download the power infrastructure data from OpenStreetMap? Here a different ways to get this data: 
+
+1. If you are not interested in contributing to this dataset and are simply looking to export GIS-ready data, we kindly ask you to pay a fair price for a proper data export from [OpenInfraMap](https://openinframap.org/#2/26/12). This is particularly recommended if you are unfamiliar with OpenStreetMap or if you require an export of a large country.  
+2. You want to use this data for energy system modelling like PyPSA-Earth, you know how to use Python and understand how to deal with large OpenStreetMap extracts. Please use [earth-osm](https://github.com/pypsa-meets-earth/earth-osm).
+3. You are a contributor to OpenStreetMap, are able to filter data, and want to process this data on your machine for a small country, province, or a state? Please check out our [JOSM Starter-Kit](https://mapyourgrid.org/starter-kit/#josm-starter-kit) and you will learn how to download the data.
+
+<div class="page-headers">
+  <h2>Global Public Available Grid Data</h2>
+</div>
+
 <div class="awesome-github-btn">
   <a href="https://github.com/open-energy-transition/Awesome-Electrical-Grid-Mapping" target="_blank" rel="noopener">
     <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
