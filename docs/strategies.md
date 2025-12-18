@@ -214,7 +214,16 @@ WikiData provides access to Wikipedia articles about power infrastructure around
 1. You can now step through all WikiData entries by pressing 'Mark'.
 1. If you spot any power plants or industrial areas missing, please also include these in your mapping.
 
-<div class="wikidata-mobile-fix" style="float: right; margin: 0 0 20px 20px; width: 250px; max-width: 100%;">
+<br>
+
+#### Linking OpenStreetMap to WikiData
+
+ Linking other datasets to OpenStreetMap objects, such as power plants, can significantly enrich the data and help to avoid licence issues. Often, other data catalogues provide more up-to-date information about objects than OpenStreetMap. WikiData provides an excellent means of linking all these different data sources together in a standardised way. The datasets we provide will also include the [WikiData QID](https://wiki.openstreetmap.org/wiki/Key:Wikidata). Adding these QIDs to OpenStreetMap objects greatly improves the quality and usability of data relating to power plants, substations, and interconnectors. To automate the process of creating and uploading datasets and IDs to Wikidata, check out our [Wikidata QID Generator](https://github.com/open-energy-transition/wikidata_qid_generator). To quickly link Wikidata entries with roughly estimated coordinates to objects in OpenStreetMap, the [JOSM Wikipedia plugin](https://josm.openstreetmap.de/wiki/Help/Plugin/Wikipedia) can significantly speed up the process.
+
+To match other datasets, such as Global Energy Monitor, with Wikidata, tools like [Mix'n'Match](https://mix-n-match.toolforge.org/) can be very helpful. A workflow using these tools could look like this:
+
+
+ <div class="wikidata-mobile-fix" style="float: right; margin: 0 0 20px 20px; width: 250px; max-width: 100%;">
  <style>
     @media (max-width: 768px) {
       .wikidata-mobile-fix {
@@ -228,13 +237,25 @@ WikiData provides access to Wikipedia articles about power infrastructure around
     <figcaption class="image-caption">WikiData QID enables Open Infrastructure Map to link to databases like Global Energy Monitor.</figcaption>   
 </div>
 
-<br>
+1. **Confirm Already Matched Plants**  
+    - Start by reviewing the plants that are already matched: [Matched Plants List](https://mix-n-match.toolforge.org/#/list/6736/auto)  
+    - Ensure that each entry corresponds to the exact same plant.  
+    - If any entry is not an exact match, remove it from the list.
 
-#### Linking OpenStreetMap to WikiData
+2. **Identify Plants Missing on Wikidata**  
+    - Look for plants on GEM that should have Wikidata items but currently do not.  
+    - A useful report for finding these is: [Common Names Report](https://mix-n-match.toolforge.org/#/common_names/6736)
 
- Linking other datasets to OpenStreetMap objects, such as power plants, can significantly enrich the data and help to avoid licence issues. Often, other data catalogues provide more up-to-date information about objects than OpenStreetMap. WikiData provides an excellent means of linking all these different data sources together in a standardised way. The datasets we provide will also include the [WikiData QID](https://wiki.openstreetmap.org/wiki/Key:Wikidata). Adding these QIDs to OpenStreetMap objects greatly improves the quality and usability of data relating to power plants, substations, and interconnectors.
+3. **Check for Multiple Catalogs**  
+    - In the report, determine if multiple external datasets (catalogs) have the same plant concept.  
+    - Ensure these concepts do not already have a Wikidata item before proceeding.
 
-<br><br><br><br>
+4. **Candidate Item Creation**  
+    - Identify good candidates for new Wikidata items, for example: [Cement Australia Candidate](https://mix-n-match.toolforge.org/#/creation_candidates/by_ext_name/?ext_name=Cement%20Australia)  
+    - Make sure that the candidate represents the exact same item or concept before creating a new Wikidata item.
+
+
+<br><br>
 
 ## <div class="stradegy-header">Technical Mapping Strategies</div></h2>
   
@@ -355,12 +376,38 @@ Platforms such as [Mapillary](https://www.mapillary.com/) or [Panoramax](https:/
 2. Under `Windows` you should now find a `Mapillary` imagery layer. Click it.
 3. You need to zoom in a lot to make the roads visible where imagery is available. Activating this layer allows you to click on every node to visualise the image. To browsing fast where imagery is available can be done with the [web interface of Mapillary](https://www.mapillary.com/app)
 
+### <div class="tools-header">Add Additional Aerial Imagery to JOSM</div></h3>
 
+Besides ESRI, Bing and Mapbox, JOSM integrates a wide range of other great global and local imagery. All available local imagery should be visible for the region you have selected in JOSM when you click on `Imagery` in the top toolbar. To add global satellite data products like Sentinel 2 to JOSM or search local datasets go to `Imagery` -> `Imagery Preferences`. Here you can search various imagery sources like `EOx cloudless Sentinel-2 2024` data. 
+
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+    <img src="../images/sentinel2-turbines.jpg" class="img-border" alt="sentinel2 turbines">
+    <figcaption class="image-caption">Depending on the size, background and sun angle, wind turbines can even be mapped with Sentinel 2 imagery.</figcaption>
+</div>
+
+
+Even though Sentinel-2 imagery has a much lower resolution, it can help you to verify data from other datasets because, for many regions, it is the most recent dataset available. Depending on the size of the project and background, it can be used to verify and map 400 kV lines, larger substations, solar parks and even wind turbines. 
+
+
+JOSM also allows you to add imagery and maps from defined tile services, such as Esri Wayback or HOT high-resolution imagery. The OpenStreetMap diary [Using Esri Wayback Imagery in OSM Editor](https://www.openstreetmap.org/user/Deane%20Kensok/diary/397014) provides great step-by-step documentation on how to do this in ID. A similar integration can be done in JOSM under `Imagery` -> `Imagery Preferences`. Esri Wayback Imagery can be very helpful to investigate when infrastructure was built or cables have been buried underground. Also, in some cases, lines and towers can be more visible in older imagery because of a different sun angle or change of sessions.  
+
+
+To find further imagery layers that are not natively integrated into JOSM, check out the  [OSM Editor Layer Index](https://github.com/osmlab/editor-layer-index) project. 
+
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+    <img src="../images/filter-circuits.jpg" class="img-border" alt="Filter">
+    <figcaption class="image-caption">JOSM is only showing the transmission lines without circuits in Pakistan by using the Filter.</figcaption>
+</div>
+
+### <div class="tools-header">Searching for Missing Data like Cables using the Filter</div></h3>
+To find objects that are missing attributes like WikiData, names, cables or circuits you can easily filter the shown data in JOSM by that. Just Click on `Windows` -> `Filter`. By adding a filter string like `power=line AND (circuits: OR cables)`, you can now hide, invert or deactivate the data that already provides this information from the editor, showing only the data without circuits or cables. 
 
 
 ### <div class="tools-header">Improve OSM tags with PPM</div></h3>
 
 <a href="https://github.com/PyPSA/powerplantmatching" target="_blank">Powerplantmatching (PPM)</a> is a python repository designed to harmonize and combine power plant datasets from sources like OpenStreetMap (OSM) and Global Energy Monitor. It is widely used to prepare validated generation data for energy system models such as PyPSA-EUR. A new feature now fetches power plant data  from OSM and flags all <strong>power plants and generators that are rejected</strong> due to incomplete or inconsistent metadata. These include elements missing a <code>name</code>, <code>output:electrical</code>, <code>plant:method</code>, incorrect unit formats, among others.
+
+You can access this data through our [Map It📍](https://MapYourGrid.org/map-it/) interface. Select the <strong>powerplantmatching</strong> button and click on any country to download a GeoJSON file listing rejected power plants. Once you've downloaded the file open it JOSM as a hint layer to help improve tagging. You can do this by reviewing the reason why the power plant was not considered and adding the missing data. For example, a common reason is the lack of a technology tag like <code>plant:method=run-of-river</code> or <code>plant:method=reservoir</code> on hydro power plants, or <code>plant:method=wind_turbine</code> on wind farms relations.
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
     <img src="/images/ppm-hint-layer.jpg" class="img-border" alt="PPM Rejected Power Plants GeoJSON">
@@ -368,9 +415,6 @@ Platforms such as [Mapillary](https://www.mapillary.com/) or [Panoramax](https:/
         Power plants rejected by powerplantmatching due to missing metadata, displayed in red as a JOSM hint layer. In black, the power infraestructure grid from OSM.
     </figcaption>   
 </div>
-
-You can access this data through our [Map It📍](https://MapYourGrid.org/map-it/) interface. Select the <strong>powerplantmatching</strong> button and click on any country to download a GeoJSON file listing rejected power plants. Once you've downloaded the file open it JOSM as a hint layer to help improve tagging. You can do this by reviewing the reason why the power plant was not considered and adding the missing data. For example, a common reason is the lack of a technology tag like <code>plant:method=run-of-river</code> or <code>plant:method=reservoir</code> on hydro power plants, or <code>plant:method=wind_turbine</code> on wind farms relations.
-
 
 Follow the steps below to help improve rejected power plants in OSM:
 
@@ -380,6 +424,7 @@ Follow the steps below to help improve rejected power plants in OSM:
 4. Switch to your OSM transmission or power layer.
 5. Step through the rejected entries by pressing `Mark` in JOSM.
 6. Improve tagging to enhance the quality of OSM data.
+
 
 
 ## <div class="stradegy-header">Quality Assurance and Validation</div>
