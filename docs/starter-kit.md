@@ -102,7 +102,7 @@ Sometimes, there are several possible options for line routing and it is unclear
 
 1. Install JOSM using the [**recommended instructions**](installation-instructions.md){target="_blank"} for your machine.
 1. Link your OSM account to JOSM. To do this, go to `Edit → Preferences → OSM Server` and select "Authorise". Login (or sign-up) with your OSM account. Your OSM account should now be linked. On macOS `Preferences` can be found under `JOSM → Settings`
-1. Enable `Remote control` in `Edit → Preferences → Remote Control`. This allows for grid data to be loaded automatically.
+1. Enable `Remote control` in `Edit → Preferences → Remote Control`. This allows for grid data to be loaded automatically from the browser into JOSM. Please note that Safari does not support remote control. You will need to use a different browser to make this work. 
 1. Enable `Expert Mode` `View → Expert Mode` to enable search function that you will need. 
 1. Understanding JOSM layers. JOSM works with stacked layers, similar to Photoshop or GIS tools:
     * You’ll typically have an OSM data layer, imagery layers, and optionally GeoJSON or task layers.
