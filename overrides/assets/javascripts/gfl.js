@@ -2,8 +2,8 @@
 const SUPABASE_URL = 'https://momhpgtitabhlpsxcqxh.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1vbWhwZ3RpdGFiaGxwc3hjcXhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk3MzUxODMsImV4cCI6MjA3NTMxMTE4M30.IUj10ikNkwip_iZsGxR8vUWNgRtK9aaiTovpTeKvm4c'; // Replace this!
 
-// Supabase client will be initialized after library loads
-let supabase;
+const { createClient } = window.supabase;
+const supabaseClient = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Country code mapping for flags
 const countryFlags = {
@@ -100,7 +100,7 @@ async function loadLines() {
   const container = document.getElementById('gfl-container');
   
   try {
-    const { data, error } = await supabase
+    const { data, error } = await supabaseClient
       .from('lines')
       .select('*')
       .neq('status', 'completed')
@@ -186,7 +186,7 @@ async function updateStatus(id, statusType, isChecked) {
   try {
     const newStatus = isChecked ? 'attempted' : 'available';
     
-    const { error } = await supabase
+    const { error } = await supabaseClient
       .from('lines')
       .update({ status: newStatus })
       .eq('id', id);
@@ -217,7 +217,7 @@ async function markCompleted(id) {
   }
   
   try {
-    const { error } = await supabase
+    const { error } = await supabaseClient
       .from('lines')
       .update({ status: 'completed' })
       .eq('id', id);
@@ -249,7 +249,7 @@ async function markCompleted(id) {
 document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('submit-gfl').addEventListener('click', async () => {
     // Check if Supabase is initialized
-    if (!supabase) {
+    if (!supabaseClient) {
       document.getElementById('form-message').innerHTML = '<span class="error">Still loading... Please wait a moment.</span>';
       return;
     }
@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     try {
-      const { error } = await supabase
+      const { error } = await supabaseClient
         .from('lines')
         .insert([{
           coordinates: coordinates,
@@ -313,21 +313,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-
-// Load Supabase library and initialize
-(function() {
-  const script = document.createElement('script');
-  script.src = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
-  script.onload = () => {
-    // Initialize Supabase client after library loads
-    supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-    
-    // Now load the data
-    loadLines();
-  };
-  script.onerror = () => {
-    document.getElementById('gfl-container').innerHTML = '<p class="error">Error loading required libraries. Please refresh the page.</p>';
-  };
-  document.head.appendChild(script);
-})();
+document.addEventListener('DOMContentLoaded', () => {
+  loadLines();
+});

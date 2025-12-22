@@ -57,4 +57,5 @@ Map your first power line! These coordinates point to easy-to-map power lines pe
 
 [Archived Lines :fontawesome-solid-paper-plane:](archive/archive.md){ .md-button .md-button--primary }
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="/assets/javascripts/gfl.js"></script>
