@@ -61,15 +61,20 @@ The MapYourGrid Website combines resources from multiple repositories:
 1. [Awesome-Electric-Grid-Mapping](https://github.com/open-energy-transition/Awesome-Electric-Grid-Mapping) - A curated list of global electrical grid maps, datasets and resources, integrated into the MapYourGrid Data page. 
 1. [ColorMyGrid](https://github.com/open-energy-transition/color-my-grid) - Definition of default MapYourGrid MapCSS files and tools for generating customized MapCSS styles for electrical transmission networks in JOSM (Java OpenStreetMap Editor).
 1. [osm-grid-definition](https://github.com/open-energy-transition/osm-grid-definition) - This is repository contains all the overpass queries linked to the MapYourGrid Map It📍 page.
+1. [ValidateMyGrid](https://github.com/open-energy-transition/validate-my-grid) - Transmission Grid Validation Rules for JOSM 
+1. [Grid Inspector](https://github.com/ben10dynartio/apps_mapyourgrid) - Inspect the Data Quality of Transmission Grid data in OpenStreetMap. 
+1. [Osmose QA](https://github.com/osmose-qa/osmose-backend) - QA analyses of OpenStreetMap data.
 1. [osm-wikidata Toolset](https://github.com/open-energy-transition/osm-wikidata-toolset) - This repository contains a set of tools to extract, transform and analyze wikidata electricity infrastructure information and asses its potential integration to Open Street Map.
 1. [Wikidata QID Generator](https://github.com/open-energy-transition/wikidata_qid_generator) - The Wikidata QID Generator automates the transformation of national electricity lines and circuits datasets into QuickStatements (QS) files for Wikidata batch upload.
 1. [KPI Tracker tools](https://github.com/open-energy-transition/KPI-OSM) - Includes Overpass scripts, as well as a web interface that allows you to track your progress in mapping the transmission grid on OpenStreetMap.
 1. [osm-power-grid-map-analysis](https://github.com/ben10dynartio/osm-power-grid-map-analysis) - Build maps and graph analysis on OpenStreetMap power grid data 
-1. [ValidateMyGrid](https://github.com/open-energy-transition/validate-my-grid) - Transmission Grid Validation Rules for JOSM 
-1. [Grid Inspector](https://github.com/ben10dynartio/apps_mapyourgrid) - Inspect the Data Quality of Transmission Grid data in OpenStreetMap. 
-1. [OET_dataviz](https://github.com/datactivist/OET_dataviz) - Building quality indicators for MapYourGrid and tracking transmission grid mapping in OpenStreetMap
+1. [OET_dataviz](https://github.com/datactivist/OET_dataviz) - Building quality indicators for MapYourGrid and tracking transmission grid mapping in OpenStreetMap.
+1. [Podoma](https://github.com/osm-fr/podoma) - The OpenStreetMap statistics engine for thematic contributions.
+1. [Grid Tycoon](https://github.com/open-energy-transition/grid-tycoon) - A collaborative web application for organizing and coordinating OpenStreetMap power infrastructure mapping sessions across Indian states and territories.
+1. [OSM Industrial Filter](https://github.com/open-energy-transition/osm-industries) - A Python tool for extracting and filtering industrial land use areas from OpenStreetMap data by size, with support for country-based queries and JOSM integration.
 
 ## Early Prototypes integrated into the MapYourGrid repository. 
 1. [osmose-per-country](https://github.com/open-energy-transition/osmose_per_country) - This is a front end interface that allows fetching data on gaps in the OSM data through the OSMOSE API on a country level.
 1. [gem-per-country](https://github.com/open-energy-transition/gem_per_country) - This website helps to generate country specific geojson files with Power Plants as curated by Global Energy Monitor.
 1. [Grid Mapping Starter Kit](https://github.com/open-energy-transition/grid-mapping-starter-kit) - A starter kit for Electrical Transmission Grid Mapping in OpenStreetMap, combining Osmose and Overpass with JOSM.
+1. [Grid Mapping Logbook](https://github.com/open-energy-transition/grid-mapping-logbook) - This repository documents the process of mapping electricity infrastructure such as transmission towers/lines/poles, generators, substations and transformers using OpenStreetMap
