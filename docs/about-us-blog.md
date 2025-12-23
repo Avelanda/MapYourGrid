@@ -274,30 +274,26 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
 
 - <a href="../blog/20251209-humans-for-the-grid" style="text-decoration: none; color: inherit;">
   <img src="/images/asia-grid.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
-  **Humans for the Grid - Why data on the electrical grid still demands actual human labor (9 Dec. 2025)**
-  Despite advances in AI and automation, high-quality grid mapping still relies on skilled human mappers whose expertise ensures accuracy, verification, and community-driven improvement.  
-  [:arrow_right: Read more](blog/20251209-humans-for-the-grid.md)
+  **Humans for the Grid - Why data on the electrical grid still demands actual human labor (9 Dec. 2025)** <br>
+  Despite advances in AI and automation, high-quality grid mapping still relies on skilled human mappers whose expertise ensures accuracy, verification, and community-driven improvement. [:arrow_right: Read more](blog/20251209-humans-for-the-grid.md)
 </a>
 
 - <a href="../blog/20251128-LineLength" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/7.312.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
   **Global Transmission Length Index, world's first open and free grid length database (28 Nov. 2025)**  
-  In November 2025, we finalised the  'Global Transmission Length Index'. This database includes the high-voltage circuit line lengths of almost every country in the world, per voltage, and with sources.
-  [:arrow_right: Read more](blog/20251128-LineLength.md)
+  In November 2025, we finalised the  'Global Transmission Length Index'. This database includes the high-voltage circuit line lengths of almost every country in the world, per voltage, and with sources. [:arrow_right: Read more](blog/20251128-LineLength.md)
 </a>
 
 - <a href="../blog/20250918-HIFLD" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/usa-final-hifld.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
   **OpenStreetMap grid data, the hidden superhero of the US’ national security? (18 Sept. 2025)**  
-  California wildfires, the Colonial Pipeline cyberattack, hurricane and flooding responses such as Hurricane Maria, all have something in common: EAGLE-I.  
-  [:arrow_right: Read more](blog/20250918-HIFLD.md)
+  California wildfires, the Colonial Pipeline cyberattack, hurricane and flooding responses such as Hurricane Maria, all have something in common: EAGLE-I. [:arrow_right: Read more](blog/20250918-HIFLD.md)
 </a>
 
 - <a href="../blog/20250908-BehindTheScenes" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/MYG-all-edits-and-global.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
   **Behind the Scenes of MapYourGrid (08 Sept. 2025)**  
-  In August 2025, we made MapYourGrid publicly available. For seven months before that, our team of developers, data scientists, energy experts worked side by side, testing tools and mapping grids ourselves.  
-  [:arrow_right: Read more](blog/20250908-BehindTheScenes.md)
+  In August 2025, we made MapYourGrid publicly available. For seven months before that, our team of developers, data scientists, energy experts worked side by side, testing tools and mapping grids ourselves. [:arrow_right: Read more](blog/20250908-BehindTheScenes.md)
 </a>
 
 </div>

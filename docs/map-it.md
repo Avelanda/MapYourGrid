@@ -712,12 +712,10 @@ setTimeout(() => {
   } else {
     html = `
       <div class="popup-success">
-        <p>🎉 <strong>Great!</strong> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if it is downloading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on regions or states (also works for osmose). For <strong> GEM </strong> selections, you will need to download the geojson file. Afterwards drag and drop the file into JOSM. For osmose, wikidata and powerplantmatching, the layer will be directly loaded in JOSM. <br>⚠️ <strong>If nothing happens:</strong></p>
-        <ol>
-          <li>Check if your ad-blocker is off and JOSM is open</li>
+        <p> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if your data is loading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on provinces or states.<br>⚠️If nothing happens:</p><ol><li> <strong>Please be aware that the servers used to download your data via Overpass are sometimes overloaded, so you may need to click your region again if you receive an error message in JOSM.</strong></li>
           <li>Make sure Remote Control is enabled in JOSM</li>
           <li>If it’s enabled but still not working, toggle it off and on again</li>
-          <li>Note that hint layers do not work on regional layers (except for Osmose). In this case, please load the data onto a national layer.</li>
+          <li>Note that hint layers do not work on regional layers. In this case, please load the data onto a national layer.</li>
           <li><a href="https://mapyourgrid.org/starter-kit/">Look into the Starter-Kit</a>
         </ol>
       </div>
