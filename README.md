@@ -72,6 +72,7 @@ The MapYourGrid Website combines resources from multiple repositories:
 1. [Podoma](https://github.com/osm-fr/podoma) - The OpenStreetMap statistics engine for thematic contributions.
 1. [Grid Tycoon](https://github.com/open-energy-transition/grid-tycoon) - A collaborative web application for organizing and coordinating OpenStreetMap power infrastructure mapping sessions across Indian states and territories.
 1. [OSM Industrial Filter](https://github.com/open-energy-transition/osm-industries) - A Python tool for extracting and filtering industrial land use areas from OpenStreetMap data by size, with support for country-based queries and JOSM integration.
+1. [OSM Power Plants](https://github.com/open-energy-transition/osm-powerplants) - Extract and process power plant data from OpenStreetMap
 
 ## Early Prototypes integrated into the MapYourGrid repository. 
 1. [osmose-per-country](https://github.com/open-energy-transition/osmose_per_country) - This is a front end interface that allows fetching data on gaps in the OSM data through the OSMOSE API on a country level.
