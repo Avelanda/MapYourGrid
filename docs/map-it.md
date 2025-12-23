@@ -1123,6 +1123,7 @@ map.on('zoomend', function() {
     | CTRL+SHIFT+C   | Copy coordinates of the selected point(s) to clipboard    |
     | CTRL+W         | Switch between activated Map Paint Style and Wireframe    |
     | CTRL+H         | History (opens history dialog for selected objects)       |
+    | CTRL+U         | Update the existing geometries and tags loaded in JOSM    | 
     | Shift+V        | Validate (runs data validation on the current layer)      |
     | Tabulator      | Show/hide Sidebar and Edit toolbar                        |
 

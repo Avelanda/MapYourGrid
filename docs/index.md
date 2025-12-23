@@ -66,7 +66,7 @@ image: images/website/mapyourgrid-preview.jpg
       <div class="stat-number-wrapper">
         <span id="stat-towers" class="stat-number">...</span>
       </div>
-      <div class="stat-label">Power Towers since March 2025</div>
+      <div class="stat-label">Power Towers</div>
     </div>
     <div class="stat-card">
       <div class="stat-icon ">
@@ -75,7 +75,7 @@ image: images/website/mapyourgrid-preview.jpg
       <div class="stat-number-wrapper">
         <span id="stat-contributors" class="stat-number">...</span>
       </div>
-      <div class="stat-label">Contributors since March 2025</div>
+      <div class="stat-label">Contributors</div>
     </div>
     <div class="stat-card">
       <div class="stat-icon">
@@ -84,7 +84,7 @@ image: images/website/mapyourgrid-preview.jpg
       <div id="stat-lines-wrapper" class="stat-number-wrapper">
         <span id="stat-lines" class="stat-number">...</span>
       </div>
-      <div class="stat-label">Power Lines in km since March 2025</div>
+      <div class="stat-label">Power Lines in km</div>
     </div>
   </div>
   <div>

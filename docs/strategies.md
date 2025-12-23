@@ -290,17 +290,25 @@ The OpenData plugin will allow you to load all kinds of GIS formats directly int
       ⚠️ Please use these datasets as hint layers. Do not copy and paste data from these maps directly into OpenStreetMap. Each data point of the transmission network must be set manually and <a href="https://wiki.openstreetmap.org/wiki/Verifiability">verified</a> with official satellite data provided by the OpenStreetMap community.
 
 ### <div class="tools-header">FixMe tags</div></h3>
+
 OpenStreetMap allows mappers to quickly mark an object that seems to be wrong and needs fixing using the [Key:fixme](https://wiki.openstreetmap.org/wiki/Key:fixme) tag. For example, you can write `fixme=wrong voltage` if you think the voltage on a line is incorrect, but you don't know the correct value. A small F will then be visible on the edge of the symbol to indicate the fixme tag. Stepping through all the `fixme` tags in a country is also a great way to search for errors in the grid that you can try to fix. We recommend using the `Todo` plugin for this.
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
     <img src="/images/fixme.jpg" class="img-border float-right" alt="Fixme tags loaded in the Todo list.">
-  <figcaption class="image-caption">Fixme tags loaded in the Todo list.</figcaption>
+  <figcaption class="image-caption">FixMe tags offer an easy way to communicate with other mappers.</figcaption>
 </div>
 
 1. Download the grid you want to look into using at the [Map It📍](https://MapYourGrid.org/map-it/) page.
 2. Press `CTRL+F`and search for `fixme=*`.
 3. In the Todo list window press `Add`.
-4. Once you have fixed an issue, please remove the `fixme` tag..
+4. Once you have fixed an issue, please remove the `fixme` tag.
+
+FixMe tags provide an efficient means of communicating with other mappers in your region regarding issues or uncertainties you have identified in your own or others' mapping. 
+
+1. To make the FixMe tags easily accessible and to quickly visualise the notes directly on the map, activate `FixMe and Note` MapCSS under `Edit → Preferences Map → Paint Styles`. 
+2. Search the `Available Styles` for `FixMe and Note`. 
+3. Load it into your Active Styles and press `OK`, 
+4. **Bonus:** Are you mapping the same region as someone else and want to update your fixme tags, using the fixme tags as a quick way to communicate and share information on the map? Pressing `CTRL+U` updates all the geometries and tags of the data you have already loaded.
 
 ### <div class="tools-header">Open Infrastructure Map - Nighttime, Osmose and JOSM </div></h3>
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">

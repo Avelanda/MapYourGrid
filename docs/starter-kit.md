@@ -85,9 +85,6 @@ Sometimes, there are several possible options for line routing and it is unclear
 ## <div class="stradegy-header">JOSM Starter-Kit</div></h3>
 ### **<div class="tools-header">Check out our starter-kit video tutorial for JOSM</div>**
 <iframe width="720" height="315" style="height: auto; aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/SCOmFnW7uG8?si=hSxN_3SFm-cFFWuh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-### **<div class="tools-header">1. Install and Configure JOSM  <img src="/images/josm_logo.jpg" style="height: 1.2em; vertical-align: middle; margin-left: 10px;"></div>** 
-
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
   <img src="/images/starter-kit/kenya-tanzania.jpg" class="img-border" style="width: 100%;"> </a>
@@ -98,6 +95,8 @@ Sometimes, there are several possible options for line routing and it is unclear
   <figcaption class="image-caption">For countries such as Japan, high-resolution imagery is available across the whole country in JOSM. Click to enlarge.</figcaption>
 </div>
 
+    
+### **<div class="tools-header">1. Install and Configure JOSM  <img src="/images/josm_logo.jpg" style="height: 1.2em; vertical-align: middle; margin-left: 10px;"></div>** 
 
 
 1. Install JOSM using the [**recommended instructions**](installation-instructions.md){target="_blank"} for your machine.
@@ -115,26 +114,29 @@ Sometimes, there are several possible options for line routing and it is unclear
     **By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Code of Mappers cannot be enforced for volunteer community mappers either.** 
 
 
-### **<div class="tools-header">2. Setup your Presets and quality assurance rules </div>**
+### **<div class="tools-header">2. Setup your Presets and Quality Assurance Rules </div>**
 
 <div style="float: right; margin: 10px 0 20px 20px; width: 350px;">
   <img src="/images/josm-toolbar.png" class="img-border" style="width: 100%;"> 
   <figcaption class="image-caption">Default MapYourGrid Presets in JOSM toolbar. Click to enlarge.</figcaption>
+  <img src="/images/presets-energy.jpg" class="img-border" style="width: 100%;"> </a>
+  <figcaption class="image-caption">The existing presets help you to map infrastructure fast and in a standardized way.</figcaption>
 </div>
 
 1. For ease of mapping, customise your top toolbar with presets if you have not used the default preferences. Right click the toolbar and choose `Configure toolbar` (or also `Preferences → Toolbar`). Then on the right, select `Presets → Man Made → Man Made/Power` and add `Power Towers`, `Power Portal`, `Power Substation`, `Power Plants`, `Power Line` and `Power Generators`, by pressing the button in the middle to add these to your toolbar. These are the main objects you will need for transmission grid mapping. You can also remove the presets you won't use.
 2. Another important Preset your will need is `Add Node`. You will find it under `Tools` → `Add Node`. 
 3. When you open a new layer later in the tutorial, the toolbar will stop being grey.
 4. **Optional** - for more experienced mappers we recommend integrating our validation rules. Add MapYourGrid additional quality assurance rules: `Preferences → Data validator`, on the `Tag checker rules` tab, search for `Power QA`, click on the item in the list, and then on the arrow in the middle of the window to add it to your active rules. These validation rules will help you identify and correct any errors that may have been made. JOSM will run these checks before publishing your data and will display any points requiring verification. Please review them and try to fix them to ensure that the data we produce is usable. You can find [more information and explanations about these rules on the wiki](https://wiki.openstreetmap.org/wiki/Power_networks/Quality_Assurance).
-    
-### **<div class="tools-header">3. Add Visual Clarity with Custom Map Styles :art:</div>**
+
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <a href="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" target="_blank">
   <img src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">OhmyGrid legend for transmission grid mapping. Click to enlarge.</figcaption>
 </div>
- 
+
+### **<div class="tools-header">3. Add Visual Clarity with Custom Map Styles :art:</div>**
+
 1. In JOSM, go to `Edit → Preferences → Map Paint Styles` and press the "+" in the top right.
 2. Paste this [URL](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/ohmygrid-default.mapcss){target="_blank"}, or download the raw [file](https://github.com/open-energy-transition/color-my-grid/blob/main/ohmygrid-default.mapcss){target="_blank"} on your device, and add it.
 3. Make sure the style is active in the Map Paint Styles menu. You can check this with `Windows → Map Paint styles`.
@@ -147,18 +149,19 @@ Sometimes, there are several possible options for line routing and it is unclear
 
 ### **<div class="tools-header">4. Let's map! Choose a Good First Line </div>**
 
-Our community is constantly investigating transmission lines that are suitable for beginner friendly mapping experiences. Simply select a 'Good First Lines' from the following page, and tick it if you have started/attemped mapping it. For now, just keep in mind in which country (or region) your picked 'Good first line' is in, as the next step is to load that countries' grid! Select a `Good First Line` from the following page: 
-
-[Good First Lines :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary target="_blank" }
-
-### **<div class="tools-header">5. Load Power Infrastructure into JOSM :inbox_tray:</div>**
-
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="/images/starter-kit/kenya-look-into-data.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">A substation of a hydroelectric power plant in Nigeria and the connection to the transmission grid.</figcaption>
   <img src="/images/starter-kit/double-mapping-warning.jpg" class="img-border" style="width: 100%;">
   <figcaption class="image-caption">The transmission lines do not end abruptly at the pink administrative borders. Therefore, the substation at the end of the interconnector may appear unmapped. The map in the download window displays all OpenStreetMap data, enabling you to swiftly verify whether substations or lines have been mapped. To map across borders, it is always recommended that you load both areas into your editor! Click to enlarge.</figcaption>
 </div>
+
+Our community is constantly investigating transmission lines that are suitable for beginner friendly mapping experiences. Simply select a 'Good First Lines' from the following page, and tick it if you have started/attemped mapping it. For now, just keep in mind in which country (or region) your picked 'Good first line' is in, as the next step is to load that countries' grid! Select a `Good First Line` from the following page: 
+
+[Good First Lines :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary target="_blank" }
+
+
+### **<div class="tools-header">5. Load Power Infrastructure into JOSM :inbox_tray:</div>**
 
 
 1. Make sure remote control is enabled and ad-blocker disabled, and then go to the start mapping [page](https://MapYourGrid.org/map-it/){target="_blank"}, but come back to this page to read the instructions below! 
@@ -194,7 +197,7 @@ Our community is constantly investigating transmission lines that are suitable f
 1. ⚠️ Important : If you used the `add node` technique, delete the node you added right away using `Undo Sequence`, to not upload a random node used to move around quickly. <img src="../images/starter-kit/deletenode.jpg" class="icon-svg off-glb" style="width: 30px; height: auto;">, Control+Z, or by selecting it and pressing Delete.
 1. To extend or create a line, press `Draw Line` <img src="../images/starter-kit/draw-nodes.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> (left toolbar) or `A` on your keyboard, and click on the last tower symbol at the end of the unfinished power line. You should now be able to extend the line. 
 1. Look for the next power tower you can find and click on its footprint. 
-1. If you ever feel unsure about how the line runs, just place towers without the lines. By adding power towers you can do nothing wrong. Adding power towers is the easiest way to get started. To do this you can click on an existing tower and `control+C` and then press on where an unmapped power tower is and `control+V`. 
+1. If you ever feel unsure about how the line runs, just place towers without the lines. By adding power towers you can do nothing wrong. Adding power towers is the easiest way to get started. To do this you can click on an existing tower and `CTRL+C` and then press on where an unmapped power tower is and `CTRL+V`. 
 1. Continue the power line to the best of your ability. 
 1. Once finished, select your line and press CTRL+Shift+N. This will select all of the nodes on the line. 
 1. Then press CTRL+F to open the Search bar. 
@@ -202,6 +205,7 @@ Our community is constantly investigating transmission lines that are suitable f
 1. ⚠️ In the Results tab on the left, check `Find in selection`. ⚠️
 1. Press `Search`. All untagged nodes in your line will now be selected.
 1. Apply the `Power Tower` <img src="../images/starter-kit/power-towers.png" class="icon-svg off-glb" style="width: 30px; height: auto;"> preset from the toolbar, followed by `Apply Preset`. Now all the nodes you have placed are correctly tagged as `Power Tower`.
+1. **Bonus**. Are you mapping with someone else, and/or does the data frequently change? Do you want to update your data in the Editor with the latest tags and extended lines added to OSM since you loaded your data, without loading everything again? By pressing `CTRL+U`, you can update existing geometries and update all the tags, but be aware that completely new geometries and objects that are not connected to existing geometries will not be updated.
 
 !!! note "Pay attention to what you select and upload"
     **⚠️ When applying presets, make sure you only select the untagged nodes of your line. If you accidentally select all untagged nodes in the country and tag them with `Power Tower`, you will upload incorrect data to OSM and will need to revert your changeset.**
@@ -396,6 +400,12 @@ The following image illustrates the fundamental design of the electrical grid:  
   <a href="/images/grid-design.png" target="_blank">
   <img src="/images/grid-design.png" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">Key technology components of electricity grids Source: IEA - CC BY 4.0 - <a href="https://iea.blob.core.windows.net/assets/ea2ff609-8180-4312-8de9-494bcf21696d/ElectricityGridsandSecureEnergyTransitions.pdf"> Electricity Grids and Secure Energy Transitions </a>.</figcaption>
+</div>
+
+<div style="float: left; margin: 5px 0 20px 20px; width: 100%;">
+  <a href="/images/nigeria-transmission-distribution.jpg" target="_blank">
+  <img src="/images/nigeria-transmission-distribution.jpg" class="img-border" style="width: 100%;"> </a>
+  <figcaption class="image-caption"> <a href="https://apps.nigeriase4all.gov.ng/power-sector?grid_buffer=4.5&state=oyo"> Distribution Data: The Earth Institute - Columbia University - CC BY 4.0 </a>  <br>  The neon green lines show the distribution grid of a city in Nigeria. The city's energy system is connected to other cities and regions by the orange and purple transmission lines. The circles show distribution and transmission substations. .</figcaption>
 </div>
 
 
