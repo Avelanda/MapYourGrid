@@ -3,8 +3,8 @@
 </div>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 450px; max-width: 100%">
-<img src="../images/progress/ourlines-vs-world.jpg" style="width: 100%; border: 4px solid #2a6d3c;"></a> 
-<figcaption class="image-caption"> All the lines <span style="color: #ecc123;"><b>created and edited by MapYourGrid</b></span> mappers. Enlarge the image by clicking on it. Click to enlarge.
+<img src="../images/progress/mapyourgrid-edits-2025.png" style="width: 100%; border: 4px solid #2a6d3c;"></a> 
+<figcaption class="image-caption"> All the lines created and edited by MapYourGrid</b></span> mappers. Enlarge the image by clicking on it. Click to enlarge.
 </figcaption>
 </div>
 

@@ -75,7 +75,7 @@ image: images/website/mapyourgrid-preview.jpg
       <div class="stat-number-wrapper">
         <span id="stat-contributors" class="stat-number">...</span>
       </div>
-      <div class="stat-label">Contributors</div>
+      <div class="stat-label">Contributors using our hashtag</div>
     </div>
     <div class="stat-card">
       <div class="stat-icon">
@@ -116,9 +116,9 @@ image: images/website/mapyourgrid-preview.jpg
 
 </div>
   <div>
-  <img src="../images/progress/ourlines-vs-world.jpg" alt="Grid Illustration" class="initiative-content" style="width: 80%; border: 4px solid #2a6d3c;">
+  <img src="../images/progress/mapyourgrid-edits-2025.png" alt="Grid Illustration" class="initiative-content" style="width: 80%; border: 4px solid #2a6d3c;">
 <figcaption class="fig-label">
-  All the lines <span style="color: #ecc123;"><b>created and edited by MapYourGrid</b></span> mappers. Enlarge the image by clicking on it.
+  All the lines created and edited by MapYourGrid</b></span> mappers. Enlarge the image by clicking on it.
 </figcaption>
   </div>
   </div>
