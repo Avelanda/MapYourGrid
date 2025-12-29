@@ -881,16 +881,16 @@ aside.md-banner a>div {
 }
 
 .country-card a {
-  display: block;
   font-weight: 500;
   color: var(--md-primary-fg-color);
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 
 .country-card a:hover {
   text-decoration: underline;
 }
-
 
 .country-grid {
   display: grid;
@@ -899,16 +899,6 @@ aside.md-banner a>div {
   max-width: 80%;
   margin: 2rem auto;
   padding: 0 1rem;
-}
-
-.country-card {
-  text-align: center;
-}
-
-.country-card a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* --- Team members grid on Blog page --- */
