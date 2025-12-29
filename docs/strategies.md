@@ -448,7 +448,7 @@ This principle applies to every aspect of mapping: the physical presence of infr
 MapYourGrid layers additional tools, methodologies, and community-driven feedback mechanisms on top of this foundation to ensure data accuracy, completeness, and reliability. Here's how we do it:
 
 
-0. **Professional Training, Standards and Support in Electrical Grid Mapping**
+1. **Professional Training, Standards and Support in Electrical Grid Mapping**
 
     The MapYourGrid initiative recognizes that high-quality data begins with knowledgeable contributors. We invest in building mapper capacity through structured training, professional-grade documentation, and standards aligned with both OpenStreetMap norms and the energy sector’s expectations. We support decentralized data stewardship by empowering local mappers to guide regional efforts, ensuring that data remains both accurate and contextually relevant over time.
 
@@ -458,24 +458,24 @@ MapYourGrid layers additional tools, methodologies, and community-driven feedbac
     </figcaption>   
     </div>
 
-1. **User Feedback and Crowdsourced Issue Reporting**
+2. **User Feedback and Crowdsourced Issue Reporting**
 
     We encourage anyone using [Open Infrastructure Map](https://openinframap.org/#2/26/12) to report issues using the **#MapYourGrid** hashtag. Notes can be added without an account, lowering the barrier to participation. These community-sourced observations help identify outdated, misclassified, or missing infrastructure. This makes user feedback a cornerstone of validation.
 
 
-2. **Pre-Upload Error Detection with JOSM Validator**
+3. **Pre-Upload Error Detection with JOSM Validator**
 
     Before data is uploaded to OpenStreetMap, it is automatically scanned using the [JOSM Validator](https://josm.openstreetmap.de/wiki/Help/Dialog/Validator). This tool checks for common mapping errors such as: Illogical tag combinations, unusual geometries (e.g., excessively long spans between power towers) or incomplete or deprecated data. MapYourGrid created custom made Power Validation rules for JOSM named "Power QA". Read more about this development in the  [ValidateMyGrid repository](https://github.com/open-energy-transition/validate-my-grid) and in the offical documentation for [Power Networks Quality Assurance](https://wiki.openstreetmap.org/wiki/Power_networks/Quality_Assurance).
 
     Warnings are prominently flagged, and mappers are discouraged from uploading until the issues are resolved, promoting a high standard of quality assurance.
 
 
-3. **Visual Quality Checks with Custom Map Styles**
+4. **Visual Quality Checks with Custom Map Styles**
 
     Custom [map painting styles](starter-kit.md/#3-add-visual-clarity-with-custom-map-styles) specific to power infrastructure make it easier to spot errors visually within JOSM. These styles highlight anomalies, such as disconnected segments or misclassified equipment, empowering mappers to perform visual audits in real time.
 
 
-4. **Human-in-the-Loop Review Option**
+5. **Human-in-the-Loop Review Option**
 
     By enabling the “I would like someone to review my edits” option in JOSM, contributors can request peer validation. The #mapyourgrid hashtag allows us to track these submissions and offer direct support, especially for:
 
@@ -490,7 +490,7 @@ MapYourGrid layers additional tools, methodologies, and community-driven feedbac
     </figcaption>   
     </div>
 
-5. **Daily Automated Quality Assurance via Osmose**
+6. **Daily Automated Quality Assurance via Osmose**
 
     The [Osmose QA platform](https://wiki.openstreetmap.org/wiki/Osmose) runs automated checks daily on the global grid data, focusing on:
 
@@ -516,7 +516,7 @@ MapYourGrid layers additional tools, methodologies, and community-driven feedbac
     These issues are visualized directly in [Open Infrastructure Map](https://openinframap.org/#2/26/12), giving mappers clear targets for improving the dataset. 
 
 
-6. **Statistical Monitoring with Health Scores (Under Construction)**
+7. **Statistical Monitoring with Health Scores (Under Construction)**
 
     Tools like [ohsome stats](https://stats.now.ohsome.org/) provide macro-level insights into mapping activity. They help detect:
 
@@ -526,25 +526,29 @@ MapYourGrid layers additional tools, methodologies, and community-driven feedbac
 
     Hashtag based tracking also enables performance monitoring and campaign evaluation across time and geography. All this statistical data, along with the osmose issues, is used to calculate a health score for the electrical grid. 
 
+8. **FixMe Tags for easy communication between mappers on quality issues**
 
-7. **Integration and Interoperability Tests (Under Construction)**
+    Mappers can use [FixMe tags](https://wiki.openstreetmap.org/wiki/Key:fixme) to easily communicate potential quality issues with each other. These issues are highlighted to other mappers in the editor. Such issues may include incorrect attributes, such as voltages, incorrect routing, or any other issues that mappers identify in their own data or in data created by others.
+
+
+9. **Integration and Interoperability Tests (Under Construction)**
 
     We routinely test how well OSM electrical data integrates with external systems and applications. This ensures that the data model is not only internally consistent but also compatible with real-world use cases, including load flow analysis, planning tools, and emergency response platforms. We test the dataset against other open and proprietary energy system models and frameworks to verify structural and semantic compatibility. Interoperability ensures that OSM-based grid data can be adopted widely, fostering trust among academic and industrial users.
 
 
-8. **Sensitivity Analysis (Under Construction)**
+10. **Sensitivity Analysis (Under Construction)**
 
     By simulating changes in voltage, topology, or component tagging, we measure how sensitive derived outputs (e.g., load estimations or reliability models) are to input variations. This helps identify critical data points where higher accuracy or verification is essential.
 
 
-9. **Expert and Peer Cross-Validation (Under Construction)**
+11. **Expert and Peer Cross-Validation (Under Construction)**
 
     Experienced technical mappers and energy system experts regularly review the data, particularly in complex regions with overlapping voltages, substations, or unusual infrastructure types. In combination with qualitative comparisons with third-party studies, statistics or official electrical grid maps, these experts gather all insights about data quality. They are capable of comaring different validation results to approve, release and version control electrical grid data. They can compare different validation results in order to approve, release and control the version of electrical grid data. This allows them to update the community on any significant grid data issues that have been identified.
 
 
-10. **AI-Assisted Random Sample and Field Validation (Under Construction)**
+12. **AI-Assisted Random Sample and Field Validation (Under Construction)**
 
-    We leverage AI to detect unmapped infrastructure from satellite imagery and flag anomalies in existing data. Random samples are then validated on the ground through local partners, combining remote detection with field-level truthing.
+    We use AI to detect and validate unmapped infrastructure and existing infrastructure from satellite imagery, as well as flagging anomalies in existing data. Random samples are then validated on the ground through local partners, combining remote detection with field-level truthing.
 
 
 Together, these layers of validation, spanning crowdsourcing, automation, expert review, and AI, make MapYourGrid not just a mapping initiative, but a quality-assured knowledge infrastructure for the global energy transition.
