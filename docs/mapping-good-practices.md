@@ -5,24 +5,24 @@ hide:
   - footer
 ---
 
-# **Code of Mappers**
+# **Mapping good practices**
 ## For Responsible, Ethical, and Impactful Grid Mapping
 
-This Code of Mappers outlines the shared values, responsibilities, and safe practices for individuals and organizations participating in grid mapping activities in OpenStreetMap. It is designed to safeguard communities, promote transparency, and protect sensitive areas while enabling open data for global development and energy resilience. Read more Responsible Grid Mapping Understanding Risks and Mitigation on our [Impact Page](impact.md/#responsible-grid-mapping-understanding-risks-and-mitigation).
+These good practices outlines the shared values, responsibilities, and safe practices for individuals and organizations participating in grid mapping activities in OpenStreetMap. It is designed to safeguard communities, promote transparency, and protect sensitive areas while enabling open data for global development and energy resilience. Read more Responsible Grid Mapping Understanding Risks and Mitigation on our [Impact Page](impact.md/#responsible-grid-mapping-understanding-risks-and-mitigation).
 
 ---
 
 ### 1. **Respect Conflict Zones and Local Laws**
 
 * Do not map in regions of active conflict or military zones.
-* Check local mapping regulations with the local [OSM community](https://wiki.openstreetmap.org/wiki/Power_networks#Local%20projects%20in%20Africa) before beginning any mapping.
+* Check local mapping regulations with the local [OSM community](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects) before beginning any mapping.
 * Mappers are expected to be aware of and comply with the laws and restrictions of the country they are operating in.
 
 ---
 
 ### 2. **Engage with Local Communities**
 
-* Coordinate with local mappers and stakeholders before initiating mapping projects.
+* Coordinate with [local mappers and stakeholders](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects) before initiating mapping projects.
 * Co-organize mapping events with local communities to ensure alignment with local needs and sensitivities.
 * Seek community consent about which areas are considered sensitive and avoid entering them for any ground mapping activity.
 
@@ -54,5 +54,5 @@ This Code of Mappers outlines the shared values, responsibilities, and safe prac
 
 ---
 
-By following our Code of Mappers, we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future.
+By following our Mapping good practices, we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future.
 

@@ -480,7 +480,7 @@ Mapping transmission infrastructure in OpenStreetMap helps close this data gap.
 
 ### Our Approach to Risk Mitigation
 
-MapYourGrid implements a layered, context-aware framework to ensure that mapping serves the public good while respecting national sensitivities and community priorities. Read more about this in our [Code of Mappers](./code-of-mappers.md).
+MapYourGrid implements a layered, context-aware framework to ensure that mapping serves the public good while respecting national sensitivities and community priorities. Read more about this in our [Mapping good practices](./mapping-good-practices.md).
 
 #### Community Consent and Local Alignment
 
