@@ -9,8 +9,7 @@
 </div>
 
 
-MapYourGrid measures its progress at user, hashtag and country level. We would be honoured to make your progress part of the initiative. If you use our tools and training courses please use the #MapYourGrid hashtag in your changesets or add your user ID to our [KPI script](https://github.com/open-energy-transition/MapYourGrid/blob/main/.github/workflows/update-tower-count.yml). If you would like to contribute to our development or keep up to date with our progress, take a look at our public [organization project management](https://github.com/orgs/open-energy-transition/projects/25/views/7) and [roadmap](https://github.com/orgs/open-energy-transition/projects/25/views/13). You may have noticed that our KPIs currently prioritise coverage over data quality. This is because our initiative is working to increase coverage in low- and middle-income countries, resulting in more issues appearing in this grid. However, quality KPIs are currently under development and will be based on the [quality assurance layers that we are implementing simultaneously](tools.md/#quality-assurance-and-validation).
-
+MapYourGrid measures its progress at user, hashtag and country level. We would be honoured to make your progress part of the initiative. If you use our tools and training courses please use the #MapYourGrid hashtag in your changesets. If you would like to contribute to our development or keep up to date with our progress, take a look at our public [organization project management](https://github.com/orgs/open-energy-transition/projects/25/views/7) and [roadmap](https://github.com/orgs/open-energy-transition/projects/25/views/13). You may have noticed that our KPIs currently prioritise coverage over data quality. This is because our initiative is working to increase coverage in low-and middle-income countries, resulting in more issues appearing in this grid. However, we also have a dedicated tool to monitor both [quality and coverage at world level](/quality/).
 
 <div class="progress-buttons">
      <a href="#countries" class="btn btn-primary">
@@ -37,142 +36,145 @@ Our work supports better access to electricity across the globe. In the countrie
   <div class="country-card">
     <a href="/countrypages/Bangladesh/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bangladesh.svg" alt="Bangladesh Flag">
-    </a> </br>  
-    <a href="/countrypages/Bangladesh/"> Bangladesh </a>
+      </br>Bangladesh
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Benin/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Benin.svg" alt="Benin Flag">
-    </a> </br>
-    <a href="/countrypages/Benin/">Benin</a>
+      </br>Benin
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Bolivia/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bolivia.svg" alt="Bolivia Flag">
-    </a> </br>
-    <a href="/countrypages/Bolivia/">Bolivia</a>
+      </br>Bolivia
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Bosnia%20and%20Herzegovina/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bosnia%20and%20Herzegovina.svg" alt="Bosnia and Herzegovina Flag">
-    </a> </br>
-    <a href="/countrypages/Bosnia%20and%20Herzegovina/">Bosnia and Herzegovina</a>
+      </br>Bosnia and Herzegovina
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Cambodia/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg" alt="Cambodia Flag">
-    </a> </br>
-    <a href="/countrypages/Cambodia/">Cambodia</a>
+      </br>Cambodia
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Colombia/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Colombia.svg" alt="Colombia Flag">
-    </a> </br>
-    <a href="/countrypages/Colombia/">Colombia</a>
+      </br>Colombia
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Georgia/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag">
-    </a> </br>
-    <a href="/countrypages/Georgia/">Georgia</a>
+      </br>Georgia
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Kazakhstan/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kazakhstan.svg" alt="Kazakhstan Flag">
-    </a> </br>
-    <a href="/countrypages/Kazakhstan/">Kazakhstan</a>
+      </br>Kazakhstan
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Kenya/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kenya.svg" alt="Kenya Flag">
-    </a> </br>
-    <a href="/countrypages/Kenya/">Kenya</a>
+      </br>Kenya
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Mongolia/">
       <img class="off-glbg" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mongolia.svg" alt="Mongolia Flag">
-    </a> </br>
-    <a href="/countrypages/Mongolia/">Mongolia</a>
+      </br>Mongolia
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Nepal/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nepal.svg" alt="Nepal Flag">
-    </a> </br>
-    <a href="/countrypages/Nepal/">Nepal</a>
+      </br>Nepal
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Nigeria/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Nigeria.svg" alt="Nigeria Flag">
-    </a> </br>
-    <a href="/countrypages/Nigeria/">Nigeria</a>
+      </br>Nigeria
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Pakistan/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Pakistan.svg" alt="Pakistan Flag">
-    </a> </br>
-    <a href="/countrypages/Pakistan/">Pakistan</a>
+      </br>Pakistan
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Sri%20Lanka/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sri%20Lanka.svg" alt="Sri Lanka Flag">
-    </a> </br>
-    <a href="/countrypages/Sri%20Lanka/">Sri Lanka</a>
+      </br>Sri Lanka
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Turkmenistan/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Turkmenistan.svg" alt="Turkmenistan Flag">
-    </a> </br>
-    <a href="/countrypages/Turkmenistan/">Turkmenistan</a>
+      </br>Turkmenistan
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Uganda/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uganda.svg" alt="Uganda Flag">
-    </a> </br>
-    <a href="/countrypages/Uganda/">Uganda</a>
+      </br>Uganda
+    </a>
   </div>
 
   <div class="country-card">
     <a href="/countrypages/Uzbekistan/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Uzbekistan.svg" alt="Uzbekistan Flag">
-    </a> </br>
-    <a href="/countrypages/Uzbekistan/">Uzbekistan</a>
+      </br>Uzbekistan
+    </a>
   </div>
-
 </div>
-
-
-
-
-</br>
-
-<div style="text-align:center">
-<img src="https://raw.githubusercontent.com/ben10dynartio/apps/refs/heads/main/mapyourgrid/images/country_grid_4x4.jpg" class="img-border" style="width: 60%;">
-<figcaption class="image-caption">Our progress in different countries. Click to enlarge.</figcaption>
-</div> 
 
 <!-- Progress Bars Section -->
 ## **<div class="tools-header">Community Mapping Progress </div>**
+<div class="grid-wrapper">
+  <div class="country-card">
+    <a href="https://mapyourgrid.infos-reseaux.com/dashboard/" target="_blank">
+      <img class="off-glb" src="../images/logos/MapYourGrid-logo.png" alt="MapYourGrid progress">
+      </br>MapYourGrid progress dashboard
+    </a>
+  </div>
+
+  <div class="country-card">
+    <a href="https://stats.now.ohsome.org/dashboard#hashtag=MapYourGrid&start=2025-03-12T22:00:00Z&end=2025-05-14T21:59:59Z&interval=P1M&countries=&topics=" target="_blank">
+      <img style="width:200px; margin-top:20px;" class="off-glb" src="https://stats.now.ohsome.org/assets/images/ohsomeNowStats_logo.svg" alt="Ohsome Nowstats">
+      </br>Ohsome Nowstats
+    </a>
+  </div>
+</div>
 
 <div class="progress-section"> 
    <button id="refresh-btn" style="margin-bottom:1rem;">
      🔄 Refresh stats (only click if the bars are not "loading...")
    </button>
-
 
   <div class="progress-item">
     <label>Contributors mapping with <code>#MapYourGrid</code> hashtag:</label>
@@ -248,8 +250,6 @@ Our work supports better access to electricity across the globe. In the countrie
       Last updated: —
     </span>
   </div>
-
-
 </div>
 
 <!-- Progress bars script------------------------------------------------- -->
@@ -565,7 +565,6 @@ async function loadSubstationCount() {
   });
 </script>
 <!-- Progress bars script------------------------------------------------- -->
-You can find more stats for #MapYourGrid at [OhsomeNowstats](https://stats.now.ohsome.org/dashboard#hashtag=MapYourGrid&start=2025-03-12T22:00:00Z&end=2025-05-14T21:59:59Z&interval=P1M&countries=&topics=).
 
 ??? success "Top #mapyourgrid Community Mappers Leaderboard"
     **This is a leaderboard of the top 10 community mappers of power towers who used our hashtag in their changesets.** <br>
@@ -644,9 +643,9 @@ Want to calculate your own progress? Check out this [web interface](https://open
 
 ## **<div class="tools-header">Line Length Growth per Country </div>**
 
-The following table shows the **total growth in line length across all OpenStreetMap edits** worldwide, calculated using pre-processed statistical data of [ohsome stats](https://stats.now.ohsome.org/).
+The following table shows the **total growth in line length across all OpenStreetMap edits** worldwide, calculated using pre-processed statistical data of [Podoma](https://wiki.openstreetmap.org/wiki/Podoma). See it directly online on <a href="https://mapyourgrid.infos-reseaux.com/dashboard/#tables" target="_blank">this dedicated dashboard</a>.
 
-<iframe src="../data/power_line_length_table.html" width="100%" height="600px" style="border:none;"></iframe>
+<iframe src="https://mapyourgrid.infos-reseaux.com/dashboard/#tables" width="100%" height="600px" style="border:none;"></iframe>
 
 <!-- Countries Section -->
 ## **<div class="tools-header">Interconnectors </div>**
