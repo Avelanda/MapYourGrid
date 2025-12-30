@@ -5,7 +5,7 @@ hide:
   - footer
 ---
 
-# **Mapping good practices**
+# **Good practices for mapping**
 ## For Responsible, Ethical, and Impactful Grid Mapping
 
 These good practices outlines the shared values, responsibilities, and safe practices for individuals and organizations participating in grid mapping activities in OpenStreetMap. It is designed to safeguard communities, promote transparency, and protect sensitive areas while enabling open data for global development and energy resilience. Read more Responsible Grid Mapping Understanding Risks and Mitigation on our [Impact Page](impact.md/#responsible-grid-mapping-understanding-risks-and-mitigation).
@@ -54,5 +54,5 @@ These good practices outlines the shared values, responsibilities, and safe prac
 
 ---
 
-By following our Mapping good practices, we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future.
+By following our Good practices for mapping, we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future.
 

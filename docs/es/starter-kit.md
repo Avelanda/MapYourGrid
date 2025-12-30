@@ -79,7 +79,7 @@ A veces, hay varias opciones posibles para el trazado de las líneas y no está 
 !!! Warning
      **En algunos países, el mapeo de líneas eléctricas está restringido. Siempre verifique las directrices locales, conéctese primero con la comunidad local de OSM, o consulte el [comunidades locales](https://community.osm.be/) y [proyectos locales](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). Si no encuentra una comunidad local, envíenos un [correo electrónico](mailto:MapYourGrid@openenergytransition.org) y te ayudaremos a crear un grupo local.**
  
-     **Siguiendo nuestro [Código de los cartógrafos](./code-of-mappers.md) Con el apoyo de la comunidad de OpenStreetMap, protegemos colectivamente la integridad de la plataforma OSM, fomentamos la confianza con las comunidades y liberamos el poder de los datos abiertos para un futuro energético más resiliente y justo. Por favor, ten en cuenta que la comunidad y la fundación OpenStreetMap no limitan técnicamente el mapeo en ningún lugar del globo. Por lo tanto, nuestro Código de Mapeadores tampoco puede aplicarse a los mapeadores voluntarios de la comunidad.** 
+     **Siguiendo nuestro [Buenas prácticas de mapeo](./mapping-good-practices.md) Con el apoyo de la comunidad de OpenStreetMap, protegemos colectivamente la integridad de la plataforma OSM, fomentamos la confianza con las comunidades y liberamos el poder de los datos abiertos para un futuro energético más resiliente y justo. Por favor, ten en cuenta que la comunidad y la fundación OpenStreetMap no limitan técnicamente el mapeo en ningún lugar del globo. Por lo tanto, nuestro Buenas prácticas tampoco puede aplicarse a los mapeadores voluntarios de la comunidad.** 
 
 ## <div class="stradegy-header">Kit de inicio JOSM</div></h3>
 ### **<div class="tools-header">Echa un vistazo a nuestro tutorial en vídeo sobre JOSM</div>**
@@ -108,7 +108,7 @@ A veces, hay varias opciones posibles para el trazado de las líneas y no está 
 !!! Advertencia
     **En algunos países, el mapeo de líneas eléctricas está restringido. Verifique siempre las directrices locales, conéctese primero con la comunidad local de OSM o consulte el [proyectos locales](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). Si no encuentra una comunidad local, envíenos un [correo electrónico](mailto:MapYourGrid@openenergytransition.org) y te ayudaremos a crear un grupo local.**
  
-    **Siguiendo nuestro [Código de los cartógrafos](./code-of-mappers.md)Con el apoyo de la comunidad de OpenStreetMap, protegemos colectivamente la integridad de la plataforma OSM, fomentamos la confianza con las comunidades y liberamos el poder de los datos abiertos para un futuro energético más resiliente y justo. Por favor, ten en cuenta que la comunidad y la fundación OpenStreetMap no limitan técnicamente el mapeo en ningún lugar del globo. Por lo tanto, nuestro Código de Mapeadores tampoco puede aplicarse a los mapeadores voluntarios de la comunidad.** 
+    **Siguiendo nuestro [Buenas prácticas de mapeo](./mapping-good-practices.md)Con el apoyo de la comunidad de OpenStreetMap, protegemos colectivamente la integridad de la plataforma OSM, fomentamos la confianza con las comunidades y liberamos el poder de los datos abiertos para un futuro energético más resiliente y justo. Por favor, ten en cuenta que la comunidad y la fundación OpenStreetMap no limitan técnicamente el mapeo en ningún lugar del globo. Por lo tanto, nuestro Buenas prácticas tampoco puede aplicarse a los mapeadores voluntarios de la comunidad.** 
 
 ### **<div class="tools-header">2. Configure sus preajustes y reglas de validación </div>**
 
@@ -222,7 +222,7 @@ Para una cartografía segura, le recomendamos que lea sobre [buenas prácticas](
 !!! Nota
     **⚠️ En algunos países, el mapeo de líneas eléctricas está restringido. Siempre verifique las directrices locales, conéctese primero con la comunidad local de OSM, o consulte el [proyectos locales](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). Si no encuentra una comunidad local, envíenos un [correo electrónico](mailto:MapYourGrid@openenergytransition.org) y te ayudaremos a crear un grupo local.**
  
-    **⚠️ Siguiendo nuestro [Código de los cartógrafos](./code-of-mappers.md)En OSM, protegemos colectivamente la integridad de la plataforma OSM, fomentamos la confianza con las comunidades y liberamos el poder de los datos abiertos para un futuro energético más resiliente y justo.** 
+    **⚠️ Siguiendo nuestro [Buenas prácticas de mapeo](./mapping-good-practices.md)En OSM, protegemos colectivamente la integridad de la plataforma OSM, fomentamos la confianza con las comunidades y liberamos el poder de los datos abiertos para un futuro energético más resiliente y justo.** 
 
 ## <div class="stradegy-header">Kit de iniciación al mapa de iD e infraestructuras abiertas</div></h3>
 
