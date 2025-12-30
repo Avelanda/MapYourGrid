@@ -79,7 +79,7 @@ Sometimes, there are several possible options for line routing and it is unclear
 !!! Warning
     **In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local communities](https://community.osm.be/) and [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
     
-    **By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Code of Mappers cannot be enforced for volunteer community mappers either.** 
+    **By following our [Good practices for mapping](./mapping-good-practices.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Good practices for mapping cannot be enforced for volunteer community mappers either.** 
 
 
 ## <div class="stradegy-header">JOSM Starter-Kit</div></h3>
@@ -111,7 +111,7 @@ Sometimes, there are several possible options for line routing and it is unclear
 !!! Warning
     **In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
     
-    **By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Code of Mappers cannot be enforced for volunteer community mappers either.** 
+    **By following our [Good practices for mapping](./mapping-good-practices.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please be aware that the OpenStreetMap community and foundation does not technically limit the mapping in any place on the globe. Therefore, our Good practices for mapping cannot be enforced for volunteer community mappers either.** 
 
 
 ### **<div class="tools-header">2. Setup your Presets and Quality Assurance Rules </div>**
@@ -260,7 +260,7 @@ For a safe mapping, we recommend you reading about [good practices](https://wiki
 !!! note
     **⚠️ In some countries, mapping power lines is restricted. Always verify local guidelines, connect with the OSM local community first, or check out the [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
     
-    **⚠️ By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future.** 
+    **⚠️ By following our [Good practices for mapping](./mapping-good-practices.md), we collectively protect the integrity of the OSM platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future.** 
 
 ## <div class="stradegy-header">iD and Open Infrastructure Map Starter-Kit</div></h3>
 
