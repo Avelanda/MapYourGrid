@@ -224,7 +224,7 @@ Pour une cartographie sûre, nous vous recommandons de lire ce qui suit [bonnes 
 !!! note
     **⚠️ Dans certains pays, la cartographie des lignes électriques est soumise à des restrictions. Vérifiez toujours les directives locales, contactez d'abord la communauté locale d'OSM, ou consultez la page [projets locaux](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). Si vous ne trouvez pas de communauté locale, envoyez-nous un message. [courriel](mailto:MapYourGrid@openenergytransition.org) et nous vous aiderons à créer un groupe local.**
  
-    **⚠️ En suivant notre [Bonnes pratiques de cartographie](./mapping-good-practices.md)Avec l'aide d'OSM, nous protégeons collectivement l'intégrité de la plateforme OSM, nous renforçons la confiance avec les communautés et nous libérons le pouvoir des données ouvertes pour un avenir énergétique plus résilient et plus juste. 
+    **⚠️ En suivant nos [Bonnes pratiques de cartographie](./mapping-good-practices.md)Avec l'aide d'OSM, nous protégeons collectivement l'intégrité de la plateforme OSM, nous renforçons la confiance avec les communautés et nous libérons le pouvoir des données ouvertes pour un avenir énergétique plus résilient et plus juste. 
 
 ## <div class="stradegy-header">Kit de démarrage pour la carte de l'iD et de l'infrastructure ouverte</div></h3>
 
