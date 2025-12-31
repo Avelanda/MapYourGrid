@@ -41,7 +41,7 @@ Non, la publication de données sur les réseaux par l'intermédiaire de MapYour
 
 MapYourGrid s'appuie sur une décennie de cartographie des infrastructures publiques, y compris des comparaisons mondiales montrant l'alignement avec les ensembles de données gouvernementales. Notre mission est de démocratiser l'accès aux données pour favoriser la résilience, la transparence et l'innovation, et non d'exposer ce que les adversaires ne savent pas déjà. Nos [Bonnes pratiques de cartographie](mapping-good-practices.md) décrit les valeurs partagées, les responsabilités et les pratiques sûres pour les individus et les organisations qui participent à des activités de cartographie de grille dans OpenStreetMap. Il est conçu pour protéger les communautés, promouvoir la transparence et protéger les zones sensibles tout en permettant l'utilisation de données ouvertes pour le développement mondial et la résilience énergétique.
 
-Pour en savoir plus sur la cartographie responsable du réseau et la compréhension des risques et de leur atténuation, consultez notre site web. [Page d'impact](impact.md/#responsible-grid-mapping-understanding-risks-and-mitigation).
+Pour en savoir plus sur la cartographie responsable du réseau et la compréhension des risques et de leur atténuation, consultez notre site web. [Page d'impact](impact.md/#cartographie-responsable-du-reseau-comprendre-les-risques-et-les-mesures-dattenuation).
 
 ### <div class="tools-header">Comment la qualité et la validation des données sont-elles assurées ?</div>
 
@@ -53,7 +53,7 @@ MapYourGrid s'appuie sur le principe d'OpenStreetMap qui consiste à [vérifiabi
 * Outils d'analyse tels que [Quelques statistiques](https://stats.now.ohsome.org/) pour détecter les lacunes ou les anomalies.
 * Validation par des experts et contrôles d'échantillons aléatoires.
 
-Ensemble, ces méthodes permettent de maintenir un ensemble de données fiables sur le réseau électrique. [En savoir plus sur l'assurance qualité et la validation](tools.md/#quality-assurance-and-validation). 
+Ensemble, ces méthodes permettent de maintenir un ensemble de données fiables sur le réseau électrique. [En savoir plus sur l'assurance qualité et la validation](strategies.md/#assurance-qualite-et-validation).
 
 ### <div class="tools-header"> Quels sont les rôles des membres de l'équipe ? </div>
 

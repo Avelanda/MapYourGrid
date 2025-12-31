@@ -9,7 +9,7 @@ hide:
 <h1>Buenas Primeras Lineas </h1>
 </div>
 
-Mapea tu primera linea! Estas coordenadas apuntan hacia lines electricas faciles de mapear para principiantes. También puedes añadir "buenas primeras líneas" [abajo de la pagina web](#quieres-añadir-una-buena-linea).
+Mapea tu primera linea! Estas coordenadas apuntan hacia lines electricas faciles de mapear para principiantes. También puedes añadir "buenas primeras líneas" [abajo de la pagina web](#quieres-anadir-una-buena-linea).
 
 ??? success "INTRODUCTION (Click Me)"
     Bienvenido a nuestra plataforma interactiva y centro de contribución a «buenas primeras líneas» a través de OpenStreetMap! Haga clic en el cuadro «buenas primeras líneas» que prefiera y comience a cartografiar la infraestructura electrica directamente en iD o JOSM :rocket:

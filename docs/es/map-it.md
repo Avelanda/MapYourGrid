@@ -1086,7 +1086,7 @@ map.on('zoomend', function() {
 [Good First Lines :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary }
 
 <!-- ENd-->
-??? success "Map Legend for the recommended [MapCSS](starter-kit.md#3-add-visual-clarity-with-custom-map-styles) (Click Me)"
+??? success "Map Legend for the recommended [MapCSS](starter-kit.md#3-anade-claridad-visual-con-estilos-de-mapa-personalizados) (Click Me)"
     <img 
       src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" 
       class="img-border image-caption" 
