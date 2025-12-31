@@ -60,6 +60,13 @@ Notre travail permet d'améliorer l'accès à l'électricité dans le monde enti
  <a href="/countrypages/Bosnia%20and%20Herzegovina/">Bosnie et Herzégovine</a>
  </div>
 
+<div class="country-card">
+ <a href="/countrypages/Bulgaria/">
+ <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bulgaria.svg" alt="Bulgaria Flag" style="border: 1px solid  #eeeeee;">
+ </br>Bulgaria
+ </a>
+ </div>
+
  <div class="country-card">
  <a href="/countrypages/Cambodia/">
  <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg" alt="Cambodia Flag">
@@ -76,7 +83,7 @@ Notre travail permet d'améliorer l'accès à l'électricité dans le monde enti
 
  <div class="country-card">
  <a href="/countrypages/Georgia/">
- <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag">
+ <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag" style="border: 1px solid  #eeeeee;">
  </a> </br>
  <a href="/countrypages/Georgia/">Géorgie</a>
  </div>

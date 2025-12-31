@@ -62,6 +62,13 @@ Our work supports better access to electricity across the globe. In the countrie
   </div>
 
   <div class="country-card">
+    <a href="/countrypages/Bulgaria/">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bulgaria.svg" alt="Bulgaria Flag" style="border: 1px solid  #eeeeee;">
+      </br>Bulgaria
+    </a>
+  </div>
+
+  <div class="country-card">
     <a href="/countrypages/Cambodia/">
       <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg" alt="Cambodia Flag">
       </br>Cambodia
@@ -77,7 +84,7 @@ Our work supports better access to electricity across the globe. In the countrie
 
   <div class="country-card">
     <a href="/countrypages/Georgia/">
-      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag">
+      <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag" style="border: 1px solid  #eeeeee;">
       </br>Georgia
     </a>
   </div>
