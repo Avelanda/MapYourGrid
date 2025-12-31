@@ -61,6 +61,13 @@ Nuestro trabajo contribuye a mejorar el acceso a la electricidad en todo el mund
  </div>
 
  <div class="country-card">
+ <a href="/countrypages/Bulgaria/">
+ <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bulgaria.svg" alt="Bulgaria Flag" style="border: 1px solid  #eeeeee;">
+ </br>Bulgaria
+ </a>
+ </div>
+
+ <div class="country-card">
  <a href="/countrypages/Cambodia/">
  <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg" alt="Cambodia Flag">
  </a> </br>
@@ -76,7 +83,7 @@ Nuestro trabajo contribuye a mejorar el acceso a la electricidad en todo el mund
 
  <div class="country-card">
  <a href="/countrypages/Georgia/">
- <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag">
+ <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag" style="border: 1px solid  #eeeeee;">
  </a> </br>
  <a href="/countrypages/Georgia/">Georgia</a>
  </div>
@@ -85,7 +92,7 @@ Nuestro trabajo contribuye a mejorar el acceso a la electricidad en todo el mund
  <a href="/countrypages/Kazakhstan/">
  <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kazakhstan.svg" alt="Kazakhstan Flag">
  </a> </br>
- <a href="/countrypages/Kazakhstan/">Kazajstán
+ <a href="/countrypages/Kazakhstan/">Kazajstán</a>
  </div>
 
  <div class="country-card">
@@ -127,7 +134,7 @@ Nuestro trabajo contribuye a mejorar el acceso a la electricidad en todo el mund
  <a href="/countrypages/Sri%20Lanka/">
  <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sri%20Lanka.svg" alt="Sri Lanka Flag">
  </a> </br>
- <a href="/countrypages/Sri%20Lanka/">Sri Lanka
+ <a href="/countrypages/Sri%20Lanka/">Sri Lanka</a>
  </div>
 
  <div class="country-card">
