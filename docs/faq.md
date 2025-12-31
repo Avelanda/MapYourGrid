@@ -55,7 +55,7 @@ MapYourGrid builds on OpenStreetMap’s principle of [verifiability](https://wik
 * Analysis tools like [ohsome stats](https://stats.now.ohsome.org/) to detect gaps or anomalies.
 * Expert validation and random sample checks.
 
-Together, these methods help maintain a reliable, crowdsourced electrical grid dataset. [Read more about our Quality Assurance and Validation](tools.md/#quality-assurance-and-validation). 
+Together, these methods help maintain a reliable, crowdsourced electrical grid dataset. [Read more about our Quality Assurance and Validation](strategies.md/#quality-assurance-and-validation).
 
 
 ### <div class="tools-header"> What are the Roles of the Team Members? </div>

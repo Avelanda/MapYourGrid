@@ -41,7 +41,7 @@ No, la publicación de datos de redes a través de MapYourGrid no aumenta signif
 
 MapYourGrid se basa en una década de cartografía de infraestructuras públicas, incluyendo comparaciones globales que muestran la alineación con los conjuntos de datos gubernamentales. Nuestra misión es democratizar el acceso a la resiliencia, la transparencia y la innovación, no exponer nada que los adversarios no sepan ya. Nuestro [Buenas prácticas de mapeo](mapping-good-practices.md) describe los valores compartidos, las responsabilidades y las prácticas seguras para las personas y organizaciones que participan en actividades de cartografía de redes en OpenStreetMap. Está diseñado para salvaguardar a las comunidades, promover la transparencia y proteger las zonas sensibles, al tiempo que permite el uso de datos abiertos para el desarrollo global y la resiliencia energética.
 
-Más información sobre la cartografía responsable de la red y la comprensión de los riesgos y su mitigación en nuestro [Página de impacto](impact.md/#responsible-grid-mapping-understanding-risks-and-mitigation).
+Más información sobre la cartografía responsable de la red y la comprensión de los riesgos y su mitigación en nuestro [Página de impacto](impact.md/#cartografia-responsable-de-la-red-comprender-los-riesgos-y-su-mitigacion).
 
 ### <div class="tools-header">¿Cómo se garantiza la calidad y validación de los datos?</div>
 
@@ -53,7 +53,7 @@ MapYourGrid se basa en el principio de OpenStreetMap de [verificabilidad](https:
 * Herramientas de análisis como [algunas estadísticas](https://stats.now.ohsome.org/) para detectar lagunas o anomalías.
 * Validación por expertos y controles de muestras aleatorias.
 
-Juntos, estos métodos ayudan a mantener un conjunto de datos fiables sobre la red eléctrica de origen colectivo. [Más información sobre garantía de calidad y validación](tools.md/#quality-assurance-and-validation). 
+Juntos, estos métodos ayudan a mantener un conjunto de datos fiables sobre la red eléctrica de origen colectivo. [Más información sobre garantía de calidad y validación](strategies.md/#garantia-de-calidad-y-validacion).
 
 ### <div class="tools-header"> ¿Cuáles son las funciones de los miembros del equipo? </div>
 

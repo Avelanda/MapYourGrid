@@ -4,10 +4,10 @@
 Utilizar las herramientas y estrategias adecuadas es fundamental para cartografiar la red eléctrica con eficacia y precisión. Las siguientes estrategias y herramientas le ayudarán a ampliar las redes de transmisión existentes en OpenStreetMap. Obtenga más información sobre nuestras herramientas y estrategias recomendadas haciendo clic en los botones: 
 
 <div class="starter-kit-buttons">
- <a href="#introduction" class="btn btn-primary">Introducción</a> 
- <a href="#pioneer-mapping-strategies-and-tools" class="btn btn-secondary">Estrategias y herramientas de Pioneer Mapping</a>
- <a href="#technical-mapping-strategies" class="btn btn-secondary">Estrategias cartográficas técnicas</a>
- <a href="#quality-assurance-and-validation" class="btn btn-secondary">Garantía de calidad y validación</a>
+ <a href="#introduccion" class="btn btn-primary">Introducción</a>
+ <a href="#estrategias-y-herramientas-de-pioneer-mapping" class="btn btn-secondary">Estrategias y herramientas de Pioneer Mapping</a>
+ <a href="#estrategias-cartograficas-tecnicas" class="btn btn-secondary">Estrategias cartográficas técnicas</a>
+ <a href="#garantia-de-calidad-y-validacion" class="btn btn-secondary">Garantía de calidad y validación</a>
 </div>
 
 ### **<div class="tools-header">Vea nuestro tutorial en vídeo sobre herramientas y estrategias para JOSM</div>**
@@ -19,11 +19,11 @@ Utilizar las herramientas y estrategias adecuadas es fundamental para cartografi
 
 Por favor, considere las siguientes estrategias y los procesos asociados sólo como recomendaciones. En última instancia, la estrategia más eficaz es la que le permite trabajar en la red eléctrica con pasión y motivación durante más tiempo. Las estrategias pueden dividirse en dos fases, acompañadas de un proceso de garantía de calidad y validación.
 
-**[Estrategias cartográficas pioneras](strategies.md#pioneer-mapping-strategies-and-tools)**: Para garantizar que la red eléctrica tenga la mejor cobertura posible, recomendamos empezar con la cartografía Pioneer en cada país. En esta fase se emplean varias estrategias para identificar la ubicación de todas las líneas, postes eléctricos y subestaciones. En lugar de reducir los problemas en la red, el objetivo principal es aumentar la ampliación de la cobertura geográfica de la red. Esto puede dar lugar a un aumento del número total de problemas en la red. Estas estrategias se centran principalmente en cartografiar la ubicación geográfica de las líneas eléctricas, torres, plantas y subestaciones, más que en los detalles técnicos de la red. Requieren buena vista, habilidades cartográficas rápidas y una comprensión de las situaciones en las que los datos por satélite son insuficientes para una cartografía coherente de la red.
+**[Estrategias cartográficas pioneras](strategies.md#estrategias-y-herramientas-de-pioneer-mapping)**: Para garantizar que la red eléctrica tenga la mejor cobertura posible, recomendamos empezar con la cartografía Pioneer en cada país. En esta fase se emplean varias estrategias para identificar la ubicación de todas las líneas, postes eléctricos y subestaciones. En lugar de reducir los problemas en la red, el objetivo principal es aumentar la ampliación de la cobertura geográfica de la red. Esto puede dar lugar a un aumento del número total de problemas en la red. Estas estrategias se centran principalmente en cartografiar la ubicación geográfica de las líneas eléctricas, torres, plantas y subestaciones, más que en los detalles técnicos de la red. Requieren buena vista, habilidades cartográficas rápidas y una comprensión de las situaciones en las que los datos por satélite son insuficientes para una cartografía coherente de la red.
 
-**[Estrategias cartográficas técnicas](strategies.md#technical-mapping-strategies)**: Esta fase consiste en resolver problemas complejos de la red que requieren un conocimiento fundamental de la red eléctrica. Esto incluye el mapeo de tensiones, el número de circuitos y los problemas de enrutamiento. Durante esta fase, el trabajo inicial de cartografía se valida con múltiples fuentes para garantizar su plausibilidad. Estas fuentes pueden incluir mapas oficiales de los operadores de la red, estadísticas sobre la longitud de la red y otros datos oficiales. El objetivo principal de estas estrategias es minimizar el número de problemas de calidad complejos en la red.
+**[Estrategias cartográficas técnicas](strategies.md#estrategias-cartograficas-tecnicas)**: Esta fase consiste en resolver problemas complejos de la red que requieren un conocimiento fundamental de la red eléctrica. Esto incluye el mapeo de tensiones, el número de circuitos y los problemas de enrutamiento. Durante esta fase, el trabajo inicial de cartografía se valida con múltiples fuentes para garantizar su plausibilidad. Estas fuentes pueden incluir mapas oficiales de los operadores de la red, estadísticas sobre la longitud de la red y otros datos oficiales. El objetivo principal de estas estrategias es minimizar el número de problemas de calidad complejos en la red.
 
-**[Garantía de calidad y validación](strategies.md#quality-assurance-and-validation)**: El control de calidad se realiza en paralelo a ambas fases de cartografía y garantiza que todos los datos sean verificables, sigan las normas de etiquetado acordadas, sean trazables y puedan ser revisados por otros. Herramientas como JOSM, Osmose, ohsome stats y Open Infrastructure Map, junto con los comentarios de la comunidad y las comprobaciones asistidas por IA, ayudan a mantener la precisión y fiabilidad de los datos de la red eléctrica en OpenStreetMap.
+**[Garantía de calidad y validación](strategies.md#garantia-de-calidad-y-validacion)**: El control de calidad se realiza en paralelo a ambas fases de cartografía y garantiza que todos los datos sean verificables, sigan las normas de etiquetado acordadas, sean trazables y puedan ser revisados por otros. Herramientas como JOSM, Osmose, ohsome stats y Open Infrastructure Map, junto con los comentarios de la comunidad y las comprobaciones asistidas por IA, ayudan a mantener la precisión y fiabilidad de los datos de la red eléctrica en OpenStreetMap.
 
 ## <div class="stradegy-header">Estrategias y herramientas de Pioneer Mapping</div></h3>
 
@@ -378,7 +378,7 @@ MapYourGrid incorpora herramientas adicionales, metodologías y mecanismos de re
 
 3. **Comprobación de la calidad visual con estilos de mapas personalizados**
 
-    A medida [estilos de pintura de mapas](starter-kit.md/#3-add-visual-clarity-with-custom-map-styles) específicos para infraestructuras eléctricas facilitan la detección visual de errores en JOSM. Estos estilos destacan anomalías, como segmentos desconectados o equipos mal clasificados, lo que permite a los mapeadores realizar auditorías visuales en tiempo real.
+    A medida [estilos de pintura de mapas](starter-kit.md/#3-anade-claridad-visual-con-estilos-de-mapa-personalizados) específicos para infraestructuras eléctricas facilitan la detección visual de errores en JOSM. Estos estilos destacan anomalías, como segmentos desconectados o equipos mal clasificados, lo que permite a los mapeadores realizar auditorías visuales en tiempo real.
 
 4. **Opción de revisión humana en bucle**
 
