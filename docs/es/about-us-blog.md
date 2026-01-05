@@ -262,6 +262,24 @@ MapYourGrid está formado por un equipo de expertos en energía, datos y cartogr
 
 <div class="grid cards" markdown>
 
+- <a href="../blog/20260105-GridInspector" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/GridInspector-Quality-Europe-Africa-Asia.png" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **GridInspector: A Global Diagnostic of Open Power Grid Data (5 Jan. 2026)** <br>
+  Can OpenStreetMap power grid data be used with confidence, and under which conditions?  Our new tool GridInspector aims to answer this fundamental question. [:arrow_right: Read more](blog/20260105-GridInspector.md)
+</a>
+
+- <a href="../blog/20251209-humans-for-the-grid" style="text-decoration: none; color: inherit;">
+  <img src="/images/asia-grid.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **Humans for the Grid - Why data on the electrical grid still demands actual human labor (9 Dec. 2025)** <br>
+  Despite advances in AI and automation, high-quality grid mapping still relies on skilled human mappers whose expertise ensures accuracy, verification, and community-driven improvement. [:arrow_right: Read more](blog/20251209-humans-for-the-grid.md)
+</a>
+
+- <a href="../blog/20251128-LineLength" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/7.312.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **Global Transmission Length Index, world's first open and free grid length database (28 Nov. 2025)**  
+  In November 2025, we finalised the  'Global Transmission Length Index'. This database includes the high-voltage circuit line lengths of almost every country in the world, per voltage, and with sources. [:arrow_right: Read more](blog/20251128-LineLength.md)
+</a>
+
 - <a href="../blog/20250918-HIFLD" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/usa-final-hifld.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
   **OpenStreetMap grid data, the hidden superhero of the US’ national security? (18 Sept. 2025)**  
