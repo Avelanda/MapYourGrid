@@ -10,8 +10,6 @@ These are lines that have been completed by mappers.
 const SUPABASE_URL = 'https://momhpgtitabhlpsxcqxh.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1vbWhwZ3RpdGFiaGxwc3hjcXhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk3MzUxODMsImV4cCI6MjA3NTMxMTE4M30.IUj10ikNkwip_iZsGxR8vUWNgRtK9aaiTovpTeKvm4c';
 
-let supabase;
-
 // Country code mapping for flags
 const countryFlags = {
   'spain': 'ES', 'france': 'FR', 'germany': 'DE', 'italy': 'IT', 'portugal': 'PT',
