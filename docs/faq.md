@@ -40,7 +40,7 @@ No, publishing grid data through MapYourGrid does not meaningfully increase secu
 
 * “Security through obscurity” doesn’t work. Hiding infrastructure details often impedes innovation and risk mitigation. As noted by the U.S. National Institute of Standards and Technology (NIST), obscurity is not a reliable security strategy.
 
-MapYourGrid builds on a decade of public infrastructure mapping, including global comparisons showing alignment with government datasets. Our mission is to democratize access for resilience, transparency, and innovation, not to expose anything adversaries don’t already know. Our [Code of Mappers](code-of-mappers.md) outlines the shared values, responsibilities, and safe practices for individuals and organizations participating in grid mapping activities in OpenStreetMap. It is designed to safeguard communities, promote transparency, and protect sensitive areas while enabling open data for global development and energy resilience.
+MapYourGrid builds on a decade of public infrastructure mapping, including global comparisons showing alignment with government datasets. Our mission is to democratize access for resilience, transparency, and innovation, not to expose anything adversaries don’t already know. Our [Good practices for mapping](mapping-good-practices.md) outlines the shared values, responsibilities, and safe practices for individuals and organizations participating in grid mapping activities in OpenStreetMap. It is designed to safeguard communities, promote transparency, and protect sensitive areas while enabling open data for global development and energy resilience.
 
 Read more on responsible grid mapping and understanding risks and mitigation on our [Impact Page](impact.md/#responsible-grid-mapping-understanding-risks-and-mitigation).
 
@@ -55,7 +55,7 @@ MapYourGrid builds on OpenStreetMap’s principle of [verifiability](https://wik
 * Analysis tools like [ohsome stats](https://stats.now.ohsome.org/) to detect gaps or anomalies.
 * Expert validation and random sample checks.
 
-Together, these methods help maintain a reliable, crowdsourced electrical grid dataset. [Read more about our Quality Assurance and Validation](tools.md/#quality-assurance-and-validation). 
+Together, these methods help maintain a reliable, crowdsourced electrical grid dataset. [Read more about our Quality Assurance and Validation](strategies.md/#quality-assurance-and-validation).
 
 
 ### <div class="tools-header"> What are the Roles of the Team Members? </div>

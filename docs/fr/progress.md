@@ -8,7 +8,7 @@
 </figcaption>
 </div>
 
-MapYourGrid mesure ses progrès au niveau des utilisateurs, des hashtags et des pays. Nous serions honorés que vos progrès fassent partie de l'initiative. Si vous utilisez nos outils et nos cours de formation, veuillez utiliser le hashtag #MapYourGrid dans vos jeux de modifications ou ajoutez votre identifiant d'utilisateur à notre base de données de [Script KPI](https://github.com/open-energy-transition/MapYourGrid/blob/main/.github/workflows/update-tower-count.yml). Si vous souhaitez contribuer à notre développement ou vous tenir au courant de nos progrès, consultez notre site public. [organisation gestion de projet](https://github.com/orgs/open-energy-transition/projects/25/views/7) et [feuille de route](https://github.com/orgs/open-energy-transition/projects/25/views/13). Vous avez peut-être remarqué que nos indicateurs clés de performance donnent actuellement la priorité à la couverture plutôt qu'à la qualité des données. Cela s'explique par le fait que notre initiative vise à accroître la couverture dans les pays à revenu faible et intermédiaire, ce qui se traduit par un plus grand nombre de problèmes apparaissant dans cette grille. Cependant, les ICP de qualité sont en cours de développement et seront basés sur l'analyse de la qualité des données. [les couches d'assurance qualité que nous mettons en œuvre simultanément](tools.md/#quality-assurance-and-validation).
+MapYourGrid mesure ses progrès au niveau des utilisateurs, des hashtags et des pays. Nous serions honorés que vos progrès fassent partie de l'initiative. Si vous utilisez nos outils et nos cours de formation, veuillez utiliser le hashtag #MapYourGrid dans vos jeux de modifications ou ajoutez votre identifiant d'utilisateur à notre base de données de [Script KPI](https://github.com/open-energy-transition/MapYourGrid/blob/main/.github/workflows/update-tower-count.yml). Si vous souhaitez contribuer à notre développement ou vous tenir au courant de nos progrès, consultez notre site public. [organisation gestion de projet](https://github.com/orgs/open-energy-transition/projects/25/views/7) et [feuille de route](https://github.com/orgs/open-energy-transition/projects/25/views/13). Vous avez peut-être remarqué que nos indicateurs clés de performance donnent actuellement la priorité à la couverture plutôt qu'à la qualité des données. Cela s'explique par le fait que notre initiative vise à accroître la couverture dans les pays à revenu faible et intermédiaire, ce qui se traduit par un plus grand nombre de problèmes apparaissant dans cette grille. Cependant, les ICP de qualité sont en cours de développement et seront basés sur l'analyse de la qualité des données. [les couches d'assurance qualité que nous mettons en œuvre simultanément](strategies.md/#assurance-qualite-et-validation).
 
 <div class="progress-buttons">
  <a href="#countries" class="btn btn-primary">
@@ -60,6 +60,13 @@ Notre travail permet d'améliorer l'accès à l'électricité dans le monde enti
  <a href="/countrypages/Bosnia%20and%20Herzegovina/">Bosnie et Herzégovine</a>
  </div>
 
+<div class="country-card">
+ <a href="/countrypages/Bulgaria/">
+ <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bulgaria.svg" alt="Bulgaria Flag" style="border: 1px solid  #eeeeee;">
+ </br>Bulgaria
+ </a>
+ </div>
+
  <div class="country-card">
  <a href="/countrypages/Cambodia/">
  <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg" alt="Cambodia Flag">
@@ -76,7 +83,7 @@ Notre travail permet d'améliorer l'accès à l'électricité dans le monde enti
 
  <div class="country-card">
  <a href="/countrypages/Georgia/">
- <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag">
+ <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag" style="border: 1px solid  #eeeeee;">
  </a> </br>
  <a href="/countrypages/Georgia/">Géorgie</a>
  </div>

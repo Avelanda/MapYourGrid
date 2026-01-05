@@ -19,7 +19,7 @@ Nous recommandons l'éditeur JOSM (Java OpenStreetMap) en général, en particul
 <div class="starter-kit-buttons">
  <a href="#id-starter-kit" class="btn btn-third">Kit de démarrage iD - Cartographie à petite échelle conviviale pour débutants</a>
  <a href="#kit-de-demarrage-josm" class="btn btn-primary">JOSM Starter-Kit - Cartographie technique et à grande échelle</a> 
- <a href="#id-and-open-infrastructure-map-starter-kit" class="btn btn-third">iD & Open Infrastructure Map Starter-Kit - Cartographie avancée de l'iD et cartographie de terrain</a> 
+ <a href="#kit-de-demarrage-pour-la-cartographie-avec-id-et-open-infrastructure-map" class="btn btn-third">iD & Open Infrastructure Map Starter-Kit - Cartographie avancée avec iD et Open Infrastructure Map</a>
  <a href="#mapcomplete-starter-kit" class="btn btn-fourth">MapComplete Starter-Kit - Cartographie des champs de balises manquantes</a>
 </div>
 
@@ -74,13 +74,13 @@ Parfois, il existe plusieurs options possibles pour le tracé des lignes et l'em
 
 **Qu'est-ce qu'on fait ensuite?**
 
-* Vous souhaitez cartographier d'autres lignes de transport d'électricité à ciel ouvert dans votre pays à l'aide d'iD ? Consultez notre [trouver des lignes de transmission ouvertes avec Osmose](#find-open-ended-transmission-lines-with-osmose) dans le flux de travail iD.
-* Vous souhaitez apprendre à cartographier des centrales électriques ou des sous-stations avec iD ? Ou souhaitez-vous savoir comment utiliser l'iD pour la cartographie sur le terrain ? Consultez nos autres [Kit de démarrage pour l'iD et les infrastructures ouvertes](#id-and-open-infrastructure-map-starter-kit)
+* Vous souhaitez cartographier d'autres lignes de transport d'électricité à ciel ouvert dans votre pays à l'aide d'iD ? Consultez notre [trouver des lignes de transmission ouvertes avec Osmose](#trouver-des-lignes-de-transmission-ouvertes-avec-osmose) dans le flux de travail iD.
+* Vous souhaitez apprendre à cartographier des centrales électriques ou des sous-stations avec iD ? Ou souhaitez-vous savoir comment utiliser l'iD pour la cartographie sur le terrain ? Consultez notre [Kit de démarrage avec iD et Open Infrastructure Map](#kit-de-demarrage-pour-la-cartographie-avec-id-et-open-infrastructure-map)
 
 !!! Attention
     **Dans certains pays, la cartographie des lignes électriques est interdite. Vérifiez toujours les directives locales, contactez d'abord la communauté locale d'OSM ou consultez la rubrique [les communautés locales](https://community.osm.be/) et [projets locaux](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). Si vous ne trouvez pas de communauté locale, envoyez-nous un message. [courriel](mailto:MapYourGrid@openenergytransition.org) et nous vous aiderons à créer un groupe local.**
  
-    **En suivant notre [Code des cartographes](./code-of-mappers.md)En tant que membres de la communauté OpenStreetMap, nous protégeons collectivement l'intégrité de la plateforme OSM, nous renforçons la confiance avec les communautés et nous libérons le pouvoir des données ouvertes pour un avenir énergétique plus résilient et plus juste. Veuillez noter que la communauté et la fondation OpenStreetMap ne limitent pas techniquement la cartographie en quelque endroit du globe que ce soit. Par conséquent, notre Code des cartographes ne peut pas non plus être appliqué aux cartographes bénévoles de la communauté**. 
+    **En suivant nos [Bonnes pratiques de cartographie](./mapping-good-practices.md)En tant que membres de la communauté OpenStreetMap, nous protégeons collectivement l'intégrité de la plateforme OSM, nous renforçons la confiance avec les communautés et nous libérons le pouvoir des données ouvertes pour un avenir énergétique plus résilient et plus juste. Veuillez noter que la communauté et la fondation OpenStreetMap ne limitent pas techniquement la cartographie en quelque endroit du globe que ce soit. Par conséquent, nos Bonnes pratiques de cartographie ne peut pas non plus être appliqué aux cartographes bénévoles de la communauté**. 
 
 ## <div class="stradegy-header">Kit de démarrage JOSM</div></h3>
 ### **<div class="tools-header">Découvrez notre tutoriel vidéo sur le kit de démarrage pour le JOSM</div>**
@@ -109,7 +109,7 @@ Parfois, il existe plusieurs options possibles pour le tracé des lignes et l'em
 !!! Attention
     **Dans certains pays, la cartographie des lignes électriques est interdite. Vérifiez toujours les directives locales, contactez d'abord la communauté locale d'OSM ou consultez la rubrique [projets locaux](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). Si vous ne trouvez pas de communauté locale, envoyez-nous un message. [courriel](mailto:MapYourGrid@openenergytransition.org) et nous vous aiderons à créer un groupe local.**
  
-    **En suivant notre [Code des cartographes](./code-of-mappers.md)En tant que membres de la communauté OpenStreetMap, nous protégeons collectivement l'intégrité de la plateforme OSM, nous renforçons la confiance avec les communautés et nous libérons le pouvoir des données ouvertes pour un avenir énergétique plus résilient et plus juste. Veuillez noter que la communauté et la fondation OpenStreetMap ne limitent pas techniquement la cartographie en quelque endroit du globe que ce soit. Par conséquent, notre Code des cartographes ne peut pas non plus être appliqué aux cartographes bénévoles de la communauté**. 
+    **En suivant notre [Bonnes pratiques de cartographie](./mapping-good-practices.md)En tant que membres de la communauté OpenStreetMap, nous protégeons collectivement l'intégrité de la plateforme OSM, nous renforçons la confiance avec les communautés et nous libérons le pouvoir des données ouvertes pour un avenir énergétique plus résilient et plus juste. Veuillez noter que la communauté et la fondation OpenStreetMap ne limitent pas techniquement la cartographie en quelque endroit du globe que ce soit. Par conséquent, notre Code des cartographes ne peut pas non plus être appliqué aux cartographes bénévoles de la communauté**. 
 
 ### **<div class="tools-header">2. Configurez vos préréglages et règles de validation</div>**
 
@@ -211,7 +211,7 @@ Notre communauté est constamment à la recherche de lignes de transmission qui 
  <figcaption class="image-caption">En particulier, dans les zones urbaines denses qui sont très répandues au Nigeria, il peut être très difficile de déterminer le tracé des lignes sur les images satellite. Par conséquent, les cartographes placent simplement des pylônes électriques non connectés qui apparaissent sous forme de carrés bleus à des niveaux de zoom plus élevés.</figcaption>
 </div>
 
-La cartographie est un processus itératif et des erreurs peuvent être commises. Cela ne doit pas vous empêcher de cartographier ; cartographiez simplement ce que vous pouvez vérifier en fonction de vos compétences. Si une tour, des lignes ou des attributs manquent, notre outil d'assurance qualité Osmose le détectera automatiquement. [En savoir plus sur l'assurance qualité et la validation](strategies.md/#quality-assurance-and-validation) dans OpenStreetMap, et comment nous construisons au-dessus d'eux.
+La cartographie est un processus itératif et des erreurs peuvent être commises. Cela ne doit pas vous empêcher de cartographier ; cartographiez simplement ce que vous pouvez vérifier en fonction de vos compétences. Si une tour, des lignes ou des attributs manquent, notre outil d'assurance qualité Osmose le détectera automatiquement. [En savoir plus sur l'assurance qualité et la validation](strategies.md/#assurance-qualite-et-validation) dans OpenStreetMap, et comment nous construisons au-dessus d'eux.
 
 1. Nos outils se concentrent sur les réseaux de transmission, c'est pourquoi vous ne verrez peut-être pas les lignes de moins de 50 kV. Pour voir les lignes inférieures à 50 kV déjà cartographiées ou les lignes étiquetées avec `power=minor_line`, téléchargez toute la zone sur laquelle vous travaillez avec la flèche verte pointant vers le bas ⬇️. Mieux encore, vous pouvez télécharger un pays sur Map It 📍 avec la couche `Transmission+Distribution` activée.
 2. Lors de la cartographie, veillez à ne pas dépasser la frontière du pays sur lequel vous travaillez (lignes rose fluo en pointillés visibles). Sinon, vous risquez de vous retrouver à cartographier quelque chose qui existe déjà, mais qui n'a pas été téléchargé dans le JOSM. L'une des stratégies dont nous disposons peut vous aider à résoudre ce problème.
@@ -224,9 +224,9 @@ Pour une cartographie sûre, nous vous recommandons de lire ce qui suit [bonnes 
 !!! note
     **⚠️ Dans certains pays, la cartographie des lignes électriques est soumise à des restrictions. Vérifiez toujours les directives locales, contactez d'abord la communauté locale d'OSM, ou consultez la page [projets locaux](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects). Si vous ne trouvez pas de communauté locale, envoyez-nous un message. [courriel](mailto:MapYourGrid@openenergytransition.org) et nous vous aiderons à créer un groupe local.**
  
-    **⚠️ En suivant notre [Code des cartographes](./code-of-mappers.md)Avec l'aide d'OSM, nous protégeons collectivement l'intégrité de la plateforme OSM, nous renforçons la confiance avec les communautés et nous libérons le pouvoir des données ouvertes pour un avenir énergétique plus résilient et plus juste. 
+    **⚠️ En suivant nos [Bonnes pratiques de cartographie](./mapping-good-practices.md)Avec l'aide d'OSM, nous protégeons collectivement l'intégrité de la plateforme OSM, nous renforçons la confiance avec les communautés et nous libérons le pouvoir des données ouvertes pour un avenir énergétique plus résilient et plus juste. 
 
-## <div class="stradegy-header">Kit de démarrage pour la carte de l'iD et de l'infrastructure ouverte</div></h3>
+## <div class="stradegy-header">Kit de démarrage pour la cartographie avec iD et Open Infrastructure Map</div></h3>
 
 Vous êtes sur la route et vous avez repéré des pylônes électriques, des centrales électriques ou des sous-stations près de chez vous qui n'ont pas encore été localisés et vous souhaitez les cartographier rapidement vous-même ? Vous pouvez le faire sur votre appareil mobile ou votre PC à l'aide de l'éditeur iD et d'Open Infrastructure Map. De cette manière, vous pouvez également corriger les tensions, les circuits ou d'autres erreurs que vous voyez dans Open Infrastructure Map.
 

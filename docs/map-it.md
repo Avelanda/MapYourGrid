@@ -712,12 +712,10 @@ setTimeout(() => {
   } else {
     html = `
       <div class="popup-success">
-        <p>🎉 <strong>Great!</strong> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if it is downloading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on regions or states (also works for osmose). For <strong> GEM </strong> selections, you will need to download the geojson file. Afterwards drag and drop the file into JOSM. For osmose, wikidata and powerplantmatching, the layer will be directly loaded in JOSM. <br>⚠️ <strong>If nothing happens:</strong></p>
-        <ol>
-          <li>Check if your ad-blocker is off and JOSM is open</li>
+        <p> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if your data is loading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on provinces or states.<br>⚠️If nothing happens:</p><ol><li> <strong>Please be aware that the servers used to download your data via Overpass are sometimes overloaded, so you may need to click your region again if you receive an error message in JOSM.</strong></li>
           <li>Make sure Remote Control is enabled in JOSM</li>
           <li>If it’s enabled but still not working, toggle it off and on again</li>
-          <li>Note that hint layers do not work on regional layers (except for Osmose). In this case, please load the data onto a national layer.</li>
+          <li>Note that hint layers do not work on regional layers. In this case, please load the data onto a national layer.</li>
           <li><a href="https://mapyourgrid.org/starter-kit/">Look into the Starter-Kit</a>
         </ol>
       </div>
@@ -1123,6 +1121,7 @@ map.on('zoomend', function() {
     | CTRL+SHIFT+C   | Copy coordinates of the selected point(s) to clipboard    |
     | CTRL+W         | Switch between activated Map Paint Style and Wireframe    |
     | CTRL+H         | History (opens history dialog for selected objects)       |
+    | CTRL+U         | Update the existing geometries and tags loaded in JOSM    | 
     | Shift+V        | Validate (runs data validation on the current layer)      |
     | Tabulator      | Show/hide Sidebar and Edit toolbar                        |
 
@@ -1138,10 +1137,10 @@ The following list provides the main good practices for mapping different power 
 * [Power networks/Guidelines/Interconnector](https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines/Interconnector)
 * [Clarifying power=pole vs power=tower](https://community.openstreetmap.org/t/clarifying-power-pole-vs-power-tower/127382)
 
-!!! Warning "Local Communities, Projects and Code of Mappers"
+!!! Warning "Local Communities, Projects and good practices for mapping"
     **Before you start mapping, please find out about the mapping restrictions in the respective country. In some countries, the mapping of transmission lines is not permitted. Get in touch with local users by finding out about your [local communities](https://community.osm.be/) and [local projects](https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects).  If you can't find a local community, please send us an [email](mailto:MapYourGrid@openenergytransition.org) and we will help you set up a local group.**
 
-    **By following our [Code of Mappers](./code-of-mappers.md), we collectively protect the integrity of the OpenStreetMap platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please do NOT copy any data from hint layer directly into your OpenStreetMap data layer. Every data point in your OpenStreetMap data layer must be manually set and [verified](https://wiki.openstreetmap.org/wiki/Verifiability). The metadata must also be verified against compatible licensed sources or by people on the ground. If you cannot verify the data using satellite images or any other compatible source, please do not add this information from hint layers. This may seem like a high burden at first, but it ensures the high quality of OpenStreetMap.** 
+    **By following our [Good practices for mapping](./mapping-good-practices.md), we collectively protect the integrity of the OpenStreetMap platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please do NOT copy any data from hint layer directly into your OpenStreetMap data layer. Every data point in your OpenStreetMap data layer must be manually set and [verified](https://wiki.openstreetmap.org/wiki/Verifiability). The metadata must also be verified against compatible licensed sources or by people on the ground. If you cannot verify the data using satellite images or any other compatible source, please do not add this information from hint layers. This may seem like a high burden at first, but it ensures the high quality of OpenStreetMap.** 
 
 !!! Warning "Risk of Double Mapping"
      Please bear in mind that you have only downloaded transmission grid data for the country, state or province that you selected. This includes power plants, generators, substations, power towers and transmission lines. Other OpenStreetMap objects, such as streets, will not be visible. **Therefore, never use our tools to map objects other than those loaded via Overpass, as otherwise other mappers will have to clean up the duplicate data.**

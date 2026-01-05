@@ -8,7 +8,7 @@
 </figcaption>
 </div>
 
-MapYourGrid mide su progreso a nivel de usuario, hashtag y país. Sería un honor que tu progreso formara parte de la iniciativa. Si utilizas nuestras herramientas y cursos de formación, utiliza el hashtag #MapYourGrid en tus changesets o añade tu ID de usuario a nuestra base de datos. [Guión KPI](https://github.com/open-energy-transition/MapYourGrid/blob/main/.github/workflows/update-tower-count.yml). Si desea contribuir a nuestro desarrollo o mantenerse al día de nuestros progresos, eche un vistazo a nuestra página pública [organización gestión de proyectos](https://github.com/orgs/open-energy-transition/projects/25/views/7) y [hoja de ruta](https://github.com/orgs/open-energy-transition/projects/25/views/13). Habrá observado que nuestros indicadores priorizan actualmente la cobertura sobre la calidad de los datos. Esto se debe a que nuestra iniciativa está trabajando para aumentar la cobertura en los países de ingresos bajos y medios, lo que hace que aparezcan más problemas en esta cuadrícula. Sin embargo, los KPI de calidad están actualmente en fase de desarrollo y se basarán en la [niveles de garantía de calidad que estamos aplicando simultáneamente](tools.md/#quality-assurance-and-validation).
+MapYourGrid mide su progreso a nivel de usuario, hashtag y país. Sería un honor que tu progreso formara parte de la iniciativa. Si utilizas nuestras herramientas y cursos de formación, utiliza el hashtag #MapYourGrid en tus changesets o añade tu ID de usuario a nuestra base de datos. [Guión KPI](https://github.com/open-energy-transition/MapYourGrid/blob/main/.github/workflows/update-tower-count.yml). Si desea contribuir a nuestro desarrollo o mantenerse al día de nuestros progresos, eche un vistazo a nuestra página pública [organización gestión de proyectos](https://github.com/orgs/open-energy-transition/projects/25/views/7) y [hoja de ruta](https://github.com/orgs/open-energy-transition/projects/25/views/13). Habrá observado que nuestros indicadores priorizan actualmente la cobertura sobre la calidad de los datos. Esto se debe a que nuestra iniciativa está trabajando para aumentar la cobertura en los países de ingresos bajos y medios, lo que hace que aparezcan más problemas en esta cuadrícula. Sin embargo, los KPI de calidad están actualmente en fase de desarrollo y se basarán en la [niveles de garantía de calidad que estamos aplicando simultáneamente](strategies.md/#garantia-de-calidad-y-validacion).
 
 <div class="progress-buttons">
     <a href="#countries" class="btn btn-primary">
@@ -61,6 +61,13 @@ Nuestro trabajo contribuye a mejorar el acceso a la electricidad en todo el mund
  </div>
 
  <div class="country-card">
+ <a href="/countrypages/Bulgaria/">
+ <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bulgaria.svg" alt="Bulgaria Flag" style="border: 1px solid  #eeeeee;">
+ </br>Bulgaria
+ </a>
+ </div>
+
+ <div class="country-card">
  <a href="/countrypages/Cambodia/">
  <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Cambodia.svg" alt="Cambodia Flag">
  </a> </br>
@@ -76,7 +83,7 @@ Nuestro trabajo contribuye a mejorar el acceso a la electricidad en todo el mund
 
  <div class="country-card">
  <a href="/countrypages/Georgia/">
- <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag">
+ <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Georgia.svg" alt="Georgia Flag" style="border: 1px solid  #eeeeee;">
  </a> </br>
  <a href="/countrypages/Georgia/">Georgia</a>
  </div>
@@ -85,7 +92,7 @@ Nuestro trabajo contribuye a mejorar el acceso a la electricidad en todo el mund
  <a href="/countrypages/Kazakhstan/">
  <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kazakhstan.svg" alt="Kazakhstan Flag">
  </a> </br>
- <a href="/countrypages/Kazakhstan/">Kazajstán
+ <a href="/countrypages/Kazakhstan/">Kazajstán</a>
  </div>
 
  <div class="country-card">
@@ -127,7 +134,7 @@ Nuestro trabajo contribuye a mejorar el acceso a la electricidad en todo el mund
  <a href="/countrypages/Sri%20Lanka/">
  <img class="off-glb" src="http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Sri%20Lanka.svg" alt="Sri Lanka Flag">
  </a> </br>
- <a href="/countrypages/Sri%20Lanka/">Sri Lanka
+ <a href="/countrypages/Sri%20Lanka/">Sri Lanka</a>
  </div>
 
  <div class="country-card">

@@ -412,7 +412,7 @@ La cartografía de las infraestructuras de transmisión en OpenStreetMap ayuda a
 
 ### Nuestro enfoque de la mitigación de riesgos
 
-MapYourGrid aplica un marco estratificado y sensible al contexto para garantizar que la cartografía sirva al bien público respetando al mismo tiempo las sensibilidades nacionales y las prioridades comunitarias. Más información en [Código de los cartógrafos](./code-of-mappers.md).
+MapYourGrid aplica un marco estratificado y sensible al contexto para garantizar que la cartografía sirva al bien público respetando al mismo tiempo las sensibilidades nacionales y las prioridades comunitarias. Más información en [Buenas prácticas de mapeo](./mapping-good-practices.md).
 
 #### Consentimiento comunitario y alineación local
 

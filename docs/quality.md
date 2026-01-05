@@ -27,10 +27,11 @@ html, body {
   display: none !important;
 }
 
+
 /* Make iframe fill the viewport completely */
 .iframestyle {
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
   border: none;
   display: block;
   margin-top: -2rem;
@@ -45,8 +46,7 @@ html, body {
  }
 }
 </style>
-
 <iframe
-  src="https://apps.dynartio.com/mapyourgrid/indicatormap.html"
-  class="iframestyle">
+  src="https://apps.dynartio.com/mapyourgrid/gridinspector.html"
+  class="iframestyle" allow="fullscreen">
 </iframe>
