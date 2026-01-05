@@ -14,7 +14,7 @@ nav:
   - PROGRESS : progress.md
   - DATA : global-grid-data.md
   - FAQ : faq.md
-  - BLOG&TEAM : about-us-blog.md
+  - ABOUT US : about-us.md
   #    2025:
   #      - "Liberate the Grid": blog/firstrename.md
 
@@ -138,7 +138,7 @@ plugins:
             "STRATEGIES": "ESTRATEGIAS"
             "PROGRESS": "PROGRESO"
             "FAQ": "¿FAQ?"
-            "BLOG&TEAM": "EQUIPO"
+            "ABOUT US": "SOBRE NOSOTROS"
         - locale: fr
           name: Français
           build: true
@@ -150,7 +150,7 @@ plugins:
             "STRATEGIES": "STRATÉGIES"
             "PROGRESS": "PROGRÈS"
             "FAQ": "FAQ?"
-            "BLOG&TEAM": "ÉQUIPE"
+            "ABOUT US": "A PROPOS"
           site_name: "MapYourGrid"
       default_language: en
       material_alternate: true
