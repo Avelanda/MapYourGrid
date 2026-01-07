@@ -1,14 +1,32 @@
 <div class="page-headers">
-<h1>Blog y equipo </h1>
+<h1>Sobre nosotros </h1>
 </div>
 
-MapYourGrid está formado por un equipo de expertos en energía, datos y cartografía. En este blog compartimos nuestras últimas noticias, hitos e ideas.
+MapYourGrid reúne a un equipo multidisciplinar con una gobernanza transparente, al servicio de los datos abiertos y de la transición energética. A continuación, encontrará nuestros documentos de gobernanza, nuestro equipo, así como nuestros artículos de blog y noticias.
 
 <div class="starter-kit-buttons">
- <a href="#our-team" class="btn btn-primary">
- Nuestro equipo</a>
- <a href="#news-and-stories" class="btn btn-secondary">Noticias y reportajes</a>
+ <a href="#nuestra-gobernanza" class="btn btn-primary"> Nuestra gobernanza</a>
+ <a href="#nuestro-equipo" class="btn btn-secondary"> Nuestro equipo</a>
+ <a href="#nuestras-noticias" class="btn btn-secondary"> Nuestras noticias</a>
 </div>
+
+## **<div class="stradegy-header">Nuestra gobernanza</div>**
+<div class="grid-wrapper">
+  <div class="country-card">
+    <a href="/governance-handbook">
+      <img class="off-glb" src="/images/governance.svg">
+      </br>Our governance handbook (in English)
+    </a>
+  </div>
+
+  <div class="country-card">
+    <a href="/mission-statement">
+      <img class="off-glb" src="/images/mission-statement.svg">
+      </br>Our mission statement (in English)
+    </a>
+  </div>
+</div>
+
 
 ## **<div class="stradegy-header">Nuestro equipo</div>**
 
@@ -185,7 +203,7 @@ MapYourGrid está formado por un equipo de expertos en energía, datos y cartogr
  <div class="team-member">
  <img src="/images/team-members/noemielehuby.jpeg" alt="Noémie Lehuby">
  
- <div><strong>Noémie Lehube</strong></div>
+ <div><strong>Noémie Lehuby</strong></div>
  <div class="company-logo">
  <a href="https://junglebus.io/" target="_blank" rel="noopener">
  <img src="/images/logos/junglebus-logo.jpg" alt="Jungle Bus Logo">
@@ -257,26 +275,29 @@ MapYourGrid está formado por un equipo de expertos en energía, datos y cartogr
 
 </div>
 
-## **<div class="stradegy-header">Nuestra gobernanza</div>**
-<div class="grid-wrapper">
-  <div class="country-card">
-    <a href="/governance-handbook">
-      <img class="off-glb" src="../images/logos/MapYourGrid-logo.png" alt="MapYourGrid progress">
-      </br>Our governance handbook (in English)
-    </a>
-  </div>
 
-  <div class="country-card">
-    <a href="/mission-statement">
-      <img style="width:200px; margin-top:20px;" class="off-glb" src="https://stats.now.ohsome.org/assets/images/ohsomeNowStats_logo.svg" alt="Ohsome Nowstats">
-      </br>Our mission statement (in English)
-    </a>
-  </div>
-</div>
 
-## **<div class="stradegy-header">Noticias</div>**
+## **<div class="stradegy-header">Nuestras noticias</div>**
 
 <div class="grid cards" markdown>
+
+- <a href="../blog/20260105-GridInspector" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/GridInspector-Quality-Europe-Africa-Asia.png" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **GridInspector: A Global Diagnostic of Open Power Grid Data (5 Jan. 2026)** <br>
+  Can OpenStreetMap power grid data be used with confidence, and under which conditions?  Our new tool GridInspector aims to answer this fundamental question. [:arrow_right: Read more](blog/20260105-GridInspector.md)
+</a>
+
+- <a href="../blog/20251209-humans-for-the-grid" style="text-decoration: none; color: inherit;">
+  <img src="/images/asia-grid.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **Humans for the Grid - Why data on the electrical grid still demands actual human labor (9 Dec. 2025)** <br>
+  Despite advances in AI and automation, high-quality grid mapping still relies on skilled human mappers whose expertise ensures accuracy, verification, and community-driven improvement. [:arrow_right: Read more](blog/20251209-humans-for-the-grid.md)
+</a>
+
+- <a href="../blog/20251128-LineLength" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/7.312.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **Global Transmission Length Index, world's first open and free grid length database (28 Nov. 2025)**  
+  In November 2025, we finalised the  'Global Transmission Length Index'. This database includes the high-voltage circuit line lengths of almost every country in the world, per voltage, and with sources. [:arrow_right: Read more](blog/20251128-LineLength.md)
+</a>
 
 - <a href="../blog/20250918-HIFLD" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/usa-final-hifld.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
@@ -297,7 +318,7 @@ MapYourGrid está formado por un equipo de expertos en energía, datos y cartogr
 </div>
 
 <div class="our-mapping-section" style="display: flex; flex-direction: column; align-items: center;">
- <h2>Manténgase informado suscribiéndose a nuestro boletín de noticias</h2>
+ <h2>Suscríbase a nuestro boletín</h2>
  <div>
  <script async src="https://eocampaign1.com/form/c308f2c6-6898-11f0-9bf6-53fb9ff1b12b.js" data-form="c308f2c6-6898-11f0-9bf6-53fb9ff1b12b"></script>
  </div>

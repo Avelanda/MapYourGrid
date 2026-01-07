@@ -1,15 +1,32 @@
 <div class="page-headers">
-<h1>Blog & Team </h1>
+<h1>About us </h1>
 </div>
 
 
-MapYourGrid is powered by a diverse team of experts working across energy, data, and mapping. This blog is where we share our latest news, milestones, and ideas.
-
+MapYourGrid brings together a multidisciplinary team under a transparent governance model, dedicated to open data and the energy transition. Below, you will find our governance documents, our team, as well as our blog articles and news.
 
 <div class="starter-kit-buttons">
-  <a href="#our-team" class="btn btn-primary">
-  Our team</a>
+  <a href="#our-governance" class="btn btn-primary">Our Governance</a>
+  <a href="#our-team" class="btn btn-secondary">Our team</a>
   <a href="#news-and-stories" class="btn btn-secondary">News and stories</a>
+</div>
+
+
+## **<div class="stradegy-header">Our Governance</div>**
+<div class="grid-wrapper">
+  <div class="country-card">
+    <a href="/governance-handbook">
+      <img class="off-glb" src="/images/governance.svg">
+      </br>Our governance handbook
+    </a>
+  </div>
+
+  <div class="country-card">
+    <a href="/mission-statement">
+      <img class="off-glb" src="/images/mission-statement.svg">
+      </br>Our mission statement
+    </a>
+  </div>
 </div>
 
 
@@ -261,26 +278,16 @@ MapYourGrid is powered by a diverse team of experts working across energy, data,
  </div>
 </div>
 
-## **<div class="stradegy-header">Governance</div>**
-<div class="grid-wrapper">
-  <div class="country-card">
-    <a href="/governance-handbook">
-      <img class="off-glb" src="../images/logos/MapYourGrid-logo.png" alt="MapYourGrid progress">
-      </br>Our governance handbook
-    </a>
-  </div>
-
-  <div class="country-card">
-    <a href="/mission-statement">
-      <img style="width:200px; margin-top:20px;" class="off-glb" src="https://stats.now.ohsome.org/assets/images/ohsomeNowStats_logo.svg" alt="Ohsome Nowstats">
-      </br>Our mission statement
-    </a>
-  </div>
-</div>
 
 ## **<div class="stradegy-header">News and stories</div>**
 
 <div class="grid cards" markdown>
+
+- <a href="../blog/20260105-GridInspector" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/GridInspector-Quality-Europe-Africa-Asia.png" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **GridInspector: A Global Diagnostic of Open Power Grid Data (5 Jan. 2026)** <br>
+  Can OpenStreetMap power grid data be used with confidence, and under which conditions?  Our new tool GridInspector aims to answer this fundamental question. [:arrow_right: Read more](blog/20260105-GridInspector.md)
+</a>
 
 - <a href="../blog/20251209-humans-for-the-grid" style="text-decoration: none; color: inherit;">
   <img src="/images/asia-grid.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">

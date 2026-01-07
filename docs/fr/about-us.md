@@ -1,14 +1,34 @@
 <div class="page-headers">
-<h1>Blog et équipe </h1>
+<h1>A propos </h1>
 </div>
 
-MapYourGrid est alimenté par une équipe diversifiée d'experts travaillant dans les domaines de l'énergie, des données et de la cartographie. Ce blog est l'endroit où nous partageons nos dernières nouvelles, étapes et idées.
+MapYourGrid rassemble une équipe pluridisciplinaire autour d'une gouvernance transparente, au service de la donnée ouverte et de la transition énergétique. Vous trouverez ci-dessous nos documents de gouvernance, notre équipe, ainsi que nos articles de blog et actualités.
+
 
 <div class="starter-kit-buttons">
- <a href="#our-team" class="btn btn-primary">
- Notre équipe</a>
- <a href="#news-and-stories" class="btn btn-secondary">Nouvelles et histoires</a>
+ <a href="#notre-gouvernance" class="btn btn-primary">Notre gouvernance</a>
+ <a href="#notre-equipe" class="btn btn-secondary">Notre équipe</a>
+ <a href="#nos-articles" class="btn btn-secondary">Nos articles</a>
 </div>
+
+
+## **<div class="stradegy-header">Notre gouvernance</div>**
+<div class="grid-wrapper">
+  <div class="country-card">
+    <a href="/governance-handbook">
+      <img class="off-glb" src="/images/governance.svg">
+      </br>Our governance handbook (in English)
+    </a>
+  </div>
+
+  <div class="country-card">
+    <a href="/mission-statement">
+      <img class="off-glb" src="/images/mission-statement.svg">
+      </br>Our mission statement (in English)
+    </a>
+  </div>
+</div>
+
 
 ## **<div class="stradegy-header">Notre équipe</div>**
 
@@ -137,7 +157,7 @@ MapYourGrid est alimenté par une équipe diversifiée d'experts travaillant dan
  <div class="team-member">
  <img src="/images/team-members/benoitribon.jpg" alt="Benoit Ribon">
  
- <div><strong>Dr Benoit Ribon</strong></div>
+ <div><strong>Dr. Benoit Ribon</strong></div>
  <div class="company-logo">
  <a href="https:dynartio.com/" target="_blank" rel="noopener">
  <img src="/images/logos/dynartio-logo.svg" alt="Dynartio Logo">
@@ -185,7 +205,7 @@ MapYourGrid est alimenté par une équipe diversifiée d'experts travaillant dan
  <div class="team-member">
  <img src="/images/team-members/noemielehuby.jpeg" alt="Noémie Lehuby">
  
- <div><strong>Noémie Lehube</strong></div>
+ <div><strong>Noémie Lehuby</strong></div>
  <div class="company-logo">
  <a href="https://junglebus.io/" target="_blank" rel="noopener">
  <img src="/images/logos/junglebus-logo.jpg" alt="Jungle Bus Logo">
@@ -257,26 +277,26 @@ MapYourGrid est alimenté par une équipe diversifiée d'experts travaillant dan
 
 </div>
 
-## **<div class="stradegy-header">Notre gouvernance</div>**
-<div class="grid-wrapper">
-  <div class="country-card">
-    <a href="/governance-handbook">
-      <img class="off-glb" src="../images/logos/MapYourGrid-logo.png" alt="MapYourGrid progress">
-      </br>Our governance handbook (in English)
-    </a>
-  </div>
-
-  <div class="country-card">
-    <a href="/mission-statement">
-      <img style="width:200px; margin-top:20px;" class="off-glb" src="https://stats.now.ohsome.org/assets/images/ohsomeNowStats_logo.svg" alt="Ohsome Nowstats">
-      </br>Our mission statement (in English)
-    </a>
-  </div>
-</div>
-
-## **<div class="stradegy-header">Nouvelles</div>**
-
+## **<div class="stradegy-header">Nos articles</div>**
 <div class="grid cards" markdown>
+
+- <a href="../blog/20260105-GridInspector" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/GridInspector-Quality-Europe-Africa-Asia.png" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **GridInspector: A Global Diagnostic of Open Power Grid Data (5 Jan. 2026)** <br>
+  Can OpenStreetMap power grid data be used with confidence, and under which conditions?  Our new tool GridInspector aims to answer this fundamental question. [:arrow_right: Read more](blog/20260105-GridInspector.md)
+</a>
+
+- <a href="../blog/20251209-humans-for-the-grid" style="text-decoration: none; color: inherit;">
+  <img src="/images/asia-grid.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **Humans for the Grid - Why data on the electrical grid still demands actual human labor (9 Dec. 2025)** <br>
+  Despite advances in AI and automation, high-quality grid mapping still relies on skilled human mappers whose expertise ensures accuracy, verification, and community-driven improvement. [:arrow_right: Read more](blog/20251209-humans-for-the-grid.md)
+</a>
+
+- <a href="../blog/20251128-LineLength" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/7.312.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **Global Transmission Length Index, world's first open and free grid length database (28 Nov. 2025)**  
+  In November 2025, we finalised the  'Global Transmission Length Index'. This database includes the high-voltage circuit line lengths of almost every country in the world, per voltage, and with sources. [:arrow_right: Read more](blog/20251128-LineLength.md)
+</a>
 
 - <a href="../blog/20250918-HIFLD" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/usa-final-hifld.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
@@ -297,7 +317,7 @@ MapYourGrid est alimenté par une équipe diversifiée d'experts travaillant dan
 </div>
 
 <div class="our-mapping-section" style="display: flex; flex-direction: column; align-items: center;">
- <h2>Restez à l'écoute en vous inscrivant à notre lettre d'information</h2>
+ <h2>Inscrivez-vous à notre infolettre</h2>
  <div>
  <script async src="https://eocampaign1.com/form/c308f2c6-6898-11f0-9bf6-53fb9ff1b12b.js" data-form="c308f2c6-6898-11f0-9bf6-53fb9ff1b12b"></script>
  </div>
