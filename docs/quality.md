@@ -47,6 +47,6 @@ html, body {
 }
 </style>
 <iframe
-  src="https://apps.dynartio.com/mapyourgrid/gridinspector.html"
+  src="https://mapyourgrid.dynartio.com/gridinspector/"
   class="iframestyle" allow="fullscreen">
 </iframe>

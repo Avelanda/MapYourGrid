@@ -65,7 +65,7 @@ You are looking for a way on how to download the power infrastructure data from 
 </div>
 
 <div class="awesome-github-btn">
-  <a href="http://mapyourgrid.infos-reseaux.com:9001/api/v1/buckets/mapyourgrid/objects/download?prefix=data-worldwide%2Fawesomelist.csv" target="_blank" rel="noopener">
+  <a href="https://mapyourgrid.dynartio.com/files/awesomelist.csv" target="_blank" rel="noopener">
    <img src="https://raw.githubusercontent.com/open-energy-transition/MapYourGrid/refs/heads/main/docs/icons/download_icon.png"
          width="20" height="20">
     <span> Download in csv</span>
