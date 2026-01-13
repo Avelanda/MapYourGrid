@@ -70,6 +70,7 @@ The Todo plugin is used for almost all pioneer mapping strategies, systematicall
 1. Press `CTRL + A`  to select all objects in the hint layer. Press the Add in the Todo plugin window (`Windows → Todo list`)
 1. Switch back to the OSM data layer.
 1. You can now systematically step through all the hints by pressing Mark.
+1. **Bonus:** By assigning the “Mark” hotkey to F1, it is much easier and faster to work through the various issues. `Open Edit → Preferences → Keyboard Shotcuts` and seach for `Mark`. Uncheck the `Use Default` box and select they key you want to use.  The zoom level is often too high, so it can also be helpful to set `View: Zoom Out (keypad)` to F2.
 
 
 ### **<div class="tools-header">Multiple Hint Layers </div>**
@@ -411,7 +412,24 @@ To find further imagery layers that are not natively integrated into JOSM, check
 To find objects that are missing attributes like WikiData, names, cables or circuits you can easily filter the shown data in JOSM by that. Just Click on `Windows` -> `Filter`. By adding a filter string like `power=line AND (circuits: OR cables)`, you can now hide, invert or deactivate the data that already provides this information from the editor, showing only the data without circuits or cables. 
 
 
-### <div class="tools-header">Improve OSM tags with PPM</div></h3>
+### <div class="tools-header">Continuos Download and Hydro Power Mapping</div></h3>
+Mapping hydro power requires specialised tools and advanced experience in mapping. As with our previous workflows, you will be interested in all the data that has already been mapped in OpenStreetMap, such as waterways, dams, lakes, buildings and, of course, the electrical grid. Therefore, the [Map It📍](https://MapYourGrid.org/map-it/) page alone might help you to find hydro power plants at the end of the line, but you would now like to load all the data for a large region along the waterways. The continuosDownload plugin can help you here out:
+
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+    <img src="../images/hydro.jpg" class="img-border" alt="Filter">
+    <figcaption class="image-caption">To map hydroelectric power plants like this one in Chile, you need to download all the OpenStreetMap data.</figcaption>
+</div>
+
+1. Download the [continuosDownload](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/continuosDownload) plugin for JOSM under `Edit → Preferences → Plugins`. Search for continuosDownload, mark it and press OK. You might need to restart JOSM.
+2. The plugin's default settings are suboptimal. You can chance the setting under `Download Seetings`. Change `Max download boxes` to 4 and the `Wait time` to 100 ms. `Extra Download area` and `Max download area` should be changed to 1.
+3. Download a hint dataset like [GloHydroRes](https://zenodo.org/records/14526360). 
+4. To make CSV files and other formats readable by JOSM you need the [OpenData plugin](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/OpenData) installed.
+5. To make coordinates readable by JOSM, change the names of the coordinate columns to latitude and longitude.
+6. Add the locations you want to work on to your to-do list from the hint layers, then head to your first destination.
+7. Press the green download button in JOSM to get all data for the bounding box.
+8. All data will now be automatically downloaded to your viewing area and beyond. Zoom out too much and you will run into bandwidth limitations. For further details and guidelines on how to perform power mapping, please refer to our [Hydropower Mapping Guidelines](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Hydropower). 
+
+### <div class="tools-header">Improve OpenStreetMap tags with powerplantmatching</div></h3>
 
 <a href="https://github.com/PyPSA/powerplantmatching" target="_blank">Powerplantmatching (PPM)</a> is a python repository designed to harmonize and combine power plant datasets from sources like OpenStreetMap (OSM) and Global Energy Monitor. It is widely used to prepare validated generation data for energy system models such as PyPSA-EUR. A new feature now fetches power plant data  from OSM and flags all <strong>power plants and generators that are rejected</strong> due to incomplete or inconsistent metadata. These include elements missing a <code>name</code>, <code>output:electrical</code>, <code>plant:method</code>, incorrect unit formats, among others.
 
