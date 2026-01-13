@@ -415,6 +415,20 @@ Disclaimer: These organisations are not affiliated with MapYourGrid nor endorse 
         
     ![map](images/impact/atlas-osm.jpg){: .img-border } 
 
+**Atlas** ![Atlas](images/impact/Atlas-logo-dark.svg){width=40px}
+??? "Power Grid Layer eg. Africa Electricity Grid. (Click Me)" 
+    
+    [**Link to website**](https://atlas.co/maps/africa-electricity-grid)
+        
+    ![map](images/impact/atlas-osm.jpg){: .img-border } 
+
+**MapStand** ![MapStand](images/impact/MapStand.svg){width=40px}
+??? "Global Spatial Data for the Energy Transition. (Click Me)" 
+    
+    [**Link to website**](https://mapstand.com/)
+        
+    ![map](images/impact/mapstand-dashboard.jpeg){: .img-border } 
+
 
 ## **<div class="tools-header">Responsible Grid Mapping: Understanding Risks and Mitigation</div>**
 
