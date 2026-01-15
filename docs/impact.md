@@ -429,6 +429,13 @@ Disclaimer: These organisations are not affiliated with MapYourGrid nor endorse 
         
     ![map](images/impact/mapstand-dashboard.jpeg){: .img-border } 
 
+**Continuum Industries** ![Continuum Industries](images/impact/continuum-industries.jpeg){width=40px}
+??? "Optimize planning for your transmission, pipeline routing and site selection projects. (Click Me)" 
+    
+    [**Link to website**](https://www.continuum.industries/en-us)
+        
+    ![map](images/impact/Optioneer.jpg){: .img-border } 
+
 
 ## **<div class="tools-header">Responsible Grid Mapping: Understanding Risks and Mitigation</div>**
 
