@@ -133,6 +133,8 @@ Sometimes, there are several possible options for line routing and it is unclear
   <a href="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" target="_blank">
   <img src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">OhmyGrid legend for transmission grid mapping. Click to enlarge.</figcaption>
+    <img src="/images/voltage-auto-filter.jpeg" class="img-border" alt="JOSM PowerNetworkTools Plugin">
+  <figcaption class="image-caption">The voltage autofilter enables you to quickly identify the voltages in use and filter by voltage. Click to enlarge</figcaption> 
 </div>
 
 ### **<div class="tools-header">3. Add Visual Clarity with Custom Map Styles :art:</div>**
@@ -143,20 +145,24 @@ Sometimes, there are several possible options for line routing and it is unclear
 
 **Optional steps for an even better visual experience :**
 
+* To quickly see which voltages are used in a region and to filter lines with specific voltages the auto filters in JOSM can be very helpful. Press `Edit` -> `Preferences` -> `OSM Data`. Go to 'Other Options', activate 'Use Auto Filters' and select 'Rule Voltage [5]' from the drop-down menu. You will now see multiple buttons in the top left corner showing the voltages in the view. Click on a voltage to filter by it.
 * Not all grids are made the same. Use this MapCSS file for [low-density grids](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/ohmygrid-default.mapcss), or this one for [high-density grids](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/ohmygrid-default-high-density.mapcss){target="_blank"}. 
 * You can check [ColorMyGrid](https://github.com/open-energy-transition/color-my-grid){target="_blank"}, our MapCSS Generator tool, to easily adapt the MapCSS file to your needs. The raw data to edit the [map legend](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg){target="_blank"} is in the ColorMyGrid repo. 
 
+<div style="float: right; margin: 10px 0 20px 20px; width: 350px;">
+
+</div>
 
 ### **<div class="tools-header">4. Let's map! Choose a Good First Line </div>**
+
+Our community is constantly investigating transmission lines that are suitable for beginner friendly mapping experiences. Simply select a 'Good First Lines' from the following page, and tick it if you have started/attemped mapping it. For now, just keep in mind in which country (or region) your picked 'Good first line' is in, as the next step is to load that countries' grid! Select a `Good First Line` from the following page: 
 
 <div style="float: right; margin: 5px 0 10px 20px; width: 350px;">
   <img src="/images/starter-kit/kenya-look-into-data.jpg" class="img-border" style="width: 100%;"> </a>
   <figcaption class="image-caption">A substation of a hydroelectric power plant in Nigeria and the connection to the transmission grid.</figcaption>
   <img src="/images/starter-kit/double-mapping-warning.jpg" class="img-border" style="width: 100%;">
-  <figcaption class="image-caption">The transmission lines do not end abruptly at the pink administrative borders. Therefore, the substation at the end of the interconnector may appear unmapped. The map in the download window displays all OpenStreetMap data, enabling you to swiftly verify whether substations or lines have been mapped. To map across borders, it is always recommended that you load both areas into your editor! Click to enlarge.</figcaption>
+  <figcaption class="image-caption">The transmission lines do not end abruptly at the pink administrative borders. Therefore, the substation at the end of the interconnector may appear unmapped.</figcaption>
 </div>
-
-Our community is constantly investigating transmission lines that are suitable for beginner friendly mapping experiences. Simply select a 'Good First Lines' from the following page, and tick it if you have started/attemped mapping it. For now, just keep in mind in which country (or region) your picked 'Good first line' is in, as the next step is to load that countries' grid! Select a `Good First Line` from the following page: 
 
 [Good First Lines :fontawesome-solid-paper-plane:](good-first-lines.md){ .md-button .md-button--primary target="_blank" }
 

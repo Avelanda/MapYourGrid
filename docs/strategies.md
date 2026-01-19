@@ -339,17 +339,22 @@ Please be aware of the licence and quality of the documents you are finding. If 
 
 ### <div class="tools-header">JOSM PowerNetworkTools Plugin 🔌</div></h3>
 
-This tool estimates the voltage of a substation busbar from aerial imagery by measuring the clearance between conductors. The clearance is dictated by the voltage and so allows an estimate of the voltage to be made. Although not a perfect method, when combined with knowledge of a country's standard power grid voltages and power infrastructure layout this can greatly assist mappers in assigning voltages to power infrastructure from aerial imagery.
-
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
     <img src="/images/plugin.png" class="img-border" alt="JOSM PowerNetworkTools Plugin">
-    <figcaption class="image-caption">The OpenStreetMap Editor plugin that allows to roughly estimate the voltage levels based on phase to phase clearance measurements.</figcaption>   
+    <figcaption class="image-caption">The OpenStreetMap Editor plugin that allows to roughly estimate the voltage levels based on phase to phase clearance measurements.</figcaption>  
+    <img src="/images/voltage-auto-filter.jpeg" class="img-border" alt="JOSM PowerNetworkTools Plugin">
+    <figcaption class="image-caption">The voltage autofilter enables you to quickly identify the voltages in use and filter by voltage.</figcaption>    
 </div>
 
-1. Download the `PowerNetworkTools` plugin for JOSM. Go to `Edit` -> `Preferences`. Search for `PowerNetworkTools`, select it and press OK. 
+This tool estimates the voltage of a substation busbar from aerial imagery by measuring the clearance between conductors. The clearance is dictated by the voltage and so allows an estimate of the voltage to be made. Although not a perfect method, when combined with knowledge of a country's standard power grid voltages and power infrastructure layout this can greatly assist mappers in assigning voltages to power infrastructure from aerial imagery.
+
+1. Download the `PowerNetworkTools` plugin for JOSM. Go to `Edit` -> `Preferences` -> `Plugins`. Search for `PowerNetworkTools`, select it and press OK. 
 1. Activate the Voltage Estimator in the `Windows` menu.
 1. Press `V` to measure the distance between the two phases at the busbar.
 1. Read more about how to use the plugin in the README of the [official repository](https://github.com/openinframap/josm-power-network-tools).
+1. **Bonus:** To quickly see which voltages are used in a region and to filter lines with specific voltages the auto filters in JOSM can be very helpful. Press `Edit` -> `Preferences` -> `OSM Data`. Go to 'Other Options', activate 'Use Auto Filters' and select 'Rule Voltage [5]' from the drop-down menu. You will now see multiple buttons in the top left corner showing the voltages in the view. Click on a voltage to filter by it.
+
+
 
 We recommend the following documents for a deeper dive into the construction of the electrical grid and how it is designed, including the relationship between distance and voltage based on IEC 60071-2. Please keep in mind that different standards may apply depending on the country.
 
