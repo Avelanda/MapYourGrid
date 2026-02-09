@@ -283,6 +283,12 @@ MapYourGrid brings together a multidisciplinary team under a transparent governa
 
 <div class="grid cards" markdown>
 
+- <a href="../blog/20260112-Grid-data-quality-webinar" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/MYG-Webinar-YouTubeScreenshot.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **Grid Data Quality : The impact on energy system planning (12 Jan. 2026)** <br>
+  We hosted a webinar on grid data quality, that covered building a grid digital twin with OpenStreetMap, the impact of data improvements on energy system modelling with insights from PyPSA-Earth, and methods to align power plant datasets across sources using PowerPlantMatching. Find the video recording and slides here. [:arrow_right: Read more](blog/20260112-Grid-data-quality-webinar.md)
+</a>
+
 - <a href="../blog/20260105-GridInspector" style="text-decoration: none; color: inherit;">
   <img src="/images/blog-illustrations/GridInspector-Quality-Europe-Africa-Asia.png" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
   **GridInspector: A Global Diagnostic of Open Power Grid Data (5 Jan. 2026)** <br>
@@ -299,6 +305,12 @@ MapYourGrid brings together a multidisciplinary team under a transparent governa
   <img src="/images/blog-illustrations/7.312.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
   **Global Transmission Length Index, world's first open and free grid length database (28 Nov. 2025)**  
   In November 2025, we finalised the  'Global Transmission Length Index'. This database includes the high-voltage circuit line lengths of almost every country in the world, per voltage, and with sources. [:arrow_right: Read more](blog/20251128-LineLength.md)
+</a>
+
+- <a href="../blog/20251125-SoTM2025-MapYourGrid" style="text-decoration: none; color: inherit;">
+  <img src="/images/blog-illustrations/MYG-SoTM2025-YouTubeScreenshot.jpg" style="width: 600px; border-radius: 8px; margin-bottom: 1rem;">
+  **State of the Map Europe 2025 - Enabling power grid mapping with appropriate tools (25 Nov. 2025)**  
+  Part of the MapYourGrid team attended State of the Map Europe 2025 in Dundee, Scotland. We presented "Enabling power grid mapping with appropriate tools", and you can find the talk recording and slides here. [:arrow_right: Read more](blog/202511-SOTM-2025-MapYourGrid.md)
 </a>
 
 - <a href="../blog/20250918-HIFLD" style="text-decoration: none; color: inherit;">
