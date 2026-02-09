@@ -429,6 +429,12 @@ Disclaimer: These organisations are not affiliated with MapYourGrid nor endorse 
         
     ![map](images/impact/Optioneer.jpg){: .img-border } 
 
+**BirdView** ![BirdView](images/impact/birdview.jpeg){width=40px}
+??? "Birdview Energy - Investment-grade BESS revenue and grid risk assessment before FID" 
+
+    [**Link to website**](https://birdviewenergy.ai/)
+    ![map](images/impact/birdview.jpg){: .img-border } 
+
 
 ## **<div class="tools-header">Responsible Grid Mapping: Understanding Risks and Mitigation</div>**
 
