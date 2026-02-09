@@ -5,7 +5,7 @@
 Here is a compilation of the most frequently asked questions we receive. 
 
 <div class="starter-kit-buttons">
-  <a href="#general-questions" class="btn btn-primary"> General Questions</a>
+  <a href="#general-questions" class="btn btn-secondary"> General Questions</a>
   <a href="#contribution-in-openstreetmap" class="btn btn-secondary"> Contribution in OpenStreetMap</a>
   <a href="#power-grid-mapping" class="btn btn-secondary"> Power Grid Mapping</a>
 </div>

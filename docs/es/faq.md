@@ -5,12 +5,12 @@
 He aquí una recopilación de las preguntas más frecuentes que recibimos. 
 
 <div class="starter-kit-buttons">
- <a href="#general-questions" class="btn btn-primary"> Cuestiones generales</a>
- <a href="#contribution-in-openstreetmap" class="btn btn-secondary"> Contribución en OpenStreetMap</a>
- <a href="#power-grid-mapping" class="btn btn-secondary"> Mapa de la red eléctrica</a>
+ <a href="#cuestiones-generales" class="btn btn-secondary"> Cuestiones generales</a>
+ <a href="#contribucion-en-openstreetmap" class="btn btn-secondary"> Contribución en OpenStreetMap</a>
+ <a href="#mapa-de-la-red-electrica" class="btn btn-secondary"> Mapa de la red eléctrica</a>
 </div>
 
-Si tiene más preguntas o consultas, puede ponerse en contacto directamente con <a href="mailto:MapYourGrid@openenergytransition.org" target="_blank" rel="noopener">por correo electrónico</a>
+Si tiene más preguntas o consultas, puede ponerse en contacto directamente por <a href="mailto:MapYourGrid@openenergytransition.org" target="_blank" rel="noopener"> correo electrónico</a>
 
 ---
 

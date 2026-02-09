@@ -28,19 +28,19 @@ Por favor, considere las siguientes estrategias y los procesos asociados sólo c
 ## <div class="stradegy-header">Estrategias y herramientas de Pioneer Mapping</div></h3>
 
 <div class="tools-buttons-small">
- <a href="#osmose" class="btn btn-primary">Osmosis</a> 
- <a href="#todo-plugin" class="btn btn-primary">Todos los plugins</a> 
- <a href="#map-fast" class="btn btn-secondary">Mapa rápido</a>
- <a href="#copy-coordinates-from-and-into-josm" class="btn btn-secondary">Coordenadas y JOSM</a>
- <a href="#continue-open-lines" class="btn btn-secondary">Continuar con las líneas abiertas</a>
- <a href="#spot-the-gaps-in-the-grid" class="btn btn-secondary">Detecte los huecos en la cuadrícula</a>
- <a href="#connect-power-plants" class="btn btn-secondary">Conectar centrales eléctricas</a>
- <a href="#connect-substations" class="btn btn-secondary">Conectar subestaciones </a>
- <a href="#connect-industrial-areas" class="btn btn-secondary">Conectar zonas industriales </a>
- <a href="#connect-wikidata" class="btn btn-secondary">Conectar WikiData</a>
+ <a href="#osmose" class="btn btn-primary">Osmose</a> 
+ <a href="#todo-plugin" class="btn btn-primary">ToDo Plugin</a> 
+ <a href="#mapa-rapido" class="btn btn-secondary">Mapa rápido</a>
+ <a href="#copiar-coordenadas-desde-y-a-JOSM" class="btn btn-secondary">Coordenadas y JOSM</a>
+ <a href="#continuar-con-las-lineas-pendientes" class="btn btn-secondary">Continuar con las líneas pendientes</a>
+ <a href="#detectar-los-huecos-en-la-red" class="btn btn-secondary">Detectar los huecos en la red</a>
+ <a href="#conectar-centrales-electricas" class="btn btn-secondary">Conectar centrales eléctricas</a>
+ <a href="#conectar-subestaciones" class="btn btn-secondary">Conectar subestaciones </a>
+ <a href="#conectar-zonas-industriales" class="btn btn-secondary">Conectar zonas industriales </a>
+ <a href="#conectar-wikidata" class="btn btn-secondary">Conectar WikiData</a>
 </div>
 
-### **<div class="tools-header">Osmosis</div>**
+### **<div class="tools-header">Osmose</div>**
 Osmose es una herramienta de control de calidad que detecta a diario problemas en los datos de OpenStreetMap. Es la principal herramienta que utilizamos para encontrar y corregir infraestructuras eléctricas, y muchas de las estrategias que se explican a continuación la utilizan. Puede utilizar nuestra herramienta Osmose integrada en MAP IT📍, pero también puede utilizar la Osmose oficial [sitio web](https://osmose.openstreetmap.fr/en/map/).
 
 <div style="float: right; margin: 3px 0 10px 20px; width: 350px;">
@@ -69,7 +69,7 @@ El plugin Todo se utiliza para casi todas las estrategias de mapeo pioneras, rec
 1. Vuelve a la capa de datos OSM.
 1. Ahora puede recorrer sistemáticamente todas las pistas pulsando Marcar.
 
-### <div class="tools-header">Mapa rápido </div>
+### <div class="tools-header">Mapa rápido</div>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
  <img src="/images/mapfaster.jpg" class="img-border" style="width: 100%;">
@@ -85,14 +85,14 @@ Para trazar mapas de forma eficaz y rápida, tienes que saber cómo seleccionar 
 1. Utilice la torre o los postes de energía preestablecidos para establecer todos los nodos a la vez.
 1. Si alguna vez pierdes esta consulta, haz clic en la flecha derecha de la ventana de búsqueda y selecciónala del historial.
 
-### <div class="tools-header">Copiar coordenadas desde y hacia JOSM</div>
+### <div class="tools-header">Copiar coordenadas desde y a JOSM</div>
 
 Hay muchas razones por las que puedes querer compartir tu ubicación con otra persona. Muchas plataformas cartográficas populares permiten copiar coordenadas de un mapa haciendo clic con el botón derecho en una posición arbitraria.
 
 1. Para copiar coordenadas de un nodo en JOSM, basta con seleccionar el nodo y pulsar `CTRL+SHIFT+C`.
 2. Para crear un nodo a partir de una coordenada dada, pulse `MAYÚS+D` o haga clic en el botón Añadir nodo de la ventana desplegable Herramientas. Se recomienda añadir este botón a la barra de herramientas superior.
 
-### <div class="tools-header">Continuar con las líneas abiertas</div>
+### <div class="tools-header">Continuar con las líneas pendientes</div>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
  <img src="/images/osmose-unfinished-transmission-lines.jpg" class="img-border" style="width: 100%;">
@@ -107,7 +107,7 @@ _Continuar Líneas Abiertas_ es la estrategia más eficaz y más fácil de usar 
 4. Haga clic en `Default Transmission (50 kV+)` en la `Transmission Overpass Query` seleccionada y descargue los datos de la red de transmisión en otra capa en JOSM. Active esta capa.
 4. Ahora puede pasar por todas las incidencias pulsando `Mark`.
 
-### <div class="tools-header">Detecte los huecos en la cuadrícula</div>
+### <div class="tools-header">Detectar los huecos en la red</div>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
  <img src="/images/finding-gaps.jpg" class="img-border" alt="Equator ">
@@ -122,7 +122,7 @@ Como la mayoría de las líneas de transmisión terminan en subestaciones, la t�
 2. Puede utilizar [ColorMyGrid](https://github.com/open-energy-transition/color_my_map), nuestra herramienta generadora de MapCSS, para adaptar fácilmente el archivo MapCSS a cualquier requisito especial que pueda tener. 
 3. En el repositorio de ColorMyGrid también encontrará los datos sin procesar para editar el archivo [leyenda del mapa](https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.png).
 
-### <div class="tools-header">Conectar centrales eléctricas </div></h3>
+### <div class="tools-header">Conectar centrales eléctricas</div></h3>
 Dado que la mayoría de las grandes centrales eléctricas están conectadas directamente a la red de transporte, Connect Power Plants ofrece una estrategia sencilla utilizando el completo conjunto de datos sobre centrales eléctricas de Global Energy Monitor. Una sencilla interfaz de usuario para recuperar estos datos a nivel nacional está integrada en [Mapa It📍](https://MapYourGrid.org/map-it/)que permite a los usuarios previsualizar y descargar datos GeoJSON:
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
@@ -211,13 +211,17 @@ WikiData proporciona acceso a artículos de Wikipedia sobre infraestructuras el�
 ## <div class="stradegy-header">Estrategias cartográficas técnicas</div></h2>
  
 <div class="tool-buttons">
- <a href="#Official-Data-and-Maps" class="btn btn-primary">Datos y mapas oficiales</a> 
- <a href="#fixme-tags" class="btn btn-secondary">FixMe Etiquetas</a>
- <a href="#open-infrastructure-map-nighttime-osmose-and-josm" class="btn btn-secondary">Mapa de infraestructuras abiertas </a>
- <a href="#online-investigation" class="btn btn-secondary">Investigación en línea</a>
- <a href="#josm-powernetworktools-plugin" class="btn btn-secondary">Plugin PowerNetworkTools</a>
- <a href="#validating-and-mapping-interconnectors" class="btn btn-secondary">Interconectores</a>
- <a href="#improve-osm-tags-with-ppm" class="btn btn-secondary">PowerPlantMatching </a>
+ <a href="#datos-y-mapas-oficiales" class="btn btn-primary">Datos y mapas oficiales</a> 
+ <a href="#etiquetas-fixme" class="btn btn-secondary">FixMe Etiquetas</a>
+ <a href="#openinframap-nocturno-osmose-y-josm" class="btn btn-secondary">OpenInfraMap </a>
+ <a href="#investigacion-en-linea" class="btn btn-secondary">Investigación en línea</a>
+ <a href="#plugin-powernetworktools" class="btn btn-secondary">Plugin PowerNetworkTools</a>
+ <a href="#validacion-y-asignacion-de-interconectores" class="btn btn-secondary">Interconectores</a>
+ <a href="#imagenes-a-nivel-de-calle" class="btn btn-secondary">Imágenes a nivel de calle</a>
+ <a href="#anadir-imagenes-aereas-adicionales-a-josm" class="btn btn-secondary">Imágenes aéreas adicionales</a>
+ <a href="#buscar-datos-faltantes-como-cables-usando-el-filtro" class="btn btn-secondary">Buscar usando el Filtro</a>
+ <a href="#descarga-continua-y-cartografia-de-la-energia-hidroelectrica" class="btn btn-secondary">Descarga continua y energía hidroeléctrica</a>
+ <a href="#powerplantmatching" class="btn btn-secondary">PowerPlantMatching </a>
 </div>
 
 ### <div class="tools-header">Datos y mapas oficiales</div></h3>
@@ -252,7 +256,7 @@ OpenStreetMap permite a los cartógrafos marcar rápidamente un objeto que parec
 3. En la ventana de la lista de tareas pulse "Añadir".
 4. Una vez que haya solucionado un problema, elimine la etiqueta `fixme`..
 
-### <div class="tools-header">Mapa de infraestructuras abiertas - Nocturno, Osmose y JOSM </div></h3>
+### <div class="tools-header">OpenInfraMap Nocturno, Osmose y JOSM </div></h3>
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
  <img src="/images/openinfraosmose.jpg" class="img-border" alt="Open Infrastructure Map - Osmose">
  <figcaption class="image-caption">Open Infrastructure Map también incluye los problemas de osmosis en la red como otra capa.</figcaption>
@@ -263,7 +267,7 @@ OpenStreetMap permite a los cartógrafos marcar rápidamente un objeto que parec
 3. En las capas, active la función de validación de potencia. Si hace zoom y encuentra una línea de alimentación inacabada, podrá ver el problema de osmosis afiliado a esta línea.
 4. Si desea editar lo que ha encontrado, Open Infrastructure Map permite la edición a través de JOSM una vez que se ha ampliado lo suficiente. En la parte inferior derecha de la página, puede pulsar sobre `Editar` y `Edición remota` (recuerde habilitar la edición remota en JOSM). 
 
-### <div class="tools-header">Investigación en línea :mag:</div>
+### <div class="tools-header">Investigación en línea</div>
 
 La búsqueda de artículos de prensa, informes, estudios académicos o conjuntos de datos recientes relacionados con subestaciones y líneas de transmisión recién puestas en servicio es una forma eficaz de encontrar información sobre proyectos de infraestructuras a gran escala que acaban de iniciar su construcción o explotación. Como estas instalaciones son de interés nacional, se suele informar sobre ellas en los portales de noticias locales o en los sitios web de los operadores de las redes de transmisión. Por eso hay tantas noticias, artículos e informes sobre nuevas subestaciones, líneas de transmisión y centrales eléctricas a gran escala que empiezan a funcionar.
 
@@ -276,7 +280,7 @@ Los grandes modelos lingüísticos locales (LLM) pueden ayudar realizando búsqu
 
 Tenga en cuenta la licencia y la calidad de los documentos que encuentre. Si no puede validar la información que encuentra por diferentes fuentes, al menos puede utilizar los nombres de subestaciones, regiones y ciudades para identificar la ubicación de nuevas subestaciones o líneas de transmisión, y verificar su visibilidad en imágenes de satélite. La forma más rápida de buscar infraestructuras eléctricas mundiales como centrales eléctricas, subestaciones o interconectores de países por su nombre es mediante la función de búsqueda de <a href="https://openinframap.org/#2/26/12">Mapa de infraestructuras abiertas</a>
 
-### <div class="tools-header">Plugin JOSM PowerNetworkTools 🔌.</div></h3>
+### <div class="tools-header">Plugin PowerNetworkTools 🔌.</div></h3>
 
 Esta herramienta calcula la tensión de una barra colectora de una subestación a partir de imágenes aéreas midiendo la separación entre conductores. La separación viene dictada por la tensión, por lo que permite hacer una estimación de la tensión. Aunque no es un método perfecto, si se combina con el conocimiento de las tensiones estándar de la red eléctrica de un país y la disposición de la infraestructura eléctrica, puede ayudar en gran medida a los cartógrafos a asignar tensiones a la infraestructura eléctrica a partir de imágenes aéreas.
 
@@ -307,7 +311,7 @@ Los interconectores entre países son esenciales para el funcionamiento de la re
 2. Dibuje un pequeño cuadro delimitador en el mapa deslizante y, a continuación, ejecute la consulta para descargar.
 3. <p><strong>Explicación:</strong> La consulta busca nodos en su cuadro delimitador, detecta su área de administración (nivel 4 por defecto) y obtiene toda la infraestructura energética que hay en ella. Puede ajustar el "nivel de administración" de la consulta (por ejemplo, nivel 2 para nacional, nivel 6 para provincial) editando el archivo <code>nivel_admin</code> en la pestaña de descarga. Un cuadro delimitador más pequeño es mejor (ejecución más rápida).</p>
 
-### <div class="tools-header">Imágenes a pie de calle</div></h3>
+### <div class="tools-header">Imágenes a nivel de calle</div></h3>
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
  <img src="/images/mapillary_tower.jpg" class="img-border" alt="Overpass Query Example">
@@ -322,7 +326,49 @@ Plataformas como [Mapillary](https://www.mapillary.com/) o [Panoramax](https://p
 2. En `Windows` debería encontrar una capa de imágenes `Mapillary`. Haga clic en ella.
 3. Es necesario hacer mucho zoom para que las carreteras sean visibles cuando se disponga de imágenes. La activación de esta capa permite hacer clic en cada nodo para visualizar la imagen. Para navegar rápidamente donde hay imágenes disponibles se puede hacer con el botón [interfaz web de Mapillary](https://www.mapillary.com/app)
 
-### <div class="tools-header">Mejorar las etiquetas OSM con PPM</div></h3>
+### <div class="tools-header">Añadir imágenes aéreas adicionales a JOSM</div></h3>
+
+Además de ESRI, Bing y Mapbox, JOSM integra una amplia gama de otras imágenes globales y locales de gran calidad. Todas las imágenes locales disponibles deberían ser visibles para la región que hayas seleccionado en JOSM cuando hagas clic en `Imagery` en la barra de herramientas superior. Para añadir productos de datos satelitales globales como Sentinel-2 a JOSM o buscar conjuntos de datos locales, ve a `Imagery` -> `Imagery Preferences`. Aquí puedes buscar distintas fuentes de imágenes, como los datos `EOx cloudless Sentinel-2 2024`.
+
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+    <img src="/images/sentinel2-turbines.jpg" class="img-border" alt="sentinel2 turbines">
+    <figcaption class="image-caption">Según el tamaño, el fondo y el ángulo del sol, los aerogeneradores pueden incluso cartografiarse con imágenes Sentinel-2.</figcaption>
+</div>
+
+Aunque las imágenes Sentinel-2 tienen una resolución mucho menor, pueden ayudar a verificar datos procedentes de otros conjuntos de datos porque, para muchas regiones, son el conjunto de datos más reciente disponible. Dependiendo del tamaño del proyecto y del contexto, pueden utilizarse para verificar y cartografiar líneas de 400 kV, subestaciones de mayor tamaño, parques solares e incluso aerogeneradores.
+
+JOSM también permite añadir imágenes y mapas desde servicios de teselas definidos, como Esri Wayback o las imágenes de alta resolución de HOT. El diario de OpenStreetMap [Using Esri Wayback Imagery in OSM Editor](https://www.openstreetmap.org/user/Deane%20Kensok/diary/397014) proporciona una excelente documentación paso a paso sobre cómo hacerlo en iD. Una integración similar puede realizarse en JOSM desde `Imagery` -> `Imagery Preferences`. Las imágenes de Esri Wayback pueden ser muy útiles para investigar cuándo se construyó una infraestructura o cuándo los cables fueron enterrados bajo tierra. Además, en algunos casos, las líneas y las torres pueden ser más visibles en imágenes antiguas debido a un ángulo del sol diferente o a un cambio de estación.
+
+Para encontrar capas de imágenes adicionales que no estén integradas de forma nativa en JOSM, consulta el proyecto [OSM Editor Layer Index](https://github.com/osmlab/editor-layer-index).
+
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+    <img src="/images/filter-circuits.jpg" class="img-border" alt="Filter">
+    <figcaption class="image-caption">JOSM solo muestra las líneas de transmisión sin circuitos en Pakistán mediante el uso del filtro.</figcaption>
+</div>
+
+### <div class="tools-header">Buscar datos faltantes como cables usando el filtro</div></h3>
+Para encontrar objetos a los que les faltan atributos como WikiData, nombres, cables o circuitos, puedes filtrar fácilmente los datos mostrados en JOSM. Solo tienes que hacer clic en `Windows` -> `Filter`. Al añadir una cadena de filtro como `power=line AND (circuits: OR cables)`, puedes ocultar, invertir o desactivar los datos que ya proporcionan esta información en el editor, mostrando únicamente los datos sin circuitos o sin cables.
+
+### <div class="tools-header">Descarga continua y cartografía de la energía hidroeléctrica</div></h3>
+La cartografía de la energía hidroeléctrica requiere herramientas especializadas y una experiencia avanzada en mapeo. Al igual que en nuestros flujos de trabajo anteriores, te interesarán todos los datos que ya han sido cartografiados en OpenStreetMap, como los cursos de agua, presas, lagos, edificios y, por supuesto, la red eléctrica. La página [Map It📍](https://MapYourGrid.org/map-it/) por sí sola puede ayudarte a encontrar centrales hidroeléctricas al final de la línea, pero ahora querrás cargar todos los datos para una región extensa a lo largo de los cursos de agua. El plugin continuosDownload puede ayudarte en este caso:
+
+<div style="float: right; margin: 5px 0 20px 20px; width: 350px;">
+    <img src="/images/hydro.jpg" class="img-border" alt="Filter">
+    <figcaption class="image-caption">Para cartografiar centrales hidroeléctricas como esta en Chile, es necesario descargar todos los datos de OpenStreetMap.</figcaption>
+</div>
+
+1. Descarga el plugin [continuosDownload](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/continuosDownload) para JOSM desde `Edit → Preferences → Plugins`. Busca continuosDownload, márcalo y pulsa OK. Es posible que debas reiniciar JOSM.
+2. La configuración predeterminada del plugin no es óptima. Puedes cambiarla en `Download Settings`. Cambia `Max download boxes` a 4 y `Wait time` a 100 ms. `Extra Download area` y `Max download area` deben configurarse en 1.
+3. Descarga un conjunto de datos de referencia como [GloHydroRes](https://zenodo.org/records/14526360).
+4. Para que los archivos CSV y otros formatos sean legibles por JOSM, necesitas tener instalado el plugin [OpenData](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/OpenData).
+5. Para que las coordenadas sean legibles por JOSM, cambia los nombres de las columnas de coordenadas a latitude y longitude.
+6. Añade las ubicaciones en las que deseas trabajar a tu lista de tareas desde las capas de referencia y dirígete a tu primer destino.
+7. Pulsa el botón verde de descarga en JOSM para obtener todos los datos de la caja delimitadora.
+8. Todos los datos se descargarán automáticamente para tu área de visualización y más allá. Si haces demasiado zoom hacia afuera, encontrarás limitaciones de ancho de banda. Para más detalles y directrices sobre cómo realizar cartografía de infraestructuras eléctricas, consulta nuestras [Hydropower Mapping Guidelines](https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Hydropower).
+
+
+
+### <div class="tools-header">PowerPlantMatching</div></h3>
 
 <a href="https://github.com/PyPSA/powerplantmatching" target="_blank">Powerplantmatching (PPM)</a> es un repositorio python diseñado para armonizar y combinar conjuntos de datos de centrales eléctricas procedentes de fuentes como OpenStreetMap (OSM) y Global Energy Monitor. Se utiliza ampliamente para preparar datos de generación validados para modelos de sistemas energéticos como PyPSA-EUR. Ahora, una nueva función obtiene datos de centrales eléctricas de OSM y marca todas las <strong>centrales eléctricas y generadores rechazados</strong> debido a metadatos incompletos o incoherentes. Esto incluye elementos a los que les falta <code>nombre</code>, <code>salida:eléctrica</code>, <code>planta:método</code>, formatos de unidades incorrectos, entre otros.
 

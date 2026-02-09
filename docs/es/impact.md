@@ -5,18 +5,15 @@
 En todo el mundo, OpenStreetMap ha demostrado su valor en la generación de datos abiertos de alta calidad para apoyar el desarrollo sostenible y el acceso a la energía. Utilice los botones siguientes para explorar ese impacto: quién utiliza los datos, por qué son importantes y cómo cartografiamos la red de forma responsable.
 
 <div class="starter-kit-buttons">
- <a href="#strategic-use-cases-energy-disaster-response-and-development" class="btn btn-primary">
- Casos de uso estratégico: Energía, respuesta a catástrofes y desarrollo</a>
- <a href="#why-openstreetmap-matters-for-the-electrical-grid" class="btn btn-secondary">¿Por qué OpenStreetMap es importante para la red eléctrica?</a>
- <a href="#why-open-grid-data-matters" class="btn btn-secondary">
- ¿Por qué son importantes los datos de Open Grid?</a>
- <a href="#who-is-using-openstreetmap-grid-data" class="btn btn-secondary"> ¿Quién utiliza los datos de cuadrícula de OpenStreetMap? </a>
- <a href="#responsible-grid-mapping-understanding-risks-and-mitigation" class="btn btn-secondary">
- Cartografía responsable de la red: Comprender los riesgos y su mitigación
-</a>
+<a href="#casos-de-uso-estrategicos-energia-respuesta-ante-desastres-y-desarrollo" class="btn btn-primary"> Casos de uso estratégicos: energía, respuesta ante desastres y desarrollo</a>
+<a href="#por-que-openstreetmap-es-importante-para-la-red-electrica" class="btn btn-secondary"> ¿Por qué OpenStreetMap es importante para la red eléctrica?</a>
+<a href="#por-que-son-importantes-los-datos-abiertos-de-la-red" class="btn btn-secondary"> ¿Por qué son importantes los datos abiertos de la red?</a>
+<a href="#quien-utiliza-los-datos-de-red-de-openstreetmap" class="btn btn-secondary"> ¿Quién utiliza los datos de red de OpenStreetMap?</a>
+<a href="#cartografia-responsable-de-la-red-comprender-los-riesgos-y-su-mitigacion" class="btn btn-secondary"> Cartografía responsable de la red: comprender los riesgos y su mitigación</a>
+
 </div>
 
-## **<div class="tools-header">Casos de uso estratégico: Energía, respuesta a catástrofes y desarrollo</div>**
+## **<div class="tools-header">Casos de uso estratégicos: energía, respuesta ante desastres y desarrollo</div>**
 
 El valor único de OpenStreetMap en la creación de datos de alta calidad para el desarrollo sostenible ha quedado demostrado por múltiples iniciativas en todo el mundo: 
 
@@ -118,7 +115,7 @@ Para comprender la influencia de los datos de la red eléctrica de OpenStreetMap
 * 10.700 publicaciones desde 2005 incluían combinaciones de estas palabras clave.
 * Sólo el año pasado se publicaron un total de **2.460 publicaciones**, lo que demuestra el rápido aumento del interés académico y el reconocimiento del poder de los datos de OpenStreetMap.
 
-## **<div class="tools-header">¿Por qué son importantes los datos de Open Grid?</div>**
+## **<div class="tools-header">¿Por qué son importantes los datos abiertos de la red?</div>**
 
 El acceso a datos abiertos y precisos sobre infraestructuras eléctricas es esencial para una planificación, desarrollo y colaboración eficaces, especialmente en el contexto de la transición energética mundial. Los beneficios son de gran alcance, desde la aceleración del despliegue de energías limpias hasta la mejora de la equidad en el acceso a la energía.
 
@@ -220,21 +217,21 @@ Descargo de responsabilidad: Estas organizaciones no están afiliadas a MapYourG
     
     ![mapa](../images/impact/HILFD-JOSM.png){: .img-border }
 
-**Banco Mundial** ![Logotipo del Banco Mundial](/images/impact/worldbanklogo.jpg){width=70px} 
+**The World Bank** ![Logotipo del Banco Mundial](/images/impact/worldbanklogo.jpg){width=70px} 
 ??? "Explorador de redes eléctricas de África (Click Me)"
  
     [**Enlace** - Explorador de redes eléctricas en África (enlace)](https://africagrid.energydata.info/)
     
     ![mapa](../images/impact/africa_grid_explorer.jpg){: .img-border }
 
-¡**PyPSA-Tierra** ![PyPSA-Tierra](../images/impact/pypsa-earth-logo.png){: width=70px} ¡**+** **PyPSA-Eur** ![PyPSA-Eur](/images/impact/pypsa-eur-logo.jpg){: width=30px}
+**PyPSA-Earth** ![PyPSA-Earth](../images/impact/pypsa-earth-logo.png){: width=70px} ¡**+** **PyPSA-Eur** ![PyPSA-Eur](/images/impact/pypsa-eur-logo.jpg){: width=30px}
 ??? "PyPSA-Earth y Europa utilizan datos de OpenStreetMap para estudios de sistemas energéticos en todo el mundo. (Click Me)"
  
     [**Enlace al sitio web**)](https://pypsa-earth.readthedocs.io/)
     
     ![mapa](../images/impact/pypsa-earth.jpg){: .img-border }
 
-**¡Enedis!**![Enedis](../images/impact/enedis-logo.png){width=70px} 
+**Enedis** ![Enedis](../images/impact/enedis-logo.png){width=70px} 
 ??? "La empresa francesa de servicios públicos Enedis, que gestiona la red de distribución de electricidad, cartografió postes y subestaciones eléctricas con la ayuda de una sólida comunidad local de OpenStreetMap. (Haz clic)"
  
     [**Enlace al sitio web](https://enedis.openstreetmap.fr/)
@@ -262,7 +259,7 @@ Descargo de responsabilidad: Estas organizaciones no están afiliadas a MapYourG
     
     ![map](images/impact/CER-lines.jpg){: .img-border }
  
-**¡Comisión Europea - Centro Común de Investigación** ![EUC logo](/images/impact/euc-logo.jpg){width=40px} 
+**Comisión Europea - Centro Común de Investigación** ![EUC logo](/images/impact/euc-logo.jpg){width=40px} 
 ??? "Plataforma de Conocimiento de África (Click Me)"
  
     [**Enlace al sitio web](https://africa-knowledge-platform.ec.europa.eu/explore_maps)
@@ -272,21 +269,21 @@ Descargo de responsabilidad: Estas organizaciones no están afiliadas a MapYourG
     **Más información**
     - Los datos de la red eléctrica de la imagen son una mezcla de datos del Banco Mundial y OpenStreetMap 
  
-**¡IRENA**![GWA logo](/images/impact/irenalogo.jpg){width=55px} 
+**IRENA** ![GWA logo](/images/impact/irenalogo.jpg){width=55px} 
 ??? "Atlas Global de Energías Renovables (Click Me)"
  
     [**Enlace al sitio web](https://globalatlas.irena.org/workspace)
     
     ![mapa](../images/impact/irenaatlas.png){: .img-border }
  
-**Global Wind Atlas**  ![GWA logo](images/impact/globalwindatlaslogo.jpg){width=15px} 
+**Global Wind Atlas** ![GWA logo](images/impact/globalwindatlaslogo.jpg){width=15px} 
 ??? "Atlas Eólico Global (Click Me)"
  
     [**Enlace al sitio web](https://globalwindatlas.info/en/)
     
     ![mapa](../images/impact/globalwindatlas.jpg){: .img-border }
 
-**¡Fraunhofer ISE** ![Logotipo de Fraunhofer](/images/impact/fraunhoferlogo.jpg){width=45px} 
+**Fraunhofer ISE** ![Logotipo de Fraunhofer](/images/impact/fraunhoferlogo.jpg){width=45px} 
 ??? "Gráficos de energía (Click Me)"
  
     [**Enlace al sitio web](https://www.energy-charts.info/map/map.htm?l=en&c=DE&country=DE&lines=1110000&pp-source=bnetza&pp-bitmap=none)
@@ -300,7 +297,7 @@ Descargo de responsabilidad: Estas organizaciones no están afiliadas a MapYourG
     
     ![mapa](../images/impact/DRE-atlas.jpg){: .img-border }
 
-**¡GridRaven!** ![GridRaven](/images/impact/raven.png){width=15px} 
+**GridRaven** ![GridRaven](/images/impact/raven.png){width=15px} 
 ??? "Clasificaciones de línea dinámicas con previsión meteorológica de precisión (Click Me)"
  
     [**Enlace al sitio web](https://claw.gridraven.com/world)
@@ -314,35 +311,35 @@ Descargo de responsabilidad: Estas organizaciones no están afiliadas a MapYourG
     
     ![mapa](../images/impact/WindPro.jpg){: .img-border } 
 
-**¡ETAP** ![etap](/images/impact/etap.jpg){width=25px}
+**ETAP** ![etap](/images/impact/etap.jpg){width=25px}
 ??? "ETAP® ofrece soluciones de software y hardware líderes en el mercado que cubren todas las fases del ciclo de vida de los sistemas eléctricos para servicios públicos, infraestructuras, industrias y edificios. (Haga clic aquí)"
  
     [**Enlace al sitio web](https://etap.com/product/gis-for-electric)
     
     ![mapa](../images/impact/etap-osm.jpg){: .img-border } 
 
-**¡GlitreNett!**![red de brillo](/images/impact/GlitreNett.svg){width=40px}
+**GlitreNett!**![red de brillo](/images/impact/GlitreNett.svg){width=40px}
 ??? "DataArena pretende informar y facilitar información sobre el estado de la capacidad de la red eléctrica de Noruega. (Click Me)" 
  
     [DataArena pretende informar y facilitar datos sobre el estado de la capacidad de la red eléctrica noruega.](https://etap.com/product/gis-for-electric)
     
     ![mapa](../images/impact/data-area-norway.jpg){: .img-border } 
 
-¡**MAPOG** ![mapog](/images/impact/MAPOG-logo.png){width=40px}
+**MAPOG** ![mapog](/images/impact/MAPOG-logo.png){width=40px}
 ??? "Cómo mejora el SIG la cartografía de la red eléctrica y la planificación de infraestructuras energéticas. (Click Me)" 
  
     [**Enlace al sitio web](https://www.mapog.com/power-grid-and-infrastructure-mapping-and-planning-using-gis/)
     
     ![mapa](../images/impact/MAPOG.jpg){: .img-border } 
 
-¡**dvlp.energy** ![dvlp.energía](/images/impact/dvlp-logo-purple.svg){width=40px}
+**dvlp.energy** ![dvlp.energía](/images/impact/dvlp-logo-purple.svg){width=40px}
 ??? "Con dvlp.energy, puede encontrar rápida y fácilmente el espacio adecuado para sus proyectos solares, eólicos o de almacenamiento. (Haz clic en mí)" 
  
     [**Enlace al sitio web](https://www.dvlp.energy/en)
     
     ![mapa](../images/impact/dvlp-energy.jpg){: .img-border } 
 
-**Tecnologías Roseau**![Tecnologías Roseau](/images/impact/roseau.svg){width=40px}
+**Tecnologías Roseau** ![Tecnologías Roseau](/images/impact/roseau.svg){width=40px}
 ??? "Soluciones de software modernas y ergonómicas para el diseño sencillo de redes de distribución eléctrica. (Hágame clic)" 
  
     [**Enlace al sitio web](https://www.roseautechnologies.com/en/home/)
