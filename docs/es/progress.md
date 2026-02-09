@@ -4,31 +4,37 @@
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 450px; max-width: 100%">
 <img src="/images/progress/ourlines-vs-world.jpg" style="width: 100%; border: 4px solid #2a6d3c;"></a> 
-<figcaption class="image-caption"> Todas las líneas <span style="color: #ecc123;"><b>creado y editado por MapYourGrid</b></span> mapeadores. Amplíe la imagen haciendo clic sobre ella. Haga clic para ampliar.
+<figcaption class="image-caption"> Todas las líneas <span style="color: #ecc123;"><b>creado y editado por MapYourGrid</b></span> mapeadores. Clic para ampliar.
 </figcaption>
 </div>
 
-MapYourGrid mide su progreso a nivel de usuario, hashtag y país. Sería un honor que tu progreso formara parte de la iniciativa. Si utilizas nuestras herramientas y cursos de formación, utiliza el hashtag #MapYourGrid en tus changesets o añade tu ID de usuario a nuestra base de datos. [Guión KPI](https://github.com/open-energy-transition/MapYourGrid/blob/main/.github/workflows/update-tower-count.yml). Si desea contribuir a nuestro desarrollo o mantenerse al día de nuestros progresos, eche un vistazo a nuestra página pública [organización gestión de proyectos](https://github.com/orgs/open-energy-transition/projects/25/views/7) y [hoja de ruta](https://github.com/orgs/open-energy-transition/projects/25/views/13). Habrá observado que nuestros indicadores priorizan actualmente la cobertura sobre la calidad de los datos. Esto se debe a que nuestra iniciativa está trabajando para aumentar la cobertura en los países de ingresos bajos y medios, lo que hace que aparezcan más problemas en esta cuadrícula. Sin embargo, los KPI de calidad están actualmente en fase de desarrollo y se basarán en la [niveles de garantía de calidad que estamos aplicando simultáneamente](strategies.md/#garantia-de-calidad-y-validacion).
+
+MapYourGrid evalúa su progreso a nivel de usuarios, hashtags y países. Nos gustaría que tus avances formaran parte de la iniciativa. Si utilizas nuestras herramientas o cursos de formación, usa el hashtag #MapYourGrid en tus conjuntos de cambios. Si deseas contribuir a nuestro desarrollo o seguir de cerca nuestros avances, consulta nuestra [gestión pública del proyecto](https://github.com/orgs/open-energy-transition/projects/25/views/7) y nuestra [hoja de ruta](https://github.com/orgs/open-energy-transition/projects/25/views/13).
+
+Nuestra iniciativa se centra principalmente en mejorar la cobertura de los datos en los países de ingresos bajos y medios a escala mundial. Al mismo tiempo, trabajamos para mejorar la calidad de los datos. Para conocer nuestras estrategias de mejora de la calidad, visita la página [Estrategias](es/strategies.md).
+
+También hemos desarrollado [Grid Inspector](gridinspector.md), una plataforma pionera dedicada al análisis y la comparación de la calidad de los datos energéticos de OSM.
+
 
 <div class="progress-buttons">
-    <a href="#countries" class="btn btn-primary">
+    <a href="#lista-de-paises" class="btn btn-primary">
      Lista de países 🌐
     </a>
-    <a href="#community-mapping-progress" class="btn btn-primary">
-     Progreso de la comunidad👥
+    <a href="#progreso-de-la-comunidad" class="btn btn-primary">
+     Progreso de la comunidad 👥
     </a>
-    <a href="#line-length-growth-per-country" class="btn btn-primary">
-     Crecimiento de líneas por país 📈
+    <a href="#evolucion-de-la-longitud-de-las-lineas-por-pais" class="btn btn-primary">
+     Evolución de la longitud de las líneas por país 📈
     </a>
-    <a href="#interconnectors" class="btn btn-primary">
+    <a href="#interconectores" class="btn btn-primary">
      Interconectores ⚡
     </a>
 </div>
 
 <!-- Countries Section -->
-## **<div class="tools-header">Países </div>**
+## **<div class="tools-header">Lista de países 🌐 </div>**
 
-Nuestro trabajo contribuye a mejorar el acceso a la electricidad en todo el mundo. En los países que se indican a continuación, hemos ayudado a identificar y subsanar deficiencias críticas en la red eléctrica.
+Nuestro trabajo mejora el acceso a datos de calidad sobre las infraestructuras de generación y transmisión eléctrica a nivel mundial. En los países que se muestran a continuación, hemos contribuido a la cartografía de la red eléctrica y a reducir carencias críticas
 
 <div class="grid-wrapper">
 
@@ -168,7 +174,24 @@ Nuestro trabajo contribuye a mejorar el acceso a la electricidad en todo el mund
 </div> 
 
 <!-- Progress Bars Section -->
-## **<div class="tools-header">Avances en la cartografía comunitaria </div>**
+## **<div class="tools-header">Progreso de la comunidad 👥 </div>**
+<div class="grid-wrapper">
+  <div class="country-card">
+    <a href="https://mapyourgrid.infos-reseaux.com/dashboard/" target="_blank">
+      <img class="off-glb" src="/images/logos/MapYourGrid-logo.png" alt="MapYourGrid progress">
+      </br>MapYourGrid progress dashboard
+    </a>
+  </div>
+
+  <div class="country-card">
+    <a href="https://stats.now.ohsome.org/dashboard#hashtag=MapYourGrid&start=2025-03-12T22:00:00Z&end=2025-05-14T21:59:59Z&interval=P1M&countries=&topics=" target="_blank">
+      <img style="width:200px; margin-top:20px;" class="off-glb" src="https://stats.now.ohsome.org/assets/images/ohsomeNowStats_logo.svg" alt="Ohsome Nowstats">
+      </br>Ohsome Nowstats
+    </a>
+  </div>
+</div>
+
+
 
 <div class="progress-section"> 
    <button id="refresh-btn" style="margin-bottom:1rem;">
@@ -644,14 +667,15 @@ You can find more stats for #MapYourGrid at [OhsomeNowstats](https://stats.now.o
  });
 </script>
 
-## **<div class="tools-header">Crecimiento de la longitud de línea por país </div>**
+## **<div class="tools-header">Evolución de la longitud de las líneas por país 📈 </div>**
 
-La siguiente tabla muestra el **crecimiento total de la longitud de línea en todas las ediciones de OpenStreetMap** en todo el mundo, calculado utilizando datos estadísticos preprocesados de [algunas estadísticas](https://stats.now.ohsome.org/).
+La siguiente tabla muestra el **crecimiento total de la longitud de línea en todas las ediciones de OpenStreetMap** en todo el mundo, calculado utilizando datos estadísticos preprocesados de [Podoma](https://wiki.openstreetmap.org/wiki/Podoma). Consúltalo directamente en línea en este panel dedicado <a href="https://mapyourgrid.infos-reseaux.com/dashboard/#tables" target="_blank">este panel dedicado</a>.
 
-<iframe src="/data/power_line_length_table.html" width="100%" height="600px" style="border:none;"></iframe>
+<iframe src="https://mapyourgrid.infos-reseaux.com/dashboard/#tables" width="100%" height="600px" style="border:none;"></iframe>
+
 
 <!-- Countries Section -->
-## **<div class="tools-header">Interconectores </div>**
+## **<div class="tools-header">Interconectores</div>**
 
 El equipo #MapYourGrid mejora continuamente la cartografía de los conectores internacionales. El siguiente mapa muestra los interconectores en los que ha trabajado el equipo.
 

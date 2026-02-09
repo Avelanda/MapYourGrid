@@ -9,7 +9,7 @@ nav:
   - IMPACT: impact.md
   - STARTER-KIT: starter-kit.md
   - MAP IT📍: map-it.md
-  - QUALITY : quality.md
+  - GRID INSPECTOR : gridinspector.md
   - STRATEGIES: strategies.md
   - PROGRESS : progress.md
   - DATA : global-grid-data.md
@@ -137,7 +137,7 @@ plugins:
             "MAP IT📍": "MAP IT📍"
             "STRATEGIES": "ESTRATEGIAS"
             "PROGRESS": "PROGRESO"
-            "FAQ": "¿FAQ?"
+            "FAQ": "FAQ"
             "ABOUT US": "SOBRE NOSOTROS"
         - locale: fr
           name: Français
@@ -149,7 +149,7 @@ plugins:
             "MAP IT📍": "MAP IT📍"
             "STRATEGIES": "STRATÉGIES"
             "PROGRESS": "PROGRÈS"
-            "FAQ": "FAQ?"
+            "FAQ": "FAQ"
             "ABOUT US": "A PROPOS"
           site_name: "MapYourGrid"
       default_language: en

@@ -1,16 +1,16 @@
 <div class="page-headers">
-<h1>Questions et réponses</h1>
+<h1>Foire aux questions</h1>
 </div>
 
 Voici une compilation des questions les plus fréquemment posées. 
 
 <div class="starter-kit-buttons">
- <a href="#general-questions" class="btn btn-primary"> Questions générales</a>
- <a href="#contribution-in-openstreetmap" class="btn btn-secondary"> Contribution dans OpenStreetMap</a>
- <a href="#power-grid-mapping" class="btn btn-secondary"> Cartographie du réseau électrique</a>
+ <a href="#questions-generales" class="btn btn-secondary"> Questions générales</a>
+ <a href="#contribution-dans-openstreetmap" class="btn btn-secondary"> Contribution dans OpenStreetMap</a>
+ <a href="#cartographie-du-reseau-electrique" class="btn btn-secondary"> Cartographie du réseau électrique</a>
 </div>
 
-Si vous avez d'autres questions ou demandes, vous pouvez contacter directement <a href="mailto:MapYourGrid@openenergytransition.org" target="_blank" rel="noopener">nous par email</a>
+Si vous avez d'autres questions ou demandes, vous pouvez nous contacter directement <a href="mailto:MapYourGrid@openenergytransition.org" target="_blank" rel="noopener">par email</a>
 
 ---
 
@@ -41,7 +41,7 @@ Non, la publication de données sur les réseaux par l'intermédiaire de MapYour
 
 MapYourGrid s'appuie sur une décennie de cartographie des infrastructures publiques, y compris des comparaisons mondiales montrant l'alignement avec les ensembles de données gouvernementales. Notre mission est de démocratiser l'accès aux données pour favoriser la résilience, la transparence et l'innovation, et non d'exposer ce que les adversaires ne savent pas déjà. Nos [Bonnes pratiques de cartographie](mapping-good-practices.md) décrit les valeurs partagées, les responsabilités et les pratiques sûres pour les individus et les organisations qui participent à des activités de cartographie de grille dans OpenStreetMap. Il est conçu pour protéger les communautés, promouvoir la transparence et protéger les zones sensibles tout en permettant l'utilisation de données ouvertes pour le développement mondial et la résilience énergétique.
 
-Pour en savoir plus sur la cartographie responsable du réseau et la compréhension des risques et de leur atténuation, consultez notre site web. [Page d'impact](impact.md/#cartographie-responsable-du-reseau-comprendre-les-risques-et-les-mesures-dattenuation).
+Pour en savoir plus sur la cartographie responsable du réseau et la compréhension des risques et de leur atténuation, consultez notre site web. [Impact](impact.md/#cartographie-responsable-du-reseau-comprendre-les-risques-et-les-mesures-dattenuation).
 
 ### <div class="tools-header">Comment la qualité et la validation des données sont-elles assurées ?</div>
 

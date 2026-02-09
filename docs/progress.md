@@ -4,12 +4,20 @@
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 450px; max-width: 100%">
 <img src="../images/progress/mapyourgrid-edits-2025.png" style="width: 100%; border: 4px solid #2a6d3c;"></a> 
-<figcaption class="image-caption"> All the lines created and edited by MapYourGrid</b></span> mappers. Enlarge the image by clicking on it. Click to enlarge.
+<figcaption class="image-caption"> All the lines created and edited by MapYourGrid</b></span> mappers. Click to enlarge.
 </figcaption>
 </div>
 
 
-MapYourGrid measures its progress at user, hashtag and country level. We would be honoured to make your progress part of the initiative. If you use our tools and training courses please use the #MapYourGrid hashtag in your changesets. If you would like to contribute to our development or keep up to date with our progress, take a look at our public [organization project management](https://github.com/orgs/open-energy-transition/projects/25/views/7) and [roadmap](https://github.com/orgs/open-energy-transition/projects/25/views/13). You may have noticed that our KPIs currently prioritise coverage over data quality. This is because our initiative is working to increase coverage in low-and middle-income countries, resulting in more issues appearing in this grid. However, we also have a dedicated tool to monitor both [quality and coverage at world level](quality.md).
+MapYourGrid measures its progress at user, hashtag and country level. We would be honoured to make your progress part of the initiative. If you use our tools and training courses please use the #MapYourGrid hashtag in your changesets. If you would like to contribute to our development or keep up to date with our progress, take a look at our public [organization project management](https://github.com/orgs/open-energy-transition/projects/25/views/7) and [roadmap](https://github.com/orgs/open-energy-transition/projects/25/views/13). 
+
+
+Our initiative primarily focuses on improving data coverage in low- and middle-income countries worldwide. We are also working to improve data quality. To learn more about our quality improvement strategies, please visit our [Strategies](strategies.md) page.
+
+We have also developed [Grid Inspector](gridinspector.md), a pionneering platform dedicated to the analysis and comparison of OSM power data quality.
+
+
+
 
 <div class="progress-buttons">
      <a href="#countries" class="btn btn-primary">
@@ -27,9 +35,9 @@ MapYourGrid measures its progress at user, hashtag and country level. We would b
 </div>
 
 <!-- Countries Section -->
-## **<div class="tools-header">Countries </div>**
+## **<div class="tools-header">Countries 🌐</div>**
 
-Our work supports better access to electricity across the globe. In the countries below, we’ve helped map and fill critical gaps in the electrical grid.
+Our work improves access to high-quality data on power generation and transmission infrastructure worldwide. In the countries below, we have contributed to mapping and filling critical gaps in the power grid.
 
 <div class="grid-wrapper">
 
@@ -161,7 +169,7 @@ Our work supports better access to electricity across the globe. In the countrie
 </div>
 
 <!-- Progress Bars Section -->
-## **<div class="tools-header">Community Mapping Progress </div>**
+## **<div class="tools-header">Community Mapping Progress 👥</div>**
 <div class="grid-wrapper">
   <div class="country-card">
     <a href="https://mapyourgrid.infos-reseaux.com/dashboard/" target="_blank">
@@ -648,14 +656,14 @@ Want to calculate your own progress? Check out this [web interface](https://open
   });
 </script>
 
-## **<div class="tools-header">Line Length Growth per Country </div>**
+## **<div class="tools-header">Line Length Growth per Country 📈</div>**
 
 The following table shows the **total growth in line length across all OpenStreetMap edits** worldwide, calculated using pre-processed statistical data of [Podoma](https://wiki.openstreetmap.org/wiki/Podoma). See it directly online on <a href="https://mapyourgrid.infos-reseaux.com/dashboard/#tables" target="_blank">this dedicated dashboard</a>.
 
 <iframe src="https://mapyourgrid.infos-reseaux.com/dashboard/#tables" width="100%" height="600px" style="border:none;"></iframe>
 
 <!-- Countries Section -->
-## **<div class="tools-header">Interconnectors </div>**
+## **<div class="tools-header">Interconnectors ⚡</div>**
 
 The #MapYourGrid team is continuously improving the mapping of international connectors. The map below shows the interconnectors that the team has worked on.
 

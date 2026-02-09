@@ -5,18 +5,20 @@
 Dans le monde entier, OpenStreetMap a prouvé sa valeur en générant des données ouvertes de haute qualité pour soutenir le développement durable et l'accès à l'énergie. Utilisez les boutons ci-dessous pour explorer cet impact : qui utilise les données, pourquoi c'est important, et comment nous cartographions le réseau de manière responsable.
 
 <div class="starter-kit-buttons">
- <a href="#strategic-use-cases-energy-disaster-response-and-development" class="btn btn-primary">
- Cas d'utilisation stratégique : Énergie, réponse aux catastrophes et développement</a>
- <a href="#why-openstreetmap-matters-for-the-electrical-grid" class="btn btn-secondary">Pourquoi OpenStreetMap est-il important pour le réseau électrique ?</a>
- <a href="#why-open-grid-data-matters" class="btn btn-secondary">
- Pourquoi les données du réseau ouvert sont-elles importantes ?</a>
- <a href="#who-is-using-openstreetmap-grid-data" class="btn btn-secondary"> Qui utilise les données de la grille OpenStreetMap ? </a>
- <a href="#responsible-grid-mapping-understanding-risks-and-mitigation" class="btn btn-secondary">
- Cartographie responsable du réseau : Comprendre les risques et les mesures d'atténuation
+  <a href="#cas-dusage-strategiques-energie-reponse-aux-catastrophes-et-developpement" class="btn btn-primary">
+  Cas d’usage stratégiques : énergie, réponse aux catastrophes et développement</a>
+  <a href="#pourquoi-openstreetmap-est-il-important-pour-le-reseau-electrique" class="btn btn-secondary"> Pourquoi OpenStreetMap est-il important pour le réseau électrique ?</a>
+  <a href="#pourquoi-les-donnees-ouvertes-sont-elles-importantes" class="btn btn-secondary">
+  Pourquoi les données ouvertes sont-elles importantes ?</a>
+  <a href="#qui-utilise-les-donnees-openstreetmap" class="btn btn-secondary">
+  Qui utilise les données d’OpenStreetMap ?</a>
+  <a href="#cartographie-responsable-comprendre-les-risques-et-leur-attenuation" class="btn btn-secondary">
+  Cartographie responsable : comprendre les risques et leur atténuation
 </a>
 </div>
 
-## **<div class="tools-header">Cas d'utilisation stratégique : Énergie, réponse aux catastrophes et développement</div>**
+
+## **<div class="tools-header">Cas d’usage stratégiques : énergie, réponse aux catastrophes et développement</div>**
 
 La valeur unique d'OpenStreetMap dans la création de données de haute qualité pour le développement durable a été prouvée par de nombreuses initiatives dans le monde entier : 
 
@@ -118,7 +120,7 @@ Pour comprendre l'influence des données sur les réseaux électriques d'OpenStr
 * Depuis 2005, 10 700 publications contiennent des combinaisons de ces mots-clés.
 * Un total de **2 460 publications** ont été publiées au cours de la seule année écoulée, ce qui témoigne d'une augmentation rapide de l'intérêt des universitaires et de la reconnaissance de la puissance des données OpenStreetMap.
 
-## **<div class="tools-header">Pourquoi les données du réseau ouvert sont-elles importantes ?</div>**
+## **<div class="tools-header">Pourquoi les données ouvertes sont-elles importantes ?</div>**
 
 L'accès à des données ouvertes et précises sur les infrastructures électriques est essentiel pour une planification, un développement et une collaboration efficaces, en particulier dans le contexte de la transition énergétique mondiale. Les avantages sont considérables, allant de l'accélération du déploiement des énergies propres à l'amélioration de l'équité dans l'accès à l'énergie.
 
@@ -194,76 +196,76 @@ Dans la plupart des pays développés, la publication d'ensembles de données ou
 
 **Astuce:** Pour trouver d'autres jeux de données ouverts sur le réseau électrique publiés par les autorités nationales ou les opérateurs de réseau électrique, consultez notre site Web [a dressé une liste](https://github.com/open-energy-transition/Awesome-Electric-Grid-Mapping) avec plus de 150 cartes.
 
-## **<div class="tools-header">Qui utilise les données de la grille OpenStreetMap ?</div>**
+## **<div class="tools-header">Qui utilise les données OpenStreetMap ?</div>**
 
 Quel est l'impact de la cartographie ? Lorsque vous cartographiez des pylônes, des sous-stations, des centrales électriques dans OpenStreetMap, vous ajoutez essentiellement des données précieuses qui sont utilisées par de nombreuses entités différentes. Vous trouverez ci-dessous une liste d'organisations et de projets qui ont eu un impact et qui ont utilisé ces données. <br> 
 
 Avertissement : ces organisations ne sont pas affiliées à MapYourGrid et ne la soutiennent pas. Tous les logos et noms de marque sont la propriété de leurs détenteurs respectifs. Ils sont utilisés à titre d'information uniquement, pour identifier les organisations qui utilisent les données d'OpenStreetMap.
 
 **Agence internationale de l'énergie** ![Logo de l'AIE](images/impact/International-energy-agency-logo.png){width=30px} 
-??? "Observatoire de l'énergie et de l'IA (Cliquez-moi)"
+??? "Observatoire de l'énergie et de l'IA (Cliquer ici)"
  
     [**Lien vers le site web**](https://www.iea.org/data-and-statistics/data-tools/energy-and-ai-observatory)
     
     ![carte](images/impact/powerandai.jpg){ : .img-border }
  
-??? "Carte interactive des perspectives énergétiques de l'Amérique latine (Click Me)"
+??? "Carte interactive des perspectives énergétiques de l'Amérique latine (Cliquer ici)"
  
     [**Lien** - Carte interactive des perspectives énergétiques de l'Amérique latine (lien)](https://www.iea.org/data-and-statistics/data-tools/latin-america-energy-outlook-interactive-map)
     
     ![carte](images/impact/iea-latinmap.jpg){ : .img-border }
 
 **Département américain de la sécurité intérieure** ![US dep logo](images/impact/us-homeland.png){width=30px} 
-??? "Homeland Infrastructure Foundation-Level Data (HIFLD) (Click Me)" 
+??? "Homeland Infrastructure Foundation-Level Data (HIFLD) (Cliquer ici)" 
  
     [**Lien vers le site web**](https://hifld-geoplatform.hub.arcgis.com/datasets/3486fb60feb2454c99232248fdf624ec_0/explore)
     
     ![carte](images/impact/HILFD-JOSM.png){ : .img-border }
 
 **Banque mondiale** ![Logo de la Banque mondiale](images/impact/worldbanklogo.jpg){width=70px} 
-??? "Explorateur de réseaux électriques en Afrique (Click Me)"
+??? "Explorateur de réseaux électriques en Afrique (Cliquer ici)"
  
     [**Lien** - Africa Electricity Grids Explorer (lien)](https://africagrid.energydata.info/)
     
     ![carte](images/impact/africa_grid_explorer.jpg){ : .img-border }
 
-**PyPSA-Terre** ![PyPSA-Terre](images/impact/pypsa-earth-logo.png){ : width=70px} **+** **PyPSA-Eur** ![PyPSA-Eur](images/impact/pypsa-eur-logo.jpg){: width=30px}
-??? "PyPSA-Earth et Europe utilisent les données d'OpenStreetMap pour des études sur les systèmes énergétiques dans le monde entier. (Cliquez-moi)"
+**PyPSA-Earth** ![PyPSA-Earth](images/impact/pypsa-earth-logo.png){ : width=70px} **+** **PyPSA-Eur** ![PyPSA-Eur](images/impact/pypsa-eur-logo.jpg){: width=30px}
+??? "PyPSA-Earth et Europe utilisent les données d'OpenStreetMap pour des études sur les systèmes énergétiques dans le monde entier. (Cliquer ici)"
  
     [**Lien vers le site web**)](https://pypsa-earth.readthedocs.io/)
     
     ![carte](images/impact/pypsa-earth.jpg){ : .img-border }
 
 **Enedis** ![Enedis](images/impact/enedis-logo.png){width=70px} 
-??? "La société française Enedis, qui exploite le réseau de distribution d'électricité, a cartographié les poteaux et les sous-stations électriques avec l'aide d'une forte communauté OpenStreetMap locale. (Cliquez-moi)"
+??? "La société française Enedis, qui exploite le réseau de distribution d'électricité, a cartographié les poteaux et les sous-stations électriques avec l'aide d'une forte communauté OpenStreetMap locale. (Cliquer ici)"
  
     [**Lien vers le site web**](https://enedis.openstreetmap.fr/)
     
     ![carte](images/impact/enedis-osm.png){ : .img-border }
 
 **Global Renewables Watch** ![Enedis](images/impact/ms-logo.png){width=70px} 
-??? "L'Observatoire mondial des énergies renouvelables cartographie et mesure les installations d'énergie renouvelable et leurs capacités estimées aux niveaux infranational, national et mondial. L'apprentissage automatique qui sous-tend le processus de détection est principalement formé à l'aide de données OpenStreetMap. (Cliquez-moi)"
+??? "L'Observatoire mondial des énergies renouvelables cartographie et mesure les installations d'énergie renouvelable et leurs capacités estimées aux niveaux infranational, national et mondial. L'apprentissage automatique qui sous-tend le processus de détection est principalement formé à l'aide de données OpenStreetMap. (Cliquer ici)"
  
     [**Lien vers le site web**](https://www.globalrenewableswatch.org/)
     
     ![carte](images/renewable-watch.png){ : .img-border }
     
 **CONAHCYT (Gouvernement du Mexique)** ![Logo de la CONAHCYT](images/impact/conahcyt.png){width=70px} 
-??? "Carte du réseau électrique national (Click Me)"
+??? "Carte du réseau électrique national (Cliquer ici)"
  
     [**Lien vers le site web**](https://energia.conacyt.mx/planeas/electricidad/sistema-electrico-nacional)
     
     ![carte](images/impact/mexicogov-map.png){ : .img-border }
 
 **Canada Energy Regulator (CER)**  ![CER logo](images/impact/CER.jpg){width=50px} 
-??? "International Power Lines and the Canada-U.S. Grid (Click Me)"
+??? "International Power Lines and the Canada-U.S. Grid (Cliquer ici)"
     
     [**Link to website**](https://www.cer-rec.gc.ca/en/data-analysis/energy-markets/market-snapshots/2025/market-snapshot-electricity-trade-who-regulates-what-in-canada.html)
     
     ![map](images/impact/CER-lines.jpg){: .img-border }
  
 **Commission européenne - Centre commun de recherche** ![Logo de l'EUC](images/impact/euc-logo.jpg){width=40px} 
-??? "Plate-forme de connaissances sur l'Afrique (Click Me)"
+??? "Plate-forme de connaissances sur l'Afrique (Cliquer ici)"
  
     [**Lien vers le site web**](https://africa-knowledge-platform.ec.europa.eu/explore_maps)
     
@@ -273,83 +275,83 @@ Avertissement : ces organisations ne sont pas affiliées à MapYourGrid et ne la
     - Les données relatives au réseau électrique figurant sur l'image sont un mélange de données de la Banque mondiale et d'OpenStreetMap. 
  
 **IRENA** ![Logo GWA](images/impact/irenalogo.jpg){width=55px} 
-??? "Atlas mondial des énergies renouvelables (Click Me)"
+??? "Atlas mondial des énergies renouvelables (Cliquer ici)"
  
     [**Lien vers le site web**](https://globalatlas.irena.org/workspace)
     
     ![carte](images/impact/irenaatlas.png){ : .img-border }
  
-**Atlas mondial du vent** ![Logo GWA](images/impact/globalwindatlaslogo.jpg){width=15px} 
-??? "Atlas éolien mondial (Cliquez-moi)"
+**Global Wind Atlas** ![Logo GWA](images/impact/globalwindatlaslogo.jpg){width=15px} 
+??? "Global Wind Atlas (Cliquer ici)"
  
     [**Lien vers le site web**](https://globalwindatlas.info/en/)
     
     ![carte](images/impact/globalwindatlas.jpg){ : .img-border }
 
 **Fraunhofer ISE** ![Logo de Fraunhofer](images/impact/fraunhoferlogo.jpg){width=45px} 
-??? "Graphiques sur l'énergie (Cliquez-moi)"
+??? "Graphiques sur l'énergie (Cliquer ici)"
  
     [**Lien vers le site web**](https://www.energy-charts.info/map/map.htm?l=en&c=DE&country=DE&lines=1110000&pp-source=bnetza&pp-bitmap=none)
     
     ![carte](images/impact/fraunhofermap.jpg){ : .img-border }
 
 **ESMAP, IFC, VIDA** ![ESMAP](images/impact/ESMAP-logo.svg){width=45px} ![IFC](images/impact/IFC-logo.svg){width=65px} ![VIE](images/impact/vida-logo.jpg){width=45px}
-??? "Atlas des énergies renouvelables distribuées (ERD) (Cliquez-moi)"
+??? "Atlas des énergies renouvelables distribuées (ERD) (Cliquer ici)"
  
     [**Lien vers le site web**](https://dre.energydata.info/)
     
     ![carte](images/impact/DRE-atlas.jpg){ : .img-border }
 
 **GridRaven** ![GridRaven](images/impact/raven.png){width=15px} 
-??? "Les évaluations de lignes dynamiques avec des prévisions météorologiques de précision (Click Me)"
+??? "Les évaluations de lignes dynamiques avec des prévisions météorologiques de précision (Cliquer ici)"
  
     [**Lien vers le site web**](https://claw.gridraven.com/world)
     
     ![carte](images/impact/GridRaven.jpg){ : .img-border }
 
 **windPRO** ![windPRO](images/impact/Windpro_v2_rgb.png){width=15px}
-??? "windPRO est une norme industrielle pour la conception, la planification et l'évaluation des projets d'énergie éolienne et solaire. (Cliquez-moi)"
+??? "windPRO est une norme industrielle pour la conception, la planification et l'évaluation des projets d'énergie éolienne et solaire. (Cliquer ici)"
  
     [**Lien vers le site web**](https://help.emd.dk/mediawiki/index.php/EMD_Electrical_Grid_Map)
     
     ![carte](images/impact/WindPro.jpg){ : .img-border } 
 
 **ETAP** ![etap](images/impact/etap.jpg){width=25px}
-??? "ETAP® fournit des solutions logicielles et matérielles de pointe à toutes les étapes du cycle de vie des systèmes électriques pour les services publics, les infrastructures, les industries et les bâtiments. (Cliquez-moi)"
+??? "ETAP® fournit des solutions logicielles et matérielles de pointe à toutes les étapes du cycle de vie des systèmes électriques pour les services publics, les infrastructures, les industries et les bâtiments. (Cliquer ici)"
  
     [**Lien vers le site web**](https://etap.com/product/gis-for-electric)
     
     ![carte](images/impact/etap-osm.jpg){ : .img-border } 
 
 **GlitreNett** ![filet à paillettes](images/impact/GlitreNett.svg){width=40px}
-??? "DataArena a l'intention d'informer et de fournir des informations sur l'état de la capacité du réseau électrique norvégien. (Cliquez sur moi)" 
+??? "DataArena a l'intention d'informer et de fournir des informations sur l'état de la capacité du réseau électrique norvégien. (Cliquer ici)" 
  
     [DataArena a pour but d'informer et de fournir des renseignements sur l'état de la capacité du réseau électrique norvégien.](https://etap.com/product/gis-for-electric)
     
     ![carte](images/impact/data-area-norway.jpg){ : .img-border } 
 
 **MAPOG** ![mapog](images/impact/MAPOG-logo.png){width=40px}
-??? "Comment les SIG améliorent la cartographie du réseau électrique et la planification de l'infrastructure énergétique. (Cliquez-moi)" 
+??? "Comment les SIG améliorent la cartographie du réseau électrique et la planification de l'infrastructure énergétique. (Cliquer ici)" 
  
     [**Lien vers le site web**](https://www.mapog.com/power-grid-and-infrastructure-mapping-and-planning-using-gis/)
     
     ![carte](images/impact/MAPOG.jpg){ : .img-border } 
 
 **dvlp.energy** ![dvlp.energy](images/impact/dvlp-logo-purple.svg){width=40px}
-??? "Avec dvlp.energy, vous pouvez rapidement et facilement trouver l'espace adéquat pour vos projets solaires, éoliens ou de stockage. (Cliquez sur moi)" 
+??? "Avec dvlp.energy, vous pouvez rapidement et facilement trouver l'espace adéquat pour vos projets solaires, éoliens ou de stockage. (Cliquer ici)" 
  
     [**Lien vers le site web**](https://www.dvlp.energy/en)
     
     ![carte](images/impact/dvlp-energy.jpg){ : .img-border } 
 
 **Roseau Technologies** ![Roseau Technologies](images/impact/roseau.svg){width=40px}
-??? "Solutions logicielles modernes et ergonomiques pour la conception de réseaux de distribution d'électricité. (Cliquez-moi)" 
+??? "Solutions logicielles modernes et ergonomiques pour la conception de réseaux de distribution d'électricité. (Cliquer ici)" 
  
     [**Lien vers le site web**](https://www.roseautechnologies.com/en/home/)
     
     ![carte](images/impact/roseau.jpg){ : .img-border } 
 
-## **<div class="tools-header">Cartographie responsable du réseau : Comprendre les risques et les mesures d'atténuation</div>**
+## **<div class="tools-header">Cartographie responsable : Comprendre les risques et leur atténuation</div>**
 
 La cartographie des infrastructures de transport d'électricité est essentielle pour atteindre l'accès universel à l'énergie, renforcer la résilience climatique et permettre la planification de l'énergie propre. Mais l'ouverture, en particulier dans le domaine des infrastructures, soulève naturellement des questions sur les risques et la sécurité.
 
@@ -368,7 +370,7 @@ Au cours des 17 dernières années, des données sur les réseaux de transport o
 Les infrastructures de transport d'électricité sont largement considérées comme essentielles à la stabilité nationale et régionale. Elles alimentent les économies, soutiennent les systèmes de santé et relient les communautés. 
 
 Il est donc raisonnable de poser la question : 
-**La publication de l'emplacement des lignes électriques et des sous-stations expose-t-elle un système à de nouvelles menaces ?
+**La publication de l'emplacement des lignes électriques et des postes électriques expose-t-elle un système à de nouvelles menaces ?
 
 Il s'agit là d'une préoccupation légitime. Bien que la cartographie OSM se concentre uniquement sur les éléments non sensibles et visibles par le public, il est important de comprendre où se situe la limite.
 
@@ -441,7 +443,7 @@ Nous motivons les cartographes à s'engager directement auprès des communautés
 - Limites des sous-stations électriques et équipement permettant de déterminer la tension des lignes électriques.
 - Classification des tensions. 
 
-**Nous ne cartographions *NOT* pas:** 
+**Nous ne cartographions pas:** 
 
 - L'intérieur des sous-stations ou l'équipement des sous-stations extérieures n'est pas nécessaire pour déterminer les tensions des lignes électriques, les clôtures.
 - Systèmes de contrôle ou infrastructure de communication.
@@ -523,11 +525,11 @@ Les données OpenStreetMap sont souvent utilisées pour valider ou compléter ce
 </figure>
 </div> 
 
-### Soutenir l'ouverture responsable
+### Soutenir une open data responsable
 
 Pour les donateurs, les chercheurs et les institutions qui souhaitent soutenir les données d'infrastructure ouvertes tout en limitant les risques, nous recommandons ce qui suit :
 
-**Faire:**
+**A faire:**
 
 - Mettre l'accent sur la résilience climatique, l'intérêt public et l'équité.
 - Mettez en avant des exemples concrets où les données ouvertes ont amélioré la planification ou la réponse aux catastrophes.
@@ -535,14 +537,14 @@ Pour les donateurs, les chercheurs et les institutions qui souhaitent soutenir l
 - Financer la formation, l'examen par les pairs et l'amélioration de la documentation.
 - Comprendre la nécessité d'une gestion prudente et d'une sensibilisation à la législation.
 
-**Avoid:**
+**A éviter:**
 
-- Soutenir la cartographie dans les zones de conflit.
+- Cartographier dans des zones de conflit.
 - Traiter l'ouverture comme une question de tout ou rien.
 
 ---
 
-### Réflexions finales
+### Conclusion
 
 La cartographie des réseaux de transport d'électricité dans OpenStreetMap contribue déjà à des progrès concrets : De la modélisation des voies d'électrification en Afrique subsaharienne à l'implantation d'énergies renouvelables en Asie du Sud-Est.
 

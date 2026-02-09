@@ -4,31 +4,40 @@
 
 <div style="float: right; margin: 5px 0 20px 20px; width: 450px; max-width: 100%">
 <img src="/images/progress/ourlines-vs-world.jpg" style="width: 100%; border: 4px solid #2a6d3c;"></a> 
-<figcaption class="image-caption"> Toutes les lignes <span style="color: #ecc123;"><b>créé et édité par MapYourGrid</b></span> les cartographes. Agrandissez l'image en cliquant dessus. Cliquez sur l'image pour l'agrandir.
+<figcaption class="image-caption"> Toutes les lignes <span style="color: #ecc123;"><b>créés et éditées dans le cadre de l'initiative MapYourGrid</b></span>. Cliquez pour agrandir l'image.
 </figcaption>
 </div>
 
-MapYourGrid mesure ses progrès au niveau des utilisateurs, des hashtags et des pays. Nous serions honorés que vos progrès fassent partie de l'initiative. Si vous utilisez nos outils et nos cours de formation, veuillez utiliser le hashtag #MapYourGrid dans vos jeux de modifications ou ajoutez votre identifiant d'utilisateur à notre base de données de [Script KPI](https://github.com/open-energy-transition/MapYourGrid/blob/main/.github/workflows/update-tower-count.yml). Si vous souhaitez contribuer à notre développement ou vous tenir au courant de nos progrès, consultez notre site public. [organisation gestion de projet](https://github.com/orgs/open-energy-transition/projects/25/views/7) et [feuille de route](https://github.com/orgs/open-energy-transition/projects/25/views/13). Vous avez peut-être remarqué que nos indicateurs clés de performance donnent actuellement la priorité à la couverture plutôt qu'à la qualité des données. Cela s'explique par le fait que notre initiative vise à accroître la couverture dans les pays à revenu faible et intermédiaire, ce qui se traduit par un plus grand nombre de problèmes apparaissant dans cette grille. Cependant, les ICP de qualité sont en cours de développement et seront basés sur l'analyse de la qualité des données. [les couches d'assurance qualité que nous mettons en œuvre simultanément](strategies.md/#assurance-qualite-et-validation).
+MapYourGrid suit ses progrès à travers les utilisateurs, les hashtags et les pays. Nous serions ravis de vous compter parmi les contributeurs de l’initiative. Si vous utilisez nos outils ou nos formations, vous pouvez utiliser le hashtag #MapYourGrid dans vos changesets OpenStreetMap ou d’ajouter votre identifiant utilisateur à notre base de données via le [Script KPI](https://github.com/open-energy-transition/MapYourGrid/blob/main/.github/workflows/update-tower-count.yml).
+
+Si vous souhaitez contribuer à notre développement ou suivre l’avancement du projet, consultez notre site, ainsi que notre [suivi de gestion de projet](https://github.com/orgs/open-energy-transition/projects/25/views/7) et notre [feuille de route](https://github.com/orgs/open-energy-transition/projects/25/views/13).
+
+Notre initiative se concentre en priorité sur l’amélioration de la couverture des données dans les pays à revenu faible et intermédiaire à l’échelle mondiale. Nous travaillons toutefois également à l’amélioration de la qualité des données. Pour découvrir nos stratégies d’amélioration de la qualité, consultez notre page [Strategies](fr/strategies.md). 
+
+Nous avons également développé [Grid Inspector](mapyourgrid.org/gridinspector), la première plateforme mondiale dédiée à l’analyse et la comparaison de la qualité des données OSM dans le domaine de l'électricité.
+<!--  -->
+
+
 
 <div class="progress-buttons">
- <a href="#countries" class="btn btn-primary">
+ <a href="#liste-des-pays" class="btn btn-primary">
  Liste des pays 🌐
  </a>
- <a href="#community-mapping-progress" class="btn btn-primary">
+ <a href="#progres-de-la-communaute" class="btn btn-primary">
  Progrès de la communauté 👥
  </a>
- <a href="#line-length-growth-per-country" class="btn btn-primary">
- Croissance des lignes par pays 📈
+ <a href="#evolution-de-la-longueur-des-lignes-par-pays" class="btn btn-primary">
+ Evolution des lignes par pays 📈
  </a>
- <a href="#interconnectors" class="btn btn-primary">
+ <a href="#interconnecteurs" class="btn btn-primary">
  Interconnecteurs ⚡
  </a>
 </div>
 
 <!-- Countries Section -->
-## **<div class="tools-header">Pays </div>**
+## **<div class="tools-header">Liste des pays 🌐</div>**
 
-Notre travail permet d'améliorer l'accès à l'électricité dans le monde entier. Dans les pays ci-dessous, nous avons contribué à cartographier et à combler les lacunes critiques du réseau électrique.
+Notre travail améliore l’accès à des données de qualité sur les infrastructures de production et de transport d’électricité à l’échelle mondiale. Dans les pays ci-dessous, nous avons contribué à la cartographie du réseau électrique et à la réduction de lacunes critiques dans le réseau.
 
 <div class="grid-wrapper">
 
@@ -164,92 +173,107 @@ Notre travail permet d'améliorer l'accès à l'électricité dans le monde enti
 
 <div style="text-align:center">
 <img src="https://raw.githubusercontent.com/ben10dynartio/apps/refs/heads/main/mapyourgrid/images/country_grid_4x4.jpg" class="img-border" style="width: 60%;">
-<figcaption class="image-caption">Nos progrès dans différents pays. Cliquez sur l'image pour l'agrandir.</figcaption>
+<figcaption class="image-caption">Nos progrès dans différents pays. Cliquez pour agrandir l'image.</figcaption>
 </div> 
 
 <!-- Progress Bars Section -->
-## **<div class="tools-header">Progrès de la communauté </div>**
+## **<div class="tools-header">Progrès de la communauté 👥</div>**
+
+<div class="grid-wrapper">
+  <div class="country-card">
+    <a href="https://mapyourgrid.infos-reseaux.com/dashboard/" target="_blank">
+      <img class="off-glb" src="/images/logos/MapYourGrid-logo.png" alt="MapYourGrid progress">
+      </br>MapYourGrid progress dashboard
+    </a>
+  </div>
+
+  <div class="country-card">
+    <a href="https://stats.now.ohsome.org/dashboard#hashtag=MapYourGrid&start=2025-03-12T22:00:00Z&end=2025-05-14T21:59:59Z&interval=P1M&countries=&topics=" target="_blank">
+      <img style="width:200px; margin-top:20px;" class="off-glb" src="https://stats.now.ohsome.org/assets/images/ohsomeNowStats_logo.svg" alt="Ohsome Nowstats">
+      </br>Ohsome Nowstats
+    </a>
+  </div>
+</div>
 
 <div class="progress-section"> 
- <button id="refresh-btn" style="margin-bottom:1rem;">
- 🔄 Rafraîchir les statistiques (ne cliquer que si les barres ne sont pas "en cours de chargement...")
- </button>
+   <button id="refresh-btn" style="margin-bottom:1rem;">
+     🔄 Actualiser les statistiques (ne cliquer que si les barres n’affichent pas “loading…”)
+   </button>
 
- <div class="progress-item">
- <label>Cartographie des contributeurs avec <code>#MapYourGrid</code> hashtag :</label>
- <div class="progress"> <div class="progress-bar" id="contributors-bar" style="background-color: #28a745;"></div> </div>
- <span id="contributors-count">Chargement...</span>
- </div>
+  <div class="progress-item">
+    <label>Contributors mapping with <code>#MapYourGrid</code> hashtag:</label>
+    <div class="progress"> <div class="progress-bar" id="contributors-bar" style="background-color: #28a745;"></div> </div>
+    <span id="contributors-count">Loading…</span>
+  </div>
 
- <div class="progress-item">
- <label>Total des modifications pour <code>#MapYourGrid</code> hashtag :</label>
- <div class="progress">
- <div class="progress-bar" id="edits-bar" style="background-color: #28a745;"></div> </div>
- <span id="edits-count">Chargement...</span>
- </div>
+  <div class="progress-item">
+    <label>Total Edits for <code>#MapYourGrid</code> hashtag:</label>
+    <div class="progress">
+      <div class="progress-bar" id="edits-bar" style="background-color: #28a745;"></div> </div>
+    <span id="edits-count">Loading…</span>
+  </div>
 
- <div class="progress-item">
- <label>Total estimé des pylônes électriques ajoutés par les cartographes de l'organisation MapYourGrid :</label>
- <div class="progress">
- <div class="progress-bar" id="tower-bar" style="background-color: #17a2b8;"></div>
- </div>
- <span id="tower-count">Chargement...</span>
- <br>
- <span id="tower-updated" style="font-size:0.8em; color:#666">Dernière mise à jour : -</span>
- </div>
+  <div class="progress-item">
+    <label>Total estimated power towers added by mappers of the MapYourGrid organisations:</label>
+    <div class="progress">
+      <div class="progress-bar" id="tower-bar" style="background-color: #17a2b8;"></div>
+    </div>
+    <span id="tower-count">Loading…</span>
+    <br>
+    <span id="tower-updated" style="font-size:0.8em; color:#666">Last updated: —</span>
+  </div>
 
- <div class="progress-item">
- <label>Longueur totale estimée des lignes électriques ajoutées par les cartographes de l'organisation MapYourGrid :</label>
- <div class="progress">
- <div class="progress-bar" id="line-length-bar" style="background-color: #17a2b8;"></div>
- </div>
- <span id="line-length-count">Chargement...</span><br>
- <span id="line-length-updated" style="font-size:0.8em; color:#666">
- Dernière mise à jour : -
- </span>
- </div>
+  <div class="progress-item">
+    <label>Total estimated length of power lines added by mappers of the MapYourGrid organisations:</label>
+    <div class="progress">
+      <div class="progress-bar" id="line-length-bar" style="background-color: #17a2b8;"></div>
+    </div>
+    <span id="line-length-count">Loading…</span><br>
+    <span id="line-length-updated" style="font-size:0.8em; color:#666">
+      Last updated: —
+    </span>
+  </div>
 
- <div class="progress-item">
- <label>Total de la capacité électrique mondiale estimée ajouté/édité par les cartographes de l'organisation MapYourGrid :</label>
- <div class="progress">
- <div class="progress-bar" id="plant-capacity-bar" style="background-color: #17a2b8;"></div>
- </div>
- <span id="plant-capacity-count">Chargement...</span>
- <br>
- <span id="plant-capacity-updated" style="font-size:0.8em; color:#666">Dernière mise à jour : -</span>
- </div>
+  <div class="progress-item">
+    <label>Total Estimated Global Power Capacity added/edited by mappers of the MapYourGrid organisations:</label>
+    <div class="progress">
+      <div class="progress-bar" id="plant-capacity-bar" style="background-color: #17a2b8;"></div>
+    </div>
+    <span id="plant-capacity-count">Loading…</span>
+    <br>
+    <span id="plant-capacity-updated" style="font-size:0.8em; color:#666">Last updated: —</span>
+  </div>
 
- <div class="progress-item">
- <label>Total estimé des sous-stations ajoutées/modifiées par les cartographes de l'organisation MapYourGrid :</label>
- <div class="progress">
- <div class="progress-bar" id="substation-bar" style="background-color: #17a2b8;"></div>
- </div>
- <span id="substation-count">Chargement...</span>
- <br>
- <span id="substation-updated" style="font-size:0.8em; color:#666">Dernière mise à jour : -</span>
- </div>
+  <div class="progress-item">
+    <label>Total estimated substations added/edited by mappers of the MapYourGrid organisations:</label>
+    <div class="progress">
+      <div class="progress-bar" id="substation-bar" style="background-color: #17a2b8;"></div>
+    </div>
+    <span id="substation-count">Loading…</span>
+    <br>
+    <span id="substation-updated" style="font-size:0.8em; color:#666">Last updated: —</span>
+  </div>
 
- <div class="progress-item">
- <label>Total estimé des pylônes d'alimentation ajoutés par les personnes utilisant la <code>#MapYourGrid</code>:</label>
- <div class="progress">
- <div class="progress-bar" id="community-tower-bar" style="background-color: #28a745;"></div>
- </div>
- <span id="community-tower-count">Chargement...</span>
- <br>
- <span id="community-tower-updated" style="font-size:0.8em; color:#666">Dernière mise à jour : -</span>
- </div>
+  <div class="progress-item">
+    <label>Total estimated power towers added by people using the <code>#MapYourGrid</code>:</label>
+    <div class="progress">
+      <div class="progress-bar" id="community-tower-bar" style="background-color: #28a745;"></div>
+    </div>
+    <span id="community-tower-count">Loading…</span>
+    <br>
+    <span id="community-tower-updated" style="font-size:0.8em; color:#666">Last updated: —</span>
+  </div>
 
- <div class="progress-item">
- <label>Longueur totale estimée des lignes électriques ajoutées par les personnes utilisant la <code>#MapYourGrid</code>:</label>
- <div class="progress">
- <div class="progress-bar" id="community-line-length-bar" style="background-color: #28a745;"></div>
- </div>
- <span id="community-line-length-count">Chargement...</span><br>
- <span id="community-line-length-updated" style="font-size:0.8em; color:#666">
- Dernière mise à jour : -
- </span>
- </div>
-
+  <div class="progress-item">
+    <label>Total estimated length of power lines added by people using the <code>#MapYourGrid</code>:</label>
+    <div class="progress">
+      <div class="progress-bar" id="community-line-length-bar" style="background-color: #28a745;"></div>
+    </div>
+    <span id="community-line-length-count">Loading…</span><br>
+    <span id="community-line-length-updated" style="font-size:0.8em; color:#666">
+      Last updated: —
+    </span>
+  </div>
 </div>
 
 <!-- Progress bars script------------------------------------------------- -->
@@ -574,7 +598,7 @@ Vous trouverez plus de statistiques sur #MapYourGrid à l'adresse suivante [Ohso
     </div>
     <p id="last-updated"></p>
 
-Vous voulez calculer vos propres progrès ? Jetez un coup d'œil à cette [interface web](https://open-energy-transition.github.io/KPI-OSM/) où vous pouvez calculer le nombre de tours/poteaux que vous avez placés dans un pays, les sous-stations éditées et la capacité totale en MW que vous avez ajoutée à un pays.
+Vous voulez calculer vos propres progrès ? Jetez un coup d'œil à cette [interface web](https://open-energy-transition.github.io/KPI-OSM/) où vous pouvez calculer le nombre de pylones/poteaux que vous avez placés dans un pays, les postes électriques édités et la capacité totale en MW que vous avez ajoutée dans un pays.
 <script>
  document.addEventListener('DOMContentLoaded', function() {
  const leaderboardContainer = document.getElementById('leaderboard-container');
@@ -641,14 +665,14 @@ Vous voulez calculer vos propres progrès ? Jetez un coup d'œil à cette [inter
  });
 </script>
 
-## **<div class="tools-header">Croissance de la longueur des lignes par pays </div>**
+## **<div class="tools-header">Evolution de la longueur des lignes par pays 📈</div>**
 
-Le tableau suivant montre la **croissance totale de la longueur des lignes pour toutes les éditions OpenStreetMap** dans le monde, calculée à l'aide de données statistiques prétraitées de [Quelques statistiques](https://stats.now.ohsome.org/).
+Le tableau suivant montre **l'évolution de la longueur des lignes pour toutes les éditions OpenStreetMap** dans le monde, calculée à l'aide de données statistiques prétraitées de [Podoma](https://wiki.openstreetmap.org/wiki/Podoma). Voir directement en ligne sur <a href="https://mapyourgrid.infos-reseaux.com/dashboard/#tables" target="_blank">ce tableau de bord dédié</a>.
 
-<iframe src="/data/power_line_length_table.html" width="100%" height="600px" style="border:none;"></iframe>
+<iframe src="https://mapyourgrid.infos-reseaux.com/dashboard/#tables" width="100%" height="600px" style="border:none;"></iframe>
 
 <!-- Countries Section -->
-## **<div class="tools-header">Interconnecteurs </div>**
+## **<div class="tools-header">Interconnecteurs ⚡</div>**
 
 L'équipe #MapYourGrid améliore continuellement la cartographie des connecteurs internationaux. La carte ci-dessous montre les interconnexions sur lesquelles l'équipe a travaillé.
 

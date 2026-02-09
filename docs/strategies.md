@@ -267,7 +267,11 @@ To match other datasets, such as Global Energy Monitor, with Wikidata, tools lik
   <a href="#online-investigation" class="btn btn-secondary">Online Investigation</a>
   <a href="#josm-powernetworktools-plugin" class="btn btn-secondary">PowerNetworkTools Plugin</a>
   <a href="#validating-and-mapping-interconnectors" class="btn btn-secondary">Interconnectors</a>
-  <a href="#improve-osm-tags-with-ppm" class="btn btn-secondary">PowerPlantMatching </a>
+  <a href="#street-level-imagery" class="btn btn-secondary">Street-Level Imagery </a>
+  <a href="#add-additional-aerial-imagery-to-josm" class="btn btn-secondary">Additional Aerial Imagery </a>
+  <a href="#searching-for-missing-data-like-cables-using-the-filter" class="btn btn-secondary">Filter Search for Missing Data</a>
+  <a href="#continuos-download-and-hydro-power-mapping" class="btn btn-secondary">Continuos Download and Hydro Power Mapping</a>
+  <a href="#improve-openstreetmap-tags-with-powerplantmatching" class="btn btn-secondary">PowerPlantMatching </a>
 </div>
 
 ### <div class="tools-header">Official Data and Maps</div></h3>
@@ -384,7 +388,7 @@ Interconnectors between countries are essential to the functioning of the transm
   <figcaption class="image-caption">Mapillary provides valuable street-level imagery, which is particularly useful in low- to medium-income regions such as Western Africa. Click to enlarge.</figcaption>
 </div>
 
-Platforms such as [Mapillary](https://www.mapillary.com/) or [Panoramax](https://panoramax.fr/) provide an open-data alternative to Google Street View for validating power tower routing and cable numbers. This imagery is also extremely helpful for following power towers and line routing in urban areas, as spotting power towers with satellite imagery in such an environment can be very challenging. However, this imagery can also be used to estimate voltages by analysing the insulators of the powe towers. For many regions, such as Sub-Saharan Africa, Mapillary imagery is the only source of high-quality imagery, as satellite imagery in these regions is quite poor. Mapillary imagery is directly integrated in JOSM and iD. Here how to active it in JOSM:
+Platforms such as [Mapillary](https://www.mapillary.com/) or [Panoramax](https://panoramax.fr/) provide an open-data alternative to Google Street View for validating power tower routing and cable numbers. This imagery is also extremely helpful for following power towers and line routing in urban areas, as spotting power towers with satellite imagery in such an environment can be very challenging. Furthermore, this imagery can also be used to estimate voltages by analysing the insulators of the power towers. For many regions, such as Sub-Saharan Africa, Mapillary imagery is the only source of high-quality imagery, as satellite imagery in these regions is quite poor. Mapillary imagery is directly integrated in JOSM and iD. Here how to active it in JOSM:
 
 1. Download the `Mapillary` plugin for JOSM. Go to `Edit` -> `Preferences`. Search for `Mapillary`, select it and press OK. 
 2. Under `Windows` you should now find a `Mapillary` imagery layer. Click it.
