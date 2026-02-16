@@ -1,0 +1,2163 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="We empower individuals, communities and nations around the world to map the electrical grid.">
+      
+      
+      
+        <link rel="canonical" href="https://MapYourGrid.org/map-it/">
+      
+      
+        <link rel="prev" href="../starter-kit/">
+      
+      
+        <link rel="next" href="../gridinspector/">
+      
+      
+      <link rel="icon" href="../images/logos/MapYourGrid-logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>MAP IT📍 - MapYourGrid</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/landing.css">
+    
+      <link rel="stylesheet" href="../stylesheets/blog.css">
+    
+      <link rel="stylesheet" href="../stylesheets/awesome_list.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css">
+    
+      <link rel="stylesheet" href="../stylesheets/gfl.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  
+  <meta property="og:title" content="MapYourGrid">
+  <meta property="og:description" content="We empower individuals, communities and nations around the world to map the electrical grid.">
+  <meta property="og:image" content="https://MapYourGrid.org/images/website/mapyourgrid-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://MapYourGrid.org">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MapYourGrid">
+  <meta name="twitter:description" content="We empower individuals, communities and nations around the world to map the electrical grid.">
+  <meta name="twitter:image" content="https://MapYourGrid.org/images/website/mapyourgrid-preview.jpg">
+
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mapping-guidelines" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+<a href="https://discord.gg/a5znpdFWfD">
+  <div style="display:inline-flex; align-items:center; color:#aad3c6">
+    <strong> Join our community chat </strong>
+    <img src="/icons/discord-white.png" alt="Discord logo" style="width:1em; height:0.75em; margin-left:0.5ch; vertical-align:middle;" class="twemoji">
+  </div>
+    <div style="display:inline-flex; align-items:center; color:#aad3c6">
+      <strong> and learn to map with us! 📍  </strong>
+    </div>
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MapYourGrid" class="md-header__button md-logo" aria-label="MapYourGrid" data-md-component="logo">
+      
+  <img src="../images/logos/MapYourGrid-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MapYourGrid
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MAP IT📍
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"></path></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../es/map-it/" hreflang="es" class="md-select__link">
+              Español
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../fr/map-it/" hreflang="fr" class="md-select__link">
+              Français
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/open-energy-transition/MapYourGrid" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    MapYourGrid
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  INITIATIVE
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../impact/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  IMPACT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../starter-kit/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  STARTER-KIT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  MAP IT📍
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../gridinspector/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  GRID INSPECTOR
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../strategies/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  STRATEGIES
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../progress/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  PROGRESS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../global-grid-data/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  DATA
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../about-us/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  ABOUT US
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MapYourGrid" class="md-nav__button md-logo" aria-label="MapYourGrid" data-md-component="logo">
+      
+  <img src="../images/logos/MapYourGrid-logo.png" alt="logo">
+
+    </a>
+    MapYourGrid
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/open-energy-transition/MapYourGrid" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    MapYourGrid
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    INITIATIVE
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../impact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IMPACT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../starter-kit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    STARTER-KIT
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    MAP IT📍
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    MAP IT📍
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mapping Guidelines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#join-the-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Join the Chat
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#join-the-community" class="md-nav__link">
+    <span class="md-ellipsis">
+      Join the Community
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gridinspector/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GRID INSPECTOR
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    STRATEGIES
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../progress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PROGRESS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../global-grid-data/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DATA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about-us/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ABOUT US
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+  
+  
+
+
+<div class="page-headers">
+<h1>Map It 📍</h1>
+</div>
+
+<details class="success">
+<summary>INTRODUCTION (Click Me)</summary>
+<p>Welcome to our interactive launchpad and hub for contributing to power grid mapping via OpenStreetMap! Click on a country or state below to start mapping power infrastructure directly in iD or JOSM. <img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f680.svg" title=":rocket:">
+If this is your first time grid mapping, please go through the <a href="https://mapyourgrid.org/starter-kit/#josm-starter-kit">JOSM Starter-Kit</a> or <a href="https://mapyourgrid.org/starter-kit/#id-starter-kit">iD Starter-Kit</a>. You can use the <strong>#MapYourGrid</strong> hashtag in your changeset to show your support for our initiative when you make an edit! To start mapping, please open <a href="https://josm.openstreetmap.de/">JOSM</a>, ensure that remote control is activated in <code>Preferences</code> and load your data: </p>
+<ol>
+<li>The <strong>Default Transmission (50 kV+)</strong> pulls all power infrastructure relevant for the <strong>transmission grid</strong>. For more details about which data is pulled via Overpass please read our <a href="https://github.com/open-energy-transition/osm-grid-definition">OpenStreetMap Grid Definitions</a>. Distribution grids are barely visible in satellite data and should therefore only be mapped in individual cases.</li>
+<li>The Osmose, Global Energy Monitor, and Wikidata buttons provide <strong>hint layer</strong> data, which you can read about in our page <a href="../strategies/">Strategies</a>. Please note that hint layers only work at a national level, except for Osmose in certain cases. </li>
+</ol>
+</details>
+<!-- Beginning of Map section-->
+<style>
+#map {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    #map {
+        height: 400px;
+    }
+}
+</style>
+
+<!-- Osmose button-->
+<div id="osmose-panel" style="display:none; margin-bottom:1em;">
+  <label for="osmoseIssue">Issue type:</label>
+  <select id="osmoseIssue">
+    <optgroup label="Power lines (item 7040)">
+                <option value="7040:1">Lone power tower or pole (Class 1)</option>
+                <option value="7040:2" selected>Default: Unfinished power transmission line (Class 2) (recommended for beginners ⭐)</option>
+                <option value="7040:3">Connection between different voltages (Class 3)</option>
+                <option value="7040:4">None power node on power way (Class 4)</option>
+                <option value="7040:5">Missing power tower or pole (Class 5)</option>
+                <option value="7040:6">Unfinished power distribution line (Class 6)</option>
+                <option value="7040:7">Unmatched voltage of line on substation (Class 7)</option>
+                <option value="7040:8">Power support line management suggestion (Class 8)</option>
+                <option value="7040:95">missing power=line in the area (Class 95)</option>
+              </optgroup>
+    </select>
+  <div class="query-version">Warning: Some countries only work on national level with Osmose</div>
+</div>
+
+<!-- GEM button-->
+<div id="gem-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: GEM only works on national level</div>
+</div>
+
+<!-- TZ Mapyoursolar button -->
+<div id="solar-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: TZ-Solar only works on national level</div>
+</div>
+
+<!-- Wikidata button-->
+<div id="wikidata-panel" style="display:none; margin-bottom:1em;">
+  <label for="wikidataType">Data type:</label>
+  <select id="wikidataType">
+    <option value="All power-related infrastructure" selected>All power-related infrastructure</option>
+    <option value="substations">Substations</option>
+    <option value="powerplants">Power Plants</option>
+  </select>
+  <div class="query-version">Warning: Wikidata only works on national level</div>
+</div>
+
+<div id="wind-panel" style="display:none; margin-bottom:1em;">
+  <div class="query-version">Warning: GRW Wind only works on national level</div>
+</div>
+
+<!-- PPM button -->
+<div id="ppm-panel" style="display:none; margin-bottom:1em;">
+  <label for="ppmType">Data type:</label>
+  <select id="ppmType">
+    <option value="Rejected power plants" selected>Rejected power plants</option>
+  </select>
+  <div class="query-version">Warning: Powerplantmatching only works on national level</div>
+</div>
+
+<div id="map"></div>
+
+<p><link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"></p>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+<!-- SheetJS for in‑browser XLSX parsing. Not used anymore -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+<!-- Start of script! -->
+<script>
+// ———————————————
+// Beginning
+// ———————————————
+
+let selectedEditor = 'josm';
+
+// ———————————————
+// Name overrides (some names are different, check the API or geojosn)
+// ———————————————
+const OVERRIDES = {
+  osmoseCountries: {
+    "Bosnia and Herzegovina": "bosnia_herzegovina",
+    "eSwatini": "swaziland",
+    "Republic of the Congo": "congo_brazzaville",
+    "Democratic Republic of the Congo": "congo_kinshasa",
+    "United States": "usa",
+    "UnitedStates": "usa"
+  },
+  osmoseRegions: {
+    "Centre-ValdeLoire": "centre",
+    "MatoGrossodoSul": "mato_grosso_do_sul",
+    "MinasGerais": "minas_gerais",
+    "Cataluña": "catalunya",
+    "NeiMongol": "inner_mongolia"
+  },
+  wikidata: {
+    "China": "People's_Republic_of_China"
+  },
+  MapYourSolar: {
+   "Ivory Coast": "Cote_d'Ivoire"
+  }
+};
+
+function getOverride(name, kind) {
+  if (!name || !kind) return null;
+  return (OVERRIDES[kind] && OVERRIDES[kind][name]) || null;
+}
+const countryNameMap = {};
+
+
+// helper to create osmose-compatible keys 
+function slugifyForOsmose(name){
+  if (!name) return '';
+  let s = String(name);
+  // 1) split lowercase->Uppercase boundaries: "MatoGrossodoSul" -> "Mato_Grosso_do_Sul"
+  s = s.replace(/([a-z0-9])([A-Z])/g, '$1_$2');
+  // 2) split Uppercase -> UppercaseLowercase boundaries:
+  //    "HTMLParser" -> "HTML_Parser", also handles "CastillaYLeon" -> "Castilla_Y_Leon"
+  s = s.replace(/([A-Z])([A-Z][a-z])/g, '$1_$2');
+  // 3) Normalize & remove accents
+  s = s.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  // 4) Replace any non-alphanumeric with underscore
+  s = s.replace(/[^0-9A-Za-z]+/g, '_');
+  // 5) Collapse multiple underscores, trim edges, lowercase
+  s = s.replace(/_+/g, '_').replace(/^_|_$/g, '').toLowerCase();
+  return s;
+}
+
+// ———————————————
+// Map
+// ———————————————
+// Define world bounds (southWest & northEast corners)
+const southWest = L.latLng(-90, -200);
+const northEast = L.latLng( 90,  200);
+const worldBounds = L.latLngBounds(southWest, northEast);
+
+// Create the map with maxBounds & disable world wrapping
+const map = L.map('map', {
+  worldCopyJump: false,      // disable dragging to duplicate worlds
+  minZoom: 2.2,               
+  maxZoom: 18,
+  maxBounds: worldBounds,    // restrict the view
+  maxBoundsViscosity: 0.3    // “sticky” at the edges
+}).setView([20, 0], 2);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+    attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+// Useless at the moment since the regions layer becomes active anyway at a certain zoom
+const largeCountries = ['BR', 'US', 'CA', 'IN', 'MX', 'AU', 'CN'];
+const zoomThreshold = 5; // Zoom level at which to show regions instead of countries
+
+// Layers for countries and regions
+const countriesLayer = L.geoJSON(null, {
+    style: { color: '#3388ff', weight: 1 }
+}).addTo(map);
+
+const regionsLayer = L.geoJSON(null, {
+    style: { color: '#2c1aff', weight: 1 }
+});
+
+
+// Make the popup message bigger and nicer for new mappers (like Ad-blocker...)
+map.options.maxPopupWidth = 300;
+
+// ———————————————
+// Overpass repo. Each Folder in the queries folder for 1 mode (button)
+// ———————————————
+const GITHUB_API_QUERIES =
+  'https://api.github.com/repos/open-energy-transition/osm-grid-definition/contents/queries';
+
+/** Base URL for raw file fetches (OverpassQL and version.txt) */
+const RAW_BASE =
+  'https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/main/queries';
+
+// ———————————————
+// Modes and selection
+// ———————————————
+let currentMode = null;
+
+// 2a) discover all folders under /queries
+async function loadModes() {
+  const res = await fetch(GITHUB_API_QUERIES);
+  if (!res.ok) throw new Error('Cannot load query modes from GitHub API');
+  const items = await res.json();
+  // keep only directory entries
+  const modes = items.filter(i => i.type === 'dir').map(i => i.name);
+  if (modes.length === 0) throw new Error('No query folders found');
+  return modes;
+}
+
+// 2.1a) fetch the version.txt for the given mode
+async function fetchVersion(mode) {
+  const url = `${RAW_BASE}/${mode}/version.txt`;
+  const r   = await fetch(url);
+  if (!r.ok) throw new Error('version not found');
+  return (await r.text()).trim();
+}
+
+// 2b) render one button per folder name
+async function initQueryUI() {
+  // 1. Load real modes from GitHub
+  let modes = await loadModes();
+  modes = modes.filter(m => m !== 'Osmose_issues');
+  modes.sort((a, b) => {
+    if (a === 'Default') return -1;
+    if (b === 'Default') return 1;
+    return a.localeCompare(b);
+  });
+
+  // inject our special modes:
+  modes.splice(2, 0, 'Osmose_issues', 'GEM_powerplants', 'MapYourSolar', 'Wikidata', 'GRW_wind' ,'PPM');
+
+  currentMode = modes.includes('Default') ? 'Default' : modes[0];
+
+  // 2. Create two sibling containers, then insert them above the map
+  const mapEl = document.getElementById('map');
+
+  // JOSM or ID buttons
+  const editorUiWrapper = document.createElement('div');
+  editorUiWrapper.id = 'editor-ui-wrapper';
+  editorUiWrapper.innerHTML = `
+    <strong> Choose Your Editor</strong>
+    <div id="editor-choice">
+      <button id="josm-btn" class="query-btn active">JOSM</button>
+      <button id="id-btn" class="query-btn">iD Editor</button>
+    </div>
+    <div id="url-container" style="display:none;">
+      <p>Copy this URL for iD Editor's "Custom Map Data":</p>
+      <div class="url-input-wrapper">
+        <input type="text" id="url-display" readonly>
+        <button id="copy-btn">Copy</button>
+      </div>
+    </div>
+  `;
+  mapEl.parentNode.insertBefore(editorUiWrapper, mapEl);
+  const josmBtn = document.getElementById('josm-btn');
+  const idBtn = document.getElementById('id-btn');
+  const urlContainer = document.getElementById('url-container');
+  const editorChoiceDiv = document.getElementById('editor-choice');
+
+  josmBtn.addEventListener('click', () => {
+    selectedEditor = 'josm';
+    josmBtn.classList.add('active');
+    idBtn.classList.remove('active');
+    urlContainer.style.display = 'none';
+
+    const existingWarning = document.getElementById('id-editor-warning');
+    if (existingWarning) {
+      existingWarning.remove();
+    }
+
+    const overpassButtons = document.getElementById('overpass-buttons');
+    if (overpassButtons) {
+        overpassButtons.style.opacity = '1';
+        overpassButtons.style.pointerEvents = 'auto';
+    }
+  });
+
+  idBtn.addEventListener('click', () => {
+    selectedEditor = 'id';
+    idBtn.classList.add('active');
+    josmBtn.classList.remove('active');
+
+    const warningMsg = document.createElement('div');
+    warningMsg.id = 'id-editor-warning';
+    warningMsg.className = 'query-version';
+    warningMsg.textContent = 'Only the "Tools and Hints" work with iD editor';
+    warningMsg.style.marginTop = '0.5em';
+    editorChoiceDiv.appendChild(warningMsg);
+
+    // 3) Disable query buttons if id editor is on
+    const overpassButtons = document.getElementById('overpass-buttons');
+    if (overpassButtons) {
+        overpassButtons.style.opacity = '0.5';
+        overpassButtons.style.pointerEvents = 'none';
+    }
+  });
+
+  // Add instructional text below the map
+  const introBox = document.createElement('div');
+  introBox.id = 'map-intro';
+  introBox.className = 'introbox';
+  introBox.innerHTML = `
+    <strong>📍LOAD YOUR GRID INFRASTRUCTURE</strong><br/>
+    <ol style="margin: 0.5em 0 0 1em; padding-left: 1em;">
+      <li>Click on the country you want to load in JOSM. Zoom in to select states or provinces.</li>
+      <li>Click on Tools and Hints to download the data layers that will support you in grid mapping.</li>
+      <li>Don't forget to checkout the Map Legend, Good First Lines, Hot Keys and Curated Electrical Grid Maps below.</li>
+      <li>Remember this is a specific OpenStreetMap extract and some other existing objects may remain hidden while you contribute. Always check OpenStreetMap data <a href="/starter-kit/#5-load-power-infrastructure-into-josm">to avoid any conflicts or double mapping</a> on save.</li>
+
+    </ol>
+    `;
+
+  // Insert after the map
+  mapEl.parentNode.insertBefore(introBox, mapEl.nextSibling);
+
+  // — Row 1 title —
+  const overpassTitle = document.createElement('div');
+  overpassTitle.className = 'tools-header';
+  overpassTitle.textContent = 'Transmission Overpass Query';
+  mapEl.parentNode.insertBefore(overpassTitle, mapEl);
+
+  const overpassContainer = document.createElement('div');
+  overpassContainer.id = 'overpass-buttons';
+  mapEl.parentNode.insertBefore(overpassContainer, mapEl);
+
+  // — Row 2 title —
+  const toolTitle = document.createElement('div');
+  toolTitle.className = 'tools-header';
+  toolTitle.textContent = 'Tools and Hints';
+  mapEl.parentNode.insertBefore(toolTitle, mapEl);
+
+  const toolContainer = document.createElement('div');
+  toolContainer.id = 'tool-buttons';
+  mapEl.parentNode.insertBefore(toolContainer, mapEl);
+
+  // 3. Render each mode into the appropriate row
+  for (const mode of modes) {
+    let group;
+    if (mode === 'Osmose_issues') {
+      group = renderOsmoseButtonGroup();
+    } else if (mode === 'GEM_powerplants') {
+      group = renderGEMButtonGroup();
+    } else if (mode === 'MapYourSolar') {
+      group = renderSolarButtonGroup();
+    } else if (mode === 'Wikidata') {
+      group = renderWikidataButtonGroup();
+    } else if (mode === 'GRW_wind') {
+      group = renderWindButtonGroup();
+    } else if (mode === 'PPM') {
+    group = renderPPMButtonGroup();
+    }
+    else {
+      group = renderModeButtonGroup(mode);
+    }
+
+    // Tools go in the second row, everything else in the first
+    if (['Osmose_issues', 'GEM_powerplants', 'MapYourSolar', 'Wikidata', 'GRW_wind', 'PPM'].includes(mode)) {
+      toolContainer.appendChild(group);
+    } else {
+      overpassContainer.appendChild(group);
+    }
+  }
+
+  const panelWrapper = document.createElement('div');
+  panelWrapper.id = 'panel-wrapper';
+  panelWrapper.style.margin = '1em 0';  // optional spacing
+
+  // grab (and remove) the existing panels from their old position
+  const osmose   = document.getElementById('osmose-panel');
+  const wikidata = document.getElementById('wikidata-panel');
+  const ppm      = document.getElementById('ppm-panel');
+  const gem      = document.getElementById('gem-panel');
+  const solar     = document.getElementById('solar-panel');
+  const wind     = document.getElementById('wind-panel');
+
+  // append them into our wrapper
+  panelWrapper.appendChild(osmose);
+  panelWrapper.appendChild(wikidata);
+  panelWrapper.appendChild(ppm);
+  panelWrapper.appendChild(gem);
+  panelWrapper.appendChild(solar);
+  panelWrapper.appendChild(wind);
+
+  // finally, drop that wrapper just before the map div
+  mapEl.parentNode.insertBefore(panelWrapper, mapEl);
+}
+
+
+// ———————————————
+// Buttons
+// ———————————————
+function renderOsmoseButtonGroup() {
+  const btn = document.createElement('button');
+  btn.textContent = 'Osmose Issues';
+  btn.classList.add('query-btn');
+  if (currentMode === 'Osmose_issues') btn.classList.add('active');
+  btn.onclick = () => selectMode('Osmose_issues', btn);
+
+  const ver = document.createElement('div');
+  ver.classList.add('query-version');
+  ver.textContent = '';  // no version
+
+  // Osmose website link
+  const info = document.createElement('div');
+  info.classList.add('query-version');
+  info.style.marginTop = '0.2rem';
+  info.innerHTML =
+   '<a href="https://osmose.openstreetmap.fr/" target="_blank">osmose.openstreetmap.fr/</a>';
+
+
+  const group = document.createElement('div');
+  group.classList.add('query-group');
+  group.appendChild(btn);
+  group.appendChild(ver);
+  group.appendChild(info);
+  return group;
+}
+
+function renderGEMButtonGroup() {
+  const btn = document.createElement('button');
+  btn.textContent = 'Global Energy Monitor - Power Plants';
+  btn.classList.add('query-btn');
+  if (currentMode === 'GEM_powerplants') btn.classList.add('active');
+  btn.onclick = () => selectMode('GEM_powerplants', btn);
+
+  // GEM website link + CC BY 4.0
+  const info = document.createElement('div');
+  info.classList.add('query-version');
+  info.style.marginTop = '0.2rem';
+  info.innerHTML =
+   '<a href="https://globalenergymonitor.org/" target="_blank">globalenergymonitor.org</a>' +
+   ' | CC BY 4.0';
+
+  const group = document.createElement('div');
+  group.classList.add('query-group');
+  group.appendChild(btn);
+  group.appendChild(info);
+  return group;
+}
+
+function renderSolarButtonGroup() {
+  const btn = document.createElement('button');
+  btn.textContent = 'Transition Zero - Solar Asset Mapper';
+  btn.classList.add('query-btn');
+  if (currentMode === 'MapYourSolar') btn.classList.add('active');
+  btn.onclick = () => selectMode('MapYourSolar', btn);
+
+  // TZ website link + CC BY NC 4.0
+  const info = document.createElement('div');
+  info.classList.add('query-version');
+  info.style.marginTop = '0.2rem';
+  info.innerHTML =
+   '<a href="https://www.transitionzero.org/products/solar-asset-mapper/download" target="_blank">transitionzero.org</a>' +
+   ' | Q3-2025 | CC BY NC 4.0';
+
+  const group = document.createElement('div');
+  group.classList.add('query-group');
+  group.appendChild(btn);
+  group.appendChild(info);
+  return group;
+}
+
+function renderWikidataButtonGroup() {
+  const btn = document.createElement('button');
+  btn.textContent = 'Wikidata';
+  btn.classList.add('query-btn');
+  if (currentMode === 'Wikidata') btn.classList.add('active');
+  btn.onclick = () => selectMode('Wikidata', btn);
+
+   // Wiki repo link
+
+  const ver = document.createElement('div');
+  ver.classList.add('query-version');
+  ver.textContent = ''; // no version for now
+
+  const info = document.createElement('div');
+  info.classList.add('query-version');
+  info.style.marginTop = '0.2rem';
+  info.innerHTML =
+   '<a href="https://github.com/open-energy-transition/osm-wikidata-toolset" target="_blank">Repository</a>';
+
+  const group = document.createElement('div');
+  group.classList.add('query-group');
+  group.appendChild(btn);
+  group.appendChild(info);
+  return group;
+}
+
+function renderWindButtonGroup() {
+  const btn = document.createElement('button');
+  btn.textContent = 'Global Renewables Watch - Wind Turbines';
+  btn.classList.add('query-btn');
+  if (currentMode === 'GRW_wind') btn.classList.add('active');
+  btn.onclick = () => selectMode('GRW_wind', btn);
+
+  // TZ website link + CC BY NC 4.0
+  const info = document.createElement('div');
+  info.classList.add('query-version');
+  info.style.marginTop = '0.2rem';
+  info.innerHTML =
+   '<a href="https://github.com/microsoft/global-renewables-watch/tree/main" target="_blank">Global Renewables Watch</a>' +
+   ' | Q2-2024 ';
+
+  const group = document.createElement('div');
+  group.classList.add('query-group');
+  group.appendChild(btn);
+  group.appendChild(info);
+  return group;
+}
+
+function renderPPMButtonGroup() {
+  const btn = document.createElement('button');
+  btn.textContent = 'powerplantmatching';
+  btn.classList.add('query-btn');
+  if (currentMode === 'PPM') btn.classList.add('active');
+  btn.onclick = () => selectMode('PPM', btn);
+
+  const info = document.createElement('div');
+  info.classList.add('query-version');
+  info.style.marginTop = '0.2rem';
+  info.innerHTML =
+   '<a href="https://github.com/open-energy-transition/mapit-osm/tree/main" target="_blank">Repository</a>';
+
+  const group = document.createElement('div');
+  group.classList.add('query-group');
+  group.appendChild(btn);
+  group.appendChild(info);
+  return group;
+}
+
+const versionCache = new Map();
+function renderModeButtonGroup(mode) {
+  const btn = document.createElement('button');
+  // I overrided the button name for Default, but the file in github is still Default
+  if (mode === 'Default') {
+  btn.textContent = 'Default Transmission (50 kV+)';
+  } else {
+  btn.textContent = mode.replace(/_/g, ' ');
+  }
+  btn.classList.add('query-btn');
+  if (mode === currentMode) btn.classList.add('active');
+  btn.onclick = () => selectMode(mode, btn);
+
+  // —— make version badge into a link to the GitHub folder ——
+  const verLink = document.createElement('a');
+  verLink.classList.add('query-version');
+  verLink.target = '_blank';
+  // encode mode so "400kv+" becomes "400kv%2B"
+  const repoFolderUrl =
+   `https://github.com/open-energy-transition/osm-grid-definition/tree/main/queries/` +
+   encodeURIComponent(mode);
+  verLink.href = repoFolderUrl;  
+  verLink.textContent = 'v…';
+
+  // update the badge in the background (cached to avoid duplicate fetches)
+  if (versionCache.has(mode)) {
+    verLink.textContent = `v${versionCache.get(mode)}`;
+  } else {
+    fetchVersion(mode)
+      .then(v => {
+        versionCache.set(mode, v);
+        verLink.textContent = `v${v}`;
+      })
+      .catch(() => {
+        verLink.textContent = 'v?';
+      });
+  }
+
+  const group = document.createElement('div');
+  group.classList.add('query-group');
+  group.appendChild(btn);
+  group.appendChild(verLink);
+  return group;
+}
+
+// helper to swap modes and show/hide the Osmose and wikidata UI panels
+function selectMode(mode, btn) {
+  currentMode = mode;
+  document.querySelectorAll('#overpass-buttons .query-btn, #tool-buttons .query-btn')
+          .forEach(b => b.classList.toggle('active', b === btn));
+  // Osmose
+  document.getElementById('osmose-panel').style.display =
+    mode === 'Osmose_issues' ? 'block' : 'none';
+
+  // Wikidata
+  document.getElementById('wikidata-panel').style.display =
+    mode === 'Wikidata' ? 'block' : 'none';
+
+  // PPM    
+  document.getElementById('ppm-panel').style.display =
+  mode === 'PPM' ? 'block' : 'none';
+
+  //GEM
+  document.getElementById('gem-panel').style.display =
+  mode === 'GEM_powerplants' ? 'block' : 'none';
+
+  // TZ solar
+  document.getElementById('solar-panel').style.display =
+  mode === 'MapYourSolar' ? 'block' : 'none';
+
+  // GRW wind
+  document.getElementById('wind-panel').style.display =
+  mode === 'GRW_wind' ? 'block' : 'none';
+}
+
+//for id
+function displayUrlForId(url) {
+    const container = document.getElementById('url-container');
+    const input = document.getElementById('url-display');
+    const copyBtn = document.getElementById('copy-btn');
+
+    input.value = url;
+    container.style.display = 'block';
+    container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    copyBtn.textContent = 'Copy';
+    copyBtn.onclick = () => {
+        navigator.clipboard.writeText(url).then(() => {
+            copyBtn.textContent = 'Copied!';
+        }).catch(err => {
+            alert('Failed to copy. Please select the text and press Ctrl+C.');
+        });
+    };
+}
+
+// ———————————————
+// Clicking
+// ———————————————
+// 2d) unified click handler for country (level 2) & region (level 4)
+async function handleAreaClick(iso, level, layer) {
+  const name = level === 2 
+    ? layer.feature.properties.NAME      // Countries use NAME
+    : layer.feature.properties.NAME_1;   // Regions use NAME_1
+  const sovName= layer.feature.properties.SOVEREIGNT; // for linking to Osmose
+
+  umami.track('map-click');
+  layer.setStyle({ color: '#ff7800' });
+  layer.getPopup().setContent(`Loading ${name}… You need to disable your ad blocker for this to work`).update();
+
+  try {
+    if (currentMode === 'Osmose_issues') {
+      if (level === 4) {
+        const regionName = layer.feature.properties.NAME_1 || layer.feature.properties.NAME || '';
+        // try: 1) explicit COUNTRY field in regions geojson, 2) parent country via region ISO code using countryNameMap, 3) SOVEREIGNT fallback, 4) original sovName
+        let countryNameCandidate = layer.feature.properties.COUNTRY || null;
+        if (!countryNameCandidate) {
+          // iso might look like "US-CA" or "BR-MS"
+          if (typeof iso === 'string' && /[-_]/.test(iso)) {
+            const parentIso = iso.split(/[-_]/)[0].toUpperCase();
+            countryNameCandidate = countryNameMap[parentIso] || null;
+          }
+        }
+        if (!countryNameCandidate) countryNameCandidate = layer.feature.properties.SOVEREIGNT || sovName;
+        await fetchOsmoseAndDownload(countryNameCandidate, regionName, layer);
+      } else {
+        await fetchOsmoseAndDownload(sovName, null, layer);
+      }
+    }
+    else if (currentMode === 'GEM_powerplants') {
+      await fetchGEMAndDownload(sovName);
+    }
+    else if (currentMode === 'MapYourSolar') {
+      const usedSovName = getOverride(sovName, 'MapYourSolar') || sovName;
+      await fetchSolarAndDownload(usedSovName);
+    }
+    else if (currentMode === 'Wikidata') {
+      const usedSovName = getOverride(sovName, 'wikidata') || sovName;
+      await fetchWikidataAndDownload(usedSovName);
+    }
+    else if (currentMode === 'GRW_wind') {
+      await fetchWindAndDownload(sovName);
+    }
+    else if (currentMode === 'PPM') {
+    await fetchPPMAndDownload(sovName);
+    }
+    else {
+       let tpl = await fetchQuery(currentMode, level);
+       tpl = tpl.replace(/\$\{iso\}/g, iso);
+       sendToJosm(tpl, name); 
+    }
+  } catch (err) {
+    layer.getPopup().setContent(`Error: Some Hint layers only work on a national level!`).update();
+  }
+
+setTimeout(() => {
+  layer.setStyle({ color: '#3388ff' });
+
+  let html;
+
+  if (selectedEditor === 'id') {
+    // Message for iD Editor users
+    html = `
+      <div class="popup-success">
+        <p>🎉 <strong>Great!</strong> Now copy the url above. Then go to iD editor, and press on "Map Data". Then press on the three dots for "custom map data", and paste the url.</p>
+      </div>
+    `;
+  } else {
+    html = `
+      <div class="popup-success">
+        <p> Now go back to <a href="https://josm.openstreetmap.de/">JOSM</a> and check if your data is loading. Depending on the country, this may take <em>60 seconds or more</em>. The grid of some countries are too large to be mapped on a national level. However, you can zoom in and click on provinces or states.<br>⚠️If nothing happens:</p><ol><li> <strong>Please be aware that the servers used to download your data via Overpass are sometimes overloaded, so you may need to click your region again if you receive an error message in JOSM.</strong></li>
+          <li>Make sure Remote Control is enabled in JOSM</li>
+          <li>If it’s enabled but still not working, toggle it off and on again</li>
+          <li>Note that hint layers do not work on regional layers. In this case, please load the data onto a national layer.</li>
+          <li><a href="https://mapyourgrid.org/starter-kit/">Look into the Starter-Kit</a>
+        </ol>
+      </div>
+  `;
+  }
+
+  layer.getPopup()
+       .setContent(html)
+       .update();
+}, 2000);
+}
+
+// initialize the UI immediately
+initQueryUI().catch(console.error);
+
+// ———————————————
+// Fecthing functions for each
+// ———————————————
+
+// fetch the correct OverpassQL file on demand
+async function fetchQuery(mode, adminLevel) {
+  const rawUrl =
+    `https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/` +
+    `main/queries/${mode}/admin${adminLevel}.overpassql`;
+  const r = await fetch(rawUrl);
+  if (!r.ok) throw new Error(`Query file not found: ${mode}/admin${adminLevel}`);
+  return r.text();
+}
+
+// Osmose API fetcher
+async function fetchOsmoseAndDownload(countryNameOrSovName, regionName =  null, layer = null) {
+  const sel = document.getElementById('osmoseIssue');
+  if (!sel || !sel.value) { alert('Please select an issue type first.'); return; }
+  const [item, cls] = sel.value.split(':');
+
+  // prefer explicit override, else slugify
+  const countryToken = getOverride(countryNameOrSovName, 'osmoseCountries') || slugifyForOsmose(countryNameOrSovName);
+
+  let base = countryToken;
+  if (regionName) {
+    const regionToken = getOverride(regionName, 'osmoseRegions') || slugifyForOsmose(regionName);
+    base = `${countryToken}_${regionToken}`;
+  }
+  if (!base.endsWith('*')) { base += '*';
+  }
+
+  //debug
+  const debugMsg = `Osmose query: <code>${base}</code> (item=${item}, class=${cls})`;
+  console.log(debugMsg);
+  if (layer && layer.getPopup) {
+    layer.getPopup().setContent(`<b>Querying Osmose…</b><br>${debugMsg}`).update();
+  } else {
+    // fallback: tiny console/info alert for debugging
+    console.info(debugMsg);
+  }
+
+  const apiUrl = 
+    `https://osmose.openstreetmap.fr/api/0.3/issues.geojson?` +
+    `country=${encodeURIComponent(base)}` +
+    `&item=${item}&class=${cls}&limit=5000` +
+    `&useDevItem=all`;
+
+  if (selectedEditor === 'id') {
+      displayUrlForId(apiUrl);
+      return;
+  }
+
+  const resp = await fetch(apiUrl);
+  if (!resp.ok) throw new Error(`Osmose API ${resp.statusText}`);
+  const geojson = await resp.json();
+
+  if (!geojson.features || geojson.features.length === 0) {
+    alert(`No issues found for "${sel.options[sel.selectedIndex].text}" in ${regionName ? (regionName + ', ' + countryNameOrSovName) : countryNameOrSovName}. Try another osmose issue type!`);
+    return;
+  }
+
+  const layerName = `${(regionName ? `${countryNameOrSovName}_${regionName}` : countryNameOrSovName).replace(/\s+/g,'_')}-osmose-${item}-${cls}`;
+  geoToJosm(apiUrl, layerName);
+}
+
+// GEM fetcher
+async function fetchGEMAndDownload(sovName) {
+  const folder = 'GEM-Global-Integrated-Power-February-2025-update-II';
+  const fileName = sovName.replace(/\s+/g,'_') + '.geojson';
+  const url = `https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/main/GEM/`
+            + `${folder}/${fileName}`;
+
+// First, check if the file actually exists to provide a clean error message
+  const resp = await fetch(url, { method: 'HEAD' });
+  if (!resp.ok) {
+    return alert(`No GEM Plants file for ${sovName}.`);
+  }
+
+  if (selectedEditor === 'id') {
+      displayUrlForId(url);
+      return;
+  }
+
+  const layerName = `${sovName}-GEM`;
+  sendUrlToJosm(url, layerName);
+}
+
+// TZ-solar fetcher
+async function fetchSolarAndDownload(sovName) {
+  const folder = 'TZ-Q32025';
+  const fileName = sovName.replace(/\s+/g,'_') + '.geojson';
+  const url = `https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/main/TZ-Solar/`
+            + `${folder}/${fileName}`;
+
+// First, check if the file actually exists to provide a clean error message
+  const resp = await fetch(url, { method: 'HEAD' });
+  if (!resp.ok) {
+    return alert(`No Solar file for ${sovName}.`);
+  }
+
+  if (selectedEditor === 'id') {
+      displayUrlForId(url);
+      return;
+  }
+
+  const layerName = `${sovName}-solarTZ`;
+  sendUrlToJosm(url, layerName);
+}
+
+// Wikidata fetcher
+async function fetchWikidataAndDownload(sovName) {
+  // grab the value of the wikidataType so "substations" or "powerplants" from the button selected (go up the script)
+  const type = document.getElementById('wikidataType').value;
+
+  // Here it fetches the folders from the github rpo:
+  //   To add, put the value on the left (value is the value of the button wikidatatype), and on the right the name of the geojson folder from the github repo
+   const foldertypes = {
+    'All power-related infrastructure': '/output_by_qid_v2/geojson_by_country',
+    'substations': '/substations/geojson_by_country',
+    'powerplants': '/output_by_qid/Q159719_power_plant'
+  };
+
+  const folder = foldertypes[type];
+  if (!folder) {
+    return alert(`Unknown data type: ${type}`);
+  }
+
+  const fileName = sovName.replace(/\s+/g,'_') + '.geojson';
+  const url = `https://raw.githubusercontent.com/open-energy-transition/osm-wikidata-toolset/main/`
+            + `${folder}/${fileName}`;
+
+// First, check if the file actually exists to provide a clean error message
+  const resp = await fetch(url, { method: 'HEAD' });
+  if (!resp.ok) {
+    return alert(`No Wikidata ${type.replace(/_/g,' ')} file for ${sovName}.`);
+  }
+
+  if (selectedEditor === 'id') {
+      displayUrlForId(url);
+      return;
+  }
+
+  const layerName = `${sovName}-wikidata`;
+  sendUrlToJosm(url, layerName);
+}
+
+async function fetchWindAndDownload(sovName) {
+  const folder = '2024-q2v1';
+  const fileName = sovName.replace(/\s+/g,'_') + '.geojson';
+  const url = `https://raw.githubusercontent.com/open-energy-transition/osm-grid-definition/main/wind-renewables-watch/`
+            + `${folder}/${fileName}`;
+
+// First, check if the file actually exists to provide a clean error message
+  const resp = await fetch(url, { method: 'HEAD' });
+  if (!resp.ok) {
+    return alert(`No Wind file for ${sovName}.`);
+  }
+
+  if (selectedEditor === 'id') {
+      displayUrlForId(url);
+      return;
+  }
+
+  const layerName = `${sovName}-windGRW`;
+  sendUrlToJosm(url, layerName);
+}
+
+// PPM fetcher
+async function fetchPPMAndDownload(sovName) {
+  const type = document.getElementById('ppmType').value;
+
+  const foldertypes = {
+    'Rejected power plants': '/ppm_rejected_geojson_by_country'
+  };
+
+  const folder = foldertypes[type];
+  if (!folder) {
+    return alert(`Unknown data type: ${type}`);
+  }
+
+  const fileName = sovName.replace(/\s+/g, '_') + '.geojson';
+  const url = `https://raw.githubusercontent.com/open-energy-transition/mapit-osm/main${folder}/${fileName}`;
+
+  const resp = await fetch(url);
+  if (!resp.ok) {
+    return alert(`No PPM file found for ${sovName}.`);
+  }
+
+  if (selectedEditor === 'id') {
+      displayUrlForId(url);
+      return;
+  }
+
+  const layerName = `${sovName}-ppm`;
+  sendUrlToJosm(url, layerName);
+}
+
+// ———————————————
+// Send to JOSM
+// ———————————————
+
+// For direct opening of files in JOSM of hint layers
+function sendUrlToJosm(dataUrl, layerName) {
+  console.log("Setting JOSM layer name to:", layerName);
+  // We must encode the dataUrl itself to pass it as a parameter to the JOSM url.
+  const josmUrl = `http://localhost:8111/import?new_layer=true&layer_name=${encodeURIComponent(layerName)}&changeset_tags=hashtags=mapyourgrid&url=${encodeURIComponent(dataUrl)}`;
+
+  console.log(`Sending data URL to JOSM: ${dataUrl}`);
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.src = josmUrl;
+  document.body.appendChild(iframe);
+  setTimeout(() => document.body.removeChild(iframe), 1000);
+}
+
+// For osmose (added format=geojson in url)
+function geoToJosm(dataUrl, layerName) {
+  console.log("Setting JOSM layer name to:", layerName);
+  // We must encode the dataUrl itself to pass it as a parameter to the JOSM url.
+  const geoUrl = `http://localhost:8111/import?new_layer=true&layer_name=${encodeURIComponent(layerName)}&changeset_tags=hashtags=mapyourgrid&url=${encodeURIComponent(dataUrl)}&format=geojson`;
+
+  console.log(`Sending data URL to JOSM: ${dataUrl}`);
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.src = geoUrl;
+  document.body.appendChild(iframe);
+  setTimeout(() => document.body.removeChild(iframe), 1000);
+}
+
+// JOSM integration function
+function sendToJosm(query, areaName) {
+  // Encode only the query part
+  const encodedQuery = encodeURIComponent(query);
+
+  // Construct the Overpass URL by inserting the encoded query.
+  const overpassUrl = "https://overpass-api.de/api/interpreter?data=" + encodedQuery;
+
+  // Build the final JOSM URL by concatenating the strings manually.
+  const josmUrl = `http://localhost:8111/import?new_layer=true&layer_name=${encodeURIComponent(areaName)}&changeset_tags=hashtags=mapyourgrid&url=${overpassUrl}`;
+
+  // Load imagery too
+  const mapboxImageryUrl = 'http://localhost:8111/imagery?id=Mapbox';
+  const bingImageryUrl = 'http://localhost:8111/imagery?id=Bing';
+  const esriImageryUrl = 'http://localhost:8111/imagery?id=EsriWorldImagery';
+
+  // Keep a log to see the actual URL
+  console.log("URL ", josmUrl);
+  console.log("Sending Esri Imagery URL: ", esriImageryUrl);
+  console.log("Sending Bing Imagery URL: ", bingImageryUrl);
+  console.log("Sending Mapbox Imagery URL: ", mapboxImageryUrl);
+
+  // Query part
+  const iframe = document.createElement('iframe');
+  iframe.style.display = 'none';
+  iframe.src = josmUrl;
+  document.body.appendChild(iframe);
+  setTimeout(() => document.body.removeChild(iframe), 1000);
+
+  // Imagery part
+  const mapboxIframe = document.createElement('iframe');
+  mapboxIframe.style.display = 'none';
+  mapboxIframe.src = mapboxImageryUrl;
+  document.body.appendChild(mapboxIframe);
+  setTimeout(() => document.body.removeChild(mapboxIframe), 1000);
+
+  const bingIframe = document.createElement('iframe');
+  bingIframe.style.display = 'none';
+  bingIframe.src = bingImageryUrl;
+  document.body.appendChild(bingIframe);
+  setTimeout(() => document.body.removeChild(bingIframe), 1000);
+
+  const esriIframe = document.createElement('iframe');
+  esriIframe.style.display = 'none';
+  esriIframe.src = esriImageryUrl;
+  document.body.appendChild(esriIframe);
+  setTimeout(() => document.body.removeChild(esriIframe), 1000);
+}
+
+// Handle zoom events to show/hide the appropriate layers
+map.on('zoomend', function() {
+    const currentZoom = map.getZoom();
+
+    if (currentZoom >= zoomThreshold) {
+        // When zoomed in enough, hide countries and show regions
+        if (!map.hasLayer(regionsLayer)) {
+            map.addLayer(regionsLayer);
+        }
+    } else {
+        // When zoomed out, hide regions
+        if (map.hasLayer(regionsLayer)) {
+            map.removeLayer(regionsLayer);
+        }
+    }
+});
+
+// ———————————————
+// Base geo layers (countries and regions)
+// ———————————————
+// Load country GeoJSON and add interactivity
+fetch('../data/countries.geojson')
+  .then(response => response.json())
+  .then(countries => {
+    countriesLayer.addData(countries);
+
+    countriesLayer.eachLayer(layer => {
+      const iso  = layer.feature.properties.ISO_A2;
+      const name = layer.feature.properties.NAME;
+
+      if (iso) countryNameMap[iso.toUpperCase()] = name;
+
+      layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM. You need to disable your ad blocker for this to work`);
+      layer.on('click', () => {
+        // large countries should be clicked at region level when zoomed in
+        if (largeCountries.includes(iso) && map.getZoom() >= zoomThreshold) {
+          layer
+            .getPopup()
+            .setContent(`<b>${name}</b><br>Please click on a specific region. You need to disable your ad blocker for this to work`)
+            .update();
+          return;
+        }
+        handleAreaClick(iso, 2, layer);
+      });
+    });
+  })
+  .catch(error => console.error('Countries GeoJSON error:', error));
+
+// Load region GeoJSON and add interactivity (changed to load only when zoomed in as it's hevay). So regions won't load unless zoom level is right
+let regionsLoaded = false;
+
+async function loadRegionsOnce() {
+  if (regionsLoaded) return;
+  try {
+    const resp = await fetch('../data/regionsv2.geojson');
+    const regions = await resp.json();
+    regionsLayer.addData(regions);
+    regionsLayer.eachLayer(layer => {
+          const iso3166_2 = layer.feature.properties.ISO_1;
+          const name      = layer.feature.properties.NAME;
+
+          layer.bindPopup(`<b>${name}</b><br>Click to load in JOSM`);
+          layer.on('click', () => 
+            handleAreaClick(iso3166_2, 4, layer));
+      });
+      regionsLoaded = true;
+      if (map.getZoom() >= zoomThreshold && !map.hasLayer(regionsLayer)) {
+        map.addLayer(regionsLayer);
+      }
+  }   catch(error) {console.error('Regions GeoJSON error:', error);}
+}
+map.on('zoomend', function() {
+  const currentZoom = map.getZoom();
+  if (currentZoom >= zoomThreshold) {
+    if (!regionsLoaded) loadRegionsOnce();
+    if (!map.hasLayer(regionsLayer)) map.addLayer(regionsLayer);
+  } else {
+    if (map.hasLayer(regionsLayer)) map.removeLayer(regionsLayer);
+  }
+});
+
+// ———————————————
+// End
+// ———————————————
+</script>
+
+<p><a class="md-button md-button--primary" href="../good-first-lines/">Discover Good First Lines to Get Started <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M536.4-26.3c9.8-3.5 20.6-1 28 6.3s9.8 18.2 6.3 28l-178 496.9c-5 13.9-18.1 23.1-32.8 23.1-14.2 0-27-8.6-32.3-21.7l-64.2-158c-4.5-11-2.5-23.6 5.2-32.6l94.5-112.4c5.1-6.1 4.7-15-.9-20.6s-14.6-6-20.6-.9l-112.4 94.3c-9.1 7.6-21.6 9.6-32.6 5.2L38.1 216.8c-13.1-5.3-21.7-18.1-21.7-32.3 0-14.7 9.2-27.8 23.1-32.8z"></path></svg></span></a></p>
+<!-- ENd-->
+<details class="success">
+<summary>Map Legend for the recommended <a href="../starter-kit/#3-add-visual-clarity-with-custom-map-styles">MapCSS</a> (Click Me)</summary>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" data-desc-position="bottom"><img src="https://raw.githubusercontent.com/open-energy-transition/color-my-grid/refs/heads/main/legend/power-grid-legend.svg" class="img-border image-caption" alt="Power Grid Legend" style="display: block; margin-left: auto; margin-right: auto;" width="600"></a></p>
+</details>
+<details class="success">
+<summary>JOSM Hotkeys (Click Me)</summary>
+<p>These JOSM hotkeys have proven helpful for grid mapping:</p>
+<table>
+<thead>
+<tr>
+<th>Hotkey</th>
+<th>Function Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S</td>
+<td>Select tool (for selecting objects)</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Add tool (for drawing new nodes or ways)</td>
+</tr>
+<tr>
+<td>CTRL+C</td>
+<td>Copy selected objects</td>
+</tr>
+<tr>
+<td>CTRL+V</td>
+<td>Paste objects from clipboard</td>
+</tr>
+<tr>
+<td>CTRL+F</td>
+<td>Search (Needs expert mode activated under <code>View</code>)</td>
+</tr>
+<tr>
+<td>CTRL+Z</td>
+<td>Undo last action</td>
+</tr>
+<tr>
+<td>CTRL+Y</td>
+<td>Redo last undone action</td>
+</tr>
+<tr>
+<td>CTRL+SHIFT+C</td>
+<td>Copy coordinates of the selected point(s) to clipboard</td>
+</tr>
+<tr>
+<td>CTRL+W</td>
+<td>Switch between activated Map Paint Style and Wireframe</td>
+</tr>
+<tr>
+<td>CTRL+H</td>
+<td>History (opens history dialog for selected objects)</td>
+</tr>
+<tr>
+<td>CTRL+U</td>
+<td>Update the existing geometries and tags loaded in JOSM</td>
+</tr>
+<tr>
+<td>Shift+V</td>
+<td>Validate (runs data validation on the current layer)</td>
+</tr>
+<tr>
+<td>Tabulator</td>
+<td>Show/hide Sidebar and Edit toolbar</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="mapping-guidelines"><div class="tools-header">Mapping Guidelines</div></h2>
+<p>The following list provides the main good practices for mapping different power infrastructure in OpenStreetMap:</p>
+<ul>
+<li><a href="https://wiki.openstreetmap.org/wiki/Power_networks">Power networks</a></li>
+<li><a href="https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines">Power networks/Guidelines</a></li>
+<li><a href="https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines/Power_lines">Power networks/Guidelines/Power lines</a></li>
+<li><a href="https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines/Substations">Power networks/Guidelines/Substations</a></li>
+<li><a href="https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Hydropower">Power generation/Guidelines/Hydropower</a></li>
+<li><a href="https://wiki.openstreetmap.org/wiki/Power_generation/Guidelines/Solar_plants">Power generation/Guidelines/Solar plants</a></li>
+<li><a href="https://wiki.openstreetmap.org/wiki/Power_networks/Guidelines/Interconnector">Power networks/Guidelines/Interconnector</a></li>
+<li><a href="https://community.openstreetmap.org/t/clarifying-power-pole-vs-power-tower/127382">Clarifying power=pole vs power=tower</a></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Local Communities, Projects and good practices for mapping</p>
+<p><strong>Before you start mapping, please find out about the mapping restrictions in the respective country. In some countries, the mapping of transmission lines is not permitted. Get in touch with local users by finding out about your <a href="https://community.osm.be/">local communities</a> and <a href="https://wiki.openstreetmap.org/wiki/Power_networks#Local_projects">local projects</a>.  If you can't find a local community, please send us an <a href="mailto:MapYourGrid@openenergytransition.org">email</a> and we will help you set up a local group.</strong></p>
+<p><strong>By following our <a href="../mapping-good-practices/">Good practices for mapping</a>, we collectively protect the integrity of the OpenStreetMap platform, foster trust with communities, and unlock the power of open data for a more resilient and just energy future. Please do NOT copy any data from hint layer directly into your OpenStreetMap data layer. Every data point in your OpenStreetMap data layer must be manually set and <a href="https://wiki.openstreetmap.org/wiki/Verifiability">verified</a>. The metadata must also be verified against compatible licensed sources or by people on the ground. If you cannot verify the data using satellite images or any other compatible source, please do not add this information from hint layers. This may seem like a high burden at first, but it ensures the high quality of OpenStreetMap.</strong> </p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Risk of Double Mapping</p>
+<p>Please bear in mind that you have only downloaded transmission grid data for the country, state or province that you selected. This includes power plants, generators, substations, power towers and transmission lines. Other OpenStreetMap objects, such as streets, will not be visible. <strong>Therefore, never use our tools to map objects other than those loaded via Overpass, as otherwise other mappers will have to clean up the duplicate data.</strong></p>
+<p>Some cross-border transmission lines will still be visible beyond the pink administrative boundaries. However, to edit these, you will need to load both countries. Never map beyond the pink administrative boundaries, as this will most likely result in infrastructure being mapped twice.</p>
+</div>
+<h2 class="tools-header" id="join-the-chat" style="font-weight:700">Join the Chat <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="/icons/discord.svg" data-desc-position="bottom"><img src="/icons/discord.svg" alt="Discord" class="social-icon" style="width:1.2em; vertical-align:middle; margin-left:0.5ch;"></a></h2>
+<p>We welcome everyone to join our <a href="https://discord.gg/a5znpdFWfD">📍-MapYourGrid discord channel</a>. Here you can ask questions, and interact with the community. For mapping specific questions and to participate in our free personalized training, please join our <a href="https://discord.gg/fBw7ARTUeR">📍-MapYourGrid-support-and-training</a> channel. We share this server with <a href="https://pypsa-earth.readthedocs.io/en/latest/">PyPSA-Earth</a>, a global, open-source energy system model thats uses mainly OpenStreetMap's transmission grid data. Find us also on <a href="https://bsky.app/profile/mapyourgrid.bsky.social">Bluesky</a>.</p>
+<h2 id="join-the-community"><div class="tools-header">Join the Community</div></h2>
+<p>We welcome everyone to join our community calls and tutorials, to learn more about the mapping process and the initiative.</p>
+<iframe src="https://calendar.google.com/calendar/embed?src=mapyourgrid%40gmail.com&amp;ctz=Europe%2FBerlin" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">
+  Creative Commons Attribution 4.0 International License</a>
+| Map data from <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> | <a href="https://MapYourGrid.org/privacy-policy/"> Read our Privacy Policy</a> 
+
+    </div>
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/open-energy-transition/MapYourGrid" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/a5znpdFWfD" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/@MapYourGrid" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"></path></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://bsky.app/profile/mapyourgrid.bsky.social" target="_blank" rel="noopener" title="bsky.app" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M407.8 294.7c-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3M288 227.1c-26.1-50.7-97.1-145.2-163.1-191.8C61.6-9.4 37.5-1.7 21.6 5.5 3.3 13.8 0 41.9 0 58.4S9.1 194 15 213.9c19.5 65.7 89.1 87.9 153.2 80.7 3.3-.5 6.6-.9 10-1.4-3.3.5-6.6 1-10 1.4-93.9 14-177.3 48.2-67.9 169.9C220.6 589.1 265.1 437.8 288 361.1c22.9 76.7 49.2 222.5 185.6 103.4 102.4-103.4 28.1-156-65.8-169.9-3.3-.4-6.7-.8-10-1.3 3.4.4 6.7.9 10 1.3 64.1 7.1 133.6-15.1 153.2-80.7C566.9 194 576 75 576 58.4s-3.3-44.7-21.6-52.9c-15.8-7.1-40-14.9-103.2 29.8C385.1 81.9 314.1 176.4 288 227.1"></path></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.indexes", "toc.integrate", "search.highlight", "search.suggest", "navigation.top", "navigation.sections", "content.image.zoom"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../assets/javascripts/umami.js"></script>
+      
+        <script src="../assets/javascripts/gallery.js"></script>
+      
+        <script src="../assets/javascripts/awesome-filter-tags.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
