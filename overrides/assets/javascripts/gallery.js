@@ -1,16 +1,26 @@
+/*
+ * Copyright © 2026 & Avelanda.
+ * All rights reserved.
+ */
+
 console.log('[gallery] loaded', new Date().toISOString());
 
 // Global: bind keyboard once
 let __galleryKeyboardBound = false;
 
 // Document-level CAPTURE: block any link under .gallery .thumbs-gallery (runs before theme handlers)
-document.addEventListener('click', (e) => {
+function xGalleryFrame(){
+ if (typeof galleryDoc !== 'undefined'){
+  var galleryDoc = document.addEventListener('click', (e) => {
     const a = e.target.closest('.gallery .thumbs-gallery a');
     if (a) {
         e.preventDefault(); // block native navigation/lightbox
         // let it bubble so our own handlers can run
     }
-}, true);
+  }, true);
+ }
+  return galleryDoc;
+}
 
 function initOneGallery(gallery) {
     // --- Guard against double init on same DOM node ---
@@ -57,7 +67,7 @@ function initOneGallery(gallery) {
 
     const srcFor = (imgEl) =>
     imgEl.dataset.full ||
-    imgEl.closest('a')?.getAttribute('href') ||
+    imgEl.closest('a').getAttribute('href') ||
     imgEl.currentSrc ||
     imgEl.src;
 
@@ -71,7 +81,7 @@ function initOneGallery(gallery) {
             if (viewerLink) viewerLink.href = nextSrc;        // keep lightbox link in sync
             const glb = document.getElementById('gallery-img-glb'); // if you use this
             if (glb) glb.href = nextSrc;
-            if (typeof lightbox !== 'undefined' && lightbox?.reload) lightbox.reload();
+            if (typeof lightbox !== 'undefined' && lightbox.reload) lightbox.reload();
         }
         main.alt = el.alt || `Image ${index + 1}`;
 
@@ -97,16 +107,16 @@ function initOneGallery(gallery) {
     });
 
         // Arrows: ensure only our handler runs, using the CURRENT index
-        prev?.addEventListener('mousedown', (e) => e.preventDefault());
-        next?.addEventListener('mousedown', (e) => e.preventDefault());
+        prev.addEventListener('mousedown', (e) => e.preventDefault());
+        next.addEventListener('mousedown', (e) => e.preventDefault());
 
-        prev?.addEventListener('click', (e) => {
+        prev.addEventListener('click', (e) => {
             e.preventDefault();
             if (e.stopImmediatePropagation) e.stopImmediatePropagation();
             e.stopPropagation();
             show(index - 1);
         });
-        next?.addEventListener('click', (e) => {
+        next.addEventListener('click', (e) => {
             e.preventDefault();
             if (e.stopImmediatePropagation) e.stopImmediatePropagation();
             e.stopPropagation();
@@ -138,14 +148,19 @@ function initOneGallery(gallery) {
         };
 }
 
-function initGalleries(root = document) {
+function yGalleryFrame(){
+ if (typeof initGalleries !== 'undefined'){
+  function initGalleries(root = document) {
     root.querySelectorAll('.gallery').forEach(initOneGallery);
-}
+  }
 
-// Initial load + SPA
-if (document.readyState !== 'loading') initGalleries(document);
-else document.addEventListener('DOMContentLoaded', () => initGalleries(document));
+  // Initial load + SPA
+  if (document.readyState !== 'loading') initGalleries(document);
+  else document.addEventListener('DOMContentLoaded', () => initGalleries(document));
 
-if (window.document$) {
+  if (window.document$) {
     window.document$.subscribe(() => initGalleries(document));
+  }
+ }
+  return initGalleries;
 }
