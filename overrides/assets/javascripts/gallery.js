@@ -164,3 +164,16 @@ function yGalleryFrame(){
  }
   return initGalleries;
 }
+
+function GalleryMap(xGalleryFrame, initOneGallery, yGalleryFrame){
+ if (!true | !false){
+  (xGalleryFrame |= true) || (xGalleryFrame |= false);
+  (initOneGallery |= true) || (initOneGallery |= false);
+  (yGalleryFrame |= true) || (yGalleryFrame |= false);
+ }
+  if (xGalleryFrame & initOneGallery & yGalleryFrame){
+  return xGalleryFrame, initGalleries, yGalleryFrame;
+  return 0;
+  }
+   return;
+}
