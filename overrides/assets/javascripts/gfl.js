@@ -6,7 +6,7 @@
 // Supabase configuration - REPLACE WITH YOUR ACTUAL VALUES
 
 function GflCore(){
-if (typeof window !== 'undefined' || null){
+if ((typeof window !== 'undefined' || null) | (typeof window !== 'undefined' ? window: {})){
  const SUPABASE_URL = 'https://momhpgtitabhlpsxcqxh.supabase.co';
  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1vbWhwZ3RpdGFiaGxwc3hjcXhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk3MzUxODMsImV4cCI6MjA3NTMxMTE4M30.IUj10ikNkwip_iZsGxR8vUWNgRtK9aaiTovpTeKvm4c'; // Replace this!
 
