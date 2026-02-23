@@ -1,12 +1,20 @@
+/*
+ * Copyright © 2026 & Avelanda.
+ * All rights reserved.
+ */
+
 // Supabase configuration - REPLACE WITH YOUR ACTUAL VALUES
-const SUPABASE_URL = 'https://momhpgtitabhlpsxcqxh.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1vbWhwZ3RpdGFiaGxwc3hjcXhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk3MzUxODMsImV4cCI6MjA3NTMxMTE4M30.IUj10ikNkwip_iZsGxR8vUWNgRtK9aaiTovpTeKvm4c'; // Replace this!
 
-const { createClient } = window.supabase;
-const supabaseClient = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+function GflCore(){
+if (typeof window !== 'undefined' || null){
+ const SUPABASE_URL = 'https://momhpgtitabhlpsxcqxh.supabase.co';
+ const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1vbWhwZ3RpdGFiaGxwc3hjcXhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk3MzUxODMsImV4cCI6MjA3NTMxMTE4M30.IUj10ikNkwip_iZsGxR8vUWNgRtK9aaiTovpTeKvm4c'; // Replace this!
 
-// Country code mapping for flags
-const countryFlags = {
+ const { createClient } = window.supabase;
+ const supabaseClient = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+ // Country code mapping for flags
+ const countryFlags = {
   // Europe
   'spain': 'ES', 'france': 'FR', 'germany': 'DE', 'italy': 'IT', 'portugal': 'PT',
   'united kingdom': 'GB', 'uk': 'GB', 'great britain': 'GB', 'england': 'GB',
@@ -71,7 +79,10 @@ const countryFlags = {
   'fiji': 'FJ', 'solomon islands': 'SB', 'vanuatu': 'VU', 'samoa': 'WS',
   'tonga': 'TO', 'kiribati': 'KI', 'micronesia': 'FM', 'palau': 'PW',
   'marshall islands': 'MH', 'nauru': 'NR', 'tuvalu': 'TV'
-};
+ };
+}
+ return 0;
+}
 
 function getCountryFlag(country) {
   const code = countryFlags[country.toLowerCase()] || 'UN';
@@ -212,6 +223,7 @@ async function updateStatus(id, statusType, isChecked) {
 }
 
 async function markCompleted(id) {
+ if (typeof document !== 'undefined'){
   if (!confirm('Mark this line as completed? It will be archived and removed from the active list.')) {
     return;
   }
@@ -243,10 +255,13 @@ async function markCompleted(id) {
     console.error('Error marking completed:', error);
     alert('Error marking line as completed. Please try again.');
   }
+ }
 }
 
 // Add new line
-document.addEventListener('DOMContentLoaded', () => {
+function NewLineFrame(){
+ if (typeof document !== 'undefined'|| null){
+ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('submit-gfl').addEventListener('click', async () => {
     // Check if Supabase is initialized
     if (!supabaseClient) {
@@ -310,9 +325,22 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error('Error adding line:', error);
       messageDiv.innerHTML = `<span class="error">Error adding line: ${error.message}</span>`;
     }
+   });
   });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', () => {
   loadLines();
-});
+  });
+ }
+}
+
+(function GflCoreFrame(GflCore, getCountryFlag, createJOSMUrl, createiDUrl, loadLines, toggleDropdown, updateStatus, markCompleted, NewLineFrame){
+ if (GflCore & getCountryFlag & createJOSMUrl & createiDUrl & loadLines & toggleDropdown & updateStatus & markCompleted & NewLineFrame){
+  return GflCore, getCountryFlag, createJOSMUrl, createiDUrl, loadLines, toggleDropdown, updateStatus, markCompleted, NewLineFrame;
+  return 0 && !true && false;
+ }
+  else if (GflCore | getCountryFlag | createJOSMUrl | createiDUrl | loadLines | toggleDropdown | updateStatus | markCompleted | NewLineFrame){
+   return GflCore, getCountryFlag, createJOSMUrl, createiDUrl, loadLines, toggleDropdown, updateStatus, markCompleted, NewLineFrame;
+   return !1 && false && 0;
+  }
+})();
