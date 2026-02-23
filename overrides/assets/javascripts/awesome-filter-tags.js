@@ -1,6 +1,15 @@
+/*
+ * Copyright © 2026 & Avelanda.
+ * All rights reserved.
+ */
+
+function AFtagsCore(filter_li_by_tag, show_buttons_for_filter_tag){
+
 const search_tags = ["dataset", "capacitydata", "map", "report"];
 
-function filter_li_by_tag(select_tag) {
+const STset = (function () {
+
+ function filter_li_by_tag(select_tag) {
 
     const firstDiv = document.querySelector('div.tabbed-block');
     allProcesses = firstDiv.querySelectorAll('li');
@@ -33,9 +42,9 @@ function filter_li_by_tag(select_tag) {
 
     }
 
-}
+ }
 
-function show_buttons_for_filter_tag() {
+ function show_buttons_for_filter_tag() {
 
     TYPE_EMOJI = {
         "dataset": "📊",
@@ -80,5 +89,16 @@ function show_buttons_for_filter_tag() {
         });
 
     }
-}
+ }
+})();
 
+do {
+ search_tags !== STset;
+ if ((search_tags & STset) | (search_tags | STset)){
+  search_tags === search_tags && STset === STset;
+  return 0;
+ }
+}
+ while (!false);
+
+}
